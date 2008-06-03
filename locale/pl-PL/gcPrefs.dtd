@@ -1,0 +1,3 @@
+<!ENTITY prefs.label "Opcje">
+<!ENTITY prefs.todefault.ask "Pytaj przed przywróceniem domyślnych wartości">
+<!ENTITY prefs.matchversion "Pokazuje opcje kompatybilne wyłącznie z Twoją wersją Firefoksa">

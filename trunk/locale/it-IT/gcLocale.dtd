@@ -1,0 +1,8 @@
+<!ENTITY browser.item.label "Opzioni avanzate...">
+<!ENTITY browser.item.access "Z">
+<!ENTITY config.descr.standard "Muovere il cursore sopra un&apos;opzione per visualizzarne una descrizione dettagliata">
+<!ENTITY config.save.label "Salva">
+<!ENTITY config.standard.label "Ripristina predefiniti">
+<!ENTITY config.todefault "Ripristina valore predefinito">
+<!ENTITY config.header.title "gui:config">
+<!ENTITY config.header.description "Opzioni avanzate ($n disponibili)">

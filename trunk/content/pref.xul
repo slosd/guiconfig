@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://guiconfig/skin/gcprefs.css" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://guiconfig/locale/gcPrefs.dtd">
+ 
+<prefwindow id="gcPrefsWindow"
+     title="gui:config &prefs.label;"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane id="gcpanecommon" label="">
+		<preferences>
+			<preference id="pref_todefault_ask" name="extensions.guiconfig.todefault.ask" type="bool"/>
+			<preference id="pref_matchversion" name="extensions.guiconfig.matchversion" type="bool"/>
+			<preference id="pref_sticktopreferences" name="extensions.guiconfig.sticktopreferences" type="bool"/>
+		</preferences>
+		
+		<hbox>
+			<checkbox preference="pref_todefault_ask" label="&prefs.todefault.ask;"/>
+		</hbox>	
+		<hbox>
+			<checkbox preference="pref_matchversion" label="&prefs.matchversion;"/>
+		</hbox>
+		<hbox>
+			<checkbox preference="pref_sticktopreferences" label="&prefs.sticktopreferences;"/>
+		</hbox>
+	</prefpane>
+
+</prefwindow>

@@ -1,0 +1,14 @@
+content		guiconfig	jar:chrome/guiconfig.jar!/content/
+skin		guiconfig	classic/1.0			jar:chrome/guiconfig.jar!/skin/
+
+locale	guiconfig	en-US	jar:chrome/guiconfig.jar!/locale/en-US/
+locale	guiconfig	de-DE	jar:chrome/guiconfig.jar!/locale/de-DE/
+locale	guiconfig	it-IT	jar:chrome/guiconfig.jar!/locale/it-IT/
+locale	guiconfig	fr-FR	jar:chrome/guiconfig.jar!/locale/fr-FR/
+locale	guiconfig	pl-PL	jar:chrome/guiconfig.jar!/locale/pl-PL/
+locale	guiconfig	pt-BR	jar:chrome/guiconfig.jar!/locale/pt-BR/
+locale	guiconfig	zh-CN	jar:chrome/guiconfig.jar!/locale/zh-CN/
+
+overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
+overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul
+style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/gcbutton.css
