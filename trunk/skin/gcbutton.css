@@ -1,8 +1,0 @@
-#gcButtonPref {
-  list-style-image: url("chrome://guiconfig/skin/icon.24.png");
-}
-
-#toolbar-menubar #gcButtonPref,
-toolbar[iconsize="small"] #gcButtonPref {
-  list-style-image: url("chrome://guiconfig/skin/icon.16.png");
-}
