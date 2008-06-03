@@ -1,0 +1,8 @@
+<!ENTITY browser.item.label "進階設定">
+<!ENTITY browser.item.access "d">
+<!ENTITY config.descr.standard "將游標移到選項之上便可看到詳細說明">
+<!ENTITY config.save.label "存檔">
+<!ENTITY config.standard.label "預設">
+<!ENTITY config.todefault "還原到預設值">
+<!ENTITY config.header.title "gui:config">
+<!ENTITY config.header.description "進階設定 (共計 $n 項)">
