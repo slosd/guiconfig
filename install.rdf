@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>guiconfig@slosd.net</em:id>
-    <em:iconURL>chrome://guiconfig/skin/icon.32.png</em:iconURL>
+    <em:iconURL>chrome://guiconfig/skin/gc_icons/icon.32.png</em:iconURL>
     <em:type>2</em:type>
    
     <em:targetApplication>
@@ -29,5 +29,6 @@
     <em:translator>Wacław Jacek (pl-PL)</em:translator>
     <em:translator>petruc (pt-BR)</em:translator>
     <em:contributor>this extension uses icons from http://famfamfam.com/</em:contributor>
+    <em:contributor>and the Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
   </Description>
 </RDF>

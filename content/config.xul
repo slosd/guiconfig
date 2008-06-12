@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/preferences.css" type="text/css"?>
 <?xml-stylesheet href="chrome://guiconfig/skin/gcwindow.css" type="text/css"?>
 <!DOCTYPE dialog SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 
@@ -14,9 +15,7 @@
 		ondialogcancel=""
 		ondialogextra1="return guiconfig.resetToDefault();"
 >
-	
-	<dialogheader id="gcConfigHeader" title="&config.header.title;" description="&config.header.description;"/>
-	
+		
 	<stringbundleset id="gc_stbs">
 		<stringbundle id="gc_locale" src="chrome://guiconfig/locale/options.properties"/>
 	</stringbundleset>
@@ -26,13 +25,11 @@
 	</menupopup>
 
 	<vbox flex="1">
-		<hbox>
-			<tabbox id="gcConfigTabbox">
-				<tabs id="gcConfigTabContainer"></tabs>
-				<tabpanels id="gcConfigTabpanels"></tabpanels>
-			</tabbox>
-		</hbox>
-		<hbox flex="1">
+		<radiogroup id="gcConfigTabs" orient="horizontal" class="paneSelector chromeclass-toolbar" value="">
+		</radiogroup>
+		<deck id="gcConfigContainer">
+		</deck>
+		<hbox flex="0">
 			<description id="gcConfigDescription" flex="1">&config.descr.standard;</description>
 		</hbox>
 	</vbox>

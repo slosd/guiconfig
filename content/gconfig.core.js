@@ -10,15 +10,11 @@ var guiconfig = {
 
 	init : function() {
 		this.extpref = this.pref.getBranch("extensions.guiconfig.");
-		this.tabbox = document.getElementById("gcConfigTabbox");
-		this.tabpanels = document.getElementById("gcConfigTabpanels");
-		this.tabs = document.getElementById("gcConfigTabContainer");
+		this.tabpanels = document.getElementById("gcConfigContainer");
+		this.tabs = document.getElementById("gcConfigTabs");
 		this.descr = document.getElementById("gcConfigDescription");
 		this.window = document.getElementById("gcConfigWindow");
-		this.header = document.getElementById("gcConfigHeader");
-		var nr = guiconfig.createPreferences();
-		var ds = this.header.getAttribute("description");
-		this.header.setAttribute("description", ds.replace(/\$n/, nr));
+		var nr = this.createPreferences();
 		window.setTimeout(function() {
 			guiconfig.window.centerWindowOnScreen();
 		}, 10);
@@ -48,7 +44,7 @@ var guiconfig = {
 			case 'edit' :
 				button.setAttribute("label", this
 						.getLocaleString("button-edit-enable"));
-				button.setAttribute("image", "chrome://guiconfig/skin/add.png");
+				button.setAttribute("image", "chrome://guiconfig/skin/actions/add.png");
 				button.addEventListener("click", function() {
 					guiconfig.enable(button, opt, elements);
 				}, false);
@@ -164,21 +160,26 @@ var guiconfig = {
 		this.descr.replaceChild(t, this.descr.firstChild);
 		return true;
 	},
+	switchPanel : function() {
+		guiconfig.tabpanels.selectedIndex = this.getAttribute("pane");
+		return true;
+	},
 	createPreferences : function() {
 		var group, group_name, groupTab, groupPanel, groupBox, subgroup_name, subgroupBox, subgroupCaption, opt, optObject, newOption;
 		var options_num = 0;
 		var prefConfig = this.options;
 		for (var i = 0; i < prefConfig.length; i++) {
 			group = prefConfig[i];
-			group_name = group[0];
 
-			groupTab = document.createElement("tab");
-			groupTab.setAttribute("label", this.getLocaleString(group_name));
+			groupTab = document.createElement("radio");
+			groupTab.setAttribute("label", this
+					.getLocaleString(group[0]["label"]));
+			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/"
+					+ group[0]["icon"]);
+			groupTab.setAttribute("pane", i);
+			groupTab.addEventListener("command", this.switchPanel, false);
 			if (i == 0)
 				groupTab.setAttribute("selected", true);
-
-			groupPanel = document.createElement("tabpanel");
-			groupPanel.setAttribute("flex", "4");
 
 			groupBox = document.createElement("groupbox");
 			groupBox.setAttribute("orient", "vertical");
@@ -217,8 +218,7 @@ var guiconfig = {
 				}
 				groupBox.appendChild(newOption);
 			}
-			groupPanel.appendChild(groupBox);
-			this.tabpanels.appendChild(groupPanel);
+			this.tabpanels.appendChild(groupBox);
 			this.tabs.appendChild(groupTab);
 		}
 		return options_num;

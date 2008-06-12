@@ -1,7 +1,10 @@
 //
 // Accessibility
 //
-guiconfig.options[0] = ["accessibility", [{
+guiconfig.options[0] = [{
+	label : "accessibility",
+	icon : "accessibility.png"
+}, [{
 	label : "middleclick"
 }, {
 	handle : guiconfig.boolean,
@@ -45,7 +48,10 @@ guiconfig.options[0] = ["accessibility", [{
 //
 // Browser
 //
-guiconfig.options[1] = ["browser", [{
+guiconfig.options[1] = [{
+	label : "browser",
+	icon : "browser.png"
+}, [{
 	label : "popup"
 }, {
 	handle : guiconfig.boolean,
@@ -76,7 +82,10 @@ guiconfig.options[1] = ["browser", [{
 //
 // Style
 //
-guiconfig.options[2] = ["style", [{
+guiconfig.options[2] = [{
+	label : "style",
+	icon : "style.png"
+}, [{
 	label : "browser_style"
 }, {
 	handle : guiconfig.boolean,
@@ -108,7 +117,10 @@ guiconfig.options[2] = ["style", [{
 //
 // Downloads
 //
-guiconfig.options[3] = ["downloads", [{
+guiconfig.options[3] = [{
+	label : "downloads",
+	icon : "downloads.png"
+}, [{
 	label : "downloadmanager"
 }, {
 	handle : guiconfig.boolean,
@@ -141,7 +153,10 @@ guiconfig.options[3] = ["downloads", [{
 //
 // Bookmarks
 //
-guiconfig.options[4] = ["bookmarks", {
+guiconfig.options[4] = [{
+	label : "bookmarks",
+	icon : "bookmarks.png"
+}, {
 	handle : guiconfig.boolean,
 	key : "browser.tabs.loadBookmarksInBackground"
 }, {
@@ -155,7 +170,10 @@ guiconfig.options[4] = ["bookmarks", {
 //
 // Developing
 //
-guiconfig.options[5] = ["developing", {
+guiconfig.options[5] = [{
+	label : "developing",
+	icon : "developing.png"
+}, {
 	handle : guiconfig.boolean,
 	key : "browser.dom.window.dump.enabled"
 }, {
