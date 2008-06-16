@@ -17,7 +17,7 @@
     </em:targetApplication>
     
     <em:name>gui:config</em:name>
-    <em:version>0.3.7</em:version>
+    <em:version>0.4.0</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://blog.freedig.org/guiconfig/</em:homepageURL>
@@ -28,7 +28,9 @@
     <em:translator>Tsprajna (zh-TW)</em:translator>
     <em:translator>Wacław Jacek (pl-PL)</em:translator>
     <em:translator>petruc (pt-BR)</em:translator>
-    <em:contributor>this extension uses icons from http://famfamfam.com/</em:contributor>
-    <em:contributor>and the Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
+    <em:contributor>this extension uses icons from:</em:contributor>
+    <em:contributor> * Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
+    <em:contributor> * http://famfamfam.com</em:contributor>
+    <em:contributor> * "oxy-gnome" iconset (http://www.gnome-look.org/content/show.php/oxy-gnome?content=79736)</em:contributor>
   </Description>
 </RDF>

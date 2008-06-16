@@ -1,0 +1,46 @@
+#gcConfigWindow {
+	padding: 5px;
+}
+
+.optionRow {
+	margin: 1px 0px;
+}
+
+.optionRow:hover {
+}
+
+.optionRow textbox {
+	min-width: 250px;
+}
+
+.optionGroup {
+	border: none;
+	padding: 8px;
+}
+
+#gcConfigDescription {
+	background: #fff;
+	border: 1px solid #999999;
+	padding: 5px !important;
+	min-height: 50px;
+	margin: 5px;
+}
+
+.optionLabel {
+	padding: 0.5em 0em;
+}
+
+.subgroup {
+}
+
+.subgroup > caption {
+	font-weight: bold;
+}
+.hOptions {
+	float: right;
+	max-width: 16px;
+}
+
+#gcrcDefault {
+	list-style-image: url(chrome://guiconfig/skin/actions/reset.png) !important;
+}
