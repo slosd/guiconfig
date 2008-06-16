@@ -1,8 +1,5 @@
 content		guiconfig	jar:chrome/guiconfig.jar!/content/
-skin		guiconfig		tango			jar:chrome/guiconfig.jar!/skin/tango/		os=Linux
-#skin		guiconfig		tango			jar:chrome/guiconfig.jar!/skin/tango/		os=WINNT
-#skin		guiconfig		tango			jar:chrome/guiconfig.jar!/skin/tango/		os=Darwin
-skin		guiconfig		default			jar:chrome/guiconfig.jar!/skin/default/
+skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/default/
 
 locale	guiconfig	en-US	jar:chrome/guiconfig.jar!/locale/en-US/
 locale	guiconfig	de-DE	jar:chrome/guiconfig.jar!/locale/de-DE/
