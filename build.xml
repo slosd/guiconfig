@@ -6,7 +6,7 @@
 	<property name="app.name" value="guiconfig" />
 	<property name="app.id" value="guiconfig@slosd.net" />
 	<property name="app.version" value="0.4.0" />
-	<property name="app.build" value="beta" />
+	<property name="app.build" value="alpha" />
 	
 	<target name="chrome">
 		<mkdir dir="${dist.dir}" />
