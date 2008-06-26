@@ -1,7 +1,7 @@
 var guiconfig = {
 	pref : Components.classes["@mozilla.org/preferences-service;1"]
 			.getService(Components.interfaces.nsIPrefService)
-			.getBranch("extensions.guiconfig."),
+			.getBranch(""),
 	init : function() {
 		window.addEventListener("load", this.placeMenuItem, false);
 		this.pref.QueryInterface(Components.interfaces.nsIPrefBranch2);
@@ -12,16 +12,19 @@ var guiconfig = {
 		// }
 	},
 	observe : function(subject, topic, data) {
-		if (topic != "nsPref:changed")
-			return;
+		if (topic != "nsPref:changed") return;
 		switch (data) {
-			case "sticktopreferences" :
+			case "extensions.guiconfig.sticktopreferences" :
 				guiconfig.placeMenuItem();
 				break;
 			// case "matchversion":
 			// if(!this.configWindow) break;
 			// this.configWindow.guiconfig.updatePreferences();
 			// break;
+			case "browser.preferences.instantApply" :
+				if (this.configWindow && !this.configWindow.closed)
+					this.configWindow.guiconfig.setButtons();
+				break;
 		}
 	},
 	firstrun : function() {

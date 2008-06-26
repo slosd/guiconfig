@@ -11,11 +11,14 @@ guiconfig.__proto__ = {
 			}
 			c.setAttribute("label", obj.name);
 			c.setAttribute("id", obj.key);
+			c.addEventListener("command", function() {
+				guiconfig.onOptChange(obj);
+			}, false);
 			return [c, mwrt];
 		},
 		get : function(obj) {
 			try {
-				return guiconfig.pref.getBranch("").getBoolPref(obj.key);
+				return guiconfig.usrpref.getBoolPref(obj.key);
 			} catch (e) {
 				return null;
 			}
@@ -27,20 +30,19 @@ guiconfig.__proto__ = {
 			if (obj.bind) {
 				if (typeof obj.bind == "array")
 					for (var i = 0; i < obj.bind.length; i++)
-						guiconfig.pref.getBranch("").setBoolPref(obj.bind[i],
+						guiconfig.usrpref.setBoolPref(obj.bind[i],
 								value);
 				if (typeof obj.bind == "string")
-					guiconfig.pref.getBranch("").setBoolPref(obj.bind, value);
+					guiconfig.usrpref.setBoolPref(obj.bind, value);
 			}
 			return true;
 		},
 		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ? document
-					.getElementById(obj.key).checked : null;
+			return (guiconfig.tryPref(obj) != null) ? document.getElementById(obj.key).checked : null;
 		},
 		reset : function(obj) {
 			try {
-				return guiconfig.pref.getBranch("").clearUserPref(obj.key);
+				return guiconfig.usrpref.clearUserPref(obj.key);
 			} catch (e) {
 				return false;
 			}
@@ -70,11 +72,14 @@ guiconfig.__proto__ = {
 				c.setAttribute("id", obj.key);
 				c.setAttribute("flex", 2);
 			}
+			c.addEventListener("command", function() {
+				guiconfig.onOptChange(obj);
+			}, false);
 			return [l, c, mwrt];
 		},
 		get : function(obj) {
 			try {
-				return guiconfig.pref.getBranch("").getIntPref(obj.key);
+				return guiconfig.usrpref.getIntPref(obj.key);
 			} catch (e) {
 				return null;
 			}
@@ -86,20 +91,19 @@ guiconfig.__proto__ = {
 			if (obj.bind) {
 				if (typeof obj.bind == "array")
 					for (var i = 0; i < obj.bind.length; i++)
-						guiconfig.pref.getBranch("").setIntPref(obj.bind[i],
+						guiconfig.usrpref.setIntPref(obj.bind[i],
 								value);
 				if (typeof obj.bind == "string")
-					guiconfig.pref.getBranch("").setIntPref(obj.bind, value);
+					guiconfig.usrpref.setIntPref(obj.bind, value);
 			}
 			return true;
 		},
 		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ? document
-					.getElementById(obj.key).value : null;
+			return (guiconfig.tryPref(obj) != null) ? document.getElementById(obj.key).value : null;
 		},
 		reset : function(obj) {
 			try {
-				return guiconfig.pref.getBranch("").clearUserPref(obj.key);
+				return guiconfig.usrpref.clearUserPref(obj.key);
 			} catch (e) {
 				return false;
 			}
@@ -128,11 +132,14 @@ guiconfig.__proto__ = {
 				}
 				c.setAttribute("id", obj.key);
 			}
+			c.addEventListener("change", function() {
+				guiconfig.onOptChange(obj);
+			}, false);
 			return [l, c, mwrt];
 		},
 		get : function(obj) {
 			try {
-				return guiconfig.pref.getBranch("").getCharPref(obj.key);
+				return guiconfig.usrpref.getCharPref(obj.key);
 			} catch (e) {
 				return null;
 			}
@@ -144,20 +151,18 @@ guiconfig.__proto__ = {
 			if (obj.bind) {
 				if (typeof obj.bind == "array")
 					for (var i = 0; i < obj.bind.length; i++)
-						guiconfig.pref.getBranch("").setCharPref(obj.bind[i],
-								value);
+						guiconfig.usrpref.setCharPref(obj.bind[i], value);
 				if (typeof obj.bind == "string")
-					guiconfig.pref.getBranch("").setCharPref(obj.bind, value);
+					guiconfig.usrpref.setCharPref(obj.bind, value);
 			}
 			return true;
 		},
 		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ? document
-					.getElementById(obj.key).value : null;
+			return (guiconfig.tryPref(obj) != null) ? document.getElementById(obj.key).value : null;
 		},
 		reset : function(obj) {
 			try {
-				return guiconfig.pref.getBranch("").clearUserPref(obj.key);
+				return guiconfig.usrpref.clearUserPref(obj.key);
 			} catch (e) {
 				return false;
 			}

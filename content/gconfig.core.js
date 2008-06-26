@@ -7,8 +7,10 @@ var guiconfig = {
 			.getService(Components.interfaces.nsIPromptService),
 	appinfo : Components.classes["@mozilla.org/xre/app-info;1"]
 			.getService(Components.interfaces.nsIXULAppInfo),
+	options : new Object,
 
 	init : function() {
+		this.usrpref = this.pref.getBranch("");
 		this.extpref = this.pref.getBranch("extensions.guiconfig.");
 		this.tabpanels = document.getElementById("gcConfigContainer");
 		this.tabs = document.getElementById("gcConfigTabs");
@@ -17,7 +19,24 @@ var guiconfig = {
 		var nr = this.createPreferences();
 		window.setTimeout(function() {
 			guiconfig.window.centerWindowOnScreen();
+			guiconfig.setButtons();
 		}, 10);
+	},
+	setButtons : function() {
+		if(this.usrpref.getBoolPref("browser.preferences.instantApply") == true) {
+			this.window.buttons = "cancel,extra1";
+			var button = this.window.getButton("cancel");
+			//TODO localize this!
+			button.setAttribute("label", "Close");
+			button.setAttribute("icon", "close");
+			this.options.instantApply = true;
+		}
+		else {
+			this.window.buttons = "accept,cancel,extra1";
+			var button = this.window.getButton("cancel");
+			button.setAttribute("icon", "cancel");
+			this.options.instantApply = false;
+		}
 	},
 	getLocaleString : function(n) {
 		try {
@@ -42,8 +61,7 @@ var guiconfig = {
 		button.setAttribute("class", "hOptions");
 		switch (name) {
 			case 'edit' :
-				button.setAttribute("label", this
-						.getLocaleString("button-edit-enable"));
+				button.setAttribute("label", this.getLocaleString("button-edit-enable"));
 				button.setAttribute("image", "chrome://guiconfig/skin/actions/add.png");
 				button.addEventListener("click", function() {
 					guiconfig.enable(button, opt, elements);
@@ -64,8 +82,7 @@ var guiconfig = {
 		return true;
 	},
 	saveOption : function(opt) {
-		if (!this.validateOption(opt))
-			return false;
+		if (!this.validateOption(opt)) return false;
 		opt.handle.set(opt, opt.handle.value(opt))
 		this.updateOption(opt);
 		return false;
@@ -113,6 +130,9 @@ var guiconfig = {
 		}
 		return menu;
 	},
+	onOptChange : function(opt) {
+		if(guiconfig.options.instantApply == true) this.saveOption(opt);
+	},
 	savePreferences : function() {
 		return this.setPreferences(false);
 	},
@@ -129,8 +149,7 @@ var guiconfig = {
 					for (var g = 1; g < group[e].length; g++) {
 						opt = group[e][g];
 						if (!opt.disabled)
-							(std) ? this.resetOption(opt) : this
-									.saveOption(opt);
+							(std) ? this.resetOption(opt) : this.saveOption(opt);
 					}
 					continue;
 				} else {
@@ -140,9 +159,8 @@ var guiconfig = {
 				}
 			}
 		}
-		this.prompts.alert(null, "gui:config", this
-				.getLocaleString("alert-saved"));
-		return false;
+//		this.prompts.alert(null, "gui:config", this.getLocaleString("alert-saved"));
+		return true;
 	},
 	// updatePreferences : function() {
 	// var tabs = this.tabs.childNodes;
@@ -174,8 +192,7 @@ var guiconfig = {
 			groupTab = document.createElement("radio");
 			groupTab.setAttribute("label", this
 					.getLocaleString(group[0]["label"]));
-			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/"
-					+ group[0]["icon"]);
+			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/" + group[0]["icon"]);
 			groupTab.setAttribute("pane", i);
 			groupTab.addEventListener("command", this.switchPanel, false);
 			if (i == 0)
@@ -242,8 +259,7 @@ var guiconfig = {
 			return false;
 
 		opt.name = this.getLocaleString(opt.key.replace(/\./g, "_") + "_name");
-		opt.description = this.getLocaleString(opt.key.replace(/\./g, "_")
-				+ "_description");
+		opt.description = this.getLocaleString(opt.key.replace(/\./g, "_") + "_description");
 
 		var optElements = opt.handle.write(opt);
 		var optBox = document.createElement("hbox");

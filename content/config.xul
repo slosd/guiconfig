@@ -8,7 +8,6 @@
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         title="&browser.item.label;"
         buttons="accept,extra1,cancel"
-		buttonlabelaccept="&config.save.label;"
 		buttonlabelextra1="&config.standard.label;"
 		onload="guiconfig.init();"
 		ondialogaccept="return guiconfig.savePreferences();"

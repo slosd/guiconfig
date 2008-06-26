@@ -1,6 +1,6 @@
 content		guiconfig 		content/
 locale		guiconfig		en-US			locale/en-US/
-skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/default/
+skin		guiconfig		classic/1.0			skin/default/
 
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul

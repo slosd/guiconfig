@@ -40,10 +40,6 @@ guiconfig.options[0] = [{
 	handle : guiconfig.boolean,
 	key : "browser.preferences.instantApply",
 	version : "(1\.5.*|(2|3)\..*)"
-}, {
-	handle : guiconfig.char,
-	key : "browser.throbber.url",
-	version : "1\..*"
 }]];
 //
 // Browser
@@ -127,8 +123,7 @@ guiconfig.options[3] = [{
 	key : "browser.download.manager.focusWhenStarting"
 }, {
 	handle : guiconfig.char,
-	key : "browser.download.lastDir",
-	standard : ""
+	key : "browser.download.lastDir"
 }], [{
 	label : "alerts"
 }, {
