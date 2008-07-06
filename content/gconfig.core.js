@@ -34,6 +34,9 @@ var guiconfig = {
 		else {
 			this.window.buttons = "accept,cancel,extra1";
 			var button = this.window.getButton("cancel");
+			//TODO localize this!
+			if(button.label == "Close")
+				button.setAttribute("label", "Cancel");
 			button.setAttribute("icon", "cancel");
 			this.options.instantApply = false;
 		}
@@ -91,7 +94,6 @@ var guiconfig = {
 		if (!this.validateOption(opt))
 			return false;
 		opt.handle.reset(opt);
-		this.updateOption(opt);
 		return false;
 	},
 	resetToDefault : function() {

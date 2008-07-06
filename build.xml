@@ -6,14 +6,19 @@
 	<property name="app.name" value="guiconfig" />
 	<property name="app.id" value="guiconfig@slosd.net" />
 	<property name="app.version" value="0.3.7" />
-	<property name="app.build" value="rc1" />
+	<property name="app.build" value="final" />
 	
 	<target name="chrome">
 		<mkdir dir="${dist.dir}" />
 		<zip destfile="${dist.dir}/${app.name}.jar">
 			<fileset dir="${src.dir}">
 				<include name="content/**" />
-				<include name="locale/**" />
+				<include name="locale/en-US/**" />
+				<include name="locale/de-DE/**" />
+				<include name="locale/it-IT/**" />
+				<include name="locale/pl-PL/**" />
+				<include name="locale/pt-BR/**" />
+				<include name="locale/zh-TW/**" />
 				<include name="skin/**" />
 				<exclude name="**/.*" />
 				<exclude name="**/CVS/**" />

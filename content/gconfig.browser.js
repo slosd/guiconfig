@@ -35,20 +35,18 @@ var guiconfig = {
 		document.persist("nav-bar", "currentset");
 	},
 	placeMenuItem : function() {
-		var stick = guiconfig.pref.getBoolPref("sticktopreferences");
+		var stick = guiconfig.pref.getBoolPref("extensions.guiconfig.sticktopreferences");
 		var tools_menu = document.getElementById("menu_ToolsPopup");
 		var pref_menuitem = document.getElementById("menu_preferences");
 		var gc_menuitem = document.getElementById("gcToolsItem");
-
-		if (stick && gc_menuitem.previousSibling != pref_menuitem) {
+		
+		if (pref_menuitem && stick && gc_menuitem.previousSibling != pref_menuitem) {
 			if (!pref_menuitem.nextSibling)
-				pref_menuitem.parentNode.appendChild(gc_menuitem
-						.cloneNode(true));
+				pref_menuitem.parentNode.appendChild(gc_menuitem.cloneNode(true));
 			else
-				pref_menuitem.parentNode.insertBefore(gc_menuitem
-						.cloneNode(true), pref_menuitem.nextSibling);
+				pref_menuitem.parentNode.insertBefore(gc_menuitem.cloneNode(true), pref_menuitem.nextSibling);
 			gc_menuitem.parentNode.removeChild(gc_menuitem);
-		} else if (!stick && gc_menuitem.parentNode != tools_menu) {
+		} else if ((!pref_menuitem || !stick) && gc_menuitem.parentNode != tools_menu) {
 			tools_menu.appendChild(gc_menuitem.cloneNode(true));
 			gc_menuitem.parentNode.removeChild(gc_menuitem);
 		}
