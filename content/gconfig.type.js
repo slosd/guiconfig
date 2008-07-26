@@ -69,9 +69,9 @@ guiconfig.__proto__ = {
 					c.setAttribute("disabled", true);
 					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
 				}
-				c.setAttribute("id", obj.key);
 				c.setAttribute("flex", 2);
 			}
+			c.setAttribute("id", obj.key);
 			c.addEventListener("command", function() {
 				guiconfig.onOptChange(obj);
 			}, false);
@@ -113,7 +113,7 @@ guiconfig.__proto__ = {
 		write : function(obj) {
 			var value = guiconfig.tryPref(obj);
 			var l = document.createElement("label");
-			l.setAttribute("value", obj.name + ":");
+			l.setAttribute("value", obj.name);
 			l.setAttribute("control", obj.key);
 			l.setAttribute("class", "optionLabel");
 			if (obj.select) {
@@ -122,7 +122,21 @@ guiconfig.__proto__ = {
 					c.setAttribute("disabled", true);
 					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
 				}
-			} else {
+			}
+			else if (obj.color) {
+				var c = document.createElement("colorpicker");
+				c.setAttribute("type", "button");				
+				if (value == null) {
+					c.setAttribute("disabled", true);
+					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
+				}
+				else {
+					c.setAttribute("color", value);
+					//TODO add "custom color" button
+					//var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
+				}
+			}
+			else {
 				var c = document.createElement("textbox");
 				if (value != null)
 					c.setAttribute("value", value);
@@ -130,8 +144,8 @@ guiconfig.__proto__ = {
 					c.setAttribute("disabled", true);
 					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
 				}
-				c.setAttribute("id", obj.key);
 			}
+			c.setAttribute("id", obj.key);
 			c.addEventListener("change", function() {
 				guiconfig.onOptChange(obj);
 			}, false);
@@ -145,8 +159,7 @@ guiconfig.__proto__ = {
 			}
 		},
 		set : function(obj, value) {
-			if (value == null)
-				return false;
+			if (value == null) return false;
 			guiconfig.pref.setCharPref(obj.key, value);
 			if (obj.bind) {
 				if (typeof obj.bind == "array")
@@ -158,7 +171,11 @@ guiconfig.__proto__ = {
 			return true;
 		},
 		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ? document.getElementById(obj.key).value : null;
+			return (guiconfig.tryPref(obj) != null) ?
+				((obj.color) ?
+					document.getElementById(obj.key).color :
+					document.getElementById(obj.key).value) :
+				null;
 		},
 		reset : function(obj) {
 			try {

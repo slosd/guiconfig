@@ -1,6 +1,7 @@
 var guiconfig = {
 
-	locale : document.getElementById("gc_locale"),
+	opt_locale : document.getElementById("opt_locale"),
+	gc_locale : document.getElementById("gc_locale"),
 	pref : Components.classes["@mozilla.org/preferences-service;1"]
 			.getService(Components.interfaces.nsIPrefService),
 	prompts : Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
@@ -18,6 +19,9 @@ var guiconfig = {
 		this.window = document.getElementById("gcConfigWindow");
 		var nr = this.createPreferences();
 		window.setTimeout(function() {
+			/* TODO make sure buttons are visible
+			 * yet no idea what causes problem on MacOS
+			 */
 			guiconfig.window.centerWindowOnScreen();
 			guiconfig.setButtons();
 		}, 10);
@@ -26,24 +30,29 @@ var guiconfig = {
 		if(this.usrpref.getBoolPref("browser.preferences.instantApply") == true) {
 			this.window.buttons = "cancel,extra1";
 			var button = this.window.getButton("cancel");
-			//TODO localize this!
-			button.setAttribute("label", "Close");
+			button.setAttribute("label", this.getgcLocaleString("close"));
 			button.setAttribute("icon", "close");
 			this.options.instantApply = true;
 		}
 		else {
 			this.window.buttons = "accept,cancel,extra1";
 			var button = this.window.getButton("cancel");
-			//TODO localize this!
-			if(button.label == "Close")
-				button.setAttribute("label", "Cancel");
+			if(button.label == this.getgcLocaleString("close"))
+				button.setAttribute("label", this.getgcLocaleString("cancel"));
 			button.setAttribute("icon", "cancel");
 			this.options.instantApply = false;
 		}
 	},
+	getgcLocaleString : function(n) {
+		try {
+			return this.gc_locale.getString(n);
+		} catch (e) {
+			return "";
+		}
+	},
 	getLocaleString : function(n) {
 		try {
-			return this.locale.getString(n);
+			return this.opt_locale.getString(n);
 		} catch (e) {
 			return "";
 		}
@@ -91,8 +100,7 @@ var guiconfig = {
 		return false;
 	},
 	resetOption : function(opt) {
-		if (!this.validateOption(opt))
-			return false;
+		if (!this.validateOption(opt)) return false;
 		opt.handle.reset(opt);
 		return false;
 	},
@@ -148,16 +156,15 @@ var guiconfig = {
 			group = prefConfig[i];
 			for (var e = 1; e < group.length; e++) {
 				if (group[e][0] && group[e][0]["label"]) {
+					if(!this.validateOption(group[e][0])) continue;
 					for (var g = 1; g < group[e].length; g++) {
 						opt = group[e][g];
-						if (!opt.disabled)
-							(std) ? this.resetOption(opt) : this.saveOption(opt);
+						if (!opt.disabled) (std) ? this.resetOption(opt) : this.saveOption(opt);
 					}
 					continue;
 				} else {
 					opt = group[e];
-					if (!opt.disabled)
-						(std) ? this.resetOption(opt) : this.saveOption(opt);
+					if (!opt.disabled) (std) ? this.resetOption(opt) : this.saveOption(opt);
 				}
 			}
 		}
@@ -174,8 +181,7 @@ var guiconfig = {
 	// return this.createProperties();
 	// },
 	setDescription : function(txt) {
-		if (txt == this.descr.firstChild.data)
-			return false;
+		if (txt == this.descr.firstChild.data) return false;
 		var t = document.createTextNode(txt);
 		this.descr.replaceChild(t, this.descr.firstChild);
 		return true;
@@ -185,57 +191,90 @@ var guiconfig = {
 		return true;
 	},
 	createPreferences : function() {
-		var group, group_name, groupTab, groupPanel, groupBox, subgroup_name, subgroupBox, subgroupCaption, opt, optObject, newOption;
+		var group, group_name, groupTab, groupPanel, groupBox;
+		var subgroup_name, subgroupBox, subgroupCaption;
+		var opt, optObject;
+		var tabbox, tabs, tab, tabpanels, tabpanel, tabpanelbox;
+		
+		var subgroup_in_tabs = false;
 		var options_num = 0;
 		var prefConfig = this.options;
+		
 		for (var i = 0; i < prefConfig.length; i++) {
 			group = prefConfig[i];
+			subgroup_in_tabs = false;
 
 			groupTab = document.createElement("radio");
-			groupTab.setAttribute("label", this
-					.getLocaleString(group[0]["label"]));
+			groupTab.setAttribute("label", this.getLocaleString(group[0]["label"]));
 			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/" + group[0]["icon"]);
 			groupTab.setAttribute("pane", i);
 			groupTab.addEventListener("command", this.switchPanel, false);
-			if (i == 0)
-				groupTab.setAttribute("selected", true);
+			if (i == 0) groupTab.setAttribute("selected", true);
 
 			groupBox = document.createElement("groupbox");
 			groupBox.setAttribute("orient", "vertical");
 			groupBox.setAttribute("class", "optionGroup");
-			groupBox.setAttribute("flex", "1");
 
 			for (var e = 1; e < group.length; e++) {
 				if (group[e][0] && group[e][0]["label"]) {
+					if(!this.validateOption(group[e][0])) continue;
+					
 					subgroup_name = group[e][0]["label"];
-
-					subgroupBox = document.createElement("groupbox");
-					subgroupBox.setAttribute("class", "subgroup");
-					subgroupBox.setAttribute("flex", "1");
-
-					subgroupCaption = document.createElement("caption");
-					subgroupCaption.setAttribute("label", this
-							.getLocaleString(subgroup_name));
-					subgroupBox.appendChild(subgroupCaption);
+					
+					if(group[e][0]["tab"]) {						
+						/* create a new tabgroup */
+						if(!subgroup_in_tabs) {
+							tabbox = document.createElement("tabbox");
+							tabbox.setAttribute("flex", "1");
+							tabs = document.createElement("tabs");
+							tabpanels = document.createElement("tabpanels");
+							tabpanels.setAttribute("flex", "1");
+							tabbox.appendChild(tabs);
+							tabbox.appendChild(tabpanels);
+							groupBox.appendChild(tabbox);
+							subgroup_in_tabs = true;
+						}
+						/* add group to an existing tabgroup */
+						tab = document.createElement("tab");
+						tab.setAttribute("label", this.getLocaleString(subgroup_name));
+						tabpanel = document.createElement("tabpanel");
+						tabpanelbox = document.createElement("groupbox");
+						tabpanel.appendChild(tabpanelbox);
+						tabs.appendChild(tab);
+						tabpanels.appendChild(tabpanel);
+						
+						opt_holder = tabpanelbox;
+					}
+					
+					else {
+						subgroup_in_tabs = false;
+						
+						subgroupBox = document.createElement("groupbox");
+						subgroupBox.setAttribute("class", "subgroup");	
+						subgroupCaption = document.createElement("caption");
+						subgroupCaption.setAttribute("label", this.getLocaleString(subgroup_name));
+						subgroupBox.appendChild(subgroupCaption);
+						groupBox.appendChild(subgroupBox);
+						
+						opt_holder = subgroupBox;
+					}
 
 					for (var g = 1; g < group[e].length; g++) {
 						opt = group[e][g];
 						optObject = this.buildOption(opt);
-						if (!optObject || opt.disabled)
-							continue;
-						subgroupBox.appendChild(optObject);
+						if (!optObject || opt.disabled) continue;
+						opt_holder.appendChild(optObject);
 						options_num++;
 					}
-					newOption = subgroupBox;
-				} else {
+					
+				}
+				else {
 					opt = group[e];
 					optObject = this.buildOption(opt);
-					if (!optObject || opt.disabled)
-						continue;
+					if (!optObject || opt.disabled) continue;
 					options_num++;
-					newOption = optObject;
+					groupBox.appendChild(optObject);
 				}
-				groupBox.appendChild(newOption);
 			}
 			this.tabpanels.appendChild(groupBox);
 			this.tabs.appendChild(groupTab);
@@ -246,8 +285,8 @@ var guiconfig = {
 		if (!this.extpref.getBoolPref("matchversion"))
 			return true;
 		else
-			return this.appinfo.version.match(new RegExp("^"
-					+ (opt.version || ".*") + "$"));
+			//TODO make sure this works correctly
+			return this.appinfo.version.match(new RegExp("^" + (opt.version || ".*") + "$"));
 	},
 	updateOption : function(opt) {
 		var optObject = this.buildOption(opt, true);
@@ -290,8 +329,7 @@ var guiconfig = {
 		opt.values = this.getSelectLocaleStrings(opt, opt.allowed.length);
 		var s = [];
 		for (var i = 0; i < opt.allowed.length; i++) {
-			s[s.length] = [opt.values[i], opt.allowed[i],
-					(opt.allowed[i] == value)];
+			s[s.length] = [opt.values[i], opt.allowed[i], (opt.allowed[i] == value)];
 		}
 		return s.toMenuList(opt.key, value);
 	}
