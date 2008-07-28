@@ -5,8 +5,8 @@
 	<property name="dist.dir" value="/home/thomas/firefox-dev/guiconfig/dist" />
 	<property name="app.name" value="guiconfig" />
 	<property name="app.id" value="guiconfig@slosd.net" />
-	<property name="app.version" value="0.3.8" />
-	<property name="app.build" value="final" />
+	<property name="app.version" value="0.4" />
+	<property name="app.build" value="alpha1" />
 	
 	<target name="chrome">
 		<mkdir dir="${dist.dir}" />
@@ -19,6 +19,9 @@
 				<include name="locale/pl-PL/**" />
 				<include name="locale/pt-BR/**" />
 				<include name="locale/zh-TW/**" />
+				<include name="locale/zh-CN/**" />
+				<include name="locale/fr-FR/**" />
+				<include name="locale/nb-NO/**" />
 				<include name="skin/**" />
 				<exclude name="**/.*" />
 				<exclude name="**/CVS/**" />

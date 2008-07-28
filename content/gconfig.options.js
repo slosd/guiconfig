@@ -29,7 +29,42 @@ guiconfig.options[0] = [{
 	handle : guiconfig.integer,
 	key : "browser.urlbar.maxRichResults",
 	version : "(3\..*)"
-}], [{
+}, {
+	handle : guiconfig.integer,
+	key : "browser.urlbar.maxRichResults",
+	version : "(3\..*)"
+}
+/* 
+ * we need a new way to handle these keys
+ * to provide a userfriendly way to display these options
+ * 
+ * these options will be available in version 3.1a1
+ * 
+ * TODO add option specific anonymous functions to an option
+ *  
+{
+	handle : guiconfig.char,
+	key : "browser.urlbar.restrict.tag",
+	version : "(3\.1\..*)"
+}, {
+	handle : guiconfig.char,
+	key : "browser.urlbar.restrict.history",
+	version : "(3\.1\..*)"
+}, {
+	handle : guiconfig.char,
+	key : "browser.urlbar.restrict.bookmark",
+	version : "(3\.1\..*)"
+}, {
+	handle : guiconfig.char,
+	key : "browser.urlbar.match.url",
+	version : "(3\.1\..*)"
+}, {
+	handle : guiconfig.char,
+	key : "browser.urlbar.restrict.title",
+	version : "(3\.1\..*)"
+}
+ */
+], [{
 	label : "misc",
 	tab : true
 }, {
@@ -202,6 +237,12 @@ guiconfig.options[4] = [{
 }, {
 	handle : guiconfig.boolean,
 	key : "browser.microsummary.enabled"
+}, {
+	handle : guiconfig.integer,
+	key : "browser.microsummary.updateInterval"
+}, {
+	handle : guiconfig.boolean,
+	key : "browser.microsummary.updateGenerators"
 }, {
 	handle : guiconfig.integer,
 	key : "browser.microsummary.generatorUpdateInterval"

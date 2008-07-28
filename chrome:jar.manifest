@@ -7,6 +7,9 @@ locale	guiconfig	it-IT	jar:chrome/guiconfig.jar!/locale/it-IT/
 locale	guiconfig	pl-PL	jar:chrome/guiconfig.jar!/locale/pl-PL/
 locale	guiconfig	pt-BR	jar:chrome/guiconfig.jar!/locale/pt-BR/
 locale	guiconfig	zh-TW	jar:chrome/guiconfig.jar!/locale/zh-TW/
+locale	guiconfig	zh-CN	jar:chrome/guiconfig.jar!/locale/zh-CN/
+locale	guiconfig	fr-FR	jar:chrome/guiconfig.jar!/locale/fr-FR/
+locale	guiconfig	nb-NO	jar:chrome/guiconfig.jar!/locale/nb-NO/
 
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul

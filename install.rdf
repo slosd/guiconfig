@@ -17,7 +17,7 @@
     </em:targetApplication>
     
     <em:name>gui:config</em:name>
-    <em:version>0.3.8</em:version>
+    <em:version>0.4a1</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://blog.freedig.org/guiconfig/</em:homepageURL>

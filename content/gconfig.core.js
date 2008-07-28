@@ -37,8 +37,7 @@ var guiconfig = {
 		else {
 			this.window.buttons = "accept,cancel,extra1";
 			var button = this.window.getButton("cancel");
-			if(button.label == this.getgcLocaleString("close"))
-				button.setAttribute("label", this.getgcLocaleString("cancel"));
+			button.setAttribute("label", this.getgcLocaleString("cancel"));
 			button.setAttribute("icon", "cancel");
 			this.options.instantApply = false;
 		}
