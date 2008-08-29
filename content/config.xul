@@ -9,7 +9,7 @@
         title="&browser.item.label;"
         buttons="accept,extra1,cancel"
 		buttonlabelextra1="&config.standard.label;"
-		onload="guiconfig.init();"
+		onload=""
 		ondialogaccept="return guiconfig.savePreferences();"
 		ondialogcancel=""
 		ondialogextra1="return guiconfig.resetToDefault();"
@@ -24,18 +24,15 @@
 		<menuitem label="&config.todefault;" class="menuitem-iconic" id="gcrcDefault" value="default"/>
 	</menupopup>
 
-	<vbox flex="1">
-		<radiogroup id="gcConfigTabs" orient="horizontal" class="paneSelector chromeclass-toolbar" value="">
-		</radiogroup>
-		<deck id="gcConfigContainer">
-		</deck>
-		<hbox flex="0">
-			<description id="gcConfigDescription" flex="1">&config.descr.standard;</description>
-		</hbox>
-	</vbox>
+	<radiogroup id="gcConfigTabs" role="listbox" anonid="selector" orient="horizontal" class="paneSelector chromeclass-toolbar" value=""></radiogroup>
+	<deck id="gcConfigContainer"></deck>
+	<description id="gcConfigDescription" flex="1">&config.descr.standard;</description>
 
 	<script type="application/javascript" src="gconfig.core.js"/>
 	<script type="application/javascript" src="gconfig.type.js"/>
 	<script type="application/javascript" src="gconfig.options.js"/>
+	<script type="application/javascript">
+		guiconfig.init();
+	</script>
 	
 </dialog>

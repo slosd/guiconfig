@@ -1,44 +1,41 @@
 #gcConfigWindow {
-	padding: 5px;
+	padding: 0px;
 }
 
-.optionRow {
+#gcConfigWindow .gcPrefPane {
+	padding: 8px;
+}
+
+#gcConfigWindow .dialog-button-box {
+	margin: 0px 8px 8px;
+}
+
+#gcConfigWindow .optionRow {
 	margin: 1px 0px;
 }
 
-.optionRow:hover {
+#gcConfigWindow .optionRow label {
+	vertical-align: middle;
 }
 
-.optionRow textbox {
-	min-width: 250px;
-}
-
-.optionGroup {
-	border: none;
-	padding: 8px;
-}
+/*#gcConfigWindow .optionRow colorpicker {
+	max-height: 24px;
+}*/
 
 #gcConfigDescription {
 	background: #fff;
 	border: 1px solid #999999;
 	padding: 5px !important;
 	min-height: 50px;
-	margin: 5px;
+	margin: 0px 8px 8px;
 }
 
-.optionLabel {
+#gcConfigWindow .optionLabel {
 	padding: 0.5em 0em;
 }
 
-.subgroup {
-}
-
-.subgroup > caption {
-	font-weight: bold;
-}
-.hOptions {
+#gcConfigWindow .hOptions {
 	float: right;
-	max-width: 16px;
 }
 
 #gcrcDefault {

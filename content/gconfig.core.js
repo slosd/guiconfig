@@ -8,23 +8,23 @@ var guiconfig = {
 			.getService(Components.interfaces.nsIPromptService),
 	appinfo : Components.classes["@mozilla.org/xre/app-info;1"]
 			.getService(Components.interfaces.nsIXULAppInfo),
-	options : new Object,
+	
+	created_preferences : false,
 
 	init : function() {
+		this.option_num = 0;
+		this.valid_options = new Array;
 		this.usrpref = this.pref.getBranch("");
 		this.extpref = this.pref.getBranch("extensions.guiconfig.");
 		this.tabpanels = document.getElementById("gcConfigContainer");
 		this.tabs = document.getElementById("gcConfigTabs");
-		this.descr = document.getElementById("gcConfigDescription");
+		this.description = document.getElementById("gcConfigDescription");
 		this.window = document.getElementById("gcConfigWindow");
-		var nr = this.createPreferences();
+		this.setButtons();
+		this.createPreferences();
 		window.setTimeout(function() {
-			/* TODO make sure buttons are visible
-			 * yet no idea what causes problem on MacOS
-			 */
 			guiconfig.window.centerWindowOnScreen();
-			guiconfig.setButtons();
-		}, 10);
+		}, 50);
 	},
 	setButtons : function() {
 		if(this.usrpref.getBoolPref("browser.preferences.instantApply") == true) {
@@ -32,14 +32,12 @@ var guiconfig = {
 			var button = this.window.getButton("cancel");
 			button.setAttribute("label", this.getgcLocaleString("close"));
 			button.setAttribute("icon", "close");
-			this.options.instantApply = true;
 		}
 		else {
 			this.window.buttons = "accept,cancel,extra1";
 			var button = this.window.getButton("cancel");
 			button.setAttribute("label", this.getgcLocaleString("cancel"));
 			button.setAttribute("icon", "cancel");
-			this.options.instantApply = false;
 		}
 	},
 	getgcLocaleString : function(n) {
@@ -66,42 +64,6 @@ var guiconfig = {
 				a[a.length] = e;
 		}
 		return a;
-	},
-	addOptButton : function(name, opt, elements) {
-		var button = document.createElement("button");
-		button.setAttribute("class", "hOptions");
-		switch (name) {
-			case 'edit' :
-				button.setAttribute("label", this.getLocaleString("button-edit-enable"));
-				button.setAttribute("image", "chrome://guiconfig/skin/actions/add.png");
-				button.addEventListener("click", function() {
-					guiconfig.enable(button, opt, elements);
-				}, false);
-				break;
-		}
-		return button;
-	},
-	enable : function(button, opt, elements) {
-		button.parentNode.removeChild(button);
-		for (var i = 0; i < elements.length; i++)
-			elements[i].setAttribute("disabled", false);
-		return guiconfig.createOption(opt);
-	},
-	createOption : function(opt) {
-		opt.handle.set(opt, "");
-		this.updateOption(opt);
-		return true;
-	},
-	saveOption : function(opt) {
-		if (!this.validateOption(opt)) return false;
-		opt.handle.set(opt, opt.handle.value(opt))
-		this.updateOption(opt);
-		return false;
-	},
-	resetOption : function(opt) {
-		if (!this.validateOption(opt)) return false;
-		opt.handle.reset(opt);
-		return false;
 	},
 	resetToDefault : function() {
 		if (!this.extpref.getBoolPref("todefault.ask")) {
@@ -140,7 +102,8 @@ var guiconfig = {
 		return menu;
 	},
 	onOptChange : function(opt) {
-		if(guiconfig.options.instantApply == true) this.saveOption(opt);
+		if(this.usrpref.getBoolPref("browser.preferences.instantApply"))
+			this.saveOption(opt);
 	},
 	savePreferences : function() {
 		return this.setPreferences(false);
@@ -148,144 +111,28 @@ var guiconfig = {
 	resetPreferences : function() {
 		return this.setPreferences(true);
 	},
-	setPreferences : function(std) {
-		var group, opt;
-		var prefConfig = this.options;
-		for (var i = 0; i < prefConfig.length; i++) {
-			group = prefConfig[i];
-			for (var e = 1; e < group.length; e++) {
-				if (group[e][0] && group[e][0]["label"]) {
-					if(!this.validateOption(group[e][0])) continue;
-					for (var g = 1; g < group[e].length; g++) {
-						opt = group[e][g];
-						if (!opt.disabled) (std) ? this.resetOption(opt) : this.saveOption(opt);
-					}
-					continue;
-				} else {
-					opt = group[e];
-					if (!opt.disabled) (std) ? this.resetOption(opt) : this.saveOption(opt);
-				}
-			}
+	setPreferences : function(reset) {
+		var option;
+		for (var i = 0; i < this.valid_options.length; i++) {
+			option = this.valid_options[i];
+			if (!option.disabled)
+				(reset) ? this.resetOption(option) : this.saveOption(option);
 		}
-//		this.prompts.alert(null, "gui:config", this.getLocaleString("alert-saved"));
 		return true;
 	},
-	// updatePreferences : function() {
-	// var tabs = this.tabs.childNodes;
-	// var tabpanels = this.tabpanels.childNodes;
-	// for(var i = 0; i < tabs.length; i++)
-	// tabs[i].parentNode.removeChild(tabs[i]);
-	// for(var i = 0; i < tabpanels.length; i++)
-	// tabpanels[i].parentNode.removeChild(tabpanels[i]);
-	// return this.createProperties();
-	// },
-	setDescription : function(txt) {
-		if (txt == this.descr.firstChild.data) return false;
-		var t = document.createTextNode(txt);
-		this.descr.replaceChild(t, this.descr.firstChild);
+	createOption : function(opt) {
+		opt.handle.set(opt, "");
+		this.updateOption(opt);
 		return true;
 	},
-	switchPanel : function() {
-		guiconfig.tabpanels.selectedIndex = this.getAttribute("pane");
+	saveOption : function(opt) {
+		opt.handle.set(opt, opt.handle.value(opt))
+		this.updateOption(opt);
 		return true;
 	},
-	createPreferences : function() {
-		var group, group_name, groupTab, groupPanel, groupBox;
-		var subgroup_name, subgroupBox, subgroupCaption;
-		var opt, optObject;
-		var tabbox, tabs, tab, tabpanels, tabpanel, tabpanelbox;
-		
-		var subgroup_in_tabs = false;
-		var options_num = 0;
-		var prefConfig = this.options;
-		
-		for (var i = 0; i < prefConfig.length; i++) {
-			group = prefConfig[i];
-			subgroup_in_tabs = false;
-
-			groupTab = document.createElement("radio");
-			groupTab.setAttribute("label", this.getLocaleString(group[0]["label"]));
-			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/" + group[0]["icon"]);
-			groupTab.setAttribute("pane", i);
-			groupTab.addEventListener("command", this.switchPanel, false);
-			if (i == 0) groupTab.setAttribute("selected", true);
-
-			groupBox = document.createElement("groupbox");
-			groupBox.setAttribute("orient", "vertical");
-			groupBox.setAttribute("class", "optionGroup");
-
-			for (var e = 1; e < group.length; e++) {
-				if (group[e][0] && group[e][0]["label"]) {
-					if(!this.validateOption(group[e][0])) continue;
-					
-					subgroup_name = group[e][0]["label"];
-					
-					if(group[e][0]["tab"]) {						
-						/* create a new tabgroup */
-						if(!subgroup_in_tabs) {
-							tabbox = document.createElement("tabbox");
-							tabbox.setAttribute("flex", "1");
-							tabs = document.createElement("tabs");
-							tabpanels = document.createElement("tabpanels");
-							tabpanels.setAttribute("flex", "1");
-							tabbox.appendChild(tabs);
-							tabbox.appendChild(tabpanels);
-							groupBox.appendChild(tabbox);
-							subgroup_in_tabs = true;
-						}
-						/* add group to an existing tabgroup */
-						tab = document.createElement("tab");
-						tab.setAttribute("label", this.getLocaleString(subgroup_name));
-						tabpanel = document.createElement("tabpanel");
-						tabpanelbox = document.createElement("groupbox");
-						tabpanel.appendChild(tabpanelbox);
-						tabs.appendChild(tab);
-						tabpanels.appendChild(tabpanel);
-						
-						opt_holder = tabpanelbox;
-					}
-					
-					else {
-						subgroup_in_tabs = false;
-						
-						subgroupBox = document.createElement("groupbox");
-						subgroupBox.setAttribute("class", "subgroup");	
-						subgroupCaption = document.createElement("caption");
-						subgroupCaption.setAttribute("label", this.getLocaleString(subgroup_name));
-						subgroupBox.appendChild(subgroupCaption);
-						groupBox.appendChild(subgroupBox);
-						
-						opt_holder = subgroupBox;
-					}
-
-					for (var g = 1; g < group[e].length; g++) {
-						opt = group[e][g];
-						optObject = this.buildOption(opt);
-						if (!optObject || opt.disabled) continue;
-						opt_holder.appendChild(optObject);
-						options_num++;
-					}
-					
-				}
-				else {
-					opt = group[e];
-					optObject = this.buildOption(opt);
-					if (!optObject || opt.disabled) continue;
-					options_num++;
-					groupBox.appendChild(optObject);
-				}
-			}
-			this.tabpanels.appendChild(groupBox);
-			this.tabs.appendChild(groupTab);
-		}
-		return options_num;
-	},
-	validateOption : function(opt) {
-		if (!this.extpref.getBoolPref("matchversion"))
-			return true;
-		else
-			//TODO make sure this works correctly
-			return this.appinfo.version.match(new RegExp("^" + (opt.version || ".*") + "$"));
+	resetOption : function(opt) {
+		opt.handle.reset(opt);
+		return true;
 	},
 	updateOption : function(opt) {
 		var optObject = this.buildOption(opt, true);
@@ -293,6 +140,190 @@ var guiconfig = {
 		optBox.parentNode.insertBefore(optObject, optBox);
 		optBox.parentNode.removeChild(optBox);
 		return true;
+	},
+	observeOption : function(key) {
+		var option;
+		for (var i = 0; i < this.valid_options.length; i++) {
+			option = this.valid_options[i];
+			if (option.key == key)
+				return this.updateOption(option);
+		}
+		return false;
+	},
+	addOptButton : function(name, opt, elements) {
+		var button = document.createElement("button");
+		button.setAttribute("class", "hOptions");
+		switch (name) {
+			case 'edit' :
+				button.setAttribute("label", this.getLocaleString("button-edit-enable"));
+				button.setAttribute("image", "chrome://guiconfig/skin/actions/add.png");
+				button.addEventListener("click", function() {
+					guiconfig.enable(button, opt, elements);
+				}, false);
+				break;
+		}
+		return button;
+	},
+	enable : function(button, opt, elements) {
+		button.parentNode.removeChild(button);
+		for (var i = 0; i < elements.length; i++)
+			elements[i].setAttribute("disabled", false);
+		return guiconfig.createOption(opt);
+	},
+	validateOption : function(opt) {
+		if (!this.extpref.getBoolPref("matchversion"))
+			return true;
+		else
+			return new RegExp("^" + (opt.version || ".*") + "$").test(this.appinfo.version);
+	},
+	createPreferences : function() {
+		var main_group, groupTab;
+		
+		for (var i = 0; i < this.options.length; i++) {
+			
+			main_group = this.options[i];
+
+			groupTab = document.createElement("radio");
+			groupTab.setAttribute("label", this.getLocaleString(main_group.label));
+			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/" + main_group.icon);
+			groupTab.setAttribute("pane", i);
+			groupTab.addEventListener("command", this.switchPanel, false);
+			if (i == 0)
+				groupTab.setAttribute("selected", true);
+			
+			this.tabs.appendChild(groupTab);
+			this.tabpanels.appendChild(this.goThroughGroup(main_group.content));
+			
+		}
+		
+		this.created_preferences = true;
+		return true;
+		
+	},
+	setDescription : function(txt) {
+		if (txt == this.description.firstChild.data) return false;
+		var t = document.createTextNode(txt);
+		this.description.replaceChild(t, this.description.firstChild);
+		return true;
+	},
+	switchPanel : function() {
+		guiconfig.tabpanels.selectedIndex = this.getAttribute("pane");
+		return true;
+	},
+	goThroughGroup : function(group_content) {
+		var group;
+		var option, option_element;
+		
+		var group_tabs, tabbox, tabs, tabpanels, tab, tabpanel, tabpanelbox;
+		var group_tabs_created = false;
+		
+		var subgroup_name, subgroupBox, subgroupCaption;
+		
+		var element;
+		
+		var GroupBox = document.createElement("vbox");
+		GroupBox.setAttribute("class", "gcPrefPane");
+		GroupBox.setAttribute("flex", "1");
+		
+		for (var i = 0; i < group_content.length; i++) {
+			
+			/* it's a group */
+			if (this.isGroup(group_content[i])) {
+				
+				group = group_content[i];
+				
+				/* validate whole group */
+				if (!this.validateOption(group))
+					continue;
+				
+				/* display groups as tabs */
+				if (group.tab) {
+					
+					/* create a new tabgroup */
+					if (!group_tabs_created) {
+						tabbox = document.createElement("tabbox");
+						tabbox.setAttribute("flex", "1");
+						tabs = document.createElement("tabs");
+						tabpanels = document.createElement("tabpanels");
+						tabpanels.setAttribute("flex", "1");
+						tabbox.appendChild(tabs);
+						tabbox.appendChild(tabpanels);
+						group_tabs_created = true;
+					
+						GroupBox.appendChild(tabbox);
+					}
+					
+					/* add group to an existing tabgroup */
+					tab = document.createElement("tab");
+					tab.setAttribute("label", this.getLocaleString(group.label));
+					tabpanel = document.createElement("tabpanel");
+					tabpanel.appendChild(this.goThroughGroup(group.content));
+					tabs.appendChild(tab);
+					tabpanels.appendChild(tabpanel);
+					
+				}
+				
+				/* display groups as groupboxes */
+				else {
+					
+					group_tabs_created = false;
+					
+					subgroupBox = document.createElement("groupbox");
+					subgroupBox.setAttribute("flex", "1");
+					
+					if (group.label != "") {
+						subgroupCaption = document.createElement("caption");
+						subgroupCaption.setAttribute("label", this.getLocaleString(group.label));
+						subgroupBox.appendChild(subgroupCaption);
+					}
+					
+					subgroupBox.appendChild(this.goThroughGroup(group.content));
+					
+					GroupBox.appendChild(subgroupBox);
+					
+				}
+					
+			}
+			
+			/* it's an option */
+			else if (this.isOption(group_content[i])) {
+				
+				option = group_content[i];
+				option_element = this.buildOption(option);
+				if (!option_element || option.disabled)
+					continue;
+				this.valid_options[this.valid_options.length] = option;
+				this.option_num++;
+				
+				GroupBox.appendChild(option_element);
+				
+			}
+			
+			else if (this.isElement(group_content[i])) {
+				
+				switch (group_content[i].element) {
+					case 'space':
+						element = document.createElement("separator");
+					break;
+				}
+				
+				if (element)
+					GroupBox.appendChild(element);
+				
+			}
+			
+		}
+		
+		return GroupBox;
+	},
+	isGroup : function(content) {
+		return ($defined(content.label) && $defined(content.content));
+	},
+	isOption : function(content) {
+		return ($defined(content.key) && $defined(content.handle));
+	},
+	isElement : function(content) {
+		return ($defined(content.element));
 	},
 	buildOption : function(opt, ignore_validation) {
 		if (!this.validateOption(opt) && !ignore_validation)
@@ -305,6 +336,12 @@ var guiconfig = {
 		var optBox = document.createElement("hbox");
 		optBox.setAttribute("context", opt.key + "_menu");
 		optBox.setAttribute("class", "optionRow");
+		
+		if(opt.indent && !isNaN(opt.indent)) {
+			var marginLeft = opt.indent * 23;
+			optBox.setAttribute("style", "margin-left: " + marginLeft + "px");
+		}
+		
 		optBox.addEventListener("mouseover", function() {
 			guiconfig.setDescription(opt.description);
 		}, false);
@@ -319,6 +356,7 @@ var guiconfig = {
 			if (optElements[i])
 				optBox.appendChild(optElements[i]);
 		}
+		
 		return optBox;
 	},
 	tryPref : function(opt) {
@@ -333,6 +371,9 @@ var guiconfig = {
 		return s.toMenuList(opt.key, value);
 	}
 }
+
+/************************************************************************************************************************/
+
 Array.prototype.toMenuList = function(id, value) {
 	var mi;
 	var ml = document.createElement("menulist");
@@ -353,4 +394,13 @@ Array.prototype.toMenuList = function(id, value) {
 	ml.appendChild(mp);
 	return ml;
 }
-guiconfig.options = new Array;
+
+var $pick = function() {
+	for(var i = 0; i < arguments.length; i++)
+		if(arguments[i]) return arguments[i];
+	return null;
+}
+
+var $defined = function(a) {
+	return (typeof a != "undefined" && a != null);
+}

@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>guiconfig@slosd.net</em:id>
-    <em:iconURL>chrome://guiconfig/skin/gc_icons/icon.32.png</em:iconURL>
+    <em:iconURL>chrome://guiconfig/content/icons/icon.32.png</em:iconURL>
     <em:type>2</em:type>
    
     <em:targetApplication>
@@ -17,7 +17,7 @@
     </em:targetApplication>
     
     <em:name>gui:config</em:name>
-    <em:version>0.4a1</em:version>
+    <em:version>0.4a2</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://blog.freedig.org/guiconfig/</em:homepageURL>
@@ -28,7 +28,8 @@
     <em:translator>Tsprajna (zh-TW)</em:translator>
     <em:translator>Wacław Jacek (pl-PL)</em:translator>
     <em:translator>petruc (pt-BR)</em:translator>
-    <em:contributor>this extension uses icons from:</em:contributor>
-    <em:contributor> * Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
+    <em:translator>fang5566, taizi (zh-CN)</em:translator>
+    <em:translator>Proyecto Nave (http://www.proyectonave.es) (es-ES)</em:translator>
+    <em:contributor>this extension uses icons from the Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
   </Description>
 </RDF>

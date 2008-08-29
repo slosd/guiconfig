@@ -57,19 +57,16 @@ guiconfig.__proto__ = {
 			l.setAttribute("class", "optionLabel");
 			if (obj.select) {
 				var c = guiconfig.buildSelect(obj, value);
-				if (value == null) {
-					c.setAttribute("disabled", true);
-					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				}
-			} else {
+			}
+			else {
 				var c = document.createElement("textbox");
 				if (value != null)
 					c.setAttribute("value", value);
-				else {
-					c.setAttribute("disabled", true);
-					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				}
 				c.setAttribute("flex", 2);
+			}
+			if (value == null) {
+				c.setAttribute("disabled", true);
+				var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
 			}
 			c.setAttribute("id", obj.key);
 			c.addEventListener("command", function() {
@@ -118,32 +115,23 @@ guiconfig.__proto__ = {
 			l.setAttribute("class", "optionLabel");
 			if (obj.select) {
 				var c = guiconfig.toSelect(obj, value);
-				if (value == null) {
-					c.setAttribute("disabled", true);
-					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				}
 			}
-			else if (obj.color) {
+			else if (obj.type == "color") {
 				var c = document.createElement("colorpicker");
-				c.setAttribute("type", "button");				
-				if (value == null) {
-					c.setAttribute("disabled", true);
-					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				}
-				else {
+				c.setAttribute("type", "button");
+				if (value != null)
 					c.setAttribute("color", value);
 					//TODO add "custom color" button
 					//var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				}
 			}
 			else {
 				var c = document.createElement("textbox");
 				if (value != null)
 					c.setAttribute("value", value);
-				else {
-					c.setAttribute("disabled", true);
-					var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				}
+			}
+			if (value == null) {
+				c.setAttribute("disabled", true);
+				var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
 			}
 			c.setAttribute("id", obj.key);
 			c.addEventListener("change", function() {
@@ -172,7 +160,7 @@ guiconfig.__proto__ = {
 		},
 		value : function(obj) {
 			return (guiconfig.tryPref(obj) != null) ?
-				((obj.color) ?
+				((obj.type == "color") ?
 					document.getElementById(obj.key).color :
 					document.getElementById(obj.key).value) :
 				null;
