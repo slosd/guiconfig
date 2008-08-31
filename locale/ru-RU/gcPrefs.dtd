@@ -1,0 +1,4 @@
+<!ENTITY prefs.label "Настройки">
+<!ENTITY prefs.todefault.ask "Спрашивать перед восстановлением значений по умолчанию">
+<!ENTITY prefs.matchversion "Показывать только совместимые с вашей версией Firefox настройки">
+<!ENTITY prefs.sticktopreferences "Поместить пункт меню gui:config после пункта «Настройки…»">

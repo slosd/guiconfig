@@ -6,7 +6,7 @@
 	<menupopup id="menu_ToolsPopup">
 		<menuitem id="gcToolsItem"
 				  label="&browser.item.label;"
-				  image="chrome://guiconfig/skin/gc_icons/icon.16.png"
+				  image="chrome://guiconfig/skin/icons/icon.16.png"
 				  oncommand="guiconfig.openWindow()"
 				  accesskey="&browser.item.access;"/>
 	</menupopup>

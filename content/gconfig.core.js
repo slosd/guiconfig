@@ -136,7 +136,7 @@ var guiconfig = {
 	},
 	updateOption : function(opt) {
 		var optObject = this.buildOption(opt, true);
-		var optBox = document.getElementById(opt.key).parentNode;
+		var optBox = document.getElementById(opt.key).parentNode.parentNode;
 		optBox.parentNode.insertBefore(optObject, optBox);
 		optBox.parentNode.removeChild(optBox);
 		return true;
@@ -333,9 +333,15 @@ var guiconfig = {
 		opt.description = this.getLocaleString(opt.key.replace(/\./g, "_") + "_description");
 
 		var optElements = opt.handle.write(opt);
+		
+		var optRow = document.createElement("hbox");
+		optRow.setAttribute("context", opt.key + "_menu");
+		optRow.setAttribute("class", "optionRow");
+		optRow.setAttribute("align", "center");
+		
 		var optBox = document.createElement("hbox");
-		optBox.setAttribute("context", opt.key + "_menu");
-		optBox.setAttribute("class", "optionRow");
+		optBox.setAttribute("flex", "1");
+		var buttonBox = document.createElement("hbox");
 		
 		if(opt.indent && !isNaN(opt.indent)) {
 			var marginLeft = opt.indent * 23;
@@ -346,18 +352,23 @@ var guiconfig = {
 			guiconfig.setDescription(opt.description);
 		}, false);
 
+		for (var i = 0; i < optElements.option.length; i++)
+			optBox.appendChild(optElements.option[i]);
+
+		for (var i = 0; i < optElements.buttons.length; i++)
+			if (optElements.buttons[i])
+				buttonBox.appendChild(optElements.buttons[i]);
+		
+		optRow.appendChild(optBox);
+		optRow.appendChild(buttonBox);
+
 		this.window.appendChild(guiconfig.buildRightClickMenu(opt, {
 			"default" : function() {
 				guiconfig.setPrefToDefault(opt);
 			}
 		}));
-
-		for (var i = 0; i < optElements.length; i++) {
-			if (optElements[i])
-				optBox.appendChild(optElements[i]);
-		}
 		
-		return optBox;
+		return optRow;
 	},
 	tryPref : function(opt) {
 		return opt.handle.get(opt);
@@ -393,6 +404,12 @@ Array.prototype.toMenuList = function(id, value) {
 	}
 	ml.appendChild(mp);
 	return ml;
+}
+
+Array.prototype.include = function() {
+	for(var i = 0; i < arguments.length; i++)
+		this[this.length] = arguments[i];
+	return this;
 }
 
 var $pick = function() {

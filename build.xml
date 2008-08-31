@@ -23,6 +23,7 @@
 				<include name="locale/fr-FR/**" />
 				<include name="locale/es-ES/**" />
 				<include name="locale/nb-NO/**" />
+				<include name="locale/ru-RU/**" />
 				<include name="skin/**" />
 				<exclude name="**/.*" />
 				<exclude name="**/CVS/**" />
