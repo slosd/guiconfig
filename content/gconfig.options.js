@@ -79,37 +79,89 @@ guiconfig.options[0] = {
 					key : "browser.urlbar.maxRichResults"
 				},
 				/* 
-				 * we need a new way to handle these keys
-				 * to provide a userfriendly way to display these options
-				 * 
 				 * these options will be available in version 3.1a1
 				 * 
-				 * TODO add specific anonymous functions to an option
+				 * TODO replace "*"
 				 */
 				{
-					handle : guiconfig.char,
+					handle : guiconfig.boolean,
 					key : "browser.urlbar.restrict.tag",
-					version : "(3\.1\..*)"
+					version : "(3\.1\..*)",
+					exists: function(opt) {
+						return (guiconfig.char.get(opt) != null);
+					},
+					get : function(opt) {
+						if(!guiconfig.optionExists(opt)) return null;
+						return (guiconfig.char.get(opt) == "*");
+					},
+					set : function(opt, value) {
+						guiconfig.char.set(opt, (value?"*":""));
+						opt.handle.value(opt, !!value);
+					}
 				},
 				{
-					handle : guiconfig.char,
+					handle : guiconfig.boolean,
 					key : "browser.urlbar.restrict.history",
-					version : "(3\.1\..*)"
+					version : "(3\.1\..*)",
+					exists: function(opt) {
+						return (guiconfig.char.get(opt) != null);
+					},
+					get : function(opt) {
+						if(!guiconfig.optionExists(opt)) return null;
+						return (guiconfig.char.get(opt) == "*");
+					},
+					set : function(opt, value) {
+						guiconfig.char.set(opt, (value?"*":""));
+						opt.handle.value(opt, !!value);
+					}
 				},
 				{
-					handle : guiconfig.char,
+					handle : guiconfig.boolean,
 					key : "browser.urlbar.restrict.bookmark",
-					version : "(3\.1\..*)"
+					version : "(3\.1\..*)",
+					exists: function(opt) {
+						return (guiconfig.char.get(opt) != null);
+					},
+					get : function(opt) {
+						if(!guiconfig.optionExists(opt)) return null;
+						return (guiconfig.char.get(opt) == "*");
+					},
+					set : function(opt, value) {
+						guiconfig.char.set(opt, (value?"*":""));
+						opt.handle.value(opt, !!value);
+					}
 				},
 				{
-					handle : guiconfig.char,
+					handle : guiconfig.boolean,
 					key : "browser.urlbar.match.url",
-					version : "(3\.1\..*)"
+					version : "(3\.1\..*)",
+					exists: function(opt) {
+						return (guiconfig.char.get(opt) != null);
+					},
+					get : function(opt) {
+						if(!guiconfig.optionExists(opt)) return null;
+						return (guiconfig.char.get(opt) == "*");
+					},
+					set : function(opt, value) {
+						guiconfig.char.set(opt, (value?"*":""));
+						opt.handle.value(opt, !!value);
+					}
 				},
 				{
-					handle : guiconfig.char,
-					key : "browser.urlbar.restrict.title",
-					version : "(3\.1\..*)"
+					handle : guiconfig.boolean,
+					key : "browser.urlbar.match.title",
+					version : "(3\.1\..*)",
+					exists: function(opt) {
+						return (guiconfig.char.get(opt) != null);
+					},
+					get : function(opt) {
+						if(!guiconfig.optionExists(opt)) return null;
+						return (guiconfig.char.get(opt) == "*");
+					},
+					set : function(opt, value) {
+						guiconfig.char.set(opt, (value?"*":""));
+						opt.handle.value(opt, !!value);
+					}
 				}
 			]
 		},
@@ -117,6 +169,15 @@ guiconfig.options[0] = {
 			label : "misc",
 			tab : true,
 			content : [
+				{
+					label : "popup",
+					content : [
+						{
+							handle : guiconfig.boolean,
+							key : "browser.popups.showPopupBlocker"
+						}
+					]
+				},
 				{
 					handle : guiconfig.integer,
 					select : true,
@@ -158,16 +219,6 @@ guiconfig.options[1] = {
 	label : "browser",
 	icon : "browser.png",
 	content : [
-		{
-			label : "popup",
-			tab : true,
-			content : [
-				{
-					handle : guiconfig.boolean,
-					key : "browser.popups.showPopupBlocker"
-				}
-			]
-		},
 		{
 			label : "alerts",
 			tab : true,
@@ -213,11 +264,13 @@ guiconfig.options[1] = {
 				}, 
 				{
 					handle : guiconfig.integer,
-					key : "browser.cache.disk.capacity"
+					key : "browser.cache.disk.capacity",
+					indent : 1
 				},
 				{
 					handle : guiconfig.boolean,
-					key : "browser.cache.disk_cache_ssl"
+					key : "browser.cache.disk_cache_ssl",
+					indent : 1
 				},
 				{
 					element : "space"
@@ -228,7 +281,8 @@ guiconfig.options[1] = {
 				},
 				{
 					handle : guiconfig.integer,
-					key : "browser.cache.memory.capacity"
+					key : "browser.cache.memory.capacity",
+					indent : 1
 				}
 			]
 		}
@@ -368,6 +422,7 @@ guiconfig.options[4] = {
 	content : [
 		{
 			label : "microsummaries",
+			tab : true,
 			version : "((2|3)\..*)",
 			content : [
 				{
@@ -390,6 +445,7 @@ guiconfig.options[4] = {
 		},
 		{
 			label : "misc",
+			tab : true,
 			content : [
 				{
 					handle : guiconfig.boolean,

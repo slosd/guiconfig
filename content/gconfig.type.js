@@ -6,7 +6,7 @@ guiconfig.__proto__ = {
 				buttons: new Array
 			}
 			
-			var value = guiconfig.tryPref(obj);
+			var value = guiconfig.getOption(obj);
 			var c = document.createElement("checkbox");
 			if (value != null)
 				c.setAttribute("checked", value);
@@ -44,8 +44,11 @@ guiconfig.__proto__ = {
 			}
 			return true;
 		},
+		exists: function(obj) {
+			return (obj.handle.get(obj) != null);
+		},
 		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ? document.getElementById(obj.key).checked : null;
+			return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).checked : null;
 		},
 		reset : function(obj) {
 			try {
@@ -62,7 +65,7 @@ guiconfig.__proto__ = {
 				buttons: new Array
 			}
 			
-			var value = guiconfig.tryPref(obj);
+			var value = guiconfig.getOption(obj);
 			var l = document.createElement("label");
 			l.setAttribute("value", obj.name);
 			l.setAttribute("control", obj.key);
@@ -110,8 +113,11 @@ guiconfig.__proto__ = {
 			}
 			return true;
 		},
+		exists: function(obj) {
+			return (obj.handle.get(obj) != null);
+		},
 		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ? document.getElementById(obj.key).value : null;
+			return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).value : null;
 		},
 		reset : function(obj) {
 			try {
@@ -128,7 +134,7 @@ guiconfig.__proto__ = {
 				buttons: new Array
 			}
 			
-			var value = guiconfig.tryPref(obj);
+			var value = guiconfig.getOption(obj);
 			var l = document.createElement("label");
 			l.setAttribute("value", obj.name);
 			l.setAttribute("control", obj.key);
@@ -137,17 +143,13 @@ guiconfig.__proto__ = {
 			if (obj.select) {
 				var c = guiconfig.toSelect(obj, value);
 			}
-			else if (obj.type == "color") {
-				var s = document.createElement("spacer");
-				s.setAttribute("flex", "1");
-				
+			else if (obj.type == "color") {				
 				var c = document.createElement("colorpicker");
 				c.setAttribute("type", "button");
 				if (value != null)
 					c.setAttribute("color", value);
 					//TODO add "custom color" button
-					//var mwrt = guiconfig.addOptButton("edit", obj, [l, c]);
-				elements.option.include(s);
+				elements.buttons.include(guiconfig.addOptButton("color", obj, [l, c]));
 			}
 			else {
 				var c = document.createElement("textbox");
@@ -175,7 +177,9 @@ guiconfig.__proto__ = {
 		},
 		set : function(obj, value) {
 			if (value == null) return false;
+			
 			guiconfig.pref.setCharPref(obj.key, value);
+			
 			if (obj.bind) {
 				if (typeof obj.bind == "array")
 					for (var i = 0; i < obj.bind.length; i++)
@@ -185,12 +189,26 @@ guiconfig.__proto__ = {
 			}
 			return true;
 		},
-		value : function(obj) {
-			return (guiconfig.tryPref(obj) != null) ?
-				((obj.type == "color") ?
-					document.getElementById(obj.key).color :
-					document.getElementById(obj.key).value) :
-				null;
+		exists: function(obj) {
+			return (obj.handle.get(obj) != null);
+		},
+		value : function(obj, value) {
+			if(obj.type == "color") {
+				if(!value)
+					return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).color : null;
+				else {
+					document.getElementById(obj.key).color = value;
+					return true;
+				}
+			}
+			else {
+				if(!value)
+					return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).value : null;
+				else {
+					document.getElementById(obj.key).value = value;
+					return true;
+				}
+			}
 		},
 		reset : function(obj) {
 			try {

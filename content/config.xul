@@ -21,7 +21,7 @@
 	</stringbundleset>
 	
 	<menupopup id="gcrightclick_prototype">
-		<menuitem label="&config.todefault;" class="menuitem-iconic" id="gcrcDefault" value="default"/>
+		<menuitem label="&config.todefault;" class="menuitem-iconic" id="gcrcDefault" value="reset"/>
 	</menupopup>
 
 	<radiogroup id="gcConfigTabs" role="listbox" anonid="selector" orient="horizontal" class="paneSelector chromeclass-toolbar" value=""></radiogroup>

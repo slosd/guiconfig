@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>guiconfig@slosd.net</em:id>
-    <em:iconURL>chrome://guiconfig/content/icons/icon.32.png</em:iconURL>
+    <em:iconURL>chrome://guiconfig/skin/icons/icon.32.png</em:iconURL>
     <em:type>2</em:type>
    
     <em:targetApplication>

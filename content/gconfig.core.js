@@ -2,30 +2,78 @@ var guiconfig = {
 
 	opt_locale : document.getElementById("opt_locale"),
 	gc_locale : document.getElementById("gc_locale"),
+	
 	pref : Components.classes["@mozilla.org/preferences-service;1"]
 			.getService(Components.interfaces.nsIPrefService),
 	prompts : Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
 			.getService(Components.interfaces.nsIPromptService),
 	appinfo : Components.classes["@mozilla.org/xre/app-info;1"]
 			.getService(Components.interfaces.nsIXULAppInfo),
+	runtime : Components.classes["@mozilla.org/xre/app-info;1"]
+			.getService(Components.interfaces.nsIXULRuntime),
 	
 	created_preferences : false,
-
+	option_num : 0,
+	valid_options : new Array,
+	icons : new Array,
+	
 	init : function() {
-		this.option_num = 0;
-		this.valid_options = new Array;
+		this.getIcons();
+		this.getConfiguration();
+		this.getElements();
+		this.setButtons();
+		this.createPreferences();
+		
+		/*for(var i in this.appinfo)
+			console.log(i + " = '" + this.appinfo[i] + "'");*/
+		
+		//TODO find a convenient way to center the config.xul window
+		window.setTimeout(function() {
+			guiconfig.window.centerWindowOnScreen();
+		}, 100);
+	},
+	
+	getIcons : function() {
+		var actions_path = "chrome://guiconfig/skin/actions/";
+		var tab_icons_path = "chrome://guiconfig/skin/tab_icons/";
+		var moz_stock = "moz-icon://stock/";
+		switch(this.runtime.OS) {
+			case 'Linux':
+				this.addIcon("add", moz_stock + "gtk-add?size=button");
+				this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
+				this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
+			break;
+			case 'WINNT':
+			break;
+		}
+		this.addIcon("add", actions_path + "add.png");
+		this.addIcon("color", actions_path + "color.png");
+		this.addIcon("reset", actions_path + "reset.png");
+		this.addIcon("tab_accessibility", tab_icons_path + "accessibility.png");
+		this.addIcon("tab_bookmarks", tab_icons_path + "bookmarks.png");
+		this.addIcon("tab_browser", tab_icons_path + "browser.png");
+		this.addIcon("tab_developing", tab_icons_path + "developing.png");
+		this.addIcon("tab_downloads", tab_icons_path + "downloads.png");
+		this.addIcon("tab_style", tab_icons_path + "style.png");
+	},
+	
+	addIcon: function(name, path) {
+		if(!$defined(this.icons[name]))
+			this.icons[name] = path;
+	},
+	
+	getConfiguration : function() {
 		this.usrpref = this.pref.getBranch("");
 		this.extpref = this.pref.getBranch("extensions.guiconfig.");
+	},
+	
+	getElements : function() {		
 		this.tabpanels = document.getElementById("gcConfigContainer");
 		this.tabs = document.getElementById("gcConfigTabs");
 		this.description = document.getElementById("gcConfigDescription");
 		this.window = document.getElementById("gcConfigWindow");
-		this.setButtons();
-		this.createPreferences();
-		window.setTimeout(function() {
-			guiconfig.window.centerWindowOnScreen();
-		}, 50);
 	},
+	
 	setButtons : function() {
 		if(this.usrpref.getBoolPref("browser.preferences.instantApply") == true) {
 			this.window.buttons = "cancel,extra1";
@@ -40,6 +88,7 @@ var guiconfig = {
 			button.setAttribute("icon", "cancel");
 		}
 	},
+	
 	getgcLocaleString : function(n) {
 		try {
 			return this.gc_locale.getString(n);
@@ -47,6 +96,7 @@ var guiconfig = {
 			return "";
 		}
 	},
+	
 	getLocaleString : function(n) {
 		try {
 			return this.opt_locale.getString(n);
@@ -54,6 +104,7 @@ var guiconfig = {
 			return "";
 		}
 	},
+	
 	getSelectLocaleStrings : function(opt, c) {
 		var e;
 		var a = new Array();
@@ -65,6 +116,7 @@ var guiconfig = {
 		}
 		return a;
 	},
+	
 	resetToDefault : function() {
 		if (!this.extpref.getBoolPref("todefault.ask")) {
 			this.resetPreferences(true);
@@ -73,67 +125,108 @@ var guiconfig = {
 		var dont_ask = {
 			value : false
 		};
-		var reset_options = this.prompts.confirmCheck(null, "gui:config", this
-				.getLocaleString("confirm-std"), this
-				.getLocaleString("dont-ask"), dont_ask);
+		var reset_options = this.prompts.confirmCheck(
+			null,
+			"gui:config",
+			this.getLocaleString("confirm-std"),
+			this.getLocaleString("dont-ask"), dont_ask
+		);
 		if (reset_options == true) {
 			this.resetPreferences(true);
 			this.extpref.setBoolPref("todefault.ask", !dont_ask.value);
 		}
 		return reset_options;
 	},
+	
 	setPrefToDefault : function(opt) {
 		guiconfig.resetOption(opt);
 		guiconfig.updateOption(opt);
 		return true;
 	},
+	
 	buildRightClickMenu : function(opt, f) {
-		var menu = document.getElementById("gcrightclick_prototype")
-				.cloneNode(true);
+		var value;
+		var menu = document.getElementById("gcrightclick_prototype").cloneNode(true);
 		menu.setAttribute("id", opt.key + "_menu");
 		var list = menu.childNodes;
 		for (var i = 0; i < list.length; i++) {
-			switch (list[i].getAttribute("value")) {
-				case 'default' :
-					list[i].onclick = f["default"];
-					break;
-			}
+			value = list[i].getAttribute("value");
+			if($defined(f[value]))
+				list[i].onclick = f[value];
+			if($defined(this.icons[value]))
+				list[i].style.listStyleImage = "url(" + this.icons[value] + ")";
 		}
 		return menu;
 	},
+	
+	optionHandler: function(opt, type, value) {
+		if(typeof opt[type] == "function")
+			return opt[type](opt, value);
+		else if(typeof opt.handle[type] == "function")
+			return opt.handle[type](opt, value);
+		else
+			return null;
+	},
+	
+	optionExists: function(opt) {
+		return !!this.optionHandler(opt, "exists");
+	},
+	
+	getOption: function(opt) {
+		return this.optionHandler(opt, "get");
+	},
+	
+	getOptionValue: function(opt) {
+		return this.optionHandler(opt, "value");
+	},
+	
+	createOptionElement: function(opt) {
+		return this.optionHandler(opt, "write");
+	},
+	
+	setOption: function(opt, value) {
+		return this.optionHandler(opt, "set", $pick(value, this.getOptionValue(opt)));
+	},
+	
+	resetOption : function(opt) {
+		return this.optionHandler(opt, "reset");
+	},
+	
 	onOptChange : function(opt) {
 		if(this.usrpref.getBoolPref("browser.preferences.instantApply"))
 			this.saveOption(opt);
 	},
+	
 	savePreferences : function() {
 		return this.setPreferences(false);
 	},
+	
 	resetPreferences : function() {
 		return this.setPreferences(true);
 	},
+	
 	setPreferences : function(reset) {
 		var option;
 		for (var i = 0; i < this.valid_options.length; i++) {
 			option = this.valid_options[i];
 			if (!option.disabled)
-				(reset) ? this.resetOption(option) : this.saveOption(option);
+				(reset) ? this.resetOption(option) : (this.optionExists(option)) ? this.saveOption(option) : null;
 		}
 		return true;
 	},
+	
 	createOption : function(opt) {
-		opt.handle.set(opt, "");
+		this.setOption(opt, "");
 		this.updateOption(opt);
 		return true;
 	},
+	
 	saveOption : function(opt) {
-		opt.handle.set(opt, opt.handle.value(opt))
+		this.setOption(opt);
 		this.updateOption(opt);
 		return true;
 	},
-	resetOption : function(opt) {
-		opt.handle.reset(opt);
-		return true;
-	},
+	
 	updateOption : function(opt) {
 		var optObject = this.buildOption(opt, true);
 		var optBox = document.getElementById(opt.key).parentNode.parentNode;
@@ -141,6 +234,7 @@ var guiconfig = {
 		optBox.parentNode.removeChild(optBox);
 		return true;
 	},
+	
 	observeOption : function(key) {
 		var option;
 		for (var i = 0; i < this.valid_options.length; i++) {
@@ -150,32 +244,61 @@ var guiconfig = {
 		}
 		return false;
 	},
+	
 	addOptButton : function(name, opt, elements) {
 		var button = document.createElement("button");
 		button.setAttribute("class", "hOptions");
 		switch (name) {
-			case 'edit' :
+			case 'edit':
 				button.setAttribute("label", this.getLocaleString("button-edit-enable"));
-				button.setAttribute("image", "chrome://guiconfig/skin/actions/add.png");
+				button.setAttribute("image", this.icons["add"]);
 				button.addEventListener("click", function() {
 					guiconfig.enable(button, opt, elements);
 				}, false);
-				break;
+			break;
+			case 'color':
+				button.setAttribute("label", this.getLocaleString("button-custom-value"));
+				button.setAttribute("image", this.icons["color"]);
+				button.addEventListener("click", function() {
+					guiconfig.colorValue(button, opt, elements);
+				}, false);
+			break;
 		}
 		return button;
 	},
+	
 	enable : function(button, opt, elements) {
 		button.parentNode.removeChild(button);
 		for (var i = 0; i < elements.length; i++)
 			elements[i].setAttribute("disabled", false);
 		return guiconfig.createOption(opt);
 	},
+	
+	colorValue : function(button, opt, elements) {
+		var input = { value: "" };
+		var check = { value: false };
+		var change_value = this.prompts.prompt(
+			null,
+			"gui:config",
+			this.getLocaleString("fill-in-value"),
+			input,
+			null,
+			check
+		);
+		if (change_value && input.value != "") {
+			this.enable(button, opt, elements);
+			return this.getOptionValue(opt, input.value);
+		}
+		return false;
+	},
+	
 	validateOption : function(opt) {
 		if (!this.extpref.getBoolPref("matchversion"))
 			return true;
 		else
 			return new RegExp("^" + (opt.version || ".*") + "$").test(this.appinfo.version);
 	},
+	
 	createPreferences : function() {
 		var main_group, groupTab;
 		
@@ -185,7 +308,7 @@ var guiconfig = {
 
 			groupTab = document.createElement("radio");
 			groupTab.setAttribute("label", this.getLocaleString(main_group.label));
-			groupTab.setAttribute("src", "chrome://guiconfig/skin/tab_icons/" + main_group.icon);
+			groupTab.setAttribute("src", this.icons["tab_" + main_group.label]);
 			groupTab.setAttribute("pane", i);
 			groupTab.addEventListener("command", this.switchPanel, false);
 			if (i == 0)
@@ -200,16 +323,7 @@ var guiconfig = {
 		return true;
 		
 	},
-	setDescription : function(txt) {
-		if (txt == this.description.firstChild.data) return false;
-		var t = document.createTextNode(txt);
-		this.description.replaceChild(t, this.description.firstChild);
-		return true;
-	},
-	switchPanel : function() {
-		guiconfig.tabpanels.selectedIndex = this.getAttribute("pane");
-		return true;
-	},
+	
 	goThroughGroup : function(group_content) {
 		var group;
 		var option, option_element;
@@ -269,7 +383,7 @@ var guiconfig = {
 					group_tabs_created = false;
 					
 					subgroupBox = document.createElement("groupbox");
-					subgroupBox.setAttribute("flex", "1");
+					//subgroupBox.setAttribute("flex", "1");
 					
 					if (group.label != "") {
 						subgroupCaption = document.createElement("caption");
@@ -316,15 +430,28 @@ var guiconfig = {
 		
 		return GroupBox;
 	},
+	
 	isGroup : function(content) {
 		return ($defined(content.label) && $defined(content.content));
 	},
+	
 	isOption : function(content) {
 		return ($defined(content.key) && $defined(content.handle));
 	},
+	
 	isElement : function(content) {
 		return ($defined(content.element));
 	},
+	
+	buildSelect : function(opt, value) {
+		opt.values = this.getSelectLocaleStrings(opt, opt.allowed.length);
+		var s = [];
+		for (var i = 0; i < opt.allowed.length; i++) {
+			s[s.length] = [opt.values[i], opt.allowed[i], (opt.allowed[i] == value)];
+		}
+		return s.toMenuList(opt.key, value);
+	},
+	
 	buildOption : function(opt, ignore_validation) {
 		if (!this.validateOption(opt) && !ignore_validation)
 			return false;
@@ -332,7 +459,7 @@ var guiconfig = {
 		opt.name = this.getLocaleString(opt.key.replace(/\./g, "_") + "_name");
 		opt.description = this.getLocaleString(opt.key.replace(/\./g, "_") + "_description");
 
-		var optElements = opt.handle.write(opt);
+		var optElements = this.createOptionElement(opt);
 		
 		var optRow = document.createElement("hbox");
 		optRow.setAttribute("context", opt.key + "_menu");
@@ -363,24 +490,26 @@ var guiconfig = {
 		optRow.appendChild(buttonBox);
 
 		this.window.appendChild(guiconfig.buildRightClickMenu(opt, {
-			"default" : function() {
+			"reset" : function() {
 				guiconfig.setPrefToDefault(opt);
 			}
 		}));
 		
 		return optRow;
 	},
-	tryPref : function(opt) {
-		return opt.handle.get(opt);
+	
+	setDescription : function(txt) {
+		if (txt == this.description.firstChild.data) return false;
+		var t = document.createTextNode(txt);
+		this.description.replaceChild(t, this.description.firstChild);
+		return true;
 	},
-	buildSelect : function(opt, value) {
-		opt.values = this.getSelectLocaleStrings(opt, opt.allowed.length);
-		var s = [];
-		for (var i = 0; i < opt.allowed.length; i++) {
-			s[s.length] = [opt.values[i], opt.allowed[i], (opt.allowed[i] == value)];
-		}
-		return s.toMenuList(opt.key, value);
+	
+	switchPanel : function() {
+		guiconfig.tabpanels.selectedIndex = this.getAttribute("pane");
+		return true;
 	}
+	
 }
 
 /************************************************************************************************************************/
@@ -414,7 +543,7 @@ Array.prototype.include = function() {
 
 var $pick = function() {
 	for(var i = 0; i < arguments.length; i++)
-		if(arguments[i]) return arguments[i];
+		if($defined(arguments[i])) return arguments[i];
 	return null;
 }
 
