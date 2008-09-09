@@ -16,6 +16,7 @@
 
 #gcConfigWindow .optionRow colorpicker {
 	max-height: 24px;
+	margin-top: 4px;
 }
 
 #gcConfigDescription {
@@ -32,8 +33,4 @@
 
 #gcConfigWindow .hOptions {
 	float: right;
-}
-
-#gcrcDefault {
-	list-style-image: url(chrome://guiconfig/skin/actions/reset.png) !important;
 }
