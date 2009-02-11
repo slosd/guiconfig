@@ -1,221 +1,255 @@
 guiconfig.__proto__ = {
 	boolean: {
-		write : function(obj) {
-			var elements = {
+		write: function(opt) {
+			opt.elements = {
 				option: new Array,
 				buttons: new Array
 			}
 			
-			var value = guiconfig.getOption(obj);
-			var c = document.createElement("checkbox");
-			if (value != null)
-				c.setAttribute("checked", value);
-			else {
-				c.setAttribute("disabled", true);
-				elements.buttons.include(guiconfig.addOptButton("edit", obj, [c]));
-			}
-			c.setAttribute("label", obj.name);
-			c.setAttribute("id", obj.key);
-			c.addEventListener("command", function() {
-				guiconfig.onOptChange(obj);
+			var option_element = document.createElement("checkbox");
+			option_element.setAttribute("label", opt.name);
+			option_element.setAttribute("id", opt.key);
+			
+			var value = guiconfig.getOption(opt);
+			
+			option_element.addEventListener("command", function() {
+				guiconfig.onOptChange(opt);
 			}, false);
 			
-			elements.option.include(c);
-			return elements;
+			opt.elements.option.include(option_element);			
+			
+			if(value != null)
+				option_element.setAttribute("checked", value);
+			else
+				opt.handle.disable(opt, true);
+			
+			return opt.elements;
 		},
-		get : function(obj) {
+		disable: function(opt, button) {
+			for(var i = 0; i < opt.elements.option.length; i++)
+				opt.elements.option[i].setAttribute("disabled", true);
+			if(button && !opt.button_edit)
+				opt.elements.buttons.include(guiconfig.addOptButton("edit", opt, opt.elements));
+		},
+		get: function(opt) {
 			try {
-				return guiconfig.usrpref.getBoolPref(obj.key);
-			} catch (e) {
+				return guiconfig.usrpref.getBoolPref(opt.key);
+			}
+			catch (e) {
 				return null;
 			}
 		},
-		set : function(obj, value) {
-			if (value == null)
+		set: function(opt, value) {
+			if(value == null)
 				return false;
-			guiconfig.pref.setBoolPref(obj.key, value);
-			if (obj.bind) {
-				if (typeof obj.bind == "array")
-					for (var i = 0; i < obj.bind.length; i++)
-						guiconfig.usrpref.setBoolPref(obj.bind[i],
-								value);
-				if (typeof obj.bind == "string")
-					guiconfig.usrpref.setBoolPref(obj.bind, value);
-			}
+			
+			guiconfig.pref.setBoolPref(opt.key, value);
+			guiconfig.setBindings(opt, "setBoolPref", value);
+			
 			return true;
 		},
-		exists: function(obj) {
-			return (obj.handle.get(obj) != null);
+		exists: function(opt) {
+			return opt.handle.get(opt) != null;
 		},
-		value : function(obj) {
-			return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).checked : null;
+		value: function(opt, value) {
+			if(!$defined(value))
+				return guiconfig.optionExists(opt) ? document.getElementById(opt.key).checked : null;
+			else {
+				document.getElementById(opt.key).checked = value;
+				return true;
+			}
 		},
-		reset : function(obj) {
+		reset: function(opt) {
 			try {
-				return guiconfig.usrpref.clearUserPref(obj.key);
-			} catch (e) {
+				return guiconfig.usrpref.clearUserPref(opt.key);
+			}
+			catch (e) {
 				return false;
 			}
 		}
 	},
-	integer : {
-		write : function(obj) {
-			var elements = {
+	integer: {
+		write: function(opt) {
+			opt.elements = {
 				option: new Array,
 				buttons: new Array
 			}
+
+			var label = document.createElement("label");
+			label.setAttribute("value", opt.name);
+			label.setAttribute("control", opt.key);
+			label.setAttribute("class", "optionLabel");
+			opt.elements.option.include(label);
 			
-			var value = guiconfig.getOption(obj);
-			var l = document.createElement("label");
-			l.setAttribute("value", obj.name);
-			l.setAttribute("control", obj.key);
-			l.setAttribute("class", "optionLabel");
-			elements.option.include(l);
-			if (obj.select) {
-				var c = guiconfig.buildSelect(obj, value);
+			var value = guiconfig.getOption(opt);
+			
+			if(opt.type == "select") {
+				var option_element = guiconfig.buildSelect(opt, value);
+
+				option_element.addEventListener("change", function() {
+					guiconfig.onOptChange(opt);
+				}, false);
 			}
 			else {
-				var c = document.createElement("textbox");
-				if (value != null)
-					c.setAttribute("value", value);
-				c.setAttribute("flex", "1");
+				var option_element = document.createElement("textbox");
+				option_element.setAttribute("flex", "1");
+
+				if(value != null)
+					option_element.setAttribute("value", value);
+
+				guiconfig.addTextboxEvents(option_element, opt);
 			}
-			if (value == null) {
-				c.setAttribute("disabled", true);
-				elements.buttons.include(guiconfig.addOptButton("edit", obj, [l, c]));
-			}
-			c.setAttribute("id", obj.key);
-			c.addEventListener("command", function() {
-				guiconfig.onOptChange(obj);
-			}, false);
 			
-			elements.option.include(c);
-			return elements;
+			option_element.setAttribute("id", opt.key);
+			
+			opt.elements.option.include(option_element);
+
+			if(value == null)
+				opt.handle.disable(opt, true);
+
+			return opt.elements;
 		},
-		get : function(obj) {
+		disable: function(opt, button) {
+			for(var i = 0; i < opt.elements.option.length; i++)
+				opt.elements.option[i].setAttribute("disabled", true);
+			if(button && !opt.button_edit)
+				opt.elements.buttons.include(guiconfig.addOptButton("edit", opt, opt.elements));
+		},
+		get: function(opt) {
 			try {
-				return guiconfig.usrpref.getIntPref(obj.key);
-			} catch (e) {
+				return guiconfig.usrpref.getIntPref(opt.key);
+			}
+			catch (e) {
 				return null;
 			}
 		},
-		set : function(obj, value) {
-			if (value == null)
+		set: function(opt, value) {
+			if(value == null)
 				return false;
-			guiconfig.pref.setIntPref(obj.key, value);
-			if (obj.bind) {
-				if (typeof obj.bind == "array")
-					for (var i = 0; i < obj.bind.length; i++)
-						guiconfig.usrpref.setIntPref(obj.bind[i],
-								value);
-				if (typeof obj.bind == "string")
-					guiconfig.usrpref.setIntPref(obj.bind, value);
-			}
+			
+			guiconfig.pref.setIntPref(opt.key, value);
+			guiconfig.setBindings(opt, "setIntPref", value);
+			
 			return true;
 		},
-		exists: function(obj) {
-			return (obj.handle.get(obj) != null);
+		exists: function(opt) {
+			return opt.handle.get(opt) != null;
 		},
-		value : function(obj) {
-			return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).value : null;
+		value: function(opt, value) {
+			if(!$defined(value))
+				return guiconfig.optionExists(opt) ? document.getElementById(opt.key).value : null;
+			else {
+				document.getElementById(opt.key).value = value;
+				return true;
+			}
 		},
-		reset : function(obj) {
+		reset: function(opt) {
 			try {
-				return guiconfig.usrpref.clearUserPref(obj.key);
-			} catch (e) {
+				return guiconfig.usrpref.clearUserPref(opt.key);
+			}
+			catch (e) {
 				return false;
 			}
 		}
 	},
-	char : {
-		write : function(obj) {
-			var elements = {
+	char: {
+		write: function(opt) {
+			opt.elements = {
 				option: new Array,
 				buttons: new Array
 			}
+
+			var label = document.createElement("label");
+			label.setAttribute("value", opt.name);
+			label.setAttribute("control", opt.key);
+			label.setAttribute("class", "optionLabel");
+			opt.elements.option.include(label);
+
+			var value = guiconfig.getOption(opt);
 			
-			var value = guiconfig.getOption(obj);
-			var l = document.createElement("label");
-			l.setAttribute("value", obj.name);
-			l.setAttribute("control", obj.key);
-			l.setAttribute("class", "optionLabel");
-			elements.option.include(l);
-			if (obj.select) {
-				var c = guiconfig.toSelect(obj, value);
+			if(opt.type == "select") {
+				var option_element = guiconfig.toSelect(opt, value);
 			}
-			else if (obj.type == "color") {				
-				var c = document.createElement("colorpicker");
-				c.setAttribute("type", "button");
-				if (value != null)
-					c.setAttribute("color", value);
-					//TODO add "custom color" button
-				elements.buttons.include(guiconfig.addOptButton("color", obj, [l, c]));
+			else if(opt.type == "color") {
+				var option_element = document.createElement("colorpicker");
+				option_element.setAttribute("type", "button");
+
+				if(value != null)
+					option_element.setAttribute("color", value);
+				
+				opt.elements.buttons.include(guiconfig.addOptButton("color", opt, [label, option_element]));
+
+				option_element.addEventListener("change", function() {
+					guiconfig.onOptChange(opt);
+				}, false);
 			}
+			/*
+			 * TODO add file selection dialog
+			 *
+			else if(opt.type == "file") {
+				
+			}*/
 			else {
-				var c = document.createElement("textbox");
-				if (value != null)
-					c.setAttribute("value", value);
-				c.setAttribute("flex", "1");
+				var option_element = document.createElement("textbox");
+				option_element.setAttribute("flex", "1");
+
+				if(value != null)
+					option_element.setAttribute("value", value);
+
+				guiconfig.addTextboxEvents(option_element, opt);
 			}
-			if (value == null) {
-				c.setAttribute("disabled", true);
-				elements.buttons.include(guiconfig.addOptButton("edit", obj, [l, c]));
-			}
-			c.setAttribute("id", obj.key);
-			c.addEventListener("change", function() {
-				guiconfig.onOptChange(obj);
-			}, false);
-			elements.option.include(c);
-			return elements;
+			
+			option_element.setAttribute("id", opt.key);
+			
+			opt.elements.option.include(option_element);
+			
+			if(value == null)
+				opt.handle.disable(opt, true);
+			
+			return opt.elements;
 		},
-		get : function(obj) {
+		disable: function(opt, button) {
+			for(var i = 0; i < opt.elements.option.length; i++)
+				opt.elements.option[i].setAttribute("disabled", true);
+			if(button && !opt.button_edit)
+				opt.elements.buttons.include(guiconfig.addOptButton("edit", opt, opt.elements));
+		},
+		get: function(opt) {
 			try {
-				return guiconfig.usrpref.getCharPref(obj.key);
-			} catch (e) {
+				return guiconfig.usrpref.getCharPref(opt.key);
+			}
+			catch (e) {
 				return null;
 			}
 		},
-		set : function(obj, value) {
-			if (value == null) return false;
+		set: function(opt, value) {
+			if(value == null)
+				return false;
+
+			guiconfig.pref.setCharPref(opt.key, value);
+			guiconfig.setBindings(opt, "setCharPref", value);
 			
-			guiconfig.pref.setCharPref(obj.key, value);
-			
-			if (obj.bind) {
-				if (typeof obj.bind == "array")
-					for (var i = 0; i < obj.bind.length; i++)
-						guiconfig.usrpref.setCharPref(obj.bind[i], value);
-				if (typeof obj.bind == "string")
-					guiconfig.usrpref.setCharPref(obj.bind, value);
-			}
 			return true;
 		},
-		exists: function(obj) {
-			return (obj.handle.get(obj) != null);
+		exists: function(opt) {
+			return opt.handle.get(opt) != null;
 		},
-		value : function(obj, value) {
-			if(obj.type == "color") {
-				if(!value)
-					return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).color : null;
-				else {
-					document.getElementById(obj.key).color = value;
-					return true;
-				}
-			}
+		value: function(opt, value) {
+			var attribute = opt.type == "color" ? "color" : "value";
+			if(!$defined(value))
+				return guiconfig.optionExists(opt) ? document.getElementById(opt.key)[attribute] : null;
 			else {
-				if(!value)
-					return (guiconfig.optionExists(obj)) ? document.getElementById(obj.key).value : null;
-				else {
-					document.getElementById(obj.key).value = value;
-					return true;
-				}
+				document.getElementById(opt.key)[attribute] = value;
+				return true;
 			}
 		},
-		reset : function(obj) {
+		reset: function(opt) {
 			try {
-				return guiconfig.usrpref.clearUserPref(obj.key);
-			} catch (e) {
+				return guiconfig.usrpref.clearUserPref(opt.key);
+			}
+			catch (e) {
 				return false;
 			}
 		}
 	}
-}
+};

@@ -8,4 +8,6 @@ skin		guiconfig		classic/1.0		skin/tango/
 
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul
-style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/content/style/gcbutton.css
+
+style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
+style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcbutton.css

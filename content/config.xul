@@ -20,7 +20,7 @@
 		<stringbundle id="gc_locale" src="chrome://guiconfig/locale/gcLocale.properties"/>
 	</stringbundleset>
 	
-	<menupopup id="gcrightclick_prototype">
+	<menupopup id="gcoptrightclick">
 		<menuitem label="&config.todefault;" class="menuitem-iconic" id="gcrcDefault" value="reset"/>
 	</menupopup>
 
@@ -31,8 +31,6 @@
 	<script type="application/javascript" src="gconfig.core.js"/>
 	<script type="application/javascript" src="gconfig.type.js"/>
 	<script type="application/javascript" src="gconfig.options.js"/>
-	<script type="application/javascript">
-		guiconfig.init();
-	</script>
+	<script type="application/javascript">guiconfig.init();</script>
 	
 </dialog>
