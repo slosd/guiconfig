@@ -1,6 +1,6 @@
 content		guiconfig		jar:chrome/guiconfig.jar!/content/
 
-skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/tango/
+skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/
 
 style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
 

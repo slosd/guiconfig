@@ -1,6 +1,6 @@
 var guiconfig = {
 	
-	pref: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch(""),
+	pref: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch(null),
 	
 	init: function() {
 		window.addEventListener("load", this.placeMenuItem, false);
@@ -17,21 +17,24 @@ var guiconfig = {
 			return;
 
 		switch(data) {
-			case "extensions.guiconfig.sticktopreferences":
+			case 'extensions.guiconfig.sticktopreferences':
 				guiconfig.placeMenuItem();
 				break;
-			/*case "matchversion":
-				if(!this.configWindow) break;
-				this.configWindow.guiconfig.updatePreferences();
-			break;*/
-			case "browser.preferences.instantApply":
+			
+			case "extensions.guiconfig.matchversion":
+				if(this.configIsOpen())
+					this.configWindow.guiconfig.updatePreferences();
+				break;
+			
+			case 'browser.preferences.instantApply':
 				if(this.configIsOpen())
 					this.configWindow.guiconfig.setButtons();
+			
+			default:
+				if(this.configIsOpen())
+					this.configWindow.guiconfig.observeOption.call(this.configWindow.guiconfig, data);
 				break;
 		}
-
-		if(this.configIsOpen())
-			this.configWindow.guiconfig.observeOption(data);
 	},
 	
 	firstrun: function() {
@@ -63,14 +66,14 @@ var guiconfig = {
 	},
 	
 	openWindow: function() {
-		if(this.configWindow && !this.configWindow.closed)
+		if(this.configIsOpen())
 			this.configWindow.focus();
 		else
 			this.configWindow = window.open("chrome://guiconfig/content/config.xul", "gcwindow", "chrome");
 	},
 	
 	configIsOpen: function() {
-		return (this.configWindow && !this.configWindow.closed);
+		return (!!this.configWindow && !this.configWindow.closed);
 	}
 }
 guiconfig.init();
