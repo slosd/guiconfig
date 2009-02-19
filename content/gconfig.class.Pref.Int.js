@@ -13,8 +13,9 @@ IntPreference.prototype = new Preference;
  * @description Set the value of an element representing a preference
  * @param {int} v
  */
-IntPreference.prototype.setValue = function(v) {
-	var value = __(v, this.getPref());
+IntPreference.prototype.setValue = function(value) {
+	if(!$defined(value))
+		var value = this.getPref();
 	switch(this.Options.type) {
 		case 'select':
 			if(!this.Elements.option.menupopup)

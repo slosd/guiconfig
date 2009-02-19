@@ -22,11 +22,24 @@
 			</tab>
 			<tab label="awesomebar" minVersion="3.*">
 				<pref key="browser.urlbar.maxRichResults" />
-				<pref key="browser.urlbar.restrict.tag" minVersion="3.1.*" />
-				<pref key="browser.urlbar.restrict.history" minVersion="3.1.*" />
-				<pref key="browser.urlbar.restrict.bookmark" minVersion="3.1.*" />
-				<pref key="browser.urlbar.match.url" minVersion="3.1.*" />
-				<pref key="browser.urlbar.match.title" minVersion="3.1.*" />
+				<pref key="guiconfig.urlbar.restrict" minVersion="3.1.*" config="Int" type="select">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<bind>
+						<pref key="browser.urlbar.restrict.tag" config="Char" />
+						<pref key="browser.urlbar.restrict.history" config="Char" />
+						<pref key="browser.urlbar.restrict.bookmark" config="Char" />
+					</bind>
+				</pref>
+				<pref key="guiconfig.urlbar.match" minVersion="3.1.*" config="Int" type="select">
+					<option>0</option>
+					<option>1</option>
+					<bind>
+						<pref key="browser.urlbar.match.url" config="Bool" />
+						<pref key="browser.urlbar.match.title" config="Bool" />
+					</bind>
+				</pref>
 			</tab>
 			<tab label="misc">
 				<group label="popup">

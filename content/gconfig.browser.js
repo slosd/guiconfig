@@ -1,15 +1,14 @@
 var guiconfig = {
 	
-	pref: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch(null),
+	MozPrefs: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService),
 	
 	init: function() {
+		this.MozPreferences = this.MozPrefs.getBranch(null);
+		
 		window.addEventListener("load", this.placeMenuItem, false);
-		this.pref.QueryInterface(Components.interfaces.nsIPrefBranch2);
-		this.pref.addObserver("", this, false);
-		/*if (this.pref.getBoolPref("firstrun")) {
-			this.pref.setBoolPref("firstrun", false);
-			this.firstrun();
-		}*/
+		
+		this.MozPrefs.QueryInterface(Components.interfaces.nsIPrefBranch2);
+		this.MozPrefs.addObserver("", this, false);
 	},
 	
 	observe: function(subject, topic, data) {
@@ -37,16 +36,8 @@ var guiconfig = {
 		}
 	},
 	
-	firstrun: function() {
-	/*var navToolbar = document.getElementById("nav-bar");
-	var search = document.getElementById("search-container");
-	if (navToolbar.currentSet.indexOf("gcButtonPref") == -1)
-		navToolbar.insertItem("gcButtonPref", search, null, false);
-	document.persist("nav-bar", "currentset");*/
-	},
-	
 	placeMenuItem: function() {
-		var stick = guiconfig.pref.getBoolPref("extensions.guiconfig.sticktopreferences");
+		var stick = guiconfig.MozPreferences.getBoolPref("extensions.guiconfig.sticktopreferences");
 		var tools_menu = document.getElementById("menu_ToolsPopup");
 		var pref_menuitem = document.getElementById("menu_preferences");
 		var gc_menuitem = document.getElementById("gcToolsItem");
@@ -76,4 +67,3 @@ var guiconfig = {
 		return (!!this.configWindow && !this.configWindow.closed);
 	}
 }
-guiconfig.init();

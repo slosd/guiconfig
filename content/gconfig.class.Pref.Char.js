@@ -13,8 +13,9 @@ CharPreference.prototype = new Preference;
  * @description Set the value of an element representing a preference
  * @param {str} v
  */
-CharPreference.prototype.setValue = function(v) {
-	var value = __(v, this.getPref());
+CharPreference.prototype.setValue = function(value) {
+	if(!$defined(value))
+		var value = this.getPref();
 	switch(this.Options.type) {		
 		case 'select':
 			if(!this.Elements.option.menupopup)
@@ -57,7 +58,6 @@ CharPreference.prototype.getValue = function() {
 
 /**
  * @description Build the elements for a string preference
- * TODO add file selection
  */
 CharPreference.prototype.build = function() {
 	this._parent_.build.call(this);

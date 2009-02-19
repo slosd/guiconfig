@@ -6,6 +6,7 @@
 var Preference = function(key, type, options) {
 	this.key = __(key, "");
 	this.type = __(type, "");
+	this.Bind = new Object;
 	this.Options = __(options, new Object);
 	this.Elements = { Buttons: new Object };
 	this.name = guiconfig.getLocaleString(this.key.replace(/\./g, "_") + "_name", guiconfig.LocaleOptions);
@@ -49,11 +50,15 @@ Preference.instance = function(pref) {
 	return new window[type + "Preference"](key, type, options);
 }
 
+Preference.customBinding = function(key, proto) {
+	var bind_functions = guiconfig.Preferences[key].Bind;
+	for(var i in proto)
+		bind_functions[i] = proto[i];
+}
+
 Preference.prototype.onvaluechange = function() {
 	if(!guiconfig.MozPreferences.getBoolPref("browser.preferences.instantApply"))
 		return false;
-	for(var i = 0, l = this.Options.bindings.length; i < l; i++)
-		this.Options.bindings[i].setPref();
 	return this.setPref();
 }
 
@@ -83,10 +88,16 @@ Preference.prototype.getPref = function(def) {
  * @param {} v
  * @return {bool}
  */
-Preference.prototype.setPref = function(v) {
-	var value = __(v, this.getValue());	
+Preference.prototype.setPref = function(value) {
+	if(!$defined(value))
+		var value = this.getValue();
 	guiconfig.stop_option_observation = true;
-	this.preferences["set" + this.type + "Pref"](this.key, value);	
+	if($defined(this.Bind.setPref))
+		this.Bind.setPref.call(this, value);
+	else
+		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
+			this.Options.bindings[i].setPref();
+	this.preferences["set" + this.type + "Pref"](this.key, value);
 	guiconfig.stop_option_observation = false;
 	return true;
 }
@@ -98,6 +109,11 @@ Preference.prototype.setPref = function(v) {
 Preference.prototype.reset = function() {
 	try {
 		this.preferences.clearUserPref(this.key);
+		if($defined(this.Bind.reset))
+			this.Bind.reset.call(this);
+		else
+			for(var i = 0, l = this.Options.bindings.length; i < l; i++)
+				this.Options.bindings[i].reset();
 		this.onprefchange(true);
 		return true;
 	}

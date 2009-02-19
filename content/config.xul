@@ -39,5 +39,6 @@
 	<script type="application/javascript" src="gconfig.class.Pref.Int.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.Char.js"/>
 	<script type="application/javascript">guiconfig.init();</script>
+	<script type="application/javascript" src="preferences.js"/>
 	
 </dialog>

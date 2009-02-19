@@ -13,8 +13,9 @@ BoolPreference.prototype = new Preference;
  * @description Set the value of an element representing a preference
  * @param {bool} v
  */
-BoolPreference.prototype.setValue = function(v) {
-	var value = __(v, this.getPref());
+BoolPreference.prototype.setValue = function(value) {
+	if(!$defined(value))
+		var value = this.getPref();
 	this.Elements.option.setAttribute("checked", !!value);
 }
 

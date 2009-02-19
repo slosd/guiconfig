@@ -14,11 +14,12 @@ var guiconfig = {
 	Options: new Object,
 	PrefTree: null,
 	Preferences: new Object,
+	PseudoPreferences: new Object,
 	
 	stop_option_observation: false,
 	created_preferences: false,
 	
-	init: function() {		
+	init: function() {
 		this.IconSet = new IconSet("tango", { os: this.MozRuntime.OS });
 		
 		this.MozPreferences = this.MozPrefs.getBranch(null);
@@ -147,8 +148,6 @@ var guiconfig = {
 	fileInput: function(title) {		
 		var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(this.MozFilePicker);
 		fp.init(window, title, this.MozFilePicker.modeOpen);
-		// TODO add filter support
-		// fp.appendFilter(null, this.Options.fileFilter);
 		fp.appendFilters(this.MozFilePicker.filterAll);
 		var status = fp.show();
 		if (status == this.MozFilePicker.returnOK)
@@ -161,10 +160,7 @@ var guiconfig = {
 		if(!this.GCPreferences.getBoolPref("matchversion"))
 			return true;
 		//TODO add validation for minVersion/maxVersion
-		if(child.getAttribute("minVersion"))
-			return !child.getAttribute("minVersion").match(/^3/);
-		else
-			return true;
+		return true;
 	},
 
 	createPreferences: function() {
