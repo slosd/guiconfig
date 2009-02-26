@@ -7,7 +7,7 @@ var Preference = function(key, type, options) {
 	this.key = __(key, "");
 	this.type = __(type, "");
 	this.Bind = new Object;
-	this.Options = __(options, new Object);
+	this.Options = __(options, new Object);	
 	this.Elements = { Buttons: new Object };
 	this.name = guiconfig.getLocaleString(this.key.replace(/\./g, "_") + "_name", guiconfig.LocaleOptions);
 	this.description = guiconfig.getLocaleString(this.key.replace(/\./g, "_") + "_description", guiconfig.LocaleOptions);
@@ -24,26 +24,32 @@ Preference.instance = function(pref) {
 		"32": "Char",
 		"64": "Int",
 		"128": "Bool"
-	}[guiconfig.MozPreferences.getPrefType(key)], pref.getAttribute("config"), null);
+	}[gcCore.MozPreferences.getPrefType(key)], pref.getAttribute("config"), null);
 	var options = {
 		type: __(pref.getAttribute("type"), "default"),
 		indent: !!pref.getAttribute("indent"),
+		version: __(pref.getAttribute("version"), null),
 		minVersion: __(pref.getAttribute("minVersion"), null),
 		maxVersion: __(pref.getAttribute("maxVersion"), null),
 		validValues: new Array,
-		bindings: new Array
+		bindings: new Array,
+		fileFilters: new Array
 	};
-	for(var children = pref.childNodes, i = 0, l = children.length, child; i < l; i++) {
+	for(var children = pref.childNodes, i = 0, l = children.length, data, child; i < l; i++) {
 		child = children[i];
 		switch(child.nodeName) {
 			case 'option':
-				options.validValues.push(child.firstChild.data);
+				data = child.firstChild.data;
+				options.validValues.push(type=="Int"?parseInt(data):(type=="Bool"?!!data:data));
 				break;
 			case 'bind':
 				for(var bindings = child.childNodes, e = 0, bl = bindings.length, binding; e < bl; e++) {
 					binding = bindings[e];
 					binding.nodeName == "pref" && options.bindings.push(Preference.instance(binding));
 				}
+				break;
+			case 'filter':
+				options.fileFilters.push("filter" + child.firstChild.data);
 				break;
 		}
 	}
@@ -57,7 +63,7 @@ Preference.customBinding = function(key, proto) {
 }
 
 Preference.prototype.onvaluechange = function() {
-	if(!guiconfig.MozPreferences.getBoolPref("browser.preferences.instantApply"))
+	if(!gcCore.MozPreferences.getBoolPref("browser.preferences.instantApply"))
 		return false;
 	return this.setPref();
 }
@@ -76,7 +82,7 @@ Preference.prototype.onprefchange = function() {
  */
 Preference.prototype.getPref = function(def) {
 	try {
-		return this.preferences["get" + this.type + "Pref"](this.key);
+		return gcCore.MozPreferences["get" + this.type + "Pref"](this.key);
 	}
 	catch (e) {
 		return __(def, null);
@@ -96,8 +102,8 @@ Preference.prototype.setPref = function(value) {
 		this.Bind.setPref.call(this, value);
 	else
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
-			this.Options.bindings[i].setPref();
-	this.preferences["set" + this.type + "Pref"](this.key, value);
+			this.Options.bindings[i].setPref(value);
+	gcCore.MozPreferences["set" + this.type + "Pref"](this.key, value);
 	guiconfig.stop_option_observation = false;
 	return true;
 }
@@ -108,7 +114,7 @@ Preference.prototype.setPref = function(value) {
  */
 Preference.prototype.reset = function() {
 	try {
-		this.preferences.clearUserPref(this.key);
+		gcCore.MozPreferences.clearUserPref(this.key);
 		if($defined(this.Bind.reset))
 			this.Bind.reset.call(this);
 		else
@@ -222,10 +228,11 @@ Preference.prototype.addButton = function(type) {
 			this.Elements.Buttons[type].setAttribute("image", guiconfig.IconSet.getIcon("color"));
 			this.Elements.Buttons[type].addEventListener("click", function(Preference) {
 				return function() {
-					var input = guiconfig.userInput("gui:config", guiconfig.getLocaleString("fill-in-value", guiconfig.LocaleOptions));
+					var input = gcCore.userInput("gui:config", guiconfig.getLocaleString("fill-in-value", guiconfig.LocaleOptions));
 					if(input != null) {
 						Preference.disabled = false;
 						Preference.setValue(input);
+						Preference.onvaluechange();
 					}
 				}
 			}(this), false);
@@ -235,10 +242,11 @@ Preference.prototype.addButton = function(type) {
 			this.Elements.Buttons[type].setAttribute("label", guiconfig.getLocaleString("button-file-select", guiconfig.LocaleOptions));
 			this.Elements.Buttons[type].addEventListener("click", function(Preference) {
 				return function() {
-					var input = guiconfig.fileInput(guiconfig.getLocaleString("choose-file", guiconfig.LocaleOptions));
+					var input = gcCore.fileInput(guiconfig.getLocaleString("choose-file", guiconfig.LocaleOptions), Preference.Options.fileFilters);
 					if(input) {
 						Preference.disabled = false;
 						Preference.setValue(input.path);
+						Preference.onvaluechange();
 					}
 				}
 			}(this), false);
@@ -278,8 +286,3 @@ Preference.prototype.__defineSetter__("disabled", function(value) {
 Preference.prototype.__defineGetter__("disabled", function() {
 	return this.Options.disabled;
 });
-
-/**
- * @description Current Firefox preferences
- */
-Preference.prototype.preferences = guiconfig.MozPrefs.getBranch(null);

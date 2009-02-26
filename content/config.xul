@@ -34,6 +34,7 @@
 	<description id="gcConfigDescription" flex="1">&config.descr.standard;</description>
 
 	<script type="application/javascript" src="gconfig.core.js"/>
+	<script type="application/javascript" src="gconfig.config.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.Bool.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.Int.js"/>

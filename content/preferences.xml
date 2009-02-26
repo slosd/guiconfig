@@ -23,6 +23,7 @@
 			<tab label="awesomebar" minVersion="3.*">
 				<pref key="browser.urlbar.maxRichResults" />
 				<pref key="guiconfig.urlbar.restrict" minVersion="3.1.*" config="Int" type="select">
+					<option>-1</option>
 					<option>0</option>
 					<option>1</option>
 					<option>2</option>
@@ -32,12 +33,13 @@
 						<pref key="browser.urlbar.restrict.bookmark" config="Char" />
 					</bind>
 				</pref>
-				<pref key="guiconfig.urlbar.match" minVersion="3.1.*" config="Int" type="select">
+				<pref key="guiconfig.urlbar.match" config="Int" type="select">
+					<option>-1</option>
 					<option>0</option>
 					<option>1</option>
 					<bind>
-						<pref key="browser.urlbar.match.url" config="Bool" />
-						<pref key="browser.urlbar.match.title" config="Bool" />
+						<pref key="browser.urlbar.match.url" minVersion="3.1.*" config="Char" />
+						<pref key="browser.urlbar.match.title" minVersion="3.1.*" config="Char" />
 					</bind>
 				</pref>
 			</tab>
@@ -72,6 +74,8 @@
 						<pref key="update_notifications.enabled" config="Bool" />
 					</bind>
 				</pref>
+				<pref key="browser.download.manager.showAlertOnComplete" />
+				<pref key="browser.download.manager.showAlertInterval" indent="indent" />
 				<separator />
 				<pref key="alerts.slideIncrement" />
 				<pref key="alerts.slideIncrementTime" />
@@ -92,6 +96,13 @@
 				<pref key="browser.cache.memory.enable" />
 				<pref key="browser.cache.memory.capacity" indent="indent" config="Int" />
 			</tab>
+			<tab label="misc">
+				<group label="downloadmanager">
+					<pref key="browser.download.manager.focusWhenStarting" />
+					<pref key="browser.download.manager.alertOnEXEOpen" config="Bool" />
+					<pref key="browser.download.lastDir" config="Char" />
+				</group>
+			</tab>
 		</tabs>
 	</panel>
 	<panel label="style">
@@ -103,7 +114,7 @@
 					</bind>
 				</pref>
 				<pref key="browser.chrome.toolbar_tips" />
-				<pref key="browser.urlbar.hideGoButton" minVersion="2.*" />
+				<pref key="browser.urlbar.hideGoButton" version="2.*" config="Bool" />
 				<pref key="browser.preferences.animateFadeIn" />
 				<pref key="browser.tabs.closeButtons" type="select" minVersion="2.*">
 					<option>0</option>
@@ -125,17 +136,6 @@
 			</tab>
 		</tabs>
 	</panel>
-	<panel label="downloads">
-		<group label="downloadmanager">
-			<pref key="browser.download.manager.focusWhenStarting" />
-			<pref key="browser.download.manager.alertOnEXEOpen" config="Bool" />
-			<pref key="browser.download.lastDir" config="Char" />
-		</group>
-		<group label="alerts">
-			<pref key="browser.download.manager.showAlertOnComplete" />
-			<pref key="browser.download.manager.showAlertInterval" />
-		</group>
-	</panel>
 	<panel label="bookmarks">
 		<tabs>
 			<tab label="misc">
@@ -154,12 +154,14 @@
 	<panel label="developing">
 		<group label="viewsource">
 			<pref key="view_source.editor.external" />
-			<pref key="view_source.editor.path" type="file" indent="indent" />
+			<pref key="view_source.editor.path" type="file" indent="indent">
+				<filter>Apps</filter>
+			</pref>
 		</group>
 		<group label="misc">
 			<pref key="browser.dom.window.dump.enabled" config="Bool" />
-			<pref key="javascript.options.strict" />
-			<pref key="nglayout.debug.disable_xul_cache" />
+			<pref key="javascript.options.strict" config="Bool" />
+			<pref key="nglayout.debug.disable_xul_cache" config="Bool" />
 		</group>
 	</panel>
 </preferences>

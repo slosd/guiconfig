@@ -1,5 +1,5 @@
 content		guiconfig 		content/
-locale		guiconfig		de-DE			locale/de-DE/
+locale		guiconfig		de-DE			locale/en-US/
 
 skin		guiconfig		classic/1.0		skin/
 

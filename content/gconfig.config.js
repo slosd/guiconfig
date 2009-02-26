@@ -2,13 +2,6 @@ var guiconfig = {
 	
 	LocaleOptions: document.getElementById("opt_locale"),
 	LocaleGConfig: document.getElementById("gc_locale"),
-	
-	MozPrefs: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService),
-	MozPrompt: Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService),
-	MozInfo: Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULAppInfo),
-	MozRuntime: Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULRuntime),
-	MozSerializer: Components.classes["@mozilla.org/xmlextras/xmlserializer;1"].createInstance(Components.interfaces.nsIDOMSerializer),
-	MozFilePicker: Components.interfaces.nsIFilePicker,
 
 	Elements: new Object,
 	Options: new Object,
@@ -20,10 +13,7 @@ var guiconfig = {
 	created_preferences: false,
 	
 	init: function() {
-		this.IconSet = new IconSet("tango", { os: this.MozRuntime.OS });
-		
-		this.MozPreferences = this.MozPrefs.getBranch(null);
-		this.GCPreferences = this.MozPrefs.getBranch("extensions.guiconfig.");
+		this.IconSet = new IconSet("tango", { os: gcCore.MozRuntime.OS });
 		
 		var request = new XMLHttpRequest();
 		request.open("GET", "chrome://guiconfig/content/preferences.xml", false); 
@@ -51,7 +41,7 @@ var guiconfig = {
 	},
 
 	setButtons: function() {
-		if(this.MozPreferences.getBoolPref("browser.preferences.instantApply") == true) {
+		if(gcCore.MozPreferences.getBoolPref("browser.preferences.instantApply") == true) {
 			this.Elements.window.buttons = "cancel,extra1";
 			var button = this.Elements.window.getButton("cancel");
 			button.setAttribute("label", this.getLocaleString("close", this.LocaleGConfig));
@@ -83,24 +73,20 @@ var guiconfig = {
 	},
 
 	resetToDefault: function() {
-		if(!this.GCPreferences.getBoolPref("todefault.ask"))
+		if(!gcCore.GCPreferences.getBoolPref("todefault.ask"))
 			return this.resetPreferences();
 		
-		var ask = { value: true };
+		var reset = gcCore.userConfirm("gui:config", this.getLocaleString("confirm-std", this.LocaleGConfig), this.getLocaleString("dont-ask", this.LocaleGConfig), true);
 
-		var reset_options = this.MozPrompt.confirmCheck(null, "gui:config",
-			this.getLocaleString("confirm-std", this.LocaleGConfig),
-			this.getLocaleString("dont-ask", this.LocaleGConfig), ask);
-
-		if(reset_options) {
-			this.GCPreferences.setBoolPref("todefault.ask", ask.value);
+		if(reset.value) {
+			gcCore.GCPreferences.setBoolPref("todefault.ask", reset.checked);
 			return this.resetPreferences();
 		}
 	},
 	
 	savePreferences: function() {
 		var Pref;
-		for (var key in this.Preferences) {
+		for(var key in this.Preferences) {
 			Preference = this.Preferences[key];
 			if(!Preference.disabled)
 				Preference.setPref();
@@ -109,14 +95,14 @@ var guiconfig = {
 	},
 
 	resetPreferences: function() {
-		for (var key in this.Preferences)
+		for(var key in this.Preferences)
 			this.Preferences[key].reset();
 		return true;
 	},
 	
 	updatePreferences: function() {
 		var option;
-		for (var key in this.Preferences)
+		for(var key in this.Preferences)
 			this.Preferences[key].setValue();
 		return true;
 	},
@@ -127,37 +113,9 @@ var guiconfig = {
 		else if($defined(this.Preferences[key]))
 			return this.Preferences[key].onprefchange();
 	},
-	
-	userInput: function(title, label) {
-		var input = {
-			value: ""
-		};
-
-		var check = {
-			value: false
-		};
-
-		var change_value = this.MozPrompt.prompt(null, title, label, input, null, check);
-
-		if(change_value && input.value != "")
-			return input.value;
-		else
-			return null;
-	},
-	
-	fileInput: function(title) {		
-		var fp = Components.classes["@mozilla.org/filepicker;1"].createInstance(this.MozFilePicker);
-		fp.init(window, title, this.MozFilePicker.modeOpen);
-		fp.appendFilters(this.MozFilePicker.filterAll);
-		var status = fp.show();
-		if (status == this.MozFilePicker.returnOK)
-			return fp.file;
-		else
-			return false;
-	},
 
 	validatePref: function(child) {
-		if(!this.GCPreferences.getBoolPref("matchversion"))
+		if(!gcCore.GCPreferences.getBoolPref("matchversion"))
 			return true;
 		//TODO add validation for minVersion/maxVersion
 		return true;
@@ -299,27 +257,6 @@ var guiconfig = {
 
 		return menu;
 	}
-}
-
-var $defined = function(a) {
-	return (typeof a != "undefined" && a != null);
-}
-
-var __ = function() {
-	for(var i = 0, l = arguments.length; i < l; i++)
-		switch(typeof arguments[i]) {
-			case "undefined":
-				break;
-			case "function":
-				try { var r = arguments[i](); } catch(e) { break; }
-				return r;
-				break;
-			default:
-				if(arguments[i] != null)
-					return arguments[i];
-				break;
-		}
-	return null;
 }
 
 var IconSet = function(theme, options) {
