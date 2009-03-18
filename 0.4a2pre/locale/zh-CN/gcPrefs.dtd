@@ -1,4 +1,0 @@
-<!ENTITY prefs.label "选项">
-<!ENTITY prefs.todefault.ask "恢复默认值前提示">
-<!ENTITY prefs.matchversion "只显示和当前浏览器版本相符的选项">
-<!ENTITY prefs.sticktopreferences "将 gui:config 菜单项添加到“选项...”下方">
