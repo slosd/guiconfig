@@ -20,7 +20,7 @@
 		<stringbundle id="gc_locale" src="chrome://guiconfig/locale/gcLocale.properties"/>
 	</stringbundleset>
 	
-	<menupopup id="gcoptrightclick">
+	<menupopup id="gcoptrightclick" onpopupshowing="return guiconfig.buildContextMenu(this, document.popupNode);">
 		<menuitem label="&config.todefault;" class="menuitem-iconic" id="gcrcDefault" value="reset"/>
 	</menupopup>
 

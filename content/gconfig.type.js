@@ -3,7 +3,7 @@ guiconfig.__proto__ = {
 		write: function(opt) {
 			opt.elements = {
 				option: new Array,
-				buttons: new Array
+				buttons: new Object
 			}
 			
 			var option_element = document.createElement("checkbox");
@@ -16,7 +16,7 @@ guiconfig.__proto__ = {
 				guiconfig.onOptChange(opt);
 			}, false);
 			
-			opt.elements.option.include(option_element);			
+			opt.elements.option.push(option_element);
 			
 			if(value != null)
 				option_element.setAttribute("checked", value);
@@ -28,8 +28,8 @@ guiconfig.__proto__ = {
 		disable: function(opt, button) {
 			for(var i = 0; i < opt.elements.option.length; i++)
 				opt.elements.option[i].setAttribute("disabled", true);
-			if(button && !opt.button_edit)
-				opt.elements.buttons.include(guiconfig.addOptButton("edit", opt, opt.elements));
+			if(button && !$defined(opt.elements.buttons["edit"]))
+				opt.elements.buttons["edit"] = guiconfig.addOptButton("edit", opt, opt.elements);
 		},
 		get: function(opt) {
 			try {
@@ -42,7 +42,7 @@ guiconfig.__proto__ = {
 		set: function(opt, value) {
 			if(value == null)
 				return false;
-			
+				
 			guiconfig.pref.setBoolPref(opt.key, value);
 			guiconfig.setBindings(opt, "setBoolPref", value);
 			
@@ -79,14 +79,14 @@ guiconfig.__proto__ = {
 			label.setAttribute("value", opt.name);
 			label.setAttribute("control", opt.key);
 			label.setAttribute("class", "optionLabel");
-			opt.elements.option.include(label);
+			opt.elements.option.push(label);
 			
 			var value = guiconfig.getOption(opt);
 			
 			if(opt.type == "select") {
 				var option_element = guiconfig.buildSelect(opt, value);
 
-				option_element.addEventListener("change", function() {
+				option_element.addEventListener("command", function() {
 					guiconfig.onOptChange(opt);
 				}, false);
 			}
@@ -102,7 +102,7 @@ guiconfig.__proto__ = {
 			
 			option_element.setAttribute("id", opt.key);
 			
-			opt.elements.option.include(option_element);
+			opt.elements.option.push(option_element);
 
 			if(value == null)
 				opt.handle.disable(opt, true);
@@ -112,8 +112,8 @@ guiconfig.__proto__ = {
 		disable: function(opt, button) {
 			for(var i = 0; i < opt.elements.option.length; i++)
 				opt.elements.option[i].setAttribute("disabled", true);
-			if(button && !opt.button_edit)
-				opt.elements.buttons.include(guiconfig.addOptButton("edit", opt, opt.elements));
+			if(button && !$defined(opt.elements.buttons["edit"]))
+				opt.elements.buttons["edit"] = guiconfig.addOptButton("edit", opt, opt.elements);
 		},
 		get: function(opt) {
 			try {
@@ -163,12 +163,16 @@ guiconfig.__proto__ = {
 			label.setAttribute("value", opt.name);
 			label.setAttribute("control", opt.key);
 			label.setAttribute("class", "optionLabel");
-			opt.elements.option.include(label);
+			opt.elements.option.push(label);
 
 			var value = guiconfig.getOption(opt);
 			
 			if(opt.type == "select") {
-				var option_element = guiconfig.toSelect(opt, value);
+				var option_element = guiconfig.buildSelect(opt, value);
+
+				option_element.addEventListener("command", function() {
+					guiconfig.onOptChange(opt);
+				}, false);
 			}
 			else if(opt.type == "color") {
 				var option_element = document.createElement("colorpicker");
@@ -177,7 +181,8 @@ guiconfig.__proto__ = {
 				if(value != null)
 					option_element.setAttribute("color", value);
 				
-				opt.elements.buttons.include(guiconfig.addOptButton("color", opt, [label, option_element]));
+				if(!$defined(opt.elements.buttons["color"]))
+					opt.elements.buttons["color"] = guiconfig.addOptButton("color", opt, [label, option_element]);
 
 				option_element.addEventListener("change", function() {
 					guiconfig.onOptChange(opt);
@@ -201,7 +206,7 @@ guiconfig.__proto__ = {
 			
 			option_element.setAttribute("id", opt.key);
 			
-			opt.elements.option.include(option_element);
+			opt.elements.option.push(option_element);
 			
 			if(value == null)
 				opt.handle.disable(opt, true);
@@ -209,10 +214,12 @@ guiconfig.__proto__ = {
 			return opt.elements;
 		},
 		disable: function(opt, button) {
-			for(var i = 0; i < opt.elements.option.length; i++)
+			for(var i = 0; i < opt.elements.option.length; i++) {
+				opt.elements.option[i].disabled = true;
 				opt.elements.option[i].setAttribute("disabled", true);
-			if(button && !opt.button_edit)
-				opt.elements.buttons.include(guiconfig.addOptButton("edit", opt, opt.elements));
+			}
+			if(button && !$defined(opt.elements.buttons["edit"]))
+				opt.elements.buttons["edit"] = guiconfig.addOptButton("edit", opt, opt.elements);
 		},
 		get: function(opt) {
 			try {

@@ -2,11 +2,11 @@
 
 <project name="gui:config" default="dist">
 	<property name="src.dir" value="." />
-	<property name="dist.dir" value="/home/thomas/firefox-dev/guiconfig/dist" />
+	<property name="dist.dir" value="${basedir}/dist" />
 	<property name="app.name" value="guiconfig" />
 	<property name="app.id" value="guiconfig@slosd.net" />
 	<property name="app.version" value="0.4" />
-	<property name="app.build" value="alpha2" />
+	<property name="app.build" value="final" />
 	
 	<target name="chrome">
 		<mkdir dir="${dist.dir}" />
@@ -20,10 +20,10 @@
 				<include name="locale/pt-BR/**" />
 				<include name="locale/zh-TW/**" />
 				<include name="locale/zh-CN/**" />
-				<include name="locale/fr-FR/**" />
+				<!--<include name="locale/fr-FR/**" />
 				<include name="locale/es-ES/**" />
 				<include name="locale/nb-NO/**" />
-				<include name="locale/ru-RU/**" />
+				<include name="locale/ru-RU/**" />-->
 				<include name="skin/**" />
 				<exclude name="**/.*" />
 				<exclude name="**/CVS/**" />

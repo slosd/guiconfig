@@ -33,6 +33,7 @@ guiconfig.options[0] = {
 						},
 						{
 							handle: guiconfig.boolean,
+							version: "(3\..*)",
 							key: "browser.urlbar.doubleClickSelectsAll"
 						}
 					]
@@ -136,6 +137,9 @@ guiconfig.options[0] = {
 					}
 				},
 				{
+					element: "space"
+				},
+				{
 					handle: guiconfig.boolean,
 					key: "browser.urlbar.match.url",
 					version: "(3\.1\..*)",
@@ -196,9 +200,9 @@ guiconfig.options[0] = {
 				},
 				{
 					handle: guiconfig.integer,
+					type: "select",
 					key: "browser.backspace_action",
-					allowed: [0, 1, 2],
-					select: true
+					allowed: [0, 1, 2]
 				},
 				{
 					handle: guiconfig.boolean,

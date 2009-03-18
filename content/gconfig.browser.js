@@ -6,10 +6,6 @@ var guiconfig = {
 		window.addEventListener("load", this.placeMenuItem, false);
 		this.pref.QueryInterface(Components.interfaces.nsIPrefBranch2);
 		this.pref.addObserver("", this, false);
-		/*if (this.pref.getBoolPref("firstrun")) {
-			this.pref.setBoolPref("firstrun", false);
-			this.firstrun();
-		}*/
 	},
 	
 	observe: function(subject, topic, data) {
@@ -20,10 +16,7 @@ var guiconfig = {
 			case "extensions.guiconfig.sticktopreferences":
 				guiconfig.placeMenuItem();
 				break;
-			/*case "matchversion":
-				if(!this.configWindow) break;
-				this.configWindow.guiconfig.updatePreferences();
-			break;*/
+
 			case "browser.preferences.instantApply":
 				if(this.configIsOpen())
 					this.configWindow.guiconfig.setButtons();
@@ -32,14 +25,6 @@ var guiconfig = {
 
 		if(this.configIsOpen())
 			this.configWindow.guiconfig.observeOption(data);
-	},
-	
-	firstrun: function() {
-	/*var navToolbar = document.getElementById("nav-bar");
-	var search = document.getElementById("search-container");
-	if (navToolbar.currentSet.indexOf("gcButtonPref") == -1)
-		navToolbar.insertItem("gcButtonPref", search, null, false);
-	document.persist("nav-bar", "currentset");*/
 	},
 	
 	placeMenuItem: function() {
@@ -63,14 +48,13 @@ var guiconfig = {
 	},
 	
 	openWindow: function() {
-		if(this.configWindow && !this.configWindow.closed)
+		if(this.configIsOpen())
 			this.configWindow.focus();
 		else
 			this.configWindow = window.open("chrome://guiconfig/content/config.xul", "gcwindow", "chrome");
 	},
 	
 	configIsOpen: function() {
-		return (this.configWindow && !this.configWindow.closed);
+		return (!!this.configWindow && !this.configWindow.closed);
 	}
 }
-guiconfig.init();

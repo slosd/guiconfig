@@ -1,20 +1,19 @@
 content		guiconfig		jar:chrome/guiconfig.jar!/content/
 
-skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/tango/
-
-style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
+skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/
 
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul
 
-locale	guiconfig	en-US	jar:chrome/guiconfig.jar!/locale/en-US/
+style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
+style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcbutton.css
+
 locale	guiconfig	de-DE	jar:chrome/guiconfig.jar!/locale/de-DE/
+locale	guiconfig	en-US	jar:chrome/guiconfig.jar!/locale/en-US/
+locale	guiconfig	es-ES	jar:chrome/guiconfig.jar!/locale/es-ES/
 locale	guiconfig	it-IT	jar:chrome/guiconfig.jar!/locale/it-IT/
 locale	guiconfig	pl-PL	jar:chrome/guiconfig.jar!/locale/pl-PL/
 locale	guiconfig	pt-BR	jar:chrome/guiconfig.jar!/locale/pt-BR/
+locale	guiconfig	ru-RU	jar:chrome/guiconfig.jar!/locale/ru-RU/
 locale	guiconfig	zh-TW	jar:chrome/guiconfig.jar!/locale/zh-TW/
 locale	guiconfig	zh-CN	jar:chrome/guiconfig.jar!/locale/zh-CN/
-locale	guiconfig	fr-FR	jar:chrome/guiconfig.jar!/locale/fr-FR/
-locale	guiconfig	es-ES	jar:chrome/guiconfig.jar!/locale/es-ES/
-locale	guiconfig	nb-NO	jar:chrome/guiconfig.jar!/locale/nb-NO/
-locale	guiconfig	ru-RU	jar:chrome/guiconfig.jar!/locale/ru-RU/

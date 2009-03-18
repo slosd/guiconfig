@@ -12,5 +12,6 @@
 	</menupopup>
 	
 	<script type="application/javascript" src="gconfig.browser.js"/>
+	<script type="application/javascript">guiconfig.init();</script>
 	
 </overlay>

@@ -22,36 +22,20 @@ var guiconfig = {
 		this.setButtons();
 		this.buildRightClickMenu({
 			"reset": function() {
-				guiconfig.setPrefToDefault(guiconfig.active_option);
+				guiconfig.setPrefToDefault(this.popup.opt);
 			}
 		});
 		this.createPreferences();
-
-		/*for(var i in this.appinfo)
-			console.log(i + " = '" + this.appinfo[i] + "'");*/
 
 		//TODO find a convenient way to center the config.xul window
 		window.setTimeout(function() {
 			guiconfig.window.centerWindowOnScreen();
 		}, 200);
 	},
-	
-	/*addToQueue: function(action) {
-		if(this.usrpref.getBoolPref("browser.preferences.instantApply") == true)
-			return action();
-		this.queue.include((function(f) {
-			return f;
-		})(action));
-	},
-	
-	executeQueue: function() {
-		for(var i = 0; i < this.queue.length; i++)
-			this.queue[i]();
-	},*/
 
 	getIcons: function() {
-		var actions_path = "chrome://guiconfig/skin/actions/";
-		var tab_icons_path = "chrome://guiconfig/skin/tab_icons/";
+		var actions_path = "chrome://guiconfig/skin/tango/actions/";
+		var tab_icons_path = "chrome://guiconfig/skin/tango/tab_icons/";
 		var moz_stock = "moz-icon://stock/";
 
 		switch(this.runtime.OS) {
@@ -125,16 +109,11 @@ var guiconfig = {
 	},
 
 	getSelectLocaleStrings: function(opt, c) {
-		var e;
 		var a = new Array();
 		var n = opt.key.replace(/\./g, "_");
 
-		for (var i = 1; i <= c; i++) {
-			e = this.getLocaleString(n + "_o" + i);
-
-			if(e != null)
-				a[a.length] = e;
-		}
+		for (var i = 1; i <= c; i++)
+			a[a.length] = this.getLocaleString(n + "_o" + i);
 
 		return a;
 	},
@@ -168,10 +147,8 @@ var guiconfig = {
 	optionHandler: function(opt, type, value) {
 		if(typeof opt[type] == "function")
 			return opt[type](opt, value);
-
 		else if(typeof opt.handle[type] == "function")
 			return opt.handle[type](opt, value);
-
 		else
 			return null;
 	},
@@ -212,7 +189,6 @@ var guiconfig = {
 	},
 
 	savePreferences: function() {
-		//this.executeQueue();
 		return this.setPreferences(false);
 	},
 
@@ -222,13 +198,14 @@ var guiconfig = {
 
 	setPreferences: function(reset) {
 		var option;
-
-		for (var key in this.valid_options) {
+		this.stop_option_observation = true;
+		for (var key in this.valid_options) {			
 			option = this.valid_options[key];
 
 			if(!option.disabled)
 				(reset) ? this.resetOption(option) : (this.optionExists(option)) ? this.saveOption(option) : null;
 		}
+		this.stop_option_observation = false;
 		return true;
 	},
 
@@ -253,19 +230,12 @@ var guiconfig = {
 	},
 
 	observeOption: function(key) {
-		var option;
-		
 		if(this.stop_option_observation)
 			return false;
-		
-		for (var key in valid_options) {
-			option = this.valid_options[key];
-
-			if(option.key == key)
-				return this.updateOption(option);
-		}
-
-		return false;
+		else if($defined(this.valid_options[key]))
+			return this.updateOption(this.valid_options[key]);
+		else
+			return false;
 	},
 
 	addOptButton: function(name, opt, elements) {
@@ -274,33 +244,29 @@ var guiconfig = {
 
 		switch(name) {
 			case 'edit':
-				opt.button_edit = true;
 				button.setAttribute("label", this.getLocaleString("button-edit-enable"));
 				button.setAttribute("image", this.icons["add"]);
 				button.addEventListener("click", function() {
-					opt.button_edit = false;
-					guiconfig.enable(button, opt, elements);
+					guiconfig.enable(opt, elements);
 				}, false);
 				break;
 
 			case 'color':
-				opt.button_color = true;
 				button.setAttribute("label", this.getLocaleString("button-custom-value"));
 				button.setAttribute("image", this.icons["color"]);
 				button.addEventListener("click", function() {
-					opt.button_color = false;
-					guiconfig.colorValue(button, opt, elements);
+					guiconfig.colorValue(opt, elements);
 				}, false);
 				break;
 		}
 		return button;
 	},
 
-	enable: function(button, opt, elements) {
+	enable: function(opt, elements) {
 		if(this.optionExists(opt))
 			return false;
 			
-		button.parentNode.removeChild(button);
+		opt.elements.buttons["edit"].parentNode.removeChild(opt.elements.buttons["edit"]);
 
 		for (var i = 0; i < elements.length; i++)
 			elements[i].setAttribute("disabled", false);
@@ -321,7 +287,8 @@ var guiconfig = {
 			this.prompts.prompt(null, "gui:config", this.getLocaleString("fill-in-value"), input, null, check);
 
 		if(change_value && input.value != "") {
-			this.enable(button, opt, elements);
+			this.enable(opt, elements);
+			opt.elements.buttons["color"].parentNode.removeChild(opt.elements.buttons["color"]);
 			return this.setOption(opt, input.value);
 		}
 		return false;
@@ -510,15 +477,27 @@ var guiconfig = {
 		}
 		return true;
 	},
+	
+	buildContextMenu: function(popup, node) {
+		for(var i = 0; !$defined(node.gc_opt) && i < 3; i++)
+			node = node.parentNode;
+		if($defined(node.gc_opt)) {
+			popup.opt = node.gc_opt;
+			return true;
+		}
+		else
+			return false;
+	},
 
 	buildRightClickMenu: function(f) {
 		var value, menu = document.getElementById("gcoptrightclick"), menuitems = menu.childNodes;
 				
 		for (var i = 0; i < menuitems.length; i++) {
 			value = menuitems[i].getAttribute("value");
+			menuitems[i].popup = menu;
 
 			if($defined(f[value]))
-				menuitems[i].onclick = f[value];
+				menuitems[i].addEventListener("command", f[value], false);
 
 			if($defined(this.icons[value]))
 				menuitems[i].style.listStyleImage = "url(" + this.icons[value] + ")";
@@ -531,14 +510,38 @@ var guiconfig = {
 		var s = new Array, values = this.getSelectLocaleStrings(opt, opt.allowed.length);
 	
 		for (var i = 0; i < opt.allowed.length; i++) {
-			s.include([values[i], opt.allowed[i], (opt.allowed[i] == value)]);
+			s.push([values[i], opt.allowed[i], (opt.allowed[i] == value)]);
 		}
 		
-		return s.toMenuList(opt, value);
+		return this.buildMenuList.call(s, opt, value);
+	},
+	
+	buildMenuList: function(opt, value) {
+		var mi, ml = document.createElement("menulist"), id = opt.key;
+	
+		if(value == null)
+			ml.setAttribute("disabled", true);
+	
+		if(id)
+			ml.setAttribute("id", id);
+		var mp = document.createElement("menupopup");
+	
+		for (var i = 0; i < this.length; i++) {
+			mi = document.createElement("menuitem");
+			mi.setAttribute("label", this[i][0]);
+			mi.setAttribute("value", this[i][1]);
+	
+			if(this[i][2] == true)
+				mi.setAttribute("selected", true);
+			mi.setAttribute("crop", "end");
+			mp.appendChild(mi);
+		}
+		ml.appendChild(mp);
+		return ml;
 	},
 
 	buildOption: function(opt, ignore_validation) {
-		if(!this.validateOption(opt) && !ignore_validation)
+		if(!ignore_validation && !this.validateOption(opt))
 			return false;
 	
 		opt.name = this.getLocaleString(opt.key.replace(/\./g, "_") + "_name");
@@ -562,57 +565,23 @@ var guiconfig = {
 		}
 	
 		optBox.addEventListener("mouseover", function(e) {
-			guiconfig.active_option = e.currentTarget.gc_opt;
 			guiconfig.setDescription(opt.description);
 		}, false);
 	
 		for (var i = 0; i < optElements.option.length; i++)
 			optBox.appendChild(optElements.option[i]);
-	
-		for (var i = 0; i < optElements.buttons.length; i++)
-			buttonBox.appendChild(optElements.buttons[i]);
+		
+		for (var type in optElements.buttons)
+			buttonBox.appendChild(optElements.buttons[type]);
 		
 		optRow.appendChild(optBox);
-		
-		if(optElements.buttons.length > 0)
-			optRow.appendChild(buttonBox);
+		optRow.appendChild(buttonBox);
 	
 		return optRow;
 	}
 }
 
 /************************************************************************************************************************/
-
-Array.prototype.toMenuList = function(opt, value) {
-	var mi, ml = document.createElement("menulist"), id = opt.key;
-
-	if(value == null)
-		ml.setAttribute("disabled", true);
-
-	if(id)
-		ml.setAttribute("id", id);
-	var mp = document.createElement("menupopup");
-
-	for (var i = 0; i < this.length; i++) {
-		mi = document.createElement("menuitem");
-		mi.setAttribute("label", this[i][0]);
-		mi.setAttribute("value", this[i][1]);
-
-		if(this[i][2] == true)
-			mi.setAttribute("selected", true);
-		mi.setAttribute("crop", "end");
-		mp.appendChild(mi);
-	}
-	ml.appendChild(mp);
-	return ml;
-}
-
-Array.prototype.include = function() {
-	for (var i = 0; i < arguments.length; i++)
-		this[this.length] = arguments[i];
-
-	return this;
-}
 
 var $pick = function() {
 	for (var i = 0; i < arguments.length; i++)
