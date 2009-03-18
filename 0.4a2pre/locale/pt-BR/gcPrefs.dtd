@@ -1,4 +1,0 @@
-<!ENTITY prefs.label "Opções">
-<!ENTITY prefs.todefault.ask "Perguntar antes de restaurar valores originais">
-<!ENTITY prefs.matchversion "Mostrar apenas as opções compatíveis com sua versão do Firefox">
-<!ENTITY prefs.sticktopreferences "Exibir no menu a opção gui:config abaixo da opção &quot;Preferências&quot;">
