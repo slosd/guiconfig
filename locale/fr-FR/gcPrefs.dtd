@@ -1,4 +1,0 @@
-<!ENTITY prefs.label "Options">
-<!ENTITY prefs.todefault.ask "Demander avant la restauration des valeurs par défaut">
-<!ENTITY prefs.matchversion "Ne voir que les options compatibles avec votre version de Firefox">
-<!ENTITY prefs.sticktopreferences "Mettre le menu de gui:config après celui des préférences">
