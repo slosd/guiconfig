@@ -80,6 +80,9 @@ guiconfig.options[0] = {
 					key: "browser.urlbar.maxRichResults"
 				},
 				{
+					element: "space"
+				},
+				{
 					handle: guiconfig.boolean,
 					key: "browser.urlbar.restrict.tag",
 					version: "(3\.1\..*)",
