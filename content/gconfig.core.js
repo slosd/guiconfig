@@ -40,9 +40,11 @@ var guiconfig = {
 
 		switch(this.runtime.OS) {
 			case 'Linux':
-				this.addIcon("add", moz_stock + "gtk-add?size=button");
-				this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
-				this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
+				if(this.appinfo.version.indexOf("3") == 0) {
+					this.addIcon("add", moz_stock + "gtk-add?size=button");
+					this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
+					this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
+				}
 				break;
 
 			case 'WINNT': break;
