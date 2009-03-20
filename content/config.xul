@@ -5,6 +5,8 @@
 <!DOCTYPE dialog [
 	<!ENTITY % ffPrefMain SYSTEM "chrome://browser/locale/preferences/main.dtd" >
 	%ffPrefMain;
+	<!ENTITY % brandDTD SYSTEM "chrome://global/locale/brand.dtd">
+	%brandDTD;
 	<!ENTITY % gcMain SYSTEM "chrome://guiconfig/locale/gcLocale.dtd" >
 	%gcMain;
 ]>
@@ -36,10 +38,10 @@
 	<script type="application/javascript" src="gconfig.core.js"/>
 	<script type="application/javascript" src="gconfig.config.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.js"/>
+	<script type="application/javascript" src="preferences.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.Bool.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.Int.js"/>
 	<script type="application/javascript" src="gconfig.class.Pref.Char.js"/>
 	<script type="application/javascript">guiconfig.init();</script>
-	<script type="application/javascript" src="preferences.js"/>
 	
 </dialog>

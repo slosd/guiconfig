@@ -7,7 +7,7 @@ var guiconfig = {
 	Options: new Object,
 	PrefTree: null,
 	Preferences: new Object,
-	PseudoPreferences: new Object,
+	Bindings: new Object,
 	
 	stop_option_observation: false,
 	created_preferences: false,
@@ -76,10 +76,10 @@ var guiconfig = {
 		if(!gcCore.GCPreferences.getBoolPref("todefault.ask"))
 			return this.resetPreferences();
 		
-		var reset = gcCore.userConfirm("gui:config", this.getLocaleString("confirm-std", this.LocaleGConfig), this.getLocaleString("dont-ask", this.LocaleGConfig), true);
+		var reset = gcCore.userConfirm("gui:config", this.getLocaleString("confirm-std", this.LocaleOptions), this.getLocaleString("dont-ask", this.LocaleOptions), false);
 
 		if(reset.value) {
-			gcCore.GCPreferences.setBoolPref("todefault.ask", reset.checked);
+			gcCore.GCPreferences.setBoolPref("todefault.ask", !reset.checked);
 			return this.resetPreferences();
 		}
 	},
@@ -117,7 +117,18 @@ var guiconfig = {
 	validatePref: function(child) {
 		if(!gcCore.GCPreferences.getBoolPref("matchversion"))
 			return true;
-		//TODO add validation for minVersion/maxVersion
+		
+		var minVersion = child.getAttribute("minVersion"),
+			maxVersion = child.getAttribute("maxVersion");
+		
+		if(minVersion)
+			if(gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, minVersion) == -1)
+				return false;
+		
+		if(maxVersion)
+			if(gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, maxVersion) == 1)
+				return false;
+		
 		return true;
 	},
 
@@ -201,9 +212,12 @@ var guiconfig = {
 				
 				case 'pref':
 					preference = Preference.instance(child);
+					if(!preference)
+						break;
 					this.Preferences[preference.key] = preference;
 					container.appendChild(preference.build());
 					preference.onprefchange();
+					break;
 			}
 		}
 			
@@ -272,9 +286,11 @@ IconSet.prototype.getIcons = function() {
 
 	switch(this.Options.os) {
 		case 'Linux':
-			this.addIcon("add", moz_stock + "gtk-add?size=button");
-			this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
-			this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
+				if(this.appinfo.version.indexOf("3") == 0) {
+					this.addIcon("add", moz_stock + "gtk-add?size=button");
+					this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
+					this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
+				}
 			break;
 
 		case 'WINNT': break;
@@ -287,6 +303,7 @@ IconSet.prototype.getIcons = function() {
 	this.addIcon("tab_browser", tab_icons_path + "browser.png");
 	this.addIcon("tab_developing", tab_icons_path + "developing.png");
 	this.addIcon("tab_downloads", tab_icons_path + "downloads.png");
+	this.addIcon("tab_network", tab_icons_path + "network.png");
 	this.addIcon("tab_style", tab_icons_path + "style.png");
 }
 IconSet.prototype.addIcon = function(name, path) {

@@ -15,11 +15,6 @@ var guiconfig = {
 				guiconfig.placeMenuItem();
 				break;
 			
-			case "extensions.guiconfig.matchversion":
-				if(this.windowIsOpen("config"))
-					this.configWindow.guiconfig.updatePreferences();
-				break;
-			
 			case 'browser.preferences.instantApply':
 				if(this.windowIsOpen("config"))
 					this.configWindow.guiconfig.setButtons();

@@ -20,9 +20,9 @@
 				<pref key="browser.fixup.alternate.prefix" />
 				<pref key="browser.fixup.alternate.suffix" />
 			</tab>
-			<tab label="awesomebar" minVersion="3.*">
+			<tab label="awesomebar" minVersion="3.0">
 				<pref key="browser.urlbar.maxRichResults" />
-				<pref key="guiconfig.urlbar.restrict" minVersion="3.1.*" config="Int" type="select">
+				<pref key="guiconfig.urlbar.restrict" minVersion="3.1a" config="Int" type="select">
 					<option>-1</option>
 					<option>0</option>
 					<option>1</option>
@@ -33,20 +33,17 @@
 						<pref key="browser.urlbar.restrict.bookmark" config="Char" />
 					</bind>
 				</pref>
-				<pref key="guiconfig.urlbar.match" config="Int" type="select">
+				<pref key="guiconfig.urlbar.match" minVersion="3.1a" config="Int" type="select">
 					<option>-1</option>
 					<option>0</option>
 					<option>1</option>
 					<bind>
-						<pref key="browser.urlbar.match.url" minVersion="3.1.*" config="Char" />
-						<pref key="browser.urlbar.match.title" minVersion="3.1.*" config="Char" />
+						<pref key="browser.urlbar.match.url" config="Char" />
+						<pref key="browser.urlbar.match.title" config="Char" />
 					</bind>
 				</pref>
 			</tab>
 			<tab label="misc">
-				<group label="popup">
-					<pref key="browser.popups.showPopupBlocker" />
-				</group>
 				<pref key="accessibility.tabfocus" type="select">
 					<option>1</option>
 					<option>2</option>
@@ -59,8 +56,14 @@
 					<option>1</option>
 					<option>2</option>
 				</pref>
+				<pref key="signon.prefillForms" config="Bool" default="1">
+					<bind>
+						<pref key="signon.autofillForms" config="Bool" />
+					</bind>
+				</pref>
 				<pref key="browser.search.openintab" />
-				<pref key="browser.preferences.instantApply" minVersion="2.*" />
+				<pref key="browser.preferences.instantApply" minVersion="2.0" />
+				<pref key="browser.popups.showPopupBlocker" />
 				<pref key="accessibility.warn_on_browsewithcaret" />
 				<pref key="accessibility.accesskeycausesactivation" />
 			</tab>
@@ -69,9 +72,9 @@
 	<panel label="browser">
 		<tabs>
 			<tab label="alerts">
-				<pref key="update.showSlidingNotification" config="Bool">
+				<pref key="update.showSlidingNotification" config="Bool" default="1">
 					<bind>
-						<pref key="update_notifications.enabled" config="Bool" />
+						<pref key="update_notifications.enabled" config="Bool" default="1" />
 					</bind>
 				</pref>
 				<pref key="browser.download.manager.showAlertOnComplete" />
@@ -94,14 +97,19 @@
 				<pref key="browser.cache.disk_cache_ssl" indent="indent" />
 				<separator />
 				<pref key="browser.cache.memory.enable" />
-				<pref key="browser.cache.memory.capacity" indent="indent" config="Int" />
+				<pref key="browser.cache.memory.capacity" indent="indent" config="Int" default="-1" />
 			</tab>
-			<tab label="misc">
-				<group label="downloadmanager">
-					<pref key="browser.download.manager.focusWhenStarting" />
-					<pref key="browser.download.manager.alertOnEXEOpen" config="Bool" />
-					<pref key="browser.download.lastDir" config="Char" />
+			<tab label="extensions">
+				<pref key="extensions.checkCompatibility" minVersion="2.0b1" config="Bool" default="1" />
+				<group label="getaddons" minVersion="3.0">
+					<pref key="extensions.getAddons.showPane" />
+					<pref key="extensions.getAddons.maxResults" />
 				</group>
+			</tab>
+			<tab label="downloadmanager">
+				<pref key="browser.download.manager.focusWhenStarting" />
+				<pref key="browser.download.manager.alertOnEXEOpen" config="Bool" default="1" />
+				<pref key="browser.download.lastDir" config="Char" />
 			</tab>
 		</tabs>
 	</panel>
@@ -114,9 +122,9 @@
 					</bind>
 				</pref>
 				<pref key="browser.chrome.toolbar_tips" />
-				<pref key="browser.urlbar.hideGoButton" version="2.*" config="Bool" />
+				<pref key="browser.urlbar.hideGoButton" minVersion="2.0" maxVersion="2.*" config="Bool" />
 				<pref key="browser.preferences.animateFadeIn" />
-				<pref key="browser.tabs.closeButtons" type="select" minVersion="2.*">
+				<pref key="browser.tabs.closeButtons" type="select" minVersion="2.0">
 					<option>0</option>
 					<option>1</option>
 					<option>2</option>
@@ -124,10 +132,14 @@
 				</pref>
 			</tab>
 			<tab label="doc_style">
+				<group label="rendering">
+					<pref key="nglayout.initialpaint.delay" config="Int" default="250" />
+					<pref key="content.notify.interval" config="Int" default="120000" />
+				</group>
 				<pref key="browser.display.show_image_placeholders" />
+				<pref key="browser.enable_automatic_image_resizing" />
 				<pref key="browser.frames.enabled" />
 				<pref key="browser.blink_allowed" />
-				<pref key="browser.enable_automatic_image_resizing" />
 			</tab>
 			<tab label="text_select">
 				<pref key="ui.textSelectBackground" type="colorpicker" config="Char" />
@@ -138,16 +150,36 @@
 	</panel>
 	<panel label="bookmarks">
 		<tabs>
-			<tab label="misc">
-				<pref key="browser.tabs.loadBookmarksInBackground" />
-				<pref key="browser.bookmarks.livemark_refresh_seconds" config="Int" />
-				<pref key="browser.bookmarks.max_backups" minVersion="2.*" />
-			</tab>
-			<tab label="microsummaries" minVersion="2.*">
+			<tab label="microsummaries" minVersion="2.0">
 				<pref key="browser.microsummary.enabled" />
 				<pref key="browser.microsummary.updateInterval" config="Int" />
 				<pref key="browser.microsummary.updateGenerators" />
 				<pref key="browser.microsummary.generatorUpdateInterval" config="Int" />
+			</tab>
+			<tab label="misc">
+				<pref key="browser.tabs.loadBookmarksInBackground" />
+				<pref key="browser.bookmarks.livemark_refresh_seconds" config="Int" default="3600" />
+				<pref key="browser.bookmarks.max_backups" minVersion="2*" />
+			</tab>
+		</tabs>
+	</panel>
+	<panel label="network">
+		<tabs>
+			<tab label="connections">
+				<group label="connections">
+					<pref key="network.http.max-connections" />
+					<pref key="network.http.max-connections-per-server" />
+				</group>
+				<group label="keep-alive_connections">
+					<pref key="network.http.keep-alive" />
+					<pref key="network.http.max-persistent-connections-per-server" />
+					<pref key="network.http.max-persistent-connections-per-proxy" />
+				</group>
+			</tab>
+			<tab label="pipelining">
+				<pref key="network.http.pipelining" />
+				<pref key="network.http.proxy.pipelining" />
+				<pref key="network.http.pipelining.maxrequests" />
 			</tab>
 		</tabs>
 	</panel>
@@ -161,6 +193,7 @@
 		<group label="misc">
 			<pref key="browser.dom.window.dump.enabled" config="Bool" />
 			<pref key="javascript.options.strict" config="Bool" />
+			<pref key="javascript.options.showInConsole" />
 			<pref key="nglayout.debug.disable_xul_cache" config="Bool" />
 		</group>
 	</panel>

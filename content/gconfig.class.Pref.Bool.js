@@ -16,6 +16,8 @@ BoolPreference.prototype = new Preference;
 BoolPreference.prototype.setValue = function(value) {
 	if(!$defined(value))
 		var value = this.getPref();
+	if(typeof value == "string")
+		value = parseInt(value);
 	this.Elements.option.setAttribute("checked", !!value);
 }
 

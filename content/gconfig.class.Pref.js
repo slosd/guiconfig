@@ -2,11 +2,12 @@
  * @description Class for basic preferences operations
  * @param {} key
  * @param {} type
+ * TODO Add conditions for disabling/enabling preferences dynamically
  */
 var Preference = function(key, type, options) {
 	this.key = __(key, "");
 	this.type = __(type, "");
-	this.Bind = new Object;
+	this.Bind = __(guiconfig.Bindings[this.key], new Object);
 	this.Options = __(options, new Object);	
 	this.Elements = { Buttons: new Object };
 	this.name = guiconfig.getLocaleString(this.key.replace(/\./g, "_") + "_name", guiconfig.LocaleOptions);
@@ -27,6 +28,7 @@ Preference.instance = function(pref) {
 	}[gcCore.MozPreferences.getPrefType(key)], pref.getAttribute("config"), null);
 	var options = {
 		type: __(pref.getAttribute("type"), "default"),
+		defaultValue: __(pref.getAttribute("default"), null),
 		indent: !!pref.getAttribute("indent"),
 		version: __(pref.getAttribute("version"), null),
 		minVersion: __(pref.getAttribute("minVersion"), null),
@@ -43,9 +45,14 @@ Preference.instance = function(pref) {
 				options.validValues.push(type=="Int"?parseInt(data):(type=="Bool"?!!data:data));
 				break;
 			case 'bind':
-				for(var bindings = child.childNodes, e = 0, bl = bindings.length, binding; e < bl; e++) {
+				for(var bindings = child.childNodes, e = 0, bl = bindings.length, binding, preference; e < bl; e++) {
 					binding = bindings[e];
-					binding.nodeName == "pref" && options.bindings.push(Preference.instance(binding));
+					if(binding.nodeName != "pref")
+						continue;
+					preference = Preference.instance(binding);
+					if(!preference)
+						continue;
+					options.bindings.push(preference);
 				}
 				break;
 			case 'filter':
@@ -53,13 +60,19 @@ Preference.instance = function(pref) {
 				break;
 		}
 	}
-	return new window[type + "Preference"](key, type, options);
+	try {
+		return new window[type + "Preference"](key, type, options);
+	}
+	catch(e) {
+		return false;
+	}
 }
 
 Preference.customBinding = function(key, proto) {
-	var bind_functions = guiconfig.Preferences[key].Bind;
+	var bind_functions = new Object;
 	for(var i in proto)
 		bind_functions[i] = proto[i];
+	guiconfig.Bindings[key] = bind_functions;
 }
 
 Preference.prototype.onvaluechange = function() {
@@ -100,7 +113,7 @@ Preference.prototype.setPref = function(value) {
 	guiconfig.stop_option_observation = true;
 	if($defined(this.Bind.setPref))
 		this.Bind.setPref.call(this, value);
-	else
+	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
 			this.Options.bindings[i].setPref(value);
 	gcCore.MozPreferences["set" + this.type + "Pref"](this.key, value);
@@ -117,10 +130,10 @@ Preference.prototype.reset = function() {
 		gcCore.MozPreferences.clearUserPref(this.key);
 		if($defined(this.Bind.reset))
 			this.Bind.reset.call(this);
-		else
+		else if(this.Options.bindings.length > 0)
 			for(var i = 0, l = this.Options.bindings.length; i < l; i++)
 				this.Options.bindings[i].reset();
-		this.onprefchange(true);
+		this.onprefchange();
 		return true;
 	}
 	catch (e) {
@@ -207,7 +220,7 @@ Preference.prototype.buildColorPicker = function() {
 }
 
 Preference.prototype.addButton = function(type) {
-	if($defined(this.Elements.Buttons[type]))
+	if(this.hasButton(type))
 		return true;
 	
 	this.Elements.Buttons[type] = document.createElement("button");
@@ -258,11 +271,15 @@ Preference.prototype.addButton = function(type) {
 }
 
 Preference.prototype.removeButton = function(type) {
-	if(!$defined(this.Elements.Buttons[type]))
+	if(!this.hasButton(type))
 		return true;
 	
 	this.Elements.Buttons[type].parentNode.removeChild(this.Elements.Buttons[type]);
 	delete this.Elements.Buttons[type];
+}
+
+Preference.prototype.hasButton = function(type) {
+	return $defined(this.Elements.Buttons[type]);
 }
 
 /**
@@ -273,12 +290,12 @@ Preference.prototype.__defineGetter__("exists", function() {
 });
 
 Preference.prototype.__defineSetter__("disabled", function(value) {
-	if(this.Options.disabled == value)
-		return false;
-		
-	this[(!!value ? "addButton" : "removeButton")]("edit");
-	this.Elements.option.setAttribute("disabled", !!value);
 	this.Options.disabled = !!value;
+	this[(value ? "addButton" : "removeButton")]("edit");
+	this.Elements.option.setAttribute("disabled", (value ? "true" : ""));
+	this.Elements.option.disabled = !!value;
+	if(this.Options.defaultValue)
+		this.setValue(this.Options.defaultValue);
 	if(!value)
 		this.setPref();
 });

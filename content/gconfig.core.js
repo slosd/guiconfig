@@ -25,6 +25,7 @@ var gcCore = {
 	MozPrompt: Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService),
 	MozInfo: Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULAppInfo),
 	MozRuntime: Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULRuntime),
+	MozVersionComparator: Components.classes['@mozilla.org/xpcom/version-comparator;1'].getService(Components.interfaces.nsIVersionComparator),
 	
 	MozInterfaceFilePicker: Components.interfaces.nsIFilePicker,
 	MozInstanceFilePicker: function(){ return Components.classes["@mozilla.org/filepicker;1"].createInstance(this.MozInterfaceFilePicker); }
@@ -54,7 +55,7 @@ gcCore.userInput = function(title, label) {
 gcCore.userConfirm = function(title, text, checkLabel, checkDefault) {
 	var checked = { "value": checkDefault }
 	var response = this.MozPrompt.confirmCheck(null, title, text, checkLabel, checked);
-	return { "value": response, "checked": check.value };
+	return { "value": response, "checked": checked.value };
 }
 
 gcCore.fileInput = function(title, filters) {
