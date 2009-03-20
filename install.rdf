@@ -12,25 +12,25 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>3.1b2</em:maxVersion>
+        <em:maxVersion>3.1</em:maxVersion>
       </Description>
     </em:targetApplication>
     
     <em:name>gui:config</em:name>
-    <em:version>0.4</em:version>
+    <em:version>0.5</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
-    <em:homepageURL>http://guiconfig.freedig.org</em:homepageURL>
+    <em:homepageURL>http://blog.freedig.org/guiconfig/</em:homepageURL>
     <em:optionsURL>chrome://guiconfig/content/pref.xul</em:optionsURL>
     
     <em:translator>Jürgen Berg (en-Us)</em:translator>
-    <em:translator>Proyecto Nave (http://www.proyectonave.es) (es-ES)</em:translator>
     <em:translator>Indigo (it-IT)</em:translator>
-    <em:translator>Wacław Jacek (pl-PL)</em:translator>
-    <em:translator>petruc (pt-BR, incomplete)</em:translator>
-    <em:translator>Пирятинский Виталий (ru-RU)</em:translator>
-    <em:translator>fang5566, taizi (zh-CN)</em:translator>
     <em:translator>Tsprajna (zh-TW)</em:translator>
+    <em:translator>Wacław Jacek (pl-PL)</em:translator>
+    <em:translator>petruc (pt-BR)</em:translator>
+    <em:translator>fang5566, taizi (zh-CN)</em:translator>
+    <em:translator>Proyecto Nave (http://www.proyectonave.es) (es-ES)</em:translator>
+    <em:translator>Пирятинский Виталий (ru-RU)</em:translator>
     <em:contributor>this extension uses icons from the Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
   </Description>
 </RDF>

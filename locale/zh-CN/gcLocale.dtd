@@ -1,8 +1,8 @@
-<!ENTITY browser.item.label "高级设定">
+<!ENTITY browser.item.label "高级设置">
 <!ENTITY browser.item.access "d">
-<!ENTITY config.descr.standard "将鼠标移至某个选项可以显示其详细描述">
+<!ENTITY config.descr.standard "将光标移至选项，可见高级设置">
 <!ENTITY config.save.label "保存">
-<!ENTITY config.standard.label "全部重置">
+<!ENTITY config.standard.label "默认">
 <!ENTITY config.todefault "恢复默认值">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "高级设定($n 个条目可用)">
+<!ENTITY config.header.description "高级设置($n 可用)">

@@ -8,7 +8,7 @@
 					   class="toolbarbutton-1"
 					   label="&browser.item.label;"
 					   tooltiptext="&browser.item.label;"
-					   oncommand="guiconfig.openWindow();"/>
+					   oncommand="guiconfig.openWindow('config');"/>
 	</toolbarpalette>
 	
 </overlay>

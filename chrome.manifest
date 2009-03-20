@@ -1,4 +1,5 @@
 content		guiconfig 		content/
+locale		guiconfig		de-DE			locale/en-US/
 
 skin		guiconfig		classic/1.0		skin/
 
@@ -7,5 +8,3 @@ overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/butto
 
 style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
 style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcbutton.css
-
-locale		guiconfig		de-DE			locale/de-DE/
