@@ -21,27 +21,22 @@
 				<pref key="browser.fixup.alternate.suffix" />
 			</tab>
 			<tab label="awesomebar" minVersion="3.0">
-				<pref key="browser.urlbar.maxRichResults" />
-				<pref key="guiconfig.urlbar.restrict" minVersion="3.1a" config="Int" type="select">
-					<option>-1</option>
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<bind>
-						<pref key="browser.urlbar.restrict.tag" config="Char" />
-						<pref key="browser.urlbar.restrict.history" config="Char" />
-						<pref key="browser.urlbar.restrict.bookmark" config="Char" />
-					</bind>
-				</pref>
-				<pref key="guiconfig.urlbar.match" minVersion="3.1a" config="Int" type="select">
-					<option>-1</option>
-					<option>0</option>
-					<option>1</option>
-					<bind>
-						<pref key="browser.urlbar.match.url" config="Char" />
-						<pref key="browser.urlbar.match.title" config="Char" />
-					</bind>
-				</pref>
+				<group label="urlbar_restrict_name">
+					<pref key="browser.urlbar.maxRichResults" />
+					<pref key="browser.urlbar.restrict.tag" config="Bool" minVersion="3.1a" />
+					<pref key="browser.urlbar.restrict.history" config="Bool" minVersion="3.1a" />
+					<pref key="browser.urlbar.restrict.bookmark" config="Bool" minVersion="3.1a" />
+				</group>
+				<group label="urlbar_match_name" minVersion="3.1a">
+					<pref key="browser.urlbar.match.url" config="Bool" />
+					<pref key="browser.urlbar.match.title" config="Bool" />
+					<pref key="browser.urlbar.matchBehavior" type="select">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option minVersion="3.1a">3</option>
+					</pref>
+				</group>
 			</tab>
 			<tab label="misc">
 				<pref key="accessibility.tabfocus" type="select">
@@ -50,6 +45,7 @@
 					<option>3</option>
 					<option>4</option>
 					<option>7</option>
+					<option>6</option>
 				</pref>
 				<pref key="browser.backspace_action" type="select">
 					<option>0</option>
@@ -92,12 +88,15 @@
 					<option>3</option>
 				</pref>
 				<separator />
-				<pref key="browser.cache.disk.enable" />
-				<pref key="browser.cache.disk.capacity" indent="indent" />
-				<pref key="browser.cache.disk_cache_ssl" indent="indent" />
-				<separator />
-				<pref key="browser.cache.memory.enable" />
-				<pref key="browser.cache.memory.capacity" indent="indent" config="Int" default="-1" />
+				<group label="cache_disk">
+					<pref key="browser.cache.disk.enable" />
+					<pref key="browser.cache.disk.capacity" />
+					<pref key="browser.cache.disk_cache_ssl" />
+				</group>
+				<group label="cache_memory">
+					<pref key="browser.cache.memory.enable" />
+					<pref key="browser.cache.memory.capacity" config="Int" default="-1" />
+				</group>
 			</tab>
 			<tab label="extensions">
 				<pref key="extensions.checkCompatibility" minVersion="2.0b1" config="Bool" default="1" />

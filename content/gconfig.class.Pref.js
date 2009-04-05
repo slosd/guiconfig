@@ -21,11 +21,7 @@ var Preference = function(key, type, options) {
  */
 Preference.instance = function(pref) {
 	var key = pref.getAttribute("key");
-	var type = __({
-		"32": "Char",
-		"64": "Int",
-		"128": "Bool"
-	}[gcCore.MozPreferences.getPrefType(key)], pref.getAttribute("config"), null);
+	var type = __(pref.getAttribute("config"), {"32": "Char", "64": "Int", "128": "Bool"}[gcCore.MozPreferences.getPrefType(key)], null);
 	var options = {
 		type: __(pref.getAttribute("type"), "default"),
 		defaultValue: __(pref.getAttribute("default"), null),
@@ -42,7 +38,7 @@ Preference.instance = function(pref) {
 		switch(child.nodeName) {
 			case 'option':
 				data = child.firstChild.data;
-				options.validValues.push(type=="Int"?parseInt(data):(type=="Bool"?!!data:data));
+				options.validValues.push(gcCore.validateVersion(gcCore.MozInfo.version, __(child.getAttribute("minVersion"), null), __(child.getAttribute("maxVersion"), null))?(type=="Int"?parseInt(data):(type=="Bool"?!!data:data)):null);
 				break;
 			case 'bind':
 				for(var bindings = child.childNodes, e = 0, bl = bindings.length, binding, preference; e < bl; e++) {
@@ -94,8 +90,15 @@ Preference.prototype.onprefchange = function() {
  * @return {}
  */
 Preference.prototype.getPref = function(def) {
+	if($defined(this.Bind.getPref))
+		return this.Bind.getPref.call(this, def);
+	else
+		return this.getCustomPref(this.type, def);
+}
+
+Preference.prototype.getCustomPref = function(type, def) {
 	try {
-		return gcCore.MozPreferences["get" + this.type + "Pref"](this.key);
+		return gcCore.MozPreferences["get" + type + "Pref"](this.key);
 	}
 	catch (e) {
 		return __(def, null);
@@ -108,17 +111,23 @@ Preference.prototype.getPref = function(def) {
  * @return {bool}
  */
 Preference.prototype.setPref = function(value) {
+	var set_pref = true;
 	if(!$defined(value))
 		var value = this.getValue();
 	guiconfig.stop_option_observation = true;
 	if($defined(this.Bind.setPref))
-		this.Bind.setPref.call(this, value);
+		set_pref = this.Bind.setPref.call(this, value);
 	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
 			this.Options.bindings[i].setPref(value);
-	gcCore.MozPreferences["set" + this.type + "Pref"](this.key, value);
+	if(set_pref)
+		this.setCustomPref(this.type, value);
 	guiconfig.stop_option_observation = false;
 	return true;
+}
+
+Preference.prototype.setCustomPref = function(type, value) {
+	return gcCore.MozPreferences["set" + type + "Pref"](this.key, value);
 }
 
 /**
@@ -181,6 +190,8 @@ Preference.prototype.buildMenuList = function() {
 	menupopup = document.createElement("menupopup");
 	
 	for (var i = 0, l = this.Options.validValues.length; i < l; i++) {
+		if(this.Options.validValues[i] == null)
+			continue;
 		menuitem = document.createElement("menuitem");
 		menuitem.setAttribute("crop", "end");
 		menuitem.setAttribute("label", labels[i]);

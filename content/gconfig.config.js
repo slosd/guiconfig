@@ -121,20 +121,12 @@ var guiconfig = {
 		var minVersion = child.getAttribute("minVersion"),
 			maxVersion = child.getAttribute("maxVersion");
 		
-		if(minVersion)
-			if(gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, minVersion) == -1)
-				return false;
-		
-		if(maxVersion)
-			if(gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, maxVersion) == 1)
-				return false;
-		
-		return true;
+		return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
 	},
 
 	createPreferences: function() {
-		var panel, panelTab, panelBox;
-		var panels = this.PrefTree.getElementsByTagName("panel");
+		var panel, panelTab, panelBox,
+			panels = this.PrefTree.getElementsByTagName("panel");
 		
 		for (var i = 0, l = panels.length; i < l; i++) {
 			panel = panels[i];
@@ -286,7 +278,7 @@ IconSet.prototype.getIcons = function() {
 
 	switch(this.Options.os) {
 		case 'Linux':
-				if(this.appinfo.version.indexOf("3") == 0) {
+				if(gcCore.MozInfo.version.indexOf("3") == 0) {
 					this.addIcon("add", moz_stock + "gtk-add?size=button");
 					this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
 					this.addIcon("reset", moz_stock + "gtk-undo?size=menu");

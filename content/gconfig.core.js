@@ -35,6 +35,13 @@ var gcCore = {
 gcCore.MozPreferences = gcCore.MozPrefs.getBranch(null);
 gcCore.GCPreferences = gcCore.MozPrefs.getBranch("extensions.guiconfig.");
 
+gcCore.validateVersion = function(version, min, max) {	
+	if(min && gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, min) == -1
+	|| max && gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, max) == 1)
+		return false;
+	return true;
+}
+
 gcCore.userInput = function(title, label) {
 	var input = {
 		value: ""

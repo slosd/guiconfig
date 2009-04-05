@@ -1,23 +1,20 @@
-Preference.customBinding("guiconfig.urlbar.restrict", {
+var fn_clear = {
+	type: "Char",
 	setPref: function(value) {
-		var bindings = this.Options.bindings;
-		for(var i = 0; i < 3; i++) {
-			if(i == value)
-				bindings[i].setPref("");
-			else
-				bindings[i].reset();
-		}
+		this[value ? "setCustomPref" : "reset"](this.Bind.type, "");
+		return false;
+	},
+	getPref: function() {
+		return this.getCustomPref(this.Bind.type) == "";
 	}
-});
+};
 
-Preference.customBinding("guiconfig.urlbar.match", {
-	setPref: function(value) {
-		var bindings = this.Options.bindings;
-		for(var i = 0; i < 2; i++) {
-			if(i == value)
-				bindings[i].setPref("");
-			else
-				bindings[i].reset();
-		}
-	}
-});
+Preference.customBinding("browser.urlbar.restrict.tag", fn_clear);
+
+Preference.customBinding("browser.urlbar.restrict.history", fn_clear);
+
+Preference.customBinding("browser.urlbar.restrict.bookmark", fn_clear);
+
+Preference.customBinding("browser.urlbar.match.url", fn_clear);
+
+Preference.customBinding("browser.urlbar.match.title", fn_clear);
