@@ -19,3 +19,4 @@ locale	guiconfig	fr-FR	jar:chrome/guiconfig.jar!/locale/fr-FR/
 locale	guiconfig	es-ES	jar:chrome/guiconfig.jar!/locale/es-ES/
 locale	guiconfig	nb-NO	jar:chrome/guiconfig.jar!/locale/nb-NO/
 locale	guiconfig	ru-RU	jar:chrome/guiconfig.jar!/locale/ru-RU/
+locale	guiconfig	tr-TR	jar:chrome/guiconfig.jar!/locale/tr-TR/

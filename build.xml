@@ -6,7 +6,7 @@
 	<property name="app.name" value="guiconfig" />
 	<property name="app.id" value="guiconfig@slosd.net" />
 	<property name="app.version" value="1.0" />
-	<property name="app.build" value="alpha" />
+	<property name="app.build" value="dev" />
 	
 	<target name="chrome">
 		<mkdir dir="${dist.dir}" />
@@ -24,6 +24,7 @@
 				<include name="locale/es-ES/**" />
 				<include name="locale/nb-NO/**" />
 				<include name="locale/ru-RU/**" />
+				<include name="locale/tr-TR/**" />
 				<include name="skin/**" />
 				<exclude name="**/.*" />
 				<exclude name="**/CVS/**" />
@@ -34,7 +35,7 @@
 	</target>
 	
 	<target name="dist" depends="chrome">
-		<zip destfile="${dist.dir}/${app.name}_${app.version}${app.build}.xpi">
+		<zip destfile="${dist.dir}/${app.name}_${app.version}_${app.build}.xpi">
 			<zipfileset file="${dist.dir}/${app.name}.jar" prefix="chrome"/>
 			<zipfileset file="${dist.dir}/chrome.manifest" prefix="" />
 			<fileset dir="${src.dir}">
