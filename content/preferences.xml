@@ -38,25 +38,43 @@
 					</pref>
 				</group>
 			</tab>
+			<tab label="websites">
+				<group label="accessibility_typeaheadfind_label">
+					<pref key="accessibility.typeaheadfind.casesensitive" type="select">
+						<option>-1</option>
+						<option>0</option>
+						<option>1</option>
+					</pref>
+					<pref key="accessibility.typeaheadfind.timeout" />
+				</group>
+				<group label="misc">
+					<pref key="signon.prefillForms" config="Bool" default="1">
+						<bind>
+							<pref key="signon.autofillForms" config="Bool" />
+						</bind>
+					</pref>
+					<pref key="accessibility.tabfocus" type="select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>7</option>
+						<option>6</option>
+					</pref>
+					<pref key="browser.backspace_action" type="select">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</pref>
+					<pref key="layout.spellcheckDefault" type="select">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</pref>
+				</group>
+			</tab>
 			<tab label="misc">
-				<pref key="accessibility.tabfocus" type="select">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>7</option>
-					<option>6</option>
-				</pref>
-				<pref key="browser.backspace_action" type="select">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-				</pref>
-				<pref key="signon.prefillForms" config="Bool" default="1">
-					<bind>
-						<pref key="signon.autofillForms" config="Bool" />
-					</bind>
-				</pref>
+				<pref key="browser.tabs.closeWindowWithLastTab" minVersion="3.0" config="Bool" default="0" />
 				<pref key="browser.search.openintab" />
 				<pref key="browser.preferences.instantApply" minVersion="2.0" />
 				<pref key="browser.popups.showPopupBlocker" />
@@ -110,6 +128,10 @@
 				<pref key="browser.download.manager.alertOnEXEOpen" config="Bool" default="1" />
 				<pref key="browser.download.lastDir" config="Char" />
 			</tab>
+			<tab label="security_privacy">
+				<pref key="browser.privatebrowsing.autostart" minVersion="3.1b2" config="Bool" default="0" />
+				<pref key="security.dialog_enable_delay" />
+			</tab>
 		</tabs>
 	</panel>
 	<panel label="style">
@@ -130,7 +152,7 @@
 					<option>3</option>
 				</pref>
 			</tab>
-			<tab label="doc_style">
+			<tab label="websites">
 				<group label="rendering">
 					<pref key="nglayout.initialpaint.delay" config="Int" default="250" />
 					<pref key="content.notify.interval" config="Int" default="120000" />
