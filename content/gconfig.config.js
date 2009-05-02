@@ -1,13 +1,11 @@
 var guiconfig = {
 	
-	LocaleOptions: document.getElementById("opt_locale"),
 	LocaleGConfig: document.getElementById("gc_locale"),
 
 	Elements: new Object,
-	Options: new Object,
 	PrefTree: null,
-	Preferences: new Object,
-	Bindings: new Object,
+	Options: new Object,
+	Wrappers: new Object,
 	
 	stop_option_observation: false,
 	created_preferences: false,
@@ -29,14 +27,14 @@ var guiconfig = {
 		
 		this.buildRightClickMenu({
 			"reset": function() {
-				this.popup.Preference.reset();
+				this.popup.Option.resetPref();
 			}
 		});
 		
 		this.created_preferences = this.createPreferences();
 
 		window.setTimeout(function() {
-			guiconfig.Elements.window.centerWindowOnScreen();
+			//guiconfig.Elements.window.centerWindowOnScreen();
 		}, 200);
 	},
 
@@ -55,28 +53,21 @@ var guiconfig = {
 		}
 	},
 
-	getLocaleString: function(str, locale) {
-		return __((function() { return locale.getString(str); }), "");
-	},
-
-	getSelectLocaleStrings: function(Preference) {
-		var locales = new Array,
-			name = Preference.key.replace(/\./g, "_");
-
-		for (var i = 1, l = Preference.Options.validValues.length, string; i <= l; i++) {
-			string = this.getLocaleString(name + "_o" + i, this.LocaleOptions);
-			if(string != null)
-				locales.push(string);
+	getLocaleString: function(str) {
+		dump(str+"\n");
+		try {
+			return this.LocaleGConfig.getString(str);
 		}
-
-		return locales;
+		catch(e) {
+			return "";
+		}
 	},
 
 	resetToDefault: function() {
 		if(!gcCore.GCPreferences.getBoolPref("todefault.ask"))
 			return this.resetPreferences();
 		
-		var reset = gcCore.userConfirm("gui:config", this.getLocaleString("confirm-std", this.LocaleOptions), this.getLocaleString("dont-ask", this.LocaleOptions), false);
+		var reset = gcCore.userConfirm("gui:config", this.getLocaleString("confirm-std"), this.getLocaleString("dont-ask"), false);
 
 		if(reset.value) {
 			gcCore.GCPreferences.setBoolPref("todefault.ask", !reset.checked);
@@ -86,32 +77,18 @@ var guiconfig = {
 	
 	savePreferences: function() {
 		var Pref;
-		for(var key in this.Preferences) {
-			Preference = this.Preferences[key];
-			if(!Preference.disabled)
-				Preference.setPref();
+		for(var key in this.Options) {
+			Option = this.Options[key];
+			if(!Option.disabled)
+				Option.setPref();
 		}
 		return true;
 	},
 
 	resetPreferences: function() {
-		for(var key in this.Preferences)
-			this.Preferences[key].reset();
+		for(var key in this.Options)
+			this.Options[key].resetPref();
 		return true;
-	},
-	
-	updatePreferences: function() {
-		var option;
-		for(var key in this.Preferences)
-			this.Preferences[key].setValue();
-		return true;
-	},
-
-	observeOption: function(key) {
-		if(this.stop_option_observation)
-			return false;
-		else if($defined(this.Preferences[key]))
-			return this.Preferences[key].onprefchange();
 	},
 
 	validatePref: function(child) {
@@ -125,31 +102,14 @@ var guiconfig = {
 	},
 
 	createPreferences: function() {
-		var panel, panelTab, panelBox,
-			panels = this.PrefTree.getElementsByTagName("panel");
-		
-		for (var i = 0, l = panels.length; i < l; i++) {
-			panel = panels[i];
-			
-			panelTab = document.createElement("radio");
-			panelTab.setAttribute("pane", i);
-			(i > 0) || panelTab.setAttribute("selected", true);
-			panelTab.setAttribute("src", this.IconSet.getIcon("tab_" + panel.getAttribute("label")));
-			panelTab.setAttribute("label", this.getLocaleString(panel.getAttribute("label"), this.LocaleOptions));
-			panelTab.addEventListener("command", this.switchPanel, false);
-			
-			var panelBox = document.createElement("vbox");
-			panelBox.setAttribute("class", "gcPrefPane");
-
-			this.Elements.tabs.appendChild(panelTab);
-			this.Elements.tabpanels.appendChild(this.parseChildren(panel.childNodes, panelBox));
-		}
-		
+		this.parseChildren(this.PrefTree.childNodes, this.Elements);
 		return true;
 	},
 
 	parseChildren: function(children, container) {
-		var tabbox, tab, tabpanel,
+		var wrapper_id, wrapper,
+			paneltab, panelbox,
+			tabbox, tab, tabpanel,
 			group, caption,
 			prefgroup,
 			separator,
@@ -163,6 +123,22 @@ var guiconfig = {
 				continue;
 			
 			switch(child.nodeName) {
+				case 'panel':
+					paneltab = document.createElement("radio");
+					if(!container.panel_index) {
+						container.panel_index = 0;						
+						paneltab.setAttribute("selected", true);
+					}
+					paneltab.setAttribute("pane", container.panel_index++);
+					paneltab.setAttribute("src", this.IconSet.getIcon(child.getAttribute("icon")));
+					paneltab.setAttribute("label", child.getAttribute("label"));
+					paneltab.addEventListener("command", this.switchPanel, false);
+					panelbox = document.createElement("vbox");
+					panelbox.setAttribute("class", "gcPrefPane");		
+					container.tabs.appendChild(paneltab);
+					container.tabpanels.appendChild(this.parseChildren(child.childNodes, panelbox));
+					break;
+				
 				case 'tabs':
 					tabbox = document.createElement("tabbox");
 					tabbox.setAttribute("flex", "1");
@@ -177,7 +153,7 @@ var guiconfig = {
 				
 				case 'tab':
 					tab = document.createElement("tab");
-					tab.setAttribute("label", this.getLocaleString(child.getAttribute("label"), this.LocaleOptions));
+					tab.setAttribute("label", child.getAttribute("label"));
 					tabpanel = document.createElement("tabpanel");
 					container.tabs.appendChild(tab);
 					container.panels.appendChild(tabpanel);
@@ -189,7 +165,7 @@ var guiconfig = {
 				case 'group':
 					group = document.createElement("groupbox");
 					caption = document.createElement("caption");
-					caption.setAttribute("label", this.getLocaleString(child.getAttribute("label"), this.LocaleOptions));
+					caption.setAttribute("label", child.getAttribute("label"));
 					group.appendChild(caption);
 					container.appendChild(group);
 					prefgroup = this.newPrefGroupBox();
@@ -202,13 +178,32 @@ var guiconfig = {
 					container.appendChild(separator);
 					break;
 				
-				case 'pref':
-					preference = Preference.instance(child);
-					if(!preference)
+				case 'wrapper':
+					wrapper_id = child.getAttribute("id");
+					if(!wrapper_id)
 						break;
-					this.Preferences[preference.key] = preference;
-					container.appendChild(preference.build());
-					preference.onprefchange();
+					wrapper = this.parseChildren(child.childNodes, new Object);
+					this.Wrappers[wrapper_id] = wrapper;
+					break;
+				
+				case 'type':
+					container.type = child.firstChild.data;
+					break;
+				
+				case 'script':
+					var name = child.getAttribute("name");
+					if(!name)
+						break;
+					container[name] = new Function("value", child.firstChild.data);
+					break;
+				
+				case 'pref':
+					option = this.newOption(child);
+					if(!option)
+						break;
+					this.Options[option.Preference.key] = option;
+					container.appendChild(option.build());
+					option.Preference.onchange();
 					break;
 			}
 		}
@@ -220,6 +215,63 @@ var guiconfig = {
 		var prefgroup = document.createElement("vbox");
 		prefgroup.setAttribute("flex", "1");
 		return prefgroup;
+	},
+	
+	newOption: function(pref) {
+		var key = pref.getAttribute("key");
+		var type = __(pref.getAttribute("type"), null);
+		var options = {
+			label: __(pref.getAttribute("label"), ""),
+			description: __(pref.getAttribute("description"), ""),
+			mode: __(pref.getAttribute("mode"), "default"),
+			defaultValue: __(pref.getAttribute("default"), null),
+			wrapper: __(pref.getAttribute("wrapper"), "default"),
+			indent: !!pref.getAttribute("indent"),
+			version: __(pref.getAttribute("version"), null),
+			minVersion: __(pref.getAttribute("minVersion"), null),
+			maxVersion: __(pref.getAttribute("maxVersion"), null),
+			validValues: new Array,
+			bindings: new Array,
+			fileFilters: new Array
+		};
+		for(var children = pref.childNodes, i = 0, l = children.length, data, child; i < l; i++) {
+			child = children[i];
+			switch(child.nodeName) {
+				case 'option':
+					if(gcCore.validateVersion(gcCore.MozInfo.version, __(child.getAttribute("minVersion"), null), __(child.getAttribute("maxVersion"), null))) {
+						options.validValues.push({ label: __(child.getAttribute("label"), ""), value: child.firstChild.data });
+					}
+					break;
+				
+				case 'bind':
+					for(var bindings = child.childNodes, e = 0, bl = bindings.length, binding, preference; e < bl; e++) {
+						binding = bindings[e];
+						if(binding.nodeName != "pref")
+							continue;
+						option = this.newOption(binding);
+						if(!option)
+							continue;
+						options.bindings.push(option);
+					}
+					break;
+				
+				case 'filter':
+					options.fileFilters.push("filter" + child.firstChild.data);
+					break;
+				
+				case 'wrapper':
+					options.wrapper = this.parseChildren(child.childNodes, new Object);
+					break;
+			}
+		}
+		try {
+			var preference = new Preference(key, type);
+			return new window[__(__(guiconfig.Wrappers[options.wrapper], {}).type, options.wrapper.type, preference.type) + "Option"](preference, options);
+		}
+		catch(e) {
+			dump(e);dump("\n");
+			return false;
+		}
 	},
 
 	setDescription: function(txt) {
@@ -237,10 +289,10 @@ var guiconfig = {
 	
 	buildContextMenu: function(popup, node) {
 		var i = 3;
-		while(!$defined(node.Preference) && (i--) > 0)
+		while(!$defined(node.Option) && (i--) > 0)
 			node = node.parentNode;
-		if($defined(node.Preference)) {
-			popup.Preference = node.Preference;
+		if($defined(node.Option)) {
+			popup.Option = node.Option;
 			return true;
 		}
 		else
@@ -307,4 +359,11 @@ IconSet.prototype.getIcon = function(name) {
 }
 IconSet.prototype.iconExists = function(name) {
 	return $defined(this.icons[name]);
+}
+
+XULElement.prototype.setProperty = function(name, value) {
+	if(this.hasAttribute(name))
+		this[name] = value;
+	else
+		this.setAttribute(name, value);
 }

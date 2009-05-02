@@ -1,4 +1,4 @@
-<!ENTITY browser.item.label "Erweiterte Einstellungen">
+<!ENTITY browser.item.label "Erweiterte Einstellungen...">
 <!ENTITY browser.item.access "w">
 <!ENTITY config.descr.standard "Bewegen Sie den Cursor über eine Option, um hier eine genaue Beschreibung zu sehen">
 <!ENTITY config.save.label "Speichern">

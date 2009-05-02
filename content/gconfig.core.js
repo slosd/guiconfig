@@ -19,7 +19,7 @@ var __ = function() {
 	return null;
 }
 
-var gcCore = {	
+var gcCore = {
 	
 	MozPrefs: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService),
 	MozPrompt: Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService),
@@ -34,6 +34,52 @@ var gcCore = {
 
 gcCore.MozPreferences = gcCore.MozPrefs.getBranch(null);
 gcCore.GCPreferences = gcCore.MozPrefs.getBranch("extensions.guiconfig.");
+
+gcCore.MozPrefs.QueryInterface(Components.interfaces.nsIPrefBranch2);
+gcCore.MozPrefs.addObserver("", gcCore, false);
+
+gcCore.Observers = new Object;
+gcCore.addObserver = function(branch, fn, bind, id) {
+	if(!$defined(this.Observers[branch])) {
+		this.Observers[branch] = new Object;
+	}
+	this.Observers[branch][__(id, "default")] = { 'fn': fn, 'bind': bind, 'observe': true };
+	return true;
+}
+gcCore.startObserver = function(branch, id) {
+	this.Observers[branch][__(id, "default")].observe = true;
+}
+gcCore.stopObserver = function(branch, id) {
+	this.Observers[branch][__(id, "default")].observe = false;
+}
+
+gcCore.observe = function(subject, topic, data) {
+	if(topic != "nsPref:changed")
+		return;
+	if($defined(this.Observers[data])) {
+		var callback, observer = this.Observers[data];
+		for(var id in observer) {
+			callback = observer[id];
+			if(callback.observe)
+				callback.fn.call(__(callback.bind, callback.fn), data);
+		}
+	}
+	
+	switch(data) {
+		case 'extensions.guiconfig.sticktopreferences':
+			guiconfig.placeMenuItem();
+			break;
+		
+		case 'browser.preferences.instantApply':
+			if(this.windowIsOpen("config"))
+				this.configWindow.guiconfig.setButtons();
+		
+		default:
+			if(this.windowIsOpen("config"))
+					this.configWindow.guiconfig.observeOption.call(this.configWindow.guiconfig, data);
+				break;
+		}
+}
 
 gcCore.validateVersion = function(version, min, max) {	
 	if(min && gcCore.MozVersionComparator.compare(gcCore.MozInfo.version, min) == -1

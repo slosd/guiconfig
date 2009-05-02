@@ -2,32 +2,24 @@
  * @description Class to handle preferences with INTEGER values
  * @param {} key
  */
-var IntPreference = function(key, type, options) {
-	this._parent_ = new Preference;
-	Preference.call(this, key, type, options);
+var IntOption = function(preference, options) {
+	Option.call(this, preference, options);
 }
 
-IntPreference.prototype = new Preference;
+IntOption.prototype = new Option;
+IntOption.prototype.constructor = IntOption;
 
 /**
  * @description Set the value of an element representing a preference
  * @param {int} v
  */
-IntPreference.prototype.setValue = function(value) {
+IntOption.prototype.setValue = function(value) {
 	if(!$defined(value))
 		var value = this.getPref();
-	switch(this.Options.type) {
+	switch(this.Options.mode) {
 		case 'select':
-			if(!this.Elements.option.menupopup)
-				this.Elements.option.value = value;
-			else
-				for(var i = 0, l = this.Options.validValues.length; i < l; i++)
-					if(this.Options.validValues[i] == value)
-						this.Elements.option.selectedIndex = i;
-			break;
-		
 		default:
-			this.Elements.option.setAttribute("value", value);
+			this.Elements.option.setProperty("value", value);
 			break;
 	}
 	return value;
@@ -36,8 +28,8 @@ IntPreference.prototype.setValue = function(value) {
 /**
  * @description Get the value of an element representing a preference
  */
-IntPreference.prototype.getValue = function() {
-	switch(this.Options.type) {
+IntOption.prototype.getValue = function() {
+	switch(this.Options.mode) {
 		case 'select':
 			return this.Elements.option.selectedItem.value;
 			break;
@@ -52,14 +44,14 @@ IntPreference.prototype.getValue = function() {
 /**
  * @description Build the elements for a integer preference 
  */
-IntPreference.prototype.build = function() {
-	this._parent_.build.call(this);
+IntOption.prototype.build = function() {
+	Option.prototype.build.call(this);
 	var label = document.createElement("label");
 	label.setAttribute("value", this.name);
 	label.setAttribute("control", this.key);
 	label.setAttribute("class", "optionLabel");
 	
-	switch(this.Options.type) {
+	switch(this.Options.mode) {
 		case 'select':
 			this.Elements.option = this.buildMenuList();
 			break;
@@ -69,7 +61,7 @@ IntPreference.prototype.build = function() {
 			break;
 	}
 	
-	this.Elements.option.setAttribute("id", this.key);
+	this.Elements.option.setAttribute("id", this.Preference.key);
 	this.Elements.prefBox.appendChild(label);
 	this.Elements.prefBox.appendChild(this.Elements.option);
 	return this.Elements.prefRow;

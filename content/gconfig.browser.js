@@ -2,28 +2,15 @@ var guiconfig = {
 	
 	init: function() {		
 		window.addEventListener("load", this.placeMenuItem, false);
-		gcCore.MozPrefs.QueryInterface(Components.interfaces.nsIPrefBranch2);
-		gcCore.MozPrefs.addObserver("", this, false);
-	},
-	
-	observe: function(subject, topic, data) {
-		if(topic != "nsPref:changed")
-			return;
-
-		switch(data) {
-			case 'extensions.guiconfig.sticktopreferences':
-				guiconfig.placeMenuItem();
-				break;
-			
-			case 'browser.preferences.instantApply':
-				if(this.windowIsOpen("config"))
-					this.configWindow.guiconfig.setButtons();
-			
-			default:
-				if(this.windowIsOpen("config"))
-					this.configWindow.guiconfig.observeOption.call(this.configWindow.guiconfig, data);
-				break;
-		}
+		
+		gcCore.addObserver('extensions.guiconfig.sticktopreferences', function() {
+			this.placeMenuItem();
+		}, this, "MenuItem");
+		
+		gcCore.addObserver('browser.preferences.instantApply', function() {
+			if(this.windowIsOpen("config"))
+				this.configWindow.guiconfig.setButtons();
+		}, this, "Buttons");
 	},
 	
 	placeMenuItem: function() {
@@ -52,10 +39,15 @@ var guiconfig = {
 				"config": "chrome://guiconfig/content/config.xul"
 			}[doc];
 		
-		if(this.windowIsOpen(doc))
+		if(this.windowIsOpen(doc)) {
 			this[doc + "Window"].focus();
-		else
+		}
+		else {
 			this[doc + "Window"] = window.open(chrome, window_name, "chrome");
+			this[doc + "Window"]["gcCore"] = window["gcCore"];
+			this[doc + "Window"]["__"] = window["__"];
+			this[doc + "Window"]["$defined"] = window["$defined"];
+		}
 	},
 	
 	windowIsOpen: function(doc) {

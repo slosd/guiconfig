@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+
+<project name="gui:config" default="init">
+	
+	<property file="build.properties"/>
+	
+	<target name="makeexecutable">
+		<!-- <copy/> doesn't preserve file permissions -->
+		<exec executable="chmod" dir="${build.dir}">
+			<arg line="+x build.sh build_locales.sh"/>
+		</exec>
+	</target>
+	
+	<target name="buildtarget">	
+		<condition property="buildforbabelzilla">
+			<equals arg1="${build.target}" arg2="babelzilla" trim="true"/>
+		</condition>
+		
+		<condition property="buildnewrelease">
+			<equals arg1="${build.target}" arg2="release" trim="true"/>
+		</condition>
+	</target>
+	
+	<target name="init">
+		
+		<mkdir dir="${build.dir}" />
+		
+		<copy todir="${build.dir}" overwrite="true">
+			<fileset id="chrome" dir="${src.dir}">
+				<include name="content/**" />
+				<include name="defaults/**" />
+				<include name="locale/**" />
+				<include name="skin/**" />
+				<include name="install.rdf" />
+				<exclude name="**/.*" />
+				<exclude name="**/CVS/**" />
+			</fileset>
+		</copy>
+		
+		<copy file="${src.dir}/build/build_locales.sh" tofile="${build.dir}/build_locales.sh" overwrite="true" />
+		<copy file="${src.dir}/build/build.sh" tofile="${build.dir}/build.sh" overwrite="true" />
+		<copy file="${src.dir}/chrome:jar.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true" />
+		
+		<antcall target="makeexecutable"/>
+		<antcall target="build_locales_babelzilla"/>
+		<antcall target="build_locales_release"/>
+	</target>
+	
+	<target name="variables">				
+		<replace dir="${build.dir}">
+			<replacefilter token="%NAME%" value="${app.name}"/>
+			<replacefilter token="%SHORTNAME%" value="${app.shortname}"/>
+			<replacefilter token="%VERSION%" value="${app.version}"/>
+			<replacefilter token="%BUILD%" value="${app.build}"/>
+			<replacefilter token="%LOCALES%" value="${app.locales}"/>
+			<replacefilter token="%FFMINVERSION%" value="${firefox.minversion}"/>
+			<replacefilter token="%FFMAXVERSION%" value="${firefox.maxversion}"/>
+			<replacefilter token="%BUILDDIR%" value="${build.dir}"/>
+		</replace>
+		
+		<antcall target="makeexecutable"/>
+		<antcall target="build_babelzilla"/>
+		<antcall target="build_release"/>
+	</target>
+	
+	<target name="build_locales_babelzilla" depends="buildtarget" if="buildforbabelzilla">
+		<exec executable="${build.dir}/build_locales.sh" outputproperty="locales"></exec>
+		<antcall target="variables">
+			<param name="app.locales" value="${locales}"/>
+		</antcall>
+	</target>
+	
+	<target name="build_locales_release" depends="buildtarget" if="buildnewrelease">
+		<exec executable="${build.dir}/build_locales.sh" outputproperty="locales">
+			<arg line="${build.locales.complete}"/>
+		</exec>
+		<antcall target="variables">
+			<param name="app.locales" value="${locales}"/>
+		</antcall>
+	</target>
+	
+	<target name="build_babelzilla" depends="buildtarget" if="buildforbabelzilla">
+		<exec executable="${build.dir}/build.sh"></exec>
+	</target>
+	
+	<target name="build_release" depends="buildtarget" if="buildnewrelease">
+		<exec executable="${build.dir}/build.sh">
+			<arg value="${build.locales.complete}"/>
+		</exec>
+	</target>
+
+</project>
