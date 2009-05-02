@@ -1,0 +1,207 @@
+<!ENTITY accessibility "Accessibilità">
+<!ENTITY middleclick "Clic centrale">
+<!ENTITY middlemouse_contentLoadURL_name "Carica appunti come URL">
+<!ENTITY middlemouse_contentLoadURL_description "Al clic del tasto centrale carica il contenuto degli appunti come fosse un URL.">
+<!ENTITY middlemouse_paste_name "Incolla testo dagli appunti">
+<!ENTITY middlemouse_paste_description "Al clic del tasto centrale incolla il contenuto degli appunti in un campo di testo.">
+<!ENTITY misc "Varie">
+<!ENTITY accessibility_accesskeycausesactivation_name "Attivazione degli elementi tramite accesskey">
+<!ENTITY accessibility_accesskeycausesactivation_description "Questa opzione rende l'utilizzo dell'accesskey di un elemento equivalente all'azione compiuta sull'elemento stesso. Se è un collegamento verrà attivato, se è un pulsante verrà premuto.">
+<!ENTITY accessibility_tabfocus_name "Il tasto Tab seleziona:">
+<!ENTITY accessibility_tabfocus_description "Questa impostazione specifica quali elementi vengono selezionati premendo il tasto Tab.">
+<!ENTITY accessibility_tabfocus_o1 "solo i campi di testo">
+<!ENTITY accessibility_tabfocus_o2 "tutti gli elementi dei moduli eccetto i campi di testo">
+<!ENTITY accessibility_tabfocus_o3 "tutti gli elementi dei moduli">
+<!ENTITY accessibility_tabfocus_o4 "solo i collegamenti (e le immagini con collegamento)">
+<!ENTITY accessibility_tabfocus_o5 "sia i collegamenti che gli elementi dei moduli">
+<!ENTITY accessibility_tabfocus_o6 "sia i collegamenti che gli elementi dei moduli, ad eccezione dei campi di testo">
+<!ENTITY accessibility_warn_on_browsewithcaret_name "Visualizza una finestra di dialogo quando si entra nella modalità di navigazione nel testo">
+<!ENTITY accessibility_warn_on_browsewithcaret_description "Ogni volta che il tasto F7 viene premuto una finestra di dialogo avvertirà l'utente che si sta entrando nella modalità di navigazione nel testo.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Ridimensiona le immagini">
+<!ENTITY browser_enable_automatic_image_resizing_description "Quando si visualizza un'immagine che non è contenuta in una pagina web, l'immagine, se troppo grande, verrà ridimensionata per adattarsi alle dimensioni della finestra del browser.">
+<!ENTITY extensions "Estensioni">
+<!ENTITY extensions_hideInstallButton_name "Nascondi il pulsante Installa">
+<!ENTITY extensions_hideInstallButton_description "Nasconde il pulsante Installa nella finestra Componenti aggiuntivi">
+<!ENTITY getaddons "Pannello Esplora">
+<!ENTITY extensions_checkCompatibility_name "Attiva il controllo di compatibilità per le estensioni">
+<!ENTITY extensions_checkCompatibility_description "Questa preferenza permette di attivare o disattivare il controllo di compatibilità per le estensioni.">
+<!ENTITY extensions_getAddons_showPane_name "Mostra pannello">
+<!ENTITY extensions_getAddons_showPane_description "Specifica se mostrare o meno il pannello Esplora nella finestra Componenti aggiuntivi">
+<!ENTITY extensions_getAddons_maxResults_name "Numero di risultati">
+<!ENTITY extensions_getAddons_maxResults_description "Specifica il numero massimo di risultati che possono essere mostrati quando si effettua una ricerca nel pannello Esplora.">
+<!ENTITY urlbar "Barra degli indirizzi">
+<!ENTITY mouseclick "Clic del mouse">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Seleziona il contenuto al clic del mouse">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Seleziona il contenuto della Barra degli indirizzi quando viene fatto clic su di essa.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Seleziona il contenuto al doppio clic">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Seleziona il contenuto della Barra degli indirizzi quando viene fatto doppio clic su di essa.">
+<!ENTITY awesomebar "Barra degli indirizzi intelligente">
+<!ENTITY browser_urlbar_maxRichResults_name "Voci nel menu a discesa">
+<!ENTITY browser_urlbar_maxRichResults_description "Determina il numero massimo di elementi da mostrare nel menu a discesa della Barra di ricerca.">
+<!ENTITY browser_urlbar_matchBehavior_name "Comportamento del completamento automatico">
+<!ENTITY browser_urlbar_matchBehavior_description "Questa preferenza specifica la gestione delle estremità delle parole digitate quando si effettua una ricerca nella barra degli indirizzi.">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Ignora le estremità delle parole digitate">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Mostra prima gli elementi che corrispondono alle estremità delle parole digitate">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Utilizza le estremità solo per il testo digitato">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Mostra solo URL o titoli che iniziano con il termine di ricerca">
+<!ENTITY urlbar_restrict_name "Limita risultati">
+<!ENTITY browser_urlbar_restrict_tag_name "Limita alle etichette">
+<!ENTITY browser_urlbar_restrict_tag_description "I risultati nella Barra di ricerca sono limitati alle etichette.">
+<!ENTITY browser_urlbar_restrict_history_name "Limita alla cronologia">
+<!ENTITY browser_urlbar_restrict_history_description "I risultati nella Barra di ricerca sono limitati ai siti web visitati.">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Limita ai segnalibri">
+<!ENTITY browser_urlbar_restrict_bookmark_description "I risultati nella Barra di ricerca sono limitati ai segnalibri.">
+<!ENTITY urlbar_match_name "Risultati della ricerca">
+<!ENTITY browser_urlbar_match_url_name "Cerca nell'URL">
+<!ENTITY browser_urlbar_match_url_description "Determina se i risultati della Barra di ricerca devono contenere nell'URL l'espressione cercata.">
+<!ENTITY browser_urlbar_match_title_name "Cerca nel titolo">
+<!ENTITY browser_urlbar_match_title_description "Determina se i risultati della Barra di ricerca devono contenere nel titolo l'espressione cercata.">
+<!ENTITY browser_urlbar_autoFill_name "Completamento automatico">
+<!ENTITY browser_urlbar_autoFill_description "Attiva il completamento automatico per la Barra degli indirizzi.">
+<!ENTITY browser_urlbar_matchOnlyTyped_name "Solo indirizzi già inseriti">
+<!ENTITY browser_urlbar_matchOnlyTyped_description "Il completamento automatico viene utilizzato solo per gli indirizzi che sono stati precedentemente inseriti nella Barra degli indirizzi.">
+<!ENTITY browser_fixup_alternate_enabled_name "Utilizza un indirizzo alternativo">
+<!ENTITY browser_fixup_alternate_enabled_description "Qualora un indirizzo inserito nella Barra degli indirizzi non produca nessun risultato verranno aggiunti i seguenti caratteri.">
+<!ENTITY browser_fixup_alternate_prefix_name "Prefisso">
+<!ENTITY browser_fixup_alternate_prefix_description "I caratteri da inserire all'inizio dell'indirizzo.">
+<!ENTITY browser_fixup_alternate_suffix_name "Suffisso">
+<!ENTITY browser_fixup_alternate_suffix_description "I caratteri da inserire alla fine dell'indirizzo.">
+<!ENTITY browser_backspace_action_name "Il tasto Backspace:">
+<!ENTITY browser_backspace_action_description "Definisce il comportamento del tasto Backspace.">
+<!ENTITY browser_backspace_action_o1 "torna indietro nella cronologia">
+<!ENTITY browser_backspace_action_o2 "agisce come Pag. Su">
+<!ENTITY browser_backspace_action_o3 "non esegue nessuna azione">
+<!ENTITY browser_preferences_instantApply_name "Applica subito">
+<!ENTITY browser_preferences_instantApply_description "Le modifiche nella finestra Opzioni sono immediatamente attive. La finestra delle Opzioni non è modale. Al posto dei pulsanti 'OK' e 'Annulla' è presente solo il tasto 'Chiudi'.">
+<!ENTITY browser_search_openintab_name "Apri i risultati della ricerca in una nuova scheda">
+<!ENTITY browser_search_openintab_description "Quando si effettua una ricerca con la Barra di ricerca, apre i risultati in una nuova scheda.">
+<!ENTITY browser_popups_showPopupBlocker_name "Mostra l'icona nella barra di stato">
+<!ENTITY browser_popups_showPopupBlocker_description "Stabilisce se visualizzare o meno un icona nella barra di stato quando una finestra pop-up viene bloccata.">
+<!ENTITY signon_prefillForms_name "Completa automaticamente i campi per l'accesso ai siti web">
+<!ENTITY signon_prefillForms_description "I campi dei moduli di accesso ai siti web vengono completati automaticamente con nome utente e password salvati.">
+<!ENTITY browser "Browser">
+<!ENTITY alerts "Finestre di avviso">
+<!ENTITY update_showSlidingNotification_name "Mostra le notifiche di aggiornamento">
+<!ENTITY update_showSlidingNotification_description "Quando sono disponibili degli aggiornamenti verrà visualizzata una notifica nel browser.">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "Avviso pop-up dopo il download">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "Visualizza una finestra pop-up in basso a destra nello schermo quando tutti i download sono stati completati.">
+<!ENTITY alerts_slideIncrement_name "Numero di pixel da spostare ad ogni incremento:">
+<!ENTITY alerts_slideIncrement_description "Questa preferenza controlla la velocità delle finestre di avviso simili alla finestra 'Download completati' che appare in basso a destra. In particolare controlla il numero di pixel che vengono spostati ad ogni incremento.">
+<!ENTITY alerts_slideIncrementTime_name "Durata dello spostamento (in millisecondi):">
+<!ENTITY alerts_slideIncrementTime_description "Imposta il numero di millisecondi di ogni movimento di scorrimento nei casi in cui la finestra di avviso si sposta, e il numero di millisecondi delle fasi di dissolvenza quando la finestra compare e scompare.">
+<!ENTITY alerts_totalOpenTime_name "Durata dell'avviso (in millisecondi):">
+<!ENTITY alerts_totalOpenTime_description "Definisce in millisecondi la durata di visualizzazione delle finestre simili alla finestra 'Download completati' che appare in basso a destra.">
+<!ENTITY cache "Cache del browser">
+<!ENTITY browser_cache_check_doc_frequency_name "Controlla la cache del browser">
+<!ENTITY browser_cache_check_doc_frequency_description "Indica con quale frequenza controllare le pagine remote per una versione più recente di quella presente nella cache.">
+<!ENTITY browser_cache_check_doc_frequency_o1 "una sola volta per ogni sessione di navigazione">
+<!ENTITY browser_cache_check_doc_frequency_o2 "ogni volta che viene visualizzata la pagina">
+<!ENTITY browser_cache_check_doc_frequency_o3 "mai (usa sempre la pagina presente nella cache)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "solo se la pagina è scaduta (determinato automaticamente)">
+<!ENTITY cache_disk "Cache su disco">
+<!ENTITY browser_cache_disk_capacity_name "Cache su disco (in KB):">
+<!ENTITY browser_cache_disk_capacity_description "Indica la quantità di spazio su disco allocato per la cache del browser (in KB).">
+<!ENTITY browser_cache_disk_enable_name "Utilizza la cache su disco">
+<!ENTITY browser_cache_disk_enable_description "Utilizza la cache su disco fino alla quantità definita.">
+<!ENTITY browser_cache_disk_cache_ssl_name "Memorizza il contenuto HTTPS/SSL nella cache">
+<!ENTITY browser_cache_disk_cache_ssl_description "Memorizza il contenuto della cache ricevuto via SSL (questo può rappresentare un rischio per la sicurezza).">
+<!ENTITY cache_memory "Cache in memoria">
+<!ENTITY browser_cache_memory_capacity_name "Cache in memoria (in KB):">
+<!ENTITY browser_cache_memory_capacity_description "Imposta il massimo consumo di RAM per la cache in memoria (in KB).">
+<!ENTITY browser_cache_memory_enable_name "Utilizza la cache in memoria">
+<!ENTITY browser_cache_memory_enable_description "Utilizza la cache in memoria fino alla quantità definita.">
+<!ENTITY style "Stile">
+<!ENTITY browser_style "Browser">
+<!ENTITY browser_chrome_favicons_name "Mostra favicon">
+<!ENTITY browser_chrome_favicons_description "Stabilisce se visualizzare o meno le favicon.">
+<!ENTITY browser_chrome_toolbar_tips_name "Mostra suggerimenti">
+<!ENTITY browser_chrome_toolbar_tips_description "Specifica il comportamento dei suggerimenti per gli elementi di tipo chrome">
+<!ENTITY browser_urlbar_hideGoButton_name "Nascondi il pulsante Vai">
+<!ENTITY browser_urlbar_hideGoButton_description "Stabilisce se visualizzare o meno il pulsante Vai.">
+<!ENTITY browser_preferences_animateFadeIn_name "Dissolvenza in apertura all'interno della finestra Opzioni">
+<!ENTITY browser_preferences_animateFadeIn_description "Cambia l'altezza della finestra e genera un effetto dissolvenza per circa un secondo quando si passa da un pannello all'altro nella finestra delle Opzioni.">
+<!ENTITY browser_tabs_closeButtons_name "Mostra i pulsanti di chiusura delle schede">
+<!ENTITY browser_tabs_closeButtons_description "Specifica dove visualizzare i pulsanti di chiusura.">
+<!ENTITY browser_tabs_closeButtons_o1 "solo sulle schede attive">
+<!ENTITY browser_tabs_closeButtons_o2 "su ogni scheda">
+<!ENTITY browser_tabs_closeButtons_o3 "mai">
+<!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
+<!ENTITY doc_style "Siti web">
+<!ENTITY rendering "Rendering">
+<!ENTITY nglayout_initialpaint_delay_name "Ritardo nella visualizzazione delle pagine (millisecondi)">
+<!ENTITY nglayout_initialpaint_delay_description "Questa preferenza permette di specificare l'attesa, in millisecondi, prima che sia effettuato il rendering di una pagina. Valori più bassi faranno in modo che le pagine siano visualizzate più velocemente ma sarà necessario più tempo per il rendering. Valori più alti avranno l'effetto contrario.">
+<!ENTITY content_notify_interval_name "Ritardo prima del redrawing della pagina (microsecondi)">
+<!ENTITY content_notify_interval_description "Il rendering dei dati ricevuti da un sito web è effettuato periodicamente. Questa preferenza indica, in microsecondi, l'intervallo minimo di attesa tra i redrawing della pagina. Valori più bassi diminuiranno il tempo di caricamento percepito ma incrementeranno il tempo di caricamento totale.">
+<!ENTITY browser_display_show_image_placeholders_name "Mostra segnaposto">
+<!ENTITY browser_display_show_image_placeholders_description "Visualizza i segnaposto durante il periodo di caricamento delle immagini.">
+<!ENTITY browser_frames_enabled_name "Permetti riquadri">
+<!ENTITY browser_frames_enabled_description "Visualizza i riquadri HTML.">
+<!ENTITY browser_blink_allowed_name "Attiva testo lampeggiante">
+<!ENTITY browser_blink_allowed_description "L'utilizzo dell'etichetta blink o della proprietà CSS text-decoration: blink produrrà un elemento lampeggiante.">
+<!ENTITY text_select "Selezione del testo">
+<!ENTITY ui_textSelectBackground_name "Colore di sfondo">
+<!ENTITY ui_textSelectBackground_description "Indica il colore di sfondo per la selezione del testo utilizzando un codice esadecimale o il nome di un colore. Se la preferenza non è impostata viene utilizzato il valore fornito dal sistema operativo.">
+<!ENTITY ui_textSelectForeground_name "Colore del testo">
+<!ENTITY ui_textSelectForeground_description "Indica il colore del testo selezionato, utilizzando un codice esadecimale o il nome di un colore. Se la preferenza non è impostata viene utilizzato il valore fornito dal sistema operativo.">
+<!ENTITY ui_textSelectBackgroundAttention_name "Colore di sfondo del testo evidenziato">
+<!ENTITY ui_textSelectBackgroundAttention_description "Indica il colore di sfondo utilizzato per la funzione di ricerca durante la digitazione utilizzando un codice esadecimale o il nome di un colore.">
+<!ENTITY downloads "Download">
+<!ENTITY downloadmanager "Gestione download">
+<!ENTITY browser_download_manager_showAlertInterval_name "Ritardo (in millisecondi):">
+<!ENTITY browser_download_manager_showAlertInterval_description "Specifica quanti millisecondi dopo il completamento dei download visualizzare la finestra di avviso.">
+<!ENTITY browser_download_lastDir_name "Ultima cartella di download">
+<!ENTITY browser_download_lastDir_description "Indica il percorso dell'ultima cartella utilizzata per un download tramite 'Salva destinazione con nome..'">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Imposta la finestra di gestione dei download come attiva quando si avvia un download">
+<!ENTITY browser_download_manager_focusWhenStarting_description "Imposta la finestra di gestione dei download come attiva quando si avvia un download.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Avviso file eseguibili">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Avvisa l'utente di ogni tentativo di aprire un file eseguibile dalla Gestione download">
+<!ENTITY bookmarks "Segnalibri">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervallo di aggiornamento (in secondi):">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Indica, in secondi, l'intervallo tra i vari controlli dei Segnalibri live. Valori inferiori a 60 saranno considerati pari a 60.">
+<!ENTITY browser_bookmarks_max_backups_name "Backup dei segnalibri">
+<!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
+<!ENTITY browser_tabs_loadBookmarksInBackground_description "Quando si apre un segnalibro in una nuova scheda, questa si aprirà in secondo piano.">
+<!ENTITY microsummaries "Titoli live">
+<!ENTITY browser_microsummary_enabled_name "Utilizza i Titoli live">
+<!ENTITY browser_microsummary_enabled_description "Consente di ottenere informazioni dai segnalibri per mezzo dei Titoli live.">
+<!ENTITY browser_microsummary_updateInterval_name "Intervallo di aggiornamento (in minuti)">
+<!ENTITY browser_microsummary_updateInterval_description "Determina in minuti l'intervallo di aggiornamento dei Titoli live. Il valore predefinito è 30 minuti.">
+<!ENTITY browser_microsummary_updateGenerators_name "Aggiorna i generatori di Titoli live">
+<!ENTITY browser_microsummary_updateGenerators_description "Stabilisce se effettuare un controllo periodico degli aggiornamenti dei generatori di Titoli live.">
+<!ENTITY browser_microsummary_generatorUpdateInterval_name "Intervallo di aggiornamento (in secondi)">
+<!ENTITY browser_microsummary_generatorUpdateInterval_description "Determina in secondi l'intervallo di aggiornamento dei generatori di Titoli live. Il valore predefinito è una settimana (604800 secondi).">
+<!ENTITY network "Rete">
+<!ENTITY connections "Connessioni">
+<!ENTITY network_http_max-connections_name "Numero massimo di connessioni HTTP">
+<!ENTITY network_http_max-connections_description "Questa preferenza specifica il numero di connessioni totali che possono essere aperte da Firefox nello stesso momento. Il valore deve essere un intero tra 1 e 65535.">
+<!ENTITY network_http_max-connections-per-server_name "Numero massimo di connessioni HTTP per server">
+<!ENTITY network_http_max-connections-per-server_description "Questa preferenza specifica il numero di connessioni totali che possono essere aperte da Firefox per ogni server. Il valore deve essere un intero tra 1 e 255.">
+<!ENTITY keep-alive_connections "Connessioni aperte">
+<!ENTITY network_http_keep-alive_name "Tieni aperte le connessioni">
+<!ENTITY network_http_keep-alive_description "Le connessioni HTTP tenute aperte possono essere riutilizzate e migliorano le prestazioni.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Numero massimo di connessioni tenute aperte per ogni server">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Questa preferenza specifica il numero di connessioni totali che possono essere tenute aperte da Firefox per ogni server. Il valore deve essere un intero tra 1 e 255.">
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Numero massimo di connessioni tenute aperte per ogni server proxy">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Questa preferenza specifica il numero di connessioni totali che possono essere tenute aperte da Firefox per ogni server proxy. Il valore deve essere un intero tra 1 e 255.">
+<!ENTITY pipelining "Pipelining">
+<!ENTITY network_http_pipelining_name "Attiva pipelining">
+<!ENTITY network_http_pipelining_description "Il pipelining riduce il carico sulla rete e può ridurre anche il tempo di caricamento delle pagine ma potrebbe causare problemi nel caricamento di pagine provenienti da server che non supportano tale metodo.">
+<!ENTITY network_http_proxy_pipelining_name "Attiva pipelining con server proxy">
+<!ENTITY network_http_proxy_pipelining_description "Questa preferenza determina se utilizzare il pipelining con un server proxy. Il pipelining riduce il carico sulla rete e può ridurre anche il tempo di caricamento delle pagine ma potrebbe causare problemi nel caricamento di pagine provenienti da server che non supportano tale metodo.">
+<!ENTITY network_http_pipelining_maxrequests_name "Numero massimo di richieste alla pipeline">
+<!ENTITY network_http_pipelining_maxrequests_description "Questa preferenza determina il numero massimo di richieste che possono essere effettuate simultaneamente ad una pipeline, quando il pipelining è attivato.">
+<!ENTITY developing "Sviluppo">
+<!ENTITY viewsource "Visualizza sorgente pagina">
+<!ENTITY view_source_editor_external_name "Utilizza un editor personalizzato">
+<!ENTITY view_source_editor_external_description "Attivando il comando Visualizza sorgente pagina viene eseguito un editor personalizzato.">
+<!ENTITY view_source_editor_path_name "Percorso dell'editor">
+<!ENTITY view_source_editor_path_description "Indica il percorso all'editor personalizzato.">
+<!ENTITY browser_dom_window_dump_enabled_name "Attiva dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Attiva l'utilizzo dell'istruzione dump() per stampare nella console standard.">
+<!ENTITY javascript_options_showInConsole_name "Mostra errori chrome nella console">
+<!ENTITY javascript_options_showInConsole_description "Specifica se mostrare gli errori e gli avvisi relativi al chrome nella Console degli errori">
+<!ENTITY javascript_options_strict_name "Avvisi Javascript strict">
+<!ENTITY javascript_options_strict_description "Attiva gli avvisi Javascript strict nella Console degli errori.">
+<!ENTITY nglayout_debug_disable_xul_cache_name "Disattiva cache XUL">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Le modifiche alle finestre non richiedono il riavvio. Non funziona con file compressi in un archivio JAR.">

@@ -1,0 +1,82 @@
+<!ENTITY accessibility "Tilgjengelighet">
+<!ENTITY misc "Diverse">
+<!ENTITY accessibility_accesskeycausesactivation_name "Hurtigtasten aktiverer elementet">
+<!ENTITY accessibility_accesskeycausesactivation_description "Å benytte en hurtigtast for dette elementet er det samme som å aktivere det. Dersom elementet er en lenke, åpnes lenken. Er elementet er en knapp, blir knappen trykket.">
+<!ENTITY accessibility_tabfocus_name "Tabulatorfokus">
+<!ENTITY accessibility_tabfocus_description "Disse innstillingene setter hvilke elementer som kan få fokus når du bruker tabulatortasten">
+<!ENTITY accessibility_tabfocus_o1 "Gi kun fokus til tekstfelter">
+<!ENTITY accessibility_tabfocus_o2 "Gi fokus til alle elementer bortsett fra tekstfelter">
+<!ENTITY accessibility_tabfocus_o3 "Alle skjemaelementer">
+<!ENTITY accessibility_tabfocus_o4 "Gi kun fokus til lenker (og bildelenker).">
+<!ENTITY accessibility_tabfocus_o5 "Gi fokus til lenker og skjemaelementer">
+<!ENTITY accessibility_warn_on_browsewithcaret_name "Vis dialogboks når jeg endrer til å bruke piltastene for navigering innenfor nettsider">
+<!ENTITY accessibility_warn_on_browsewithcaret_description "Vis en advarsel når du trykker F7 for å endre til å bruke piltastene for navigering på nettsider.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Endre størrelsen på bilder">
+<!ENTITY browser_enable_automatic_image_resizing_description "Når du ser på et bilde som ikke er en del av en nettside, vil bildet skaleres ned slik at det passer i vinduet.">
+<!ENTITY browser_urlbar_autoFill_name "Integrert autoutfylling">
+<!ENTITY browser_urlbar_autoFill_description "Slår på integrert autoutfylling.">
+<!ENTITY browser_backspace_action_name "Rettetast">
+<!ENTITY browser_backspace_action_description "Avgjør hva som skjer når du bruker rettetasten">
+<!ENTITY browser_backspace_action_o1 "Gå tilbake i historikk">
+<!ENTITY browser_backspace_action_o2 "Som Page Up">
+<!ENTITY browser_backspace_action_o3 "Gjør ingenting">
+<!ENTITY browser_preferences_instantApply_name "Lagre øyeblikkelig">
+<!ENTITY browser_preferences_instantApply_description "Endring av innstillinger trer i kraft øyeblikkelig. Innstillingsvinduet er ikke modalt, så i stedet for «Ok» eller «Avbryt», finnes kun «Lukk».">
+<!ENTITY browser_popups_showPopupBlocker_name "Vis ikon i statuslinjen">
+<!ENTITY browser_popups_showPopupBlocker_description "Angir om et ikon skal vises i statuslinjen når et sprettoppvindu har blitt blokkert">
+<!ENTITY browser "Nettleser">
+<!ENTITY alerts "Varslinger">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "Sprettoppvindu ved fullført nedlasting">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "Vis sprettoppvindu nederst til høyre i vinduet når alle nedlastinger er fullført.">
+<!ENTITY alerts_slideIncrement_name "Antall punkter den skal flyttes for hver gang (px)">
+<!ENTITY alerts_slideIncrement_description "Denne innstillingen angir hastigheten til «Nedlasting fullført»-varslinger som dukker opp nederst til høyre. Helt spesifikt kontrollerer den hvor mange punkter den skal bevege seg for hver gang.">
+<!ENTITY alerts_slideIncrementTime_name "Hastighet (ms)">
+<!ENTITY alerts_slideIncrementTime_description "Angir hvor mange millisekunder det skal gå mellom hver glidende bevegelse, og hvor mange millisekunder det skal gå mellom hver overgang når varslingen toner inn og ut.">
+<!ENTITY alerts_totalOpenTime_name "Varslingstid (ms)">
+<!ENTITY alerts_totalOpenTime_description "Kontrollerer hvor lenge, i millisekunder, «Nedlasting Fullført»-varslinger skal synes nederst til høyre.">
+<!ENTITY cache "Mellomlager">
+<!ENTITY browser_cache_check_doc_frequency_name "Kontroller nettleserens mellomlager">
+<!ENTITY browser_cache_check_doc_frequency_description "Hvor ofte nettleseren skal kontrollere nettsidene for nyere versjoner som kan finnes i mellomlageret">
+<!ENTITY browser_cache_check_doc_frequency_o1 "Kontroller en gang for hver nettlesersesjon">
+<!ENTITY browser_cache_check_doc_frequency_o2 "Kontroller hver gang du åpner siden">
+<!ENTITY browser_cache_check_doc_frequency_o3 "Aldri kontroller (bruk alltid mellomlager)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "Kontroller når siden er utgått (besluttes automatisk)">
+<!ENTITY browser_cache_disk_capacity_name "Mellomlager på disk (KB)">
+<!ENTITY browser_cache_disk_capacity_description "Hvor stor lagringsplass som er tillatt i nettleserens mellomlager på disk (i KB)">
+<!ENTITY browser_cache_disk_enable_name "Bruk mellomlager på disk">
+<!ENTITY browser_cache_disk_enable_description "Bruk mellomlager på disk opp til den spesifiserte grensen">
+<!ENTITY browser_cache_disk_cache_ssl_name "Lagre HTTPS/SSL-innhold i mellomlageret">
+<!ENTITY browser_cache_disk_cache_ssl_description "Lagre innhold som mottas på SSL i mellomlageret (sikkerhetsrisiko!)">
+<!ENTITY browser_cache_memory_capacity_name "Mellomlager i minne (KB)">
+<!ENTITY browser_cache_memory_capacity_description "Sett hvor mye minne som maksimalt kan brukes til mellomlager (i KB)">
+<!ENTITY browser_cache_memory_enable_name "Bruk mellomlager i minne">
+<!ENTITY browser_cache_memory_enable_description "Bruk mellomlager i minne opp til den spesifiserte grensen">
+<!ENTITY style "Stil">
+<!ENTITY browser_style "Nettleser">
+<!ENTITY browser_chrome_favicons_name "Vis Favicon-er">
+<!ENTITY browser_chrome_favicons_description "Angir om Favicon-er skal vises">
+<!ENTITY browser_chrome_toolbar_tips_name "Vis verktøytips">
+<!ENTITY browser_chrome_toolbar_tips_description "Angir oppførselen til verktøytips for chrome-elementer">
+<!ENTITY browser_urlbar_hideGoButton_name "Skjul «Gå til»-knappen">
+<!ENTITY browser_urlbar_hideGoButton_description "Angir om «Gå til»-knappen skal vises">
+<!ENTITY browser_preferences_animateFadeIn_name "Animer bytte mellom paneler">
+<!ENTITY browser_preferences_animateFadeIn_description "Endrer høyden på vinduet, og toner inn det nye panelet ved bytting av paneler.">
+<!ENTITY doc_style "Nettsider">
+<!ENTITY browser_display_show_image_placeholders_name "Vis erstatninger">
+<!ENTITY browser_display_show_image_placeholders_description "Vis erstatninger mens bilder lastes">
+<!ENTITY browser_frames_enabled_name "Tillat rammer">
+<!ENTITY browser_frames_enabled_description "Vis HTML-rammer">
+<!ENTITY browser_blink_allowed_name "Tillat blinkende tekst">
+<!ENTITY browser_blink_allowed_description "«blink»-taggen eller CSS tekstdekorasjon vil resultere i blinkende elementer.">
+<!ENTITY downloads "Nedlastinger">
+<!ENTITY browser_download_manager_showAlertInterval_name "Forsinkelse (ms)">
+<!ENTITY browser_download_manager_showAlertInterval_description "Antall millisekunder etter nedlastingen varselet for fullført nedlasting skal vises.">
+<!ENTITY browser_download_lastDir_name "Sist brukte nedlastingsmappe">
+<!ENTITY browser_download_lastDir_description "Stien til mappen som sist ble brukt ved nedlasting via «Lagre som»">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Gjør Nedlastinger-vinduet til aktivt vindu når nedlastingen starter">
+<!ENTITY browser_download_manager_focusWhenStarting_description "Gjør Nedlastinger-vinduet til aktivt vindu når du starter en nedlasting">
+<!ENTITY bookmarks "Bokmerker">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Oppdateringfrekvens (sek)">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Antall sekunder mellom hver oppdatering av levende bokmerker. Verdier under 60 blir satt til 60;">
+<!ENTITY browser_bookmarks_max_backups_name "Sikkerhetskopi av bokmerker">
+<!ENTITY browser_bookmarks_max_backups_description "Angir antall sikkerhetskopier. Er denne satt til 0 vil sikkerhetskopier skrus av">
