@@ -64,14 +64,14 @@
 	</target>
 	
 	<target name="build_locales_babelzilla" depends="buildtarget" if="buildforbabelzilla">
-		<exec executable="${build.dir}/build_locales.sh" outputproperty="locales"></exec>
+		<exec executable="${build.dir}/build_locales.sh" dir="${build.dir}" outputproperty="locales"></exec>
 		<antcall target="variables">
 			<param name="app.locales" value="${locales}"/>
 		</antcall>
 	</target>
 	
 	<target name="build_locales_release" depends="buildtarget" if="buildnewrelease">
-		<exec executable="${build.dir}/build_locales.sh" outputproperty="locales">
+		<exec executable="${build.dir}/build_locales.sh" dir="${build.dir}" outputproperty="locales">
 			<arg line="${build.locales.complete}"/>
 		</exec>
 		<antcall target="variables">
