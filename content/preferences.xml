@@ -1,5 +1,10 @@
 <?xml version="1.0" ?>
-<!DOCTYPE preferences SYSTEM "chrome://guiconfig/locale/options.dtd">
+<!DOCTYPE preferences [
+	<!ENTITY % gcOptions SYSTEM "chrome://guiconfig/locale/options.dtd">
+	%gcOptions;
+	<!ENTITY % gcMain SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
+	%gcMain;
+]>
 <preferences>
 	<wrapper id="awesomebar_filter">
 		<type>Bool</type>
@@ -11,7 +16,7 @@
 			return (this.Preference.getPref() == "");
 		</script>
 	</wrapper>
-	
+		
 	<panel label="&accessibility;" icon="tab_accessibility">
 		<tabs>
 			<tab label="&mouseclick;">

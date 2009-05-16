@@ -31,6 +31,10 @@
 	</menupopup>
 	
 	<radiogroup id="gcConfigTabs" role="listbox" anonid="selector" orient="horizontal" class="paneSelector chromeclass-toolbar" value=""></radiogroup>
+	<hbox id="search">
+		<spacer flex="1"/>
+		<textbox id="searchbox" type="timed" timeout="500" emptytext="&config.search;" oncommand="return guiconfig.searchOptions(this.value);"/>
+	</hbox>
 	<deck id="gcConfigContainer"></deck>
 	<description id="gcConfigDescription" flex="1">&config.descr.standard;</description>
 

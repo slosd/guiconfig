@@ -7,16 +7,14 @@ var guiconfig = {
 	Options: new Object,
 	Wrappers: new Object,
 	
+	last_query: "",
 	stop_option_observation: false,
 	created_preferences: false,
 	
 	init: function() {
 		this.IconSet = new IconSet("tango", { os: gcCore.MozRuntime.OS });
 		
-		var request = new XMLHttpRequest();
-		request.open("GET", "chrome://guiconfig/content/preferences.xml", false); 
-		request.send(null);
-		this.PrefTree = request.responseXML.documentElement;
+		this.Parser = new PrefParser("chrome://guiconfig/content/preferences.xml");
 		
 		this.Elements.tabpanels = document.getElementById("gcConfigContainer");
 		this.Elements.tabs = document.getElementById("gcConfigTabs");
@@ -98,117 +96,135 @@ var guiconfig = {
 		var minVersion = child.getAttribute("minVersion"),
 			maxVersion = child.getAttribute("maxVersion");
 		
+		if(!minVersion || !maxVersion)
+			return true;
+		
 		return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
 	},
 
 	createPreferences: function() {
-		this.parseChildren(this.PrefTree.childNodes, this.Elements);
-		return true;
-	},
-
-	parseChildren: function(children, container) {
-		var wrapper_id, wrapper,
-			paneltab, panelbox,
-			tabbox, tab, tabpanel,
-			group, caption,
-			prefgroup,
-			separator,
-			preference;
-
-		for (var i = 0, l = children.length; i < l; i++) {
-			
-			var child = children[i];
-			
-			if(child.nodeName == "#text" || !this.validatePref(child))
-				continue;
-			
-			switch(child.nodeName) {
-				case 'panel':
-					paneltab = document.createElement("radio");
-					if(!container.panel_index) {
-						container.panel_index = 0;						
-						paneltab.setAttribute("selected", true);
-					}
-					paneltab.setAttribute("pane", container.panel_index++);
-					paneltab.setAttribute("src", this.IconSet.getIcon(child.getAttribute("icon")));
-					paneltab.setAttribute("label", child.getAttribute("label"));
-					paneltab.addEventListener("command", this.switchPanel, false);
-					panelbox = document.createElement("vbox");
-					panelbox.setAttribute("class", "gcPrefPane");		
-					container.tabs.appendChild(paneltab);
-					container.tabpanels.appendChild(this.parseChildren(child.childNodes, panelbox));
-					break;
-				
-				case 'tabs':
-					tabbox = document.createElement("tabbox");
-					tabbox.setAttribute("flex", "1");
-					tabbox.tabs = document.createElement("tabs");
-					tabbox.panels = document.createElement("tabpanels");
-					tabbox.panels.setAttribute("flex", "1");
-					tabbox.appendChild(tabbox.tabs);
-					tabbox.appendChild(tabbox.panels);
-					container.appendChild(tabbox);
-					this.parseChildren(child.childNodes, tabbox);
-					break;
-				
-				case 'tab':
-					tab = document.createElement("tab");
-					tab.setAttribute("label", child.getAttribute("label"));
-					tabpanel = document.createElement("tabpanel");
-					container.tabs.appendChild(tab);
-					container.panels.appendChild(tabpanel);
-					prefgroup = this.newPrefGroupBox();
-					tabpanel.appendChild(prefgroup);
-					this.parseChildren(child.childNodes, prefgroup);
-					break;
-				
-				case 'group':
-					group = document.createElement("groupbox");
-					caption = document.createElement("caption");
-					caption.setAttribute("label", child.getAttribute("label"));
-					group.appendChild(caption);
-					container.appendChild(group);
-					prefgroup = this.newPrefGroupBox();
-					group.appendChild(prefgroup);
-					this.parseChildren(child.childNodes, prefgroup);
-					break;
-				
-				case 'separator':
-					separator = document.createElement("separator");
-					container.appendChild(separator);
-					break;
-				
-				case 'wrapper':
-					wrapper_id = child.getAttribute("id");
-					if(!wrapper_id)
-						break;
-					wrapper = this.parseChildren(child.childNodes, new Object);
-					this.Wrappers[wrapper_id] = wrapper;
-					break;
-				
-				case 'type':
-					container.type = child.firstChild.data;
-					break;
-				
-				case 'script':
-					var name = child.getAttribute("name");
-					if(!name)
-						break;
-					container[name] = new Function("value", child.firstChild.data);
-					break;
-				
-				case 'pref':
-					option = this.newOption(child);
-					if(!option)
-						break;
-					this.Options[option.Preference.key] = option;
-					container.appendChild(option.build());
-					option.Preference.onchange();
-					break;
+		var parser = this.Parser.instance();
+		parser.registerFilter(this.validatePref);
+		
+		parser.registerNode('panel', function(node, container, parse) {
+			var paneltab = document.createElement("radio");
+			if(!container.panel_index) {
+				container.panel_index = 0;						
+				paneltab.setAttribute("selected", true);
 			}
-		}
-			
-		return container;
+			paneltab.setAttribute("pane", container.panel_index++);
+			paneltab.setAttribute("src", this.IconSet.getIcon(node.getAttribute("icon")));
+			paneltab.setAttribute("label", node.getAttribute("label"));
+			if(node.getAttribute("align") == "right")
+				paneltab.setAttribute("class", "gcDoPane");
+			paneltab.addEventListener("command", this.switchPanel, false);
+			var panelbox = document.createElement("vbox");
+			panelbox.setAttribute("class", "gcPrefPane");
+			node.gcElement = paneltab;
+			container.tabs.appendChild(paneltab);
+			container.tabpanels.appendChild(parse(node.childNodes, panelbox));
+		}, this);
+		
+		parser.registerNode('tabs', function(node, container, parse) {
+			var tabbox = document.createElement("tabbox");
+			tabbox.setAttribute("flex", "1");
+			tabbox.tabs = document.createElement("tabs");
+			tabbox.panels = document.createElement("tabpanels");
+			tabbox.panels.setAttribute("flex", "1");
+			tabbox.appendChild(tabbox.tabs);
+			tabbox.appendChild(tabbox.panels);
+			container.appendChild(tabbox);
+			parse(node.childNodes, tabbox);
+		});
+		
+		parser.registerNode('tab', function(node, container, parse) {
+			var tab = document.createElement("tab");
+			tab.setAttribute("label", node.getAttribute("label"));
+			var tabpanel = document.createElement("tabpanel");
+			container.tabs.appendChild(tab);
+			container.panels.appendChild(tabpanel);
+			prefgroup = this.newPrefGroupBox();
+			tabpanel.appendChild(prefgroup);
+			node.gcElement = tab;
+			parse(node.childNodes, prefgroup);
+		}, this);
+		
+		parser.registerNode('group', function(node, container, parse) {
+			var group = document.createElement("groupbox");
+			var caption = document.createElement("caption");
+			caption.setAttribute("label", node.getAttribute("label"));
+			group.appendChild(caption);
+			container.appendChild(group);
+			prefgroup = this.newPrefGroupBox();
+			group.appendChild(prefgroup);
+			node.gcElement = group;
+			parse(node.childNodes, prefgroup);
+		}, this);
+		
+		parser.registerNode('separator', function(node, container) {
+			var separator = document.createElement("separator");
+			container.appendChild(separator);
+		});
+		
+		parser.registerNode('wrapper', function(node, container, parse) {
+			// <wrapper> is child of <pref>
+			if(container.constructor.toString().indexOf("Option()") != -1) {
+				container.Options.wrapper = this.parseChildren(node.childNodes, new Object);
+			}
+			// <wrapper> is somewhere else in the doc and needs an id as reference
+			else {
+				wrapper_id = node.getAttribute("id");
+				if(!wrapper_id)
+					return false;
+				this.Wrappers[wrapper_id] = parse(node.childNodes, new Object);
+			}
+		}, this);
+		
+		parser.registerNode('type', function(node, container) {
+			container.type = node.firstChild.data;
+		});
+		
+		parser.registerNode('script', function(node, container) {
+			var name = node.getAttribute("name");
+			if(!name)
+				return false;
+			container[name] = new Function("value", node.firstChild.data);
+		});
+		
+		parser.registerNode('pref', function(node, container, parse) {
+			var option = this.newOption(node);
+			if(!option)
+				return false;
+			this.Options[option.Preference.key] = option;
+			parse(node.childNodes, option);
+			container.appendChild(option.build());
+			node.gcElement = option.Elements.prefRow;
+			option.Preference.onchange();
+		}, this);
+		
+		parser.registerNode('option', function(node, container) {
+			if(gcCore.validateVersion(gcCore.MozInfo.version, __(node.getAttribute("minVersion"), null), __(node.getAttribute("maxVersion"), null))) {
+				container.Options.validValues.push({ label: __(node.getAttribute("label"), ""), value: node.firstChild.data });
+			}
+		});
+		
+		parser.registerNode('bind', function(node, container) {
+			node.childNodes.forEach(function(binding) {
+				if(binding.nodeName != 'pref')
+					return false;
+				var option = this.newOption(binding);
+				if(!option)
+					return false;
+				container.Options.bindings.push(option);
+			}, this);
+		}, this);
+		
+		parser.registerNode('filter', function(node, container) {
+			container.Options.fileFilters.push("filter" + node.firstChild.data);
+		});
+		
+		parser.run(this.Elements);
+		return true;
 	},
 	
 	newPrefGroupBox: function() {
@@ -234,42 +250,11 @@ var guiconfig = {
 			bindings: new Array,
 			fileFilters: new Array
 		};
-		for(var children = pref.childNodes, i = 0, l = children.length, data, child; i < l; i++) {
-			child = children[i];
-			switch(child.nodeName) {
-				case 'option':
-					if(gcCore.validateVersion(gcCore.MozInfo.version, __(child.getAttribute("minVersion"), null), __(child.getAttribute("maxVersion"), null))) {
-						options.validValues.push({ label: __(child.getAttribute("label"), ""), value: child.firstChild.data });
-					}
-					break;
-				
-				case 'bind':
-					for(var bindings = child.childNodes, e = 0, bl = bindings.length, binding, preference; e < bl; e++) {
-						binding = bindings[e];
-						if(binding.nodeName != "pref")
-							continue;
-						option = this.newOption(binding);
-						if(!option)
-							continue;
-						options.bindings.push(option);
-					}
-					break;
-				
-				case 'filter':
-					options.fileFilters.push("filter" + child.firstChild.data);
-					break;
-				
-				case 'wrapper':
-					options.wrapper = this.parseChildren(child.childNodes, new Object);
-					break;
-			}
-		}
 		try {
 			var preference = new Preference(key, type);
 			return new window[__(__(guiconfig.Wrappers[options.wrapper], {}).type, options.wrapper.type, preference.type) + "Option"](preference, options);
 		}
 		catch(e) {
-			dump(e);dump("\n");
 			return false;
 		}
 	},
@@ -280,6 +265,58 @@ var guiconfig = {
 		var t = document.createTextNode(txt);
 		this.Elements.description.replaceChild(t, this.Elements.description.firstChild);
 		return true;
+	},
+	
+	searchOptions: function(string) {
+		var query = new RegExp("(" + string.makeSearchable(".*") + ")", "i");
+		
+		var parser = this.Parser.instance();
+		parser.registerFilter(this.validatePref);
+		parser.registerNode('tabs');
+		parser.registerNode('panel', function(node, container, parse) {
+			node.empty = true;
+			if(string == "" || node.getAttribute("label").makeSearchable().match(query)) {
+				if(string.indexOf(this.last_query) != 0)
+					parse(node.childNodes, node);
+				node.gcElement.style.opacity = "1";
+			}
+			else if((parse(node.childNodes, node)).empty) {
+				node.gcElement.style.opacity = "0.2";
+			}
+			else {
+				node.gcElement.style.opacity = "1";
+			}
+		});
+		parser.registerNodes(['tab', 'group'], function(node, container, parse) {
+			var property = node.nodeName == "tab" ? "visibility" : 'display';
+			var visible = node.nodeName == "tab" ? "visible" : '-moz-groupbox';
+			var hidden = node.nodeName == "tab" ? "hidden" : 'none';
+			node.empty = true;
+			if(string == "" || node.getAttribute("label").makeSearchable().match(query)) {
+				container.empty = false;
+				if(string.indexOf(this.last_query) != 0)
+					parse(node.childNodes, node);
+				node.gcElement.style[property] = visible;
+			}
+			else if((parse(node.childNodes, node)).empty) {
+				node.gcElement.style[property] = hidden;
+			}
+			else {
+				container.empty = false;
+				node.gcElement.style[property] = visible;
+			}
+		});
+		parser.registerNode('pref', function(node, container, parse) {
+			if(string == "" || (node.getAttribute("label") + " " + node.getAttribute("description")).makeSearchable().match(query)) {
+				container.empty = false;
+				node.gcElement.style.display = "-moz-box";
+			}
+			else {
+				node.gcElement.style.display = "none";
+			}
+		});
+		parser.run();
+		this.last_query = string;
 	},
 
 	switchPanel: function() {
@@ -314,6 +351,58 @@ var guiconfig = {
 		}
 
 		return menu;
+	}
+}
+
+var PrefParser = function(preferences) {
+	var request = new XMLHttpRequest();
+	request.open("GET", preferences, false); 
+	request.send(null);
+	var XML = request.responseXML;
+	var DOC = XML.documentElement;
+	
+	var Instance = function() {
+		var klass = this;
+		var Nodes = new Object;
+		var Filter = function() { return true; };
+		var parse = function(children, container) {
+			children.forEach(function(child) {
+				var nodeName = child.nodeName;
+				if(nodeName == "#text" || !Filter(child))
+					return;
+				if($defined(Nodes[nodeName])) {
+					Nodes[nodeName].fn.call(Nodes[nodeName].thisObj, child, container, parse);
+				}
+			}, this);
+			return container;
+		};
+		
+		this.registerFilter = function(fn) {
+			Filter = fn;
+		}
+		this.registerNode = function(nodeName, fn, thisObj) {
+			if(!fn)
+				var fn = function(child, container, parse) {
+					return parse(child.childNodes, container);
+				};
+			Nodes[nodeName] = { "fn": fn, "thisObj": thisObj };
+		}
+		this.registerNodes = function(nodeNames, fn, thisObj) {
+			nodeNames.forEach(function(nodeName) {
+				this.registerNode(nodeName, fn, thisObj);
+			}, klass);
+		}
+		this.run = function(container) {
+			if(!container)
+				var container = this.document;
+			parse(this.document.childNodes, container);
+		}
+	}
+	
+	this.instance = function() {
+		var instance = new Instance();
+		instance.document = DOC;
+		return instance;
 	}
 }
 
@@ -366,4 +455,12 @@ XULElement.prototype.setProperty = function(name, value) {
 		this[name] = value;
 	else
 		this.setAttribute(name, value);
+}
+
+NodeList.prototype.forEach = Array.prototype.forEach;
+
+String.prototype.makeSearchable = function(join_string) {
+	if(!join_string)
+		var join_string = " ";
+	return this.trim().toLowerCase().replace(/[0-9\"\'\«\»\(\)\<\>\-\_\,\.\;\:]/gi, "").replace(/\s\s+/, " ").split(" ").sort().join(join_string);
 }
