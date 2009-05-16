@@ -288,6 +288,15 @@
 	<panel label="&style;" icon="tab_style">
 		<tabs>
 			<tab label="&browser_style;">
+				<pref key="browser.identity.ssl_domain_display"
+					  label="&browser_identity_ssl_domain_display_name;"
+					  description="browser_identity_ssl_domain_display_description"
+					  minVersion="3.0"
+					  mode="select">
+					<option label="&browser_identity_ssl_domain_display_o1;">0</option>
+					<option label="&browser_identity_ssl_domain_display_o2;">1</option>
+					<option label="&browser_identity_ssl_domain_display_o3;">2</option>
+				</pref>
 				<pref key="browser.chrome.favicons"
 					  label="&browser_chrome_favicons_name;"
 					  description="&browser_chrome_favicons_description;">
@@ -309,7 +318,9 @@
 					  description="&browser_preferences_animateFadeIn_description;" />
 				<pref key="browser.tabs.closeButtons"
 					  label="&browser_tabs_closeButtons_name;"
-					  description="&browser_tabs_closeButtons_description;" mode="select" minVersion="2.0">
+					  description="&browser_tabs_closeButtons_description;"
+					  minVersion="2.0"
+					  mode="select">
 					<option label="&browser_tabs_closeButtons_o1;">0</option>
 					<option label="&browser_tabs_closeButtons_o2;">1</option>
 					<option label="&browser_tabs_closeButtons_o3;">2</option>

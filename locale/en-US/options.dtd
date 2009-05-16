@@ -85,6 +85,11 @@
 <!ENTITY browser_fixup_alternate_suffix_name "Insert at the end">
 <!ENTITY browser_frames_enabled_description "Display HTML frames.">
 <!ENTITY browser_frames_enabled_name "Allow frames">
+<!ENTITY browser_identity_ssl_domain_display_name "Emphasize domains using SSL">
+<!ENTITY browser_identity_ssl_domain_display_description "When a site uses SSL to encrypt communications, the user can choose to have a portion of the site’s URL emphasized in the UI. This preference determines whether to show nothing, the second-level domain (e.g.: mozilla.org) or the full domain (e.g.: bugzilla.mozilla.org) in the Location Bar. ">
+<!ENTITY browser_identity_ssl_domain_display_o1 "Don't show domain">
+<!ENTITY browser_identity_ssl_domain_display_o2 "Show second-level domain">
+<!ENTITY browser_identity_ssl_domain_display_o3 "Show the full domain">
 <!ENTITY browser_microsummary_enabled_description "Allow to retrieve information for bookmarks with microsummaries.">
 <!ENTITY browser_microsummary_enabled_name "Use microsummaries">
 <!ENTITY browser_microsummary_generatorUpdateInterval_description "Determines seconds between microsummary generator update checks in seconds. If unspecified, updates occur weekly (604800 seconds).">
