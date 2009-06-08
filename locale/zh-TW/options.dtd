@@ -1,207 +1,242 @@
 <!ENTITY accessibility "近接方面">
-<!ENTITY middleclick "滑鼠中鍵">
-<!ENTITY middlemouse_contentLoadURL_name "剪貼簿載入成鏈結">
-<!ENTITY middlemouse_contentLoadURL_description "按滑鼠中鍵時，將剪貼簿內容載入成鏈結。">
-<!ENTITY middlemouse_paste_name "從剪貼簿貼上文字">
-<!ENTITY middlemouse_paste_description "按滑鼠中鍵時，將剪貼簿內容貼上文字區內。">
-<!ENTITY misc "雜項">
-<!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
 <!ENTITY accessibility_accesskeycausesactivation_description "對元件使用近接鍵，其作用方式與啟動該元件相同。元件如果是鏈結，就開啟該鏈結；元件如果是按鈕，就點選該按鈕。">
-<!ENTITY accessibility_tabfocus_name "可用Tab鍵聚焦(游標會停駐)的元件">
+<!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
 <!ENTITY accessibility_tabfocus_description "此選項決定哪些元件可以用按Tab鍵來聚焦">
+<!ENTITY accessibility_tabfocus_name "可用Tab鍵聚焦(游標會停駐)的元件">
 <!ENTITY accessibility_tabfocus_o1 "只有文字鍵入區">
 <!ENTITY accessibility_tabfocus_o2 "除文字鍵入區以外的所有表格元件">
 <!ENTITY accessibility_tabfocus_o3 "所有表格元件">
 <!ENTITY accessibility_tabfocus_o4 "只有鏈結(以及代表鏈結的圖片)">
 <!ENTITY accessibility_tabfocus_o5 "鏈結和表格元件">
 <!ENTITY accessibility_tabfocus_o6 "除文字鍵入區以外的鏈結和表格元件">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "進入鍵盤按鍵瀏覽模式時顯示對話視窗">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "決定是否辨識大小寫。勾選&quot;自動判斷&quot;時，則在搜尋中，僅對含有大寫字母但非全部大寫的搜尋字串，視為須分別大小寫。">
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "辨識大小寫">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自動判斷">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "不分大小寫">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "分別大小寫">
+<!ENTITY accessibility_typeaheadfind_label "隨打即找">
+<!ENTITY accessibility_typeaheadfind_timeout_description "打字時隨即尋找">
+<!ENTITY accessibility_typeaheadfind_timeout_name "逾時(毫秒/千分秒)">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "每次按下(F7)鍵，都顯示對話視窗提醒使用者將要進入鍵盤按鍵瀏覽模式">
-<!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
-<!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
-<!ENTITY extensions "附加元件">
-<!ENTITY extensions_hideInstallButton_name "不顯示&quot;安裝&quot;按鈕">
-<!ENTITY extensions_hideInstallButton_description "在&quot;附加元件管理員&quot;視窗中，不顯示&quot;安裝&quot;按鈕。">
-<!ENTITY getaddons "&quot;取得元件&quot;側頁">
-<!ENTITY extensions_checkCompatibility_name "啟用元件相容性檢查">
-<!ENTITY extensions_checkCompatibility_description "此選項可以啟用/停用&quot;元件相容性檢查&quot;。">
-<!ENTITY extensions_getAddons_showPane_name "顯示側頁">
-<!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
-<!ENTITY extensions_getAddons_maxResults_name "最大搜尋結果數目">
-<!ENTITY extensions_getAddons_maxResults_description "決定您進行一項搜尋時要顯示於側頁內的最大搜尋結果數目">
-<!ENTITY urlbar "地址欄">
-<!ENTITY mouseclick "滑鼠點按">
-<!ENTITY browser_urlbar_clickSelectsAll_name "滑鼠點按時標選內容">
-<!ENTITY browser_urlbar_clickSelectsAll_description "以滑鼠點按地址欄時標選全部內容">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_name "滑鼠連點時標選內容">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_description "以滑鼠連點地址欄時標選全部內容">
+<!ENTITY accessibility_warn_on_browsewithcaret_name "進入鍵盤按鍵瀏覽模式時顯示對話視窗">
+<!ENTITY alert-saved "目前的設定已存檔完畢">
+<!ENTITY alerts "警示視窗">
+<!ENTITY alerts_slideIncrementTime_description "控制各警示視窗滑出/入或淡出/入動作期間毫秒數。">
+<!ENTITY alerts_slideIncrementTime_name "移動為時(毫秒)">
+<!ENTITY alerts_slideIncrement_description "此設定控制出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的速度。特別是以每一增距移動多少像素來控制。">
+<!ENTITY alerts_slideIncrement_name "每一增距移動多少像素(以像素為單位)">
+<!ENTITY alerts_totalOpenTime_description "此設定控制以毫秒為單位、出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的時間長度。">
+<!ENTITY alerts_totalOpenTime_name "警示週期(毫秒)">
 <!ENTITY awesomebar "酷炫地址欄">
-<!ENTITY browser_urlbar_maxRichResults_name "下拉式選單項目數">
-<!ENTITY browser_urlbar_maxRichResults_description "指定地址欄的下拉式選單最多顯示多少個項目">
-<!ENTITY browser_urlbar_matchBehavior_name "符合搜尋行為準則">
-<!ENTITY browser_urlbar_matchBehavior_description "此選項決定在地址欄中進行搜尋時如何使用字詞分界。">
-<!ENTITY browser_urlbar_matchBehavior_o1 "忽略字詞分界">
-<!ENTITY browser_urlbar_matchBehavior_o2 "優先顯示符合字詞分界的項目">
-<!ENTITY browser_urlbar_matchBehavior_o3 "僅對手動輸入的文字使用字詞分界">
-<!ENTITY browser_urlbar_matchBehavior_o4 "僅需符合URL或標題的開頭">
-<!ENTITY urlbar_restrict_name "限定的搜尋結果">
-<!ENTITY browser_urlbar_restrict_tag_name "智慧選址限依標簽">
-<!ENTITY browser_urlbar_restrict_tag_description "地址欄智慧選址限定依標簽列出符合的選項">
-<!ENTITY browser_urlbar_restrict_history_name "智慧選址限依紀錄">
-<!ENTITY browser_urlbar_restrict_history_description "地址欄智慧選址限定依瀏覽過的網站紀錄列出符合的選項">
-<!ENTITY browser_urlbar_restrict_bookmark_name "智慧選址限依書籤">
-<!ENTITY browser_urlbar_restrict_bookmark_description "地址欄智慧選址限定依書籤列出符合的選項。">
-<!ENTITY urlbar_match_name "符合搜尋條件的結果">
-<!ENTITY browser_urlbar_match_url_name "搜尋比對URL網址">
-<!ENTITY browser_urlbar_match_url_description "智慧選址比對內容限定為URL網址">
-<!ENTITY browser_urlbar_match_title_name "搜尋比對網頁標題">
-<!ENTITY browser_urlbar_match_title_description "智慧選址比對內容限定為網頁標題">
-<!ENTITY browser_urlbar_autoFill_name "行內自動補足">
-<!ENTITY browser_urlbar_autoFill_description "啟用行內自動補足。">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "僅限符合手動輸入者">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "僅針對您先前在地址欄鍵入過的地址進行自動補足">
-<!ENTITY browser_fixup_alternate_enabled_name "地址自動替代">
-<!ENTITY browser_fixup_alternate_enabled_description "查無該地址時，自動添加下列字元。">
-<!ENTITY browser_fixup_alternate_prefix_name "行首添加">
-<!ENTITY browser_fixup_alternate_prefix_description "添加於行首的字元">
-<!ENTITY browser_fixup_alternate_suffix_name "行末添加">
-<!ENTITY browser_fixup_alternate_suffix_description "添加於行末的字元">
-<!ENTITY browser_backspace_action_name "Backspace鍵">
+<!ENTITY bookmarks "書籤">
+<!ENTITY browser "瀏覽器">
 <!ENTITY browser_backspace_action_description "決定Backspace鍵的作用">
+<!ENTITY browser_backspace_action_name "Backspace鍵">
 <!ENTITY browser_backspace_action_o1 "回到&quot;前一頁&quot;">
 <!ENTITY browser_backspace_action_o2 "捲動&quot;上一頁&quot;">
 <!ENTITY browser_backspace_action_o3 "什麼都不做">
-<!ENTITY browser_preferences_instantApply_name "立刻生效">
-<!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
-<!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
-<!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
-<!ENTITY browser_popups_showPopupBlocker_name "在狀態列顯示圖示">
-<!ENTITY browser_popups_showPopupBlocker_description "決定是否在狀態列顯示有無阻擋彈跳視窗的圖示">
-<!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
-<!ENTITY signon_prefillForms_description "自動填妥各種&quot;登入&quot;表格欄中的使用者名稱以及密碼。">
-<!ENTITY browser "瀏覽器">
-<!ENTITY alerts "警示視窗">
-<!ENTITY update_showSlidingNotification_name "顯示更新通知">
-<!ENTITY update_showSlidingNotification_description "有更新檔時，在瀏覽器顯示一份通知。">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "下載完成後以彈跳視窗警示">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "下載完所有項目後，在螢幕右下角顯示彈跳視窗。">
-<!ENTITY alerts_slideIncrement_name "每一增距移動多少像素(以像素為單位)">
-<!ENTITY alerts_slideIncrement_description "此設定控制出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的速度。特別是以每一增距移動多少像素來控制。">
-<!ENTITY alerts_slideIncrementTime_name "移動為時(毫秒)">
-<!ENTITY alerts_slideIncrementTime_description "控制各警示視窗滑出/入或淡出/入動作期間毫秒數。">
-<!ENTITY alerts_totalOpenTime_name "警示週期(毫秒)">
-<!ENTITY alerts_totalOpenTime_description "此設定控制以毫秒為單位、出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的時間長度。">
-<!ENTITY cache "瀏覽器的快取記憶區">
-<!ENTITY browser_cache_check_doc_frequency_name "檢查瀏覽器的快取記憶區">
+<!ENTITY browser_blink_allowed_description "允許使用閃爍標籤或 CSS 的文字裝飾來使元件呈現閃爍的效果。">
+<!ENTITY browser_blink_allowed_name "啟用文字閃爍">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">
+<!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
+<!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!ENTITY browser_cache_check_doc_frequency_description "多久檢查一次遠端網頁，看是否有比快取記憶區中還要新的內容。">
+<!ENTITY browser_cache_check_doc_frequency_name "檢查瀏覽器的快取記憶區">
 <!ENTITY browser_cache_check_doc_frequency_o1 "每次切換瀏覽頁組時檢查一次">
 <!ENTITY browser_cache_check_doc_frequency_o2 "每次切換瀏覽分頁時檢查一次">
 <!ENTITY browser_cache_check_doc_frequency_o3 "都不檢查(都使用快取記憶區中網頁內容)">
 <!ENTITY browser_cache_check_doc_frequency_o4 "當瀏覽分頁過時的時候檢查一次(自動決定)">
-<!ENTITY cache_disk "硬碟快取記憶區">
-<!ENTITY browser_cache_disk_capacity_name "硬碟快取記憶區(KB)">
-<!ENTITY browser_cache_disk_capacity_description "允許瀏覽器當做快取記憶區的硬碟空間(以KB為單位)">
-<!ENTITY browser_cache_disk_enable_name "使用硬碟快取記憶區">
-<!ENTITY browser_cache_disk_enable_description "以指定的最大空間來使用硬碟快取記憶區">
-<!ENTITY browser_cache_disk_cache_ssl_name "將 HTTPS/SSL 內容儲存在快取記憶區">
 <!ENTITY browser_cache_disk_cache_ssl_description "將經由SSL連線收取的內容儲存在快取記憶區中(安全上有風險喔！)">
-<!ENTITY cache_memory "RAM 快取記憶區">
-<!ENTITY browser_cache_memory_capacity_name "RAM 快取記憶區(KB)">
+<!ENTITY browser_cache_disk_cache_ssl_name "將 HTTPS/SSL 內容儲存在快取記憶區">
+<!ENTITY browser_cache_disk_capacity_description "允許瀏覽器當做快取記憶區的硬碟空間(以KB為單位)">
+<!ENTITY browser_cache_disk_capacity_name "硬碟快取記憶區(KB)">
+<!ENTITY browser_cache_disk_enable_description "以指定的最大空間來使用硬碟快取記憶區">
+<!ENTITY browser_cache_disk_enable_name "使用硬碟快取記憶區">
 <!ENTITY browser_cache_memory_capacity_description "設定用做快取記憶區的 RAM 大小(以KB為單位)">
-<!ENTITY browser_cache_memory_enable_name "使用 RAM 快取記憶區">
+<!ENTITY browser_cache_memory_capacity_name "RAM 快取記憶區(KB)">
 <!ENTITY browser_cache_memory_enable_description "以指定的最大空間來使用 RAM 快取記憶區">
-<!ENTITY style "樣式">
-<!ENTITY browser_style "瀏覽器">
-<!ENTITY browser_chrome_favicons_name "顯示小圖示">
+<!ENTITY browser_cache_memory_enable_name "使用 RAM 快取記憶區">
 <!ENTITY browser_chrome_favicons_description "決定是否顯示小圖示">
-<!ENTITY browser_chrome_toolbar_tips_name "顯示用法提示">
+<!ENTITY browser_chrome_favicons_name "顯示小圖示">
 <!ENTITY browser_chrome_toolbar_tips_description "決定是否對chrome元件顯示用法提示">
-<!ENTITY browser_urlbar_hideGoButton_name "隱藏&quot;Go&quot;按鈕">
-<!ENTITY browser_urlbar_hideGoButton_description "決定是否顯示&quot;Go&quot;按鈕">
-<!ENTITY browser_preferences_animateFadeIn_name "切換設定控制頁時顯示動畫效果">
+<!ENTITY browser_chrome_toolbar_tips_name "顯示用法提示">
+<!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
+<!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
+<!ENTITY browser_dom_window_dump_enabled_description "啟用以 dump() 指令來印出到標準主控台。">
+<!ENTITY browser_dom_window_dump_enabled_name "啟用 dump()">
+<!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
+<!ENTITY browser_download_lastDir_name "前次下載目錄">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "當使用者要從下載管理員開啟的項目是執行檔時，予以警示">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
+<!ENTITY browser_download_manager_focusWhenStarting_description "開始一項下載時，將下載管理員視窗設為啟動">
+<!ENTITY browser_download_manager_focusWhenStarting_name "開始下載時啟動下載管理員視窗">
+<!ENTITY browser_download_manager_showAlertInterval_description "下載完成後經過多少千分之一秒再顯示&quot;完成&quot;警示。">
+<!ENTITY browser_download_manager_showAlertInterval_name "警示延時 (毫秒)">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "下載完所有項目後，在螢幕右下角顯示彈跳視窗。">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "下載完成後以彈跳視窗警示">
+<!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
+<!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
+<!ENTITY browser_fixup_alternate_enabled_description "查無該地址時，自動添加下列字元。">
+<!ENTITY browser_fixup_alternate_enabled_name "地址自動替代">
+<!ENTITY browser_fixup_alternate_prefix_description "添加於行首的字元">
+<!ENTITY browser_fixup_alternate_prefix_name "行首添加">
+<!ENTITY browser_fixup_alternate_suffix_description "添加於行末的字元">
+<!ENTITY browser_fixup_alternate_suffix_name "行末添加">
+<!ENTITY browser_frames_enabled_description "顯示 HTML 頁框">
+<!ENTITY browser_frames_enabled_name "允許使用頁框">
+<!ENTITY browser_identity_ssl_domain_display_name "SSL網域強調顯示">
+<!ENTITY browser_identity_ssl_domain_display_description "當網站使用SSL對其通訊加密時，使用者可以在UI中選擇對其URL的一部份予以強調顯示。此選項設定地址欄內是否不要顯示網域、顯示次階網域(例如: mozilla.org)或顯示完全網域(例如: bugzilla.mozilla.org)">
+<!ENTITY browser_identity_ssl_domain_display_o1 "不要顯示網域">
+<!ENTITY browser_identity_ssl_domain_display_o2 "顯示次階網域">
+<!ENTITY browser_identity_ssl_domain_display_o3 "顯示完全網域">
+<!ENTITY browser_microsummary_enabled_description "允許對書籤萃取即時摘要資訊。">
+<!ENTITY browser_microsummary_enabled_name "啟用即時摘要">
+<!ENTITY browser_microsummary_generatorUpdateInterval_description "指定即時摘要產生器檢查更新間隔秒數。若未特別指定，預設為每週檢查一次(604800 秒)。">
+<!ENTITY browser_microsummary_generatorUpdateInterval_name "即時摘要產生器檢查更新間隔秒數">
+<!ENTITY browser_microsummary_updateGenerators_description "指定是否要對即時摘要產生器定期檢查更新。">
+<!ENTITY browser_microsummary_updateGenerators_name "即時摘要產生器定期檢查更新">
+<!ENTITY browser_microsummary_updateInterval_description "指定即時摘要檢查更新間隔分鐘數。預設為30分鐘。">
+<!ENTITY browser_microsummary_updateInterval_name "即時摘要檢查更新間隔分鐘數">
+<!ENTITY browser_popups_showPopupBlocker_description "決定是否在狀態列顯示有無阻擋彈跳視窗的圖示">
+<!ENTITY browser_popups_showPopupBlocker_name "在狀態列顯示圖示">
 <!ENTITY browser_preferences_animateFadeIn_description "當切換設定控制頁時，在大約超過一秒的時間內改變視窗高度並淡入新的控制頁。">
-<!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
+<!ENTITY browser_preferences_animateFadeIn_name "切換設定控制頁時顯示動畫效果">
+<!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
+<!ENTITY browser_preferences_instantApply_name "立刻生效">
+<!ENTITY browser_privatebrowsing_autostart_description "此項若勾選，Firefox 會在啟動時自動進入&quot;隱密瀏覽&quot;模式，並運用到整個瀏覽行程直到關閉 Firefox。">
+<!ENTITY browser_privatebrowsing_autostart_name "啟動時自動進入&quot;隱密瀏覽&quot;模式">
+<!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
+<!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
+<!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
+<!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
+<!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
+<!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
 <!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">
 <!ENTITY browser_tabs_closeButtons_o2 "顯示於每一分頁">
 <!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
 <!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
-<!ENTITY doc_style "網站">
-<!ENTITY rendering "呈現">
-<!ENTITY nglayout_initialpaint_delay_name "顯示頁面延時(毫秒;千分之一秒)">
-<!ENTITY nglayout_initialpaint_delay_description "此選項指定首次呈現一頁面之前須等待的毫秒數。較小的數值可使頁面快些顯示但會需要較長的時間來完成呈現。較大的數值其效應恰與此相反。">
-<!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
-<!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
-<!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
-<!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
-<!ENTITY browser_frames_enabled_name "允許使用頁框">
-<!ENTITY browser_frames_enabled_description "顯示 HTML 頁框">
-<!ENTITY browser_blink_allowed_name "啟用文字閃爍">
-<!ENTITY browser_blink_allowed_description "允許使用閃爍標籤或 CSS 的文字裝飾來使元件呈現閃爍的效果。">
-<!ENTITY text_select "文字標選">
-<!ENTITY ui_textSelectBackground_name "背景顏色">
-<!ENTITY ui_textSelectBackground_description "以十六進位碼或顏色名稱指定標選文字時的背景顏色。此項若未設，就套用作業系統本身的設定。">
-<!ENTITY ui_textSelectForeground_name "文字顏色">
-<!ENTITY ui_textSelectForeground_description "以十六進位碼或顏色名稱指定所標選文字本身的顏色。。此項若未設，就套用作業系統本身的設定。">
-<!ENTITY ui_textSelectBackgroundAttention_name "符合搜尋的文字背景顏色">
-<!ENTITY ui_textSelectBackgroundAttention_description "以十六進位碼或顏色名稱指定&quot;隨打隨找&quot;功能所找到的文字背景顏色">
-<!ENTITY downloads "下載">
-<!ENTITY downloadmanager "下載管理員">
-<!ENTITY browser_download_manager_showAlertInterval_name "警示延時 (毫秒)">
-<!ENTITY browser_download_manager_showAlertInterval_description "下載完成後經過多少千分之一秒再顯示&quot;完成&quot;警示。">
-<!ENTITY browser_download_lastDir_name "前次下載目錄">
-<!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
-<!ENTITY browser_download_manager_focusWhenStarting_name "開始下載時啟動下載管理員視窗">
-<!ENTITY browser_download_manager_focusWhenStarting_description "開始一項下載時，將下載管理員視窗設為啟動">
-<!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
-<!ENTITY browser_download_manager_alertOnEXEOpen_description "當使用者要從下載管理員開啟的項目是執行檔時，予以警示">
-<!ENTITY bookmarks "書籤">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
-<!ENTITY browser_bookmarks_max_backups_name "書籤備份">
-<!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_tabs_loadBookmarksInBackground_description "當您用新分頁開啟書籤時，該書籤會在背景中載入，現行瀏覽分頁不會被自動切換過去。">
-<!ENTITY microsummaries "即時摘要(動態標題)">
-<!ENTITY browser_microsummary_enabled_name "啟用即時摘要">
-<!ENTITY browser_microsummary_enabled_description "允許對書籤萃取即時摘要資訊。">
-<!ENTITY browser_microsummary_updateInterval_name "即時摘要檢查更新間隔分鐘數">
-<!ENTITY browser_microsummary_updateInterval_description "指定即時摘要檢查更新間隔分鐘數。預設為30分鐘。">
-<!ENTITY browser_microsummary_updateGenerators_name "即時摘要產生器定期檢查更新">
-<!ENTITY browser_microsummary_updateGenerators_description "指定是否要對即時摘要產生器定期檢查更新。">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "即時摘要產生器檢查更新間隔秒數">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "指定即時摘要產生器檢查更新間隔秒數。若未特別指定，預設為每週檢查一次(604800 秒)。">
-<!ENTITY network "網路">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_urlbar_autoFill_description "啟用行內自動補足。">
+<!ENTITY browser_urlbar_autoFill_name "行內自動補足">
+<!ENTITY browser_urlbar_clickSelectsAll_description "以滑鼠點按地址欄時標選全部內容">
+<!ENTITY browser_urlbar_clickSelectsAll_name "滑鼠點按時標選內容">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "以滑鼠連點地址欄時標選全部內容">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "滑鼠連點時標選內容">
+<!ENTITY browser_urlbar_hideGoButton_description "決定是否顯示&quot;Go&quot;按鈕">
+<!ENTITY browser_urlbar_hideGoButton_name "隱藏&quot;Go&quot;按鈕">
+<!ENTITY browser_urlbar_matchBehavior_description "此選項決定在地址欄中進行搜尋時如何使用字詞分界。">
+<!ENTITY browser_urlbar_matchBehavior_name "符合搜尋行為準則">
+<!ENTITY browser_urlbar_matchBehavior_o1 "忽略字詞分界">
+<!ENTITY browser_urlbar_matchBehavior_o2 "優先顯示符合字詞分界的項目">
+<!ENTITY browser_urlbar_matchBehavior_o3 "僅對手動輸入的文字使用字詞分界">
+<!ENTITY browser_urlbar_matchBehavior_o4 "僅需符合URL或標題的開頭">
+<!ENTITY browser_urlbar_matchOnlyTyped_description "僅針對您先前在地址欄鍵入過的地址進行自動補足">
+<!ENTITY browser_urlbar_matchOnlyTyped_name "僅限符合手動輸入者">
+<!ENTITY browser_urlbar_match_title_description "智慧選址比對內容限定為網頁標題">
+<!ENTITY browser_urlbar_match_title_name "搜尋比對網頁標題">
+<!ENTITY browser_urlbar_match_url_description "智慧選址比對內容限定為URL網址">
+<!ENTITY browser_urlbar_match_url_name "搜尋比對URL網址">
+<!ENTITY browser_urlbar_maxRichResults_description "指定地址欄的下拉式選單最多顯示多少個項目">
+<!ENTITY browser_urlbar_maxRichResults_name "下拉式選單項目數">
+<!ENTITY browser_urlbar_restrict_bookmark_description "地址欄智慧選址限定依書籤列出符合的選項。">
+<!ENTITY browser_urlbar_restrict_bookmark_name "智慧選址限依書籤">
+<!ENTITY browser_urlbar_restrict_history_description "地址欄智慧選址限定依瀏覽過的網站紀錄列出符合的選項">
+<!ENTITY browser_urlbar_restrict_history_name "智慧選址限依紀錄">
+<!ENTITY browser_urlbar_restrict_tag_description "地址欄智慧選址限定依標簽列出符合的選項">
+<!ENTITY browser_urlbar_restrict_tag_name "智慧選址限依標簽">
+<!ENTITY button-custom-value "自訂">
+<!ENTITY button-edit-enable "啟用">
+<!ENTITY button-file-select "瀏覽...">
+<!ENTITY cache "瀏覽器的快取記憶區">
+<!ENTITY cache_disk "硬碟快取記憶區">
+<!ENTITY cache_memory "RAM 快取記憶區">
+<!ENTITY choose-file "選取檔案">
+<!ENTITY confirm-std "您確定要清除現有設定、還原為預設值？">
 <!ENTITY connections "連線">
-<!ENTITY network_http_max-connections_name "最大HTTP連線數">
-<!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">
-<!ENTITY network_http_max-connections-per-server_name "每一伺服主機最大HTTP連線數">
-<!ENTITY network_http_max-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大連線總數。其值須介於 1 與 225之間。">
-<!ENTITY keep-alive_connections "不下線連線">
-<!ENTITY network_http_keep-alive_name "使用不下線連線">
-<!ENTITY network_http_keep-alive_description "HTTP的不下線連線可以重覆使用於多重請求而增進其效能。">
-<!ENTITY network_http_max-persistent-connections-per-server_name "每一伺服主機最大不下線連線數">
-<!ENTITY network_http_max-persistent-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
-<!ENTITY network_http_max-persistent-connections-per-proxy_name "每一代理伺服主機最大不下線連線數">
-<!ENTITY network_http_max-persistent-connections-per-proxy_description "此選項指定Firefox對單一代理伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
-<!ENTITY pipelining "複請求批送機制">
-<!ENTITY network_http_pipelining_name "使用「複請求批送」(pipelining)">
-<!ENTITY network_http_pipelining_description "HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
-<!ENTITY network_http_proxy_pipelining_name "對代理伺服主機使用「複請求批送」(Pipelining)">
-<!ENTITY network_http_proxy_pipelining_description "此選項指定是否對代理伺服主機使用「複請求批送」。HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
-<!ENTITY network_http_pipelining_maxrequests_name "最大「複請求批送」(Pipelining)請求數">
-<!ENTITY network_http_pipelining_maxrequests_description "此選項指定啟用「複請求批送」時，同一時間內可要求批送的最大請求數。">
+<!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
+<!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
 <!ENTITY developing "研發">
-<!ENTITY viewsource "檢視原始檔">
-<!ENTITY view_source_editor_external_name "使用自訂編輯程式">
-<!ENTITY view_source_editor_external_description "使用自訂編輯程式來檢視原始檔">
-<!ENTITY view_source_editor_path_name "編輯程式路徑">
-<!ENTITY view_source_editor_path_description "自訂編輯程式的路徑">
-<!ENTITY browser_dom_window_dump_enabled_name "啟用 dump()">
-<!ENTITY browser_dom_window_dump_enabled_description "啟用以 dump() 指令來印出到標準主控台。">
-<!ENTITY javascript_options_showInConsole_name "在主控台記錄 chrome 的各項錯誤">
+<!ENTITY dont-ask "一路套用，別再問我。">
+<!ENTITY downloadmanager "下載管理員">
+<!ENTITY downloads "下載">
+<!ENTITY extensions "附加元件">
+<!ENTITY extensions_checkCompatibility_description "此選項可以啟用/停用&quot;元件相容性檢查&quot;。">
+<!ENTITY extensions_checkCompatibility_name "啟用元件相容性檢查">
+<!ENTITY extensions_getAddons_maxResults_description "決定您進行一項搜尋時要顯示於側頁內的最大搜尋結果數目">
+<!ENTITY extensions_getAddons_maxResults_name "最大搜尋結果數目">
+<!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
+<!ENTITY extensions_getAddons_showPane_name "顯示側頁">
+<!ENTITY extensions_hideInstallButton_description "在&quot;附加元件管理員&quot;視窗中，不顯示&quot;安裝&quot;按鈕。">
+<!ENTITY extensions_hideInstallButton_name "不顯示&quot;安裝&quot;按鈕">
+<!ENTITY fill-in-value "請填入一個自訂值:">
+<!ENTITY getaddons "&quot;取得元件&quot;側頁">
 <!ENTITY javascript_options_showInConsole_description "決定是否要在 JavaScript 主控台記錄 chrome 的各項錯誤和警告。">
-<!ENTITY javascript_options_strict_name "嚴謹的 JavaScript 告警">
+<!ENTITY javascript_options_showInConsole_name "在主控台記錄 chrome 的各項錯誤">
 <!ENTITY javascript_options_strict_description "在錯誤主控台啟用嚴謹的 JavaScript 告警。">
-<!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
+<!ENTITY javascript_options_strict_name "嚴謹的 JavaScript 告警">
+<!ENTITY keep-alive_connections "不下線連線">
+<!ENTITY layout_spellcheckDefault_description "決定是否啟用拼字檢查。">
+<!ENTITY layout_spellcheckDefault_name "拼字檢查">
+<!ENTITY layout_spellcheckDefault_o1 "停用">
+<!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
+<!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
+<!ENTITY microsummaries "即時摘要(動態標題)">
+<!ENTITY middleclick "滑鼠中鍵">
+<!ENTITY middlemouse_contentLoadURL_description "按滑鼠中鍵時，將剪貼簿內容載入成鏈結。">
+<!ENTITY middlemouse_contentLoadURL_name "剪貼簿載入成鏈結">
+<!ENTITY middlemouse_paste_description "按滑鼠中鍵時，將剪貼簿內容貼上文字區內。">
+<!ENTITY middlemouse_paste_name "從剪貼簿貼上文字">
+<!ENTITY misc "雜項">
+<!ENTITY mouseclick "滑鼠點按">
+<!ENTITY network "網路">
+<!ENTITY network_http_keep-alive_description "HTTP的不下線連線可以重覆使用於多重請求而增進其效能。">
+<!ENTITY network_http_keep-alive_name "使用不下線連線">
+<!ENTITY network_http_max-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大連線總數。其值須介於 1 與 225之間。">
+<!ENTITY network_http_max-connections-per-server_name "每一伺服主機最大HTTP連線數">
+<!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">
+<!ENTITY network_http_max-connections_name "最大HTTP連線數">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "此選項指定Firefox對單一代理伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "每一代理伺服主機最大不下線連線數">
+<!ENTITY network_http_max-persistent-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
+<!ENTITY network_http_max-persistent-connections-per-server_name "每一伺服主機最大不下線連線數">
+<!ENTITY network_http_pipelining_description "HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
+<!ENTITY network_http_pipelining_maxrequests_description "此選項指定啟用「複請求批送」時，同一時間內可要求批送的最大請求數。">
+<!ENTITY network_http_pipelining_maxrequests_name "最大「複請求批送」(Pipelining)請求數">
+<!ENTITY network_http_pipelining_name "使用「複請求批送」(pipelining)">
+<!ENTITY network_http_proxy_pipelining_description "此選項指定是否對代理伺服主機使用「複請求批送」。HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
+<!ENTITY network_http_proxy_pipelining_name "對代理伺服主機使用「複請求批送」(Pipelining)">
 <!ENTITY nglayout_debug_disable_xul_cache_description "對視窗本身和對話視窗的變更設定不需重新啟動 Firefox。(此選項對於以 JAR 方式封裝的檔案無效)。">
+<!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
+<!ENTITY nglayout_initialpaint_delay_description "此選項指定首次呈現一頁面之前須等待的毫秒數。較小的數值可使頁面快些顯示但會需要較長的時間來完成呈現。較大的數值其效應恰與此相反。">
+<!ENTITY nglayout_initialpaint_delay_name "顯示頁面延時(毫秒;千分之一秒)">
+<!ENTITY pipelining "複請求批送機制">
+<!ENTITY rendering "呈現">
+<!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
+<!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
+<!ENTITY security_privacy "安全性及隱私">
+<!ENTITY signon_prefillForms_description "自動填妥各種&quot;登入&quot;表格欄中的使用者名稱以及密碼。">
+<!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
+<!ENTITY style "樣式">
+<!ENTITY text_select "文字標選">
+<!ENTITY ui_textSelectBackgroundAttention_description "以十六進位碼或顏色名稱指定&quot;隨打隨找&quot;功能所找到的文字背景顏色">
+<!ENTITY ui_textSelectBackgroundAttention_name "符合搜尋的文字背景顏色">
+<!ENTITY ui_textSelectBackground_description "以十六進位碼或顏色名稱指定標選文字時的背景顏色。此項若未設，就套用作業系統本身的設定。">
+<!ENTITY ui_textSelectBackground_name "背景顏色">
+<!ENTITY ui_textSelectForeground_description "以十六進位碼或顏色名稱指定所標選文字本身的顏色。。此項若未設，就套用作業系統本身的設定。">
+<!ENTITY ui_textSelectForeground_name "文字顏色">
+<!ENTITY update_showSlidingNotification_description "有更新檔時，在瀏覽器顯示一份通知。">
+<!ENTITY update_showSlidingNotification_name "顯示更新通知">
+<!ENTITY urlbar "地址欄">
+<!ENTITY urlbar_match_name "符合搜尋條件的結果">
+<!ENTITY urlbar_restrict_name "限定的搜尋結果">
+<!ENTITY view_source_editor_external_description "使用自訂編輯程式來檢視原始檔">
+<!ENTITY view_source_editor_external_name "使用自訂編輯程式">
+<!ENTITY view_source_editor_path_description "自訂編輯程式的路徑">
+<!ENTITY view_source_editor_path_name "編輯程式路徑">
+<!ENTITY viewsource "檢視原始檔">
+<!ENTITY websites "網站">

@@ -1,5 +1,6 @@
 <!ENTITY browser.item.label "Paramètres avancés…">
 <!ENTITY browser.item.access "v">
+<!ENTITY config.search "Rechercher">
 <!ENTITY config.descr.standard "Passez la souris sur une option afin de voir sa description détaillée">
 <!ENTITY config.save.label "Enregistrer">
 <!ENTITY config.standard.label "Par défaut">

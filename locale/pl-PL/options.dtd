@@ -1,157 +1,156 @@
 <!ENTITY accessibility "Dostępność">
-<!ENTITY middleclick "Działanie środkowego przycisku myszy">
-<!ENTITY middlemouse_contentLoadURL_name "Otwórz adres ze schowka">
-<!ENTITY middlemouse_contentLoadURL_description "Otwórz stronę o adresie pobranym ze schowka po kliknięciu środkowym przyciskiem myszy.">
-<!ENTITY middlemouse_paste_name "Wklej tekst ze schowka">
-<!ENTITY middlemouse_paste_description "Wklej zawartość schowka w wybranym polu tekstowym po kliknięciu nań środkowym przyciskiem myszy.">
-<!ENTITY misc "Rozmaite">
-<!ENTITY accessibility_accesskeycausesactivation_name "Włącz klawisze dostępu">
 <!ENTITY accessibility_accesskeycausesactivation_description "Klawisze dostępu (Alt + Shift + klawisz) aktywują elementy stron internetowych. Jeżeli dany element jest odnośnikiem, przeglądarka przechodzi pod wskazany adres, natomiast jeśli jest on przyciskiem, klawisz skrótu &quot;wciska&quot; przycisk.">
-<!ENTITY accessibility_tabfocus_name "Elementy, na których zatrzymuje się Tab">
+<!ENTITY accessibility_accesskeycausesactivation_name "Włącz klawisze dostępu">
 <!ENTITY accessibility_tabfocus_description "To ustawienie określa na jakich typach elementów ma skupiać się przeglądarka po wciśnięciu klawisza Tab.">
+<!ENTITY accessibility_tabfocus_name "Elementy, na których zatrzymuje się Tab">
 <!ENTITY accessibility_tabfocus_o1 "tylko pola tekstowe">
 <!ENTITY accessibility_tabfocus_o2 "wszystkie elementy formularzy oprócz pól tekstowych">
 <!ENTITY accessibility_tabfocus_o3 "wszystkie elementy formularzy">
 <!ENTITY accessibility_tabfocus_o4 "tylko odnośniki (włączając obrazki nimi będące)">
 <!ENTITY accessibility_tabfocus_o5 "odnośniki i elementy formularzy">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Wyświetl okno dialogowe podczas wchodzenia w tryb przeglądania z użyciem kursora.">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Za każdym razem, kiedy wciśnięty zostanie klawisz F7 wyświetl okno ostrzegające użytkownika o wejściu w tryb przeglądania w użyciem kursora.">
-<!ENTITY browser_enable_automatic_image_resizing_name "Zmieniaj rozmiar obrazków">
-<!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
-<!ENTITY urlbar "Pasek adresu">
-<!ENTITY mouseclick "Mysz">
-<!ENTITY browser_urlbar_clickSelectsAll_name "Zaznacz zawartość po kliknięciu">
-<!ENTITY browser_urlbar_clickSelectsAll_description "Zaznacz zawartość paska adresu po jego kliknięciu.">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Zaznacz zawartość po podwójnym kliknięciu">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Zaznacz zawartość paska adresu po jego podwójnym kliknięciu.">
+<!ENTITY accessibility_warn_on_browsewithcaret_name "Wyświetl okno dialogowe podczas wchodzenia w tryb przeglądania z użyciem kursora.">
+<!ENTITY alerts "Okna informacyjne">
+<!ENTITY alerts_slideIncrementTime_description "Kontroluje ilość milisekund pomiędzy kolejnymi przesunięciami okna, gdy to się pojawia/chowa.">
+<!ENTITY alerts_slideIncrementTime_name "Przerwa między kolejnymi krokami (ms)">
+<!ENTITY alerts_slideIncrement_description "To ustawienie określa szybkość najazdu i odjazdu okien typu &quot;Pobieranie zakończone&quot;, które pojawiają się w prawym dolnym rogu ekranu. Dokładnie rzecz biorąc określa ono, o ile pikseli okno ma się przesunąć za każdym krokiem.">
+<!ENTITY alerts_slideIncrement_name "Przesuwaj okienko co krok o (px)">
+<!ENTITY alerts_totalOpenTime_description "Kontroluje czas wyświetlania okien typu &quot;Pobieranie zakończone&quot;, które pojawiają się w prawym dolnym rogu ekranu w milisekundach.">
+<!ENTITY alerts_totalOpenTime_name "Czas wyświetlania okien (ms)">
 <!ENTITY awesomebar "Inteligentny pasek adresu">
-<!ENTITY browser_urlbar_maxRichResults_name "Liczba wpisów w rozwijalnym menu">
-<!ENTITY browser_urlbar_maxRichResults_description "Określa maksymalną liczbę wpisów wyświetlanych w rozwijalnym menu paska adresu.">
-<!ENTITY browser_urlbar_restrict_tag_name "Tylko etykiety">
-<!ENTITY browser_urlbar_restrict_tag_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o etykietach zgodnych z wprowadzonym tekstem.">
-<!ENTITY browser_urlbar_restrict_history_name "Tylko historia">
-<!ENTITY browser_urlbar_restrict_history_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie odwiedzone strony o tytułach zgodnych z wprowadzonym tekstem.">
-<!ENTITY browser_urlbar_restrict_bookmark_name "Tylko zakładki">
-<!ENTITY browser_urlbar_restrict_bookmark_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o tytułach zgodnych z wprowadzonym tekstem.">
-<!ENTITY browser_urlbar_match_url_name "Szukaj w adresach">
-<!ENTITY browser_urlbar_match_url_description "Określa, czy inteligentny pasek adresu ma szukać wprowadzonego tekstu w adresach odwiedzonych stron.">
-<!ENTITY browser_urlbar_match_title_name "Szukaj w tytułach">
-<!ENTITY browser_urlbar_match_title_description "Określa, czy inteligentny pasek adresu ma szukać wprowadzonego tekstu w tytułach odwiedzonych stron.">
-<!ENTITY browser_urlbar_autoFill_name "Autouzupełnianie adresu">
-<!ENTITY browser_urlbar_autoFill_description "Włącza autouzupełnianie adresu.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Dopasowuj tylko wprowadzone">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Autouzupełniaj jedynie adresy, które zostały wprowadzone.">
-<!ENTITY browser_fixup_alternate_enabled_name "Używaj alternatywnych adresów">
-<!ENTITY browser_fixup_alternate_enabled_description "Jeżeli strona o podanym adresie nie może zostać znaleziona, poniższe znaki zostaną dodane do adresu.">
-<!ENTITY browser_fixup_alternate_prefix_name "Na początku wstaw">
-<!ENTITY browser_fixup_alternate_prefix_description "Znaki, które mają zostać wstawione na początku adresu.">
-<!ENTITY browser_fixup_alternate_suffix_name "Na końcu wstaw">
-<!ENTITY browser_fixup_alternate_suffix_description "Znaki, które mają zostać wstawione na końcu adresu.">
-<!ENTITY browser_backspace_action_name "Backspace">
+<!ENTITY bookmarks "Subskrypcje">
+<!ENTITY browser "Przeglądarka">
 <!ENTITY browser_backspace_action_description "Określa zachowanie klawisza Backspace.">
+<!ENTITY browser_backspace_action_name "Backspace">
 <!ENTITY browser_backspace_action_o1 "przechodzi do poprzedniej strony">
 <!ENTITY browser_backspace_action_o2 "przewija na górę strony">
 <!ENTITY browser_backspace_action_o3 "nie robi niczego">
-<!ENTITY browser_preferences_instantApply_name "Natychmiastowe zastosowywanie">
-<!ENTITY browser_preferences_instantApply_description "Wprowadzane ustawienia są aktywne od razu, a zamiast przycisków &quot;OK&quot; i &quot;Anuluj&quot; wyświetlany jest tylko przycisk &quot;Zamknij&quot;.">
-<!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
-<!ENTITY browser_search_openintab_description "Po wciśnięciu przycisku wyszukiwania jego wyniki zostaną otwarte w nowej karcie.">
-<!ENTITY browser_popups_showPopupBlocker_name "Pokaż ikonę na pasku stanu">
-<!ENTITY browser_popups_showPopupBlocker_description "Określa, czy przeglądarka ma wyświetlać ikonę na pasku stanu w przypadku zablokowania wyskakującego okienka, czy nie.">
-<!ENTITY browser "Przeglądarka">
-<!ENTITY alerts "Okna informacyjne">
-<!ENTITY update_showSlidingNotification_name "Wyświetl powiadomienie o dostepności aktualizacji">
-<!ENTITY update_showSlidingNotification_description "Wyświetl powiadomienie w oknie przeglądarki, kiedy dostępne są aktualizacje.">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "Wyświetl komunikat po zakończeniu pobierania">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "Wyświetla informację o zakończeniu pobierania plików w prawym dolnym rogu ekranu.">
-<!ENTITY alerts_slideIncrement_name "Przesuwaj okienko co krok o (px)">
-<!ENTITY alerts_slideIncrement_description "To ustawienie określa szybkość najazdu i odjazdu okien typu &quot;Pobieranie zakończone&quot;, które pojawiają się w prawym dolnym rogu ekranu. Dokładnie rzecz biorąc określa ono, o ile pikseli okno ma się przesunąć za każdym krokiem.">
-<!ENTITY alerts_slideIncrementTime_name "Przerwa między kolejnymi krokami (ms)">
-<!ENTITY alerts_slideIncrementTime_description "Kontroluje ilość milisekund pomiędzy kolejnymi przesunięciami okna, gdy to się pojawia/chowa.">
-<!ENTITY alerts_totalOpenTime_name "Czas wyświetlania okien (ms)">
-<!ENTITY alerts_totalOpenTime_description "Kontroluje czas wyświetlania okien typu &quot;Pobieranie zakończone&quot;, które pojawiają się w prawym dolnym rogu ekranu w milisekundach.">
-<!ENTITY cache "Bufor przeglądarki">
-<!ENTITY browser_cache_check_doc_frequency_name "Sprawdzaj bufor przeglądarki">
+<!ENTITY browser_blink_allowed_description "Pozwala stronom na użycie taga blink lub taga CSS text-decoration: blink sprawiającego, że dany element strony miga.">
+<!ENTITY browser_blink_allowed_name "Zezwól na migający tekst">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Liczba sekund między kolejnymi sprawdzeniami aktualizacji subskrybowanych kanałów RSS. Wartości poniżej 60 są uznawane za 60.">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Odświeżaj co (sek.)">
+<!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
+<!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
 <!ENTITY browser_cache_check_doc_frequency_description "Jak często przeglądarka ma sprawdzać czy strona w sieci różni się od tej przechowywanej w buforze.">
+<!ENTITY browser_cache_check_doc_frequency_name "Sprawdzaj bufor przeglądarki">
 <!ENTITY browser_cache_check_doc_frequency_o1 "podczas każdej sesji">
 <!ENTITY browser_cache_check_doc_frequency_o2 "za każdym razem, kiedy odwiedzam daną stronę">
 <!ENTITY browser_cache_check_doc_frequency_o3 "nigdy nie sprawdzaj (zawsze używaj zapamiętanej strony)">
 <!ENTITY browser_cache_check_doc_frequency_o4 "kiedy strona przestaje być aktualna (automatyczne)">
-<!ENTITY browser_cache_disk_capacity_name "Rozmiar bufora na dysku (KB)">
-<!ENTITY browser_cache_disk_capacity_description "Ilość miejsca na dysku, które przeglądarka może wykorzystać jako bufor (w KB).">
-<!ENTITY browser_cache_disk_enable_name "Używaj bufora na dysku">
-<!ENTITY browser_cache_disk_enable_description "Używaj bufora na dysku (uwzględniając określony limit pojemności).">
-<!ENTITY browser_cache_disk_cache_ssl_name "Zapisuj dane HTTPS/SSL w buforze">
 <!ENTITY browser_cache_disk_cache_ssl_description "Zapisuj dane odebrane przez protokół SSL w buforze (niebezpieczne!)">
-<!ENTITY browser_cache_memory_capacity_name "Rozmiar bufora w RAMie (KB)">
+<!ENTITY browser_cache_disk_cache_ssl_name "Zapisuj dane HTTPS/SSL w buforze">
+<!ENTITY browser_cache_disk_capacity_description "Ilość miejsca na dysku, które przeglądarka może wykorzystać jako bufor (w KB).">
+<!ENTITY browser_cache_disk_capacity_name "Rozmiar bufora na dysku (KB)">
+<!ENTITY browser_cache_disk_enable_description "Używaj bufora na dysku (uwzględniając określony limit pojemności).">
+<!ENTITY browser_cache_disk_enable_name "Używaj bufora na dysku">
 <!ENTITY browser_cache_memory_capacity_description "Określa maksymalną ilość pamięci RAM, którą przeglądarka może wykorzystać jako bufor (w KB).">
-<!ENTITY browser_cache_memory_enable_name "Używaj bufora w RAMie">
+<!ENTITY browser_cache_memory_capacity_name "Rozmiar bufora w RAMie (KB)">
 <!ENTITY browser_cache_memory_enable_description "Używaj bufora w RAMie (uwzględniając określony limit pojemności).">
-<!ENTITY style "Styl">
-<!ENTITY browser_style "Przeglądarka">
-<!ENTITY browser_chrome_favicons_name "Pokazuj favicony">
+<!ENTITY browser_cache_memory_enable_name "Używaj bufora w RAMie">
 <!ENTITY browser_chrome_favicons_description "Określa, czy przeglądarka ma pokazywać favicony, czy nie.">
-<!ENTITY browser_chrome_toolbar_tips_name "Pokazuj wskazówki">
+<!ENTITY browser_chrome_favicons_name "Pokazuj favicony">
 <!ENTITY browser_chrome_toolbar_tips_description "Określa zachowanie wskazówek przypisanych do interfejsu chrome.">
-<!ENTITY browser_urlbar_hideGoButton_name "Ukryj przycisk &quot;Przejdź&quot;">
-<!ENTITY browser_urlbar_hideGoButton_description "Określa, czy przycisk &quot;Przejdź&quot; ma być pokazywany, czy nie.">
-<!ENTITY browser_preferences_animateFadeIn_name "Animuj przejścia między menu">
+<!ENTITY browser_chrome_toolbar_tips_name "Pokazuj wskazówki">
+<!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
+<!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
+<!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
+<!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
+<!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
+<!ENTITY browser_download_lastDir_name "Ostatni katalog pobierania">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Ostrzegaj, jeżeli podjęta zostanie próba otwarcia wykonywalnego pliku w menedżerze pobierania.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Ostrzegaj przed otwarciem plików wykonywalnych">
+<!ENTITY browser_download_manager_focusWhenStarting_description "Ustawia okienko &quot;Pobieranie plików&quot; jako aktywne po rozpoczęciu pobierania plików.">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Przejdź do okna &quot;Pobieranie plików&quot; po rozpoczęciu pobierania">
+<!ENTITY browser_download_manager_showAlertInterval_description "Ilość milisekund, przez którą ma być pokazywane okienko informujące o zakończeniu pobierania plików.">
+<!ENTITY browser_download_manager_showAlertInterval_name "Czas wyświetlania informacji (ms)">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "Wyświetla informację o zakończeniu pobierania plików w prawym dolnym rogu ekranu.">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "Wyświetl komunikat po zakończeniu pobierania">
+<!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Zmieniaj rozmiar obrazków">
+<!ENTITY browser_fixup_alternate_enabled_description "Jeżeli strona o podanym adresie nie może zostać znaleziona, poniższe znaki zostaną dodane do adresu.">
+<!ENTITY browser_fixup_alternate_enabled_name "Używaj alternatywnych adresów">
+<!ENTITY browser_fixup_alternate_prefix_description "Znaki, które mają zostać wstawione na początku adresu.">
+<!ENTITY browser_fixup_alternate_prefix_name "Na początku wstaw">
+<!ENTITY browser_fixup_alternate_suffix_description "Znaki, które mają zostać wstawione na końcu adresu.">
+<!ENTITY browser_fixup_alternate_suffix_name "Na końcu wstaw">
+<!ENTITY browser_frames_enabled_description "Wyświetlaj ramki HTML.">
+<!ENTITY browser_frames_enabled_name "Zezwól na użycie ramek">
+<!ENTITY browser_microsummary_enabled_description "Pozwól na pobieranie i wyświetlanie informacji o treści stron dodanych do zakładek.">
+<!ENTITY browser_microsummary_enabled_name "Używaj mikropodsumowań">
+<!ENTITY browser_microsummary_generatorUpdateInterval_description "Określa liczbę sekund między sprawdzeniami dostępności aktualizacji generatorów mikropodsumowań. Jeżeli wartość ta nie zostanie określona dostępność aktualizacji będzie sprawdzana co tydzień (604800 sekund).">
+<!ENTITY browser_microsummary_generatorUpdateInterval_name "Częstotliwość aktualizacji (w sek.)">
+<!ENTITY browser_microsummary_updateGenerators_description "Określa, czy przeglądarka ma sprawdzać, czy są dostępne aktualizacje generatorów mikropodsumowań.">
+<!ENTITY browser_microsummary_updateGenerators_name "Aktualizuj generatory mikropodsumowań">
+<!ENTITY browser_microsummary_updateInterval_description "Określa minutowy odstęp czasu między sprawdzeniami aktualizacji mikropodsumowań. Domyślna wartość to 30 minut.">
+<!ENTITY browser_microsummary_updateInterval_name "Częstotliwość aktualizacji (w min.)">
+<!ENTITY browser_popups_showPopupBlocker_description "Określa, czy przeglądarka ma wyświetlać ikonę na pasku stanu w przypadku zablokowania wyskakującego okienka, czy nie.">
+<!ENTITY browser_popups_showPopupBlocker_name "Pokaż ikonę na pasku stanu">
 <!ENTITY browser_preferences_animateFadeIn_description "Zmienia wysokość okna i powoduje stopniowe pojawianie się nowego panelu preferencji w ciągu ok. sekundy po dokonaniu jego wyboru.">
-<!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
+<!ENTITY browser_preferences_animateFadeIn_name "Animuj przejścia między menu">
+<!ENTITY browser_preferences_instantApply_description "Wprowadzane ustawienia są aktywne od razu, a zamiast przycisków &quot;OK&quot; i &quot;Anuluj&quot; wyświetlany jest tylko przycisk &quot;Zamknij&quot;.">
+<!ENTITY browser_preferences_instantApply_name "Natychmiastowe zastosowywanie">
+<!ENTITY browser_search_openintab_description "Po wciśnięciu przycisku wyszukiwania jego wyniki zostaną otwarte w nowej karcie.">
+<!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
+<!ENTITY browser_style "Przeglądarka">
 <!ENTITY browser_tabs_closeButtons_description "Określa gdzie wyświetlać przyciski zamykające.">
+<!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
 <!ENTITY browser_tabs_closeButtons_o1 "tylko na aktywnej karcie">
 <!ENTITY browser_tabs_closeButtons_o2 "na każdej karcie">
 <!ENTITY browser_tabs_closeButtons_o3 "nigdzie">
 <!ENTITY browser_tabs_closeButtons_o4 "na końcu paska kart">
-<!ENTITY doc_style "Strony internetowe">
-<!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
-<!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
-<!ENTITY browser_frames_enabled_name "Zezwól na użycie ramek">
-<!ENTITY browser_frames_enabled_description "Wyświetlaj ramki HTML.">
-<!ENTITY browser_blink_allowed_name "Zezwól na migający tekst">
-<!ENTITY browser_blink_allowed_description "Pozwala stronom na użycie taga blink lub taga CSS text-decoration: blink sprawiającego, że dany element strony miga.">
-<!ENTITY text_select "Zaznaczony tekst">
-<!ENTITY ui_textSelectBackground_name "Kolor tła">
-<!ENTITY ui_textSelectBackground_description "Okresla kolor tła zaznaczonego tekstu w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
-<!ENTITY ui_textSelectForeground_name "Kolor tekstu">
-<!ENTITY ui_textSelectForeground_description "Okresla kolor zaznaczonego tekstu w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
-<!ENTITY ui_textSelectBackgroundAttention_name "Kolor podświetlonego tekstu">
-<!ENTITY ui_textSelectBackgroundAttention_description "Okresla kolor tła tekstu zaznaczonego za pomocą funkcji szybkiego wyszukiwania w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
-<!ENTITY downloads "Pobieranie plików">
-<!ENTITY downloadmanager "Menedżer pobierania plików">
-<!ENTITY browser_download_manager_showAlertInterval_name "Czas wyświetlania informacji (ms)">
-<!ENTITY browser_download_manager_showAlertInterval_description "Ilość milisekund, przez którą ma być pokazywane okienko informujące o zakończeniu pobierania plików.">
-<!ENTITY browser_download_lastDir_name "Ostatni katalog pobierania">
-<!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Przejdź do okna &quot;Pobieranie plików&quot; po rozpoczęciu pobierania">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Ustawia okienko &quot;Pobieranie plików&quot; jako aktywne po rozpoczęciu pobierania plików.">
-<!ENTITY browser_download_manager_alertOnEXEOpen_name "Ostrzegaj przed otwarciem plików wykonywalnych">
-<!ENTITY browser_download_manager_alertOnEXEOpen_description "Ostrzegaj, jeżeli podjęta zostanie próba otwarcia wykonywalnego pliku w menedżerze pobierania.">
-<!ENTITY bookmarks "Subskrypcje">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Odświeżaj co (sek.)">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Liczba sekund między kolejnymi sprawdzeniami aktualizacji subskrybowanych kanałów RSS. Wartości poniżej 60 są uznawane za 60.">
-<!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
-<!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
 <!ENTITY browser_tabs_loadBookmarksInBackground_description "Kiedy otworzysz zakładkę w nowej karcie, karta ta nie stanie się automatycznie aktywną kartą.">
-<!ENTITY microsummaries "Mikropodsumowania">
-<!ENTITY browser_microsummary_enabled_name "Używaj mikropodsumowań">
-<!ENTITY browser_microsummary_enabled_description "Pozwól na pobieranie i wyświetlanie informacji o treści stron dodanych do zakładek.">
-<!ENTITY browser_microsummary_updateInterval_name "Częstotliwość aktualizacji (w min.)">
-<!ENTITY browser_microsummary_updateInterval_description "Określa minutowy odstęp czasu między sprawdzeniami aktualizacji mikropodsumowań. Domyślna wartość to 30 minut.">
-<!ENTITY browser_microsummary_updateGenerators_name "Aktualizuj generatory mikropodsumowań">
-<!ENTITY browser_microsummary_updateGenerators_description "Określa, czy przeglądarka ma sprawdzać, czy są dostępne aktualizacje generatorów mikropodsumowań.">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Częstotliwość aktualizacji (w sek.)">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Określa liczbę sekund między sprawdzeniami dostępności aktualizacji generatorów mikropodsumowań. Jeżeli wartość ta nie zostanie określona dostępność aktualizacji będzie sprawdzana co tydzień (604800 sekund).">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
+<!ENTITY browser_urlbar_autoFill_description "Włącza autouzupełnianie adresu.">
+<!ENTITY browser_urlbar_autoFill_name "Autouzupełnianie adresu">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Zaznacz zawartość paska adresu po jego kliknięciu.">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Zaznacz zawartość po kliknięciu">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Zaznacz zawartość paska adresu po jego podwójnym kliknięciu.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Zaznacz zawartość po podwójnym kliknięciu">
+<!ENTITY browser_urlbar_hideGoButton_description "Określa, czy przycisk &quot;Przejdź&quot; ma być pokazywany, czy nie.">
+<!ENTITY browser_urlbar_hideGoButton_name "Ukryj przycisk &quot;Przejdź&quot;">
+<!ENTITY browser_urlbar_matchOnlyTyped_description "Autouzupełniaj jedynie adresy, które zostały wprowadzone.">
+<!ENTITY browser_urlbar_matchOnlyTyped_name "Dopasowuj tylko wprowadzone">
+<!ENTITY browser_urlbar_match_title_description "Określa, czy inteligentny pasek adresu ma szukać wprowadzonego tekstu w tytułach odwiedzonych stron.">
+<!ENTITY browser_urlbar_match_title_name "Szukaj w tytułach">
+<!ENTITY browser_urlbar_match_url_description "Określa, czy inteligentny pasek adresu ma szukać wprowadzonego tekstu w adresach odwiedzonych stron.">
+<!ENTITY browser_urlbar_match_url_name "Szukaj w adresach">
+<!ENTITY browser_urlbar_maxRichResults_description "Określa maksymalną liczbę wpisów wyświetlanych w rozwijalnym menu paska adresu.">
+<!ENTITY browser_urlbar_maxRichResults_name "Liczba wpisów w rozwijalnym menu">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o tytułach zgodnych z wprowadzonym tekstem.">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Tylko zakładki">
+<!ENTITY browser_urlbar_restrict_history_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie odwiedzone strony o tytułach zgodnych z wprowadzonym tekstem.">
+<!ENTITY browser_urlbar_restrict_history_name "Tylko historia">
+<!ENTITY browser_urlbar_restrict_tag_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o etykietach zgodnych z wprowadzonym tekstem.">
+<!ENTITY browser_urlbar_restrict_tag_name "Tylko etykiety">
+<!ENTITY cache "Bufor przeglądarki">
 <!ENTITY developing "Programowanie">
-<!ENTITY viewsource "Pokaz źródło strony">
-<!ENTITY view_source_editor_external_name "Używaj własnego edytora">
-<!ENTITY view_source_editor_external_description "Używaj własnego edytora do wyświetlania źródła stron.">
-<!ENTITY view_source_editor_path_name "Ścieżka do edytora">
-<!ENTITY view_source_editor_path_description "Ścieżka do własnego edytora.">
-<!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
-<!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
-<!ENTITY javascript_options_strict_name "Ścisła kontrola JavaScriptu">
+<!ENTITY downloadmanager "Menedżer pobierania plików">
+<!ENTITY downloads "Pobieranie plików">
 <!ENTITY javascript_options_strict_description "Włącza ścisłe sprawdzanie poprawności skryptów JavaScript i zgłaszanie ostrzeżeń w konsoli błędów.">
-<!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
+<!ENTITY javascript_options_strict_name "Ścisła kontrola JavaScriptu">
+<!ENTITY microsummaries "Mikropodsumowania">
+<!ENTITY middleclick "Działanie środkowego przycisku myszy">
+<!ENTITY middlemouse_contentLoadURL_description "Otwórz stronę o adresie pobranym ze schowka po kliknięciu środkowym przyciskiem myszy.">
+<!ENTITY middlemouse_contentLoadURL_name "Otwórz adres ze schowka">
+<!ENTITY middlemouse_paste_description "Wklej zawartość schowka w wybranym polu tekstowym po kliknięciu nań środkowym przyciskiem myszy.">
+<!ENTITY middlemouse_paste_name "Wklej tekst ze schowka">
+<!ENTITY misc "Rozmaite">
+<!ENTITY mouseclick "Mysz">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
+<!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
+<!ENTITY style "Styl">
+<!ENTITY text_select "Zaznaczony tekst">
+<!ENTITY ui_textSelectBackgroundAttention_description "Okresla kolor tła tekstu zaznaczonego za pomocą funkcji szybkiego wyszukiwania w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
+<!ENTITY ui_textSelectBackgroundAttention_name "Kolor podświetlonego tekstu">
+<!ENTITY ui_textSelectBackground_description "Okresla kolor tła zaznaczonego tekstu w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
+<!ENTITY ui_textSelectBackground_name "Kolor tła">
+<!ENTITY ui_textSelectForeground_description "Okresla kolor zaznaczonego tekstu w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
+<!ENTITY ui_textSelectForeground_name "Kolor tekstu">
+<!ENTITY update_showSlidingNotification_description "Wyświetl powiadomienie w oknie przeglądarki, kiedy dostępne są aktualizacje.">
+<!ENTITY update_showSlidingNotification_name "Wyświetl powiadomienie o dostepności aktualizacji">
+<!ENTITY urlbar "Pasek adresu">
+<!ENTITY view_source_editor_external_description "Używaj własnego edytora do wyświetlania źródła stron.">
+<!ENTITY view_source_editor_external_name "Używaj własnego edytora">
+<!ENTITY view_source_editor_path_description "Ścieżka do własnego edytora.">
+<!ENTITY view_source_editor_path_name "Ścieżka do edytora">
+<!ENTITY viewsource "Pokaz źródło strony">
