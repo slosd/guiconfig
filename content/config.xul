@@ -35,8 +35,8 @@
 		<spacer flex="1"/>
 		<textbox id="searchbox" type="timed" timeout="500" emptytext="&config.search;" oncommand="return guiconfig.searchOptions(this.value);"/>
 	</hbox>
-	<deck id="gcConfigContainer"></deck>
-	<description id="gcConfigDescription" flex="1">&config.descr.standard;</description>
+	<deck id="gcConfigContainer" flex="1"></deck>
+	<description id="gcConfigDescription">&config.descr.standard;</description>
 
 	<script type="application/javascript" src="gconfig.core.js"/>
 	<script type="application/javascript" src="gconfig.config.js"/>

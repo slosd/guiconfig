@@ -161,7 +161,6 @@
 <!ENTITY content_notify_interval_description "Firefox periodically renders all received data of a website. This preference specifies the minimum amount of time to wait between redrawing the page in microseconds. Lower values will lower the perceived loading time but increase total loading time.">
 <!ENTITY content_notify_interval_name "Delay before redrawing a page (microsec)">
 <!ENTITY developing "Developing">
-<!ENTITY dont-ask "Do not ask me again">
 <!ENTITY downloadmanager "Downloadmanager">
 <!ENTITY downloads "Downloads">
 <!ENTITY extensions "Extensions">

@@ -295,7 +295,7 @@
 			<tab label="&browser_style;">
 				<pref key="browser.identity.ssl_domain_display"
 					  label="&browser_identity_ssl_domain_display_name;"
-					  description="browser_identity_ssl_domain_display_description"
+					  description="&browser_identity_ssl_domain_display_description;"
 					  minVersion="3.0"
 					  mode="select">
 					<option label="&browser_identity_ssl_domain_display_o1;">0</option>

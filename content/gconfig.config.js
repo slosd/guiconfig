@@ -10,6 +10,8 @@ var guiconfig = {
 	last_query: "",
 	stop_option_observation: false,
 	created_preferences: false,
+	selected_panel: false,
+	selected_tab: false,
 	
 	init: function() {
 		this.IconSet = new IconSet("tango", { os: gcCore.MozRuntime.OS });
@@ -52,7 +54,6 @@ var guiconfig = {
 	},
 
 	getLocaleString: function(str) {
-		dump(str+"\n");
 		try {
 			return this.LocaleGConfig.getString(str);
 		}
@@ -106,18 +107,21 @@ var guiconfig = {
 		var parser = this.Parser.instance();
 		parser.registerFilter(this.validatePref);
 		
+		this.Elements.tabs.addEventListener("select", function() {
+			return guiconfig.selectPanel(this.selectedIndex);
+		}, false);
+		
+		var pane_index = 0;
+		
 		parser.registerNode('panel', function(node, container, parse) {
 			var paneltab = document.createElement("radio");
-			if(!container.panel_index) {
-				container.panel_index = 0;						
+			if(pane_index == 0)
 				paneltab.setAttribute("selected", true);
-			}
-			paneltab.setAttribute("pane", container.panel_index++);
+			paneltab.setAttribute("pane", pane_index++);
 			paneltab.setAttribute("src", this.IconSet.getIcon(node.getAttribute("icon")));
 			paneltab.setAttribute("label", node.getAttribute("label"));
 			if(node.getAttribute("align") == "right")
 				paneltab.setAttribute("class", "gcDoPane");
-			paneltab.addEventListener("command", this.switchPanel, false);
 			var panelbox = document.createElement("vbox");
 			panelbox.setAttribute("class", "gcPrefPane");
 			node.gcElement = paneltab;
@@ -258,6 +262,11 @@ var guiconfig = {
 			return false;
 		}
 	},
+	
+	selectPanel: function(index) {
+		guiconfig.Elements.tabpanels.selectedIndex = index;
+		return true;
+	},
 
 	setDescription: function(txt) {
 		if(txt == this.Elements.description.firstChild.data)
@@ -270,44 +279,83 @@ var guiconfig = {
 	searchOptions: function(string) {
 		var query = new RegExp("(" + string.makeSearchable(".*") + ")", "i");
 		
+		this.selected_panel = false;
+		this.selected_tab = false;
+				
 		var parser = this.Parser.instance();
 		parser.registerFilter(this.validatePref);
 		parser.registerNode('tabs');
+		
 		parser.registerNode('panel', function(node, container, parse) {
 			node.empty = true;
+			node.show = false;
+			this.selected_tab = false;
 			if(string == "" || node.getAttribute("label").makeSearchable().match(query)) {
+				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
 				node.gcElement.style.opacity = "1";
 			}
 			else if((parse(node.childNodes, node)).empty) {
 				node.gcElement.style.opacity = "0.2";
+				return false;
 			}
 			else {
 				node.gcElement.style.opacity = "1";
 			}
-		});
-		parser.registerNodes(['tab', 'group'], function(node, container, parse) {
-			var property = node.nodeName == "tab" ? "visibility" : 'display';
-			var visible = node.nodeName == "tab" ? "visible" : '-moz-groupbox';
-			var hidden = node.nodeName == "tab" ? "hidden" : 'none';
+			if(!this.selected_panel) {	
+				node.gcElement.radioGroup.selectedItem = node.gcElement;
+				this.selected_panel = true;
+			}
+		}, this);
+		
+		parser.registerNode('tab', function(node, container, parse) {
 			node.empty = true;
-			if(string == "" || node.getAttribute("label").makeSearchable().match(query)) {
+			node.show = false;
+			if(string == "" || container.show || node.getAttribute("label").makeSearchable().match(query)) {
 				container.empty = false;
+				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				node.gcElement.style[property] = visible;
+				node.gcElement.style.opacity = "1";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				node.gcElement.style[property] = hidden;
+				node.gcElement.style.opacity = "0.2";
+				return false;
 			}
 			else {
 				container.empty = false;
-				node.gcElement.style[property] = visible;
+				node.gcElement.style.opacity = "1";
 			}
-		});
+			if(!this.selected_tab) {
+				node.gcElement.parentNode.parentNode.selectedTab = node.gcElement;
+				this.selected_tab = true;
+			}
+		}, this);
+		
+		parser.registerNode('group', function(node, container, parse) {
+			var gcElement = node.gcElement.firstChild;
+			node.empty = true;
+			node.show = false;
+			if(string == "" || container.show || node.getAttribute("label").makeSearchable().match(query)) {
+				container.empty = false;
+				node.show = true;
+				if(string.indexOf(this.last_query) != 0)
+					parse(node.childNodes, node);
+				gcElement.style.display = "-moz-box";
+			}
+			else if((parse(node.childNodes, node)).empty) {
+				gcElement.style.display = "none";
+				return false;
+			}
+			else {
+				container.empty = false;
+				gcElement.style.display = "-moz-box";
+			}
+		}, this);
+		
 		parser.registerNode('pref', function(node, container, parse) {
-			if(string == "" || (node.getAttribute("label") + " " + node.getAttribute("description")).makeSearchable().match(query)) {
+			if(string == "" || container.show || (node.getAttribute("label") + " " + node.getAttribute("description")).makeSearchable().match(query)) {
 				container.empty = false;
 				node.gcElement.style.display = "-moz-box";
 			}
@@ -315,13 +363,9 @@ var guiconfig = {
 				node.gcElement.style.display = "none";
 			}
 		});
+		
 		parser.run();
 		this.last_query = string;
-	},
-
-	switchPanel: function() {
-		guiconfig.Elements.tabpanels.selectedIndex = this.getAttribute("pane");
-		return true;
 	},
 	
 	buildContextMenu: function(popup, node) {
