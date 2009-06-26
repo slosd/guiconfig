@@ -14,7 +14,7 @@ CharOption.prototype.constructor = CharOption;
  * @param {str} v
  */
 CharOption.prototype.setValue = function(value) {
-	if(!$defined(value))
+	if(!value)
 		var value = this.getPref();
 	switch(this.Options.mode) {
 		case 'colorpicker':

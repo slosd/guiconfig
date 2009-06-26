@@ -14,7 +14,7 @@ BoolOption.prototype.constructor = BoolOption;
  * @param {bool} v
  */
 BoolOption.prototype.setValue = function(value) {
-	if(!$defined(value))
+	if(!value)
 		var value = this.getPref();
 	this.Elements.option.setProperty("checked", !!value);
 }

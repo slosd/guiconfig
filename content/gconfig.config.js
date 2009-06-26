@@ -14,14 +14,18 @@ var guiconfig = {
 	selected_tab: false,
 	
 	init: function() {
-		this.IconSet = new IconSet("tango", { os: gcCore.MozRuntime.OS });
+		this.IconSet = new gcCore.IconSet("tango", { os: gcCore.MozRuntime.OS });
 		
-		this.Parser = new PrefParser("chrome://guiconfig/content/preferences.xml");
+		this.Parser = new gcCore.PrefParser("chrome://guiconfig/content/preferences.xml");
 		
 		this.Elements.tabpanels = document.getElementById("gcConfigContainer");
 		this.Elements.tabs = document.getElementById("gcConfigTabs");
 		this.Elements.description = document.getElementById("gcConfigDescription");
 		this.Elements.window = document.getElementById("gcConfigWindow");
+		
+		var searchbox = document.getElementById("searchbox");
+		if(gcCore.validateVersion(gcCore.MozInfo.version, "3.5a1"))
+			searchbox.setProperty("type", "search");
 		
 		this.setButtons();
 		
@@ -91,21 +95,25 @@ var guiconfig = {
 	},
 
 	validatePref: function(child) {
+			
+		dump(child.nodeName+" "+child.getAttribute("label")+" "+child.getAttribute("key")+"\n");
 		if(!gcCore.GCPreferences.getBoolPref("matchversion"))
 			return true;
 		
 		var minVersion = child.getAttribute("minVersion"),
 			maxVersion = child.getAttribute("maxVersion");
 		
-		if(!minVersion || !maxVersion)
+		if(!minVersion && !maxVersion)
 			return true;
 		
-		return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
+		var t = gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
+		return t;
 	},
 
 	createPreferences: function() {
-		var parser = this.Parser.instance();
-		parser.registerFilter(this.validatePref);
+		var parser = this.Parser.instance({
+			'filter': this.validatePref
+		});
 		
 		this.Elements.tabs.addEventListener("select", function() {
 			return guiconfig.selectPanel(this.selectedIndex);
@@ -207,8 +215,8 @@ var guiconfig = {
 		}, this);
 		
 		parser.registerNode('option', function(node, container) {
-			if(gcCore.validateVersion(gcCore.MozInfo.version, __(node.getAttribute("minVersion"), null), __(node.getAttribute("maxVersion"), null))) {
-				container.Options.validValues.push({ label: __(node.getAttribute("label"), ""), value: node.firstChild.data });
+			if(gcCore.validateVersion(gcCore.MozInfo.version, node.getAttribute("minVersion"), node.getAttribute("maxVersion"))) {
+				container.Options.validValues.push({ label: (node.getAttribute("label") || ""), value: node.firstChild.data });
 			}
 		});
 		
@@ -239,28 +247,38 @@ var guiconfig = {
 	
 	newOption: function(pref) {
 		var key = pref.getAttribute("key");
-		var type = __(pref.getAttribute("type"), null);
+		var type = (pref.getAttribute("type") || null);
 		var options = {
-			label: __(pref.getAttribute("label"), ""),
-			description: __(pref.getAttribute("description"), ""),
-			mode: __(pref.getAttribute("mode"), "default"),
-			defaultValue: __(pref.getAttribute("default"), null),
-			wrapper: __(pref.getAttribute("wrapper"), "default"),
+			label: (pref.getAttribute("label") || ""),
+			description: (pref.getAttribute("description") || ""),
+			mode: (pref.getAttribute("mode") || "default"),
+			defaultValue: pref.getAttribute("default"),
+			wrapper: (pref.getAttribute("wrapper") || "default"),
 			indent: !!pref.getAttribute("indent"),
-			version: __(pref.getAttribute("version"), null),
-			minVersion: __(pref.getAttribute("minVersion"), null),
-			maxVersion: __(pref.getAttribute("maxVersion"), null),
+			version: pref.getAttribute("version"),
+			minVersion: pref.getAttribute("minVersion"),
+			maxVersion: pref.getAttribute("maxVersion"),
 			validValues: new Array,
 			bindings: new Array,
 			fileFilters: new Array
 		};
-		try {
-			var preference = new Preference(key, type);
-			return new window[__(__(guiconfig.Wrappers[options.wrapper], {}).type, options.wrapper.type, preference.type) + "Option"](preference, options);
-		}
-		catch(e) {
+		var preference = new Preference(key, type);
+		
+		var wrapper = guiconfig.Wrappers[options.wrapper];
+		if(wrapper && wrapper.type)
+			type = wrapper.type;
+		else if(options.wrapper.type)
+			type = options.wrapper.type;
+		else if(preference.type)
+			type = preference.type;
+		else
 			return false;
-		}
+		
+		var OptionClass = window[type + "Option"];
+		if(OptionClass)
+			return new OptionClass(preference, options);
+		else
+			return false;
 	},
 	
 	selectPanel: function(index) {
@@ -282,10 +300,12 @@ var guiconfig = {
 		this.selected_panel = false;
 		this.selected_tab = false;
 				
-		var parser = this.Parser.instance();
-		parser.registerFilter(this.validatePref);
+		var parser = this.Parser.instance({
+			'filter': this.validatePref
+		});
 		parser.registerNode('tabs');
 		
+		//TODO fix node.gcElement = null error in FF 3.0
 		parser.registerNode('panel', function(node, container, parse) {
 			node.empty = true;
 			node.show = false;
@@ -294,16 +314,16 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				node.gcElement.style.opacity = "1";
+				node.gcElement.style.visibility = "visible";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				node.gcElement.style.opacity = "0.2";
+				node.gcElement.style.visibility = "hidden";
 				return false;
 			}
 			else {
-				node.gcElement.style.opacity = "1";
+				node.gcElement.style.visibility = "visible";
 			}
-			if(!this.selected_panel) {	
+			if(!this.selected_panel && string != "") {	
 				node.gcElement.radioGroup.selectedItem = node.gcElement;
 				this.selected_panel = true;
 			}
@@ -317,17 +337,17 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				node.gcElement.style.opacity = "1";
+				node.gcElement.style.visibility = "visible";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				node.gcElement.style.opacity = "0.2";
+				node.gcElement.style.visibility = "hidden";
 				return false;
 			}
 			else {
 				container.empty = false;
-				node.gcElement.style.opacity = "1";
+				node.gcElement.style.visibility = "visible";
 			}
-			if(!this.selected_tab) {
+			if(!this.selected_tab && string != "") {
 				node.gcElement.parentNode.parentNode.selectedTab = node.gcElement;
 				this.selected_tab = true;
 			}
@@ -370,9 +390,9 @@ var guiconfig = {
 	
 	buildContextMenu: function(popup, node) {
 		var i = 3;
-		while(!$defined(node.Option) && (i--) > 0)
+		while(!node.Option && (i--) > 0)
 			node = node.parentNode;
-		if($defined(node.Option)) {
+		if(node.Option) {
 			popup.Option = node.Option;
 			return true;
 		}
@@ -387,7 +407,7 @@ var guiconfig = {
 			value = menuitems[i].getAttribute("value");
 			menuitems[i].popup = menu;
 
-			if($defined(f[value]))
+			if(f[value])
 				menuitems[i].addEventListener("command", f[value], false);
 
 			if(this.IconSet.iconExists(value))
@@ -396,115 +416,4 @@ var guiconfig = {
 
 		return menu;
 	}
-}
-
-var PrefParser = function(preferences) {
-	var request = new XMLHttpRequest();
-	request.open("GET", preferences, false); 
-	request.send(null);
-	var XML = request.responseXML;
-	var DOC = XML.documentElement;
-	
-	var Instance = function() {
-		var klass = this;
-		var Nodes = new Object;
-		var Filter = function() { return true; };
-		var parse = function(children, container) {
-			children.forEach(function(child) {
-				var nodeName = child.nodeName;
-				if(nodeName == "#text" || !Filter(child))
-					return;
-				if($defined(Nodes[nodeName])) {
-					Nodes[nodeName].fn.call(Nodes[nodeName].thisObj, child, container, parse);
-				}
-			}, this);
-			return container;
-		};
-		
-		this.registerFilter = function(fn) {
-			Filter = fn;
-		}
-		this.registerNode = function(nodeName, fn, thisObj) {
-			if(!fn)
-				var fn = function(child, container, parse) {
-					return parse(child.childNodes, container);
-				};
-			Nodes[nodeName] = { "fn": fn, "thisObj": thisObj };
-		}
-		this.registerNodes = function(nodeNames, fn, thisObj) {
-			nodeNames.forEach(function(nodeName) {
-				this.registerNode(nodeName, fn, thisObj);
-			}, klass);
-		}
-		this.run = function(container) {
-			if(!container)
-				var container = this.document;
-			parse(this.document.childNodes, container);
-		}
-	}
-	
-	this.instance = function() {
-		var instance = new Instance();
-		instance.document = DOC;
-		return instance;
-	}
-}
-
-var IconSet = function(theme, options) {
-	this.theme = __(theme, "tango");
-	this.Options = __(options, { os: false });
-	this.icons = new Object;
-	this.getIcons();
-}
-IconSet.prototype.getIcons = function() {
-	var actions_path = "chrome://guiconfig/skin/" + this.theme + "/actions/";
-	var tab_icons_path = "chrome://guiconfig/skin/" + this.theme + "/tab_icons/";
-	var moz_stock = "moz-icon://stock/";
-
-	switch(this.Options.os) {
-		case 'Linux':
-				if(gcCore.MozInfo.version.indexOf("3") == 0) {
-					this.addIcon("add", moz_stock + "gtk-add?size=button");
-					this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
-					this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
-				}
-			break;
-
-		case 'WINNT': break;
-	}
-	this.addIcon("add", actions_path + "add.png");
-	this.addIcon("color", actions_path + "color.png");
-	this.addIcon("reset", actions_path + "reset.png");
-	this.addIcon("tab_accessibility", tab_icons_path + "accessibility.png");
-	this.addIcon("tab_bookmarks", tab_icons_path + "bookmarks.png");
-	this.addIcon("tab_browser", tab_icons_path + "browser.png");
-	this.addIcon("tab_developing", tab_icons_path + "developing.png");
-	this.addIcon("tab_downloads", tab_icons_path + "downloads.png");
-	this.addIcon("tab_network", tab_icons_path + "network.png");
-	this.addIcon("tab_style", tab_icons_path + "style.png");
-}
-IconSet.prototype.addIcon = function(name, path) {
-	if(!$defined(this.icons[name]))
-		this.icons[name] = path;
-}
-IconSet.prototype.getIcon = function(name) {
-	return __(this.icons[name], null);
-}
-IconSet.prototype.iconExists = function(name) {
-	return $defined(this.icons[name]);
-}
-
-XULElement.prototype.setProperty = function(name, value) {
-	if(this.hasAttribute(name))
-		this[name] = value;
-	else
-		this.setAttribute(name, value);
-}
-
-NodeList.prototype.forEach = Array.prototype.forEach;
-
-String.prototype.makeSearchable = function(join_string) {
-	if(!join_string)
-		var join_string = " ";
-	return this.trim().toLowerCase().replace(/[0-9\"\'\«\»\(\)\<\>\-\_\,\.\;\:]/gi, "").replace(/\s\s+/, " ").split(" ").sort().join(join_string);
 }

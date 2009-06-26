@@ -8,9 +8,9 @@ Option.prototype.initialize = function(preference, options) {
 	
 	this.Preference = preference;
 	this.Preference.Option = this;
-	this.Options = __(options, new Object);	
+	this.Options = (options || new Object);	
 	this.Elements = { Buttons: new Object };
-	this.Wrapper = __(guiconfig.Wrappers[options.wrapper], options.wrapper, new Object);
+	this.Wrapper = (guiconfig.Wrappers[options.wrapper] || options.wrapper || new Object);
 	
 	this.name = this.Options.label;
 	this.description = this.Options.description;
@@ -30,7 +30,7 @@ Option.prototype.onvaluechange = function() {
 }
 
 Option.prototype.getPref = function(d) {
-	if($defined(this.Wrapper.getPref))
+	if(this.Wrapper.getPref)
 		return this.Wrapper.getPref.call(this, d);
 	else
 		return this.Preference.getPref(d);
@@ -38,10 +38,10 @@ Option.prototype.getPref = function(d) {
 
 Option.prototype.setPref = function(value) {
 	var set_pref = true;
-	if(!$defined(value))
+	if(!value)
 		var value = this.getValue();
 	gcCore.stopObserver(this.Preference.key, "Preference");
-	if($defined(this.Wrapper.setPref))
+	if(this.Wrapper.setPref)
 		set_pref = this.Wrapper.setPref.call(this, value);
 	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
@@ -54,7 +54,7 @@ Option.prototype.setPref = function(value) {
 
 Option.prototype.resetPref = function() {
 	this.Preference.resetPref();
-	if($defined(this.Wrapper.resetPref))
+	if(this.Wrapper.resetPref)
 		this.Wrapper.resetPref.call(this);
 	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
@@ -191,7 +191,7 @@ Option.prototype.removeButton = function(type) {
 }
 
 Option.prototype.hasButton = function(type) {
-	return $defined(this.Elements.Buttons[type]);
+	return !!this.Elements.Buttons[type];
 }
 
 Option.prototype.__defineSetter__("disabled", function(value) {

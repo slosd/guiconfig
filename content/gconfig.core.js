@@ -1,24 +1,3 @@
-var $defined = function(a) {
-	return (typeof a != "undefined" && a != null);
-}
-
-var __ = function() {
-	for(var i = 0, l = arguments.length; i < l; i++)
-		switch(typeof arguments[i]) {
-			case "undefined":
-				break;
-			case "function":
-				try { var r = arguments[i](); } catch(e) { break; }
-				return r;
-				break;
-			default:
-				if(arguments[i] != null)
-					return arguments[i];
-				break;
-		}
-	return null;
-}
-
 var gcCore = {
 	
 	MozPrefs: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService),
@@ -40,45 +19,126 @@ gcCore.MozPrefs.addObserver("", gcCore, false);
 
 gcCore.Observers = new Object;
 gcCore.addObserver = function(branch, fn, bind, id) {
-	if(!$defined(this.Observers[branch])) {
+	if(!this.Observers[branch]) {
 		this.Observers[branch] = new Object;
 	}
-	this.Observers[branch][__(id, "default")] = { 'fn': fn, 'bind': bind, 'observe': true };
+	this.Observers[branch][(id || "default")] = { 'fn': fn, 'bind': bind, 'observe': true };
 	return true;
 }
 gcCore.startObserver = function(branch, id) {
-	this.Observers[branch][__(id, "default")].observe = true;
+	this.Observers[branch][(id || "default")].observe = true;
 }
 gcCore.stopObserver = function(branch, id) {
-	this.Observers[branch][__(id, "default")].observe = false;
+	this.Observers[branch][(id || "default")].observe = false;
 }
 
 gcCore.observe = function(subject, topic, data) {
 	if(topic != "nsPref:changed")
 		return;
-	if($defined(this.Observers[data])) {
+	if(this.Observers[data]) {
 		var callback, observer = this.Observers[data];
 		for(var id in observer) {
 			callback = observer[id];
 			if(callback.observe)
-				callback.fn.call(__(callback.bind, callback.fn), data);
+				callback.fn.call((callback.bind || callback.fn), data);
+		}
+	}
+}
+
+gcCore.PrefParser = function(preferences) {
+	var request = new XMLHttpRequest();
+	request.open("GET", preferences, false); 
+	request.send(null);
+	var XML = request.responseXML;
+	var DOC = XML.documentElement;
+		
+	var Instance = function(doc, options) {
+		var klass = this,
+			options = (options || new Object()),
+			Nodes = new Object,
+			Filter = (options.filter || function() { return true; }),
+			
+			parse = function(children, container) {
+				children.forEach(function(child) {
+					var nodeName = child.nodeName;
+					if(nodeName == "#text" || !Filter(child))
+						return;
+					if(Nodes[nodeName]) {
+						Nodes[nodeName].fn.call(Nodes[nodeName].thisObj, child, container, parse);
+					}
+				}, this);
+				return container;
+			};
+		
+		this.document = doc;
+		
+		this.registerNode = function(nodeName, fn, thisObj) {
+			if(!fn)
+				var fn = function(child, container, parse) {
+					return parse(child.childNodes, container);
+				};
+			Nodes[nodeName] = { "fn": fn, "thisObj": thisObj };
+		}
+		this.registerNodes = function(nodeNames, fn, thisObj) {
+			nodeNames.forEach(function(nodeName) {
+				this.registerNode(nodeName, fn, thisObj);
+			}, klass);
+		}
+		this.run = function(container) {
+			if(!container)
+				var container = this.document;
+			parse(this.document.childNodes, container);
 		}
 	}
 	
-	switch(data) {
-		case 'extensions.guiconfig.sticktopreferences':
-			guiconfig.placeMenuItem();
+	this.instance = function(options) {
+		var instance = new Instance(DOC, options);
+		return instance;
+	}
+}
+
+gcCore.IconSet = function(theme, options) {
+	this.theme = (theme || "tango");
+	this.Options = (options || { os: false });
+	this.icons = new Object;
+	this.getIcons();
+}
+gcCore.IconSet.prototype.getIcons = function() {
+	var actions_path = "chrome://guiconfig/skin/" + this.theme + "/actions/";
+	var tab_icons_path = "chrome://guiconfig/skin/" + this.theme + "/tab_icons/";
+	var moz_stock = "moz-icon://stock/";
+
+	switch(this.Options.os) {
+		case 'Linux':
+				if(gcCore.MozInfo.version.indexOf("3") == 0) {
+					this.addIcon("add", moz_stock + "gtk-add?size=button");
+					this.addIcon("color", moz_stock + "gtk-color-picker?size=button");
+					this.addIcon("reset", moz_stock + "gtk-undo?size=menu");
+				}
 			break;
-		
-		case 'browser.preferences.instantApply':
-			if(this.windowIsOpen("config"))
-				this.configWindow.guiconfig.setButtons();
-		
-		default:
-			if(this.windowIsOpen("config"))
-					this.configWindow.guiconfig.observeOption.call(this.configWindow.guiconfig, data);
-				break;
-		}
+
+		case 'WINNT': break;
+	}
+	this.addIcon("add", actions_path + "add.png");
+	this.addIcon("color", actions_path + "color.png");
+	this.addIcon("reset", actions_path + "reset.png");
+	this.addIcon("tab_accessibility", tab_icons_path + "accessibility.png");
+	this.addIcon("tab_bookmarks", tab_icons_path + "bookmarks.png");
+	this.addIcon("tab_browser", tab_icons_path + "browser.png");
+	this.addIcon("tab_developing", tab_icons_path + "developing.png");
+	this.addIcon("tab_downloads", tab_icons_path + "downloads.png");
+	this.addIcon("tab_network", tab_icons_path + "network.png");
+	this.addIcon("tab_style", tab_icons_path + "style.png");
+}
+gcCore.IconSet.prototype.addIcon = function(name, path) {
+	if(!this.icons[name])
+		this.icons[name] = path;
+}
+gcCore.IconSet.prototype.getIcon = function(name) {
+	return this.icons[name];
+}
+gcCore.IconSet.prototype.iconExists = function(name) {
+	return !!this.icons[name];
 }
 
 gcCore.validateVersion = function(version, min, max) {	
@@ -115,11 +175,33 @@ gcCore.fileInput = function(title, filters) {
 	var fp = this.MozInstanceFilePicker();
 	fp.init(window, title, this.MozInterfaceFilePicker.modeOpen);
 	for(var i = 0, l = filters.length; i < l; i++)
-		if($defined(this.MozInterfaceFilePicker[filters[i]]))
+		if(this.MozInterfaceFilePicker[filters[i]])
 			fp.appendFilters(this.MozInterfaceFilePicker[filters[i]]);
 	var status = fp.show();
 	if (status == this.MozInterfaceFilePicker.returnOK)
 		return fp.file;
 	else
 		return false;
+}
+
+
+XULElement.prototype.setProperty = function(name, value) {
+	if(this.hasAttribute(name))
+		this[name] = value;
+	else
+		this.setAttribute(name, value);
+}
+
+NodeList.prototype.forEach = Array.prototype.forEach;
+
+if(!String.prototype.trim) {
+	String.prototype.trim = function() {
+		return this.replace(/(^\s+|\s+$)/, "");
+	}
+}
+
+String.prototype.makeSearchable = function(join_string) {
+	if(!join_string)
+		var join_string = " ";
+	return this.trim().toLowerCase().replace(/[0-9\"\'\«\»\(\)\<\>\-\_\,\.\;\:]/gi, "").replace(/\s\s+/, " ").split(" ").sort().join(join_string);
 }

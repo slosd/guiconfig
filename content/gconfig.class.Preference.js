@@ -4,7 +4,7 @@ var Preference = function(key, type) {
 	this.key = key;
 	
 	var types = {"32": "Char", "64": "Int", "128": "Bool"};
-	this.type = __(types[type], type, types[gcCore.MozPreferences.getPrefType(this.key)], false);
+	this.type = (types[type] || type || types[gcCore.MozPreferences.getPrefType(this.key)] || false);
 	if(!this.type)
 		return false;
 	
@@ -25,7 +25,7 @@ Preference.prototype.getPref = function(d) {
 		return gcCore.MozPreferences["get" + this.type + "Pref"](this.key);
 	}
 	catch (e) {
-		return __(d, null);
+		return (d || null);
 	}
 }
 

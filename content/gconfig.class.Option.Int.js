@@ -14,7 +14,7 @@ IntOption.prototype.constructor = IntOption;
  * @param {int} v
  */
 IntOption.prototype.setValue = function(value) {
-	if(!$defined(value))
+	if(!value)
 		var value = this.getPref();
 	switch(this.Options.mode) {
 		case 'select':

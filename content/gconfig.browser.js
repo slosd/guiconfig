@@ -1,5 +1,9 @@
 var guiconfig = {
 	
+	components: {
+		"config": "chrome://guiconfig/content/config.xul"
+	},
+	
 	init: function() {		
 		window.addEventListener("load", this.placeMenuItem, false);
 		
@@ -33,24 +37,20 @@ var guiconfig = {
 		return true;
 	},
 	
-	openWindow: function(doc, name) {
-		var window_name = "gc" + (name || doc) + "window",
-			chrome = {
-				"config": "chrome://guiconfig/content/config.xul"
-			}[doc];
+	openWindow: function(doc) {
+		var window_name = "gc" + doc + "window",
+			chrome = this.components[doc];
 		
 		if(this.windowIsOpen(doc)) {
-			this[doc + "Window"].focus();
+			this[window_name].focus();
 		}
 		else {
-			this[doc + "Window"] = window.open(chrome, window_name, "chrome");
-			this[doc + "Window"]["gcCore"] = window["gcCore"];
-			this[doc + "Window"]["__"] = window["__"];
-			this[doc + "Window"]["$defined"] = window["$defined"];
+			this[window_name] = window.open(chrome, window_name, "chrome");
 		}
 	},
 	
 	windowIsOpen: function(doc) {
-		return (this[doc + "Window"] && !this[doc + "Window"].closed);
+		var window_name = "gc" + doc + "window";
+		return (this[window_name] && !this[window_name].closed);
 	}
 }
