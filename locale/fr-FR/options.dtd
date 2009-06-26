@@ -85,6 +85,11 @@
 <!ENTITY browser_fixup_alternate_suffix_name "Insérer à la fin">
 <!ENTITY browser_frames_enabled_description "Afficher les cadres HTML">
 <!ENTITY browser_frames_enabled_name "Autoriser les cadres">
+<!ENTITY browser_identity_ssl_domain_display_name "Importance du domaine lors de l&apos;utilisation de SSL">
+<!ENTITY browser_identity_ssl_domain_display_description "Lorsqu&apos;un site utilise le protocole SSL pour crypter les échanges, l&apos;utilisateur peut choisir d&apos;avoir une partie de l&apos;URL du site soulignée dans l&apos;interface. Cette préférence précise s&apos;il faudra afficher dans la barre d&apos;adresse le domaine de deuxième niveau (par exemple « mozilla.org »), le domaine complet (par exemple : « bugzilla.mozilla.org ») ou bien aucun nom de domaine.">
+<!ENTITY browser_identity_ssl_domain_display_o1 "Ne pas afficher le domaine">
+<!ENTITY browser_identity_ssl_domain_display_o2 "Afficher le domaine de deuxième niveau">
+<!ENTITY browser_identity_ssl_domain_display_o3 "Afficher le domaine complet">
 <!ENTITY browser_microsummary_enabled_description "Permet d&apos;extraire une information pour les marque-pages depuis les microrésumés.">
 <!ENTITY browser_microsummary_enabled_name "Utiliser les microrésumés">
 <!ENTITY browser_microsummary_generatorUpdateInterval_description "Précise le nombre de secondes entre les mises à jours de générateurs de microrésumés. Si ce n&apos;est pas précisé, la mise à jour est hebdomadaire (toutes les 604 800 secondes).">
