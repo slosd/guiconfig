@@ -1,0 +1,242 @@
+<!ENTITY accessibility "Удобства">
+<!ENTITY accessibility_accesskeycausesactivation_description "Использование клавиши доступа к элементу эквивалентно активации этого элемента. Если элемент является ссылкой, переход по ссылке. Если элемент кнопка — «нажатие» кнопки.">
+<!ENTITY accessibility_accesskeycausesactivation_name "Клавиша доступа активизирует элемент">
+<!ENTITY accessibility_tabfocus_description "Эта настройка определяет какие из элементов могут получать фокус при нажатии клавиши «Tab».">
+<!ENTITY accessibility_tabfocus_name "Элементы фокусируемые по клавише Tab">
+<!ENTITY accessibility_tabfocus_o1 "только текстовые поля">
+<!ENTITY accessibility_tabfocus_o2 "все элементы форм кроме текстовых полей">
+<!ENTITY accessibility_tabfocus_o3 "все элементы форм">
+<!ENTITY accessibility_tabfocus_o4 "только ссылки (в том числе и картинки-ссылки)">
+<!ENTITY accessibility_tabfocus_o5 "ссылки и элементы форм">
+<!ENTITY accessibility_tabfocus_o6 "ссылки и элементы форм, кроме текстовых полей">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Определяет как обрабатывать чувствительность к регистру. Если выбрана настройка «Определять автоматически», то поиск будет регистрозависимым только в том случае, когда поисковая строка содержит и прописные и строчные символы.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Чувствительность к регистру">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "определять автоматически">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "без учёта">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "с учётом">
+<!ENTITY accessibility_typeaheadfind_label "Поиск по мере набора">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Задаёт промежуток отсутствия ввода символов с клавиатуры после которого исчезает панель поиска.">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Задержка (мсек)">
+<!ENTITY accessibility_warn_on_browsewithcaret_description "Каждый раз при нажатии клавиши «F7» отображает диалоговое окно с предупреждением о переходе в режим активного курсора.">
+<!ENTITY accessibility_warn_on_browsewithcaret_name "При входе в режим активного курсора показать диалоговое окно">
+<!ENTITY alert-saved "Настройки сохранены">
+<!ENTITY alerts "Уведомления">
+<!ENTITY alerts_slideIncrementTime_description "Задаёт промежуток между последовательными перемещениями окна уведомления при всплывании/пропадании.">
+<!ENTITY alerts_slideIncrementTime_name "Пауза (мс)">
+<!ENTITY alerts_slideIncrement_description "Эта настройка управляет скоростью всплывания/пропадания окон уведомления типа «Загрузка завершена», появляющихся в правом нижнем углу экрана. А именно, она задаёт на сколько пикселей продвигается окно за один шаг.">
+<!ENTITY alerts_slideIncrement_name "Шаг передвижения (пикселей)">
+<!ENTITY alerts_totalOpenTime_description "Задаёт время отображения окон уведомления типа «Загрузка завершена», появляющихся в правом нижнем углу экрана.">
+<!ENTITY alerts_totalOpenTime_name "Продолжительность (мс)">
+<!ENTITY awesomebar "Умная адресная строка">
+<!ENTITY bookmarks "Закладки">
+<!ENTITY browser "Браузер">
+<!ENTITY browser_backspace_action_description "Определяет поведение клавиши «Забой».">
+<!ENTITY browser_backspace_action_name "Клавиша Backspace">
+<!ENTITY browser_backspace_action_o1 "перейти на предыдущую страницу">
+<!ENTITY browser_backspace_action_o2 "перейти наверх страницы">
+<!ENTITY browser_backspace_action_o3 "не делать ничего">
+<!ENTITY browser_blink_allowed_description "При использовании тега blink или CSS-стиля text-decoration: blink результатом будет мигающий элемент.">
+<!ENTITY browser_blink_allowed_name "Разрешить мигающий текст">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Задаёт промежуток между проверками живых закладок. Значения меньшие 60 приравниваются к 60.">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Интервал обновления (с)">
+<!ENTITY browser_bookmarks_max_backups_description "Определяет число сохраняемых резервных копий закладок. Установка в 0 отключит резервирование.">
+<!ENTITY browser_bookmarks_max_backups_name "Резервные копии">
+<!ENTITY browser_cache_check_doc_frequency_description "Как часто браузер будет проверять страницы на наличие более новой версии чем та, что возможно находится в кэше.">
+<!ENTITY browser_cache_check_doc_frequency_name "Проверять кэш браузера">
+<!ENTITY browser_cache_check_doc_frequency_o1 "однажды за сессию браузера">
+<!ENTITY browser_cache_check_doc_frequency_o2 "каждый раз при просмотре страницы">
+<!ENTITY browser_cache_check_doc_frequency_o3 "никогда (всегда использовать кэшированную страницу)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "когда страница устарела (определяется автоматически)">
+<!ENTITY browser_cache_disk_cache_ssl_description "Позволяет кэшировать данные получаемые через SSL (рискованно в плане безопасности!).">
+<!ENTITY browser_cache_disk_cache_ssl_name "Сохранять в кэше HTTPS/SSL данные">
+<!ENTITY browser_cache_disk_capacity_description "Количество дискового пространства используемого под кэш браузера (в килобайтах).">
+<!ENTITY browser_cache_disk_capacity_name "Кэш на диске (КБ)">
+<!ENTITY browser_cache_disk_enable_description "Разрешает использовать дисковый кэш с заданным размером.">
+<!ENTITY browser_cache_disk_enable_name "Использовать кэш на диске">
+<!ENTITY browser_cache_memory_capacity_description "Устанавливает максимальный размер ОЗУ, используемого под кэш (в килобайтах).">
+<!ENTITY browser_cache_memory_capacity_name "Кэш в памяти (КБ)">
+<!ENTITY browser_cache_memory_enable_description "Разрешает использовать кэш в памяти с заданным размером.">
+<!ENTITY browser_cache_memory_enable_name "Использовать кэш в памяти">
+<!ENTITY browser_chrome_favicons_description "Определяет, будут ли отображаться значки сайтов или нет.">
+<!ENTITY browser_chrome_favicons_name "Показывать значки сайтов">
+<!ENTITY browser_chrome_toolbar_tips_description "Определяет поведение всплывающих подсказок для элементов chrome интерфейса.">
+<!ENTITY browser_chrome_toolbar_tips_name "Показывать всплывающие подсказки">
+<!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
+<!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
+<!ENTITY browser_dom_window_dump_enabled_description "Разрешает использовать оператор dump() для печати в стандартной консоли.">
+<!ENTITY browser_dom_window_dump_enabled_name "Разрешить dump()">
+<!ENTITY browser_download_lastDir_description "Путь к каталогу последним использовавшемуся для загрузки через «Сохранить как…».">
+<!ENTITY browser_download_lastDir_name "Последний каталог загрузки">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Предупреждает пользователя, пытающегося открыть выполнимую программу из менеджера загрузок.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Предупреждать о выполнимых">
+<!ENTITY browser_download_manager_focusWhenStarting_description "При начале загрузки открывает и переходит в окно менеджера загрузок.">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Переходить в окно менеджера загрузок">
+<!ENTITY browser_download_manager_showAlertInterval_description "Задаёт промежуток между окончанием загрузок и отображением уведомления.">
+<!ENTITY browser_download_manager_showAlertInterval_name "Задержка (мс)">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "Показывает после окончания загрузок в правом нижнем углу экрана всплывающее окно.">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "Всплывающее окно по окончании загрузки">
+<!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Изменять размер изображений">
+<!ENTITY browser_fixup_alternate_enabled_description "Если адрес не найден, то добавить к адресу следующие символы.">
+<!ENTITY browser_fixup_alternate_enabled_name "Использовать альтернативные адреса">
+<!ENTITY browser_fixup_alternate_prefix_description "Символы добавляемые в начале адреса.">
+<!ENTITY browser_fixup_alternate_prefix_name "Вставить в начало">
+<!ENTITY browser_fixup_alternate_suffix_description "Символы добавляемые в конце адреса.">
+<!ENTITY browser_fixup_alternate_suffix_name "Вставить в конце">
+<!ENTITY browser_frames_enabled_description "Отображение HTML фреймов.">
+<!ENTITY browser_frames_enabled_name "Разрешить фреймы">
+<!ENTITY browser_identity_ssl_domain_display_name "Выделять домены использующие SSL">
+<!ENTITY browser_identity_ssl_domain_display_description "При использовании сайтом SSL для зашифрованной передачи данных, пользователь может счесть необходимым выделить часть адреса сайта. Эта настройка определяет какая часть адреса будет отображаться в адресной строке рядом со значком сайта: никакая, домен второго уровня (например: mozilla.org) или весь домен (например: bugzilla.mozilla.org).">
+<!ENTITY browser_identity_ssl_domain_display_o1 "не показывать домен">
+<!ENTITY browser_identity_ssl_domain_display_o2 "показывать домен второго уровня">
+<!ENTITY browser_identity_ssl_domain_display_o3 "показывать весь домен">
+<!ENTITY browser_microsummary_enabled_description "Разрешает загружать информацию для закладок со сводками.">
+<!ENTITY browser_microsummary_enabled_name "Использовать сводки">
+<!ENTITY browser_microsummary_generatorUpdateInterval_description "Определяет промежуток (в секундах) между проверками обновлений для генераторов сводок. Если не задано, обновление проводится еженедельно (604800 секунд).">
+<!ENTITY browser_microsummary_generatorUpdateInterval_name "Интервал обновления (с)">
+<!ENTITY browser_microsummary_updateGenerators_description "Определяет, будут ли периодически проверяться на наличие обновлений генераторы сводок или нет.">
+<!ENTITY browser_microsummary_updateGenerators_name "Обновить генераторы сводок">
+<!ENTITY browser_microsummary_updateInterval_description "Определяет промежуток (в минутах) между проверками обновлений сводок. По умолчанию 30 минут.">
+<!ENTITY browser_microsummary_updateInterval_name "Интервал обновления (мин)">
+<!ENTITY browser_popups_showPopupBlocker_description "Определяет, будет ли показываться значок в строке состояния при блокировании всплывающего окна или нет.">
+<!ENTITY browser_popups_showPopupBlocker_name "Показывать значок в строке состояния">
+<!ENTITY browser_preferences_animateFadeIn_description "При переключении между панелями настроек изменяет высоту окна и плавно выводит новую панель примерно через секунду.">
+<!ENTITY browser_preferences_animateFadeIn_name "Анимировать переключение панелей настроек">
+<!ENTITY browser_preferences_instantApply_description "Изменения параметров настроек используются немедленно. Окно настроек становится не модальным. Вместо кнопок «OK» и «Отмена» будет только кнопка «Закрыть».">
+<!ENTITY browser_preferences_instantApply_name "Применять немедленно">
+<!ENTITY browser_privatebrowsing_autostart_description "Если этот флажок установлен, Firefox будет запущен в режиме приватного просмотра и сделает эту настройку постоянно действующей до окончания сессии.">
+<!ENTITY browser_privatebrowsing_autostart_name "Запускать в режиме приватного просмотра">
+<!ENTITY browser_search_openintab_description "При выполнении поиска через строку поиска открывает результаты в новой вкладке.">
+<!ENTITY browser_search_openintab_name "Открывать результаты поиска в новой вкладке">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Максимальное количество окон отображаемых в меню «Журнал|Недавно закрытые окна».">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
+<!ENTITY browser_style "Браузер">
+<!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
+<!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
+<!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
+<!ENTITY browser_tabs_closeButtons_o2 "на каждой вкладке">
+<!ENTITY browser_tabs_closeButtons_o3 "нигде">
+<!ENTITY browser_tabs_closeButtons_o4 "в конце панели вкладок">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Если этот флажок установлен, текущее окно будет закрыто при закрытии в нём последней вкладки.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрывать окно по последней вкладке">
+<!ENTITY browser_tabs_loadBookmarksInBackground_description "При открытии закладки в новой вкладке она открывается в фоне, не отбирая фокус у текущей вкладки.">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Загружать закладки в фоне">
+<!ENTITY browser_urlbar_autoFill_description "Включает встроенное автодополнение адресов.">
+<!ENTITY browser_urlbar_autoFill_name "Встроенное автодополнение">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Щелчок по адресной строке выделяет её содержимое.">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Выделять содержимое щелчком мыши">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Двойной щелчок по адресной строке выделяет её содержимое.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Выделять содержимое двойным щелчком">
+<!ENTITY browser_urlbar_hideGoButton_description "Определяет, будет ли отображаться кнопка «Перейти» или нет.">
+<!ENTITY browser_urlbar_hideGoButton_name "Скрыть кнопку «Перейти»">
+<!ENTITY browser_urlbar_matchBehavior_description "Эта настройка определяет обращение с границами слов при поиске элементов в адресной строке.">
+<!ENTITY browser_urlbar_matchBehavior_name "Поведение совпадений">
+<!ENTITY browser_urlbar_matchBehavior_o1 "игнорировать границы слова">
+<!ENTITY browser_urlbar_matchBehavior_o2 "сначала показывать элементы соответствующие границам">
+<!ENTITY browser_urlbar_matchBehavior_o3 "использовать границы только для набранного текста">
+<!ENTITY browser_urlbar_matchBehavior_o4 "только совпадающие с началом адреса или заголовка">
+<!ENTITY browser_urlbar_matchOnlyTyped_description "Разрешает автодополнение только адресами ранее набранными в адресной строке.">
+<!ENTITY browser_urlbar_matchOnlyTyped_name "Только соответствующие набранному">
+<!ENTITY browser_urlbar_match_title_description "Определяет, будут ли результаты умной адресной строки совпадать только с заголовком.">
+<!ENTITY browser_urlbar_match_title_name "Поиском среди заголовков">
+<!ENTITY browser_urlbar_match_url_description "Определяет, будут ли результаты умной адресной строки совпадать только с адресом.">
+<!ENTITY browser_urlbar_match_url_name "Поиском среди адресов">
+<!ENTITY browser_urlbar_maxRichResults_description "Определяет, сколько (максимум) записей должно появляться в выпадающем списке адресной строки.">
+<!ENTITY browser_urlbar_maxRichResults_name "Записей в выпадающем списке">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Результаты в умной адресной строке ограничиваются закладками.">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Сузить до закладок">
+<!ENTITY browser_urlbar_restrict_history_description "Результаты в умной адресной строке ограничиваются посещёнными веб-сайтами.">
+<!ENTITY browser_urlbar_restrict_history_name "Сузить до истории">
+<!ENTITY browser_urlbar_restrict_tag_description "Результаты в умной адресной строке ограничиваются тегами.">
+<!ENTITY browser_urlbar_restrict_tag_name "Сузить до тегов">
+<!ENTITY button-custom-value "Свой">
+<!ENTITY button-edit-enable "Вкл.">
+<!ENTITY button-file-select "Обзор…">
+<!ENTITY cache "Кэш браузера">
+<!ENTITY cache_disk "Кэш на диске">
+<!ENTITY cache_memory "Кэш в памяти">
+<!ENTITY choose-file "Выберите файл редактора">
+<!ENTITY confirm-std "Вы действительно хотите восстановить значения по умолчанию?">
+<!ENTITY connections "Подключения">
+<!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
+<!ENTITY content_notify_interval_name "Задержка перед перерисовкой страницы (мкс)">
+<!ENTITY developing "Разработка">
+<!ENTITY dont-ask "Не спрашивать снова">
+<!ENTITY downloadmanager "Менеджер загрузок">
+<!ENTITY downloads "Загрузки">
+<!ENTITY extensions "Расширения">
+<!ENTITY extensions_checkCompatibility_description "Эта настройка позволяет отключить проверку расширений на совместимость.">
+<!ENTITY extensions_checkCompatibility_name "Включить проверку расширений на совместимость">
+<!ENTITY extensions_getAddons_maxResults_description "Определяет максимальное число результатов, отображаемых в панели при выполнении поиска.">
+<!ENTITY extensions_getAddons_maxResults_name "Число поисковых результатов">
+<!ENTITY extensions_getAddons_showPane_description "Определяет будет ли отображаться панель «Поиск дополнений» в окне менеджера дополнений.">
+<!ENTITY extensions_getAddons_showPane_name "Показать панель">
+<!ENTITY extensions_hideInstallButton_description "Скрывает кнопку «Установить» в окне менеджера дополнений.">
+<!ENTITY extensions_hideInstallButton_name "Скрыть кнопку «Установить»">
+<!ENTITY fill-in-value "Введите своё значение:">
+<!ENTITY getaddons "Панель «Поиск дополнений»">
+<!ENTITY javascript_options_showInConsole_description "Определяет будут ли записываться в журнал консоли ошибок ошибки и предупреждения chrome.">
+<!ENTITY javascript_options_showInConsole_name "Показывать chrome ошибки в консоли">
+<!ENTITY javascript_options_strict_description "Включает более строгую проверку Javascript, увеличивая количество предупреждений в консоли ошибок.">
+<!ENTITY javascript_options_strict_name "Строгие Javascript предупреждения">
+<!ENTITY keep-alive_connections "Поддерживаемые подключения">
+<!ENTITY layout_spellcheckDefault_description "Определяет где будет проверяться орфография.">
+<!ENTITY layout_spellcheckDefault_name "Проверка орфографии">
+<!ENTITY layout_spellcheckDefault_o1 "отключить">
+<!ENTITY layout_spellcheckDefault_o2 "разрешить в многострочных текстовых полях">
+<!ENTITY layout_spellcheckDefault_o3 "разрешить в много- и однострочных текстовых полях">
+<!ENTITY microsummaries "Сводки">
+<!ENTITY middleclick "Щелчок средней кнопкой">
+<!ENTITY middlemouse_contentLoadURL_description "Щелчок средней кнопкой загружает содержимое буфера обмена как адрес.">
+<!ENTITY middlemouse_contentLoadURL_name "Загрузить адрес из буфера обмена">
+<!ENTITY middlemouse_paste_description "Щелчок средней кнопкой вставляет содержимое буфера обмена в текстовое поле.">
+<!ENTITY middlemouse_paste_name "Вставить текст из буфера обмена">
+<!ENTITY misc "Разное">
+<!ENTITY mouseclick "Щелчки мышью">
+<!ENTITY network "Сеть">
+<!ENTITY network_http_keep-alive_description "Поддерживаемые HTTP подключения могут повторно использоваться при многократных запросах и улучшают работу.">
+<!ENTITY network_http_keep-alive_name "Использовать поддерживаемые подключения">
+<!ENTITY network_http_max-connections-per-server_description "Эта настройка задаёт общее количество подключений, которое Firefox может одновременно использовать для одного сервера. [1-255]">
+<!ENTITY network_http_max-connections-per-server_name "Максимальное число HTTP подключений на сервер">
+<!ENTITY network_http_max-connections_description "Эта настройка задаёт общее количество подключений, которое Firefox может использовать одновременно. [1-65535]">
+<!ENTITY network_http_max-connections_name "Максимальное число HTTP подключений">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Эта настройка задаёт общее количество поддерживаемых подключений, которое Firefox может одновременно использовать для одного прокси-сервера. [1-255]">
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Максимальное число поддерживаемых подключений на прокси-сервер">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Эта настройка задаёт общее количество поддерживаемых подключений, которое Firefox может одновременно использовать для одного сервера. [1-255]">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Максимальное число поддерживаемых подключений на сервер">
+<!ENTITY network_http_pipelining_description "Конвейерная обработка уменьшает загрузку сети и может уменьшить время загрузки страницы, но при этом может вызвать проблемы при загрузке страниц c серверов, не поддерживающих конвейерную обработку.">
+<!ENTITY network_http_pipelining_maxrequests_description "Эта настройка задаёт максимальное количество одновременных запросов в конвейере при использовании конвейеризации.">
+<!ENTITY network_http_pipelining_maxrequests_name "Максимальное число запросов в конвейере">
+<!ENTITY network_http_pipelining_name "Использовать конвейерную обработку">
+<!ENTITY network_http_proxy_pipelining_description "Эта настройка указывает будет ли использоваться конвейерная обработка для прокси-сервера. Конвейеризация уменьшает загрузку сети и может уменьшить время загрузки страницы, но при этом может вызвать проблемы при загрузке страниц c серверов, не поддерживающих конвейерную обработку.">
+<!ENTITY network_http_proxy_pipelining_name "Использовать конвейерную обработку для прокси-сервера">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Изменения в окнах и диалогах не требуют перезапуска. Не работает с файлами упакованными в JAR.">
+<!ENTITY nglayout_debug_disable_xul_cache_name "Отключить XUL кэш">
+<!ENTITY nglayout_initialpaint_delay_description "Эта настройка задаёт задержку в миллисекундах перед началом визуализации страницы. Меньшее значение приведёт к более быстрому первоначальному отображению страницы, но окончательный результат займёт больше времени. Большее значение имеет противоположный эффект.">
+<!ENTITY nglayout_initialpaint_delay_name "Задержка перед отображением страницы (мс)">
+<!ENTITY pipelining "Конвейеризация">
+<!ENTITY rendering "Визуализация">
+<!ENTITY security_dialog_enable_delay_description "Эта настройка задаёт задержку (в миллисекундах) активации кнопки «Установить» при установке дополнения. Установите в 0, чтобы отключить задержку.">
+<!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
+<!ENTITY security_privacy "Безопасность и защита">
+<!ENTITY signon_prefillForms_description "Автоматически заполняет поля форм с именем пользователя и паролем.">
+<!ENTITY signon_prefillForms_name "Автозаполнять поля регистрационных форм">
+<!ENTITY style "Стиль">
+<!ENTITY text_select "Выделенный текст">
+<!ENTITY ui_textSelectBackgroundAttention_description "Определяет цвет фона (в виде названия или #кода, используемого при поиске по мере набора.">
+<!ENTITY ui_textSelectBackgroundAttention_name "Цвет фона помеченного текста">
+<!ENTITY ui_textSelectBackground_description "Определяет цвет фона (в виде названия или #кода), используемого при выделении текста. Если не указан, то используется значение из настроек ОС.">
+<!ENTITY ui_textSelectBackground_name "Цвет фона">
+<!ENTITY ui_textSelectForeground_description "Определяет цвет текста (в виде названия или #кода), используемого при выделении. Если не указан, то используется значение из настроек ОС.">
+<!ENTITY ui_textSelectForeground_name "Цвет текста">
+<!ENTITY update_showSlidingNotification_description "Отображает в браузере уведомление при наличии обновлений.">
+<!ENTITY update_showSlidingNotification_name "Показывать уведомление о наличии обновлений">
+<!ENTITY urlbar "Строка адреса">
+<!ENTITY urlbar_match_name "Полученные результаты подбираются">
+<!ENTITY urlbar_restrict_name "Ограничение полученных результатов">
+<!ENTITY view_source_editor_external_description "Использовать для просмотра исходного кода указанный пользователем редактор.">
+<!ENTITY view_source_editor_external_name "Использовать указанный пользователем редактор">
+<!ENTITY view_source_editor_path_description "Путь для указываемого пользователем редактора.">
+<!ENTITY view_source_editor_path_name "Путь к редактору">
+<!ENTITY viewsource "Просмотр исходного кода">
+<!ENTITY websites "Веб-сайты">

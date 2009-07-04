@@ -1,0 +1,115 @@
+<!ENTITY accessibility "Acessibilidade">
+<!ENTITY accessibility_accesskeycausesactivation_description "Permite que itens sejam acionados (ex.: seguir links, clicar botões) ao se pressionar as teclas de acesso correspondentes definidas no código-fonte da página.">
+<!ENTITY accessibility_accesskeycausesactivation_name "Acionar itens da página via teclas de acesso">
+<!ENTITY accessibility_tabfocus_description "Especifica entre quais itens da página o foco é alternado ao se pressionar a tecla Tab. Os demais itens somente poderão receber foco via clique ou com a função de cursor de teclado.">
+<!ENTITY accessibility_tabfocus_name "Tab focaliza">
+<!ENTITY accessibility_tabfocus_o1 "somente campos de texto">
+<!ENTITY accessibility_tabfocus_o2 "todos os itens de formulário exceto campos de texto">
+<!ENTITY accessibility_tabfocus_o3 "todos os itens de formulário">
+<!ENTITY accessibility_tabfocus_o4 "somente links (inclusive imagens com links)">
+<!ENTITY accessibility_tabfocus_o5 "todos os links e itens de formulário">
+<!ENTITY accessibility_warn_on_browsewithcaret_description "Exibe uma janela de aviso cada vez que se pressionar F7 para ativar o cursor de teclado, recurso que permite selecionar texto e navegar pelos itens da página sem o mouse.">
+<!ENTITY accessibility_warn_on_browsewithcaret_name "Avisar ao ativar o cursor de teclado">
+<!ENTITY alerts "Alertas">
+<!ENTITY alerts_slideIncrementTime_description "Especifica o tempo em milissegundos entre cada quadro da animação de exibição ou remoção de tais alertas (para ambos os efeitos de deslizamento e de transparência), dando um aspecto mais suave ou mais rápido a ela.">
+<!ENTITY alerts_slideIncrementTime_name "Tempo de cada quadro (ms)">
+<!ENTITY alerts_slideIncrement_description "Ajusta a velocidade em que tais alertas aparecem e são retirados da tela, especificando quantos pixels o alerta se moverá em cada quadro da animação de exibição ou remoção.">
+<!ENTITY alerts_slideIncrement_name "Pixels por quadro">
+<!ENTITY alerts_totalOpenTime_description "Especifica por quanto tempo em milissegundos tais alertas serão exibidos na tela.">
+<!ENTITY alerts_totalOpenTime_name "Tempo do alerta (ms)">
+<!ENTITY bookmarks "RSS nos favoritos">
+<!ENTITY browser "Navegador">
+<!ENTITY browser_backspace_action_description "Especifica o que fazer ao se pressionar a tecla Backspace.">
+<!ENTITY browser_backspace_action_name "Backspace">
+<!ENTITY browser_backspace_action_o1 "retorna à página anterior">
+<!ENTITY browser_backspace_action_o2 "age como Page Up">
+<!ENTITY browser_backspace_action_o3 "nenhuma ação">
+<!ENTITY browser_blink_allowed_description "Permite que itens na página com a tag HTML &quot;blink&quot; ou com o estilo CSS &quot;text-decoration: blink&quot; sejam exibidos piscando. Desmarque para que não pisquem.">
+<!ENTITY browser_blink_allowed_name "Mostrar texto piscante">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Especifica o tempo em segundos entre cada verificação de atualizações nos RSS presentes nos favoritos do navegador. Valores menores que 60 são considerados como sendo 60.">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Tempo entre atualizações (s)">
+<!ENTITY browser_bookmarks_max_backups_description "Especifica quantas cópias de segurança da lista de favoritos serão mantidas pelo navegador. Digite 0 para desativar o backup automático dos favoritos.">
+<!ENTITY browser_bookmarks_max_backups_name "Nº de backups dos favoritos">
+<!ENTITY browser_cache_check_doc_frequency_description "Especifica quando verificar se uma página ou arquivo online foi modificado desde que foi copiada para o cache.">
+<!ENTITY browser_cache_check_doc_frequency_name "Verificar alterações">
+<!ENTITY browser_cache_check_doc_frequency_o1 "uma vez por sessão">
+<!ENTITY browser_cache_check_doc_frequency_o2 "sempre que visitar a página">
+<!ENTITY browser_cache_check_doc_frequency_o3 "nunca (carregar a página sempre do cache)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "quando o arquivo em cache vencer (automático)">
+<!ENTITY browser_cache_disk_cache_ssl_description "Armazena no cache do navegador páginas e outros arquivos recebidos por conexões seguras (HTTPS/SSL). Acionar essa opção traz risco de segurança, pois o cache não é criptografado!">
+<!ENTITY browser_cache_disk_cache_ssl_name "Armazenar em cache páginas e arquivos recebidos por conexões seguras">
+<!ENTITY browser_cache_disk_capacity_description "Especifica em quilobytes a quantidade máxima de memória usada pelo cache de disco.">
+<!ENTITY browser_cache_disk_capacity_name "Cache de disco (KB)">
+<!ENTITY browser_cache_disk_enable_description "Ativa o cache de disco, salvando no disco rígido páginas e conteúdos visitados até o limite especificado para carregamento mais rápido nas visitas subseqüentes.">
+<!ENTITY browser_cache_disk_enable_name "Usar cache de disco">
+<!ENTITY browser_cache_memory_capacity_description "Especifica em quilobytes a quantidade máxima de RAM usada pelo cache de memória.">
+<!ENTITY browser_cache_memory_capacity_name "Cache de memória (KB)">
+<!ENTITY browser_cache_memory_enable_description "Ativa o cache de memória, mantendo na RAM durante a sessão do navegador páginas e conteúdos visitados até o limite especificado para carregamento ainda mais rápido nas visitas subseqüentes.">
+<!ENTITY browser_cache_memory_enable_name "Usar cache de memória">
+<!ENTITY browser_chrome_favicons_description "Exibe ícones especificados pelos sites e páginas visitados para identificá-los.">
+<!ENTITY browser_chrome_favicons_name "Mostrar favicons">
+<!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do navegador quando se põe o cursor do mouse sobre eles.">
+<!ENTITY browser_chrome_toolbar_tips_name "Mostrar dicas de tela">
+<!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas.">
+<!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados">
+<!ENTITY browser_dom_window_dump_enabled_description "Permite o uso do comando dump() para exibir dados na janela de console padrão.">
+<!ENTITY browser_dom_window_dump_enabled_name "Ativar dump()">
+<!ENTITY browser_download_lastDir_description "Especifica o caminho para a última pasta na qual foi salvo um download. Essa pasta será automaticamente indicada na janela Salvar como na próxima vez em que se fizer um download.">
+<!ENTITY browser_download_lastDir_name "Última pasta de download">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Exibe um aviso ao usuário quando um arquivo executável salvo da internet está prestes a ser aberto a partir do Gerenciador de downloads.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Alertar ao abrir arquivo executável">
+<!ENTITY browser_download_manager_focusWhenStarting_description "Exibe a janela de downloads na frente das demais janelas do navegador quando um download é iniciado.">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Abrir a janela de downloads em primeiro plano ao começar um download">
+<!ENTITY browser_download_manager_showAlertInterval_description "Especifica o tempo em milissegundos a esperar após o término dos downloads antes de exibir tal alerta.">
+<!ENTITY browser_download_manager_showAlertInterval_name "Atraso do alerta (ms)">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "Exibe um alerta popup no canto inferior direito da tela quando todos os downloads são concluídos.">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "Mostrar alerta ao concluir os downloads">
+<!ENTITY browser_enable_automatic_image_resizing_description "Ao abrir uma imagem avulsa que seja maior que a janela do navegador, a diminui para exibi-la por completo no espaço disponível.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Redimensionar imagens">
+<!ENTITY browser_frames_enabled_description "Permite a exibição de frames no navegador.">
+<!ENTITY browser_frames_enabled_name "Permitir frames">
+<!ENTITY browser_popups_showPopupBlocker_description "Exibe um ícone na barra de status quando o navegador bloquear a abertura de um popup.">
+<!ENTITY browser_popups_showPopupBlocker_name "Mostrar ícone na barra de status">
+<!ENTITY browser_preferences_animateFadeIn_description "Muda a altura da janela de opções do navegador e troca suavemente seu conteúdo a cada mudança de categoria.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animar mudanças de categoria na janela de opções">
+<!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
+<!ENTITY browser_preferences_instantApply_name "Aplicar opções instantaneamente">
+<!ENTITY browser_search_openintab_description "Abre os resultados das pesquisas realizadas no campo de pesquisa em uma nova aba.">
+<!ENTITY browser_search_openintab_name "Abrir resultados de pesquisa em nova aba">
+<!ENTITY browser_style "Navegador">
+<!ENTITY browser_tabs_closeButtons_description "Especifica onde exibir botões para fechar abas.">
+<!ENTITY browser_tabs_closeButtons_name "Mostrar botão Fechar aba">
+<!ENTITY browser_tabs_closeButtons_o1 "apenas na aba atual">
+<!ENTITY browser_tabs_closeButtons_o2 "em cada aba">
+<!ENTITY browser_tabs_closeButtons_o3 "nunca">
+<!ENTITY browser_tabs_closeButtons_o4 "na extremidade da barra de abas">
+<!ENTITY browser_tabs_loadBookmarksInBackground_description "Carrega em segundo plano favoritos abertos em abas, mantendo o foco na aba atual.">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Carregar favoritos em 2º plano">
+<!ENTITY browser_urlbar_autoFill_description "Completa automaticamente o endereço que você começar a digitar, em vez de apenas exibir uma lista de sugestões abaixo do campo de endereço.">
+<!ENTITY browser_urlbar_autoFill_name "Completar endereços automaticamente ao digitar">
+<!ENTITY browser_urlbar_hideGoButton_description "Remove o botão &quot;Ir&quot; ao lado do campo de endereço do navegador.">
+<!ENTITY browser_urlbar_hideGoButton_name "Não mostrar o botão &quot;Ir&quot;">
+<!ENTITY cache "Cache">
+<!ENTITY developing "Programação">
+<!ENTITY downloadmanager "Gerenciador de downloads">
+<!ENTITY downloads "Downloads">
+<!ENTITY javascript_options_strict_description "Exibe mensagens no Console de erros sobre código JavaScript que não obedeça aos padrões recomendados.">
+<!ENTITY javascript_options_strict_name "Avisar sobre JavaScript fora dos padrões recomendados">
+<!ENTITY middleclick "Clique na roda ou botão do meio">
+<!ENTITY middlemouse_contentLoadURL_description "Carrega o endereço que estiver copiado na área de transferência quando a roda ou botão do meio do mouse for clicada(o).">
+<!ENTITY middlemouse_contentLoadURL_name "carrega o endereço da área de transferência">
+<!ENTITY middlemouse_paste_description "Cola o conteúdo da área de transferência no campo de texto onde for dado um clique com a roda ou botão do meio.">
+<!ENTITY middlemouse_paste_name "cola texto">
+<!ENTITY misc "Miscelânea">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Exibe alterações nos arquivos XUL de janelas e caixas de diálogo de extensões sem reiniciar o navegador. Não funciona com arquivos compactados em JAR.">
+<!ENTITY nglayout_debug_disable_xul_cache_name "Desabilitar cache de XUL">
+<!ENTITY style "Estilo">
+<!ENTITY text_select "Texto selecionado">
+<!ENTITY ui_textSelectBackgroundAttention_description "Especifica a cor de realce dos trechos de texto localizados">
+<!ENTITY ui_textSelectBackgroundAttention_name "Cor de realce de pesquisa">
+<!ENTITY ui_textSelectBackground_description "Especifica a cor de realce dos trechos de texto selecionados. Pode-se especificar uma cor por seu código hexadecimal ou por seu nome HTML. Se deixada em branco, será empregada a cor especificada no sistema operacional.">
+<!ENTITY ui_textSelectBackground_name "Cor de realce">
+<!ENTITY ui_textSelectForeground_description "Especifica a cor dos caracteres nos trechos de texto selecionados. Pode-se especificar uma cor por seu código hexadecimal ou por seu nome HTML. Se deixada em branco, será empregada a cor especificada no sistema operacional.">
+<!ENTITY ui_textSelectForeground_name "Cor do texto">
+<!ENTITY update_showSlidingNotification_description "Exibe um aviso no navegador quando houver atualizações disponíveis.">
+<!ENTITY update_showSlidingNotification_name "Mostrar notificações de atualizações">
