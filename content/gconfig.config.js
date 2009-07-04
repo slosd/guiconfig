@@ -14,8 +14,6 @@ var guiconfig = {
 	selected_tab: false,
 	
 	init: function() {
-		dump("This is?+*+_-:.,; just a test. ".replace(/[^\p{L}]/gi, "n"));
-		
 		this.IconSet = new gcCore.IconSet("tango", { os: gcCore.MozRuntime.OS });
 		
 		this.Parser = new gcCore.PrefParser("chrome://guiconfig/content/preferences.xml");
@@ -302,10 +300,7 @@ var guiconfig = {
 		this.selected_tab = false;
 				
 		var parser = this.Parser.instance({
-			'filter': function(node) {
-				//dump(node.getAttribute("label") + ": "+node.nodeName+" - "+node.gcElement + " - "+this.validatePref(node)+"\n");
-				return this.validatePref(node);
-			}.bind(this)
+			'filter': this.validatePref
 		});
 		parser.registerNode('tabs');
 		
