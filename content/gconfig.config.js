@@ -14,6 +14,8 @@ var guiconfig = {
 	selected_tab: false,
 	
 	init: function() {
+		dump("This is?+*+_-:.,; just a test. ".replace(/[^\p{L}]/gi, "n"));
+		
 		this.IconSet = new gcCore.IconSet("tango", { os: gcCore.MozRuntime.OS });
 		
 		this.Parser = new gcCore.PrefParser("chrome://guiconfig/content/preferences.xml");
@@ -79,7 +81,7 @@ var guiconfig = {
 	},
 	
 	savePreferences: function() {
-		var Pref;
+		var Option;
 		for(var key in this.Options) {
 			Option = this.Options[key];
 			if(!Option.disabled)
@@ -95,8 +97,6 @@ var guiconfig = {
 	},
 
 	validatePref: function(child) {
-			
-		dump(child.nodeName+" "+child.getAttribute("label")+" "+child.getAttribute("key")+"\n");
 		if(!gcCore.GCPreferences.getBoolPref("matchversion"))
 			return true;
 		
@@ -106,8 +106,7 @@ var guiconfig = {
 		if(!minVersion && !maxVersion)
 			return true;
 		
-		var t = gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
-		return t;
+		return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
 	},
 
 	createPreferences: function() {
@@ -132,7 +131,7 @@ var guiconfig = {
 				paneltab.setAttribute("class", "gcDoPane");
 			var panelbox = document.createElement("vbox");
 			panelbox.setAttribute("class", "gcPrefPane");
-			node.gcElement = paneltab;
+			node.setUserData("element", paneltab, null);
 			container.tabs.appendChild(paneltab);
 			container.tabpanels.appendChild(parse(node.childNodes, panelbox));
 		}, this);
@@ -157,7 +156,7 @@ var guiconfig = {
 			container.panels.appendChild(tabpanel);
 			prefgroup = this.newPrefGroupBox();
 			tabpanel.appendChild(prefgroup);
-			node.gcElement = tab;
+			node.setUserData("element", tab, null);
 			parse(node.childNodes, prefgroup);
 		}, this);
 		
@@ -169,7 +168,7 @@ var guiconfig = {
 			container.appendChild(group);
 			prefgroup = this.newPrefGroupBox();
 			group.appendChild(prefgroup);
-			node.gcElement = group;
+			node.setUserData("element", group, null);
 			parse(node.childNodes, prefgroup);
 		}, this);
 		
@@ -204,13 +203,15 @@ var guiconfig = {
 		});
 		
 		parser.registerNode('pref', function(node, container, parse) {
-			var option = this.newOption(node);
+			var element,
+				option = this.newOption(node);
 			if(!option)
 				return false;
 			this.Options[option.Preference.key] = option;
 			parse(node.childNodes, option);
-			container.appendChild(option.build());
-			node.gcElement = option.Elements.prefRow;
+			element = option.build();
+			node.setUserData("element", element, null);
+			container.appendChild(element);
 			option.Preference.onchange();
 		}, this);
 		
@@ -301,12 +302,15 @@ var guiconfig = {
 		this.selected_tab = false;
 				
 		var parser = this.Parser.instance({
-			'filter': this.validatePref
+			'filter': function(node) {
+				//dump(node.getAttribute("label") + ": "+node.nodeName+" - "+node.gcElement + " - "+this.validatePref(node)+"\n");
+				return this.validatePref(node);
+			}.bind(this)
 		});
 		parser.registerNode('tabs');
 		
-		//TODO fix node.gcElement = null error in FF 3.0
 		parser.registerNode('panel', function(node, container, parse) {
+			var element = node.getUserData("element");
 			node.empty = true;
 			node.show = false;
 			this.selected_tab = false;
@@ -314,22 +318,23 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				node.gcElement.style.visibility = "visible";
+				element.style.visibility = "visible";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				node.gcElement.style.visibility = "hidden";
+				element.style.visibility = "hidden";
 				return false;
 			}
 			else {
-				node.gcElement.style.visibility = "visible";
+				element.style.visibility = "visible";
 			}
 			if(!this.selected_panel && string != "") {	
-				node.gcElement.radioGroup.selectedItem = node.gcElement;
+				element.radioGroup.selectedItem = element;
 				this.selected_panel = true;
 			}
 		}, this);
 		
 		parser.registerNode('tab', function(node, container, parse) {
+			var element = node.getUserData("element");
 			node.empty = true;
 			node.show = false;
 			if(string == "" || container.show || node.getAttribute("label").makeSearchable().match(query)) {
@@ -337,24 +342,24 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				node.gcElement.style.visibility = "visible";
+				element.style.visibility = "visible";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				node.gcElement.style.visibility = "hidden";
+				element.style.visibility = "hidden";
 				return false;
 			}
 			else {
 				container.empty = false;
-				node.gcElement.style.visibility = "visible";
+				element.style.visibility = "visible";
 			}
 			if(!this.selected_tab && string != "") {
-				node.gcElement.parentNode.parentNode.selectedTab = node.gcElement;
+				element.parentNode.parentNode.selectedTab = element;
 				this.selected_tab = true;
 			}
 		}, this);
 		
 		parser.registerNode('group', function(node, container, parse) {
-			var gcElement = node.gcElement.firstChild;
+			var element = node.getUserData("element").firstChild;
 			node.empty = true;
 			node.show = false;
 			if(string == "" || container.show || node.getAttribute("label").makeSearchable().match(query)) {
@@ -362,25 +367,26 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				gcElement.style.display = "-moz-box";
+				element.style.display = "-moz-box";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				gcElement.style.display = "none";
+				element.style.display = "none";
 				return false;
 			}
 			else {
 				container.empty = false;
-				gcElement.style.display = "-moz-box";
+				element.style.display = "-moz-box";
 			}
 		}, this);
 		
 		parser.registerNode('pref', function(node, container, parse) {
+			var element = node.getUserData("element");
 			if(string == "" || container.show || (node.getAttribute("label") + " " + node.getAttribute("description")).makeSearchable().match(query)) {
 				container.empty = false;
-				node.gcElement.style.display = "-moz-box";
+				element.style.display = "-moz-box";
 			}
 			else {
-				node.gcElement.style.display = "none";
+				element.style.display = "none";
 			}
 		});
 		

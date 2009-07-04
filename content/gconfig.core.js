@@ -61,11 +61,10 @@ gcCore.PrefParser = function(preferences) {
 			parse = function(children, container) {
 				children.forEach(function(child) {
 					var nodeName = child.nodeName;
-					if(nodeName == "#text" || !Filter(child))
+					if(!Nodes[nodeName] || !Filter(child))
 						return;
-					if(Nodes[nodeName]) {
+					else
 						Nodes[nodeName].fn.call(Nodes[nodeName].thisObj, child, container, parse);
-					}
 				}, this);
 				return container;
 			};
@@ -194,6 +193,16 @@ XULElement.prototype.setProperty = function(name, value) {
 
 NodeList.prototype.forEach = Array.prototype.forEach;
 
+Function.prototype.bind = function(o) {
+	var f = this;
+	return function() {
+		return function() {
+			var a = arguments;
+			return f.apply(o, a);
+		}
+	}();
+}
+
 if(!String.prototype.trim) {
 	String.prototype.trim = function() {
 		return this.replace(/(^\s+|\s+$)/, "");
@@ -203,5 +212,6 @@ if(!String.prototype.trim) {
 String.prototype.makeSearchable = function(join_string) {
 	if(!join_string)
 		var join_string = " ";
+	//TODO make non-letters matches more convenient
 	return this.trim().toLowerCase().replace(/[0-9\"\'\«\»\(\)\<\>\-\_\,\.\;\:]/gi, "").replace(/\s\s+/, " ").split(" ").sort().join(join_string);
 }
