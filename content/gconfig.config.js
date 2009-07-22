@@ -95,9 +95,9 @@ var guiconfig = {
 	},
 
 	validatePref: function(child) {
-		if(!gcCore.GCPreferences.getBoolPref("matchversion"))
+		if(!gcCore.GCPreferences.getBoolPref("matchversion") || child.nodeName == "#text")
 			return true;
-		
+
 		var minVersion = child.getAttribute("minVersion"),
 			maxVersion = child.getAttribute("maxVersion");
 		
@@ -152,22 +152,21 @@ var guiconfig = {
 			var tabpanel = document.createElement("tabpanel");
 			container.tabs.appendChild(tab);
 			container.panels.appendChild(tabpanel);
-			prefgroup = this.newPrefGroupBox();
-			tabpanel.appendChild(prefgroup);
+			var innergroup = document.createElement("vbox");
+			innergroup.setAttribute("flex", "1");
+			tabpanel.appendChild(innergroup);
 			node.setUserData("element", tab, null);
-			parse(node.childNodes, prefgroup);
+			parse(node.childNodes, innergroup);
 		}, this);
 		
 		parser.registerNode('group', function(node, container, parse) {
-			var group = document.createElement("groupbox");
-			var caption = document.createElement("caption");
-			caption.setAttribute("label", node.getAttribute("label"));
-			group.appendChild(caption);
-			container.appendChild(group);
-			prefgroup = this.newPrefGroupBox();
-			group.appendChild(prefgroup);
-			node.setUserData("element", group, null);
-			parse(node.childNodes, prefgroup);
+			var group = new GCElement('group', {
+				'label': {
+					'value': node.getAttribute("label")
+				}
+			}).inject(container);
+			node.setUserData("element", group.element, null);
+			parse(node.childNodes, group.element.lastChild);
 		}, this);
 		
 		parser.registerNode('separator', function(node, container) {
@@ -177,8 +176,8 @@ var guiconfig = {
 		
 		parser.registerNode('wrapper', function(node, container, parse) {
 			// <wrapper> is child of <pref>
-			if(container.constructor.toString().indexOf("Option()") != -1) {
-				container.Options.wrapper = this.parseChildren(node.childNodes, new Object);
+			if(container.constructor.toString().indexOf("Option.call(") != -1) {
+				container.Wrapper = parse(node.childNodes, new Object);
 			}
 			// <wrapper> is somewhere else in the doc and needs an id as reference
 			else {
@@ -197,7 +196,11 @@ var guiconfig = {
 			var name = node.getAttribute("name");
 			if(!name)
 				return false;
-			container[name] = new Function("value", node.firstChild.data);
+			container[name] = new Function("value", node.textContent);
+		});
+		
+		parser.registerNode('elements', function(node, container, parse) {
+			container['elements'] = node;
 		});
 		
 		parser.registerNode('pref', function(node, container, parse) {
@@ -219,15 +222,25 @@ var guiconfig = {
 			}
 		});
 		
-		parser.registerNode('bind', function(node, container) {
-			node.childNodes.forEach(function(binding) {
+		parser.registerNode('bind', function(node, container, parse) {
+			parse(node.childNodes, container,
+				function(node, container) {
+					if(node.nodeName != 'pref')
+						return false;
+					var option = this.newOption(node);
+					if(!option)
+						return false;
+					container.Options.bindings.push(option);
+				}.bind(this)
+			);
+			/*node.childNodes.forEach(function(binding) {
 				if(binding.nodeName != 'pref')
 					return false;
 				var option = this.newOption(binding);
 				if(!option)
 					return false;
 				container.Options.bindings.push(option);
-			}, this);
+			}, this);*/
 		}, this);
 		
 		parser.registerNode('filter', function(node, container) {
@@ -238,29 +251,25 @@ var guiconfig = {
 		return true;
 	},
 	
-	newPrefGroupBox: function() {
-		var prefgroup = document.createElement("vbox");
-		prefgroup.setAttribute("flex", "1");
-		return prefgroup;
-	},
-	
-	newOption: function(pref) {
-		var key = pref.getAttribute("key");
-		var type = (pref.getAttribute("type") || null);
+	newOption: function(node) {
+		var key = node.getAttribute("key");
+		var type = (node.getAttribute("type") || null);
 		var options = {
-			label: (pref.getAttribute("label") || ""),
-			description: (pref.getAttribute("description") || ""),
-			mode: (pref.getAttribute("mode") || "default"),
-			defaultValue: pref.getAttribute("default"),
-			wrapper: (pref.getAttribute("wrapper") || "default"),
-			indent: !!pref.getAttribute("indent"),
-			version: pref.getAttribute("version"),
-			minVersion: pref.getAttribute("minVersion"),
-			maxVersion: pref.getAttribute("maxVersion"),
+			label: (node.getAttribute("label") || ""),
+			description: (node.getAttribute("description") || ""),
+			mode: (node.getAttribute("mode") || "default"),
+			defaultValue: node.getAttribute("default"),
+			wrapper: (node.getAttribute("wrapper") || "default"),
+			indent: !!node.getAttribute("indent"),
+			version: node.getAttribute("version"),
+			minVersion: node.getAttribute("minVersion"),
+			maxVersion: node.getAttribute("maxVersion"),
 			validValues: new Array,
 			bindings: new Array,
-			fileFilters: new Array
+			fileFilters: new Array,
+			build: true
 		};
+		
 		var preference = new Preference(key, type);
 		
 		var wrapper = guiconfig.Wrappers[options.wrapper];
@@ -302,7 +311,7 @@ var guiconfig = {
 		var parser = this.Parser.instance({
 			'filter': this.validatePref
 		});
-		parser.registerNode('tabs');
+		parser.registerNodes(['tabs', 'elements', 'wrapper']);
 		
 		parser.registerNode('panel', function(node, container, parse) {
 			var element = node.getUserData("element");
@@ -362,7 +371,7 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				element.style.display = "-moz-box";
+				element.style.display = "-moz-groupbox";
 			}
 			else if((parse(node.childNodes, node)).empty) {
 				element.style.display = "none";
@@ -370,20 +379,29 @@ var guiconfig = {
 			}
 			else {
 				container.empty = false;
-				element.style.display = "-moz-box";
+				element.style.display = "-moz-groupbox";
 			}
 		}, this);
 		
-		parser.registerNode('pref', function(node, container, parse) {
+		parser.registerNodes(['pref', 'checkbox'], function(node, container, parse) {
 			var element = node.getUserData("element");
+			node.empty = true;
+			node.show = false;
 			if(string == "" || container.show || (node.getAttribute("label") + " " + node.getAttribute("description")).makeSearchable().match(query)) {
+				container.empty = false;
+				node.show = true;
+				if(string.indexOf(this.last_query) != 0)
+					parse(node.childNodes, node);
+				element.style.display = "-moz-box";
+			}
+			else if((parse(node.childNodes, node)).empty) {
+				element.style.display = "none";
+			}
+			else {
 				container.empty = false;
 				element.style.display = "-moz-box";
 			}
-			else {
-				element.style.display = "none";
-			}
-		});
+		}, this);
 		
 		parser.run();
 		this.last_query = string;

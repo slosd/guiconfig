@@ -85,8 +85,8 @@
 <!ENTITY browser_fixup_alternate_suffix_name "Вставить в конце">
 <!ENTITY browser_frames_enabled_description "Отображение HTML фреймов.">
 <!ENTITY browser_frames_enabled_name "Разрешить фреймы">
-<!ENTITY browser_identity_ssl_domain_display_name "Выделять домены использующие SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "При использовании сайтом SSL для зашифрованной передачи данных, пользователь может счесть необходимым выделить часть адреса сайта. Эта настройка определяет какая часть адреса будет отображаться в адресной строке рядом со значком сайта: никакая, домен второго уровня (например: mozilla.org) или весь домен (например: bugzilla.mozilla.org).">
+<!ENTITY browser_identity_ssl_domain_display_name "Подчёркивать домены использующие SSL">
+<!ENTITY browser_identity_ssl_domain_display_description "При использовании сайтом SSL для зашифрованной передачи данных, пользователь может счесть необходимым выделить часть адреса сайта подчёркиванием. Эта настройка определяет какая часть адреса будет отображаться в адресной строке: никакая, домен второго уровня (например: mozilla.org) или весь домен (например: bugzilla.mozilla.org).">
 <!ENTITY browser_identity_ssl_domain_display_o1 "не показывать домен">
 <!ENTITY browser_identity_ssl_domain_display_o2 "показывать домен второго уровня">
 <!ENTITY browser_identity_ssl_domain_display_o3 "показывать весь домен">
@@ -161,7 +161,6 @@
 <!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
 <!ENTITY content_notify_interval_name "Задержка перед перерисовкой страницы (мкс)">
 <!ENTITY developing "Разработка">
-<!ENTITY dont-ask "Не спрашивать снова">
 <!ENTITY downloadmanager "Менеджер загрузок">
 <!ENTITY downloads "Загрузки">
 <!ENTITY extensions "Расширения">

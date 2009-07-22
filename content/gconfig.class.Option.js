@@ -10,7 +10,7 @@ Option.prototype.initialize = function(preference, options) {
 	this.Preference.Option = this;
 	this.Options = (options || new Object);	
 	this.Elements = { Buttons: new Object };
-	this.Wrapper = (guiconfig.Wrappers[options.wrapper] || options.wrapper || new Object);
+	this.Wrapper = (guiconfig.Wrappers[options.wrapper] || new Object);
 	
 	this.name = this.Options.label;
 	this.description = this.Options.description;
@@ -63,12 +63,53 @@ Option.prototype.resetPref = function() {
 }
 
 Option.prototype.build = function() {
-	this.Elements.prefRow = document.createElement("hbox");
+	var elements;
+	if(elements = this.Wrapper.elements) {
+		var parser = new gcCore.PrefParser(elements).instance({
+			'filter': guiconfig.validatePref
+		});
+		
+		parser.registerNode('group', function(node, container, parse) {
+			var group = new GCElement('group', {
+				'label': {
+					'value': node.getAttribute("label")
+				}
+			}).inject(container);
+			node.setUserData("element", group.element, null);
+			parse(node.childNodes, group.element.lastChild);
+		});
+		
+		parser.registerNode('checkbox', function(node, container) {
+			var checkbox = new GCElement('checkbox', {
+				'label': {
+					'value': node.getAttribute("label")
+				},
+				'onchange': function() {
+					this.onvaluechange();
+				}.bind(this)
+			}).inject(container);
+			node.setUserData("element", checkbox.element, null);
+		}, this);
+		
+		var fragment = parser.run(document.createDocumentFragment());
+		
+		this.buildRow("vbox");
+		this.Elements.prefRow.appendChild(fragment);
+		return false;
+	}
+	else {
+		this.buildRow("hbox");
+		return true;
+	}
+}
+
+Option.prototype.buildRow = function(tag) {
+	this.Elements.prefRow = document.createElement(tag);
 	this.Elements.prefRow.setAttribute("context", "gcoptrightclick");
 	this.Elements.prefRow.setAttribute("class", "optionRow");
 	this.Options.indent && this.Elements.prefRow.setAttribute("class", "indent");
 	this.Elements.prefRow.Option = this;
-
+	
 	this.Elements.prefBox = document.createElement("hbox");
 	this.Elements.prefBox.setAttribute("flex", "2");
 	this.Elements.prefBox.addEventListener("mouseover", function(Option) {
@@ -79,56 +120,6 @@ Option.prototype.build = function() {
 	
 	this.Elements.prefRow.appendChild(this.Elements.prefBox);
 	this.Elements.prefRow.appendChild(this.Elements.buttonBox);
-}
-
-Option.prototype.buildMenuList = function() {	
-	var select = new Array,
-		menulist, menupopu, menuitem;
-	
-	menulist = document.createElement("menulist");
-	menulist.addEventListener("command", function(Option) {
-		return function() {
-			Option.onvaluechange();
-		}
-	}(this), false);
-	menupopup = document.createElement("menupopup");
-	
-	for (var i = 0, l = this.Options.validValues.length; i < l; i++) {
-		if(this.Options.validValues[i] == null)
-			continue;
-		menuitem = document.createElement("menuitem");
-		menuitem.setAttribute("crop", "end");
-		menuitem.setAttribute("label", this.Options.validValues[i].label);
-		menuitem.setAttribute("value", this.Options.validValues[i].value);
-		menupopup.appendChild(menuitem);
-	}
-	
-	menulist.appendChild(menupopup);
-	return menulist;
-}
-
-Option.prototype.buildTextBox = function() {
-	var textbox = document.createElement("textbox");
-	textbox.setAttribute("flex", "1");
-	textbox.setAttribute("type", "timed");
-	textbox.setAttribute("timeout", "500");
-	textbox.addEventListener("command", function(Option) {
-		return function() {
-			Option.onvaluechange();
-		}
-	}(this), false);
-	return textbox;
-}
-
-Option.prototype.buildColorPicker = function() {
-	var colorpicker = document.createElement("colorpicker");
-	colorpicker.setAttribute("type", "button");
-	colorpicker.addEventListener("change", function(Option) {
-		return function() {
-			Option.onvaluechange();
-		}
-	}(this), false);	
-	return colorpicker;
 }
 
 Option.prototype.addButton = function(type) {

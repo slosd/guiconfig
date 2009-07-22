@@ -16,29 +16,43 @@ BoolOption.prototype.constructor = BoolOption;
 BoolOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
-	this.Elements.option.setProperty("checked", !!value);
+	if(this.Wrapper.setValue) {
+		this.Wrapper.setValue.call(this, value);
+	}
+	else {
+		this.Elements.option.setProperty("checked", !!value);
+	}
+	return value;
 }
 
 /**
  * @description Get the value of an element representing a preference
  */
 BoolOption.prototype.getValue = function() {
-	return !!this.Elements.option.checked;
+	if(this.Wrapper.getValue) {
+		return this.Wrapper.getValue.call(this);
+	}
+	else {
+		return !!this.Elements.option.checked;
+	}
 }
 
 /**
  * @description Build the elements for a boolean preference 
  */
 BoolOption.prototype.build = function() {
-	Option.prototype.build.call(this);
-	this.Elements.option = document.createElement("checkbox");
-	this.Elements.option.setAttribute("label", this.name);
-	this.Elements.option.setAttribute("id", this.Preference.key);
-	this.Elements.option.addEventListener("command", function(Preference) {
-		return function() {
-			Preference.onvaluechange();
-		}
-	}(this), false);
-	this.Elements.prefBox.appendChild(this.Elements.option);
+	if(Option.prototype.build.call(this)) {		
+		var element = new GCElement('checkbox', {
+			'label': {
+				'value': this.name
+			},
+			'onchange': function() {
+				this.onvaluechange();
+			}.bind(this)
+		});
+		
+		this.Elements.option = element.element;
+		this.Elements.prefBox.appendChild(element.dom);
+	}
 	return this.Elements.prefRow;
 }

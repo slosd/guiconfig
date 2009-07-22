@@ -161,7 +161,6 @@
 <!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelmente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
 <!ENTITY content_notify_interval_name "Wartezeit bevor die Seite aktualisiert wird (ms):">
 <!ENTITY developing "Entwicklung">
-<!ENTITY dont-ask "Bitte keine Rückfragen mehr">
 <!ENTITY downloadmanager "Downloadmanager">
 <!ENTITY downloads "Downloads">
 <!ENTITY extensions "Add-ons">

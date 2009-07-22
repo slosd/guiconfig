@@ -161,7 +161,6 @@
 <!ENTITY content_notify_interval_description "Firefox utilise périodiquement toutes les données reçues depuis un site Web. Cette préférence précise la durée minimale d&apos;attente avant d&apos;afficher la page à nouveau, en microsecondes. Les plus petites valeurs vont réduire le temps de chargement perçu, mais cela augmentera la durée totale de chargement.">
 <!ENTITY content_notify_interval_name "Durée avant le ré-affichage de la page (en µs)">
 <!ENTITY developing "Développement">
-<!ENTITY dont-ask "Ne plus me le demander">
 <!ENTITY downloadmanager "Gestionnaire des téléchargements">
 <!ENTITY downloads "Téléchargements">
 <!ENTITY extensions "Extensions">

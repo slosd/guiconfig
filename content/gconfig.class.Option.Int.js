@@ -16,11 +16,16 @@ IntOption.prototype.constructor = IntOption;
 IntOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
-	switch(this.Options.mode) {
-		case 'select':
-		default:
-			this.Elements.option.setProperty("value", value);
-			break;
+	if(this.Wrapper.setValue) {
+		this.Wrapper.setValue.call(this, value);
+	}
+	else {
+		switch(this.Options.mode) {
+			case 'select':
+			default:
+				this.Elements.option.setProperty("value", value);
+				break;
+		}
 	}
 	return value;
 }
@@ -29,14 +34,19 @@ IntOption.prototype.setValue = function(value) {
  * @description Get the value of an element representing a preference
  */
 IntOption.prototype.getValue = function() {
-	switch(this.Options.mode) {
-		case 'select':
-			return this.Elements.option.selectedItem.value;
-			break;
-		
-		default:
-			return this.Elements.option.value;
-			break;
+	if(this.Wrapper.getValue) {
+		return this.Wrapper.getValue.call(this);
+	}
+	else {
+		switch(this.Options.mode) {
+			case 'select':
+				return this.Elements.option.selectedItem.value;
+				break;
+			
+			default:
+				return this.Elements.option.value;
+				break;
+		}
 	}
 	return value;
 }
@@ -45,24 +55,31 @@ IntOption.prototype.getValue = function() {
  * @description Build the elements for a integer preference 
  */
 IntOption.prototype.build = function() {
-	Option.prototype.build.call(this);
-	var label = document.createElement("label");
-	label.setAttribute("value", this.name);
-	label.setAttribute("control", this.key);
-	label.setAttribute("class", "optionLabel");
-	
-	switch(this.Options.mode) {
-		case 'select':
-			this.Elements.option = this.buildMenuList();
-			break;
+	if(Option.prototype.build.call(this)) {		
+		switch(this.Options.mode) {
+			case 'select':
+				var type = 'menulist';
+				break;
+			
+			default:
+				var type = 'textbox';
+				break;
+		}
 		
-		default:
-			this.Elements.option = this.buildTextBox();
-			break;
+		var element = new GCElement(type, {
+			'label': {
+				'value': this.name,
+				'control': this.Preference.key
+			},
+			'values': this.Options.validValues,
+			'onchange': function() {
+				this.onvaluechange();
+			}.bind(this)
+		});
+		
+		this.Elements.option = element.element;
+		this.Elements.option.setAttribute("id", this.Preference.key);
+		this.Elements.prefBox.appendChild(element.dom);
 	}
-	
-	this.Elements.option.setAttribute("id", this.Preference.key);
-	this.Elements.prefBox.appendChild(label);
-	this.Elements.prefBox.appendChild(this.Elements.option);
 	return this.Elements.prefRow;
 }

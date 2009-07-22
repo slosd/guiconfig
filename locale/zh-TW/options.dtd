@@ -161,7 +161,6 @@
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
 <!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
 <!ENTITY developing "研發">
-<!ENTITY dont-ask "一路套用，別再問我。">
 <!ENTITY downloadmanager "下載管理員">
 <!ENTITY downloads "下載">
 <!ENTITY extensions "附加元件">

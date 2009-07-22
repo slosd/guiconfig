@@ -161,7 +161,6 @@
 <!ENTITY content_notify_interval_description "Firefox dibuja periodicamente todos los datos recibidos de una página web. Esta opción especifica el tiempo mínimo a esperar entre el redibujado de una página en microsegundos. Un valor bajo bajará el tiempo de carga aparente, pero aumentará el total.">
 <!ENTITY content_notify_interval_name "Retraso antes de redibujar una página (microseg)">
 <!ENTITY developing "Desarrollo">
-<!ENTITY dont-ask "No volver a preguntar">
 <!ENTITY downloadmanager "Administrador de descargas">
 <!ENTITY downloads "Descargas">
 <!ENTITY extensions "Extensiones">

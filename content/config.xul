@@ -41,6 +41,7 @@
 	<script type="application/javascript" src="gconfig.core.js"/>
 	<script type="application/javascript" src="gconfig.config.js"/>
 	<script type="application/javascript" src="gconfig.class.Preference.js"/>
+	<script type="application/javascript" src="gconfig.class.GCElement.js"/>
 	<script type="application/javascript" src="gconfig.class.Option.js"/>
 	<script type="application/javascript" src="gconfig.class.Option.Bool.js"/>
 	<script type="application/javascript" src="gconfig.class.Option.Int.js"/>

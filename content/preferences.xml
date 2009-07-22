@@ -6,17 +6,6 @@
 	%gcMain;
 ]>
 <preferences>
-	<wrapper id="awesomebar_filter">
-		<type>Bool</type>
-		<script name="setPref">
-			this.Preference[value ? "setPref" : "resetPref"]("");
-			return false;
-		</script>
-		<script name="getPref">
-			return (this.Preference.getPref() == "");
-		</script>
-	</wrapper>
-		
 	<panel label="&accessibility;" icon="tab_accessibility">
 		<tabs>
 			<tab label="&mouseclick;">
@@ -57,49 +46,56 @@
 					  description="&browser_fixup_alternate_suffix_description;" />
 			</tab>
 			<tab label="&awesomebar;" minVersion="3.0">
-				<group label="&urlbar_restrict_name;">
-					<pref key="browser.urlbar.maxRichResults"
-						  label="&browser_urlbar_maxRichResults_name;"
-						  description="&browser_urlbar_maxRichResults_description;" />
-					<pref key="browser.urlbar.restrict.tag"
-						  label="&browser_urlbar_restrict_tag_name;"
-						  description="&browser_urlbar_restrict_tag_description;"
-						  type="Char"
-						  minVersion="3.1a"
-						  wrapper="awesomebar_filter" />
-					<pref key="browser.urlbar.restrict.history"
-						  label="&browser_urlbar_restrict_history_name;"
-						  description="&browser_urlbar_restrict_history_description;"
-						  type="Char"
-						  minVersion="3.1a"
-						  wrapper="awesomebar_filter" />
-					<pref key="browser.urlbar.restrict.bookmark"
-						  label="&browser_urlbar_restrict_bookmark_name;"
-						  description="&browser_urlbar_restrict_bookmark_description;"
-						  type="Char"
-						  minVersion="3.1a"
-						  wrapper="awesomebar_filter" />
-				</group>
-				<group label="&urlbar_match_name;" minVersion="3.1a">
-					<pref key="browser.urlbar.match.url"
-						  label="&browser_urlbar_match_url_name;"
-						  description="&browser_urlbar_match_url_description;"
-						  type="Char"
-						  wrapper="awesomebar_filter" />
-					<pref key="browser.urlbar.match.title"
-						  label="&browser_urlbar_match_title_name;"
-						  description="&browser_urlbar_match_title_description;"
-						  type="Char"
-						  wrapper="awesomebar_filter" />
-					<pref key="browser.urlbar.matchBehavior"
-						  label="&browser_urlbar_matchBehavior_name;"
-						  description="&browser_urlbar_matchBehavior_description;" mode="select">
-						<option label="&browser_urlbar_matchBehavior_o1;">0</option>
-						<option label="&browser_urlbar_matchBehavior_o2;">1</option>
-						<option label="&browser_urlbar_matchBehavior_o3;">2</option>
-						<option label="&browser_urlbar_matchBehavior_o4;" minVersion="3.0">3</option>
-					</pref>
-				</group>
+				<pref key="browser.urlbar.default.behavior"
+					  minVersion="3.5">
+					<wrapper>
+						<script name="setValue">
+							<![CDATA[
+							var bitmap = this.Preference.getPref(0),
+								checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
+							for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
+								checkbox = checkboxes[i];
+								checkbox.getUserData('element').setProperty('checked', !!(parseInt(bitmap) & parseInt(checkbox.getAttribute('value'))));
+							}
+							]]>
+						</script>
+						<script name="getValue">
+							<![CDATA[
+							var bitmap = 0,
+								checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
+							for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
+								checkbox = checkboxes[i];
+								if(checkbox.getUserData('element').checked)
+									bitmap += parseInt(checkbox.getAttribute('value'));
+							}
+							return bitmap;
+							]]>
+						</script>
+						<elements>
+							<group label="&urlbar_restrict_name;">
+								<checkbox label="&browser_urlbar_restrict_typed_name;" value="32" />
+								<checkbox label="&browser_urlbar_restrict_history_name;" value="1" />
+								<checkbox label="&browser_urlbar_restrict_bookmark_name;" value="2" />
+								<checkbox label="&browser_urlbar_restrict_tag_name;" value="4" />
+							</group>
+							<group label="&urlbar_match_name;">
+								<checkbox label="&browser_urlbar_match_title_name;" value="8" />
+								<checkbox label="&browser_urlbar_match_url_name;" value="16" />
+							</group>
+						</elements>
+					</wrapper>
+				</pref>
+				<pref key="browser.urlbar.maxRichResults"
+					  label="&browser_urlbar_maxRichResults_name;"
+					  description="&browser_urlbar_maxRichResults_description;" />
+				<pref key="browser.urlbar.matchBehavior"
+					  label="&browser_urlbar_matchBehavior_name;"
+					  description="&browser_urlbar_matchBehavior_description;" mode="select">
+					<option label="&browser_urlbar_matchBehavior_o1;">0</option>
+					<option label="&browser_urlbar_matchBehavior_o2;">1</option>
+					<option label="&browser_urlbar_matchBehavior_o3;">2</option>
+					<option label="&browser_urlbar_matchBehavior_o4;" minVersion="3.0">3</option>
+				</pref>
 			</tab>
 			<tab label="&websites;">
 				<group label="&accessibility_typeaheadfind_label;">		
@@ -164,7 +160,7 @@
 					  label="&browser_tabs_closeWindowWithLastTab_name;"
 					  description="&browser_tabs_closeWindowWithLastTab_description;"
 					  type="Bool"
-					  minVersion="3.0"
+					  minVersion="3.5"
 					  default="0" />
 				<pref key="browser.search.openintab"
 					  label="&browser_search_openintab_name;"
