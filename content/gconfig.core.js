@@ -205,6 +205,15 @@ XULElement.prototype.setProperty = function(name, value) {
 
 NodeList.prototype.forEach = Array.prototype.forEach;
 
+Function.prototype.bind = function(o) {
+	return function(f) {
+		return function() {
+			var a = arguments;
+			return f.apply(o, a);
+		}
+	}(this);
+}
+
 if(!String.prototype.trim) {
 	String.prototype.trim = function() {
 		return this.replace(/(^\s+|\s+$)/, "");
