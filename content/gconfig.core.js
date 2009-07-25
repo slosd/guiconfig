@@ -205,35 +205,6 @@ XULElement.prototype.setProperty = function(name, value) {
 
 NodeList.prototype.forEach = Array.prototype.forEach;
 
-// node.setUserData and node.getUserData don't work in Firefox 2
-try {
-	document.setUserData("gcfix", 0, null);
-}
-catch(e) {
-	gcCore.UserData = new Object;
-	Element.prototype.setUserData = function(name, value) {
-		var data;
-		if(!is_defined(gcCore.UserData[this]))
-			gcCore.UserData[this] = new Object;
-		gcCore.UserData[this][name] = value;
-	};
-	Element.prototype.getUserData = function(name) {
-		var data;
-		if(is_defined(gcCore.UserData[this]) && is_defined(data = gcCore.UserData[this][name]))
-			return data;
-	};
-}
-
-// Using Function.prototype.bind caused problems in Firefox 2
-(function(){}).constructor.prototype.bind = function(o) {
-	return function(f) {
-		return function() {
-			var a = arguments;
-			return f.apply(o, a);
-		}
-	}(this);
-}
-
 if(!String.prototype.trim) {
 	String.prototype.trim = function() {
 		return this.replace(/(^\s+|\s+$)/, "");
