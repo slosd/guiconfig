@@ -1,7 +1,3 @@
-/**
- * @description Class to handle preferences with STRING values
- * @param {} key
- */
 var CharOption = function(preference, options) {
 	Option.call(this, preference, options);
 }
@@ -9,10 +5,6 @@ var CharOption = function(preference, options) {
 CharOption.prototype = new Option;
 CharOption.prototype.constructor = CharOption;
 
-/**
- * @description Set the value of an element representing a preference
- * @param {str} v
- */
 CharOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
@@ -34,9 +26,6 @@ CharOption.prototype.setValue = function(value) {
 	return value;
 }
 
-/**
- * @description Get the value of an element representing a preference
- */
 CharOption.prototype.getValue = function() {
 	if(this.Wrapper.getValue) {
 		return this.Wrapper.getValue.call(this);
@@ -58,9 +47,6 @@ CharOption.prototype.getValue = function() {
 	}
 }
 
-/**
- * @description Build the elements for a string preference
- */
 CharOption.prototype.build = function() {
 	if(Option.prototype.build.call(this)) {
 		switch(this.Options.mode) {

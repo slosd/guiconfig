@@ -73,14 +73,26 @@
 						</script>
 						<elements>
 							<group label="&urlbar_restrict_name;">
-								<checkbox label="&browser_urlbar_restrict_typed_name;" value="32" />
-								<checkbox label="&browser_urlbar_restrict_history_name;" value="1" />
-								<checkbox label="&browser_urlbar_restrict_bookmark_name;" value="2" />
-								<checkbox label="&browser_urlbar_restrict_tag_name;" value="4" />
+								<checkbox label="&browser_urlbar_restrict_typed_name;"
+										  description="&browser_urlbar_restrict_typed_description;"
+										  value="32" />
+								<checkbox label="&browser_urlbar_restrict_history_name;"
+										  description="&browser_urlbar_restrict_history_description;"
+										  value="1" />
+								<checkbox label="&browser_urlbar_restrict_bookmark_name;"
+										  description="&browser_urlbar_restrict_bookmark_description;"
+										  value="2" />
+								<checkbox label="&browser_urlbar_restrict_tag_name;"
+										  description="&browser_urlbar_restrict_tag_description;"
+										  value="4" />
 							</group>
 							<group label="&urlbar_match_name;">
-								<checkbox label="&browser_urlbar_match_title_name;" value="8" />
-								<checkbox label="&browser_urlbar_match_url_name;" value="16" />
+								<checkbox label="&browser_urlbar_match_title_name;"
+										  description="&browser_urlbar_match_title_description;"
+										  value="8" />
+								<checkbox label="&browser_urlbar_match_url_name;"
+										  description="&browser_urlbar_match_url_description;"
+										  value="16" />
 							</group>
 						</elements>
 					</wrapper>

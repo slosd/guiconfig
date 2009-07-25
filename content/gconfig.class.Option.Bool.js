@@ -1,7 +1,3 @@
-/**
- * @description Class to handle preferences with BOOLEAN values
- * @param {} key
- */
 var BoolOption = function(preference, options) {
 	Option.call(this, preference, options);
 }
@@ -9,10 +5,6 @@ var BoolOption = function(preference, options) {
 BoolOption.prototype = new Option;
 BoolOption.prototype.constructor = BoolOption;
 
-/**
- * @description Set the value of an element representing a preference
- * @param {bool} v
- */
 BoolOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
@@ -25,9 +17,6 @@ BoolOption.prototype.setValue = function(value) {
 	return value;
 }
 
-/**
- * @description Get the value of an element representing a preference
- */
 BoolOption.prototype.getValue = function() {
 	if(this.Wrapper.getValue) {
 		return this.Wrapper.getValue.call(this);
@@ -37,11 +26,8 @@ BoolOption.prototype.getValue = function() {
 	}
 }
 
-/**
- * @description Build the elements for a boolean preference 
- */
 BoolOption.prototype.build = function() {
-	if(Option.prototype.build.call(this)) {		
+	if(Option.prototype.build.call(this)) {
 		var element = new GCElement('checkbox', {
 			'label': {
 				'value': this.name

@@ -33,7 +33,7 @@
 <!ENTITY browser_urlbar_restrict_history_name "Restrict to history">
 <!ENTITY browser_urlbar_restrict_tag_description "Results in the Smart Location Bar are restricted to tags.">
 <!ENTITY browser_urlbar_restrict_tag_name "Restrict to tags">
-<!ENTITY browser_urlbar_restrict_typed_description "Results in the Smart Location Bar are restricted to addresses you typed in the location bar.">
+<!ENTITY browser_urlbar_restrict_typed_description "Results in the Smart Location Bar are restricted to addresses you typed in the addressbar.">
 <!ENTITY browser_urlbar_restrict_typed_name "Restrict to typed addresses">
 <!ENTITY browser_urlbar_match_title_description "Determines whether Smart Location Bar results match only in the page title.">
 <!ENTITY browser_urlbar_match_title_name "Search in title">

@@ -1,7 +1,3 @@
-/**
- * @description Class to handle preferences with INTEGER values
- * @param {} key
- */
 var IntOption = function(preference, options) {
 	Option.call(this, preference, options);
 }
@@ -9,10 +5,6 @@ var IntOption = function(preference, options) {
 IntOption.prototype = new Option;
 IntOption.prototype.constructor = IntOption;
 
-/**
- * @description Set the value of an element representing a preference
- * @param {int} v
- */
 IntOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
@@ -30,9 +22,6 @@ IntOption.prototype.setValue = function(value) {
 	return value;
 }
 
-/**
- * @description Get the value of an element representing a preference
- */
 IntOption.prototype.getValue = function() {
 	if(this.Wrapper.getValue) {
 		return this.Wrapper.getValue.call(this);
@@ -51,9 +40,6 @@ IntOption.prototype.getValue = function() {
 	return value;
 }
 
-/**
- * @description Build the elements for a integer preference 
- */
 IntOption.prototype.build = function() {
 	if(Option.prototype.build.call(this)) {		
 		switch(this.Options.mode) {

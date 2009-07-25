@@ -233,14 +233,6 @@ var guiconfig = {
 					container.Options.bindings.push(option);
 				}.bind(this)
 			);
-			/*node.childNodes.forEach(function(binding) {
-				if(binding.nodeName != 'pref')
-					return false;
-				var option = this.newOption(binding);
-				if(!option)
-					return false;
-				container.Options.bindings.push(option);
-			}, this);*/
 		}, this);
 		
 		parser.registerNode('filter', function(node, container) {
@@ -295,11 +287,9 @@ var guiconfig = {
 	},
 
 	setDescription: function(txt) {
-		if(txt == this.Elements.description.firstChild.data)
+		if(!txt || txt == this.Elements.description.firstChild.data)
 			return false;
-		var t = document.createTextNode(txt);
-		this.Elements.description.replaceChild(t, this.Elements.description.firstChild);
-		return true;
+		return this.Elements.description.replaceChild(document.createTextNode(txt), this.Elements.description.firstChild);
 	},
 	
 	searchOptions: function(string) {

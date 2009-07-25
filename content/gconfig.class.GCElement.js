@@ -9,7 +9,7 @@ var GCElement = function(type, options) {
 		var fragment = document.createDocumentFragment();
 		switch(type) {
 			case 'group':
-				var element = document.createElement("groupbox");
+				element = document.createElement("groupbox");
 				var caption = document.createElement("caption");
 				caption.setAttribute("label", options.label.value);
 				element.appendChild(caption);
@@ -19,34 +19,46 @@ var GCElement = function(type, options) {
 			break;
 			
 			case 'textbox':
-				var element = document.createElement("textbox");
+				element = document.createElement("textbox");
 				element.setAttribute("flex", "1");
 				element.setAttribute("type", "timed");
 				element.setAttribute("timeout", "500");
-				element.addEventListener("command", options.onchange, false);
+				assignEvents({
+					'command': options.onchange,
+					'mouseover': options.onmouseover
+				});
 				fragment.appendChild(buildLabel(options.label));
 			break;
 			
 			case 'checkbox':
-				var element = document.createElement("checkbox");
+				element = document.createElement("checkbox");
 				element.setAttribute("label", options.label.value);
-				element.addEventListener("command", options.onchange, false);
+				assignEvents({
+					'command': options.onchange,
+					'mouseover': options.onmouseover
+				});
 			break;
 			
 			case 'colorpicker':
-				var element = document.createElement("colorpicker");
+				element = document.createElement("colorpicker");
 				element.setAttribute("type", "button");
-				element.addEventListener("change", options.onchange, false);
+				assignEvents({
+					'change': options.onchange,
+					'mouseover': options.onmouseover
+				});
 				fragment.appendChild(buildLabel(options.label));
 			break;
 			
 			case 'menulist':
 				var select = new Array,
 					values = options.values,
-					element, menupopu, menuitem;
+					menupopu, menuitem;
 				
 				element = document.createElement("menulist");
-				element.addEventListener("command", options.onchange, false);
+				assignEvents({
+					'command': options.onchange,
+					'mouseover': options.onmouseover
+				});
 				menupopup = document.createElement("menupopup");
 				
 				for (var i = 0, l = values.length; i < l; i++) {
@@ -69,6 +81,16 @@ var GCElement = function(type, options) {
 		fragment.appendChild(element);
 		klass.element = element;
 		klass.dom = fragment;
+	},
+	
+	assignEvents = function(events) {
+		var event, callback;
+		for(var i in events) {
+			callback = events[i];
+			if(typeof callback == "function") {
+				element.addEventListener(i, callback, false);
+			}
+		}
 	},
 	
 	buildLabel = function(options) {		

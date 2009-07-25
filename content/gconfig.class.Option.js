@@ -38,7 +38,7 @@ Option.prototype.getPref = function(d) {
 
 Option.prototype.setPref = function(value) {
 	var set_pref = true;
-	if(!value)
+	if(!is_defined(value))
 		var value = this.getValue();
 	gcCore.stopObserver(this.Preference.key, "Preference");
 	if(this.Wrapper.setPref)
@@ -46,7 +46,7 @@ Option.prototype.setPref = function(value) {
 	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
 			this.Options.bindings[i].setPref(value);
-	if(set_pref)
+	if(is_defined(set_pref))
 		this.Preference.setPref(value);
 	gcCore.startObserver(this.Preference.key, "Preference");
 	return true;
@@ -79,16 +79,19 @@ Option.prototype.build = function() {
 			parse(node.childNodes, group.element.lastChild);
 		});
 		
-		parser.registerNode('checkbox', function(node, container) {
-			var checkbox = new GCElement('checkbox', {
+		parser.registerNodes(['checkbox', 'menulist', 'textbox', 'colorpicker'], function(node, container) {
+			var element = new GCElement(node.nodeName, {
 				'label': {
 					'value': node.getAttribute("label")
 				},
+				'onmouseover': function() {
+					guiconfig.setDescription(node.getAttribute("description"));
+				}.bind(this),
 				'onchange': function() {
 					this.onvaluechange();
 				}.bind(this)
 			}).inject(container);
-			node.setUserData("element", checkbox.element, null);
+			node.setUserData("element", element.element, null);
 		}, this);
 		
 		var fragment = parser.run(document.createDocumentFragment());
@@ -112,9 +115,9 @@ Option.prototype.buildRow = function(tag) {
 	
 	this.Elements.prefBox = document.createElement("hbox");
 	this.Elements.prefBox.setAttribute("flex", "2");
-	this.Elements.prefBox.addEventListener("mouseover", function(Option) {
-		return function() { guiconfig.setDescription(Option.description); }
-	}(this), false);
+	this.Elements.prefBox.addEventListener("mouseover", function() {
+		guiconfig.setDescription(this.description);
+	}.bind(this), false);
 	
 	this.Elements.buttonBox = document.createElement("hbox");
 	
@@ -132,40 +135,34 @@ Option.prototype.addButton = function(type) {
 		case 'edit':
 			this.Elements.Buttons[type].setAttribute("label", guiconfig.getLocaleString("button-edit-enable", guiconfig.LocaleOptions));
 			this.Elements.Buttons[type].setAttribute("image", guiconfig.IconSet.getIcon("add"));
-			this.Elements.Buttons[type].addEventListener("click", function(Option) {
-				return function() {
-					Option.disabled = false;
-				}
-			}(this), false);
+			this.Elements.Buttons[type].addEventListener("click", function() {
+				this.disabled = false;
+			}.bind(this), false);
 			break;
 
 		case 'color':
 			this.Elements.Buttons[type].setAttribute("label", guiconfig.getLocaleString("button-custom-value", guiconfig.LocaleOptions));
 			this.Elements.Buttons[type].setAttribute("image", guiconfig.IconSet.getIcon("color"));
-			this.Elements.Buttons[type].addEventListener("click", function(Option) {
-				return function() {
-					var input = gcCore.userInput("gui:config", guiconfig.getLocaleString("fill-in-value", guiconfig.LocaleOptions));
-					if(input != null) {
-						Option.disabled = false;
-						Option.setValue(input);
-						Option.onvaluechange();
-					}
+			this.Elements.Buttons[type].addEventListener("click", function() {
+				var input = gcCore.userInput("gui:config", guiconfig.getLocaleString("fill-in-value", guiconfig.LocaleOptions));
+				if(input != null) {
+					this.disabled = false;
+					this.setValue(input);
+					this.onvaluechange();
 				}
-			}(this), false);
+			}.bind(this), false);
 			break;
 		
 		case 'file':
 			this.Elements.Buttons[type].setAttribute("label", guiconfig.getLocaleString("button-file-select", guiconfig.LocaleOptions));
-			this.Elements.Buttons[type].addEventListener("click", function(Option) {
-				return function() {
-					var input = gcCore.fileInput(guiconfig.getLocaleString("choose-file", guiconfig.LocaleOptions), Option.Options.fileFilters);
-					if(input) {
-						Option.disabled = false;
-						Option.setValue(input.path);
-						Option.onvaluechange();
-					}
+			this.Elements.Buttons[type].addEventListener("click", function() {
+				var input = gcCore.fileInput(guiconfig.getLocaleString("choose-file", guiconfig.LocaleOptions), this.Options.fileFilters);
+				if(input) {
+					this.disabled = false;
+					this.setValue(input.path);
+					this.onvaluechange();
 				}
-			}(this), false);
+			}.bind(this), false);
 			break;
 
 	}
@@ -193,7 +190,7 @@ Option.prototype.__defineSetter__("disabled", function(value) {
 	if(this.Options.defaultValue)
 		this.setValue(this.Options.defaultValue);
 	if(!value)
-		this.Preference.setPref(this.getValue());
+		this.setPref();
 });
 
 Option.prototype.__defineGetter__("disabled", function() {
