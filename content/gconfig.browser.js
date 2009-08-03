@@ -4,7 +4,7 @@ var guiconfig = {
 		"config": "chrome://guiconfig/content/config.xul"
 	},
 	
-	init: function() {		
+	init: function() {
 		window.addEventListener("load", this.placeMenuItem, false);
 		
 		gcCore.addObserver('extensions.guiconfig.sticktopreferences', function() {

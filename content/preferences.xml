@@ -31,6 +31,7 @@
 					  label="&browser_urlbar_autoFill_name;"
 					  description="&browser_urlbar_autoFill_description;" />
 				<pref key="browser.urlbar.matchOnlyTyped"
+					  maxVersion="3.0.*"
 					  label="&browser_urlbar_matchOnlyTyped_name;"
 					  description="&browser_urlbar_matchOnlyTyped_description;"
 					  indent="indent" />

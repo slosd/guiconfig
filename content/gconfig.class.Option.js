@@ -109,8 +109,10 @@ Option.prototype.build = function() {
 Option.prototype.buildRow = function(tag) {
 	this.Elements.prefRow = document.createElement(tag);
 	this.Elements.prefRow.setAttribute("context", "gcoptrightclick");
-	this.Elements.prefRow.setAttribute("class", "optionRow");
-	this.Options.indent && this.Elements.prefRow.setAttribute("class", "indent");
+	if(this.Options.indent)
+		this.Elements.prefRow.setAttribute("class", "optionRow indent");
+	else
+		this.Elements.prefRow.setAttribute("class", "optionRow");
 	this.Elements.prefRow.Option = this;
 	
 	this.Elements.prefBox = document.createElement("hbox");

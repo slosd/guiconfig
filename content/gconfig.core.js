@@ -220,15 +220,6 @@ if(!String.prototype.trim) {
 	}
 }
 
-String.prototype.dostuff = function(n) {
-	var s = this,
-		r = new Array,
-		l = Math.ceil(s.length/n);
-	for(var i = 0; i < l; i++)
-		r[r.length] = s.substr(i*n, n);
-	return r;
-}
-
 String.prototype.makeSearchable = function(join_string) {
 	if(!join_string)
 		var join_string = " ";

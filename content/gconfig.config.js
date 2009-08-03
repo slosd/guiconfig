@@ -206,8 +206,10 @@ var guiconfig = {
 		parser.registerNode('pref', function(node, container, parse) {
 			var element,
 				option = this.newOption(node);
-			if(!option)
+			if(!option) {
+				node.parentNode.removeChild(node);
 				return false;
+			}
 			this.Options[option.Preference.key] = option;
 			parse(node.childNodes, option);
 			element = option.build();
@@ -217,9 +219,7 @@ var guiconfig = {
 		}, this);
 		
 		parser.registerNode('option', function(node, container) {
-			if(gcCore.validateVersion(gcCore.MozInfo.version, node.getAttribute("minVersion"), node.getAttribute("maxVersion"))) {
-				container.Options.validValues.push({ label: (node.getAttribute("label") || ""), value: node.firstChild.data });
-			}
+			container.Options.validValues.push({ label: (node.getAttribute("label") || ""), value: node.firstChild.data });
 		});
 		
 		parser.registerNode('bind', function(node, container, parse) {
@@ -373,7 +373,7 @@ var guiconfig = {
 			}
 		}, this);
 		
-		parser.registerNodes(['pref', 'checkbox'], function(node, container, parse) {
+		parser.registerNodes(['pref', 'checkbox', 'menulist', 'textbox', 'colorpicker'], function(node, container, parse) {
 			var element = node.getUserData("element");
 			node.empty = true;
 			node.show = false;

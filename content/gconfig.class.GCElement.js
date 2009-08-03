@@ -52,7 +52,7 @@ var GCElement = function(type, options) {
 			case 'menulist':
 				var select = new Array,
 					values = options.values,
-					menupopu, menuitem;
+					menupopup, menuitem;
 				
 				element = document.createElement("menulist");
 				assignEvents({
@@ -93,7 +93,7 @@ var GCElement = function(type, options) {
 		}
 	},
 	
-	buildLabel = function(options) {		
+	buildLabel = function(options) {
 		var label = document.createElement("label");
 		label.setAttribute("value", options.value);
 		label.setAttribute("control", options.control);
