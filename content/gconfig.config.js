@@ -336,15 +336,18 @@ var guiconfig = {
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
-				element.style.visibility = "visible";
+				element.disabled = false;
+				//element.style.visibility = "visible";
 			}
 			else if((parse(node.childNodes, node)).empty) {
-				element.style.visibility = "hidden";
+				element.disabled = true;
+				//element.style.visibility = "hidden";
 				return false;
 			}
 			else {
 				container.empty = false;
-				element.style.visibility = "visible";
+				element.disabled = false;
+				//element.style.visibility = "visible";
 			}
 			if(!this.selected_tab && string != "") {
 				element.parentNode.parentNode.selectedTab = element;
@@ -353,7 +356,7 @@ var guiconfig = {
 		}, this);
 		
 		parser.registerNode('group', function(node, container, parse) {
-			var element = node.getUserData("element").firstChild;
+			var element = node.getUserData("element");
 			node.empty = true;
 			node.show = false;
 			if(string == "" || container.show || node.getAttribute("label").makeSearchable().match(query)) {

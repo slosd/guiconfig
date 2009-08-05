@@ -1,4 +1,3 @@
-<!ENTITY browser_bookmarks_max_backups_name "Архіви закладок">
 <!ENTITY browser_cache_check_doc_frequency_description "Як часто перевіряти віддалені сторінки на застарілість копії в кеші">
 <!ENTITY browser_cache_check_doc_frequency_name "Перевіряти кеш оглядача">
 <!ENTITY browser_cache_check_doc_frequency_o1 "Перевіряти один раз на сесію">
@@ -17,3 +16,4 @@
 <!ENTITY browser_cache_memory_enable_name "Використовувати кеш у пам&apos;яті">
 <!ENTITY browser_chrome_favicons_description "Виначати, показувати Favicons чи ні">
 <!ENTITY browser_chrome_favicons_name "Показувати Favicons">
+<!ENTITY browser_bookmarks_max_backups_name "Архіви закладок">

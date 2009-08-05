@@ -41,10 +41,12 @@
 					  description="&browser_fixup_alternate_enabled_description;" />
 				<pref key="browser.fixup.alternate.prefix"
 					  label="&browser_fixup_alternate_prefix_name;"
-					  description="&browser_fixup_alternate_prefix_description;" />
+					  description="&browser_fixup_alternate_prefix_description;"
+					  indent="indent" />
 				<pref key="browser.fixup.alternate.suffix"
 					  label="&browser_fixup_alternate_suffix_name;"
-					  description="&browser_fixup_alternate_suffix_description;" />
+					  description="&browser_fixup_alternate_suffix_description;"
+					  indent="indent" />
 			</tab>
 			<tab label="&awesomebar;" minVersion="3.0">
 				<pref key="browser.urlbar.default.behavior"
@@ -169,12 +171,22 @@
 					  label="&browser_sessionstore_max_windows_undo_name;"
 					  description="&browser_sessionstore_max_windows_undo_description;"
 					  minVersion="3.5b4" />
-				<pref key="browser.tabs.closeWindowWithLastTab"
+				<!--<pref key="browser.tabs.closeWindowWithLastTab"
 					  label="&browser_tabs_closeWindowWithLastTab_name;"
 					  description="&browser_tabs_closeWindowWithLastTab_description;"
 					  type="Bool"
 					  minVersion="3.5"
-					  default="0" />
+					  default="0" />-->
+				<pref key="browser.tabs.closeButtons"
+					  label="&browser_tabs_closeButtons_name;"
+					  description="&browser_tabs_closeButtons_description;"
+					  minVersion="2.0"
+					  mode="select">
+					<option label="&browser_tabs_closeButtons_o1;">0</option>
+					<option label="&browser_tabs_closeButtons_o2;">1</option>
+					<option label="&browser_tabs_closeButtons_o3;">2</option>
+					<option label="&browser_tabs_closeButtons_o4;">3</option>
+				</pref>
 				<pref key="browser.search.openintab"
 					  label="&browser_search_openintab_name;"
 					  description="&browser_search_openintab_description;" />
@@ -330,16 +342,6 @@
 				<pref key="browser.preferences.animateFadeIn"
 					  label="&browser_preferences_animateFadeIn_name;"
 					  description="&browser_preferences_animateFadeIn_description;" />
-				<pref key="browser.tabs.closeButtons"
-					  label="&browser_tabs_closeButtons_name;"
-					  description="&browser_tabs_closeButtons_description;"
-					  minVersion="2.0"
-					  mode="select">
-					<option label="&browser_tabs_closeButtons_o1;">0</option>
-					<option label="&browser_tabs_closeButtons_o2;">1</option>
-					<option label="&browser_tabs_closeButtons_o3;">2</option>
-					<option label="&browser_tabs_closeButtons_o4;">3</option>
-				</pref>
 			</tab>
 			<tab label="&websites;">
 				<group label="&rendering;">

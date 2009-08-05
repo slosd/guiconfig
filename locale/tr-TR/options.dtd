@@ -1,6 +1,6 @@
 <!ENTITY accessibility "Erişilebilirlik">
-<!ENTITY browser_enable_automatic_image_resizing_name "imajları Boyutlandır">
-<!ENTITY button-edit-enable "İmkan vermek">
 <!ENTITY middleclick "farenın orta tuşu">
-<!ENTITY view_source_editor_path_name "Editör yolu">
+<!ENTITY browser_enable_automatic_image_resizing_name "imajları Boyutlandır">
 <!ENTITY viewsource "kaynağı görüntüle">
+<!ENTITY view_source_editor_path_name "Editör yolu">
+<!ENTITY button-edit-enable "İmkan vermek">

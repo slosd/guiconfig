@@ -41,10 +41,10 @@
 <!ENTITY browser_urlbar_match_url_name "Search in URL">
 <!ENTITY browser_urlbar_matchBehavior_description "This preference determines how to use word boundaries when searching for items in the Location Bar.">
 <!ENTITY browser_urlbar_matchBehavior_name "Match behavior">
-<!ENTITY browser_urlbar_matchBehavior_o1 "Ignore word boundaries">
-<!ENTITY browser_urlbar_matchBehavior_o2 "Show items matching boundaries first">
-<!ENTITY browser_urlbar_matchBehavior_o3 "Use boundaries for typed text only">
-<!ENTITY browser_urlbar_matchBehavior_o4 "Only match the beginning of the URL or title">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Match anywhere">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Show items matching word boundaries first">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Show only items matching word boundaries">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Match at the beginning of the url or title">
 <!ENTITY browser_urlbar_maxRichResults_description "Determines how many results should appear (at most) in the Location Bar.">
 <!ENTITY browser_urlbar_maxRichResults_name "Max. number of results">
 <!ENTITY browser_urlbar_maxRichResults_description "Determines how many results should appear (at most) in the Location Bar.">
@@ -266,12 +266,3 @@
 <!ENTITY javascript_options_showInConsole_name "Show chrome errors in the console">
 <!ENTITY javascript_options_strict_description "Enables strict JavaScript warnings in the Error Console.">
 <!ENTITY javascript_options_strict_name "Strict Javascript warnings">
-
-<!-- OTHER STUFF -->
-<!ENTITY alert-saved "Settings saved">
-<!ENTITY button-custom-value "Custom">
-<!ENTITY button-edit-enable "Enable">
-<!ENTITY button-file-select "Browse...">
-<!ENTITY choose-file "Choose File">
-<!ENTITY confirm-std "Do you really want to restore the default values?">
-<!ENTITY fill-in-value "Fill in a custom value:">

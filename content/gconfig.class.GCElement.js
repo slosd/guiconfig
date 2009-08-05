@@ -21,10 +21,8 @@ var GCElement = function(type, options) {
 			case 'textbox':
 				element = document.createElement("textbox");
 				element.setAttribute("flex", "1");
-				element.setAttribute("type", "timed");
-				element.setAttribute("timeout", "500");
 				assignEvents({
-					'command': options.onchange,
+					'keyup': options.onchange,
 					'mouseover': options.onmouseover
 				});
 				fragment.appendChild(buildLabel(options.label));
