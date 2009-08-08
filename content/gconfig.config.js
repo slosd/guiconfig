@@ -377,10 +377,19 @@ var guiconfig = {
 		}, this);
 		
 		parser.registerNodes(['pref', 'checkbox', 'menulist', 'textbox', 'colorpicker'], function(node, container, parse) {
-			var element = node.getUserData("element");
+			var element = node.getUserData("element"),
+				options = node.getElementsByTagName("option"),
+				l, options_data = "";
 			node.empty = true;
 			node.show = false;
-			if(string == "" || container.show || (node.getAttribute("label") + " " + node.getAttribute("description")).makeSearchable().match(query)) {
+			
+			if(l = options.length) {
+				for(var i = 0; i < l; i++) {
+					options_data += " " + options[i].getAttribute("label");
+				}
+			}
+			
+			if(string == "" || container.show || (node.getAttribute("label") + " " + node.getAttribute("description") + options_data).makeSearchable().match(query)) {
 				container.empty = false;
 				node.show = true;
 				if(string.indexOf(this.last_query) != 0)

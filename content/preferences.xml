@@ -245,7 +245,6 @@
 					<option label="&browser_cache_check_doc_frequency_o3;">2</option>
 					<option label="&browser_cache_check_doc_frequency_o4;">3</option>
 				</pref>
-				<separator />
 				<group label="&cache_disk;">
 					<pref key="browser.cache.disk.enable"
 						  label="&browser_cache_disk_enable_name;"
@@ -299,12 +298,6 @@
 					  type="Char" />
 			</tab>
 			<tab label="&security_privacy;">
-				<pref key="browser.privatebrowsing.autostart"
-					  label="&browser_privatebrowsing_autostart_name;"
-					  description="&browser_privatebrowsing_autostart_description;"
-					  minVersion="3.1b2"
-					  type="Bool"
-					  default="0" />
 				<pref key="security.dialog_enable_delay"
 					  label="&security_dialog_enable_delay_name;"
 					  description="&security_dialog_enable_delay_description;" />

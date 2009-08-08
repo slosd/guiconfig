@@ -30,7 +30,7 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der Adresszeile sind auf Webseiten beschränkt, denen Sie Schlagwörter (Tags) zugewiesen haben.">
 <!ENTITY browser_urlbar_restrict_tag_name "Auf Schlagwörter beschränken">
 <!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der Adresszeile werden auf Adressen beschränkt, die Sie selbst eingegeben haben.">
-<!ENTITY browser_urlbar_restrict_typed_name "Auf selbst eingegebene Adressen beschränken.">
+<!ENTITY browser_urlbar_restrict_typed_name "Auf selbst eingegebene Adressen beschränken">
 <!ENTITY browser_urlbar_match_title_description "Vorschläge der &quot;Dropdown&quot;-Liste der Adresszeile sind auf Webseiten beschränkt, deren Titel den eingegebenen Begriff enthalten.">
 <!ENTITY browser_urlbar_match_title_name "Im Titel suchen">
 <!ENTITY browser_urlbar_match_url_description "Vorschläge der &quot;Dropdown&quot;-Liste der Adresszeile sind auf Webseiten beschränkt, deren Adresse den eingegebenen Begriff enthalten.">
@@ -50,7 +50,7 @@
 <!ENTITY accessibility_typeaheadfind_casesensitive_o3 "beachten">
 <!ENTITY accessibility_typeaheadfind_label "Suche auf Webseiten">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Legt fest, nach welcher Zeitspanne die Suchleiste bei Inaktivität wieder ausgeblendet wird.">
-<!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (msek)">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (ms)">
 <!ENTITY signon_prefillForms_description "Wenn vorhanden, werden gespeicherte Logindaten (Benutzername und Passwort) in die dazugehörigen Textfelder eingefügt.">
 <!ENTITY signon_prefillForms_name "Loginfelder automatisch ausfüllen">
 <!ENTITY accessibility_tabfocus_description "Definiert welche Elemente einer Website beim Auswählen mit der TAB-Taste aktiviert werden.">
@@ -138,7 +138,7 @@
 <!ENTITY browser_download_manager_focusWhenStarting_name "Download Manager in den Vordergrund">
 <!ENTITY security_privacy "Sicherheit und Datenschutz">
 <!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
-<!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (msek)">
+<!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms)">
 <!ENTITY browser_privatebrowsing_autostart_description "Aktiviert, startet Firefox im &quot;Privaten Modus&quot; und behält diesen Modus während der gesamten Sitzung.">
 <!ENTITY browser_privatebrowsing_autostart_name "Firefox im &quot;Privaten Modus&quot; starten">
 <!ENTITY style "Aussehen">
@@ -165,7 +165,7 @@
 <!ENTITY websites "Webseiten">
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_description "Legt die Zeit fest, in der Firefox auf Daten wartet, bevor mit dem Rendern der Webseite begonnen wird.">
-<!ENTITY nglayout_initialpaint_delay_name "Anzeigeverzögerung (Millisekunden)">
+<!ENTITY nglayout_initialpaint_delay_name "Anzeigeverzögerung (ms)">
 <!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelmente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
 <!ENTITY content_notify_interval_name "Wartezeit bevor die Seite aktualisiert wird (Microsekunden):">
 <!ENTITY browser_blink_allowed_description "Erlaubt blinkenden Text, der mithilfe des blink Tags oder dem CSS Attribut text-decoration: blink erzeugt wird.">
