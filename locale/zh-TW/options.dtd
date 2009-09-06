@@ -1,4 +1,6 @@
+<!-- ACCESSIBILITY -->
 <!ENTITY accessibility "近接方面">
+<!-- MOUSE CLICK -->
 <!ENTITY mouseclick "滑鼠點按">
 <!ENTITY middleclick "滑鼠中鍵">
 <!ENTITY middlemouse_contentLoadURL_description "按滑鼠中鍵時，將剪貼簿內容載入成鏈結。">
@@ -9,6 +11,7 @@
 <!ENTITY browser_urlbar_clickSelectsAll_name "滑鼠點按時標選內容">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "以滑鼠連點地址欄時標選全部內容">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "滑鼠連點時標選內容">
+<!-- URLBAR -->
 <!ENTITY urlbar "地址欄">
 <!ENTITY browser_urlbar_autoFill_description "啟用行內自動補足。">
 <!ENTITY browser_urlbar_autoFill_name "行內自動補足">
@@ -20,6 +23,7 @@
 <!ENTITY browser_fixup_alternate_prefix_name "行首添加">
 <!ENTITY browser_fixup_alternate_suffix_description "添加於行末的字元">
 <!ENTITY browser_fixup_alternate_suffix_name "行末添加">
+<!-- AWESOMEBAR -->
 <!ENTITY awesomebar "酷炫地址欄">
 <!ENTITY urlbar_restrict_name "限定的搜尋結果">
 <!ENTITY urlbar_match_name "符合搜尋條件的結果">
@@ -43,6 +47,7 @@
 <!ENTITY browser_urlbar_matchBehavior_o4 "僅需符合URL或標題的開頭">
 <!ENTITY browser_urlbar_maxRichResults_description "指定地址欄的下拉式選單最多顯示多少個項目">
 <!ENTITY browser_urlbar_maxRichResults_name "下拉式選單項目數">
+<!-- WEBSITES -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "決定是否辨識大小寫。勾選&quot;自動判斷&quot;時，則在搜尋中，僅對含有大寫字母但非全部大寫的搜尋字串，視為須分別大小寫。">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "辨識大小寫">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自動判斷">
@@ -71,6 +76,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "停用">
 <!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
 <!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
+<!-- MISC -->
 <!ENTITY misc "雜項">
 <!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
@@ -86,7 +92,9 @@
 <!ENTITY accessibility_warn_on_browsewithcaret_name "進入鍵盤按鍵瀏覽模式時顯示對話視窗">
 <!ENTITY accessibility_accesskeycausesactivation_description "對元件使用近接鍵，其作用方式與啟動該元件相同。元件如果是鏈結，就開啟該鏈結；元件如果是按鈕，就點選該按鈕。">
 <!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
+<!-- BROWSER -->
 <!ENTITY browser "瀏覽器">
+<!-- ALERTS -->
 <!ENTITY alerts "警示視窗">
 <!ENTITY update_showSlidingNotification_description "有更新檔時，在瀏覽器顯示一份通知。">
 <!ENTITY update_showSlidingNotification_name "顯示更新通知">
@@ -100,6 +108,7 @@
 <!ENTITY browser_download_manager_showAlertInterval_name "警示延時 (毫秒)">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "下載完所有項目後，在螢幕右下角顯示彈跳視窗。">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "下載完成後以彈跳視窗警示">
+<!-- CACHE -->
 <!ENTITY cache "瀏覽器的快取記憶區">
 <!ENTITY cache_disk "硬碟快取記憶區">
 <!ENTITY cache_memory "RAM 快取記憶區">
@@ -119,6 +128,7 @@
 <!ENTITY browser_cache_memory_capacity_name "RAM 快取記憶區(KB)">
 <!ENTITY browser_cache_memory_enable_description "以指定的最大空間來使用 RAM 快取記憶區">
 <!ENTITY browser_cache_memory_enable_name "使用 RAM 快取記憶區">
+<!-- EXTENSIONS -->
 <!ENTITY extensions "附加元件">
 <!ENTITY getaddons "&quot;取得元件&quot;側頁">
 <!ENTITY extensions_checkCompatibility_description "此選項可以啟用/停用&quot;元件相容性檢查&quot;。">
@@ -129,6 +139,7 @@
 <!ENTITY extensions_getAddons_showPane_name "顯示側頁">
 <!ENTITY extensions_hideInstallButton_description "在&quot;附加元件管理員&quot;視窗中，不顯示&quot;安裝&quot;按鈕。">
 <!ENTITY extensions_hideInstallButton_name "不顯示&quot;安裝&quot;按鈕">
+<!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "下載管理員">
 <!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
@@ -136,12 +147,15 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
 <!ENTITY browser_download_manager_focusWhenStarting_description "開始一項下載時，將下載管理員視窗設為啟動">
 <!ENTITY browser_download_manager_focusWhenStarting_name "開始下載時啟動下載管理員視窗">
+<!-- SECURITY -->
 <!ENTITY security_privacy "安全性及隱私">
 <!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
 <!ENTITY browser_privatebrowsing_autostart_description "此項若勾選，Firefox 會在啟動時自動進入&quot;隱密瀏覽&quot;模式，並運用到整個瀏覽行程直到關閉 Firefox。">
 <!ENTITY browser_privatebrowsing_autostart_name "啟動時自動進入&quot;隱密瀏覽&quot;模式">
+<!-- STYLE -->
 <!ENTITY style "樣式">
+<!-- BROWSER -->
 <!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_identity_ssl_domain_display_name "SSL網域強調顯示">
 <!ENTITY browser_identity_ssl_domain_display_description "當網站使用SSL對其通訊加密時，使用者可以在UI中選擇對其URL的一部份予以強調顯示。此選項設定地址欄內是否不要顯示網域、顯示次階網域(例如: mozilla.org)或顯示完全網域(例如: bugzilla.mozilla.org)">
@@ -162,6 +176,7 @@
 <!ENTITY browser_tabs_closeButtons_o2 "顯示於每一分頁">
 <!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
 <!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
+<!-- WEBSITES -->
 <!ENTITY websites "網站">
 <!ENTITY rendering "呈現">
 <!ENTITY nglayout_initialpaint_delay_description "此選項指定首次呈現一頁面之前須等待的毫秒數。較小的數值可使頁面快些顯示但會需要較長的時間來完成呈現。較大的數值其效應恰與此相反。">
@@ -176,6 +191,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
 <!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
+<!-- TEXT SELECT -->
 <!ENTITY text_select "文字標選">
 <!ENTITY ui_textSelectBackgroundAttention_description "以十六進位碼或顏色名稱指定&quot;隨打隨找&quot;功能所找到的文字背景顏色">
 <!ENTITY ui_textSelectBackgroundAttention_name "符合搜尋的文字背景顏色">
@@ -183,7 +199,9 @@
 <!ENTITY ui_textSelectBackground_name "背景顏色">
 <!ENTITY ui_textSelectForeground_description "以十六進位碼或顏色名稱指定所標選文字本身的顏色。。此項若未設，就套用作業系統本身的設定。">
 <!ENTITY ui_textSelectForeground_name "文字顏色">
+<!-- BOOKMARK -->
 <!ENTITY bookmarks "書籤">
+<!-- MICROSUMMARIES -->
 <!ENTITY microsummaries "即時摘要(動態標題)">
 <!ENTITY browser_microsummary_enabled_description "允許對書籤萃取即時摘要資訊。">
 <!ENTITY browser_microsummary_enabled_name "啟用即時摘要">
@@ -193,18 +211,22 @@
 <!ENTITY browser_microsummary_updateGenerators_name "即時摘要產生器定期檢查更新">
 <!ENTITY browser_microsummary_updateInterval_description "指定即時摘要檢查更新間隔分鐘數。預設為30分鐘。">
 <!ENTITY browser_microsummary_updateInterval_name "即時摘要檢查更新間隔分鐘數">
+<!-- MISC -->
 <!ENTITY browser_tabs_loadBookmarksInBackground_description "當您用新分頁開啟書籤時，該書籤會在背景中載入，現行瀏覽分頁不會被自動切換過去。">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">
 <!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
 <!ENTITY browser_bookmarks_max_backups_name "書籤備份">
+<!-- NETWORK -->
 <!ENTITY network "網路">
+<!-- CONNECTIONS -->
 <!ENTITY connections "連線">
 <!ENTITY network_http_max-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大連線總數。其值須介於 1 與 225之間。">
 <!ENTITY network_http_max-connections-per-server_name "每一伺服主機最大HTTP連線數">
 <!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">
 <!ENTITY network_http_max-connections_name "最大HTTP連線數">
+<!-- KEEP ALIVE -->
 <!ENTITY keep-alive_connections "不下線連線">
 <!ENTITY network_http_keep-alive_description "HTTP的不下線連線可以重覆使用於多重請求而增進其效能。">
 <!ENTITY network_http_keep-alive_name "使用不下線連線">
@@ -212,6 +234,7 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "每一代理伺服主機最大不下線連線數">
 <!ENTITY network_http_max-persistent-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
 <!ENTITY network_http_max-persistent-connections-per-server_name "每一伺服主機最大不下線連線數">
+<!-- PIPELINING -->
 <!ENTITY pipelining "複請求批送機制">
 <!ENTITY network_http_pipelining_description "HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
 <!ENTITY network_http_pipelining_maxrequests_description "此選項指定啟用「複請求批送」時，同一時間內可要求批送的最大請求數。">
@@ -219,12 +242,15 @@
 <!ENTITY network_http_pipelining_name "使用「複請求批送」(pipelining)">
 <!ENTITY network_http_proxy_pipelining_description "此選項指定是否對代理伺服主機使用「複請求批送」。HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
 <!ENTITY network_http_proxy_pipelining_name "對代理伺服主機使用「複請求批送」(Pipelining)">
+<!-- DEVELOPMENT -->
 <!ENTITY developing "研發">
+<!-- VIEW SOURCE -->
 <!ENTITY viewsource "檢視原始檔">
 <!ENTITY view_source_editor_external_description "使用自訂編輯程式來檢視原始檔">
 <!ENTITY view_source_editor_external_name "使用自訂編輯程式">
 <!ENTITY view_source_editor_path_description "自訂編輯程式的路徑">
 <!ENTITY view_source_editor_path_name "編輯程式路徑">
+<!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "對視窗本身和對話視窗的變更設定不需重新啟動 Firefox。(此選項對於以 JAR 方式封裝的檔案無效)。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
 <!ENTITY browser_dom_window_dump_enabled_description "啟用以 dump() 指令來印出到標準主控台。">
@@ -233,10 +259,3 @@
 <!ENTITY javascript_options_showInConsole_name "在主控台記錄 chrome 的各項錯誤">
 <!ENTITY javascript_options_strict_description "在錯誤主控台啟用嚴謹的 JavaScript 告警。">
 <!ENTITY javascript_options_strict_name "嚴謹的 JavaScript 告警">
-<!ENTITY alert-saved "目前的設定已存檔完畢">
-<!ENTITY button-custom-value "自訂">
-<!ENTITY button-edit-enable "啟用">
-<!ENTITY button-file-select "瀏覽...">
-<!ENTITY choose-file "選取檔案">
-<!ENTITY confirm-std "您確定要清除現有設定、還原為預設值？">
-<!ENTITY fill-in-value "請填入一個自訂值:">

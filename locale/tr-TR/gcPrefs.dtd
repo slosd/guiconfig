@@ -1,1 +1,4 @@
 <!ENTITY prefs.label "Ayarlar">
+<!ENTITY prefs.todefault.ask "Ask before default values are restored">
+<!ENTITY prefs.matchversion "Only show options compatible with your version of firefox">
+<!ENTITY prefs.sticktopreferences "Place the gui:config menu entry after the &quot;Preferences&quot; entry">

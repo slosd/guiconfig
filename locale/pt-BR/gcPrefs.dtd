@@ -1,4 +1,4 @@
-<!ENTITY prefs.label "- Preferências">
-<!ENTITY prefs.todefault.ask "Perguntar antes de restaurar os valores padrão para todas as opções">
-<!ENTITY prefs.matchversion "Mostrar apenas as opções compatíveis com esta versão do Firefox">
-<!ENTITY prefs.sticktopreferences "Adicionar o comando &quot;Opções avançadas&quot; ao menu &quot;Ferramentas&quot;">
+<!ENTITY prefs.label "Options">
+<!ENTITY prefs.todefault.ask "Ask before default values are restored">
+<!ENTITY prefs.matchversion "Only show options compatible with your version of firefox">
+<!ENTITY prefs.sticktopreferences "Place the gui:config menu entry after the &quot;Preferences&quot; entry">
