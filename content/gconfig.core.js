@@ -64,32 +64,41 @@ gcCore.PrefParser = function(preferences) {
 		var klass = this,
 			options = (options || new Object()),
 			Nodes = new Object,
+			NameSpaces = new Object,
 			Filter = (options.filter || function() { return true; }),
 			
 			parse = function(children, container, alth) {
 				children.forEach(function(child) {
 					var nodeName = child.nodeName;
-					var handler = alth || Nodes[nodeName];
+					var nameSpace = child.namespaceURI;
+					var handler = alth || Nodes[nodeName] || NameSpaces[nameSpace];
 					if(!handler || !Filter(child))
 						return;
 					else
-						handler(child, container, parse);
+						handler(child, container, parse, alth);
 				}, this);
 				return container;
-			};
+			},
+			
+			defaultFn = function() {
+				return function(child, container, parse) {
+					return parse(child.childNodes, container);
+				};
+			}
 		
 		this.document = doc;
 		
 		this.registerNode = function(nodeName, fn, thisObj) {
-			if(!fn)
-				var fn = function(child, container, parse) {
-					return parse(child.childNodes, container);
-				};
+			if(!fn) var fn = defaultFn();
 			Nodes[nodeName] = fn.bind(thisObj);
 		}
 		this.registerNodes = function(nodeNames, fn, thisObj) {
 			for(var i = 0, l = nodeNames.length; i < l; i++)
 				this.registerNode(nodeNames[i], fn, thisObj);
+		}
+		this.registerNameSpace = function(uri, fn, thisObj) {
+			if(!fn) var fn = defaultFn();
+			NameSpaces[uri] = fn.bind(thisObj);
 		}
 		this.run = function(container) {
 			if(!container)

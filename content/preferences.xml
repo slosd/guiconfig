@@ -5,7 +5,9 @@
 	<!ENTITY % gcMain SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 	%gcMain;
 ]>
-<preferences>
+<preferences
+	xmlns="http://guiconfig.freedig.org/gccontent/preferences.xul"
+	xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<panel label="&accessibility;" icon="tab_accessibility">
 		<tabs>
 			<tab label="&mouseclick;">
@@ -239,7 +241,8 @@
 			<tab label="&cache;">
 				<pref key="browser.cache.check_doc_frequency"
 					  label="&browser_cache_check_doc_frequency_name;"
-					  description="&browser_cache_check_doc_frequency_description;" mode="select">
+					  description="&browser_cache_check_doc_frequency_description;"
+					  mode="select">
 					<option label="&browser_cache_check_doc_frequency_o1;">0</option>
 					<option label="&browser_cache_check_doc_frequency_o2;">1</option>
 					<option label="&browser_cache_check_doc_frequency_o3;">2</option>
@@ -298,9 +301,31 @@
 					  type="Char" />
 			</tab>
 			<tab label="&security_privacy;">
+				<group label="&master_pass;">
+					<pref key="security.ask_for_password"
+						  description="&security_ask_for_password_description;">
+						<wrapper>
+							<elements pref="security.ask_for_password" mode="radio">
+								<xul:radiogroup id="security.ask_for_password">
+									<xul:radio label="&security_ask_for_password_o1;" value="0" />
+									<xul:radio label="&security_ask_for_password_o2;" value="1" />
+									<xul:radio value="2">
+										<xul:hbox>
+											&security_ask_for_password_o3_front;
+											<pref key="security.password_lifetime" />
+											&security_ask_for_password_o3_back;
+										</xul:hbox>
+									</xul:radio>
+								</xul:radiogroup>
+							</elements>
+						</wrapper>
+					</pref>
+				</group>
+				<group label="&misc;">
 				<pref key="security.dialog_enable_delay"
 					  label="&security_dialog_enable_delay_name;"
 					  description="&security_dialog_enable_delay_description;" />
+				</group>
 			</tab>
 		</tabs>
 	</panel>
@@ -438,16 +463,28 @@
 						  description="&network_http_max-persistent-connections-per-proxy_description;" />
 				</group>
 			</tab>
-			<tab label="&pipelining;">
-				<pref key="network.http.pipelining"
-					  label="&network_http_pipelining_name;"
-					  description="&network_http_pipelining_description;" />
-				<pref key="network.http.proxy.pipelining"
-					  label="&network_http_proxy_pipelining_name;"
-					  description="&network_http_proxy_pipelining_description;" />
-				<pref key="network.http.pipelining.maxrequests"
-					  label="&network_http_pipelining_maxrequests_name;"
-					  description="&network_http_pipelining_maxrequests_description;" />
+			<tab label="&misc;">
+				<group label="&pipelining;">
+					<pref key="network.http.pipelining"
+						  label="&network_http_pipelining_name;"
+						  description="&network_http_pipelining_description;" />
+					<pref key="network.http.proxy.pipelining"
+						  label="&network_http_proxy_pipelining_name;"
+						  description="&network_http_proxy_pipelining_description;" />
+					<pref key="network.http.pipelining.maxrequests"
+						  label="&network_http_pipelining_maxrequests_name;"
+						  description="&network_http_pipelining_maxrequests_description;" />
+				</group>
+				<group label="&misc;">
+					<pref key="network.http.sendRefererHeader"
+						  label="&network_http_sendRefererHeader_name;"
+						  description="&network_http_sendRefererHeader_description;"
+						  mode="select">
+						<option label="&network_http_sendRefererHeader_o1;">0</option>
+						<option label="&network_http_sendRefererHeader_o2;">1</option>
+						<option label="&network_http_sendRefererHeader_o3;">2</option>
+					</pref>
+				</group>
 			</tab>
 		</tabs>
 	</panel>

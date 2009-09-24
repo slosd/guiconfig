@@ -156,6 +156,12 @@
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
 <!ENTITY browser_privatebrowsing_autostart_description "If checked, Firefox will start in &quot;Private Browsing&quot; mode and makes this permanent throughout the whole session.">
 <!ENTITY browser_privatebrowsing_autostart_name "Start in &quot;Private Browsing&quot; mode">
+<!ENTITY master_pass "Master password">
+<!ENTITY security_ask_for_password_description "">
+<!ENTITY security_ask_for_password_o1 "Ask for password whenever needed">
+<!ENTITY security_ask_for_password_o2 "Ask for password the first time it's needed">
+<!ENTITY security_ask_for_password_o3_front "Ask for password every ">
+<!ENTITY security_ask_for_password_o3_back " minutes">
 
 <!-- STYLE -->
 <!ENTITY style "Style">
@@ -248,6 +254,12 @@
 <!ENTITY network_http_pipelining_name "Use pipelining">
 <!ENTITY network_http_proxy_pipelining_description "This preference specifies whether to use pipelining with a proxy server. Pipelining reduces network load and can reduce page loading times, but it may cause problems loading pages from servers which don't support pipelining.">
 <!ENTITY network_http_proxy_pipelining_name "Use pipelining with a proxy server">
+	<!-- MISC -->
+<!ENTITY network_http_sendRefererHeader_name "Send Referer header">
+<!ENTITY network_http_sendRefererHeader_description "When visiting a website, the referer is the address of the previous website from which a link was followed. Disabling referers can cause problems on some websites. ">
+<!ENTITY network_http_sendRefererHeader_o1 "Never">
+<!ENTITY network_http_sendRefererHeader_o2 "When clicking on a link">
+<!ENTITY network_http_sendRefererHeader_o3 "When clicking on a link or loading an image">
 
 <!-- DEVELOPMENT -->
 <!ENTITY developing "Developing">

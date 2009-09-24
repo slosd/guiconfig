@@ -8,4 +8,4 @@ style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcb
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul
 
-locale		guiconfig		en-US			locale/de-DE/
+locale		guiconfig		en-US			locale/en-US/

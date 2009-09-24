@@ -79,22 +79,18 @@ Option.prototype.build = function() {
 			parse(node.childNodes, group.element.lastChild);
 		});
 		
-		parser.registerNodes(['checkbox', 'menulist', 'textbox', 'colorpicker'], function(node, container) {
-			var element = new GCElement(node.nodeName, {
-				'label': {
-					'value': node.getAttribute("label")
-				},
-				'onmouseover': function() {
-					guiconfig.setDescription(node.getAttribute("description"));
-				}.bind(this),
-				'onchange': function() {
-					this.onvaluechange();
-				}.bind(this)
-			}).inject(container);
-			node.setUserData("element", element.element, null);
+		parser.registerNodes(, function(node, container) {
 		}, this);
 		
-		var fragment = parser.run(document.createDocumentFragment());
+		parser.registerNameSpace('http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul', function(node, container, parse) {
+			var element = document.importNode(node, false);
+			if(element.id == this.Wrapper.link_element_id) {
+				this.Elements.option = element;
+				this.Options.mode = this.Wrapper.link_element_mode;
+			}
+			container.appendChild(parse(node.childNodes, element));
+		}, this);
+		
 		
 		this.buildRow("vbox");
 		this.Elements.prefRow.appendChild(fragment);

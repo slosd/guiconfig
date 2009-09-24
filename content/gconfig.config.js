@@ -200,7 +200,30 @@ var guiconfig = {
 		});
 		
 		parser.registerNode('elements', function(node, container, parse) {
-			container['elements'] = node;
+			var fragment = document.createDocumentFragment(),
+				supported_elements = ['checkbox', 'menulist', 'textbox', 'colorpicker'],
+				
+				link_element_id = node.getAttribute("pref"),
+				link_element_mode = node.getAttribute("mode");
+				
+			container.elements = parse(node.childNodes, fragment, function(node, container, parse, myparse) {
+				if(supported_elements.indexOf(node.nodeName) != -1) {
+					var element = new GCElement(node.nodeName, {
+						'label': {
+							'value': node.getAttribute("label")
+						},
+						'onmouseover': function() {
+							guiconfig.setDescription(node.getAttribute("description"));
+						}.bind(this),
+						'onchange': function() {
+							this.onvaluechange();
+						}.bind(this)
+					});
+					node.setUserData("element", element.element, null);
+					container.appendChild(myparse(node.childNodes, element.element));
+					return container;
+				}
+			});
 		});
 		
 		parser.registerNode('pref', function(node, container, parse) {
@@ -376,7 +399,7 @@ var guiconfig = {
 			}
 		}, this);
 		
-		parser.registerNodes(['pref', 'checkbox', 'menulist', 'textbox', 'colorpicker'], function(node, container, parse) {
+		parser.registerNodes(['pref', 'checkbox', 'menulist', 'textbox', 'colorpicker', 'radiobox'], function(node, container, parse) {
 			var element = node.getUserData("element"),
 				options = node.getElementsByTagName("option"),
 				l, options_data = "";

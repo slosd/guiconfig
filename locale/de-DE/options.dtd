@@ -219,6 +219,11 @@
 <!ENTITY network_http_pipelining_name "Pipelining verwenden">
 <!ENTITY network_http_proxy_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung. Muss aber vom Proxy-Server unterstützt werden.">
 <!ENTITY network_http_proxy_pipelining_name "Pipelining bei einem Proxy-Server verwenden">
+<!ENTITY network_http_sendRefererHeader_name "Referer Header senden">
+<!ENTITY network_http_sendRefererHeader_description "Der Referer Header enthält die Adresse der zuvor besuchten Webseite wenn Sie einem Link folgen oder ein Bild angezeigt wird. Auf manchen Webseiten kann es zu Fehler kommen, wenn Sie diese Funktion deaktivieren. ">
+<!ENTITY network_http_sendRefererHeader_o1 "Niemals">
+<!ENTITY network_http_sendRefererHeader_o2 "Wenn Sie einem Link folgen">
+<!ENTITY network_http_sendRefererHeader_o3 "Wenn Sie einem Link folgen oder ein Bild angezeigt wird">
 <!ENTITY developing "Entwicklung">
 <!ENTITY viewsource "Quelltexte">
 <!ENTITY view_source_editor_external_description "Statt des Standard-Editors einen benutzerdefinierten Editor für die Quelltextansicht verwenden.">
