@@ -1,6 +1,4 @@
-<!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Accessibilité">
-<!-- MOUSE CLICK -->
 <!ENTITY mouseclick "Clic de la souris">
 <!ENTITY middleclick "Clics centraux">
 <!ENTITY middlemouse_contentLoadURL_description "Charge le contenu du presse-papiers en tant qu&apos;URL, par un clic central.">
@@ -11,7 +9,6 @@
 <!ENTITY browser_urlbar_clickSelectsAll_name "Sélectionner le contenu par simple clic">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Sélectionner le contenu de la barre d&apos;adresse dès qu&apos;un double clic y a été fait.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Sélectionner le contenu par double clic">
-<!-- URLBAR -->
 <!ENTITY urlbar "Barre d&apos;adresse">
 <!ENTITY browser_urlbar_autoFill_description "Active la saisie semi-automatique en ligne.">
 <!ENTITY browser_urlbar_autoFill_name "Saisie semi-automatique en ligne">
@@ -23,7 +20,6 @@
 <!ENTITY browser_fixup_alternate_prefix_name "Insérer au début">
 <!ENTITY browser_fixup_alternate_suffix_description "Caractères à insérer à la fin de l&apos;adresse.">
 <!ENTITY browser_fixup_alternate_suffix_name "Insérer à la fin">
-<!-- AWESOMEBAR -->
 <!ENTITY awesomebar "Barre intelligente">
 <!ENTITY urlbar_restrict_name "Restreindre les résultats">
 <!ENTITY urlbar_match_name "Comparer les résultats">
@@ -47,7 +43,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o4 "Ne comparer qu&apos;au début de l&apos;URL ou du titre">
 <!ENTITY browser_urlbar_maxRichResults_description "Précise combien d&apos;entrées (au maximum) doivent apparaître dans le menu déroulant de la barre d&apos;adresse.">
 <!ENTITY browser_urlbar_maxRichResults_name "Entrées dans le menu déroulant">
-<!-- WEBSITES -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Précise comment la sensibilité de casse est réglée. Quand « Déterminé automatiquement » est choisi, la recherche est sensible à la casse si le texte recherché contient des capitales, mais pas totalement.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Sensible à la casse">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Déterminé automatiquement">
@@ -76,7 +71,6 @@
 <!ENTITY layout_spellcheckDefault_o1 "Désactiver">
 <!ENTITY layout_spellcheckDefault_o2 "Activer pour les champs de texte de plusieurs lignes">
 <!ENTITY layout_spellcheckDefault_o3 "Activer pour les champs de texte d&apos;une ou plusieurs lignes">
-<!-- MISC -->
 <!ENTITY misc "Divers">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Nombre maximal de fenêtres affichées dans le menu « Historique » &gt; « Fenêtres récemment fermées ».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Nb. maximal de fenêtres restaurables">
@@ -92,9 +86,7 @@
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Voir la boîte de dialogue lors de la navigation au curseur">
 <!ENTITY accessibility_accesskeycausesactivation_description "L&apos;utilisation d&apos;un raccourci clavier pour un élément a le même effet que d&apos;activer l&apos;élément. Selon le cas, cela revient à suivre un lien ou à cliquer sur un bouton.">
 <!ENTITY accessibility_accesskeycausesactivation_name "La touche d&apos;accès active l&apos;élément">
-<!-- BROWSER -->
 <!ENTITY browser "Navigateur">
-<!-- ALERTS -->
 <!ENTITY alerts "Alertes">
 <!ENTITY update_showSlidingNotification_description "Affiche une notification dans le navigateur quand des mises à jour sont disponibles.">
 <!ENTITY update_showSlidingNotification_name "Voir la notification de mise à jour">
@@ -108,7 +100,6 @@
 <!ENTITY browser_download_manager_showAlertInterval_name "Délai d&apos;alerte (ms)">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "Affiche un popup en bas à droite de l&apos;écran une fois que les téléchargements sont terminés">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "Alerte popup après le téléchargement">
-<!-- CACHE -->
 <!ENTITY cache "Cache du navigateur">
 <!ENTITY cache_disk "Cache sur disque">
 <!ENTITY cache_memory "Mémoire cache">
@@ -128,7 +119,6 @@
 <!ENTITY browser_cache_memory_capacity_name "Mémoire cache (ko)">
 <!ENTITY browser_cache_memory_enable_description "Utiliser la mémoire cache jusqu&apos;au niveau indiqué">
 <!ENTITY browser_cache_memory_enable_name "Utilisation de la mémoire cache">
-<!-- EXTENSIONS -->
 <!ENTITY extensions "Extensions">
 <!ENTITY getaddons "Panneau de catalogue des extensions">
 <!ENTITY extensions_checkCompatibility_description "Cette préférence permet de désactiver la vérification de compatibilité des extensions.">
@@ -139,7 +129,6 @@
 <!ENTITY extensions_getAddons_showPane_name "Afficher le panneau">
 <!ENTITY extensions_hideInstallButton_description "Masquer le bouton « Installer » de l&apos;onglet « Extensions » de la fenêtre des modules complémentaires.">
 <!ENTITY extensions_hideInstallButton_name "Masquer le bouton « Installer »">
-<!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Gestionnaire des téléchargements">
 <!ENTITY browser_download_lastDir_description "Chemin du dernier répertoire utilisé pour un téléchargement avec « Enregistrer sous… ».">
 <!ENTITY browser_download_lastDir_name "Dernier dossier de téléchargement">
@@ -147,15 +136,12 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Avertissement d&apos;exécutable">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Rend active la fenêtre du « Gestionnaire de téléchargements » dès que l&apos;un d&apos;eux débute">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Rendre active la fenêtre du « Gestionnaire de téléchargements » dès que l&apos;un d&apos;eux débute">
-<!-- SECURITY -->
 <!ENTITY security_privacy "Sécurité et confidentialité">
 <!ENTITY security_dialog_enable_delay_description "Cette configuration précise le délai (en millisecondes) avant que le bouton « Installer » puisse être cliqué, lors de l&apos;installation d&apos;une extension. Entrer la valeur zéro pour désactiver ce délai.">
 <!ENTITY security_dialog_enable_delay_name "Délai d&apos;installation d&apos;extension (ms)">
 <!ENTITY browser_privatebrowsing_autostart_description "Si la case est cochée, Firefox démarrera en mode « Navigation privée » et continuera à le faire durant la totalité de la session.">
 <!ENTITY browser_privatebrowsing_autostart_name "Démarrer en mode « Navigation privée »">
-<!-- STYLE -->
 <!ENTITY style "Style">
-<!-- BROWSER -->
 <!ENTITY browser_style "Navigateur">
 <!ENTITY browser_identity_ssl_domain_display_name "Importance du domaine lors de l&apos;utilisation de SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Lorsqu&apos;un site utilise le protocole SSL pour crypter les échanges, l&apos;utilisateur peut choisir d&apos;avoir une partie de l&apos;URL du site soulignée dans l&apos;interface. Cette préférence précise s&apos;il faudra afficher dans la barre d&apos;adresse le domaine de deuxième niveau (par exemple « mozilla.org »), le domaine complet (par exemple : « bugzilla.mozilla.org ») ou bien aucun nom de domaine.">
@@ -176,7 +162,6 @@
 <!ENTITY browser_tabs_closeButtons_o2 "sur chaque onglet">
 <!ENTITY browser_tabs_closeButtons_o3 "sur aucun onglet">
 <!ENTITY browser_tabs_closeButtons_o4 "à la fin de la barre d&apos;onglets">
-<!-- WEBSITES -->
 <!ENTITY websites "Sites Web">
 <!ENTITY rendering "Rendu">
 <!ENTITY nglayout_initialpaint_delay_description "Cette préférence précise le nombre de millisecondes d&apos;attente avant le rendu de la page. Les petites valeurs feront que la page s&apos;affichera plus vite, mais lui demandera plus de temps pour que le rendu se termine. Les grandes valeurs auront l&apos;effet inverse.">
@@ -191,7 +176,6 @@
 <!ENTITY browser_display_show_image_placeholders_name "Voir les emplacements d&apos;images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Lors du chargement d&apos;une image seule, hors d&apos;une page Web, si elle est trop grande elle sera alors redimensionnée afin de s&apos;adapter à la largeur de la fenêtre du navigateur">
 <!ENTITY browser_enable_automatic_image_resizing_name "Redimensionner les images">
-<!-- TEXT SELECT -->
 <!ENTITY text_select "Texte sélectionné">
 <!ENTITY ui_textSelectBackgroundAttention_description "Précise la couleur de fond utilisée pour le « Trouvez ce que vous tapez » (code hexadécimal ou nom de la couleur).">
 <!ENTITY ui_textSelectBackgroundAttention_name "Couleur de fond du « Trouvez ce que vous tapez »">
@@ -199,9 +183,7 @@
 <!ENTITY ui_textSelectBackground_name "Couleur d&apos;arrière-plan">
 <!ENTITY ui_textSelectForeground_description "Précise la couleur de texte à utiliser lors des sélections de texte (code hexadécimal ou nom de la couleur). Si la préférence n&apos;est pas fournie, la valeur du système d&apos;exploitation est utilisée.">
 <!ENTITY ui_textSelectForeground_name "Couleur du texte">
-<!-- BOOKMARK -->
 <!ENTITY bookmarks "Marque-pages">
-<!-- MICROSUMMARIES -->
 <!ENTITY microsummaries "Microrésumés">
 <!ENTITY browser_microsummary_enabled_description "Permet d&apos;extraire une information pour les marque-pages depuis les microrésumés.">
 <!ENTITY browser_microsummary_enabled_name "Utiliser les microrésumés">
@@ -211,22 +193,18 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Mettre à jour les générateurs de microrésumés">
 <!ENTITY browser_microsummary_updateInterval_description "Précise le nombre de minutes entre les vérifications de mises à jour des microrésumés. La valeur par défaut est 30 minutes.">
 <!ENTITY browser_microsummary_updateInterval_name "Fréquence de mise à jour (min)">
-<!-- MISC -->
 <!ENTITY browser_tabs_loadBookmarksInBackground_description "Quand vous ouvrez un marque-page dans un nouvel onglet, celui-ci se chargera en arrière-plan sans prendre la main à l&apos;onglet en cours.">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Nombre de secondes entre chaque actualisation des marque-pages dynamiques. Les valeurs inférieures à 60 sont considérées comme étant 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalle d&apos;actualisation (s)">
 <!ENTITY browser_bookmarks_max_backups_description "Détermine le nombre de sauvegardes à effectuer. La valeur 0 les désactivera.">
 <!ENTITY browser_bookmarks_max_backups_name "Sauvegarde des marque-pages">
-<!-- NETWORK -->
 <!ENTITY network "Réseau">
-<!-- CONNECTIONS -->
 <!ENTITY connections "Connexions">
 <!ENTITY network_http_max-connections-per-server_description "Cette préférence fixe le nombre total de connexions que Firefox peut lancer simultanément avec un même serveur. Cette valeur doit être entre 1 et 255.">
 <!ENTITY network_http_max-connections-per-server_name "Nb. maximal de connexions HTTP par serveur">
 <!ENTITY network_http_max-connections_description "Cette préférence fixe nombre total de connexions que Firefox peut lancer simultanément. Cette valeur doit être entre 1 et 65 535.">
 <!ENTITY network_http_max-connections_name "Nb. maximal de connexions HTTP">
-<!-- KEEP ALIVE -->
 <!ENTITY keep-alive_connections "Connexions de « maintien en vie »">
 <!ENTITY network_http_keep-alive_description "Les connexions HTTP de « maintien en vie » peuvent être réutilisées pour des requêtes multiples et améliorations de performance.">
 <!ENTITY network_http_keep-alive_name "Utiliser des connexions de « maintien en vie »">
@@ -234,7 +212,6 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Nb. maximal de connexions de « maintien en vie » par serveur proxy">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur. Cette valeur doit être entre 1 et 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Nb. maximal de connexions de « maintien en vie » par serveur">
-<!-- PIPELINING -->
 <!ENTITY pipelining "Pipelining">
 <!ENTITY network_http_pipelining_description "Le pipelining réduit le chargement du réseau et peut aussi réduire les durées de chargement des pages, mais cela peut aussi causer des problèmes au cas où les serveurs ne supportent pas cette méthode de requêtes.">
 <!ENTITY network_http_pipelining_maxrequests_description "Cette préférence fixe le nombre maximal de requêtes simultanées par pipelining lorsque celui-ci est activé.">
@@ -242,15 +219,12 @@
 <!ENTITY network_http_pipelining_name "Utiliser du pipelining">
 <!ENTITY network_http_proxy_pipelining_description "Cette préférence fixe s&apos;il faut utiliser le pipelining avec un serveur proxy. Le pipelining réduit le chargement du réseau et peut aussi réduire les durées de chargement des pages, mais cela peut aussi causer des problèmes au cas où les serveurs ne supportent pas cette méthode de requêtes.">
 <!ENTITY network_http_proxy_pipelining_name "Utiliser du pipelining avec un serveur proxy">
-<!-- DEVELOPMENT -->
 <!ENTITY developing "Développement">
-<!-- VIEW SOURCE -->
 <!ENTITY viewsource "Code source de la page">
 <!ENTITY view_source_editor_external_description "Utiliser un éditeur personnalisé pour voir le code source.">
 <!ENTITY view_source_editor_external_name "Utiliser un éditeur personnalisé">
 <!ENTITY view_source_editor_path_description "Répertoire de l&apos;éditeur personnalisé.">
 <!ENTITY view_source_editor_path_name "Répertoire de l&apos;éditeur">
-<!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Les modifications concernant fenêtres et boîtes de dialogue ne nécessitent pas un redémarrage. Cela ne fonctionne pas avec les fichiers étant dans un paquetage JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Désactiver le cache XUL">
 <!ENTITY browser_dom_window_dump_enabled_description "Activer l&apos;utilisation de l&apos;instruction dump() pour publier dans la console standard.">

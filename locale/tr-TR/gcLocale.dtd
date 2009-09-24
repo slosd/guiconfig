@@ -1,9 +1,5 @@
 <!ENTITY browser.item.label "Gelişmiş Ayarlar">
 <!ENTITY browser.item.access "d">
-<!ENTITY config.search "Search">
-<!ENTITY config.descr.standard "Move the cursor over an option to see a detailed description">
 <!ENTITY config.save.label "Save">
 <!ENTITY config.standard.label "hepsini sıfırla">
-<!ENTITY config.todefault "Set to default value">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Advanced settings ($n available)">

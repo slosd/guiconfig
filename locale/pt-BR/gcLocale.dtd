@@ -1,9 +1,9 @@
-<!ENTITY browser.item.label "Advanced Settings">
-<!ENTITY browser.item.access "d">
-<!ENTITY config.search "Search">
-<!ENTITY config.descr.standard "Move the cursor over an option to see a detailed description">
-<!ENTITY config.save.label "Save">
-<!ENTITY config.standard.label "Reset all">
-<!ENTITY config.todefault "Set to default value">
+<!ENTITY browser.item.label "Opções avançadas">
+<!ENTITY browser.item.access "v">
+<!ENTITY config.search "Filtrar">
+<!ENTITY config.descr.standard "Passe o cursor do mouse sobre uma opção para uma explicação.">
+<!ENTITY config.save.label "Salvar">
+<!ENTITY config.standard.label "Restaurar tudo">
+<!ENTITY config.todefault "Restaurar opção ao padrão">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Advanced settings ($n available)">
+<!ENTITY config.header.description "Opções avançadas ($n disponíveis)">

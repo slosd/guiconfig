@@ -1,6 +1,4 @@
-<!-- ACCESSIBILITY -->
 <!ENTITY accessibility "辅助功能">
-<!-- MOUSE CLICK -->
 <!ENTITY mouseclick "鼠标点击">
 <!ENTITY middleclick "中键点击">
 <!ENTITY middlemouse_contentLoadURL_description "点击中键打开剪贴板中的网址。">
@@ -11,7 +9,6 @@
 <!ENTITY browser_urlbar_clickSelectsAll_name "鼠标点击选择内容">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "双击时选中地址栏内容">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "双击时选中地址栏内容">
-<!-- URLBAR -->
 <!ENTITY urlbar "地址栏">
 <!ENTITY browser_urlbar_autoFill_description "启用地址栏自动完成功能。">
 <!ENTITY browser_urlbar_autoFill_name "地址栏自动完成">
@@ -23,7 +20,6 @@
 <!ENTITY browser_fixup_alternate_prefix_name "在地址前插入">
 <!ENTITY browser_fixup_alternate_suffix_description "插入到地址之后的字符。">
 <!ENTITY browser_fixup_alternate_suffix_name "在地址末插入">
-<!-- AWESOMEBAR -->
 <!ENTITY awesomebar "智能地址栏">
 <!ENTITY urlbar_restrict_name "约束结果">
 <!ENTITY urlbar_match_name "匹配结果">
@@ -33,8 +29,8 @@
 <!ENTITY browser_urlbar_restrict_history_name "仅显示历史记录中的条目">
 <!ENTITY browser_urlbar_restrict_tag_description "智能地址栏仅列出带标签的搜索结果。">
 <!ENTITY browser_urlbar_restrict_tag_name "仅显示带标签的条目">
-<!ENTITY browser_urlbar_restrict_typed_description "Results in the Smart Location Bar are restricted to addresses you typed in the addressbar.">
-<!ENTITY browser_urlbar_restrict_typed_name "Restrict to typed addresses">
+<!ENTITY browser_urlbar_restrict_typed_description "智能地址栏搜索结果仅包含输入过的地址。">
+<!ENTITY browser_urlbar_restrict_typed_name "仅包含输入过的地址">
 <!ENTITY browser_urlbar_match_title_description "指定智能地址栏搜索结果是否仅匹配网页标题。">
 <!ENTITY browser_urlbar_match_title_name "搜索结果仅匹配网页标题">
 <!ENTITY browser_urlbar_match_url_description "指定智能地址栏搜索结果是否仅匹配 URL。">
@@ -47,7 +43,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o4 "只匹配地址或者标题头">
 <!ENTITY browser_urlbar_maxRichResults_description "指定智能地址栏下拉列表最多显示的条目数。">
 <!ENTITY browser_urlbar_maxRichResults_name "下拉列表中的条目数">
-<!-- WEBSITES -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "定义如区分大小写。当设定为自动决定时，如果搜索字符串中含有大写字符，则区分大小写。">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "区分大小写">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自动决定">
@@ -76,7 +71,6 @@
 <!ENTITY layout_spellcheckDefault_o1 "禁止">
 <!ENTITY layout_spellcheckDefault_o2 "允许在多行文本框中拼写检查">
 <!ENTITY layout_spellcheckDefault_o3 "允许在单行文本框中拼写检查">
-<!-- MISC -->
 <!ENTITY misc "其他">
 <!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
@@ -92,9 +86,7 @@
 <!ENTITY accessibility_warn_on_browsewithcaret_name "在进入光标浏览模式时弹出对话框">
 <!ENTITY accessibility_accesskeycausesactivation_description "使用快捷键激活元素，例如点击链接和按钮。">
 <!ENTITY accessibility_accesskeycausesactivation_name "通过快捷键激活元素">
-<!-- BROWSER -->
 <!ENTITY browser "浏览器">
-<!-- ALERTS -->
 <!ENTITY alerts "提示">
 <!ENTITY update_showSlidingNotification_description "当有可用的更新时显示更新通知。">
 <!ENTITY update_showSlidingNotification_name "显示更新通知">
@@ -108,7 +100,6 @@
 <!ENTITY browser_download_manager_showAlertInterval_name "提示延迟（毫秒）">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "所有下载完成后在右下角显示弹出窗口。">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "下载后弹出提示窗口">
-<!-- CACHE -->
 <!ENTITY cache "浏览器缓存">
 <!ENTITY cache_disk "磁盘缓存">
 <!ENTITY cache_memory "内存缓存">
@@ -128,7 +119,6 @@
 <!ENTITY browser_cache_memory_capacity_name "内存缓冲(KB)">
 <!ENTITY browser_cache_memory_enable_description "使用指定大小的内存缓冲。">
 <!ENTITY browser_cache_memory_enable_name "使用内存缓冲">
-<!-- EXTENSIONS -->
 <!ENTITY extensions "扩展">
 <!ENTITY getaddons "“获得扩充软件”面板">
 <!ENTITY extensions_checkCompatibility_description "这个选项允许打开或者关闭扩展兼容性检查">
@@ -139,7 +129,6 @@
 <!ENTITY extensions_getAddons_showPane_name "显示面板">
 <!ENTITY extensions_hideInstallButton_description "隐藏“扩充软件管理”窗口中的“安装”按钮。">
 <!ENTITY extensions_hideInstallButton_name "隐藏“安装”按钮">
-<!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "下载管理器">
 <!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
 <!ENTITY browser_download_lastDir_name "上一次保存目录">
@@ -147,15 +136,12 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "打开可执行文件时警告">
 <!ENTITY browser_download_manager_focusWhenStarting_description "下载开始时显示下载窗口。">
 <!ENTITY browser_download_manager_focusWhenStarting_name "下载开始时显示下载窗口">
-<!-- SECURITY -->
 <!ENTITY security_privacy "安全和隐私">
 <!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
 <!ENTITY browser_privatebrowsing_autostart_description "如果选中，Firefox将以隐私模式启动。">
 <!ENTITY browser_privatebrowsing_autostart_name "以隐私模式开始">
-<!-- STYLE -->
 <!ENTITY style "样式">
-<!-- BROWSER -->
 <!ENTITY browser_style "浏览器样式">
 <!ENTITY browser_identity_ssl_domain_display_name "高亮使用SSL的域名">
 <!ENTITY browser_identity_ssl_domain_display_description "这个选项可以控制当访问用SSL加密的网站时，如何高亮调域名。例如访问bugzilla.mozilla.org时：二级高亮显示mozilla.org；完全高亮显示bugzilla.mozilla.org">
@@ -176,7 +162,6 @@
 <!ENTITY browser_tabs_closeButtons_o2 "每个标签页上">
 <!ENTITY browser_tabs_closeButtons_o3 "不显示">
 <!ENTITY browser_tabs_closeButtons_o4 "地址栏末端">
-<!-- WEBSITES -->
 <!ENTITY websites "网站">
 <!ENTITY rendering "渲染">
 <!ENTITY nglayout_initialpaint_delay_description "这个选项定义了显示一页后的延迟时间。这个值越低画面上屏越快，但是这个画面需要正常的时间来完成渲染；反之亦然。(毫秒 ms 10e-3 )">
@@ -191,7 +176,6 @@
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
 <!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">
 <!ENTITY browser_enable_automatic_image_resizing_name "图片尺寸自适应">
-<!-- TEXT SELECT -->
 <!ENTITY text_select "选中的文字">
 <!ENTITY ui_textSelectBackgroundAttention_description "指定“快速查找”时高亮文字的背景色（十六进制值或颜色名）。">
 <!ENTITY ui_textSelectBackgroundAttention_name "高亮文字的背景色">
@@ -199,9 +183,7 @@
 <!ENTITY ui_textSelectBackground_name "背景色">
 <!ENTITY ui_textSelectForeground_description "指定文字背景色（十六进制值或颜色名）。如果未指定该值，则使用操作系统默认背景色。">
 <!ENTITY ui_textSelectForeground_name "文字颜色">
-<!-- BOOKMARK -->
 <!ENTITY bookmarks "书签">
-<!-- MICROSUMMARIES -->
 <!ENTITY microsummaries "微摘要">
 <!ENTITY browser_microsummary_enabled_description "允许带有微摘要的书签实时显示摘要信息。">
 <!ENTITY browser_microsummary_enabled_name "使用微摘要">
@@ -211,22 +193,18 @@
 <!ENTITY browser_microsummary_updateGenerators_name "更新微摘要生成器">
 <!ENTITY browser_microsummary_updateInterval_description "指定微摘要检查更新的时间间隔，默认每隔 30 分钟检查一次。">
 <!ENTITY browser_microsummary_updateInterval_name "更新间隔（分）">
-<!-- MISC -->
 <!ENTITY browser_tabs_loadBookmarksInBackground_description "当从书签打开新标签页时，不获得焦点。">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "实时书签的刷新时间，最小值为60。">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "刷新间隔（秒）：">
 <!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
 <!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
-<!-- NETWORK -->
 <!ENTITY network "网络">
-<!-- CONNECTIONS -->
 <!ENTITY connections "连接">
 <!ENTITY network_http_max-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大HTTP连接数。值域在1和255之间。">
 <!ENTITY network_http_max-connections-per-server_name "每个服务器的最大连接数。">
 <!ENTITY network_http_max-connections_description "这个选项定义了Firefox可以同时打开的最大HTTP连接数。值域在1和65535之间。">
 <!ENTITY network_http_max-connections_name "最大HTTP连接数">
-<!-- KEEP ALIVE -->
 <!ENTITY keep-alive_connections "保持活跃连接（Keep-alive）">
 <!ENTITY network_http_keep-alive_description "HTTP保持活跃连接可以进行多请求重用同一连接，可以增加Firefox的性能。">
 <!ENTITY network_http_keep-alive_name "使用保持活跃连接">
@@ -234,7 +212,6 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "针对特定代理服务器的最大保持活跃连接数">
 <!ENTITY network_http_max-persistent-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">
 <!ENTITY network_http_max-persistent-connections-per-server_name "针对特定服务器的最大保持活跃连接数">
-<!-- PIPELINING -->
 <!ENTITY pipelining "流水线（pipelining）">
 <!ENTITY network_http_pipelining_description "流水线可以减少网页读取时间并且简少网络流量，但是当服务器不支持流水线时可能会出错。">
 <!ENTITY network_http_pipelining_maxrequests_description "这个选项决定流水线的最大请求数。">
@@ -242,15 +219,12 @@
 <!ENTITY network_http_pipelining_name "使用流水线">
 <!ENTITY network_http_proxy_pipelining_description "这个选项决定是否对代理服务器使用流水线。流水线可以减少网页读取时间并且简少网络流量，但是当服务器不支持流水线时可能会出错。">
 <!ENTITY network_http_proxy_pipelining_name "对代理服务器使用流水线">
-<!-- DEVELOPMENT -->
 <!ENTITY developing "开发">
-<!-- VIEW SOURCE -->
 <!ENTITY viewsource "查看源代码">
 <!ENTITY view_source_editor_external_description "使用自定义的编辑器查看源代码。">
 <!ENTITY view_source_editor_external_name "使用自定义编辑器">
 <!ENTITY view_source_editor_path_description "自定义编辑器所在的路径。">
 <!ENTITY view_source_editor_path_name "编辑器路径：">
-<!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
