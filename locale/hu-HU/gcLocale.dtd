@@ -1,8 +1,0 @@
-<!ENTITY browser.item.label "Haladó beállítások">
-<!ENTITY browser.item.access "d">
-<!ENTITY config.search "Keresés">
-<!ENTITY config.descr.standard "Ha egy opcióról többet szeretne megtudni, vigye az egeret az opció fölé, és várjon, amíg megjelenik a részletes leírás">
-<!ENTITY config.save.label "Mentés">
-<!ENTITY config.todefault "Visszállítás az alapértelmezett állapotra">
-<!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Haladó beállítások ($n elérhető)">

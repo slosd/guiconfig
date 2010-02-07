@@ -1,8 +1,0 @@
-<!ENTITY browser.item.label "Geavanceerde Instellingen">
-<!ENTITY browser.item.access "d">
-<!ENTITY config.descr.standard "Beweeg de cursor over een optie om een gedetailleerde beschrijving te zien">
-<!ENTITY config.save.label "Opslaan">
-<!ENTITY config.standard.label "Alles resetten">
-<!ENTITY config.todefault "Instellen op de standaard waarde">
-<!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Geavanceerde instellingen ($n beschikbaar)">

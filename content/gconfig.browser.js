@@ -13,7 +13,7 @@ var guiconfig = {
 		
 		gcCore.addObserver('browser.preferences.instantApply', function() {
 			if(this.windowIsOpen("config"))
-				this.configWindow.guiconfig.setButtons();
+				this["gcconfigwindow"].guiconfig.setButtons();
 		}, this, "Buttons");
 	},
 	

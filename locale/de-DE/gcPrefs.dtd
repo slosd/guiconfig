@@ -1,4 +1,0 @@
-<!ENTITY prefs.label "Optionen">
-<!ENTITY prefs.todefault.ask "Nachfragen bevor Einstellungen zurückgesetzt werden">
-<!ENTITY prefs.matchversion "Nur Optionen anzeigen, die kompatibel mit Ihrer Firefoxversion sind">
-<!ENTITY prefs.sticktopreferences "Den gui:config Menüeintrag nach dem &quot;Einstellungen...&quot; Eintrag einfügen">

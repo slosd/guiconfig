@@ -186,7 +186,10 @@ Option.prototype.hasButton = function(type) {
 Option.prototype.__defineSetter__("disabled", function(value) {
 	this.Options.disabled = !!value;
 	this[(value ? "addButton" : "removeButton")]("edit");
-	this.Elements.option.setAttribute("disabled", (value ? "true" : ""));
+	if(value)
+		this.Elements.option.setAttribute("disabled", "true");
+	else
+		this.Elements.option.removeAttribute("disabled");
 	this.Elements.option.disabled = !!value;
 	if(this.Options.defaultValue)
 		this.setValue(this.Options.defaultValue);

@@ -1,0 +1,4 @@
+<!ENTITY prefs.label "- Preferências">
+<!ENTITY prefs.todefault.ask "Perguntar antes de restaurar todas as opções aos valores padrão">
+<!ENTITY prefs.matchversion "Mostrar apenas as opções compatíveis com esta versão do Firefox">
+<!ENTITY prefs.sticktopreferences "Colocar no menu o comando &quot;Opções avançadas&quot; embaixo de &quot;Opções&quot;">

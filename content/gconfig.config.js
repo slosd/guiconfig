@@ -38,7 +38,7 @@ var guiconfig = {
 		this.created_preferences = this.createPreferences();
 
 		window.setTimeout(function() {
-			//guiconfig.Elements.window.centerWindowOnScreen();
+			guiconfig.Elements.window.centerWindowOnScreen();
 		}, 200);
 	},
 
@@ -125,8 +125,6 @@ var guiconfig = {
 			paneltab.setAttribute("pane", pane_index++);
 			paneltab.setAttribute("src", this.IconSet.getIcon(node.getAttribute("icon")));
 			paneltab.setAttribute("label", node.getAttribute("label"));
-			if(node.getAttribute("align") == "right")
-				paneltab.setAttribute("class", "gcDoPane");
 			var panelbox = document.createElement("vbox");
 			panelbox.setAttribute("class", "gcPrefPane");
 			node.setUserData("element", paneltab, null);
@@ -337,17 +335,14 @@ var guiconfig = {
 				if(string.indexOf(this.last_query) != 0)
 					parse(node.childNodes, node);
 				element.disabled = false;
-				//element.style.visibility = "visible";
 			}
 			else if((parse(node.childNodes, node)).empty) {
 				element.disabled = true;
-				//element.style.visibility = "hidden";
 				return false;
 			}
 			else {
 				container.empty = false;
 				element.disabled = false;
-				//element.style.visibility = "visible";
 			}
 			if(!this.selected_tab && string != "") {
 				element.parentNode.parentNode.selectedTab = element;

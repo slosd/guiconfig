@@ -29,7 +29,7 @@
 			<fileset id="chrome" dir="${src.dir}">
 				<include name="content/**" />
 				<include name="defaults/**" />
-				<include name="locale/**" />
+				<include name="locale~${build.target}/**" />
 				<include name="skin/**" />
 				<include name="install.rdf" />
 				<exclude name="**/.*" />
@@ -37,9 +37,11 @@
 			</fileset>
 		</copy>
 		
+		<move file="${build.dir}/locale~${build.target}" tofile="${build.dir}/locale"/>
 		<copy file="${src.dir}/build/build_locales.sh" tofile="${build.dir}/build_locales.sh" overwrite="true" />
 		<copy file="${src.dir}/build/build.sh" tofile="${build.dir}/build.sh" overwrite="true" />
 		<copy file="${src.dir}/chrome:jar.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true" />
+		<copy file="${src.dir}/install:jar.rdf" tofile="${build.dir}/install.rdf" overwrite="true" />
 		
 		<antcall target="makeexecutable"/>
 		<antcall target="build_locales_babelzilla"/>
@@ -56,6 +58,7 @@
 			<replacefilter token="%FFMINVERSION%" value="${firefox.minversion}"/>
 			<replacefilter token="%FFMAXVERSION%" value="${firefox.maxversion}"/>
 			<replacefilter token="%BUILDDIR%" value="${build.dir}"/>
+			<replacefilter token="%TARGET%" value="${build.target}"/>
 		</replace>
 		
 		<antcall target="makeexecutable"/>
