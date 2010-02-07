@@ -89,8 +89,7 @@
 <!ENTITY browser_popups_showPopupBlocker_name "Popup-Blocker Symbol anzeigen">
 <!ENTITY browser_preferences_instantApply_description "Änderungen im &quot;Einstellungen&quot;-Dialog werden sofort übernommen. Die Schaltflächen &quot;OK&quot; und &quot;Abbrechen&quot; werden durch eine &quot;Schließen&quot;-Schaltfläche ersetzt.">
 <!ENTITY browser_preferences_instantApply_name "Einstellungen sofort übernehmen">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Es erscheint ein Hinweis wenn Caret-Browsing durch Drücken von [F7] aktiviert wird.\n
-Diese Funktion(Caret-Browsing) platziert einen beweglichen Cursor in der Webseiten mit dem Text mit der Tastatur ausgewählt und mit dem mit der Tastatur navigiert werden kann.">
+<!ENTITY accessibility_warn_on_browsewithcaret_description "Es erscheint ein Hinweis wenn Caret-Browsing durch Drücken von [F7] aktiviert wird. Diese Funktion(Caret-Browsing) platziert einen beweglichen Cursor in der Webseiten mit dem Text mit der Tastatur ausgewählt und mit dem mit der Tastatur navigiert werden kann.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Warnen beim Einschalten von Caret-Browsing [F7]">
 <!ENTITY accessibility_accesskeycausesactivation_description "Bei Benutzung einer Schnelltaste (unterstrichener Buchstabe oder Tastenkombination) für ein Element wird dieses angewählt.\nFalls es sich dabei um einen Link oder eine Schaltfläche handelt, wird diese angeklickt.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Schnelltaste(Abkürzungstaste) zum Link &quot;anklicken&quot; zulassen">
