@@ -8,21 +8,25 @@ BoolOption.prototype.constructor = BoolOption;
 BoolOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
-	if(this.Wrapper.setValue) {
-		this.Wrapper.setValue.call(this, value);
+	if(this.Wrapper.scripts.setValue) {
+		this.Wrapper.scripts.setValue.call(this, value);
 	}
 	else {
-		this.Elements.option.setProperty("checked", !!value);
+		if(value)
+			this.Elements.option.setAttribute("checked", "true");
+		else
+			this.Elements.option.removeAttribute("checked");
 	}
+	this.Elements.option.setUserData("value", value, null);
 	return value;
 }
 
 BoolOption.prototype.getValue = function() {
-	if(this.Wrapper.getValue) {
-		return this.Wrapper.getValue.call(this);
+	if(this.Wrapper.scripts.getValue) {
+		return this.Wrapper.scripts.getValue.call(this);
 	}
 	else {
-		return !!this.Elements.option.checked;
+		return this.Elements.option.hasAttribute("checked");
 	}
 }
 

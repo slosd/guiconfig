@@ -175,35 +175,47 @@ var guiconfig = {
 		parser.registerNode('wrapper', function(node, container, parse) {
 			// <wrapper> is child of <pref>
 			if(container.constructor.toString().indexOf("Option.call(") != -1) {
-				container.Wrapper = parse(node.childNodes, new Object);
+				container.Wrapper = parse(node.childNodes, container.Wrapper, function(node, container, parse) {
+					switch(node.nodeName) {
+						case 'type':
+							container.type = node.firstChild.data;
+							break;
+						
+						case 'depends':
+							container.dependencies[container.dependencies.length] = node.firstChild.data;
+							break;
+						
+						case 'script':
+							var name = node.getAttribute("name");
+							if(!name)
+								return false;
+							container.scripts[name] = new Function("value", node.textContent);
+							break;
+						
+						case 'elements':
+							container['elements'] = node;
+							break;
+					}
+				});
+				for(var i = 0, l = container.Wrapper.dependencies.length, key; i < l; i++) {
+					key = container.Wrapper.dependencies[i];
+					gcCore.addObserver(key, container.checkDependencies, container, 'dep'+container.Preference.key+'-'+key);
+				}
 			}
+			
 			// <wrapper> is somewhere else in the doc and needs an id as reference
 			else {
 				wrapper_id = node.getAttribute("id");
-				if(!wrapper_id)
+				if(!wrapper_id || is_defined(this.Wrappers[wrapper_id]))
 					return false;
-				this.Wrappers[wrapper_id] = parse(node.childNodes, new Object);
+				else
+					this.Wrappers[wrapper_id] = node;
 			}
 		}, this);
 		
-		parser.registerNode('type', function(node, container) {
-			container.type = node.firstChild.data;
-		});
-		
-		parser.registerNode('script', function(node, container) {
-			var name = node.getAttribute("name");
-			if(!name)
-				return false;
-			container[name] = new Function("value", node.textContent);
-		});
-		
-		parser.registerNode('elements', function(node, container, parse) {
-			container['elements'] = node;
-		});
-		
 		parser.registerNode('pref', function(node, container, parse) {
 			var element,
-				option = this.newOption(node);
+				option = this.newOption(node, parser);
 			if(!option) {
 				node.parentNode.removeChild(node);
 				return false;
@@ -214,10 +226,12 @@ var guiconfig = {
 			node.setUserData("element", element, null);
 			container.appendChild(element);
 			option.Preference.onchange();
+			option.checkDependencies(option.Wrapper.dependencies.length == 1 ? option.Wrapper.dependencies[0] : option.Wrapper.dependencies);
 		}, this);
 		
 		parser.registerNode('option', function(node, container) {
-			container.Options.validValues.push({ label: (node.getAttribute("label") || ""), value: node.firstChild.data });
+			if(node.firstChild.data != "")
+				container.Options.validValues.push({ label: (node.getAttribute("label") || ""), value: node.firstChild.data });
 		});
 		
 		parser.registerNode('bind', function(node, container, parse) {
@@ -241,7 +255,7 @@ var guiconfig = {
 		return true;
 	},
 	
-	newOption: function(node) {
+	newOption: function(node, parser) {
 		var key = node.getAttribute("key");
 		var type = (node.getAttribute("type") || null);
 		var options = {
@@ -257,12 +271,14 @@ var guiconfig = {
 			validValues: new Array,
 			bindings: new Array,
 			fileFilters: new Array,
-			build: true
+			build: true,
+			disabled: false,
+			dependencies: true
 		};
 		
 		var preference = new Preference(key, type);
 		
-		var wrapper = guiconfig.Wrappers[options.wrapper];
+		var wrapper = this.Wrappers[options.wrapper];
 		if(wrapper && wrapper.type)
 			type = wrapper.type;
 		else if(options.wrapper.type)
@@ -273,8 +289,13 @@ var guiconfig = {
 			return false;
 		
 		var OptionClass = window[type + "Option"];
-		if(OptionClass)
-			return new OptionClass(preference, options);
+		if(OptionClass) {
+			var klass = new OptionClass(preference, options);			
+			if(wrapper) {
+				parser.parseNode(wrapper, klass);
+			}
+			return klass;
+		}
 		else
 			return false;
 	},
@@ -285,7 +306,9 @@ var guiconfig = {
 	},
 
 	setDescription: function(txt) {
-		if(!txt || txt == this.Elements.description.firstChild.data)
+		if(!txt)
+			txt = "";
+		if(txt == this.Elements.description.firstChild.data)
 			return false;
 		return this.Elements.description.replaceChild(document.createTextNode(txt), this.Elements.description.firstChild);
 	},

@@ -8,32 +8,47 @@ IntOption.prototype.constructor = IntOption;
 IntOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
-	if(this.Wrapper.setValue) {
-		this.Wrapper.setValue.call(this, value);
+	if(this.Wrapper.scripts.setValue) {
+		this.Wrapper.scripts.setValue.call(this, value);
 	}
 	else {
 		switch(this.Options.mode) {
+			case 'radio':
+				if(!is_defined(this.Elements.option.value)) {
+					for(var i = 0, l = this.Options.validValues.length; i < l; i++) {
+						if(this.Options.validValues[i].value == value) {
+								this.Elements.option.childNodes[i].setAttribute("selected", "true");
+						}
+					}
+				}
+				else {
+					this.Elements.option.setProperty("value", value);
+				}
+				break;
+				
 			case 'select':
 			default:
 				this.Elements.option.setProperty("value", value);
 				break;
 		}
 	}
+	this.Elements.option.setUserData("value", value, null);
 	return value;
 }
 
 IntOption.prototype.getValue = function() {
-	if(this.Wrapper.getValue) {
-		return this.Wrapper.getValue.call(this);
+	if(this.Wrapper.scripts.getValue) {
+		return this.Wrapper.scripts.getValue.call(this);
 	}
 	else {
 		switch(this.Options.mode) {
 			case 'select':
-				return this.Elements.option.selectedItem.value;
+				return (this.Elements.option.selectedItem ? this.Elements.option.selectedItem.value : this.Elements.option.getUserData("value"));
 				break;
 			
+			case 'radio':
 			default:
-				return this.Elements.option.value;
+				return (this.Elements.option.value || this.Elements.option.getUserData("value"));
 				break;
 		}
 	}
@@ -46,17 +61,24 @@ IntOption.prototype.build = function() {
 			case 'select':
 				var type = 'menulist';
 				break;
+				
+			case 'radio':
+				var type = 'radiogroup';
+				break;
 			
 			default:
 				var type = 'textbox';
 				break;
 		}
 		
+		var default_value = this.Preference.getDefaultValue();
 		var element = new GCElement(type, {
 			'label': {
 				'value': this.name,
 				'control': this.Preference.key
 			},
+			'type': 'number',
+			'size': ((default_value ? default_value.toString().length : 0) + 2),
 			'values': this.Options.validValues,
 			'onchange': function() {
 				this.onvaluechange();

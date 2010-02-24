@@ -1,11 +1,19 @@
 <?xml version="1.0" ?>
 <!DOCTYPE preferences [
+	<!ATTLIST wrapper id ID #IMPLIED>
 	<!ENTITY % gcOptions SYSTEM "chrome://guiconfig/locale/options.dtd">
 	%gcOptions;
 	<!ENTITY % gcMain SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 	%gcMain;
 ]>
 <preferences>
+	<wrapper id="checkbox_is_enabled">
+		<script name="dependencies">
+			<![CDATA[
+			return guiconfig.Options[value].getValue();
+			]]>
+		</script>
+	</wrapper>
 	<panel label="&accessibility;" icon="tab_accessibility">
 		<tabs>
 			<tab label="&mouseclick;">
@@ -36,17 +44,28 @@
 					  description="&browser_urlbar_matchOnlyTyped_description;"
 					  indent="indent" />
 				<separator />
+				
 				<pref key="browser.fixup.alternate.enabled"
 					  label="&browser_fixup_alternate_enabled_name;"
 					  description="&browser_fixup_alternate_enabled_description;" />
 				<pref key="browser.fixup.alternate.prefix"
 					  label="&browser_fixup_alternate_prefix_name;"
 					  description="&browser_fixup_alternate_prefix_description;"
-					  indent="indent" />
+					  indent="indent"
+					  wrapper="checkbox_is_enabled">
+					<wrapper>
+						<depends>browser.fixup.alternate.enabled</depends>
+					</wrapper>
+				</pref>
 				<pref key="browser.fixup.alternate.suffix"
 					  label="&browser_fixup_alternate_suffix_name;"
 					  description="&browser_fixup_alternate_suffix_description;"
-					  indent="indent" />
+					  indent="indent"
+					  wrapper="checkbox_is_enabled">
+					<wrapper>
+						<depends>browser.fixup.alternate.enabled</depends>
+					</wrapper>
+				</pref>
 			</tab>
 			<tab label="&awesomebar;" minVersion="3.0">
 				<pref key="browser.urlbar.default.behavior"
@@ -177,19 +196,6 @@
 					  type="Bool"
 					  minVersion="3.5"
 					  default="0" />-->
-				<pref key="browser.tabs.closeButtons"
-					  label="&browser_tabs_closeButtons_name;"
-					  description="&browser_tabs_closeButtons_description;"
-					  minVersion="2.0"
-					  mode="select">
-					<option label="&browser_tabs_closeButtons_o1;">0</option>
-					<option label="&browser_tabs_closeButtons_o2;">1</option>
-					<option label="&browser_tabs_closeButtons_o3;">2</option>
-					<option label="&browser_tabs_closeButtons_o4;">3</option>
-				</pref>
-				<pref key="browser.search.openintab"
-					  label="&browser_search_openintab_name;"
-					  description="&browser_search_openintab_description;" />
 				<pref key="browser.preferences.instantApply"
 					  label="&browser_preferences_instantApply_name;"
 					  description="&browser_preferences_instantApply_description;"
@@ -208,38 +214,11 @@
 	</panel>
 	<panel label="&browser;" icon="tab_browser">
 		<tabs>
-			<tab label="&alerts;">
-				<pref key="update.showSlidingNotification"
-					  label="&update_showSlidingNotification_name;"
-					  description="&update_showSlidingNotification_description;"
-					  type="Bool"
-					  default="1">
-					<bind>
-						<pref key="update_notifications.enabled" type="Bool" default="1" />
-					</bind>
-				</pref>
-				<pref key="browser.download.manager.showAlertOnComplete"
-					  label="&browser_download_manager_showAlertOnComplete_name;"
-					  description="&browser_download_manager_showAlertOnComplete_description;" />
-				<pref key="browser.download.manager.showAlertInterval"
-					  label="&browser_download_manager_showAlertInterval_name;"
-					  description="&browser_download_manager_showAlertInterval_description;"
-					  indent="indent" />
-				<separator />
-				<pref key="alerts.slideIncrement"
-					  label="&alerts_slideIncrement_name;"
-					  description="&alerts_slideIncrement_description;" />
-				<pref key="alerts.slideIncrementTime"
-					  label="&alerts_slideIncrementTime_name;"
-					  description="&alerts_slideIncrementTime_description;" />
-				<pref key="alerts.totalOpenTime"
-					  label="&alerts_totalOpenTime_name;"
-					  description="&alerts_totalOpenTime_description;" />
-			</tab>
 			<tab label="&cache;">
 				<pref key="browser.cache.check_doc_frequency"
 					  label="&browser_cache_check_doc_frequency_name;"
-					  description="&browser_cache_check_doc_frequency_description;" mode="select">
+					  description="&browser_cache_check_doc_frequency_description;"
+					  mode="select">
 					<option label="&browser_cache_check_doc_frequency_o1;">0</option>
 					<option label="&browser_cache_check_doc_frequency_o2;">1</option>
 					<option label="&browser_cache_check_doc_frequency_o3;">2</option>
@@ -283,24 +262,121 @@
 						  description="&extensions_getAddons_maxResults_description;" />
 				</group>
 			</tab>
-			<tab label="&downloadmanager;">
-				<pref key="browser.download.manager.focusWhenStarting"
-					  label="&browser_download_manager_focusWhenStarting_name;"
-					  description="&browser_download_manager_focusWhenStarting_description;" />
-				<pref key="browser.download.manager.alertOnEXEOpen"
-					  label="&browser_download_manager_alertOnEXEOpen_name;"
-					  description="&browser_download_manager_alertOnEXEOpen_description;"
-					  type="Bool"
-					  default="1" />
-				<pref key="browser.download.lastDir"
-					  label="&browser_download_lastDir_name;"
-					  description="&browser_download_lastDir_description;"
-					  type="Char" />
+			<tab label="&bookmarks;">
+				<group label="&microsummaries;" minVersion="2.0">
+					<pref key="browser.microsummary.enabled"
+						  label="&browser_microsummary_enabled_name;"
+						  description="&browser_microsummary_enabled_description;" />
+					<pref key="browser.microsummary.updateInterval"
+						  label="&browser_microsummary_updateInterval_name;"
+						  description="&browser_microsummary_updateInterval_description;"
+						  type="Int"
+						  indent="indent"
+						  wrapper="checkbox_is_enabled">
+						<wrapper>
+							<depends>browser.microsummary.enabled</depends>
+						</wrapper>
+					</pref>
+					<pref key="browser.microsummary.updateGenerators"
+						  label="&browser_microsummary_updateGenerators_name;"
+						  description="&browser_microsummary_updateGenerators_description;"
+						  wrapper="checkbox_is_enabled">
+						<wrapper>
+							<depends>browser.microsummary.enabled</depends>
+						</wrapper>
+					</pref>
+					<pref key="browser.microsummary.generatorUpdateInterval"
+						  label="&browser_microsummary_generatorUpdateInterval_name;"
+						  description="&browser_microsummary_generatorUpdateInterval_description;"
+						  type="Int"
+						  indent="indent">
+						<wrapper>
+							<depends>browser.microsummary.enabled</depends>
+							<depends>browser.microsummary.updateGenerators</depends>
+							<script name="dependencies">
+								<![CDATA[
+								return guiconfig.Options["browser.microsummary.enabled"].getValue()
+									   &&
+									   guiconfig.Options["browser.microsummary.updateGenerators"].getValue();
+								]]>
+							</script>
+						</wrapper>
+					</pref>
+				</group>
+				<group label="&misc;">
+					<pref key="browser.bookmarks.livemark_refresh_seconds"
+						  label="&browser_bookmarks_livemark_refresh_seconds_name;"
+						  description="&browser_bookmarks_livemark_refresh_seconds_description;"
+						  type="Int"
+						  default="3600" />
+					<pref key="browser.bookmarks.max_backups"
+						  label="&browser_bookmarks_max_backups_name;"
+						  description="&browser_bookmarks_max_backups_description;"
+						  minVersion="2*" />
+				</group>
 			</tab>
 			<tab label="&security_privacy;">
-				<pref key="security.dialog_enable_delay"
-					  label="&security_dialog_enable_delay_name;"
-					  description="&security_dialog_enable_delay_description;" />
+				<group label="&master_pass;">
+					<pref key="security.ask_for_password"
+						  description="&security_ask_for_password_description;"
+						  mode="radio">
+						<option label="&security_ask_for_password_o1;">0</option>
+						<option label="&security_ask_for_password_o2;">1</option>
+						<option label="&security_ask_for_password_o3;">2</option>
+					</pref>
+					<pref key="security.password_lifetime"
+						  label="&security_password_lifetime_name;"
+						  description="&security_password_lifetime_description;"
+						  indent="indent">
+						<wrapper>
+							<depends>security.ask_for_password</depends>
+							<script name="dependencies">
+								<![CDATA[
+								return (guiconfig.Options["security.ask_for_password"].getValue() == 2);
+								]]>
+							</script>
+						</wrapper>
+					</pref>
+				</group>
+				<group label="&misc;">
+					<pref key="security.dialog_enable_delay"
+						  label="&security_dialog_enable_delay_name;"
+						  description="&security_dialog_enable_delay_description;" />
+				</group>
+			</tab>
+			<tab label="&misc;">
+				<group label="&alerts;">
+					<pref key="update.showSlidingNotification"
+						  label="&update_showSlidingNotification_name;"
+						  description="&update_showSlidingNotification_description;"
+						  type="Bool"
+						  default="1">
+						<bind>
+							<pref key="update_notifications.enabled" type="Bool" default="1" />
+						</bind>
+					</pref>
+					<pref key="browser.download.manager.showAlertOnComplete"
+						  label="&browser_download_manager_showAlertOnComplete_name;"
+						  description="&browser_download_manager_showAlertOnComplete_description;" />
+					<pref key="browser.download.manager.showAlertInterval"
+						  label="&browser_download_manager_showAlertInterval_name;"
+						  description="&browser_download_manager_showAlertInterval_description;"
+						  indent="indent" />
+				</group>
+				<group label="&downloadmanager;">
+					<pref key="browser.download.manager.focusWhenStarting"
+						  label="&browser_download_manager_focusWhenStarting_name;"
+						  description="&browser_download_manager_focusWhenStarting_description;" />
+					<pref key="browser.download.manager.alertOnEXEOpen"
+						  label="&browser_download_manager_alertOnEXEOpen_name;"
+						  description="&browser_download_manager_alertOnEXEOpen_description;"
+						  type="Bool"
+						  default="1" />
+					<pref key="browser.download.lastDir"
+						  label="&browser_download_lastDir_name;"
+						  description="&browser_download_lastDir_description;"
+						  type="Char" />
+				</group>
 			</tab>
 		</tabs>
 	</panel>
@@ -358,6 +434,15 @@
 				<pref key="browser.frames.enabled"
 					  label="&browser_frames_enabled_name;"
 					  description="&browser_frames_enabled_description;" />
+				<pref key="layout.frames.force_resizability"
+					  label="&layout_frames_force_resizability_name;"
+					  description="&layout_frames_force_resizability_description;"
+					  indent="indent"
+					  wrapper="checkbox_is_enabled">
+					<wrapper>
+						<depends>browser.frames.enabled</depends>
+					</wrapper>
+				</pref>
 				<pref key="browser.blink_allowed"
 					  label="&browser_blink_allowed_name;"
 					  description="&browser_blink_allowed_description;" />
@@ -379,39 +464,84 @@
 					  mode="colorpicker"
 					  type="Char" />
 			</tab>
+			<tab label="&alerts;">
+				<pref key="alerts.slideIncrement"
+					  label="&alerts_slideIncrement_name;"
+					  description="&alerts_slideIncrement_description;" />
+				<pref key="alerts.slideIncrementTime"
+					  label="&alerts_slideIncrementTime_name;"
+					  description="&alerts_slideIncrementTime_description;" />
+				<pref key="alerts.totalOpenTime"
+					  label="&alerts_totalOpenTime_name;"
+					  description="&alerts_totalOpenTime_description;" />
+			</tab>
 		</tabs>
 	</panel>
-	<panel label="&bookmarks;" icon="tab_bookmarks">
+	<panel label="&tabs;" icon="tab_tabs">
 		<tabs>
-			<tab label="&microsummaries;" minVersion="2.0">
-				<pref key="browser.microsummary.enabled"
-					  label="&browser_microsummary_enabled_name;"
-					  description="&browser_microsummary_enabled_description;" />
-				<pref key="browser.microsummary.updateInterval"
-					  label="&browser_microsummary_updateInterval_name;"
-					  description="&browser_microsummary_updateInterval_description;"
-					  type="Int" />
-				<pref key="browser.microsummary.updateGenerators"
-					  label="&browser_microsummary_updateGenerators_name;"
-					  description="&browser_microsummary_updateGenerators_description;" />
-				<pref key="browser.microsummary.generatorUpdateInterval"
-					  label="&browser_microsummary_generatorUpdateInterval_name;"
-					  description="&browser_microsummary_generatorUpdateInterval_description;"
-					  type="Int" />
+			<tab label="&appearance;">
+				<pref key="browser.tabs.tabMinWidth" 
+					  label="&browser_tabs_tabMinWidth_name;"
+					  description="" />
+				<pref key="browser.tabs.tabMaxWidth" 
+					  label="&browser_tabs_tabMaxWidth_name;"
+					  description="" />
+				<pref key="browser.tabs.closeButtons"
+					  label="&browser_tabs_closeButtons_name;"
+					  description="&browser_tabs_closeButtons_description;"
+					  minVersion="2.0"
+					  mode="select">
+					<option label="&browser_tabs_closeButtons_o1;">0</option>
+					<option label="&browser_tabs_closeButtons_o2;">1</option>
+					<option label="&browser_tabs_closeButtons_o3;">2</option>
+					<option label="&browser_tabs_closeButtons_o4;">3</option>
+				</pref>
+				<pref key="browser.tabs.tabClipWidth"
+					  label="&browser_tabs_tabClipWidth_name;"
+					  description="&browser_tabs_tabClipWidth_description;"
+					  indent="indent">
+					<wrapper>
+						<depends>browser.tabs.closeButtons</depends>
+						<script name="dependencies">
+							<![CDATA[
+							var v = guiconfig.Options[value].getValue();
+							return v == 0 || v == 1;
+							]]>
+						</script>
+					</wrapper>
+				</pref>
 			</tab>
 			<tab label="&misc;">
-				<pref key="browser.tabs.loadBookmarksInBackground"
-					  label="&browser_tabs_loadBookmarksInBackground_name;"
-					  description="&browser_tabs_loadBookmarksInBackground_description;" />
-				<pref key="browser.bookmarks.livemark_refresh_seconds"
-					  label="&browser_bookmarks_livemark_refresh_seconds_name;"
-					  description="&browser_bookmarks_livemark_refresh_seconds_description;"
-					  type="Int"
-					  default="3600" />
-				<pref key="browser.bookmarks.max_backups"
-					  label="&browser_bookmarks_max_backups_name;"
-					  description="&browser_bookmarks_max_backups_description;"
-					  minVersion="2*" />
+				<group label="&tab_preview;">
+					<pref key="browser.allTabs.previews"
+						  label="&browser_allTabs_preview_name;"
+						  description="&browser_allTabs_preview_description;" />
+					<pref key="browser.ctrlTab.previews"
+						  label="&browser_ctrlTab_preview_name;"
+						  description="&browser_ctrlTab_preview_description;" />
+				</group>
+				<group label="&open_in_background;">
+					<pref key="browser.tabs.loadInBackground"
+						  label="&browser_tabs_loadInBackground_name;"
+						  description="" />
+					<pref key="browser.tabs.loadDivertedInBackground"
+						  label="&browser_tabs_loadDivertedInBackground_name;"
+						  description="" />
+					<pref key="browser.tabs.loadBookmarksInBackground"
+						  label="&browser_tabs_loadBookmarksInBackground_name;"
+						  description="" />
+				</group>
+				<group label="&misc;">
+					<pref key="browser.tabs.selectOwnerOnClose"
+						  label="&browser_tabs_selectOwnerOnClose_name;"
+						  description="&browser_tabs_selectOwnerOnClose_description;" />
+					<pref key="browser.tabs.insertRelatedAfterCurrent"
+						  label="&browser_tabs_insertRelatedAfterCurrent_name;"
+						  description="&browser_tabs_insertRelatedAfterCurrent_description;" />
+					<pref key="browser.search.openintab"
+						  label="&browser_search_openintab_name;"
+						  description="&browser_search_openintab_description;" />
+				</group>
 			</tab>
 		</tabs>
 	</panel>
@@ -462,6 +592,14 @@
 				  mode="file"
 				  indent="indent">
 				<filter>Apps</filter>
+				<wrapper>
+					<depends>view_source.editor.external</depends>
+					<script name="dependencies">
+						<![CDATA[
+						return guiconfig.Options["view_source.editor.external"].getValue();
+						]]>
+					</script>
+				</wrapper>
 			</pref>
 		</group>
 		<group label="&misc;">

@@ -41,3 +41,13 @@ Preference.prototype.resetPref = function() {
 		return false;
 	}
 }
+
+Preference.prototype.getDefaultValue = function() {
+	gcCore.stopObserver(this.key, "Preference");
+	var current_value = this.getPref();
+	this.resetPref();
+	var default_value = this.getPref();
+	this.setPref(current_value);
+	return default_value;
+	gcCore.startObserver(this.key, "Preference");
+}

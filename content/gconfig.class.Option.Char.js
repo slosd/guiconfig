@@ -8,8 +8,8 @@ CharOption.prototype.constructor = CharOption;
 CharOption.prototype.setValue = function(value) {
 	if(!value)
 		var value = this.getPref();
-	if(this.Wrapper.setValue) {
-		this.Wrapper.setValue.call(this, value);
+	if(this.Wrapper.scripts.setValue) {
+		this.Wrapper.scripts.setValue.call(this, value);
 	}
 	else {
 		switch(this.Options.mode) {
@@ -23,12 +23,13 @@ CharOption.prototype.setValue = function(value) {
 				break;
 		}
 	}
+	this.Elements.option.setUserData("value", value, null);
 	return value;
 }
 
 CharOption.prototype.getValue = function() {
-	if(this.Wrapper.getValue) {
-		return this.Wrapper.getValue.call(this);
+	if(this.Wrapper.scripts.getValue) {
+		return this.Wrapper.scripts.getValue.call(this);
 	}
 	else {
 		switch(this.Options.mode) {
@@ -44,6 +45,19 @@ CharOption.prototype.getValue = function() {
 				return this.Elements.option.value;
 				break;
 		}
+	}
+}
+
+CharOption.prototype.disable = function(element, value) {
+	Option.prototype.disable.call(this, element, value);
+	switch(this.Options.mode) {
+		case 'file':
+			Option.prototype.disable.call(this, this.Elements.Buttons.file, value);
+			break;
+		
+		case 'colorpicker':
+			Option.prototype.disable.call(this, this.Elements.Buttons.color, value);
+			break;
 	}
 }
 

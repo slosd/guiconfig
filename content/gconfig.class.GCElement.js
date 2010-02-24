@@ -20,9 +20,14 @@ var GCElement = function(type, options) {
 			
 			case 'textbox':
 				element = document.createElement("textbox");
-				element.setAttribute("flex", "1");
+				setAttribute("type", options.type);
+				if(options.size)
+					setAttribute("size", options.size);
+				else
+					element.setAttribute("flex", "1");
 				assignEvents({
 					'keyup': options.onchange,
+					'command': options.onchange,
 					'mouseover': options.onmouseover
 				});
 				fragment.appendChild(buildLabel(options.label));
@@ -60,8 +65,6 @@ var GCElement = function(type, options) {
 				menupopup = document.createElement("menupopup");
 				
 				for (var i = 0, l = values.length; i < l; i++) {
-					if(values[i] == null)
-						continue;
 					menuitem = document.createElement("menuitem");
 					menuitem.setAttribute("crop", "end");
 					menuitem.setAttribute("label", values[i].label);
@@ -70,6 +73,24 @@ var GCElement = function(type, options) {
 				}				
 				element.appendChild(menupopup);
 				fragment.appendChild(buildLabel(options.label));
+			break;
+			
+			case 'radiogroup':
+				var radio,
+					values = options.values;
+				
+				element = document.createElement("radiogroup");
+				assignEvents({
+					'command': options.onchange,
+					'mouseover': options.onmouseover
+				});
+				
+				for(var i = 0, l = values.length; i < l; i++) {
+					radio = document.createElement("radio");
+					radio.setAttribute("label", values[i].label);
+					radio.setAttribute("value", values[i].value);
+					element.appendChild(radio);
+				}
 			break;
 			
 			default:
@@ -97,6 +118,11 @@ var GCElement = function(type, options) {
 		label.setAttribute("control", options.control);
 		label.setAttribute("class", "optionLabel");
 		return label;
+	};
+	
+	setAttribute = function(attribute, value) {
+		if(value)
+			element.setAttribute(attribute, value);
 	};
 	
 	this.inject = function(parent) {

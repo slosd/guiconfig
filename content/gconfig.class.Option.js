@@ -10,7 +10,11 @@ Option.prototype.initialize = function(preference, options) {
 	this.Preference.Option = this;
 	this.Options = (options || new Object);	
 	this.Elements = { Buttons: new Object };
-	this.Wrapper = (guiconfig.Wrappers[options.wrapper] || new Object);
+	this.Wrapper = {
+		'scripts': new Object,
+		'dependencies': new Array,
+		'elements': null
+	};
 	
 	this.name = this.Options.label;
 	this.description = this.Options.description;
@@ -30,8 +34,8 @@ Option.prototype.onvaluechange = function() {
 }
 
 Option.prototype.getPref = function(d) {
-	if(this.Wrapper.getPref)
-		return this.Wrapper.getPref.call(this, d);
+	if(this.Wrapper.scripts.getPref)
+		return this.Wrapper.scripts.getPref.call(this, d);
 	else
 		return this.Preference.getPref(d);
 }
@@ -41,8 +45,8 @@ Option.prototype.setPref = function(value) {
 	if(!is_defined(value))
 		var value = this.getValue();
 	gcCore.stopObserver(this.Preference.key, "Preference");
-	if(this.Wrapper.setPref)
-		set_pref = this.Wrapper.setPref.call(this, value);
+	if(this.Wrapper.scripts.setPref)
+		set_pref = this.Wrapper.scripts.setPref.call(this, value);
 	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
 			this.Options.bindings[i].setPref(value);
@@ -54,12 +58,16 @@ Option.prototype.setPref = function(value) {
 
 Option.prototype.resetPref = function() {
 	this.Preference.resetPref();
-	if(this.Wrapper.resetPref)
-		this.Wrapper.resetPref.call(this);
+	if(this.Wrapper.scripts.resetPref)
+		this.Wrapper.scripts.resetPref.call(this);
 	else if(this.Options.bindings.length > 0)
 		for(var i = 0, l = this.Options.bindings.length; i < l; i++)
 			this.Options.bindings[i].resetPref();
 	return true;
+}
+
+Option.prototype.checkDependencies = function(key) {
+	this.dependencies = !(this.Wrapper.dependencies.length > 0) || (!this.Wrapper.scripts.dependencies || this.Wrapper.scripts.dependencies(key));
 }
 
 Option.prototype.build = function() {
@@ -97,6 +105,7 @@ Option.prototype.build = function() {
 		var fragment = parser.run(document.createDocumentFragment());
 		
 		this.buildRow("vbox");
+		this.Elements.option = this.Elements.prefRow;
 		this.Elements.prefRow.appendChild(fragment);
 		return false;
 	}
@@ -115,6 +124,7 @@ Option.prototype.buildRow = function(tag) {
 	this.Elements.prefRow.Option = this;
 	
 	this.Elements.prefBox = document.createElement("hbox");
+	this.Elements.prefBox.setAttribute("align", "center");
 	this.Elements.prefBox.setAttribute("flex", "2");
 	this.Elements.prefBox.addEventListener("mouseover", function() {
 		guiconfig.setDescription(this.description);
@@ -144,7 +154,7 @@ Option.prototype.addButton = function(type) {
 		case 'color':
 			this.Elements.Buttons[type].setAttribute("label", guiconfig.getLocaleString("button-custom-value", guiconfig.LocaleOptions));
 			this.Elements.Buttons[type].setAttribute("image", guiconfig.IconSet.getIcon("color"));
-			this.Elements.Buttons[type].addEventListener("click", function() {
+			this.Elements.Buttons[type].addEventListener("command", function() {
 				var input = gcCore.userInput("gui:config", guiconfig.getLocaleString("fill-in-value", guiconfig.LocaleOptions));
 				if(input != null) {
 					this.disabled = false;
@@ -156,7 +166,7 @@ Option.prototype.addButton = function(type) {
 		
 		case 'file':
 			this.Elements.Buttons[type].setAttribute("label", guiconfig.getLocaleString("button-file-select", guiconfig.LocaleOptions));
-			this.Elements.Buttons[type].addEventListener("click", function() {
+			this.Elements.Buttons[type].addEventListener("command", function() {
 				var input = gcCore.fileInput(guiconfig.getLocaleString("choose-file", guiconfig.LocaleOptions), this.Options.fileFilters);
 				if(input) {
 					this.disabled = false;
@@ -183,20 +193,37 @@ Option.prototype.hasButton = function(type) {
 	return !!this.Elements.Buttons[type];
 }
 
+Option.prototype.disable = function(element, value) {
+	if(value)
+		element.setAttribute("disabled", "true");
+	else
+		element.removeAttribute("disabled");
+	if(element.previousSibling && element.previousSibling.nodeName == "label")
+		this.disable(element.previousSibling, value);
+	element.disabled = !!value;
+}
+
 Option.prototype.__defineSetter__("disabled", function(value) {
 	this.Options.disabled = !!value;
 	this[(value ? "addButton" : "removeButton")]("edit");
-	if(value)
-		this.Elements.option.setAttribute("disabled", "true");
-	else
-		this.Elements.option.removeAttribute("disabled");
-	this.Elements.option.disabled = !!value;
+	this.disable(this.Elements.option, value);
 	if(this.Options.defaultValue)
 		this.setValue(this.Options.defaultValue);
 	if(!value)
 		this.setPref();
+	this.dependencies = this.dependencies;
 });
 
 Option.prototype.__defineGetter__("disabled", function() {
 	return this.Options.disabled;
+});
+
+Option.prototype.__defineSetter__("dependencies", function(value) {
+	this.Options.dependencies = !!value;
+	if(!this.disabled)
+		this.disable(this.Elements.option, !value);
+});
+
+Option.prototype.__defineGetter__("dependencies", function() {
+	return this.Options.dependencies;
 });

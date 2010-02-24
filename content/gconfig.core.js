@@ -18,6 +18,7 @@ gcCore.MozPrefs.QueryInterface(Components.interfaces.nsIPrefBranch2);
 gcCore.MozPrefs.addObserver("", gcCore, false);
 
 gcCore.Observers = new Object;
+
 gcCore.addObserver = function(branch, fn, bind, id) {
 	if(!this.Observers[branch]) {
 		this.Observers[branch] = new Object;
@@ -25,9 +26,11 @@ gcCore.addObserver = function(branch, fn, bind, id) {
 	this.Observers[branch][(id || "default")] = { 'fn': fn, 'bind': bind, 'observe': true };
 	return true;
 }
+
 gcCore.startObserver = function(branch, id) {
 	this.Observers[branch][(id || "default")].observe = true;
 }
+
 gcCore.stopObserver = function(branch, id) {
 	this.Observers[branch][(id || "default")].observe = false;
 }
@@ -91,6 +94,13 @@ gcCore.PrefParser = function(preferences) {
 			for(var i = 0, l = nodeNames.length; i < l; i++)
 				this.registerNode(nodeNames[i], fn, thisObj);
 		}
+		this.parseNode = function(node, container, alth) {
+			var handler = alth || Nodes[node.nodeName];
+			if(handler) {
+				handler(node, container, parse);
+			}
+			return container;
+		}
 		this.run = function(container) {
 			if(!container)
 				var container = this.document;
@@ -130,12 +140,12 @@ gcCore.IconSet.prototype.getIcons = function() {
 	this.addIcon("color", actions_path + "color.png");
 	this.addIcon("reset", actions_path + "reset.png");
 	this.addIcon("tab_accessibility", tab_icons_path + "accessibility.png");
-	this.addIcon("tab_bookmarks", tab_icons_path + "bookmarks.png");
 	this.addIcon("tab_browser", tab_icons_path + "browser.png");
 	this.addIcon("tab_developing", tab_icons_path + "developing.png");
 	this.addIcon("tab_downloads", tab_icons_path + "downloads.png");
 	this.addIcon("tab_network", tab_icons_path + "network.png");
 	this.addIcon("tab_style", tab_icons_path + "style.png");
+	this.addIcon("tab_tabs", tab_icons_path + "tabs.png");
 }
 gcCore.IconSet.prototype.addIcon = function(name, path) {
 	if(!this.icons[name])
@@ -199,7 +209,7 @@ gcCore.RegExpNonLetters = new RegExp("["+
 XULElement.prototype.setProperty = function(name, value) {
 	if(this.hasAttribute(name))
 		this[name] = value;
-	else
+	else 
 		this.setAttribute(name, value);
 }
 
