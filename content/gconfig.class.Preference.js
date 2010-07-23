@@ -8,7 +8,7 @@ var Preference = function(key, type) {
 	if(!this.type)
 		return false;
 	
-	gcCore.addObserver(this.key, this._onchange, this, "Preference");
+	PrefObserver.addObserver(this.key, this._onchange, this, "Preference");
 }
 
 Preference.prototype.onchange = function() {}
@@ -30,6 +30,7 @@ Preference.prototype.getPref = function(d) {
 }
 
 Preference.prototype.setPref = function(value) {
+	dump("set " + this.key + " - " + value + "\n");
 	return gcCore.MozPreferences["set" + this.type + "Pref"](this.key, value);
 }
 
@@ -43,11 +44,10 @@ Preference.prototype.resetPref = function() {
 }
 
 Preference.prototype.getDefaultValue = function() {
-	gcCore.stopObserver(this.key, "Preference");
-	var current_value = this.getPref();
-	this.resetPref();
-	var default_value = this.getPref();
-	this.setPref(current_value);
-	return default_value;
-	gcCore.startObserver(this.key, "Preference");
+	try {
+		return gcCore.MozDefaultPreferences["get" + this.type + "Pref"](this.key);
+	}
+	catch (e) {
+		return null;
+	}
 }

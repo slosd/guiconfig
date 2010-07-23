@@ -5,10 +5,10 @@ var BoolOption = function(preference, options) {
 BoolOption.prototype = new Option;
 BoolOption.prototype.constructor = BoolOption;
 
-BoolOption.prototype.setValue = function(value) {
-	if(!value)
+BoolOption.prototype.setValue = function(value, useNative) {
+	if(!is_defined(value))
 		var value = this.getPref();
-	if(this.Wrapper.scripts.setValue) {
+	if(this.Wrapper.scripts.setValue && !useNative) {
 		this.Wrapper.scripts.setValue.call(this, value);
 	}
 	else {
@@ -18,11 +18,12 @@ BoolOption.prototype.setValue = function(value) {
 			this.Elements.option.removeAttribute("checked");
 	}
 	this.Elements.option.setUserData("value", value, null);
+	this.onvaluechange();
 	return value;
 }
 
-BoolOption.prototype.getValue = function() {
-	if(this.Wrapper.scripts.getValue) {
+BoolOption.prototype.getValue = function(useNative) {
+	if(this.Wrapper.scripts.getValue && !useNative) {
 		return this.Wrapper.scripts.getValue.call(this);
 	}
 	else {

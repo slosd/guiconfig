@@ -1,6 +1,4 @@
 <?xml version="1.0"?>
-<!-- use this install.rdf only for testing purposes.
-     install:jar.rdf is used for releases instead -->
 
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
@@ -19,7 +17,7 @@
     </em:targetApplication>
     
     <em:name>gui:config</em:name>
-    <em:version>1.0</em:version>
+    <em:version>1.1a</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://guiconfig.freedig.org</em:homepageURL>
@@ -27,7 +25,7 @@
     
     <em:translator>Jürgen Berg (en-Us)</em:translator>
     <em:translator>Proyecto Nave (http://www.proyectonave.es) (es-ES)</em:translator>
-    <em:translator>myahoo (fr-FR)</em:translator>
+    <em:translator>myahoo (fr)</em:translator>
     <em:translator>Indigo (it-IT, incomplete)</em:translator>
     <em:translator>Wacław Jacek (pl-PL, incomplete)</em:translator>
     <em:translator>petruc (pt-BR, incomplete)</em:translator>

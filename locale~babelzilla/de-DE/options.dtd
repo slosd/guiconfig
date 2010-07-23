@@ -10,7 +10,7 @@
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Der Inhalt der Adresszeile wird markiert, wenn darauf doppelgeklickt wird.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Doppelklick markiert Inhalt">
 <!ENTITY urlbar "Adressleiste">
-<!ENTITY browser_urlbar_autoFill_description "Wenn diese Funktion aktiviert ist, wird die URL wärend der Eingabe in der Adressleiste vervollständigt.">
+<!ENTITY browser_urlbar_autoFill_description "Wenn diese Funktion aktiviert ist, wird die URL während der Eingabe in der Adressleiste vervollständigt.">
 <!ENTITY browser_urlbar_autoFill_name "Adresse beim Tippen automatisch vervollständigen">
 <!ENTITY browser_urlbar_matchOnlyTyped_description "Nur Adressen, die schon einmal in die Adressleiste eingegeben wurden, werden vervollständigt.">
 <!ENTITY browser_urlbar_matchOnlyTyped_name "Nur selbst eingetippte Adressen">
@@ -25,17 +25,17 @@
 <!ENTITY urlbar_match_name "Suche einschränken">
 <!ENTITY browser_urlbar_restrict_bookmark_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, die Sie als Lesezeichen gespeichert haben.">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Auf Lesezeichen beschränken">
-<!ENTITY browser_urlbar_restrict_history_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt,die Sie bereits besucht haben.">
+<!ENTITY browser_urlbar_restrict_history_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, die Sie bereits besucht haben.">
 <!ENTITY browser_urlbar_restrict_history_name "Auf Chronik beschränken">
-<!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt,denen Sie Schlagwörter(Tags) zugewiesen haben.">
+<!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, denen Sie Schlagwörter (Tags) zugewiesen haben.">
 <!ENTITY browser_urlbar_restrict_tag_name "Auf Schlagwörter(Tags) beschränken">
-<!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Adressen beschränkt,die Sie selbst eingegeben haben.">
+<!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Adressen beschränkt, die Sie selbst eingegeben haben.">
 <!ENTITY browser_urlbar_restrict_typed_name "Auf selbst eingegebene Adressen beschränken">
-<!ENTITY browser_urlbar_match_title_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt,deren Titel den eingegebenen Begriff enthalten.">
+<!ENTITY browser_urlbar_match_title_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, deren Titel den eingegebenen Begriff enthalten.">
 <!ENTITY browser_urlbar_match_title_name "Im Titel suchen">
-<!ENTITY browser_urlbar_match_url_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt,deren Adresse den eingegebenen Begriff enthalten.">
+<!ENTITY browser_urlbar_match_url_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, deren Adresse den eingegebenen Begriff enthalten.">
 <!ENTITY browser_urlbar_match_url_name "In der Adresse (URL) suchen">
-<!ENTITY browser_urlbar_matchBehavior_description "Das Suchverhalten definiert, ob bei der Suche auf Wortgrenzen geachtet wird, wenn nach Einträgen für die &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) gesucht wird.">
+<!ENTITY browser_urlbar_matchBehavior_description "Das Suchverhalten definiert, ob bei der Suche auf Wortgrenzen geachtet wird, wenn nach Einträgen für die &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) gesucht wird.">
 <!ENTITY browser_urlbar_matchBehavior_name "Suchverhalten:">
 <!ENTITY browser_urlbar_matchBehavior_o1 "Überall suchen">
 <!ENTITY browser_urlbar_matchBehavior_o2 "Ergebnisse, die mit Wortgrenzen übereinstimmen, zuerst zeigen">

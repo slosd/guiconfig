@@ -1,11 +1,3 @@
-content		guiconfig 		content/
-
-skin		guiconfig		classic/1.0		skin/
-
-style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
-style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcbutton.css
-
-overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
-overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul
-
-locale		guiconfig		en-US			locale~babelzilla/en-US/
+content guiconfig jar:chrome/guiconfig.jar!/content/
+locale	guiconfig	en-US		jar:chrome/guiconfig.jar!/locale/en-US/
+skin	guiconfig	classic/1.0	jar:chrome/guiconfig.jar!/skin/

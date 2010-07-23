@@ -7,11 +7,11 @@ var guiconfig = {
 	init: function() {
 		window.addEventListener("load", this.placeMenuItem, false);
 		
-		gcCore.addObserver('extensions.guiconfig.sticktopreferences', function() {
+		PrefObserver.addObserver('extensions.guiconfig.sticktopreferences', function() {
 			this.placeMenuItem();
 		}, this, "MenuItem");
 		
-		gcCore.addObserver('browser.preferences.instantApply', function() {
+		PrefObserver.addObserver('browser.preferences.instantApply', function() {
 			if(this.windowIsOpen("config"))
 				this["gcconfigwindow"].guiconfig.setButtons();
 		}, this, "Buttons");

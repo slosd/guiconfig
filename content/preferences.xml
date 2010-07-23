@@ -1,623 +1,660 @@
 <?xml version="1.0" ?>
 <!DOCTYPE preferences [
-	<!ATTLIST wrapper id ID #IMPLIED>
-	<!ENTITY % gcOptions SYSTEM "chrome://guiconfig/locale/options.dtd">
-	%gcOptions;
-	<!ENTITY % gcMain SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
-	%gcMain;
+  <!ENTITY % gcOptions SYSTEM "chrome://guiconfig/locale/options.dtd">
+  %gcOptions;
+  <!ENTITY % gcMain SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
+  %gcMain;
 ]>
 <preferences>
-	<wrapper id="checkbox_is_enabled">
-		<script name="dependencies">
-			<![CDATA[
-			return guiconfig.Options[value].getValue();
-			]]>
-		</script>
-	</wrapper>
-	<panel label="&accessibility;" icon="tab_accessibility">
-		<tabs>
-			<tab label="&mouseclick;">
-				<group label="&middleclick;">
-					<pref key="middlemouse.contentLoadURL"
-						  label="&middlemouse_contentLoadURL_name;"
-						  description="&middlemouse_contentLoadURL_description;"  />
-					<pref key="middlemouse.paste"
-						  label="&middlemouse_paste_name;"
-						  description="&middlemouse_paste_description;" />
-				</group>
-				<group label="&urlbar;">
-					<pref key="browser.urlbar.clickSelectsAll"
-						  label="&browser_urlbar_clickSelectsAll_name;"
-						  description="&browser_urlbar_clickSelectsAll_description;" />
-					<pref key="browser.urlbar.doubleClickSelectsAll"
-						  label="&browser_urlbar_doubleClickSelectsAll_name;"
-						  description="&browser_urlbar_doubleClickSelectsAll_description;" />
-				</group>
-			</tab>
-			<tab label="&urlbar;">
-				<pref key="browser.urlbar.autoFill"
-					  label="&browser_urlbar_autoFill_name;"
-					  description="&browser_urlbar_autoFill_description;" />
-				<pref key="browser.urlbar.matchOnlyTyped"
-					  maxVersion="3.0.*"
-					  label="&browser_urlbar_matchOnlyTyped_name;"
-					  description="&browser_urlbar_matchOnlyTyped_description;"
-					  indent="indent" />
-				<separator />
-				
-				<pref key="browser.fixup.alternate.enabled"
-					  label="&browser_fixup_alternate_enabled_name;"
-					  description="&browser_fixup_alternate_enabled_description;" />
-				<pref key="browser.fixup.alternate.prefix"
-					  label="&browser_fixup_alternate_prefix_name;"
-					  description="&browser_fixup_alternate_prefix_description;"
-					  indent="indent"
-					  wrapper="checkbox_is_enabled">
-					<wrapper>
-						<depends>browser.fixup.alternate.enabled</depends>
-					</wrapper>
-				</pref>
-				<pref key="browser.fixup.alternate.suffix"
-					  label="&browser_fixup_alternate_suffix_name;"
-					  description="&browser_fixup_alternate_suffix_description;"
-					  indent="indent"
-					  wrapper="checkbox_is_enabled">
-					<wrapper>
-						<depends>browser.fixup.alternate.enabled</depends>
-					</wrapper>
-				</pref>
-			</tab>
-			<tab label="&awesomebar;" minVersion="3.0">
-				<pref key="browser.urlbar.default.behavior"
-					  minVersion="3.5">
-					<wrapper>
-						<script name="setValue">
-							<![CDATA[
-							var bitmap = this.Preference.getPref(0),
-								checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
-							for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
-								checkbox = checkboxes[i];
-								checkbox.getUserData('element').setProperty('checked', !!(parseInt(bitmap) & parseInt(checkbox.getAttribute('value'))));
-							}
-							]]>
-						</script>
-						<script name="getValue">
-							<![CDATA[
-							var bitmap = 0,
-								checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
-							for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
-								checkbox = checkboxes[i];
-								if(checkbox.getUserData('element').checked)
-									bitmap += parseInt(checkbox.getAttribute('value'));
-							}
-							return bitmap;
-							]]>
-						</script>
-						<elements>
-							<group label="&urlbar_restrict_name;">
-								<checkbox label="&browser_urlbar_restrict_typed_name;"
-										  description="&browser_urlbar_restrict_typed_description;"
-										  value="32" />
-								<checkbox label="&browser_urlbar_restrict_history_name;"
-										  description="&browser_urlbar_restrict_history_description;"
-										  value="1" />
-								<checkbox label="&browser_urlbar_restrict_bookmark_name;"
-										  description="&browser_urlbar_restrict_bookmark_description;"
-										  value="2" />
-								<checkbox label="&browser_urlbar_restrict_tag_name;"
-										  description="&browser_urlbar_restrict_tag_description;"
-										  value="4" />
-							</group>
-							<group label="&urlbar_match_name;">
-								<checkbox label="&browser_urlbar_match_title_name;"
-										  description="&browser_urlbar_match_title_description;"
-										  value="8" />
-								<checkbox label="&browser_urlbar_match_url_name;"
-										  description="&browser_urlbar_match_url_description;"
-										  value="16" />
-							</group>
-						</elements>
-					</wrapper>
-				</pref>
-				<pref key="browser.urlbar.maxRichResults"
-					  label="&browser_urlbar_maxRichResults_name;"
-					  description="&browser_urlbar_maxRichResults_description;" />
-				<pref key="browser.urlbar.matchBehavior"
-					  label="&browser_urlbar_matchBehavior_name;"
-					  description="&browser_urlbar_matchBehavior_description;" mode="select">
-					<option label="&browser_urlbar_matchBehavior_o1;">0</option>
-					<option label="&browser_urlbar_matchBehavior_o2;">1</option>
-					<option label="&browser_urlbar_matchBehavior_o3;">2</option>
-					<option label="&browser_urlbar_matchBehavior_o4;" minVersion="3.0">3</option>
-				</pref>
-			</tab>
-			<tab label="&websites;">
-				<group label="&accessibility_typeaheadfind_label;">		
-					<pref key="accessibility.typeaheadfind.casesensitive"
-						  label="&accessibility_typeaheadfind_casesensitive_name;"
-						  description="&accessibility_typeaheadfind_casesensitive_description;"
-						  minVersion="3.0"
-						  mode="select">
-						<option label="&accessibility_typeaheadfind_casesensitive_o1;">-1</option>
-						<option label="&accessibility_typeaheadfind_casesensitive_o2;">0</option>
-						<option label="&accessibility_typeaheadfind_casesensitive_o3;">1</option>
-					</pref>
-					<pref key="accessibility.typeaheadfind.timeout"
-						  label="&accessibility_typeaheadfind_timeout_name;"
-						  description="&accessibility_typeaheadfind_timeout_description;" />
-				</group>
-				<group label="&misc;">
-					<pref key="signon.prefillForms"
-						  label="&signon_prefillForms_name;"
-						  description="&signon_prefillForms_description;"
-						  type="Bool"
-						  default="1">
-						<bind>
-							<pref key="signon.autofillForms" type="Bool" />
-						</bind>
-					</pref>
-					<pref key="accessibility.tabfocus"
-						  label="&accessibility_tabfocus_name;"
-						  description="&accessibility_tabfocus_description;"
-						  mode="select">
-						<option label="&accessibility_tabfocus_o1;">1</option>
-						<option label="&accessibility_tabfocus_o2;">2</option>
-						<option label="&accessibility_tabfocus_o3;">3</option>
-						<option label="&accessibility_tabfocus_o4;">4</option>
-						<option label="&accessibility_tabfocus_o5;">7</option>
-						<option label="&accessibility_tabfocus_o6;">6</option>
-					</pref>
-					<pref key="browser.backspace_action"
-						  label="&browser_backspace_action_name;"
-						  description="&browser_backspace_action_description;"
-						  mode="select">
-						<option label="&browser_backspace_action_o1;">0</option>
-						<option label="&browser_backspace_action_o2;">1</option>
-						<option label="&browser_backspace_action_o3;">2</option>
-					</pref>
-					<pref key="layout.spellcheckDefault"
-						  label="&layout_spellcheckDefault_name;"
-						  description="&layout_spellcheckDefault_description;"
-						  mode="select">
-						<option label="&layout_spellcheckDefault_o1;">0</option>
-						<option label="&layout_spellcheckDefault_o2;">1</option>
-						<option label="&layout_spellcheckDefault_o3;">2</option>
-					</pref>
-				</group>
-			</tab>
-			<tab label="&misc;">
-				<pref key="browser.sessionstore.max_windows_undo"
-					  label="&browser_sessionstore_max_windows_undo_name;"
-					  description="&browser_sessionstore_max_windows_undo_description;"
-					  minVersion="3.5b4" />
-				<!--<pref key="browser.tabs.closeWindowWithLastTab"
-					  label="&browser_tabs_closeWindowWithLastTab_name;"
-					  description="&browser_tabs_closeWindowWithLastTab_description;"
-					  type="Bool"
-					  minVersion="3.5"
-					  default="0" />-->
-				<pref key="browser.preferences.instantApply"
-					  label="&browser_preferences_instantApply_name;"
-					  description="&browser_preferences_instantApply_description;"
-					  minVersion="2.0" />
-				<pref key="browser.popups.showPopupBlocker"
-					  label="&browser_popups_showPopupBlocker_name;"
-					  description="&browser_popups_showPopupBlocker_description;" />
-				<pref key="accessibility.warn_on_browsewithcaret"
-					  label="&accessibility_warn_on_browsewithcaret_name;"
-					  description="&accessibility_warn_on_browsewithcaret_description;" />
-				<pref key="accessibility.accesskeycausesactivation"
-					  label="&accessibility_accesskeycausesactivation_name;"
-					  description="&accessibility_accesskeycausesactivation_description;" />
-			</tab>
-		</tabs>
-	</panel>
-	<panel label="&browser;" icon="tab_browser">
-		<tabs>
-			<tab label="&cache;">
-				<pref key="browser.cache.check_doc_frequency"
-					  label="&browser_cache_check_doc_frequency_name;"
-					  description="&browser_cache_check_doc_frequency_description;"
-					  mode="select">
-					<option label="&browser_cache_check_doc_frequency_o1;">0</option>
-					<option label="&browser_cache_check_doc_frequency_o2;">1</option>
-					<option label="&browser_cache_check_doc_frequency_o3;">2</option>
-					<option label="&browser_cache_check_doc_frequency_o4;">3</option>
-				</pref>
-				<group label="&cache_disk;">
-					<pref key="browser.cache.disk.enable"
-						  label="&browser_cache_disk_enable_name;"
-						  description="&browser_cache_disk_enable_description;" />
-					<pref key="browser.cache.disk.capacity"
-						  label="&browser_cache_disk_capacity_name;"
-						  description="&browser_cache_disk_capacity_description;" />
-					<pref key="browser.cache.disk_cache_ssl"
-						  label="&browser_cache_disk_cache_ssl_name;"
-						  description="&browser_cache_disk_cache_ssl_description;" />
-				</group>
-				<group label="&cache_memory;">
-					<pref key="browser.cache.memory.enable"
-						  label="&browser_cache_memory_enable_name;"
-						  description="&browser_cache_memory_enable_description;" />
-					<pref key="browser.cache.memory.capacity"
-						  label="&browser_cache_memory_capacity_name;"
-						  description="&browser_cache_memory_capacity_description;"
-						  type="Int"
-						  default="-1" />
-				</group>
-			</tab>
-			<tab label="&extensions;">
-				<pref key="extensions.checkCompatibility"
-					  label="&extensions_checkCompatibility_name;"
-					  description="&extensions_checkCompatibility_description;"
-					  minVersion="2.0b1"
-					  type="Bool"
-					  default="1" />
-				<group label="&getaddons;" minVersion="3.0">
-					<pref key="extensions.getAddons.showPane"
-						  label="&extensions_getAddons_showPane_name;"
-						  description="&extensions_getAddons_showPane_description;" />
-					<pref key="extensions.getAddons.maxResults"
-						  label="&extensions_getAddons_maxResults_name;"
-						  description="&extensions_getAddons_maxResults_description;" />
-				</group>
-			</tab>
-			<tab label="&bookmarks;">
-				<group label="&microsummaries;" minVersion="2.0">
-					<pref key="browser.microsummary.enabled"
-						  label="&browser_microsummary_enabled_name;"
-						  description="&browser_microsummary_enabled_description;" />
-					<pref key="browser.microsummary.updateInterval"
-						  label="&browser_microsummary_updateInterval_name;"
-						  description="&browser_microsummary_updateInterval_description;"
-						  type="Int"
-						  indent="indent"
-						  wrapper="checkbox_is_enabled">
-						<wrapper>
-							<depends>browser.microsummary.enabled</depends>
-						</wrapper>
-					</pref>
-					<pref key="browser.microsummary.updateGenerators"
-						  label="&browser_microsummary_updateGenerators_name;"
-						  description="&browser_microsummary_updateGenerators_description;"
-						  wrapper="checkbox_is_enabled">
-						<wrapper>
-							<depends>browser.microsummary.enabled</depends>
-						</wrapper>
-					</pref>
-					<pref key="browser.microsummary.generatorUpdateInterval"
-						  label="&browser_microsummary_generatorUpdateInterval_name;"
-						  description="&browser_microsummary_generatorUpdateInterval_description;"
-						  type="Int"
-						  indent="indent">
-						<wrapper>
-							<depends>browser.microsummary.enabled</depends>
-							<depends>browser.microsummary.updateGenerators</depends>
-							<script name="dependencies">
-								<![CDATA[
-								return guiconfig.Options["browser.microsummary.enabled"].getValue()
-									   &&
-									   guiconfig.Options["browser.microsummary.updateGenerators"].getValue();
-								]]>
-							</script>
-						</wrapper>
-					</pref>
-				</group>
-				<group label="&misc;">
-					<pref key="browser.bookmarks.livemark_refresh_seconds"
-						  label="&browser_bookmarks_livemark_refresh_seconds_name;"
-						  description="&browser_bookmarks_livemark_refresh_seconds_description;"
-						  type="Int"
-						  default="3600" />
-					<pref key="browser.bookmarks.max_backups"
-						  label="&browser_bookmarks_max_backups_name;"
-						  description="&browser_bookmarks_max_backups_description;"
-						  minVersion="2*" />
-				</group>
-			</tab>
-			<tab label="&security_privacy;">
-				<group label="&master_pass;">
-					<pref key="security.ask_for_password"
-						  description="&security_ask_for_password_description;"
-						  mode="radio">
-						<option label="&security_ask_for_password_o1;">0</option>
-						<option label="&security_ask_for_password_o2;">1</option>
-						<option label="&security_ask_for_password_o3;">2</option>
-					</pref>
-					<pref key="security.password_lifetime"
-						  label="&security_password_lifetime_name;"
-						  description="&security_password_lifetime_description;"
-						  indent="indent">
-						<wrapper>
-							<depends>security.ask_for_password</depends>
-							<script name="dependencies">
-								<![CDATA[
-								return (guiconfig.Options["security.ask_for_password"].getValue() == 2);
-								]]>
-							</script>
-						</wrapper>
-					</pref>
-				</group>
-				<group label="&misc;">
-					<pref key="security.dialog_enable_delay"
-						  label="&security_dialog_enable_delay_name;"
-						  description="&security_dialog_enable_delay_description;" />
-				</group>
-			</tab>
-			<tab label="&misc;">
-				<group label="&alerts;">
-					<pref key="update.showSlidingNotification"
-						  label="&update_showSlidingNotification_name;"
-						  description="&update_showSlidingNotification_description;"
-						  type="Bool"
-						  default="1">
-						<bind>
-							<pref key="update_notifications.enabled" type="Bool" default="1" />
-						</bind>
-					</pref>
-					<pref key="browser.download.manager.showAlertOnComplete"
-						  label="&browser_download_manager_showAlertOnComplete_name;"
-						  description="&browser_download_manager_showAlertOnComplete_description;" />
-					<pref key="browser.download.manager.showAlertInterval"
-						  label="&browser_download_manager_showAlertInterval_name;"
-						  description="&browser_download_manager_showAlertInterval_description;"
-						  indent="indent" />
-				</group>
-				<group label="&downloadmanager;">
-					<pref key="browser.download.manager.focusWhenStarting"
-						  label="&browser_download_manager_focusWhenStarting_name;"
-						  description="&browser_download_manager_focusWhenStarting_description;" />
-					<pref key="browser.download.manager.alertOnEXEOpen"
-						  label="&browser_download_manager_alertOnEXEOpen_name;"
-						  description="&browser_download_manager_alertOnEXEOpen_description;"
-						  type="Bool"
-						  default="1" />
-					<pref key="browser.download.lastDir"
-						  label="&browser_download_lastDir_name;"
-						  description="&browser_download_lastDir_description;"
-						  type="Char" />
-				</group>
-			</tab>
-		</tabs>
-	</panel>
-	<panel label="&style;" icon="tab_style">
-		<tabs>
-			<tab label="&browser_style;">
-				<pref key="browser.identity.ssl_domain_display"
-					  label="&browser_identity_ssl_domain_display_name;"
-					  description="&browser_identity_ssl_domain_display_description;"
-					  minVersion="3.0"
-					  mode="select">
-					<option label="&browser_identity_ssl_domain_display_o1;">0</option>
-					<option label="&browser_identity_ssl_domain_display_o2;">1</option>
-					<option label="&browser_identity_ssl_domain_display_o3;">2</option>
-				</pref>
-				<pref key="browser.chrome.favicons"
-					  label="&browser_chrome_favicons_name;"
-					  description="&browser_chrome_favicons_description;">
-					<bind>
-						<pref key="browser.chrome.site_icons" />
-					</bind>
-				</pref>
-				<pref key="browser.chrome.toolbar_tips"
-					  label="&browser_chrome_toolbar_tips_name;" 
-					  description="&browser_chrome_toolbar_tips_description;" />
-				<pref key="browser.urlbar.hideGoButton"
-					  label="&browser_urlbar_hideGoButton_name;"
-					  description="&browser_urlbar_hideGoButton_description;"
-					  minVersion="2.0"
-					  maxVersion="2.*"
-					  type="Bool" />
-				<pref key="browser.preferences.animateFadeIn"
-					  label="&browser_preferences_animateFadeIn_name;"
-					  description="&browser_preferences_animateFadeIn_description;" />
-			</tab>
-			<tab label="&websites;">
-				<group label="&rendering;">
-					<pref key="nglayout.initialpaint.delay"
-						  label="&nglayout_initialpaint_delay_name;"
-						  description="&nglayout_initialpaint_delay_description;"
-						  type="Int"
-						  default="250" />
-					<pref key="content.notify.interval"
-						  label="&content_notify_interval_name;"
-						  description="&content_notify_interval_description;"
-						  type="Int"
-						  default="120000" />
-				</group>
-				<pref key="browser.display.show_image_placeholders"
-					  label="&browser_display_show_image_placeholders_name;"
-					  description="&browser_display_show_image_placeholders_description;" />
-				<pref key="browser.enable_automatic_image_resizing"
-					  label="&browser_enable_automatic_image_resizing_name;"
-					  description="&browser_enable_automatic_image_resizing_description;" />
-				<pref key="browser.frames.enabled"
-					  label="&browser_frames_enabled_name;"
-					  description="&browser_frames_enabled_description;" />
-				<pref key="layout.frames.force_resizability"
-					  label="&layout_frames_force_resizability_name;"
-					  description="&layout_frames_force_resizability_description;"
-					  indent="indent"
-					  wrapper="checkbox_is_enabled">
-					<wrapper>
-						<depends>browser.frames.enabled</depends>
-					</wrapper>
-				</pref>
-				<pref key="browser.blink_allowed"
-					  label="&browser_blink_allowed_name;"
-					  description="&browser_blink_allowed_description;" />
-			</tab>
-			<tab label="&text_select;">
-				<pref key="ui.textSelectBackground"
-					  label="&ui_textSelectBackground_name;"
-					  description="&ui_textSelectBackground_description;"
-					  mode="colorpicker"
-					  type="Char" />
-				<pref key="ui.textSelectForeground"
-					  label="&ui_textSelectForeground_name;"
-					  description="&ui_textSelectForeground_description;"
-					  mode="colorpicker"
-					  type="Char" />
-				<pref key="ui.textSelectBackgroundAttention"
-					  label="&ui_textSelectBackgroundAttention_name;"
-					  description="&ui_textSelectBackgroundAttention_description;"
-					  mode="colorpicker"
-					  type="Char" />
-			</tab>
-			<tab label="&alerts;">
-				<pref key="alerts.slideIncrement"
-					  label="&alerts_slideIncrement_name;"
-					  description="&alerts_slideIncrement_description;" />
-				<pref key="alerts.slideIncrementTime"
-					  label="&alerts_slideIncrementTime_name;"
-					  description="&alerts_slideIncrementTime_description;" />
-				<pref key="alerts.totalOpenTime"
-					  label="&alerts_totalOpenTime_name;"
-					  description="&alerts_totalOpenTime_description;" />
-			</tab>
-		</tabs>
-	</panel>
-	<panel label="&tabs;" icon="tab_tabs">
-		<tabs>
-			<tab label="&appearance;">
-				<pref key="browser.tabs.tabMinWidth" 
-					  label="&browser_tabs_tabMinWidth_name;"
-					  description="" />
-				<pref key="browser.tabs.tabMaxWidth" 
-					  label="&browser_tabs_tabMaxWidth_name;"
-					  description="" />
-				<pref key="browser.tabs.closeButtons"
-					  label="&browser_tabs_closeButtons_name;"
-					  description="&browser_tabs_closeButtons_description;"
-					  minVersion="2.0"
-					  mode="select">
-					<option label="&browser_tabs_closeButtons_o1;">0</option>
-					<option label="&browser_tabs_closeButtons_o2;">1</option>
-					<option label="&browser_tabs_closeButtons_o3;">2</option>
-					<option label="&browser_tabs_closeButtons_o4;">3</option>
-				</pref>
-				<pref key="browser.tabs.tabClipWidth"
-					  label="&browser_tabs_tabClipWidth_name;"
-					  description="&browser_tabs_tabClipWidth_description;"
-					  indent="indent">
-					<wrapper>
-						<depends>browser.tabs.closeButtons</depends>
-						<script name="dependencies">
-							<![CDATA[
-							var v = guiconfig.Options[value].getValue();
-							return v == 0 || v == 1;
-							]]>
-						</script>
-					</wrapper>
-				</pref>
-			</tab>
-			<tab label="&misc;">
-				<group label="&tab_preview;">
-					<pref key="browser.allTabs.previews"
-						  label="&browser_allTabs_preview_name;"
-						  description="&browser_allTabs_preview_description;" />
-					<pref key="browser.ctrlTab.previews"
-						  label="&browser_ctrlTab_preview_name;"
-						  description="&browser_ctrlTab_preview_description;" />
-				</group>
-				<group label="&open_in_background;">
-					<pref key="browser.tabs.loadInBackground"
-						  label="&browser_tabs_loadInBackground_name;"
-						  description="" />
-					<pref key="browser.tabs.loadDivertedInBackground"
-						  label="&browser_tabs_loadDivertedInBackground_name;"
-						  description="" />
-					<pref key="browser.tabs.loadBookmarksInBackground"
-						  label="&browser_tabs_loadBookmarksInBackground_name;"
-						  description="" />
-				</group>
-				<group label="&misc;">
-					<pref key="browser.tabs.selectOwnerOnClose"
-						  label="&browser_tabs_selectOwnerOnClose_name;"
-						  description="&browser_tabs_selectOwnerOnClose_description;" />
-					<pref key="browser.tabs.insertRelatedAfterCurrent"
-						  label="&browser_tabs_insertRelatedAfterCurrent_name;"
-						  description="&browser_tabs_insertRelatedAfterCurrent_description;" />
-					<pref key="browser.search.openintab"
-						  label="&browser_search_openintab_name;"
-						  description="&browser_search_openintab_description;" />
-				</group>
-			</tab>
-		</tabs>
-	</panel>
-	<panel label="&network;" icon="tab_network">
-		<tabs>
-			<tab label="&connections;">
-				<group label="&connections;">
-					<pref key="network.http.max-connections"
-						  label="&network_http_max-connections_name;"
-						  description="&network_http_max-connections_description;" />
-					<pref key="network.http.max-connections-per-server"
-						  label="&network_http_max-connections-per-server_name;"
-						  description="&network_http_max-connections-per-server_description;" />
-				</group>
-				<group label="&keep-alive_connections;">
-					<pref key="network.http.keep-alive"
-						  label="&network_http_keep-alive_name;"
-						  description="&network_http_keep-alive_description;" />
-					<pref key="network.http.max-persistent-connections-per-server"
-						  label="&network_http_max-persistent-connections-per-server_name;"
-						  description="&network_http_max-persistent-connections-per-server_description;" />
-					<pref key="network.http.max-persistent-connections-per-proxy"
-						  label="&network_http_max-persistent-connections-per-proxy_name;"
-						  description="&network_http_max-persistent-connections-per-proxy_description;" />
-				</group>
-			</tab>
-			<tab label="&pipelining;">
-				<pref key="network.http.pipelining"
-					  label="&network_http_pipelining_name;"
-					  description="&network_http_pipelining_description;" />
-				<pref key="network.http.proxy.pipelining"
-					  label="&network_http_proxy_pipelining_name;"
-					  description="&network_http_proxy_pipelining_description;" />
-				<pref key="network.http.pipelining.maxrequests"
-					  label="&network_http_pipelining_maxrequests_name;"
-					  description="&network_http_pipelining_maxrequests_description;" />
-			</tab>
-		</tabs>
-	</panel>
-	<panel label="&developing;" icon="tab_developing">
-		<group label="&viewsource;">
-			<pref key="view_source.editor.external"
-				  label="&view_source_editor_external_name;"
-				  description="&view_source_editor_external_description;" />
-			<pref key="view_source.editor.path"
-				  label="&view_source_editor_path_name;"
-				  description="&view_source_editor_path_description;"
-				  mode="file"
-				  indent="indent">
-				<filter>Apps</filter>
-				<wrapper>
-					<depends>view_source.editor.external</depends>
-					<script name="dependencies">
-						<![CDATA[
-						return guiconfig.Options["view_source.editor.external"].getValue();
-						]]>
-					</script>
-				</wrapper>
-			</pref>
-		</group>
-		<group label="&misc;">
-			<pref key="browser.dom.window.dump.enabled"
-				  label="&browser_dom_window_dump_enabled_name;" 
-				  description="&browser_dom_window_dump_enabled_description;"
-				  type="Bool" />
-			<pref key="javascript.options.strict"
-				  label="&javascript_options_strict_name;"
-				  description="&javascript_options_strict_description;"
-				  type="Bool" />
-			<pref key="javascript.options.showInConsole"
-				  label="&javascript_options_showInConsole_name;"
-				  description="&javascript_options_showInConsole_description;" />
-			<pref key="nglayout.debug.disable_xul_cache"
-				  label="&nglayout_debug_disable_xul_cache_name;"
-				  description="&nglayout_debug_disable_xul_cache_description;"
-				  type="Bool" />
-		</group>
-	</panel>
+  <wrapper id="checkbox_is_enabled">
+    <script name="dependencies">
+      <![CDATA[
+      return guiconfig.Options[value].getValue();
+      ]]>
+    </script>
+  </wrapper>
+  <panel label="&accessibility;" icon="tab_accessibility">
+    <tabs>
+      <tab label="&mouseclick;">
+        <group label="&middleclick;">
+          <pref key="middlemouse.contentLoadURL"
+                label="&middlemouse_contentLoadURL_name;"
+                description="&middlemouse_contentLoadURL_description;"  />
+          <pref key="middlemouse.paste"
+                label="&middlemouse_paste_name;"
+                description="&middlemouse_paste_description;" />
+        </group>
+        <group label="&urlbar;">
+          <pref key="browser.urlbar.clickSelectsAll"
+                label="&browser_urlbar_clickSelectsAll_name;"
+                description="&browser_urlbar_clickSelectsAll_description;" />
+          <pref key="browser.urlbar.doubleClickSelectsAll"
+                label="&browser_urlbar_doubleClickSelectsAll_name;"
+                description="&browser_urlbar_doubleClickSelectsAll_description;" />
+        </group>
+      </tab>
+      <tab label="&urlbar;">
+        <pref key="browser.urlbar.autoFill"
+              label="&browser_urlbar_autoFill_name;"
+              description="&browser_urlbar_autoFill_description;" />
+        <pref key="browser.urlbar.matchOnlyTyped"
+              maxVersion="3.0.*"
+              label="&browser_urlbar_matchOnlyTyped_name;"
+              description="&browser_urlbar_matchOnlyTyped_description;"
+              indent="indent" />
+        <separator />
+        
+        <pref key="browser.fixup.alternate.enabled"
+              label="&browser_fixup_alternate_enabled_name;"
+              description="&browser_fixup_alternate_enabled_description;" />
+        <pref key="browser.fixup.alternate.prefix"
+              label="&browser_fixup_alternate_prefix_name;"
+              description="&browser_fixup_alternate_prefix_description;"
+              indent="indent"
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <depends>browser.fixup.alternate.enabled</depends>
+          </wrapper>
+        </pref>
+        <pref key="browser.fixup.alternate.suffix"
+              label="&browser_fixup_alternate_suffix_name;"
+              description="&browser_fixup_alternate_suffix_description;"
+              indent="indent"
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <depends>browser.fixup.alternate.enabled</depends>
+          </wrapper>
+        </pref>
+      </tab>
+      <tab label="&awesomebar;" minVersion="3.0">
+        <pref key="browser.urlbar.default.behavior"
+              minVersion="3.5">
+          <wrapper>
+            <script name="setValue">
+              <![CDATA[
+              var bitmap = this.Preference.getPref(0),
+                checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
+              for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
+                checkbox = checkboxes[i];
+                checkbox.getUserData('element').setProperty('checked', !!(parseInt(bitmap) & parseInt(checkbox.getAttribute('value'))));
+              }
+              ]]>
+            </script>
+            <script name="getValue">
+              <![CDATA[
+              var bitmap = 0,
+                checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
+              for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
+                checkbox = checkboxes[i];
+                if(checkbox.getUserData('element').checked)
+                  bitmap += parseInt(checkbox.getAttribute('value'));
+              }
+              return bitmap;
+              ]]>
+            </script>
+            <elements>
+              <group label="&urlbar_restrict_name;">
+                <checkbox label="&browser_urlbar_restrict_typed_name;"
+                          description="&browser_urlbar_restrict_typed_description;"
+                          value="32" />
+                <checkbox label="&browser_urlbar_restrict_history_name;"
+                          description="&browser_urlbar_restrict_history_description;"
+                          value="1" />
+                <checkbox label="&browser_urlbar_restrict_bookmark_name;"
+                        description="&browser_urlbar_restrict_bookmark_description;"
+                        value="2" />
+                <checkbox label="&browser_urlbar_restrict_tag_name;"
+                        description="&browser_urlbar_restrict_tag_description;"
+                        value="4" />
+              </group>
+              <group label="&urlbar_match_name;">
+                <checkbox label="&browser_urlbar_match_title_name;"
+                        description="&browser_urlbar_match_title_description;"
+                        value="8" />
+                <checkbox label="&browser_urlbar_match_url_name;"
+                        description="&browser_urlbar_match_url_description;"
+                        value="16" />
+              </group>
+            </elements>
+          </wrapper>
+        </pref>
+        <pref key="browser.urlbar.maxRichResults"
+              label="&browser_urlbar_maxRichResults_name;"
+              description="&browser_urlbar_maxRichResults_description;" />
+        <pref key="browser.urlbar.matchBehavior"
+              label="&browser_urlbar_matchBehavior_name;"
+              description="&browser_urlbar_matchBehavior_description;" mode="select">
+          <option label="&browser_urlbar_matchBehavior_o1;">0</option>
+          <option label="&browser_urlbar_matchBehavior_o2;">1</option>
+          <option label="&browser_urlbar_matchBehavior_o3;">2</option>
+          <option label="&browser_urlbar_matchBehavior_o4;" minVersion="3.0">3</option>
+        </pref>
+      </tab>
+      <tab label="&websites;">
+        <group label="&accessibility_typeaheadfind_label;">   
+          <pref key="accessibility.typeaheadfind.casesensitive"
+                label="&accessibility_typeaheadfind_casesensitive_name;"
+                description="&accessibility_typeaheadfind_casesensitive_description;"
+                minVersion="3.0"
+                mode="select">
+            <option label="&accessibility_typeaheadfind_casesensitive_o1;">-1</option>
+            <option label="&accessibility_typeaheadfind_casesensitive_o2;">0</option>
+            <option label="&accessibility_typeaheadfind_casesensitive_o3;">1</option>
+          </pref>
+          <pref key="accessibility.typeaheadfind.timeout"
+                label="&accessibility_typeaheadfind_timeout_name;"
+                description="&accessibility_typeaheadfind_timeout_description;" />
+        </group>
+        <group label="&misc;">
+          <pref key="signon.prefillForms"
+                label="&signon_prefillForms_name;"
+                description="&signon_prefillForms_description;"
+                type="Bool"
+                default="1">
+            <bind>
+              <pref key="signon.autofillForms" type="Bool" />
+            </bind>
+          </pref>
+          <pref key="accessibility.tabfocus"
+                label="&accessibility_tabfocus_name;"
+                description="&accessibility_tabfocus_description;"
+                mode="select">
+            <option label="&accessibility_tabfocus_o1;">1</option>
+            <option label="&accessibility_tabfocus_o2;">2</option>
+            <option label="&accessibility_tabfocus_o3;">3</option>
+            <option label="&accessibility_tabfocus_o4;">4</option>
+            <option label="&accessibility_tabfocus_o5;">7</option>
+            <option label="&accessibility_tabfocus_o6;">6</option>
+          </pref>
+          <pref key="browser.backspace_action"
+                label="&browser_backspace_action_name;"
+                description="&browser_backspace_action_description;"
+                mode="select">
+            <option label="&browser_backspace_action_o1;">0</option>
+            <option label="&browser_backspace_action_o2;">1</option>
+            <option label="&browser_backspace_action_o3;">2</option>
+          </pref>
+          <pref key="layout.spellcheckDefault"
+                label="&layout_spellcheckDefault_name;"
+                description="&layout_spellcheckDefault_description;"
+                mode="select">
+            <option label="&layout_spellcheckDefault_o1;">0</option>
+            <option label="&layout_spellcheckDefault_o2;">1</option>
+            <option label="&layout_spellcheckDefault_o3;">2</option>
+          </pref>
+        </group>
+      </tab>
+      <!-- Session Restore for FF 3.0 -->
+      <tab label="&session_restore;" maxVersion="3.0.*">
+        
+      </tab>
+      <!-- Session Restore for FF 3.5 and higher -->
+      <tab label="&session_restore;" minVersion="3.5">
+        <pref key="guiconfig.pseudo.sessionstore.enable"
+              label="&guiconfig_pseudo_sessionstore_enable_name;"
+              description="&guiconfig_pseudo_sessionstore_enable_description;"
+              type="Bool"
+              default="true"
+              forceCreate="forceCreate">
+          <wrapper>
+            <script name="setPref">
+              <![CDATA[
+              var tabs = guiconfig.Options["browser.sessionstore.max_tabs_undo"];
+              var win = guiconfig.Options["browser.sessionstore.max_windows_undo"];
+              if(!value) {
+                tabs.setValue(0);
+                win.setValue(0);
+              }
+              ]]>
+            </script>
+          </wrapper>
+        </pref>
+        <pref key="browser.sessionstore.max_tabs_undo"
+              label="&browser_sessionstore_max_tabs_undo_name;"
+              description="browser_sessionstore_max_tabs_undo_description;"
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <depends>guiconfig.pseudo.sessionstore.enable</depends>
+          </wrapper>
+        </pref>
+        <pref key="browser.sessionstore.max_windows_undo"
+              label="&browser_sessionstore_max_windows_undo_name;"
+              description="&browser_sessionstore_max_windows_undo_description;"
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <depends>guiconfig.pseudo.sessionstore.enable</depends>
+          </wrapper>
+        </pref>
+      </tab>
+      <tab label="&misc;">
+        <!--<pref key="browser.tabs.closeWindowWithLastTab"
+              label="&browser_tabs_closeWindowWithLastTab_name;"
+              description="&browser_tabs_closeWindowWithLastTab_description;"
+              type="Bool"
+              minVersion="3.5"
+              default="0" />-->
+        <pref key="browser.preferences.instantApply"
+              label="&browser_preferences_instantApply_name;"
+              description="&browser_preferences_instantApply_description;"
+              minVersion="2.0" />
+        <pref key="browser.popups.showPopupBlocker"
+              label="&browser_popups_showPopupBlocker_name;"
+              description="&browser_popups_showPopupBlocker_description;" />
+        <pref key="accessibility.warn_on_browsewithcaret"
+              label="&accessibility_warn_on_browsewithcaret_name;"
+              description="&accessibility_warn_on_browsewithcaret_description;" />
+        <pref key="accessibility.accesskeycausesactivation"
+              label="&accessibility_accesskeycausesactivation_name;"
+              description="&accessibility_accesskeycausesactivation_description;" />
+      </tab>
+    </tabs>
+  </panel>
+  <panel label="&browser;" icon="tab_browser">
+    <tabs>
+      <tab label="&cache;">
+        <pref key="browser.cache.check_doc_frequency"
+              label="&browser_cache_check_doc_frequency_name;"
+              description="&browser_cache_check_doc_frequency_description;"
+              mode="select">
+          <option label="&browser_cache_check_doc_frequency_o1;">0</option>
+          <option label="&browser_cache_check_doc_frequency_o2;">1</option>
+          <option label="&browser_cache_check_doc_frequency_o3;">2</option>
+          <option label="&browser_cache_check_doc_frequency_o4;">3</option>
+        </pref>
+        <group label="&cache_disk;">
+          <pref key="browser.cache.disk.enable"
+                label="&browser_cache_disk_enable_name;"
+                description="&browser_cache_disk_enable_description;" />
+          <pref key="browser.cache.disk.capacity"
+                label="&browser_cache_disk_capacity_name;"
+                description="&browser_cache_disk_capacity_description;" />
+          <pref key="browser.cache.disk_cache_ssl"
+                label="&browser_cache_disk_cache_ssl_name;"
+                description="&browser_cache_disk_cache_ssl_description;" />
+        </group>
+        <group label="&cache_memory;">
+          <pref key="browser.cache.memory.enable"
+                label="&browser_cache_memory_enable_name;"
+                description="&browser_cache_memory_enable_description;" />
+          <pref key="browser.cache.memory.capacity"
+                label="&browser_cache_memory_capacity_name;"
+                description="&browser_cache_memory_capacity_description;"
+                type="Int"
+                default="-1" />
+        </group>
+      </tab>
+      <tab label="&extensions;">
+        <pref key="extensions.checkCompatibility"
+              label="&extensions_checkCompatibility_name;"
+              description="&extensions_checkCompatibility_description;"
+              minVersion="2.0b1"
+              type="Bool"
+              default="1" />
+        <group label="&getaddons;" minVersion="3.0">
+          <pref key="extensions.getAddons.showPane"
+                label="&extensions_getAddons_showPane_name;"
+                description="&extensions_getAddons_showPane_description;" />
+          <pref key="extensions.getAddons.maxResults"
+                label="&extensions_getAddons_maxResults_name;"
+                description="&extensions_getAddons_maxResults_description;" />
+        </group>
+      </tab>
+      <tab label="&bookmarks;">
+        <group label="&microsummaries;" minVersion="2.0">
+          <pref key="browser.microsummary.enabled"
+                label="&browser_microsummary_enabled_name;"
+                description="&browser_microsummary_enabled_description;" />
+          <pref key="browser.microsummary.updateInterval"
+                label="&browser_microsummary_updateInterval_name;"
+                description="&browser_microsummary_updateInterval_description;"
+                type="Int"
+                indent="indent"
+                wrapper="checkbox_is_enabled">
+            <wrapper>
+              <depends>browser.microsummary.enabled</depends>
+            </wrapper>
+          </pref>
+          <pref key="browser.microsummary.updateGenerators"
+                label="&browser_microsummary_updateGenerators_name;"
+                description="&browser_microsummary_updateGenerators_description;"
+                wrapper="checkbox_is_enabled">
+            <wrapper>
+              <depends>browser.microsummary.enabled</depends>
+            </wrapper>
+          </pref>
+          <pref key="browser.microsummary.generatorUpdateInterval"
+                label="&browser_microsummary_generatorUpdateInterval_name;"
+                description="&browser_microsummary_generatorUpdateInterval_description;"
+                type="Int"
+                indent="indent">
+            <wrapper>
+              <depends>browser.microsummary.enabled</depends>
+              <depends>browser.microsummary.updateGenerators</depends>
+              <script name="dependencies">
+                <![CDATA[
+                return guiconfig.Options["browser.microsummary.enabled"].getValue()
+                     &&
+                     guiconfig.Options["browser.microsummary.updateGenerators"].getValue();
+                ]]>
+              </script>
+            </wrapper>
+          </pref>
+        </group>
+        <group label="&misc;">
+          <pref key="browser.bookmarks.livemark_refresh_seconds"
+                label="&browser_bookmarks_livemark_refresh_seconds_name;"
+                description="&browser_bookmarks_livemark_refresh_seconds_description;"
+                type="Int"
+                default="3600" />
+          <pref key="browser.bookmarks.max_backups"
+                label="&browser_bookmarks_max_backups_name;"
+                description="&browser_bookmarks_max_backups_description;"
+                minVersion="2*" />
+        </group>
+      </tab>
+      <tab label="&security_privacy;">
+        <group label="&master_pass;">
+          <pref key="security.ask_for_password"
+                description="&security_ask_for_password_description;"
+                mode="radio">
+            <option label="&security_ask_for_password_o1;">0</option>
+            <option label="&security_ask_for_password_o2;">1</option>
+            <option label="&security_ask_for_password_o3;">2</option>
+          </pref>
+          <pref key="security.password_lifetime"
+                label="&security_password_lifetime_name;"
+                description="&security_password_lifetime_description;"
+                indent="indent">
+            <wrapper>
+              <depends>security.ask_for_password</depends>
+              <script name="dependencies">
+                <![CDATA[
+                return (guiconfig.Options["security.ask_for_password"].getValue() == 2);
+                ]]>
+              </script>
+            </wrapper>
+          </pref>
+        </group>
+        <group label="&misc;">
+          <pref key="security.dialog_enable_delay"
+                label="&security_dialog_enable_delay_name;"
+                description="&security_dialog_enable_delay_description;" />
+        </group>
+      </tab>
+      <tab label="&misc;">
+        <group label="&alerts;">
+          <pref key="update.showSlidingNotification"
+                label="&update_showSlidingNotification_name;"
+                description="&update_showSlidingNotification_description;"
+                type="Bool"
+                default="1">
+            <bind>
+              <pref key="update_notifications.enabled" type="Bool" default="1" />
+            </bind>
+          </pref>
+          <pref key="browser.download.manager.showAlertOnComplete"
+                label="&browser_download_manager_showAlertOnComplete_name;"
+                description="&browser_download_manager_showAlertOnComplete_description;" />
+          <pref key="browser.download.manager.showAlertInterval"
+                label="&browser_download_manager_showAlertInterval_name;"
+                description="&browser_download_manager_showAlertInterval_description;"
+                indent="indent" />
+        </group>
+        <group label="&downloadmanager;">
+          <pref key="browser.download.manager.focusWhenStarting"
+                label="&browser_download_manager_focusWhenStarting_name;"
+                description="&browser_download_manager_focusWhenStarting_description;" />
+          <pref key="browser.download.manager.alertOnEXEOpen"
+                label="&browser_download_manager_alertOnEXEOpen_name;"
+                description="&browser_download_manager_alertOnEXEOpen_description;"
+                type="Bool"
+                default="1" />
+          <pref key="browser.download.lastDir"
+                label="&browser_download_lastDir_name;"
+                description="&browser_download_lastDir_description;"
+                type="Char" />
+        </group>
+      </tab>
+    </tabs>
+  </panel>
+  <panel label="&style;" icon="tab_style">
+    <tabs>
+      <tab label="&browser_style;">
+        <pref key="browser.identity.ssl_domain_display"
+              label="&browser_identity_ssl_domain_display_name;"
+              description="&browser_identity_ssl_domain_display_description;"
+              minVersion="3.0"
+              mode="select">
+          <option label="&browser_identity_ssl_domain_display_o1;">0</option>
+          <option label="&browser_identity_ssl_domain_display_o2;">1</option>
+          <option label="&browser_identity_ssl_domain_display_o3;">2</option>
+        </pref>
+        <pref key="browser.chrome.favicons"
+              label="&browser_chrome_favicons_name;"
+              description="&browser_chrome_favicons_description;">
+          <bind>
+            <pref key="browser.chrome.site_icons" />
+          </bind>
+        </pref>
+        <pref key="browser.chrome.toolbar_tips"
+              label="&browser_chrome_toolbar_tips_name;" 
+              description="&browser_chrome_toolbar_tips_description;" />
+        <pref key="browser.urlbar.hideGoButton"
+              label="&browser_urlbar_hideGoButton_name;"
+              description="&browser_urlbar_hideGoButton_description;"
+              minVersion="2.0"
+              maxVersion="2.*"
+              type="Bool" />
+        <pref key="browser.preferences.animateFadeIn"
+              label="&browser_preferences_animateFadeIn_name;"
+              description="&browser_preferences_animateFadeIn_description;" />
+      </tab>
+      <tab label="&websites;">
+        <group label="&rendering;">
+          <pref key="nglayout.initialpaint.delay"
+                label="&nglayout_initialpaint_delay_name;"
+                description="&nglayout_initialpaint_delay_description;"
+                type="Int"
+                default="250" />
+          <pref key="content.notify.interval"
+                label="&content_notify_interval_name;"
+                description="&content_notify_interval_description;"
+                type="Int"
+                default="120000" />
+        </group>
+        <pref key="browser.display.show_image_placeholders"
+              label="&browser_display_show_image_placeholders_name;"
+              description="&browser_display_show_image_placeholders_description;" />
+        <pref key="browser.enable_automatic_image_resizing"
+              label="&browser_enable_automatic_image_resizing_name;"
+              description="&browser_enable_automatic_image_resizing_description;" />
+        <pref key="browser.frames.enabled"
+              label="&browser_frames_enabled_name;"
+              description="&browser_frames_enabled_description;" />
+        <pref key="layout.frames.force_resizability"
+              label="&layout_frames_force_resizability_name;"
+              description="&layout_frames_force_resizability_description;"
+              indent="indent"
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <depends>browser.frames.enabled</depends>
+          </wrapper>
+        </pref>
+        <pref key="browser.blink_allowed"
+              label="&browser_blink_allowed_name;"
+              description="&browser_blink_allowed_description;" />
+      </tab>
+      <tab label="&text_select;">
+        <pref key="ui.textSelectBackground"
+              label="&ui_textSelectBackground_name;"
+              description="&ui_textSelectBackground_description;"
+              mode="colorpicker"
+              type="Char" />
+        <pref key="ui.textSelectForeground"
+              label="&ui_textSelectForeground_name;"
+              description="&ui_textSelectForeground_description;"
+              mode="colorpicker"
+              type="Char" />
+        <pref key="ui.textSelectBackgroundAttention"
+              label="&ui_textSelectBackgroundAttention_name;"
+              description="&ui_textSelectBackgroundAttention_description;"
+              mode="colorpicker"
+              type="Char" />
+      </tab>
+      <tab label="&alerts;">
+        <pref key="alerts.slideIncrement"
+              label="&alerts_slideIncrement_name;"
+              description="&alerts_slideIncrement_description;" />
+        <pref key="alerts.slideIncrementTime"
+              label="&alerts_slideIncrementTime_name;"
+              description="&alerts_slideIncrementTime_description;" />
+        <pref key="alerts.totalOpenTime"
+              label="&alerts_totalOpenTime_name;"
+              description="&alerts_totalOpenTime_description;" />
+      </tab>
+    </tabs>
+  </panel>
+  <panel label="&tabs;" icon="tab_tabs">
+    <tabs>
+      <tab label="&appearance;">
+        <pref key="browser.tabs.tabMinWidth" 
+              label="&browser_tabs_tabMinWidth_name;"
+              description="" />
+        <pref key="browser.tabs.tabMaxWidth" 
+              label="&browser_tabs_tabMaxWidth_name;"
+              description="" />
+        <pref key="browser.tabs.closeButtons"
+              label="&browser_tabs_closeButtons_name;"
+              description="&browser_tabs_closeButtons_description;"
+              minVersion="2.0"
+              mode="select">
+          <option label="&browser_tabs_closeButtons_o1;">0</option>
+          <option label="&browser_tabs_closeButtons_o2;">1</option>
+          <option label="&browser_tabs_closeButtons_o3;">2</option>
+          <option label="&browser_tabs_closeButtons_o4;">3</option>
+        </pref>
+        <pref key="browser.tabs.tabClipWidth"
+              label="&browser_tabs_tabClipWidth_name;"
+              description="&browser_tabs_tabClipWidth_description;"
+              indent="indent">
+          <wrapper>
+            <depends>browser.tabs.closeButtons</depends>
+            <script name="dependencies">
+              <![CDATA[
+              var v = guiconfig.Options[value].getValue();
+              return v == 0 || v == 1;
+              ]]>
+            </script>
+          </wrapper>
+        </pref>
+      </tab>
+      <tab label="&misc;">
+        <group label="&tab_preview;">
+          <pref key="browser.allTabs.previews"
+                label="&browser_allTabs_preview_name;"
+                description="&browser_allTabs_preview_description;" />
+          <pref key="browser.ctrlTab.previews"
+                label="&browser_ctrlTab_preview_name;"
+                description="&browser_ctrlTab_preview_description;" />
+        </group>
+        <group label="&open_in_background;">
+          <pref key="browser.tabs.loadInBackground"
+                label="&browser_tabs_loadInBackground_name;"
+                description="" />
+          <pref key="browser.tabs.loadDivertedInBackground"
+                label="&browser_tabs_loadDivertedInBackground_name;"
+                description="" />
+          <pref key="browser.tabs.loadBookmarksInBackground"
+                label="&browser_tabs_loadBookmarksInBackground_name;"
+                description="" />
+        </group>
+        <group label="&misc;">
+          <pref key="browser.tabs.selectOwnerOnClose"
+                label="&browser_tabs_selectOwnerOnClose_name;"
+                description="&browser_tabs_selectOwnerOnClose_description;" />
+          <pref key="browser.tabs.insertRelatedAfterCurrent"
+                label="&browser_tabs_insertRelatedAfterCurrent_name;"
+                description="&browser_tabs_insertRelatedAfterCurrent_description;" />
+          <pref key="browser.search.openintab"
+                label="&browser_search_openintab_name;"
+                description="&browser_search_openintab_description;" />
+        </group>
+      </tab>
+    </tabs>
+  </panel>
+  <panel label="&network;" icon="tab_network">
+    <tabs>
+      <tab label="&connections;">
+        <group label="&connections;">
+          <pref key="network.http.max-connections"
+                label="&network_http_max-connections_name;"
+                description="&network_http_max-connections_description;" />
+          <pref key="network.http.max-connections-per-server"
+                label="&network_http_max-connections-per-server_name;"
+                description="&network_http_max-connections-per-server_description;" />
+        </group>
+        <group label="&keep-alive_connections;">
+          <pref key="network.http.keep-alive"
+                label="&network_http_keep-alive_name;"
+                description="&network_http_keep-alive_description;" />
+          <pref key="network.http.max-persistent-connections-per-server"
+                label="&network_http_max-persistent-connections-per-server_name;"
+                description="&network_http_max-persistent-connections-per-server_description;" />
+          <pref key="network.http.max-persistent-connections-per-proxy"
+                label="&network_http_max-persistent-connections-per-proxy_name;"
+                description="&network_http_max-persistent-connections-per-proxy_description;" />
+        </group>
+      </tab>
+      <tab label="&pipelining;">
+        <pref key="network.http.pipelining"
+              label="&network_http_pipelining_name;"
+              description="&network_http_pipelining_description;" />
+        <pref key="network.http.proxy.pipelining"
+              label="&network_http_proxy_pipelining_name;"
+              description="&network_http_proxy_pipelining_description;" />
+        <pref key="network.http.pipelining.maxrequests"
+              label="&network_http_pipelining_maxrequests_name;"
+              description="&network_http_pipelining_maxrequests_description;" />
+      </tab>
+    </tabs>
+  </panel>
+  <panel label="&developing;" icon="tab_developing">
+    <group label="&viewsource;">
+      <pref key="view_source.editor.external"
+            label="&view_source_editor_external_name;"
+            description="&view_source_editor_external_description;" />
+      <pref key="view_source.editor.path"
+            label="&view_source_editor_path_name;"
+            description="&view_source_editor_path_description;"
+            mode="file"
+            indent="indent">
+        <filter>Apps</filter>
+        <wrapper>
+          <depends>view_source.editor.external</depends>
+          <script name="dependencies">
+            <![CDATA[
+            return guiconfig.Options["view_source.editor.external"].getValue();
+            ]]>
+          </script>
+        </wrapper>
+      </pref>
+    </group>
+    <group label="&misc;">
+      <pref key="browser.dom.window.dump.enabled"
+            label="&browser_dom_window_dump_enabled_name;" 
+            description="&browser_dom_window_dump_enabled_description;"
+            type="Bool" />
+      <pref key="javascript.options.strict"
+            label="&javascript_options_strict_name;"
+            description="&javascript_options_strict_description;"
+            type="Bool" />
+      <pref key="javascript.options.showInConsole"
+            label="&javascript_options_showInConsole_name;"
+            description="&javascript_options_showInConsole_description;" />
+      <pref key="nglayout.debug.disable_xul_cache"
+            label="&nglayout_debug_disable_xul_cache_name;"
+            description="&nglayout_debug_disable_xul_cache_description;"
+            type="Bool" />
+    </group>
+  </panel>
 </preferences>

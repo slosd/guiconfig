@@ -5,10 +5,10 @@ var IntOption = function(preference, options) {
 IntOption.prototype = new Option;
 IntOption.prototype.constructor = IntOption;
 
-IntOption.prototype.setValue = function(value) {
-	if(!value)
+IntOption.prototype.setValue = function(value, useNative) {
+	if(!is_defined(value))
 		var value = this.getPref();
-	if(this.Wrapper.scripts.setValue) {
+	if(this.Wrapper.scripts.setValue && !useNative) {
 		this.Wrapper.scripts.setValue.call(this, value);
 	}
 	else {
@@ -33,11 +33,12 @@ IntOption.prototype.setValue = function(value) {
 		}
 	}
 	this.Elements.option.setUserData("value", value, null);
+	this.onvaluechange();
 	return value;
 }
 
-IntOption.prototype.getValue = function() {
-	if(this.Wrapper.scripts.getValue) {
+IntOption.prototype.getValue = function(useNative) {
+	if(this.Wrapper.scripts.getValue && !useNative) {
 		return this.Wrapper.scripts.getValue.call(this);
 	}
 	else {

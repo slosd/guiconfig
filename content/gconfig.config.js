@@ -6,6 +6,7 @@ var guiconfig = {
 	PrefTree: null,
 	Options: new Object,
 	Wrappers: new Object,
+	Observer: new gcCore.Observer(),
 	
 	last_query: "",
 	stop_option_observation: false,
@@ -199,7 +200,7 @@ var guiconfig = {
 				});
 				for(var i = 0, l = container.Wrapper.dependencies.length, key; i < l; i++) {
 					key = container.Wrapper.dependencies[i];
-					gcCore.addObserver(key, container.checkDependencies, container, 'dep'+container.Preference.key+'-'+key);
+					this.Observer.addObserver(key, container.checkDependencies, container, 'dep'+container.Preference.key+'-'+key);
 				}
 			}
 			
@@ -215,11 +216,15 @@ var guiconfig = {
 		
 		parser.registerNode('pref', function(node, container, parse) {
 			var element,
+				klass = this,
 				option = this.newOption(node, parser);
+			
+			
 			if(!option) {
 				node.parentNode.removeChild(node);
 				return false;
 			}
+
 			this.Options[option.Preference.key] = option;
 			parse(node.childNodes, option);
 			element = option.build();
@@ -227,6 +232,7 @@ var guiconfig = {
 			container.appendChild(element);
 			option.Preference.onchange();
 			option.checkDependencies(option.Wrapper.dependencies.length == 1 ? option.Wrapper.dependencies[0] : option.Wrapper.dependencies);
+			guiconfig.Observer.observe("pseudo", "nsPref:changed", option.Preference.key);
 		}, this);
 		
 		parser.registerNode('option', function(node, container) {
@@ -263,6 +269,7 @@ var guiconfig = {
 			description: (node.getAttribute("description") || ""),
 			mode: (node.getAttribute("mode") || "default"),
 			defaultValue: node.getAttribute("default"),
+			forceCreate: !!node.getAttribute("forceCreate"),
 			wrapper: (node.getAttribute("wrapper") || "default"),
 			indent: !!node.getAttribute("indent"),
 			version: node.getAttribute("version"),

@@ -12,41 +12,47 @@ var gcCore = {
 }
 
 gcCore.MozPreferences = gcCore.MozPrefs.getBranch(null);
+gcCore.MozDefaultPreferences = gcCore.MozPrefs.getDefaultBranch(null);
 gcCore.GCPreferences = gcCore.MozPrefs.getBranch("extensions.guiconfig.");
 
 gcCore.MozPrefs.QueryInterface(Components.interfaces.nsIPrefBranch2);
-gcCore.MozPrefs.addObserver("", gcCore, false);
 
-gcCore.Observers = new Object;
-
-gcCore.addObserver = function(branch, fn, bind, id) {
-	if(!this.Observers[branch]) {
-		this.Observers[branch] = new Object;
+gcCore.Observer = function() {
+	var Observers = new Object;
+	
+	this.addObserver = function(branch, fn, bind, id) {
+		if(!Observers[branch]) {
+			Observers[branch] = new Object;
+		}
+		Observers[branch][(id || "default")] = { 'fn': fn, 'bind': bind, 'observe': true };
+		return true;
 	}
-	this.Observers[branch][(id || "default")] = { 'fn': fn, 'bind': bind, 'observe': true };
-	return true;
-}
-
-gcCore.startObserver = function(branch, id) {
-	this.Observers[branch][(id || "default")].observe = true;
-}
-
-gcCore.stopObserver = function(branch, id) {
-	this.Observers[branch][(id || "default")].observe = false;
-}
-
-gcCore.observe = function(subject, topic, data) {
-	if(topic != "nsPref:changed")
-		return;
-	if(this.Observers[data]) {
-		var callback, observer = this.Observers[data];
-		for(var id in observer) {
-			callback = observer[id];
-			if(callback.observe)
-				callback.fn.call((callback.bind || callback.fn), data);
+	
+	this.startObserver = function(branch, id) {
+		Observers[branch][(id || "default")].observe = true;
+	}
+	
+	this.stopObserver = function(branch, id) {
+		Observers[branch][(id || "default")].observe = false;
+	}
+	
+	this.observe = function(subject, topic, data) {
+		if(topic != "nsPref:changed")
+			return;
+		if(Observers[data]) {
+			var callback, observer = Observers[data];
+			for(var id in observer) {
+				callback = observer[id];
+				if(callback.observe)
+					callback.fn.call((callback.bind || callback.fn), data);
+			}
 		}
 	}
+	
 }
+
+var PrefObserver = new gcCore.Observer();
+gcCore.MozPrefs.addObserver("", PrefObserver, false);
 
 gcCore.PrefParser = function(preferences) {
 	if(typeof preferences == "string") {
@@ -73,7 +79,7 @@ gcCore.PrefParser = function(preferences) {
 				children.forEach(function(child) {
 					var nodeName = child.nodeName;
 					var handler = alth || Nodes[nodeName];
-					if(!handler || !Filter(child))
+					if(!handler || child.nodeType != 1 || !Filter(child)) // nodeType 1 => Element
 						return;
 					else
 						handler(child, container, parse);

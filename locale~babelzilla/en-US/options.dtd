@@ -76,10 +76,16 @@
 <!ENTITY layout_spellcheckDefault_o1 "Disable">
 <!ENTITY layout_spellcheckDefault_o2 "Enable for multi-line textboxes">
 <!ENTITY layout_spellcheckDefault_o3 "Enable for multi-line and single-line textboxes">
+<!-- SESSION RESTORE -->
+<!ENTITY session_restore "Session restore">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Windows&quot; menu">
 <!-- MISC -->
 <!ENTITY misc "Miscellaneous">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Windows&quot; menu">
-<!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "If checked, the current window will be closed when you close the last tab in that window. ">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Close window with last tab">
 <!ENTITY browser_search_openintab_description "When performing a search from the Search Bar, open the results in a new tab. ">

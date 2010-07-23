@@ -23,11 +23,12 @@ Option.prototype.initialize = function(preference, options) {
 		if(this.exists)
 			this.Option.setValue();
 		else
-			this.Option.disabled = true;
+			this.Option.disabled = !this.Option.Options.forceCreate;
 	}
 }
 
 Option.prototype.onvaluechange = function() {
+	guiconfig.Observer.observe("pseudo", "nsPref:changed", this.Preference.key);
 	if(!gcCore.MozPreferences.getBoolPref("browser.preferences.instantApply"))
 		return false;
 	return this.setPref();
@@ -44,7 +45,7 @@ Option.prototype.setPref = function(value) {
 	var set_pref = true;
 	if(!is_defined(value))
 		var value = this.getValue();
-	gcCore.stopObserver(this.Preference.key, "Preference");
+	PrefObserver.stopObserver(this.Preference.key, "Preference");
 	if(this.Wrapper.scripts.setPref)
 		set_pref = this.Wrapper.scripts.setPref.call(this, value);
 	else if(this.Options.bindings.length > 0)
@@ -52,7 +53,7 @@ Option.prototype.setPref = function(value) {
 			this.Options.bindings[i].setPref(value);
 	if(is_defined(set_pref))
 		this.Preference.setPref(value);
-	gcCore.startObserver(this.Preference.key, "Preference");
+	PrefObserver.startObserver(this.Preference.key, "Preference");
 	return true;
 }
 
@@ -66,13 +67,22 @@ Option.prototype.resetPref = function() {
 	return true;
 }
 
+Option.prototype.allDependenciesLoaded = function() {
+	var i = 0, l = this.Wrapper.dependencies.length;
+	while(i < l && guiconfig.Options[this.Wrapper.dependencies[i]]) {
+		i++;
+	}
+	return i == l;
+}
+
 Option.prototype.checkDependencies = function(key) {
-	this.dependencies = !(this.Wrapper.dependencies.length > 0) || (!this.Wrapper.scripts.dependencies || this.Wrapper.scripts.dependencies(key));
+	if(this.allDependenciesLoaded())
+		this.dependencies = !(this.Wrapper.dependencies.length > 0) || (!this.Wrapper.scripts.dependencies || this.Wrapper.scripts.dependencies.call(this, key));
 }
 
 Option.prototype.build = function() {
-	var elements;
-	if(elements = this.Wrapper.elements) {
+	var elements = this.Wrapper.elements;
+	if(elements) {
 		var parser = new gcCore.PrefParser(elements).instance({
 			'filter': guiconfig.validatePref
 		});
