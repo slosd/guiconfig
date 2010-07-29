@@ -21,7 +21,7 @@
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://guiconfig.freedig.org</em:homepageURL>
-    <em:optionsURL>chrome://guiconfig/content/pref.xul</em:optionsURL>
+    <em:optionsURL>chrome://guiconfig/content/gui/pref.xul</em:optionsURL>
     
     <em:translator>Jürgen Berg (en-Us)</em:translator>
     <em:translator>Proyecto Nave (http://www.proyectonave.es) (es-ES)</em:translator>

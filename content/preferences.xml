@@ -9,7 +9,7 @@
   <wrapper id="checkbox_is_enabled">
     <script name="dependencies">
       <![CDATA[
-      return guiconfig.Options[value].getValue();
+      return value.get();
       ]]>
     </script>
   </wrapper>
@@ -42,8 +42,6 @@
               label="&browser_urlbar_matchOnlyTyped_name;"
               description="&browser_urlbar_matchOnlyTyped_description;"
               indent="indent" />
-        <separator />
-        
         <pref key="browser.fixup.alternate.enabled"
               label="&browser_fixup_alternate_enabled_name;"
               description="&browser_fixup_alternate_enabled_description;" />
@@ -53,7 +51,9 @@
               indent="indent"
               wrapper="checkbox_is_enabled">
           <wrapper>
-            <depends>browser.fixup.alternate.enabled</depends>
+            <dependencies>
+              <pref key="browser.fixup.alternate.enabled" />
+            </dependencies>
           </wrapper>
         </pref>
         <pref key="browser.fixup.alternate.suffix"
@@ -62,7 +62,9 @@
               indent="indent"
               wrapper="checkbox_is_enabled">
           <wrapper>
-            <depends>browser.fixup.alternate.enabled</depends>
+            <dependencies>
+              <pref key="browser.fixup.alternate.enabled" />
+            </dependencies>
           </wrapper>
         </pref>
       </tab>
@@ -72,22 +74,25 @@
           <wrapper>
             <script name="setValue">
               <![CDATA[
-              var bitmap = this.Preference.getPref(0),
-                checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
+              var bitmap = value,
+                  checkboxes = this.options.wrapper.elements.getElementsByTagName('checkbox'),
+                  checkbox;
               for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
                 checkbox = checkboxes[i];
-                checkbox.getUserData('element').setProperty('checked', !!(parseInt(bitmap) & parseInt(checkbox.getAttribute('value'))));
+                checkbox.set((parseInt(bitmap) & parseInt(checkbox.getAttribute('value'))));
               }
               ]]>
             </script>
             <script name="getValue">
               <![CDATA[
               var bitmap = 0,
-                checkboxes = this.Wrapper.elements.getElementsByTagName('checkbox');
+                  checkboxes = this.options.wrapper.elements.getElementsByTagName('checkbox'),
+                  checkbox;
               for(var i = 0, l = checkboxes.length, checkbox; i < l; i++) {
                 checkbox = checkboxes[i];
-                if(checkbox.getUserData('element').checked)
+                if(checkbox.get()) {
                   bitmap += parseInt(checkbox.getAttribute('value'));
+                }
               }
               return bitmap;
               ]]>
@@ -101,19 +106,19 @@
                           description="&browser_urlbar_restrict_history_description;"
                           value="1" />
                 <checkbox label="&browser_urlbar_restrict_bookmark_name;"
-                        description="&browser_urlbar_restrict_bookmark_description;"
-                        value="2" />
+                          description="&browser_urlbar_restrict_bookmark_description;"
+                          value="2" />
                 <checkbox label="&browser_urlbar_restrict_tag_name;"
-                        description="&browser_urlbar_restrict_tag_description;"
-                        value="4" />
+                          description="&browser_urlbar_restrict_tag_description;"
+                          value="4" />
               </group>
               <group label="&urlbar_match_name;">
                 <checkbox label="&browser_urlbar_match_title_name;"
-                        description="&browser_urlbar_match_title_description;"
-                        value="8" />
+                          description="&browser_urlbar_match_title_description;"
+                          value="8" />
                 <checkbox label="&browser_urlbar_match_url_name;"
-                        description="&browser_urlbar_match_url_description;"
-                        value="16" />
+                          description="&browser_urlbar_match_url_description;"
+                          value="16" />
               </group>
             </elements>
           </wrapper>
@@ -151,9 +156,11 @@
                 description="&signon_prefillForms_description;"
                 type="Bool"
                 default="1">
-            <bind>
-              <pref key="signon.autofillForms" type="Bool" />
-            </bind>
+            <wrapper>
+              <bindings>
+                <pref key="signon.autofillForms" type="Bool" />
+              </bindings>
+            </wrapper>
           </pref>
           <pref key="accessibility.tabfocus"
                 label="&accessibility_tabfocus_name;"
@@ -194,16 +201,15 @@
               label="&guiconfig_pseudo_sessionstore_enable_name;"
               description="&guiconfig_pseudo_sessionstore_enable_description;"
               type="Bool"
-              default="true"
-              forceCreate="forceCreate">
+              default="true">
           <wrapper>
             <script name="setPref">
               <![CDATA[
-              var tabs = guiconfig.Options["browser.sessionstore.max_tabs_undo"];
-              var win = guiconfig.Options["browser.sessionstore.max_windows_undo"];
+              var tabs = guiconfig.getPreferenceByKey("browser.sessionstore.max_tabs_undo");
+              var win = guiconfig.getPreferenceByKey("browser.sessionstore.max_windows_undo");
               if(!value) {
-                tabs.setValue(0);
-                win.setValue(0);
+                tabs.set(0);
+                win.set(0);
               }
               ]]>
             </script>
@@ -214,7 +220,9 @@
               description="browser_sessionstore_max_tabs_undo_description;"
               wrapper="checkbox_is_enabled">
           <wrapper>
-            <depends>guiconfig.pseudo.sessionstore.enable</depends>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" />
+            </dependencies>
           </wrapper>
         </pref>
         <pref key="browser.sessionstore.max_windows_undo"
@@ -222,7 +230,9 @@
               description="&browser_sessionstore_max_windows_undo_description;"
               wrapper="checkbox_is_enabled">
           <wrapper>
-            <depends>guiconfig.pseudo.sessionstore.enable</depends>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" />
+            </dependencies>
           </wrapper>
         </pref>
       </tab>
@@ -311,7 +321,9 @@
                 indent="indent"
                 wrapper="checkbox_is_enabled">
             <wrapper>
-              <depends>browser.microsummary.enabled</depends>
+              <dependencies>
+                <pref key="browser.microsummary.enabled" />
+              </dependencies>
             </wrapper>
           </pref>
           <pref key="browser.microsummary.updateGenerators"
@@ -319,7 +331,9 @@
                 description="&browser_microsummary_updateGenerators_description;"
                 wrapper="checkbox_is_enabled">
             <wrapper>
-              <depends>browser.microsummary.enabled</depends>
+              <dependencies>
+                <pref key="browser.microsummary.enabled" />
+              </dependencies>
             </wrapper>
           </pref>
           <pref key="browser.microsummary.generatorUpdateInterval"
@@ -328,13 +342,15 @@
                 type="Int"
                 indent="indent">
             <wrapper>
-              <depends>browser.microsummary.enabled</depends>
-              <depends>browser.microsummary.updateGenerators</depends>
+              <dependencies>
+                <pref key="browser.microsummary.enabled" />
+                <pref key="browser.microsummary.updateGenerators" />
+              </dependencies>
               <script name="dependencies">
                 <![CDATA[
-                return guiconfig.Options["browser.microsummary.enabled"].getValue()
-                     &&
-                     guiconfig.Options["browser.microsummary.updateGenerators"].getValue();
+                for(var i = 0, l = this.options.wrapper.dependencies.length; i < l; i++)
+                  if(!this.options.wrapper.dependencies[i].get()) return false;
+                return true;
                 ]]>
               </script>
             </wrapper>
@@ -366,10 +382,12 @@
                 description="&security_password_lifetime_description;"
                 indent="indent">
             <wrapper>
-              <depends>security.ask_for_password</depends>
+              <dependencies>
+                <pref key="security.ask_for_password" />
+              </dependencies>
               <script name="dependencies">
                 <![CDATA[
-                return (guiconfig.Options["security.ask_for_password"].getValue() == 2);
+                return value.get() == 2;
                 ]]>
               </script>
             </wrapper>
@@ -388,9 +406,11 @@
                 description="&update_showSlidingNotification_description;"
                 type="Bool"
                 default="1">
-            <bind>
-              <pref key="update_notifications.enabled" type="Bool" default="1" />
-            </bind>
+            <wrapper>
+              <bindings>
+                <pref key="update_notifications.enabled" type="Bool" />
+              </bindings>
+            </wrapper>
           </pref>
           <pref key="browser.download.manager.showAlertOnComplete"
                 label="&browser_download_manager_showAlertOnComplete_name;"
@@ -412,7 +432,8 @@
           <pref key="browser.download.lastDir"
                 label="&browser_download_lastDir_name;"
                 description="&browser_download_lastDir_description;"
-                type="Char" />
+                type="Char"
+                default="" />
         </group>
       </tab>
     </tabs>
@@ -432,9 +453,11 @@
         <pref key="browser.chrome.favicons"
               label="&browser_chrome_favicons_name;"
               description="&browser_chrome_favicons_description;">
-          <bind>
-            <pref key="browser.chrome.site_icons" />
-          </bind>
+          <wrapper>
+            <bindings>
+              <pref key="browser.chrome.site_icons" />
+            </bindings>
+          </wrapper>
         </pref>
         <pref key="browser.chrome.toolbar_tips"
               label="&browser_chrome_toolbar_tips_name;" 
@@ -444,7 +467,8 @@
               description="&browser_urlbar_hideGoButton_description;"
               minVersion="2.0"
               maxVersion="2.*"
-              type="Bool" />
+              type="Bool"
+              default="0" />
         <pref key="browser.preferences.animateFadeIn"
               label="&browser_preferences_animateFadeIn_name;"
               description="&browser_preferences_animateFadeIn_description;" />
@@ -477,7 +501,9 @@
               indent="indent"
               wrapper="checkbox_is_enabled">
           <wrapper>
-            <depends>browser.frames.enabled</depends>
+            <dependencies>
+              <pref key="browser.frames.enabled" />
+            </dependencies>
           </wrapper>
         </pref>
         <pref key="browser.blink_allowed"
@@ -488,17 +514,17 @@
         <pref key="ui.textSelectBackground"
               label="&ui_textSelectBackground_name;"
               description="&ui_textSelectBackground_description;"
-              mode="colorpicker"
+              mode="color"
               type="Char" />
         <pref key="ui.textSelectForeground"
               label="&ui_textSelectForeground_name;"
               description="&ui_textSelectForeground_description;"
-              mode="colorpicker"
+              mode="color"
               type="Char" />
         <pref key="ui.textSelectBackgroundAttention"
               label="&ui_textSelectBackgroundAttention_name;"
               description="&ui_textSelectBackgroundAttention_description;"
-              mode="colorpicker"
+              mode="color"
               type="Char" />
       </tab>
       <tab label="&alerts;">
@@ -538,11 +564,12 @@
               description="&browser_tabs_tabClipWidth_description;"
               indent="indent">
           <wrapper>
-            <depends>browser.tabs.closeButtons</depends>
+            <dependencies>
+              <pref key="browser.tabs.closeButtons" />
+            </dependencies>
             <script name="dependencies">
               <![CDATA[
-              var v = guiconfig.Options[value].getValue();
-              return v == 0 || v == 1;
+              return value.get() == 0 || value.get() == 1;
               ]]>
             </script>
           </wrapper>
@@ -627,15 +654,13 @@
             label="&view_source_editor_path_name;"
             description="&view_source_editor_path_description;"
             mode="file"
-            indent="indent">
-        <filter>Apps</filter>
+            indent="indent"
+            wrapper="checkbox_is_enabled">
         <wrapper>
-          <depends>view_source.editor.external</depends>
-          <script name="dependencies">
-            <![CDATA[
-            return guiconfig.Options["view_source.editor.external"].getValue();
-            ]]>
-          </script>
+          <files>Apps</files>
+          <dependencies>
+            <pref key="view_source.editor.external" />
+          </dependencies>
         </wrapper>
       </pref>
     </group>

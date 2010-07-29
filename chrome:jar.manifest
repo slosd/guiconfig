@@ -5,7 +5,7 @@ skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/
 style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
 style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcbutton.css
 
-overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/browser.xul
-overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/button.xul
+overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/gui/browser.xul
+overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/gui/button.xul
 
 %LOCALES%

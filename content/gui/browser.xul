@@ -11,8 +11,8 @@
 				  accesskey="&browser.item.access;"/>
 	</menupopup>
 	
-	<script type="application/javascript" src="gconfig.core.js"/>
-	<script type="application/javascript" src="gconfig.browser.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.core.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.browser.js"/>
 	<script type="application/javascript">guiconfig.init();</script>
 	
 </overlay>

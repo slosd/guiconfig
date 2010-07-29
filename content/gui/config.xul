@@ -19,14 +19,14 @@
 		onload=""
 		ondialogaccept="return guiconfig.savePreferences();"
 		ondialogcancel=""
-		ondialogextra1="return guiconfig.resetToDefault();"
+		ondialogextra1="return guiconfig.resetPreferences();"
 >
 		
 	<stringbundleset id="gc_stbs">
 		<stringbundle id="gc_locale" src="chrome://guiconfig/locale/gcLocale.properties"/>
 	</stringbundleset>
 	
-	<menupopup id="gcoptrightclick" onpopupshowing="return guiconfig.buildContextMenu(this, document.popupNode);">
+	<menupopup id="gcConfigContextMenu">
 		<menuitem label="&config.todefault;" class="menuitem-iconic" id="gcrcDefault" value="reset"/>
 	</menupopup>
 	
@@ -38,14 +38,14 @@
 	<deck id="gcConfigContainer" flex="1"></deck>
 	<description id="gcConfigDescription">&config.descr.standard;</description>
 
-	<script type="application/javascript" src="gconfig.core.js"/>
-	<script type="application/javascript" src="gconfig.config.js"/>
-	<script type="application/javascript" src="gconfig.class.Preference.js"/>
-	<script type="application/javascript" src="gconfig.class.GCElement.js"/>
-	<script type="application/javascript" src="gconfig.class.Option.js"/>
-	<script type="application/javascript" src="gconfig.class.Option.Bool.js"/>
-	<script type="application/javascript" src="gconfig.class.Option.Int.js"/>
-	<script type="application/javascript" src="gconfig.class.Option.Char.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.core.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.config.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.class.Preference.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.class.Option.js"/>
+  <script type="application/javascript" src="/content/app/gconfig.class.Element.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.class.Element.Bool.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.class.Element.Int.js"/>
+	<script type="application/javascript" src="/content/app/gconfig.class.Element.Char.js"/>
 	<script type="application/javascript">guiconfig.init();</script>
 	
 </dialog>

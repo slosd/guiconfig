@@ -1,7 +1,7 @@
 var guiconfig = {
 	
 	components: {
-		"config": "chrome://guiconfig/content/config.xul"
+		"config": "chrome://guiconfig/content/gui/config.xul"
 	},
 	
 	init: function() {
