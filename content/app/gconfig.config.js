@@ -20,11 +20,15 @@ var guiconfig = {
     this.XMLPreferences.addGlobalFilters({
       "version": function(node){
         if (gcCore.GCPreferences.getBoolPref("matchversion")) {
-          var minVersion = node.getAttribute("minVersion"), maxVersion = node.getAttribute("maxVersion");
-          if (!minVersion && !maxVersion) {
+          var minVersion = node.getAttribute("minVersion"),
+              maxVersion = node.getAttribute("maxVersion"),
+              platform = node.getAttribute("platform");
+          if (!minVersion && !maxVersion && !platform) {
             return true;
           }
-          return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion);
+          else {
+        	return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion) && (!platform || platform == gcCore.MozRuntime.OS);
+          }
         }
         return true;
       }
@@ -77,20 +81,22 @@ var guiconfig = {
   buildContextMenu: function() {
     var popup = this.Elements.contextMenu,
         menuitems = popup.childNodes;
-    popup.addEventListener("popupshowing", function() {
+    popup.addEventListener("popupshowing", function(event) {
       var node = document.popupNode;
       while(node.getAttribute("context") != "gcConfigContextMenu") {
         node = node.parentNode;
       }
-      this.currentKey = node.getAttribute("id").replace(/^gcPref/, "");
-      return true;
+      this.currentOption = guiconfig.getPreferenceByKey(node.getAttribute("id").replace(/^gcPref/, ""));
+      if(this.currentOption.element.disabled) {
+        event.preventDefault();
+      }
     }, false);
     for(var i = 0, l = menuitems.length, value, f; i < l; i++) {
       value = menuitems[i].getAttribute("value");
       switch(value) {
         case "reset":
           f = function() {
-            guiconfig.getPreferenceByKey(this.popup.currentKey).reset();
+        	  this.popup.currentOption.reset();
           }
           break;
         default:

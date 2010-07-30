@@ -71,9 +71,9 @@
 <!ENTITY layout_spellcheckDefault_o1 "停用">
 <!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
 <!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
-<!ENTITY misc "雜項">
 <!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
+<!ENTITY misc "雜項">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
@@ -156,12 +156,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "隱藏&quot;Go&quot;按鈕">
 <!ENTITY browser_preferences_animateFadeIn_description "當切換設定控制頁時，在大約超過一秒的時間內改變視窗高度並淡入新的控制頁。">
 <!ENTITY browser_preferences_animateFadeIn_name "切換設定控制頁時顯示動畫效果">
-<!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
-<!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
-<!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">
-<!ENTITY browser_tabs_closeButtons_o2 "顯示於每一分頁">
-<!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
-<!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
 <!ENTITY websites "網站">
 <!ENTITY rendering "呈現">
 <!ENTITY nglayout_initialpaint_delay_description "此選項指定首次呈現一頁面之前須等待的毫秒數。較小的數值可使頁面快些顯示但會需要較長的時間來完成呈現。較大的數值其效應恰與此相反。">
@@ -183,6 +177,13 @@
 <!ENTITY ui_textSelectBackground_name "背景顏色">
 <!ENTITY ui_textSelectForeground_description "以十六進位碼或顏色名稱指定所標選文字本身的顏色。。此項若未設，就套用作業系統本身的設定。">
 <!ENTITY ui_textSelectForeground_name "文字顏色">
+<!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
+<!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
+<!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">
+<!ENTITY browser_tabs_closeButtons_o2 "顯示於每一分頁">
+<!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
+<!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
 <!ENTITY bookmarks "書籤">
 <!ENTITY microsummaries "即時摘要(動態標題)">
 <!ENTITY browser_microsummary_enabled_description "允許對書籤萃取即時摘要資訊。">
@@ -193,8 +194,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "即時摘要產生器定期檢查更新">
 <!ENTITY browser_microsummary_updateInterval_description "指定即時摘要檢查更新間隔分鐘數。預設為30分鐘。">
 <!ENTITY browser_microsummary_updateInterval_name "即時摘要檢查更新間隔分鐘數">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "當您用新分頁開啟書籤時，該書籤會在背景中載入，現行瀏覽分頁不會被自動切換過去。">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">
 <!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">

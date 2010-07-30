@@ -1,38 +1,58 @@
 <!ENTITY accessibility "Dostępność">
 <!ENTITY mouseclick "Mysz">
 <!ENTITY middleclick "Działanie środkowego przycisku myszy">
-<!ENTITY middlemouse_contentLoadURL_description "Otwórz stronę o adresie pobranym ze schowka po kliknięciu środkowym przyciskiem myszy.">
+<!ENTITY middlemouse_contentLoadURL_description "Przejdź pod adres znajdujący się obecnie w schowku po kliknięciu środkowym przyciskiem myszy.">
 <!ENTITY middlemouse_contentLoadURL_name "Otwórz adres ze schowka">
 <!ENTITY middlemouse_paste_description "Wklej zawartość schowka w wybranym polu tekstowym po kliknięciu nań środkowym przyciskiem myszy.">
 <!ENTITY middlemouse_paste_name "Wklej tekst ze schowka">
-<!ENTITY browser_urlbar_clickSelectsAll_description "Zaznacz zawartość paska adresu po jego kliknięciu.">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Zaznacz zawartość paska adresu po kliknięciu go.">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Zaznacz zawartość po kliknięciu">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Zaznacz zawartość paska adresu po jego podwójnym kliknięciu.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Zaznacz zawartość paska adresu po kliknięciu go podwójnie.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Zaznacz zawartość po podwójnym kliknięciu">
 <!ENTITY urlbar "Pasek adresu">
 <!ENTITY browser_urlbar_autoFill_description "Włącza autouzupełnianie adresu.">
 <!ENTITY browser_urlbar_autoFill_name "Autouzupełnianie adresu">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Autouzupełniaj jedynie adresy, które zostały wprowadzone.">
+<!ENTITY browser_urlbar_matchOnlyTyped_description "Proponuj wyłącznie adresy, które zostały wcześniej wprowadzone.">
 <!ENTITY browser_urlbar_matchOnlyTyped_name "Dopasowuj tylko wprowadzone">
 <!ENTITY browser_fixup_alternate_enabled_description "Jeżeli strona o podanym adresie nie może zostać znaleziona, poniższe znaki zostaną dodane do adresu.">
 <!ENTITY browser_fixup_alternate_enabled_name "Używaj alternatywnych adresów">
 <!ENTITY browser_fixup_alternate_prefix_description "Znaki, które mają zostać wstawione na początku adresu.">
-<!ENTITY browser_fixup_alternate_prefix_name "Na początku wstaw">
+<!ENTITY browser_fixup_alternate_prefix_name "Na początku dodaj">
 <!ENTITY browser_fixup_alternate_suffix_description "Znaki, które mają zostać wstawione na końcu adresu.">
-<!ENTITY browser_fixup_alternate_suffix_name "Na końcu wstaw">
+<!ENTITY browser_fixup_alternate_suffix_name "Na końcu dodaj">
 <!ENTITY awesomebar "Inteligentny pasek adresu">
+<!ENTITY urlbar_restrict_name "Ogranicz wyniki">
+<!ENTITY urlbar_match_name "Przeszukiwane miejsca">
 <!ENTITY browser_urlbar_restrict_bookmark_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o tytułach zgodnych z wprowadzonym tekstem.">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Tylko zakładki">
 <!ENTITY browser_urlbar_restrict_history_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie odwiedzone strony o tytułach zgodnych z wprowadzonym tekstem.">
 <!ENTITY browser_urlbar_restrict_history_name "Tylko historia">
 <!ENTITY browser_urlbar_restrict_tag_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o etykietach zgodnych z wprowadzonym tekstem.">
 <!ENTITY browser_urlbar_restrict_tag_name "Tylko etykiety">
+<!ENTITY browser_urlbar_restrict_typed_description "Wyniki wyświetlane przez inteligentny pasek adresu ograniczone są wyłącznie do adresów, które zostały do niego wprowadzone.">
+<!ENTITY browser_urlbar_restrict_typed_name "Ogranicz do wprowadzonych adresów">
 <!ENTITY browser_urlbar_match_title_description "Określa, czy inteligentny pasek adresu ma szukać wprowadzonego tekstu w tytułach odwiedzonych stron.">
 <!ENTITY browser_urlbar_match_title_name "Szukaj w tytułach">
 <!ENTITY browser_urlbar_match_url_description "Określa, czy inteligentny pasek adresu ma szukać wprowadzonego tekstu w adresach odwiedzonych stron.">
 <!ENTITY browser_urlbar_match_url_name "Szukaj w adresach">
+<!ENTITY browser_urlbar_matchBehavior_description "To ustawienie określa jak wykorzystane mają zostać granice słów podczas wyszukiwania elementów przy pomocy paska adresu.">
+<!ENTITY browser_urlbar_matchBehavior_name "Zachowanie wyszukiwarki">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Szukaj wszędzie">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Najpierw wyświetlaj wyniki pasujące do granic słów">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Wyświetlaj wyłącznie wyniki pasujące do granic słów">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Szukaj na początkach adresów URL i tytułów">
 <!ENTITY browser_urlbar_maxRichResults_description "Określa maksymalną liczbę wpisów wyświetlanych w rozwijalnym menu paska adresu.">
 <!ENTITY browser_urlbar_maxRichResults_name "Liczba wpisów w rozwijalnym menu">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Określa sposób obsługi rozróżniania znaków. Kiedy wybrana jest opcja &quot;Wykryj automatycznie&quot;, w kryterium wyszukiwania rozróżniana jest wielkosć znaków, jeśli zawiera ono wielkie litery, ale nie składa się wyłącznie z nich.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozróżnianie wielkości znaków">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Wykryj automatycznie">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Nie rozróżniaj">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Rozróżniaj">
+<!ENTITY accessibility_typeaheadfind_label "Wyszukiwanie podczas wpisywania tekstu">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Określa po jakim okresie czasu bez wprowadzania pasek wyszukiwania znika.">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Czas oczekiwania (w milisekundach)">
+<!ENTITY signon_prefillForms_description "Automatycznie wypełnia pola formularzy nazwami użytkownika i hasłami.">
+<!ENTITY signon_prefillForms_name "Automatycznie wypełniaj pola formularzy logowania się">
 <!ENTITY accessibility_tabfocus_description "To ustawienie określa na jakich typach elementów ma skupiać się przeglądarka po wciśnięciu klawisza Tab.">
 <!ENTITY accessibility_tabfocus_name "Elementy, na których zatrzymuje się Tab">
 <!ENTITY accessibility_tabfocus_o1 "tylko pola tekstowe">
@@ -40,12 +60,26 @@
 <!ENTITY accessibility_tabfocus_o3 "wszystkie elementy formularzy">
 <!ENTITY accessibility_tabfocus_o4 "tylko odnośniki (włączając obrazki nimi będące)">
 <!ENTITY accessibility_tabfocus_o5 "odnośniki i elementy formularzy">
+<!ENTITY accessibility_tabfocus_o6 "odnośniki i elementy formularzy inne niż pola tekstowe">
 <!ENTITY browser_backspace_action_description "Określa zachowanie klawisza Backspace.">
 <!ENTITY browser_backspace_action_name "Backspace">
 <!ENTITY browser_backspace_action_o1 "przechodzi do poprzedniej strony">
 <!ENTITY browser_backspace_action_o2 "przewija na górę strony">
 <!ENTITY browser_backspace_action_o3 "nie robi niczego">
+<!ENTITY layout_spellcheckDefault_description "Określa gdzie włączone ma być sprawdzanie pisowni.">
+<!ENTITY layout_spellcheckDefault_name "Sprawdzanie pisowni">
+<!ENTITY layout_spellcheckDefault_o1 "Wyłącz">
+<!ENTITY layout_spellcheckDefault_o2 "Włącz dla wieloliniowych pól tekstowych">
+<!ENTITY layout_spellcheckDefault_o3 "Włącz dla wieloliniowych i jednoliniowych pól tekstowych">
+<!ENTITY session_restore "Przywracanie sesji">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Włącz przywracanie sesji">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "�">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Maksymalna liczba przywracanych kart">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maksymalna liczba elementów wyświetlanych w menu &quot;Historia&quot; &gt; &quot;Ostatnio zamknięte okna&quot;.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Maksymalna liczba przywracalnych okien">
 <!ENTITY misc "Rozmaite">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Jeśli zaznaczone, otwarte okno zostanie zamknięte, gdy zamkniesz ostatnią kartę w tym oknie.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Zamknij okno po zamknięciu ostatniej karty">
 <!ENTITY browser_search_openintab_description "Po wciśnięciu przycisku wyszukiwania jego wyniki zostaną otwarte w nowej karcie.">
 <!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
 <!ENTITY browser_popups_showPopupBlocker_description "Określa, czy przeglądarka ma wyświetlać ikonę na pasku stanu w przypadku zablokowania wyskakującego okienka, czy nie.">
@@ -71,6 +105,8 @@
 <!ENTITY browser_download_manager_showAlertOnComplete_description "Wyświetla informację o zakończeniu pobierania plików w prawym dolnym rogu ekranu.">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "Wyświetl komunikat po zakończeniu pobierania">
 <!ENTITY cache "Bufor przeglądarki">
+<!ENTITY cache_disk "Cache dysku">
+<!ENTITY cache_memory "Cache pamięci">
 <!ENTITY browser_cache_check_doc_frequency_description "Jak często przeglądarka ma sprawdzać czy strona w sieci różni się od tej przechowywanej w buforze.">
 <!ENTITY browser_cache_check_doc_frequency_name "Sprawdzaj bufor przeglądarki">
 <!ENTITY browser_cache_check_doc_frequency_o1 "podczas każdej sesji">
@@ -87,6 +123,16 @@
 <!ENTITY browser_cache_memory_capacity_name "Rozmiar bufora w RAMie (KB)">
 <!ENTITY browser_cache_memory_enable_description "Używaj bufora w RAMie (uwzględniając określony limit pojemności).">
 <!ENTITY browser_cache_memory_enable_name "Używaj bufora w RAMie">
+<!ENTITY extensions "Rozszerzenia">
+<!ENTITY getaddons "Panel &quot;Pobierz rozszerzenia&quot;">
+<!ENTITY extensions_checkCompatibility_description "To ustawienie pozwala na wyłączenie sprawdzania zgodności rozszerzeń z wersją przeglądarki.">
+<!ENTITY extensions_checkCompatibility_name "Włącz sprawdzanie zgodności rozszerzeń">
+<!ENTITY extensions_getAddons_maxResults_description "Określa maksymalną liczbę wyników wyświetlanych w panelu podczas wyszukiwania.">
+<!ENTITY extensions_getAddons_maxResults_name "Maksymalna liczba wyników wyszukiwania">
+<!ENTITY extensions_getAddons_showPane_description "Określa, czy w oknie &quot;Dodatki&quot; wyświetlany ma być panel &quot;Pobierz rozszerzenia&quot;.">
+<!ENTITY extensions_getAddons_showPane_name "Wyświetlaj panel">
+<!ENTITY extensions_hideInstallButton_description "Ukryj przycisk &quot;Zainstaluj&quot; okna menedżera dodatków.">
+<!ENTITY extensions_hideInstallButton_name "Ukryj przycisk &quot;Zainstaluj&quot;">
 <!ENTITY downloadmanager "Menedżer pobierania plików">
 <!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
 <!ENTITY browser_download_lastDir_name "Ostatni katalog pobierania">
@@ -94,26 +140,45 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Ostrzegaj przed otwarciem plików wykonywalnych">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Ustawia okienko &quot;Pobieranie plików&quot; jako aktywne po rozpoczęciu pobierania plików.">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Przejdź do okna &quot;Pobieranie plików&quot; po rozpoczęciu pobierania">
+<!ENTITY security_privacy "Bezpieczeństwo i prywatność">
+<!ENTITY security_dialog_enable_delay_description "To ustawienie określa okres czasu (w milisekundach), który musi upłynąć, nim możliwe będzie kliknięcie przycisku &quot;Zainstaluj&quot; w oknie instalacji rozszerzenia. Ustaw na 0, aby wyłączyć konieczność czekania.">
+<!ENTITY security_dialog_enable_delay_name "Czas przed instalacją rozszerzenia (w milisekundach)">
+<!ENTITY browser_privatebrowsing_autostart_description "Jeśli to pole jest zaznaczone, Firefox będzie uruchamiał się w &quot;trybie prywatnym&quot; i używał go przez cały czas trwania sesji.">
+<!ENTITY browser_privatebrowsing_autostart_name "Rozpocznij pracę w &quot;trybie prywatnym&quot;">
+<!ENTITY master_pass "Główne hasło">
+<!ENTITY security_ask_for_password_description "To ustawienie określa, jak często wprowadzać musisz główne hasło.">
+<!ENTITY security_ask_for_password_o1 "Proś o wprowadzenie za każdym razem">
+<!ENTITY security_ask_for_password_o2 "Proś o wprowadzenie tylko jeden raz podczas całej sesji">
+<!ENTITY security_ask_for_password_o3 "Proś o wprowadzenie co pewien okres czasu">
+<!ENTITY security_password_lifetime_name "Okres czasu (w minutach)">
+<!ENTITY security_password_lifetime_description "Liczba minut, po upłynięciu której wyświetlona zostanie prośba o wprowadzenie głównego hasła.">
 <!ENTITY style "Styl">
 <!ENTITY browser_style "Przeglądarka">
-<!ENTITY browser_chrome_favicons_description "Określa, czy przeglądarka ma pokazywać favicony, czy nie.">
-<!ENTITY browser_chrome_favicons_name "Pokazuj favicony">
+<!ENTITY browser_identity_ssl_domain_display_name "Wyróżnianie domen używających SSL">
+<!ENTITY browser_identity_ssl_domain_display_description "Kiedy witryna używa SSL aby szyfrować połączenie, użytkownik może ustawić wyróżnianie części adresu URL w interfejsie. To ustawienie określa, czy wyświetlana ma być pełna domena, domena drugiego poziomu czy nic.">
+<!ENTITY browser_identity_ssl_domain_display_o1 "Nie wyświetlaj domeny">
+<!ENTITY browser_identity_ssl_domain_display_o2 "Wyświetlaj domenę drugiego poziomu">
+<!ENTITY browser_identity_ssl_domain_display_o3 "Wyświetlaj pełną domenę">
+<!ENTITY browser_chrome_favicons_description "Określa, czy przeglądarka ma pokazywać favikony, czy nie.">
+<!ENTITY browser_chrome_favicons_name "Pokazuj favikony">
 <!ENTITY browser_chrome_toolbar_tips_description "Określa zachowanie wskazówek przypisanych do interfejsu chrome.">
 <!ENTITY browser_chrome_toolbar_tips_name "Pokazuj wskazówki">
 <!ENTITY browser_urlbar_hideGoButton_description "Określa, czy przycisk &quot;Przejdź&quot; ma być pokazywany, czy nie.">
 <!ENTITY browser_urlbar_hideGoButton_name "Ukryj przycisk &quot;Przejdź&quot;">
 <!ENTITY browser_preferences_animateFadeIn_description "Zmienia wysokość okna i powoduje stopniowe pojawianie się nowego panelu preferencji w ciągu ok. sekundy po dokonaniu jego wyboru.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animuj przejścia między menu">
-<!ENTITY browser_tabs_closeButtons_description "Określa gdzie wyświetlać przyciski zamykające.">
-<!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
-<!ENTITY browser_tabs_closeButtons_o1 "tylko na aktywnej karcie">
-<!ENTITY browser_tabs_closeButtons_o2 "na każdej karcie">
-<!ENTITY browser_tabs_closeButtons_o3 "nigdzie">
-<!ENTITY browser_tabs_closeButtons_o4 "na końcu paska kart">
+<!ENTITY websites "Witryny">
+<!ENTITY rendering "Renderowanie">
+<!ENTITY nglayout_initialpaint_delay_description "To ustawienie określa liczbę milisekund, które przeglądarka ma odczekać przed pierwszym renderowaniem strony. Niższe wartości spowodują szybsze wyświetlanie strony, ale sprawią, że renderowanie będzie dłużej trwało. Odwrotnie przy wartościach większych.">
+<!ENTITY nglayout_initialpaint_delay_name "Czas przed wyświetleniem strony (w milisekundach)">
+<!ENTITY content_notify_interval_description "Firefox okresowo renderuje dane strony. To ustawienie określa minimalny okres czasu, który musi upłynąć, zanim Firefox ponownie będzie renderował stronę (w mikrosekundach). Niższe wartości spowodują pozorne powolniejsze wczytywanie strony, ale zwiększą całkowity jego czas.">
+<!ENTITY content_notify_interval_name "Czas przed ponownym renderowaniem strony (w mikrosekundach)">
 <!ENTITY browser_blink_allowed_description "Pozwala stronom na użycie taga blink lub taga CSS text-decoration: blink sprawiającego, że dany element strony miga.">
 <!ENTITY browser_blink_allowed_name "Zezwól na migający tekst">
 <!ENTITY browser_frames_enabled_description "Wyświetlaj ramki HTML.">
 <!ENTITY browser_frames_enabled_name "Zezwól na użycie ramek">
+<!ENTITY layout_frames_force_resizability_description "Wymuś możliwość zmiany rozmiaru ramek.">
+<!ENTITY layout_frames_force_resizability_name "wymuś możliwość zmiany rozmiaru">
 <!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
 <!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
 <!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
@@ -125,6 +190,31 @@
 <!ENTITY ui_textSelectBackground_name "Kolor tła">
 <!ENTITY ui_textSelectForeground_description "Okresla kolor zaznaczonego tekstu w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
 <!ENTITY ui_textSelectForeground_name "Kolor tekstu">
+<!ENTITY tabs "Karty">
+<!ENTITY appearance "Wygląd">
+<!ENTITY browser_tabs_tabMinWidth_name "Minimalna szerokość karty">
+<!ENTITY browser_tabs_tabMaxWidth_name "Maksymalna szerokość karty">
+<!ENTITY browser_tabs_closeButtons_description "Określa gdzie wyświetlać przyciski zamykające.">
+<!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
+<!ENTITY browser_tabs_closeButtons_o1 "tylko na aktywnej karcie">
+<!ENTITY browser_tabs_closeButtons_o2 "na każdej karcie">
+<!ENTITY browser_tabs_closeButtons_o3 "nigdzie">
+<!ENTITY browser_tabs_closeButtons_o4 "na końcu paska kart">
+<!ENTITY browser_tabs_tabClipWidth_name "Minimalna szerokość karty dla przycisku zamknięcia">
+<!ENTITY browser_tabs_tabClipWidth_description "Określa najmniejszą szerokość karty przy której wyświetlany będzie przycisk zamknięcia karty.">
+<!ENTITY tab_preview "Podgląd kart">
+<!ENTITY browser_allTabs_preview_name "Włącz podgląd kart">
+<!ENTITY browser_allTabs_preview_description "Włączenie tej funkcji powoduje dodanie przycisku po prawej stronie paska kart, który wyświetla podgląd karty po kliknięciu go.">
+<!ENTITY browser_ctrlTab_preview_name "Włącz wyświetlanie podglądów kart podczas ich wyboru">
+<!ENTITY browser_ctrlTab_preview_description "Wyświetla podgląd kart przy zmianie ich przy pomocy skrótu [CTRL]+[Tab].">
+<!ENTITY open_in_background "Otwiera nową kartę w tle z">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Odnośńiki w innych aplikacjach">
+<!ENTITY browser_tabs_loadInBackground_name "Odnośniki na stronach internetowych">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Otwieraj nowe karty obok aktywnej">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Określa, czy nowe karty mają być otwierane obok aktywnej czy na końcu paska kart.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Przy zamykaniu przełączaj do karty źródłowej">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Przy zamykaniu karty przełącza do karty, z której zamykana zostala otwarta. Jeśli opcja ta nie zostanie włączona, włączona zostanie karta znajdująca się po prawej lub po lewej od aktywnej.">
 <!ENTITY bookmarks "Subskrypcje">
 <!ENTITY microsummaries "Mikropodsumowania">
 <!ENTITY browser_microsummary_enabled_description "Pozwól na pobieranie i wyświetlanie informacji o treści stron dodanych do zakładek.">
@@ -135,12 +225,30 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Aktualizuj generatory mikropodsumowań">
 <!ENTITY browser_microsummary_updateInterval_description "Określa minutowy odstęp czasu między sprawdzeniami aktualizacji mikropodsumowań. Domyślna wartość to 30 minut.">
 <!ENTITY browser_microsummary_updateInterval_name "Częstotliwość aktualizacji (w min.)">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "Kiedy otworzysz zakładkę w nowej karcie, karta ta nie stanie się automatycznie aktywną kartą.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Liczba sekund między kolejnymi sprawdzeniami aktualizacji subskrybowanych kanałów RSS. Wartości poniżej 60 są uznawane za 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Odświeżaj co (sek.)">
 <!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
 <!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
+<!ENTITY network "Sieć">
+<!ENTITY connections "Połączenia">
+<!ENTITY network_http_max-connections-per-server_description "To ustawienie określa maksymalną liczbę jednoczesnych połączeń z jednym serwerem, które Firefox może utworzyć. Ta wartość musi być z zakresu od 1 do 255.">
+<!ENTITY network_http_max-connections-per-server_name "Maksymalna liczba połączeń HTTP na serwer">
+<!ENTITY network_http_max-connections_description "To ustawienie określa maksymalną liczbę jednoczesnych połączeń, które Firefox może utworzyć. Ta wartość musi być z zakresu od 1 do 65535.">
+<!ENTITY network_http_max-connections_name "Maksymalna liczba połączeń HTTP">
+<!ENTITY keep-alive_connections "Połączenia keep-alive">
+<!ENTITY network_http_keep-alive_description "Połączenia keep-alive HTTP to połączenia, które mogą zostać użyte ponownie w celu wysłania wielu zapytań i poprawienia wydajności.">
+<!ENTITY network_http_keep-alive_name "Maksymalna liczba połączeń keep-alive">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "To ustawienie określa maksymalną liczbę połączeń keep-alive, które Firefox może jednocześnie otworzyć na serwerze proxy. Wartość ta musi być z przedziału od 1 do 255.">
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Maksymalna liczba połączeń keep-alive na serwer proxy">
+<!ENTITY network_http_max-persistent-connections-per-server_description "To ustawienie określa maksymalną liczbę połączeń keep-alive, którą Firefox może jednocześnie otworzyć z jednym serwerem. Wartość ta musi być z przedziału od 1 do 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Maksymalna liczba połączeń keep-alive na serwer">
+<!ENTITY pipelining "Przetwarzanie potokowe">
+<!ENTITY network_http_pipelining_description "Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">
+<!ENTITY network_http_pipelining_maxrequests_description "To ustawienie określa maksymalną liczbę jednocześnie przetwarzanych potokowo zapytań, gdy przetwarzanie to jest włączone.">
+<!ENTITY network_http_pipelining_maxrequests_name "Maksymalna liczba przetwarzanych potokowo zapytań">
+<!ENTITY network_http_pipelining_name "Użyj przetwarzania potokowego">
+<!ENTITY network_http_proxy_pipelining_description "To ustawienie określa, czy przetwarzanie potokowe ma być używane na serwerze proxy. Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">
+<!ENTITY network_http_proxy_pipelining_name "Używaj przetwarzania potokowego z serwerem proxy">
 <!ENTITY developing "Programowanie">
 <!ENTITY viewsource "Pokaz źródło strony">
 <!ENTITY view_source_editor_external_description "Używaj własnego edytora do wyświetlania źródła stron.">
@@ -151,5 +259,7 @@
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
 <!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
 <!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
+<!ENTITY javascript_options_showInConsole_description "Określa, czy błędy i ostrzeżenia od chrome'a mają być wyświetlane w konsoli JavaScriptu.">
+<!ENTITY javascript_options_showInConsole_name "Wyświetlaj błędy chrome'a w konsoli">
 <!ENTITY javascript_options_strict_description "Włącza ścisłe sprawdzanie poprawności skryptów JavaScript i zgłaszanie ostrzeżeń w konsoli błędów.">
 <!ENTITY javascript_options_strict_name "Ścisła kontrola JavaScriptu">

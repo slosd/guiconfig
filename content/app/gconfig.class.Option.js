@@ -2,13 +2,16 @@ var Option = function(key, options) {
   this.key = key;
   this.options = options;
   this.preference = new Preference(key, options.type);
-  this.preference.observer.add(this.onPrefChange, this);
   this.observer = new gcCore.GenericObserver();
-  this.poll();
 }
 
 Option.prototype.onDialogComplete = function() {
   var option;
+  if(this.hasElement) {
+	this.element.observer.add(this.onElementChange, this);  // track element from now on
+  }
+  this.preference.observer.add(this.onPrefChange, this);
+  this.poll();
   for(var i = 0, l = this.options.wrapper.dependencies.length; i < l; i++) {
     var option = guiconfig.getPreferenceByKey(this.options.wrapper.dependencies[i].key);
     if(!is_defined(option)) {
@@ -65,7 +68,17 @@ Option.prototype.set = function(value) {
 }
 
 Option.prototype.get = function() {
-  return this.value;
+  if(typeof this.value == "undefined") {
+    if(is_defined(this.options.wrapper.scripts.getPref)) {
+      return this.options.wrapper.scripts.getPref.call(this);
+    }
+    else {
+      return this.preference.get();
+    }
+  }
+  else {
+	return this.value;
+  }
 }
 
 Option.prototype.reset = function() {
@@ -127,7 +140,6 @@ Option.prototype.saveBindings = function() {
 
 Option.prototype.addElement = function(options) {
   this.element = new window["GC" + this.preference.type + "Element"](options);
-  this.element.observer.add(this.onElementChange, this);
   return this.element;
 }
 

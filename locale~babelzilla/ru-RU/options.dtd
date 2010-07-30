@@ -71,9 +71,13 @@
 <!ENTITY layout_spellcheckDefault_o1 "отключить">
 <!ENTITY layout_spellcheckDefault_o2 "разрешить в многострочных текстовых полях">
 <!ENTITY layout_spellcheckDefault_o3 "разрешить в много- и однострочных текстовых полях">
-<!ENTITY misc "Разное">
+<!ENTITY session_restore "Восстановление сессии">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Включает псевдосохранение сессий">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Восстанавливаемых вкладок">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Максимальное количество окон отображаемых в меню «Журнал|Недавно закрытые окна».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
+<!ENTITY misc "Разное">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Если этот флажок установлен, текущее окно будет закрыто при закрытии в нём последней вкладки.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрывать окно по последней вкладке">
 <!ENTITY browser_search_openintab_description "При выполнении поиска через строку поиска открывает результаты в новой вкладке.">
@@ -141,6 +145,13 @@
 <!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
 <!ENTITY browser_privatebrowsing_autostart_description "Если этот флажок установлен, Firefox будет запущен в режиме приватного просмотра и сделает эту настройку постоянно действующей до окончания сессии.">
 <!ENTITY browser_privatebrowsing_autostart_name "Запускать в режиме приватного просмотра">
+<!ENTITY master_pass "Мастер-пароль">
+<!ENTITY security_ask_for_password_description "Этот параметр определяет как часто вам придётся вводить мастер-пароль.">
+<!ENTITY security_ask_for_password_o1 "запрашивать пароль всякий раз когда он необходим">
+<!ENTITY security_ask_for_password_o2 "запрашивать пароль когда он необходим в первый раз">
+<!ENTITY security_ask_for_password_o3 "запрашивать пароль спустя определённое время">
+<!ENTITY security_password_lifetime_name "Срок действия (мин)">
+<!ENTITY security_password_lifetime_description "Сколько минут спустя вы снова получите запрос на ввод мастер-пароля.">
 <!ENTITY style "Стиль">
 <!ENTITY browser_style "Браузер">
 <!ENTITY browser_identity_ssl_domain_display_name "Подчёркивать домены использующие SSL">
@@ -156,12 +167,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Скрыть кнопку «Перейти»">
 <!ENTITY browser_preferences_animateFadeIn_description "При переключении между панелями настроек изменяет высоту окна и плавно выводит новую панель примерно через секунду.">
 <!ENTITY browser_preferences_animateFadeIn_name "Анимировать переключение панелей настроек">
-<!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
-<!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
-<!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
-<!ENTITY browser_tabs_closeButtons_o2 "на каждой вкладке">
-<!ENTITY browser_tabs_closeButtons_o3 "нигде">
-<!ENTITY browser_tabs_closeButtons_o4 "в конце панели вкладок">
 <!ENTITY websites "Веб-сайты">
 <!ENTITY rendering "Визуализация">
 <!ENTITY nglayout_initialpaint_delay_description "Эта настройка задаёт задержку в миллисекундах перед началом визуализации страницы. Меньшее значение приведёт к более быстрому первоначальному отображению страницы, но окончательный результат займёт больше времени. Большее значение имеет противоположный эффект.">
@@ -172,6 +177,8 @@
 <!ENTITY browser_blink_allowed_name "Разрешить мигающий текст">
 <!ENTITY browser_frames_enabled_description "Отображение HTML фреймов.">
 <!ENTITY browser_frames_enabled_name "Разрешить фреймы">
+<!ENTITY layout_frames_force_resizability_description "Принудительно задать фреймам возможность изменять размер.">
+<!ENTITY layout_frames_force_resizability_name "принудить к изменяемому размеру">
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
@@ -183,6 +190,31 @@
 <!ENTITY ui_textSelectBackground_name "Цвет фона">
 <!ENTITY ui_textSelectForeground_description "Определяет цвет текста (в виде названия или #кода), используемого при выделении. Если не указан, то используется значение из настроек ОС.">
 <!ENTITY ui_textSelectForeground_name "Цвет текста">
+<!ENTITY tabs "Вкладки">
+<!ENTITY appearance "Внешний вид">
+<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширна вкладки">
+<!ENTITY browser_tabs_tabMaxWidth_name "Максимальная ширина вкладки">
+<!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
+<!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
+<!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
+<!ENTITY browser_tabs_closeButtons_o2 "на каждой вкладке">
+<!ENTITY browser_tabs_closeButtons_o3 "нигде">
+<!ENTITY browser_tabs_closeButtons_o4 "в конце панели вкладок">
+<!ENTITY browser_tabs_tabClipWidth_name "Минимальная ширина вкладки для кнопки закрытия">
+<!ENTITY browser_tabs_tabClipWidth_description "Определяет минимальную ширину вкладки, необходимую для отображения кнопки закрытия.">
+<!ENTITY tab_preview "Просмотр вкладок">
+<!ENTITY browser_allTabs_preview_name "Включить просмотр">
+<!ENTITY browser_allTabs_preview_description "Добавляет справа на панели вкладок кнопку, которая отображает при нажатии просмотр вкладок">
+<!ENTITY browser_ctrlTab_preview_name "Включить просмотр при переключении вкладок">
+<!ENTITY browser_ctrlTab_preview_description "Отображает просмотр вкладок при использовании для переключения между вкладками комбинации клавиш Ctrl+Tab.">
+<!ENTITY open_in_background "Открывать новую фоновую вкладку для ссылок">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "из внешних приложений">
+<!ENTITY browser_tabs_loadInBackground_name "с веб-сайтов">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Загружать закладки в фоне">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Открывать новую вкладку следом за текущей">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Определяет местоположение вновь открываемой вкладки в конце панели вкладок или рядом с выбранной сейчас вкладкой.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "При закрытии вкладки переключаться на вкладку с которой она была открыта">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "При закрытии вкладки возвращает фокус вкладке с которой та была открыта. Иначе переключается на соседнюю вкладку справа или слева.">
 <!ENTITY bookmarks "Закладки">
 <!ENTITY microsummaries "Сводки">
 <!ENTITY browser_microsummary_enabled_description "Разрешает загружать информацию для закладок со сводками.">
@@ -193,8 +225,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Обновить генераторы сводок">
 <!ENTITY browser_microsummary_updateInterval_description "Определяет промежуток (в минутах) между проверками обновлений сводок. По умолчанию 30 минут.">
 <!ENTITY browser_microsummary_updateInterval_name "Интервал обновления (мин)">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "При открытии закладки в новой вкладке она открывается в фоне, не отбирая фокус у текущей вкладки.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Загружать закладки в фоне">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Задаёт промежуток между проверками живых закладок. Значения меньшие 60 приравниваются к 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Интервал обновления (с)">
 <!ENTITY browser_bookmarks_max_backups_description "Определяет число сохраняемых резервных копий закладок. Установка в 0 отключит резервирование.">

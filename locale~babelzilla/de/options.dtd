@@ -71,10 +71,16 @@
 <!ENTITY layout_spellcheckDefault_o1 "Deaktivieren">
 <!ENTITY layout_spellcheckDefault_o2 "Nur für mehrzeilige Textfelder aktivieren">
 <!ENTITY layout_spellcheckDefault_o3 "Für ein- und mehrzeilige Textfelder aktivieren">
-<!ENTITY misc "Verschiedenes">
+<!ENTITY session_restore "Sitzung wiederherstellen">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Sitzungswiederherstellung aktivieren">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Max. wiederherstellbare Tabs">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Definiert die maximale Anzahl an Browserfenstern, die wiederhergestellt werden können.
+
+
 (Über &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Fenster&quot;)">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">
+<!ENTITY misc "Verschiedenes">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Gibt an, ob der letzte Tab eines Browserfensters geschlossen werden kann.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Letzter Tab eines Fensters schließbar">
 <!ENTITY browser_search_openintab_description "Wenn die Suchleiste verwendet wird, werden die Ergebnisse in einem neuen Tab geöffnet, anstatt im aktuellen.">
@@ -142,6 +148,13 @@
 <!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms):">
 <!ENTITY browser_privatebrowsing_autostart_description "Aktiviert, startet Firefox im &quot;Privaten Modus&quot; und behält diesen Modus während der gesamten Sitzung.">
 <!ENTITY browser_privatebrowsing_autostart_name "Firefox im &quot;Privaten Modus&quot; starten">
+<!ENTITY master_pass "Master-Passwort">
+<!ENTITY security_ask_for_password_description "Bestimmt, wann nach dem Master-Passwort gefragt wird.">
+<!ENTITY security_ask_for_password_o1 "Bei jedem Gebrauch">
+<!ENTITY security_ask_for_password_o2 "Bei erstem Gebrauch">
+<!ENTITY security_ask_for_password_o3 "Wenn es für eine festzulegende Zeitspanne nicht angefordert wurde.">
+<!ENTITY security_password_lifetime_name "Passwort-Vorhaltezeit (Min)">
+<!ENTITY security_password_lifetime_description "Nach wievielen Minuten nach dem Master-Passwort erneut gefragt wird.">
 <!ENTITY style "Aussehen">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_identity_ssl_domain_display_name "SSL-Domains kennzeichnen:">
@@ -157,12 +170,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "&quot;Go&quot;-Schaltfläche verstecken">
 <!ENTITY browser_preferences_animateFadeIn_description "Wenn dies aktiviert ist, werden im &quot;Einstellungen&quot;-Dialog die Karteikarten sanft eingeblendet.">
 <!ENTITY browser_preferences_animateFadeIn_name "&quot;Einstellungen&quot;-Karteikarten sanft einblenden">
-<!ENTITY browser_tabs_closeButtons_description "Bestimmt wo Schaltflächen zum Schließen von Tabs angezeigt werden sollen.">
-<!ENTITY browser_tabs_closeButtons_name "&quot;Schließen&quot; Schaltflächen anzeigen:">
-<!ENTITY browser_tabs_closeButtons_o1 "nur im aktiven Tab">
-<!ENTITY browser_tabs_closeButtons_o2 "in jedem Tab">
-<!ENTITY browser_tabs_closeButtons_o3 "nie anzeigen">
-<!ENTITY browser_tabs_closeButtons_o4 "am Rand der Tableiste">
 <!ENTITY websites "Webseiten">
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_description "Legt die Zeit fest, in der Firefox auf Daten wartet, bevor mit dem Rendern der Webseite begonnen wird.">
@@ -173,6 +180,8 @@
 <!ENTITY browser_blink_allowed_name "Blinkenden Text erlauben">
 <!ENTITY browser_frames_enabled_description "Anzeige von Frames im Browser erlauben.">
 <!ENTITY browser_frames_enabled_name "Frames erlauben">
+<!ENTITY layout_frames_force_resizability_description "Frames sollen immer größenveränderlich sein.">
+<!ENTITY layout_frames_force_resizability_name "immer größenveränderlich">
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
@@ -184,6 +193,24 @@
 <!ENTITY ui_textSelectBackground_name "Hintergrundfarbe:">
 <!ENTITY ui_textSelectForeground_description "Bestimmt die Textfarbe von markiertem Text als Hexadezimal Code oder Farbname.Ist diese Option nicht gesetzt, wird der Betriebssystemstandard verwendet.">
 <!ENTITY ui_textSelectForeground_name "Textfarbe:">
+<!ENTITY tabs "Tabs">
+<!ENTITY appearance "Anzeige">
+<!ENTITY browser_tabs_tabMinWidth_name "Minimale Tab-Breite">
+<!ENTITY browser_tabs_tabMaxWidth_name "Maximale Tab-Breite">
+<!ENTITY browser_tabs_closeButtons_description "Bestimmt wo Schaltflächen zum Schließen von Tabs angezeigt werden sollen.">
+<!ENTITY browser_tabs_closeButtons_name "&quot;Schließen&quot; Schaltflächen anzeigen:">
+<!ENTITY browser_tabs_closeButtons_o1 "nur im aktiven Tab">
+<!ENTITY browser_tabs_closeButtons_o2 "in jedem Tab">
+<!ENTITY browser_tabs_closeButtons_o3 "nie anzeigen">
+<!ENTITY browser_tabs_closeButtons_o4 "am Rand der Tableiste">
+<!ENTITY browser_tabs_tabClipWidth_name "Minimale Tab-Breite mit Schließen-Schaltfläche">
+<!ENTITY browser_tabs_tabClipWidth_description "Legt die minimale Tab-Breite fest, bis zu der die Schließen-Schaltfläche angezeigt wird.">
+<!ENTITY tab_preview "Tab-Vorschau">
+<!ENTITY browser_allTabs_preview_name "Tab-Vorschau aktivieren">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Links in ext. Anwendung öffnen">
+<!ENTITY browser_tabs_loadInBackground_name "Links in Webseiten">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Lesezeichen im Hintergrund öffnen">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Neuen Tab direkt neben dem aktuellen öffnen">
 <!ENTITY bookmarks "Lesezeichen">
 <!ENTITY microsummaries "Microsummaries">
 <!ENTITY browser_microsummary_enabled_description "Informationen aus Microsummaries für Lesezeichen verwenden.">
@@ -194,8 +221,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Microsummary-Generatoren aktualisieren">
 <!ENTITY browser_microsummary_updateInterval_description "Das Intervall, in Minuten, in dem Microsummaries aktualisiert werden. (Standard ist 30 Minuten)">
 <!ENTITY browser_microsummary_updateInterval_name "Aktualisierung (min):">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "Wenn ein Lesezeichen in einem neuen Tab geöffnet wird, bleibt der Fokus auf dem aktuellen Tab und dieser somit im Vordergrund während im Hintergrund das Lesezeichen im neuen Tab geladen wird.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Lesezeichen im Hintergrund öffnen">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Gibt in Sekunden an, in welchen Abständen Dynamische Lesezeichen aktualisiert wird.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Aktualisierung (sek):">
 <!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">

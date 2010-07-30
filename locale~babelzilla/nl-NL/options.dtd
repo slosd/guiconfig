@@ -50,11 +50,15 @@
 <!ENTITY browser_popups_showPopupBlocker_description "Bepaalt of om aan te tonen een icoon in de statusbalk wanneer een pop-up is geblokkeerd of niet.">
 <!ENTITY browser_popups_showPopupBlocker_name "Toon icoon in de statusbalk">
 <!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn actief onmiddellijk. De voorkeuren venster is niet modaal. In plaats van &quot;OK&quot; en &quot;Annuleren&quot; knoppen, is er slechts een &quot;Sluiten&quot;.&quot;&gt;
+
+
 ">
 <!ENTITY browser_preferences_instantApply_name "Instant toepassing">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Elke keer (F7) wordt ingedrukt, verschijnt een dialoogvenster de waarschuwing dat ze binnenkomen Caret Browsing-modus.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Toon het dialoogvenster bij het invoeren van caret browsing">
 <!ENTITY accessibility_accesskeycausesactivation_description "Met behulp van een sneltoets voor een element is hetzelfde als het activeren van het element. Indien het element is een link, volg de link. Indien het element is een knop, &quot;klik&quot; op de knop.&quot;&gt;
+
+
 ">
 <!ENTITY accessibility_accesskeycausesactivation_name "Toegang toets activeert het element">
 <!ENTITY browser "Browser">
@@ -64,12 +68,18 @@
 <!ENTITY alerts_slideIncrementTime_description "Controls het aantal milliseconden tussen glijdende bewegingen voor situaties waarin de signalering beweegt en het aantal milliseconden tussen fading verandert wanneer de signalering vervaagt in en uit.">
 <!ENTITY alerts_slideIncrementTime_name "Duur van de beweging (ms)">
 <!ENTITY alerts_slideIncrement_description "Deze voorkeur bepaalt de snelheid van de &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts. Met name de controles is het aantal pixels te verplaatsen per increment.&quot;&gt;
+
+
 ">
 <!ENTITY alerts_slideIncrement_name "Aantal pixels te verplaatsen per aanwas (px)">
 <!ENTITY alerts_totalOpenTime_description "Bepaalt de hoeveelheid tijd in milliseconden om te laten zien &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts.&quot;&gt;
+
+
 ">
 <!ENTITY alerts_totalOpenTime_name "alarmfase (ms)">
 <!ENTITY browser_download_manager_showAlertInterval_description "Aantal milliseconden na volledige downloads aan te tonen van de &quot;voltooid&quot; alarm.&quot;&gt;
+
+
 ">
 <!ENTITY browser_download_manager_showAlertInterval_name "Alert vertraging (msec)">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "Shows popup-venster onderaan rechts van het scherm zodra alle downloads zijn klaar.">
@@ -105,17 +115,15 @@
 <!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltip gedrag voor chromen elementen.">
 <!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
 <!ENTITY browser_urlbar_hideGoButton_description "Bepaalt of om aan te tonen de &quot;Go&quot; knop of niet.&quot;&gt;
+
+
 ">
 <!ENTITY browser_urlbar_hideGoButton_name "Verberg de &quot;Go&quot; knop&quot;&gt;
+
+
 ">
 <!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
-<!ENTITY browser_tabs_closeButtons_description "bepaalt waar te sluiten elkaar knoppen.">
-<!ENTITY browser_tabs_closeButtons_name "Sluiten knoppen voor tabbladen worden weergegeven">
-<!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">
-<!ENTITY browser_tabs_closeButtons_o2 "op elk tabblad">
-<!ENTITY browser_tabs_closeButtons_o3 "nooit">
-<!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
 <!ENTITY browser_blink_allowed_description "Gebruik van de blink-tag of de tekst's CSS-decoration: blink zal leiden tot knipperende elementen.">
 <!ENTITY browser_blink_allowed_name "Schakel knipperende tekst">
 <!ENTITY browser_frames_enabled_description "Toon HTML frames.">
@@ -127,11 +135,20 @@
 <!ENTITY text_select "Geselecteerde tekst">
 <!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Find As You Type als een hexadecimale code of benoemde kleur.">
 <!ENTITY ui_textSelectBackgroundAttention_name "&quot;Find As You Type&quot; achtergrondkleur&quot;&gt;
+
+
 ">
 <!ENTITY ui_textSelectBackground_description "Bepaalt de achtergrondkleur te gebruiken voor tekst selecties als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van de OS's gebruikt.">
 <!ENTITY ui_textSelectBackground_name "Achtergrondkleur">
 <!ENTITY ui_textSelectForeground_description "Bepaalt de tekstkleur te gebruiken voor tekst selecties als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van de OS's gebruikt.">
 <!ENTITY ui_textSelectForeground_name "Tekstkleur">
+<!ENTITY browser_tabs_closeButtons_description "bepaalt waar te sluiten elkaar knoppen.">
+<!ENTITY browser_tabs_closeButtons_name "Sluiten knoppen voor tabbladen worden weergegeven">
+<!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">
+<!ENTITY browser_tabs_closeButtons_o2 "op elk tabblad">
+<!ENTITY browser_tabs_closeButtons_o3 "nooit">
+<!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
 <!ENTITY bookmarks "Bladwijzers">
 <!ENTITY microsummaries "Microsummaries">
 <!ENTITY browser_microsummary_enabled_description "Laat op te halen informatie voor bladwijzers met microsummaries.">
@@ -142,8 +159,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Update microsummaries generatoren">
 <!ENTITY browser_microsummary_updateInterval_description "Bepaalt minuten tussen de controles microsummary update in seconden. Standaard is 30 minuten.">
 <!ENTITY browser_microsummary_updateInterval_name "Update interval (min)">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "Wanneer u een bladwijzer in een nieuw tabblad dat tabblad worden geladen op de achtergrond zonder focus van het huidige tabblad.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Het aantal seconden tussen Live Bookmark controles. Waarden onder de 60 wordt verondersteld dat 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Vernieuw interval (sec)">
 <!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal back-ups bewaard. Instellen op 0 schakelt backups.">

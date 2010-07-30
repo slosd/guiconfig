@@ -71,9 +71,9 @@
 <!ENTITY layout_spellcheckDefault_o1 "Désactiver">
 <!ENTITY layout_spellcheckDefault_o2 "Activer pour les champs de texte de plusieurs lignes">
 <!ENTITY layout_spellcheckDefault_o3 "Activer pour les champs de texte d&apos;une ou plusieurs lignes">
-<!ENTITY misc "Divers">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Nombre maximal de fenêtres affichées dans le menu « Historique » &gt; « Fenêtres récemment fermées ».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Nb. maximal de fenêtres restaurables">
+<!ENTITY misc "Divers">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Si la case est cochée, la fenêtre en cours sera fermée lorsque vous fermerez le dernier onglet de cette fenêtre.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Fermer la fenêtre en même temps que le dernier onglet">
 <!ENTITY browser_search_openintab_description "Lorsqu&apos;une requête est lancée depuis la barre de recherche, ouvrir la page de résultat dans un nouvel onglet.">
@@ -156,12 +156,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Masquer le bouton « Aller »">
 <!ENTITY browser_preferences_animateFadeIn_description "Modifie la hauteur de la fenêtre et fond avec le nouveau panneau en à peu près une seconde, lors du changement de panneau des préférences.">
 <!ENTITY browser_preferences_animateFadeIn_name "Changement animé des panneaux de préférences">
-<!ENTITY browser_tabs_closeButtons_description "Précise où afficher les boutons de clôture d&apos;onglets.">
-<!ENTITY browser_tabs_closeButtons_name "Les boutons de fermeture sont affichés">
-<!ENTITY browser_tabs_closeButtons_o1 "juste sur l&apos;onglet en cours">
-<!ENTITY browser_tabs_closeButtons_o2 "sur chaque onglet">
-<!ENTITY browser_tabs_closeButtons_o3 "sur aucun onglet">
-<!ENTITY browser_tabs_closeButtons_o4 "à la fin de la barre d&apos;onglets">
 <!ENTITY websites "Sites Web">
 <!ENTITY rendering "Rendu">
 <!ENTITY nglayout_initialpaint_delay_description "Cette préférence précise le nombre de millisecondes d&apos;attente avant le rendu de la page. Les petites valeurs feront que la page s&apos;affichera plus vite, mais lui demandera plus de temps pour que le rendu se termine. Les grandes valeurs auront l&apos;effet inverse.">
@@ -183,6 +177,13 @@
 <!ENTITY ui_textSelectBackground_name "Couleur d&apos;arrière-plan">
 <!ENTITY ui_textSelectForeground_description "Précise la couleur de texte à utiliser lors des sélections de texte (code hexadécimal ou nom de la couleur). Si la préférence n&apos;est pas fournie, la valeur du système d&apos;exploitation est utilisée.">
 <!ENTITY ui_textSelectForeground_name "Couleur du texte">
+<!ENTITY browser_tabs_closeButtons_description "Précise où afficher les boutons de clôture d&apos;onglets.">
+<!ENTITY browser_tabs_closeButtons_name "Les boutons de fermeture sont affichés">
+<!ENTITY browser_tabs_closeButtons_o1 "juste sur l&apos;onglet en cours">
+<!ENTITY browser_tabs_closeButtons_o2 "sur chaque onglet">
+<!ENTITY browser_tabs_closeButtons_o3 "sur aucun onglet">
+<!ENTITY browser_tabs_closeButtons_o4 "à la fin de la barre d&apos;onglets">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
 <!ENTITY bookmarks "Marque-pages">
 <!ENTITY microsummaries "Microrésumés">
 <!ENTITY browser_microsummary_enabled_description "Permet d&apos;extraire une information pour les marque-pages depuis les microrésumés.">
@@ -193,8 +194,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Mettre à jour les générateurs de microrésumés">
 <!ENTITY browser_microsummary_updateInterval_description "Précise le nombre de minutes entre les vérifications de mises à jour des microrésumés. La valeur par défaut est 30 minutes.">
 <!ENTITY browser_microsummary_updateInterval_name "Fréquence de mise à jour (min)">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "Quand vous ouvrez un marque-page dans un nouvel onglet, celui-ci se chargera en arrière-plan sans prendre la main à l&apos;onglet en cours.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Nombre de secondes entre chaque actualisation des marque-pages dynamiques. Les valeurs inférieures à 60 sont considérées comme étant 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalle d&apos;actualisation (s)">
 <!ENTITY browser_bookmarks_max_backups_description "Détermine le nombre de sauvegardes à effectuer. La valeur 0 les désactivera.">

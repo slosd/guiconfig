@@ -127,12 +127,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Nascondi il pulsante Vai">
 <!ENTITY browser_preferences_animateFadeIn_description "Cambia l&apos;altezza della finestra e genera un effetto dissolvenza per circa un secondo quando si passa da un pannello all&apos;altro nella finestra delle Opzioni.">
 <!ENTITY browser_preferences_animateFadeIn_name "Dissolvenza in apertura all&apos;interno della finestra Opzioni">
-<!ENTITY browser_tabs_closeButtons_description "Specifica dove visualizzare i pulsanti di chiusura.">
-<!ENTITY browser_tabs_closeButtons_name "Mostra i pulsanti di chiusura delle schede">
-<!ENTITY browser_tabs_closeButtons_o1 "solo sulle schede attive">
-<!ENTITY browser_tabs_closeButtons_o2 "su ogni scheda">
-<!ENTITY browser_tabs_closeButtons_o3 "mai">
-<!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_description "Questa preferenza permette di specificare l&apos;attesa, in millisecondi, prima che sia effettuato il rendering di una pagina. Valori più bassi faranno in modo che le pagine siano visualizzate più velocemente ma sarà necessario più tempo per il rendering. Valori più alti avranno l&apos;effetto contrario.">
 <!ENTITY nglayout_initialpaint_delay_name "Ritardo nella visualizzazione delle pagine (millisecondi)">
@@ -153,6 +147,13 @@
 <!ENTITY ui_textSelectBackground_name "Colore di sfondo">
 <!ENTITY ui_textSelectForeground_description "Indica il colore del testo selezionato, utilizzando un codice esadecimale o il nome di un colore. Se la preferenza non è impostata viene utilizzato il valore fornito dal sistema operativo.">
 <!ENTITY ui_textSelectForeground_name "Colore del testo">
+<!ENTITY browser_tabs_closeButtons_description "Specifica dove visualizzare i pulsanti di chiusura.">
+<!ENTITY browser_tabs_closeButtons_name "Mostra i pulsanti di chiusura delle schede">
+<!ENTITY browser_tabs_closeButtons_o1 "solo sulle schede attive">
+<!ENTITY browser_tabs_closeButtons_o2 "su ogni scheda">
+<!ENTITY browser_tabs_closeButtons_o3 "mai">
+<!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
 <!ENTITY bookmarks "Segnalibri">
 <!ENTITY microsummaries "Titoli live">
 <!ENTITY browser_microsummary_enabled_description "Consente di ottenere informazioni dai segnalibri per mezzo dei Titoli live.">
@@ -163,8 +164,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Aggiorna i generatori di Titoli live">
 <!ENTITY browser_microsummary_updateInterval_description "Determina in minuti l&apos;intervallo di aggiornamento dei Titoli live. Il valore predefinito è 30 minuti.">
 <!ENTITY browser_microsummary_updateInterval_name "Intervallo di aggiornamento (in minuti)">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "Quando si apre un segnalibro in una nuova scheda, questa si aprirà in secondo piano.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Indica, in secondi, l&apos;intervallo tra i vari controlli dei Segnalibri live. Valori inferiori a 60 saranno considerati pari a 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervallo di aggiornamento (in secondi):">
 <!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">

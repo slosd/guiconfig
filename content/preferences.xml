@@ -191,37 +191,39 @@
           </pref>
         </group>
       </tab>
-      <!-- Session Restore for FF 3.0 -->
-      <tab label="&session_restore;" maxVersion="3.0.*">
-        
-      </tab>
-      <!-- Session Restore for FF 3.5 and higher -->
       <tab label="&session_restore;" minVersion="3.5">
         <pref key="guiconfig.pseudo.sessionstore.enable"
               label="&guiconfig_pseudo_sessionstore_enable_name;"
               description="&guiconfig_pseudo_sessionstore_enable_description;"
-              type="Bool"
+							type="Bool"
               default="true">
           <wrapper>
             <script name="setPref">
               <![CDATA[
               var tabs = guiconfig.getPreferenceByKey("browser.sessionstore.max_tabs_undo");
-              var win = guiconfig.getPreferenceByKey("browser.sessionstore.max_windows_undo");
-              if(!value) {
-                tabs.set(0);
-                win.set(0);
+              var windows = guiconfig.getPreferenceByKey("browser.sessionstore.max_windows_undo");
+              if(is_defined(value) && !value) {
+                tabs.preference.set(0);
+                windows.preference.set(0);
               }
+              else {
+                if(tabs.get() == 0)
+                  tabs.preference.set(10);
+                if(windows.get() == 0)
+                  windows.preference.set(3);
+              }
+              this.preference.set(value);
               ]]>
             </script>
           </wrapper>
         </pref>
         <pref key="browser.sessionstore.max_tabs_undo"
               label="&browser_sessionstore_max_tabs_undo_name;"
-              description="browser_sessionstore_max_tabs_undo_description;"
+              description="&browser_sessionstore_max_tabs_undo_description;"
               wrapper="checkbox_is_enabled">
           <wrapper>
             <dependencies>
-              <pref key="guiconfig.pseudo.sessionstore.enable" />
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
             </dependencies>
           </wrapper>
         </pref>
@@ -231,18 +233,47 @@
               wrapper="checkbox_is_enabled">
           <wrapper>
             <dependencies>
-              <pref key="guiconfig.pseudo.sessionstore.enable" />
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
             </dependencies>
           </wrapper>
         </pref>
+			  <pref key="browser.sessionstore.privacy_level"
+				      label="&browser_sessionstore_privacy_level_name;"
+							description="&browser_sessionstore_privacy_level_description;"
+							mode="select"
+              wrapper="checkbox_is_enabled">
+				  <option label="&browser_sessionstore_privacy_level_o1;">0</option>
+					<option label="&browser_sessionstore_privacy_level_o2;">1</option>
+					<option label="&browser_sessionstore_privacy_level_o3;">2</option>
+          <wrapper>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+            </dependencies>
+          </wrapper>
+        </pref>
+				<pref key="browser.sessionstore.resume_from_crash"
+				      label="&browser_sessionstore_resume_from_crash_name;"
+							description="&browser_sessionstore_resume_from_crash_description;"
+							wrapper="checkbox_is_enabled">
+          <wrapper>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+            </dependencies>
+          </wrapper>
+        </pref>
+			  <pref key="browser.sessionstore.max_resumed_crashes"
+				      label="&browser_sessionstore_max_resumed_crashes_name;"
+							description="&browser_sessionstore_max_resumed_crashes_description;"
+							wrapper="checkbox_is_enabled">
+				  <wrapper>
+				  	<dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+				  		<pref key="browser.sessionstore.resume_from_crash" />
+						</dependencies>
+					</wrapper>
+				</pref>
       </tab>
       <tab label="&misc;">
-        <!--<pref key="browser.tabs.closeWindowWithLastTab"
-              label="&browser_tabs_closeWindowWithLastTab_name;"
-              description="&browser_tabs_closeWindowWithLastTab_description;"
-              type="Bool"
-              minVersion="3.5"
-              default="0" />-->
         <pref key="browser.preferences.instantApply"
               label="&browser_preferences_instantApply_name;"
               description="&browser_preferences_instantApply_description;"
@@ -394,6 +425,20 @@
           </pref>
         </group>
         <group label="&misc;">
+        	<pref key="dom.ipc.plugins.enabled"
+					      label="&dom_ipc_plugins_enabled_name;"
+								description="&dom_ipc_plugins_enabled_description;" />
+				  <pref key="dom.ipc.plugins.timeoutSecs"
+					      label="&dom_ipc_plugins_timeoutSecs_name;"
+								description="&dom_ipc_plugins_timeoutSecs_description;"
+								indent="indent"
+								wrapper="checkbox_is_enabled">
+					  <wrapper>
+					  	<dependencies>
+					  		<pref key="dom.ipc.plugins.enabled" />
+							</dependencies>
+						</wrapper>
+					</pref>
           <pref key="security.dialog_enable_delay"
                 label="&security_dialog_enable_delay_name;"
                 description="&security_dialog_enable_delay_description;" />
@@ -438,40 +483,53 @@
       </tab>
     </tabs>
   </panel>
-  <panel label="&style;" icon="tab_style">
+  <panel label="&appearance;" icon="tab_style">
     <tabs>
       <tab label="&browser_style;">
-        <pref key="browser.identity.ssl_domain_display"
-              label="&browser_identity_ssl_domain_display_name;"
-              description="&browser_identity_ssl_domain_display_description;"
-              minVersion="3.0"
-              mode="select">
-          <option label="&browser_identity_ssl_domain_display_o1;">0</option>
-          <option label="&browser_identity_ssl_domain_display_o2;">1</option>
-          <option label="&browser_identity_ssl_domain_display_o3;">2</option>
-        </pref>
-        <pref key="browser.chrome.favicons"
-              label="&browser_chrome_favicons_name;"
-              description="&browser_chrome_favicons_description;">
-          <wrapper>
-            <bindings>
-              <pref key="browser.chrome.site_icons" />
-            </bindings>
-          </wrapper>
-        </pref>
-        <pref key="browser.chrome.toolbar_tips"
-              label="&browser_chrome_toolbar_tips_name;" 
-              description="&browser_chrome_toolbar_tips_description;" />
-        <pref key="browser.urlbar.hideGoButton"
-              label="&browser_urlbar_hideGoButton_name;"
-              description="&browser_urlbar_hideGoButton_description;"
-              minVersion="2.0"
-              maxVersion="2.*"
-              type="Bool"
-              default="0" />
-        <pref key="browser.preferences.animateFadeIn"
-              label="&browser_preferences_animateFadeIn_name;"
-              description="&browser_preferences_animateFadeIn_description;" />
+	      <group label="&alerts;">
+	        <pref key="alerts.slideIncrement"
+	              label="&alerts_slideIncrement_name;"
+	              description="&alerts_slideIncrement_description;" />
+	        <pref key="alerts.slideIncrementTime"
+	              label="&alerts_slideIncrementTime_name;"
+	              description="&alerts_slideIncrementTime_description;" />
+	        <pref key="alerts.totalOpenTime"
+	              label="&alerts_totalOpenTime_name;"
+	              description="&alerts_totalOpenTime_description;" />
+	      </group>
+				<group label="&misc;">
+	        <pref key="browser.identity.ssl_domain_display"
+	              label="&browser_identity_ssl_domain_display_name;"
+	              description="&browser_identity_ssl_domain_display_description;"
+	              minVersion="3.0"
+	              mode="select">
+	          <option label="&browser_identity_ssl_domain_display_o1;">0</option>
+	          <option label="&browser_identity_ssl_domain_display_o2;">1</option>
+	          <option label="&browser_identity_ssl_domain_display_o3;">2</option>
+	        </pref>
+	        <pref key="browser.chrome.favicons"
+	              label="&browser_chrome_favicons_name;"
+	              description="&browser_chrome_favicons_description;">
+	          <wrapper>
+	            <bindings>
+	              <pref key="browser.chrome.site_icons" />
+	            </bindings>
+	          </wrapper>
+	        </pref>
+	        <pref key="browser.chrome.toolbar_tips"
+	              label="&browser_chrome_toolbar_tips_name;" 
+	              description="&browser_chrome_toolbar_tips_description;" />
+	        <pref key="browser.urlbar.hideGoButton"
+	              label="&browser_urlbar_hideGoButton_name;"
+	              description="&browser_urlbar_hideGoButton_description;"
+	              minVersion="2.0"
+	              maxVersion="2.*"
+	              type="Bool"
+	              default="0" />
+	        <pref key="browser.preferences.animateFadeIn"
+	              label="&browser_preferences_animateFadeIn_name;"
+	              description="&browser_preferences_animateFadeIn_description;" />
+				</group>
       </tab>
       <tab label="&websites;">
         <group label="&rendering;">
@@ -486,29 +544,42 @@
                 type="Int"
                 default="120000" />
         </group>
-        <pref key="browser.display.show_image_placeholders"
-              label="&browser_display_show_image_placeholders_name;"
-              description="&browser_display_show_image_placeholders_description;" />
-        <pref key="browser.enable_automatic_image_resizing"
-              label="&browser_enable_automatic_image_resizing_name;"
-              description="&browser_enable_automatic_image_resizing_description;" />
-        <pref key="browser.frames.enabled"
-              label="&browser_frames_enabled_name;"
-              description="&browser_frames_enabled_description;" />
-        <pref key="layout.frames.force_resizability"
-              label="&layout_frames_force_resizability_name;"
-              description="&layout_frames_force_resizability_description;"
-              indent="indent"
-              wrapper="checkbox_is_enabled">
-          <wrapper>
-            <dependencies>
-              <pref key="browser.frames.enabled" />
-            </dependencies>
-          </wrapper>
-        </pref>
-        <pref key="browser.blink_allowed"
-              label="&browser_blink_allowed_name;"
-              description="&browser_blink_allowed_description;" />
+				<group label="&images;">
+	        <pref key="gfx.color_management.mode"
+	              label="&gfx_color_management_mode_name;"
+	              description="&gfx_color_management_mode_description;"
+	              mode="select"
+	              minVersion="3.5">
+	          <option label="&gfx_color_management_mode_o1;">0</option>
+	          <option label="&gfx_color_management_mode_o2;">1</option>
+	          <option label="&gfx_color_management_mode_o3;">2</option>
+		      </pref>
+	        <pref key="browser.display.show_image_placeholders"
+	              label="&browser_display_show_image_placeholders_name;"
+	              description="&browser_display_show_image_placeholders_description;" />
+	        <pref key="browser.enable_automatic_image_resizing"
+	              label="&browser_enable_automatic_image_resizing_name;"
+	              description="&browser_enable_automatic_image_resizing_description;" />
+				</group>
+				<group label="&misc;">
+	        <pref key="browser.blink_allowed"
+	              label="&browser_blink_allowed_name;"
+	              description="&browser_blink_allowed_description;" />
+	        <pref key="browser.frames.enabled"
+	              label="&browser_frames_enabled_name;"
+	              description="&browser_frames_enabled_description;" />
+	        <pref key="layout.frames.force_resizability"
+	              label="&layout_frames_force_resizability_name;"
+	              description="&layout_frames_force_resizability_description;"
+	              indent="indent"
+	              wrapper="checkbox_is_enabled">
+	          <wrapper>
+	            <dependencies>
+	              <pref key="browser.frames.enabled" />
+	            </dependencies>
+	          </wrapper>
+	        </pref>
+			  </group>
       </tab>
       <tab label="&text_select;">
         <pref key="ui.textSelectBackground"
@@ -527,17 +598,23 @@
               mode="color"
               type="Char" />
       </tab>
-      <tab label="&alerts;">
-        <pref key="alerts.slideIncrement"
-              label="&alerts_slideIncrement_name;"
-              description="&alerts_slideIncrement_description;" />
-        <pref key="alerts.slideIncrementTime"
-              label="&alerts_slideIncrementTime_name;"
-              description="&alerts_slideIncrementTime_description;" />
-        <pref key="alerts.totalOpenTime"
-              label="&alerts_totalOpenTime_name;"
-              description="&alerts_totalOpenTime_description;" />
-      </tab>
+			<tab label="&misc;">
+        <pref key="html5.enable"
+              label="&html5_enable_name;"
+              description="&html5_enable_description;"
+              minVersion="3.6" />
+        <pref key="gfx.downloadable_fonts.enabled"
+              label="&gfx_downloadable_fonts_enabled_name;"
+              description="&gfx_downloadable_fonts_enabled_description;"
+              minVersion="3.1" />
+				<pref key="svg.enabled"
+				      label="&svg_enabled_name;"
+							description="&svg_enabled_description;" />
+				<pref key="webgl.enabled_for_all_sites"
+				      label="&webgl_enabled_for_all_sites_name;"
+							description="&webgl_enabled_for_all_sites_description;"
+							minVersion="4.0b1" />
+			</tab>
     </tabs>
   </panel>
   <panel label="&tabs;" icon="tab_tabs">
@@ -576,13 +653,17 @@
         </pref>
       </tab>
       <tab label="&misc;">
-        <group label="&tab_preview;">
+        <group label="&tab_preview;" minVersion="3.6">
           <pref key="browser.allTabs.previews"
                 label="&browser_allTabs_preview_name;"
                 description="&browser_allTabs_preview_description;" />
           <pref key="browser.ctrlTab.previews"
                 label="&browser_ctrlTab_preview_name;"
                 description="&browser_ctrlTab_preview_description;" />
+				  <pref key="browser.taskbar.previews.enable"
+					      label="&browser_taskbar_previews_enable_name;"
+								description="&browser_taskbar_previews_enable_description;"
+								platform="WINNT" />
         </group>
         <group label="&open_in_background;">
           <pref key="browser.tabs.loadInBackground"
@@ -601,10 +682,17 @@
                 description="&browser_tabs_selectOwnerOnClose_description;" />
           <pref key="browser.tabs.insertRelatedAfterCurrent"
                 label="&browser_tabs_insertRelatedAfterCurrent_name;"
-                description="&browser_tabs_insertRelatedAfterCurrent_description;" />
+                description="&browser_tabs_insertRelatedAfterCurrent_description;"
+								minVersion="3.6" />
           <pref key="browser.search.openintab"
                 label="&browser_search_openintab_name;"
                 description="&browser_search_openintab_description;" />
+					<pref key="browser.tabs.closeWindowWithLastTab"
+					      label="&browser_tabs_closeWindowWithLastTab_name;"
+					      description="&browser_tabs_closeWindowWithLastTab_description;"
+					      type="Bool"
+					      minVersion="3.5"
+					      default="0" />
         </group>
       </tab>
     </tabs>

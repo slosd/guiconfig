@@ -81,13 +81,20 @@
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_description "">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &quot;Recently Closed Tabs&quot; menu.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Windows&quot; menu">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &quot;Recently Closed Windows&quot; menu.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Restore session after crash">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Determines whether the tabs and windows should be restored after a crash.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. crashes">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Maximum number of crashs that can occur before you are asked what pages you want to restore.">
+<!ENTITY browser_sessionstore_privacy_level_name "Store extra session data">
+<!ENTITY browser_sessionstore_privacy_level_description "Determines when extra session data (contents of forms, data sent with forms, scrollbar positions and cookies) should be saved. Use the first option with caution.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "for any site">
+<!ENTITY browser_sessionstore_privacy_level_o2 "for unencrypted (non-HTTPS) sites">
+<!ENTITY browser_sessionstore_privacy_level_o3 "for no site">
 <!-- MISC -->
 <!ENTITY misc "Miscellaneous">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "If checked, the current window will be closed when you close the last tab in that window. ">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "Close window with last tab">
 <!ENTITY browser_search_openintab_description "When performing a search from the Search Bar, open the results in a new tab. ">
 <!ENTITY browser_search_openintab_name "Open search results in a new tab">
 <!ENTITY browser_popups_showPopupBlocker_description "Determines whether to show an icon in the status bar when a popup has been blocked or not.">
@@ -166,6 +173,10 @@
 <!ENTITY security_ask_for_password_o3 "Ask for password after a specific amount of time">
 <!ENTITY security_password_lifetime_name "Lifetime (min)">
 <!ENTITY security_password_lifetime_description "Minutes after which you are prompted for the master password. ">
+<!ENTITY dom_ipc_plugins_enabled_name "Execute each plugin in an own process">
+<!ENTITY dom_ipc_plugins_enabled_description "If plugins (like Flash) crash they won't cause Firefox to crash as well.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Timeout for non-responding plugins (sec)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
 <!-- STYLE -->
 <!ENTITY style "Style">
 <!-- BROWSER -->
@@ -198,8 +209,22 @@
 <!ENTITY layout_frames_force_resizability_name "force resizeable">
 <!ENTITY browser_display_show_image_placeholders_description "Shows placeholders while image is loading.">
 <!ENTITY browser_display_show_image_placeholders_name "Show image placeholders">
+<!ENTITY html5_enable_name "Enable the HTML5 parser">
+<!ENTITY html5_enable_description "">
+<!ENTITY svg_enabled_name "Enable SVG vector graphics">
+<!ENTITY svg_enabled_description "">
+<!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
+<!ENTITY webgl_enabled_for_all_sites_description "">
+<!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "When viewing an image not in a web page, the image will be resized to fit in the browser window if it is too large for the browser window.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Resize images">
+<!ENTITY gfx_color_management_mode_name "Use color management for">
+<!ENTITY gfx_color_management_mode_description "Restart required.">
+<!ENTITY gfx_color_management_mode_o1 "no images">
+<!ENTITY gfx_color_management_mode_o2 "all images">
+<!ENTITY gfx_color_management_mode_o3 "images with ICC tags">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Download fonts embedded in the website">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Enables downloading of CSS3 fonts which are embedded using @font-face. Restart required.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Selected text">
 <!ENTITY ui_textSelectBackgroundAttention_description "Determines the background color used for Find As You Type as a hex code or named color. ">
@@ -228,6 +253,8 @@
 <!ENTITY browser_allTabs_preview_description "This adds a button on the right of the tabbar which shows a tab preview when clicked. ">
 <!ENTITY browser_ctrlTab_preview_name "Enable tab preview when switching tabs">
 <!ENTITY browser_ctrlTab_preview_description "When using [CTRL]+[Tab] to switch tabs a tab preview is shown. ">
+<!ENTITY browser_taskbar_previews_enable_name "Enable previews in the Windows 7 taskbar">
+<!ENTITY browser_taskbar_previews_enable_description "When enabled Firefox will show a preview for each tab in the Windows 7 taskbar.">
 <!-- OPEN IN BACKGROUND -->
 <!ENTITY open_in_background "Open a new tab in the background from">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in external applications">
@@ -238,6 +265,8 @@
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determines whether to open a new tab at the end of the tab bar or after the currently selected tab. ">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "Switch to the tab that opened it when closing a tab">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "When closing a tab, switch to the tab that opened it. Otherwise switch to the adjacent right tab or the adjacent left tab. ">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Close window with last tab">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "If checked, the current window will be closed when you close the last tab in that window. You can close the last tab with a middle click or by pressing [CTRL]+[W].">
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Bookmarks">
 <!-- MICROSUMMARIES -->

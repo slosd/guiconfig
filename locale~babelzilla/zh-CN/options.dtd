@@ -71,9 +71,9 @@
 <!ENTITY layout_spellcheckDefault_o1 "禁止">
 <!ENTITY layout_spellcheckDefault_o2 "允许在多行文本框中拼写检查">
 <!ENTITY layout_spellcheckDefault_o3 "允许在单行文本框中拼写检查">
-<!ENTITY misc "其他">
 <!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
+<!ENTITY misc "其他">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "如果选中，关闭最后一个关闭最后一个标签同时关闭浏览器。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "关闭最后一个标签同时关闭浏览器">
 <!ENTITY browser_search_openintab_description "在搜索栏进行搜索时，搜索结果显示在新标签页中。">
@@ -156,12 +156,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "隐藏按钮">
 <!ENTITY browser_preferences_animateFadeIn_description "切换首选项面板时改变窗口高度并淡入显示一秒。">
 <!ENTITY browser_preferences_animateFadeIn_name "切换首选项面板时动态显示">
-<!ENTITY browser_tabs_closeButtons_description "指定是否显示标签页的关闭按钮。">
-<!ENTITY browser_tabs_closeButtons_name "标签页关闭按钮显示在：">
-<!ENTITY browser_tabs_closeButtons_o1 "当前标签页上">
-<!ENTITY browser_tabs_closeButtons_o2 "每个标签页上">
-<!ENTITY browser_tabs_closeButtons_o3 "不显示">
-<!ENTITY browser_tabs_closeButtons_o4 "地址栏末端">
 <!ENTITY websites "网站">
 <!ENTITY rendering "渲染">
 <!ENTITY nglayout_initialpaint_delay_description "这个选项定义了显示一页后的延迟时间。这个值越低画面上屏越快，但是这个画面需要正常的时间来完成渲染；反之亦然。(毫秒 ms 10e-3 )">
@@ -183,6 +177,13 @@
 <!ENTITY ui_textSelectBackground_name "背景色">
 <!ENTITY ui_textSelectForeground_description "指定文字背景色（十六进制值或颜色名）。如果未指定该值，则使用操作系统默认背景色。">
 <!ENTITY ui_textSelectForeground_name "文字颜色">
+<!ENTITY browser_tabs_closeButtons_description "指定是否显示标签页的关闭按钮。">
+<!ENTITY browser_tabs_closeButtons_name "标签页关闭按钮显示在：">
+<!ENTITY browser_tabs_closeButtons_o1 "当前标签页上">
+<!ENTITY browser_tabs_closeButtons_o2 "每个标签页上">
+<!ENTITY browser_tabs_closeButtons_o3 "不显示">
+<!ENTITY browser_tabs_closeButtons_o4 "地址栏末端">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
 <!ENTITY bookmarks "书签">
 <!ENTITY microsummaries "微摘要">
 <!ENTITY browser_microsummary_enabled_description "允许带有微摘要的书签实时显示摘要信息。">
@@ -193,8 +194,6 @@
 <!ENTITY browser_microsummary_updateGenerators_name "更新微摘要生成器">
 <!ENTITY browser_microsummary_updateInterval_description "指定微摘要检查更新的时间间隔，默认每隔 30 分钟检查一次。">
 <!ENTITY browser_microsummary_updateInterval_name "更新间隔（分）">
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "当从书签打开新标签页时，不获得焦点。">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "实时书签的刷新时间，最小值为60。">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "刷新间隔（秒）：">
 <!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
