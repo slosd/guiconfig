@@ -1,0 +1,90 @@
+<!ENTITY accessibility "Zpřístupnění">
+<!ENTITY mouseclick "Klepnutí myší">
+<!ENTITY middleclick "Klepnutí prostředním tlačítkem">
+<!ENTITY middlemouse_contentLoadURL_description "Při klepnutí prostředním tlačítkem načte obsah schránky jako URL.">
+<!ENTITY middlemouse_contentLoadURL_name "Načíst schránku jako URL">
+<!ENTITY middlemouse_paste_description "Při klepnutí prostředním tlačítkem vloží obsah schránky do textového pole.">
+<!ENTITY middlemouse_paste_name "Vložit text ze schránky">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Klepnutí do adresního řádku vybere jeho obsah.">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Vybrat obsah při klepnutí myší">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Dvojité klepnutí do adresního řádku vybere jeho obsah.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Vybrat obsah při dvojitém klepnutí">
+<!ENTITY urlbar "Řádek s URL">
+<!ENTITY browser_urlbar_autoFill_description "Povolí automatické dokončování.">
+<!ENTITY browser_urlbar_autoFill_name "Automatické dokončování">
+<!ENTITY browser_urlbar_matchOnlyTyped_description "Automaticky dokončí pouze adresy, které byly do adresního řádku zadány předem.">
+<!ENTITY browser_urlbar_matchOnlyTyped_name "Jenom již zadané">
+<!ENTITY browser_fixup_alternate_enabled_description "Pokud nebude adresa nalezena, přidají se k ní následující znaky.">
+<!ENTITY browser_fixup_alternate_enabled_name "Použít alternativní adresy">
+<!ENTITY browser_fixup_alternate_prefix_description "Znaky, které se budou vkládat na začátek adresy.">
+<!ENTITY browser_fixup_alternate_prefix_name "Vložit na začátek">
+<!ENTITY browser_fixup_alternate_suffix_description "Znaky, které se budou vkládat na konec adresy.">
+<!ENTITY browser_fixup_alternate_suffix_name "Vložit na konec">
+<!ENTITY awesomebar "Chytrý adresní řádek">
+<!ENTITY urlbar_restrict_name "Omezit výsledky">
+<!ENTITY urlbar_match_name "Najít výsledky">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Výsledky v chytrém adresním řádku budou omezeny na záložky.">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Omezit na záložky">
+<!ENTITY browser_urlbar_restrict_history_description "Výsledky v chytrém adresním řádku budou omezeny na již navštívené stránky.">
+<!ENTITY browser_urlbar_restrict_history_name "Omezit na historii">
+<!ENTITY browser_urlbar_restrict_tag_description "Výsledky v chytrém adresním řádku budou omezeny na štítky.">
+<!ENTITY browser_urlbar_restrict_tag_name "Omezit na štítky">
+<!ENTITY browser_urlbar_restrict_typed_description "Výsledky v chytrém adresním řádku budou omezeny na adresy, které byly do adresního řádku zadány dříve.">
+<!ENTITY browser_urlbar_restrict_typed_name "Omezit na zadané adresy">
+<!ENTITY browser_urlbar_match_title_description "Určuje, zda budou výsledky v chytrém adresním řádku odpovídat jen názvu stránky.">
+<!ENTITY browser_urlbar_match_title_name "Hledat v názvu">
+<!ENTITY browser_urlbar_match_url_description "Určuje, zda budou výsledky v chytrém adresním řádku odpovídat jen URL.">
+<!ENTITY browser_urlbar_match_url_name "Hledat v URL">
+<!ENTITY browser_urlbar_matchBehavior_description "Tato volba určuje, jak se budou při vyhledávání pro adresní řádek používat okraje slov.">
+<!ENTITY browser_urlbar_matchBehavior_name "Chování při hledání">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Najít cokoliv">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Zobrazit nejprve položky nalezené na okrajích slov">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Zobrazit jen položky nalezené na okrajích slov">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Najít na začátku URL nebo názvu">
+<!ENTITY browser_urlbar_maxRichResults_description "Určuje, kolik výsledků by se nejvýš mělo objevit v adresním řádku.">
+<!ENTITY browser_urlbar_maxRichResults_name "Max. počet výsledků">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Určuje, zda se bude rozlišovat velikost písmen. Při volbě „Automaticky rozpoznat“ se bude velikost rozlišovat, pokud hledaný řetězec obsahuje velká písmena, ale není celý velkými písmeny.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozlišovat velikost písmen">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automaticky rozpoznat">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Nerozlišovat velikost">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Rozlišovat velikost">
+<!ENTITY accessibility_typeaheadfind_label "Najít zadaný text">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Určuje, po jakém čase zmizí řádek s hledáním, pokud do něj nebude nic zadáváno.">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Prodleva (milisekund)">
+<!ENTITY signon_prefillForms_description "Automaticky vyplní položky formulářů s uživatelskými jmény a hesly.">
+<!ENTITY signon_prefillForms_name "Automaticky vyplňovat přihlašovací formuláře">
+<!ENTITY accessibility_tabfocus_description "Tato předvolba určuje, jaký prvek se aktivuje při stisknutí klávesy Tab.">
+<!ENTITY accessibility_tabfocus_name "Aktivace prvku pomocí Tab">
+<!ENTITY accessibility_tabfocus_o1 "Aktivovat pouze textová pole">
+<!ENTITY accessibility_tabfocus_o2 "Aktivovat všechny prvky formulářů kromě textových polí">
+<!ENTITY accessibility_tabfocus_o3 "Aktivovat všechny prvky formulářů">
+<!ENTITY accessibility_tabfocus_o4 "Aktivovat pouze odkazy (a odkazy na obrázky)">
+<!ENTITY accessibility_tabfocus_o5 "Aktivovat odkazy a prvky formulářů">
+<!ENTITY accessibility_tabfocus_o6 "Aktivovat odkazy a prvky formulářů kromě textových polí">
+<!ENTITY browser_backspace_action_description "Určuje chování klávesy backspace.">
+<!ENTITY browser_backspace_action_name "Backspace">
+<!ENTITY browser_backspace_action_o1 "Jít zpět v historii">
+<!ENTITY browser_backspace_action_o2 "Jako Page Up">
+<!ENTITY browser_backspace_action_o3 "Nedělat nic">
+<!ENTITY layout_spellcheckDefault_description "Určuje, zda bude povolena kontrola pravopisu.">
+<!ENTITY layout_spellcheckDefault_name "Kontrola pravopisu">
+<!ENTITY layout_spellcheckDefault_o1 "Zakázat">
+<!ENTITY layout_spellcheckDefault_o2 "Povolit pro víceřádková textová pole">
+<!ENTITY layout_spellcheckDefault_o3 "Povolit pro víceřádková a jednořádková textová pole">
+<!ENTITY session_restore "Obnova relace">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Povolit obnovu relace">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Povolí obnovu relace.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Max. panelů pro obnovu">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximální počet panelů, které jsou zobrazeny v nabídce „Historie“ – „Naposledy zavřené panelu“">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Max. oken pro obnovu">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximální počet oken, která jsou zobrazena v nabídce „Historie“ – „Naposledy zavřená okna“">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Obnovit relaci po pádu">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Určuje, zda by měly být panely a okna obnoveny po pádu.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. pádů">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Maximální počet možných pádů před dotazem, jaké stránky chcete obnovit.">
+<!ENTITY browser_sessionstore_privacy_level_name "Uchovávat zvláštní data relace">
+<!ENTITY browser_sessionstore_privacy_level_description "Určuje, kdy by měla být ukládána zvláštní data o relaci (obsah formulářů, data poslaná pomocí formulářů, pozice a cookies). První možnost používejte s obezřetností.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "pro jakoukoliv stránku">
+<!ENTITY browser_sessionstore_privacy_level_o2 "pro nezašifrované stránky (bez HTTPS)">
+<!ENTITY browser_sessionstore_privacy_level_o3 "pro žádnou stránku">
+<!ENTITY misc "Různé">

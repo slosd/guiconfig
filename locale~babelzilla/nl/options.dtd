@@ -52,11 +52,19 @@
 <!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn actief onmiddellijk. De voorkeuren venster is niet modaal. In plaats van &quot;OK&quot; en &quot;Annuleren&quot; knoppen, is er slechts een &quot;Sluiten&quot;.&quot;&gt;
 
 
+
+
+
+
 ">
 <!ENTITY browser_preferences_instantApply_name "Instant toepassing">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Elke keer (F7) wordt ingedrukt, verschijnt een dialoogvenster de waarschuwing dat ze binnenkomen Caret Browsing-modus.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Toon het dialoogvenster bij het invoeren van caret browsing">
 <!ENTITY accessibility_accesskeycausesactivation_description "Met behulp van een sneltoets voor een element is hetzelfde als het activeren van het element. Indien het element is een link, volg de link. Indien het element is een knop, &quot;klik&quot; op de knop.&quot;&gt;
+
+
+
+
 
 
 ">
@@ -70,14 +78,26 @@
 <!ENTITY alerts_slideIncrement_description "Deze voorkeur bepaalt de snelheid van de &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts. Met name de controles is het aantal pixels te verplaatsen per increment.&quot;&gt;
 
 
+
+
+
+
 ">
 <!ENTITY alerts_slideIncrement_name "Aantal pixels te verplaatsen per aanwas (px)">
 <!ENTITY alerts_totalOpenTime_description "Bepaalt de hoeveelheid tijd in milliseconden om te laten zien &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts.&quot;&gt;
 
 
+
+
+
+
 ">
 <!ENTITY alerts_totalOpenTime_name "alarmfase (ms)">
 <!ENTITY browser_download_manager_showAlertInterval_description "Aantal milliseconden na volledige downloads aan te tonen van de &quot;voltooid&quot; alarm.&quot;&gt;
+
+
+
+
 
 
 ">
@@ -117,8 +137,16 @@
 <!ENTITY browser_urlbar_hideGoButton_description "Bepaalt of om aan te tonen de &quot;Go&quot; knop of niet.&quot;&gt;
 
 
+
+
+
+
 ">
 <!ENTITY browser_urlbar_hideGoButton_name "Verberg de &quot;Go&quot; knop&quot;&gt;
+
+
+
+
 
 
 ">
@@ -135,6 +163,10 @@
 <!ENTITY text_select "Geselecteerde tekst">
 <!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Find As You Type als een hexadecimale code of benoemde kleur.">
 <!ENTITY ui_textSelectBackgroundAttention_name "&quot;Find As You Type&quot; achtergrondkleur&quot;&gt;
+
+
+
+
 
 
 ">

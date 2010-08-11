@@ -71,11 +71,9 @@
 <!ENTITY layout_spellcheckDefault_o1 "Désactiver">
 <!ENTITY layout_spellcheckDefault_o2 "Activer pour les champs de texte de plusieurs lignes">
 <!ENTITY layout_spellcheckDefault_o3 "Activer pour les champs de texte d&apos;une ou plusieurs lignes">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Nombre maximal de fenêtres affichées dans le menu « Historique » &gt; « Fenêtres récemment fermées ».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Nb. maximal de fenêtres restaurables">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Nombre maximal de fenêtres affichées dans le menu « Historique » &gt; « Fenêtres récemment fermées ».">
 <!ENTITY misc "Divers">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "Si la case est cochée, la fenêtre en cours sera fermée lorsque vous fermerez le dernier onglet de cette fenêtre.">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "Fermer la fenêtre en même temps que le dernier onglet">
 <!ENTITY browser_search_openintab_description "Lorsqu&apos;une requête est lancée depuis la barre de recherche, ouvrir la page de résultat dans un nouvel onglet.">
 <!ENTITY browser_search_openintab_name "Ouvrir les résultats de la recherche dans un nouvel onglet">
 <!ENTITY browser_popups_showPopupBlocker_description "Détermine si une icône doit être affichée dans la barre d&apos;état quand un popup a été bloqué">
@@ -184,6 +182,8 @@
 <!ENTITY browser_tabs_closeButtons_o3 "sur aucun onglet">
 <!ENTITY browser_tabs_closeButtons_o4 "à la fin de la barre d&apos;onglets">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Fermer la fenêtre en même temps que le dernier onglet">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Si la case est cochée, la fenêtre en cours sera fermée lorsque vous fermerez le dernier onglet de cette fenêtre.">
 <!ENTITY bookmarks "Marque-pages">
 <!ENTITY microsummaries "Microrésumés">
 <!ENTITY browser_microsummary_enabled_description "Permet d&apos;extraire une information pour les marque-pages depuis les microrésumés.">

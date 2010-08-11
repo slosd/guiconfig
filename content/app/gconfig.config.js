@@ -455,6 +455,7 @@ var guiconfig = {
     parser.addRuleSet("pref", ["option", "wrapper"]);
     parser.addRuleSet("wrapper", ["bindings", "dependencies", "script", "elements", "files"]);
     parser.addRuleSet("wrapper-pref", ["pref"]);
+    //TODO Add menulist, textbox, radiogroup and colorpicker
     parser.addRuleSet("elements-group", ["checkbox"]);
     parser.addRuleSet("elements", ["group", "@elements-group"]);
     this.preferenceParser = parser;

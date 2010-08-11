@@ -71,11 +71,9 @@
 <!ENTITY layout_spellcheckDefault_o1 "停用">
 <!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
 <!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
-<!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
+<!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
 <!ENTITY misc "雜項">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
 <!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
 <!ENTITY browser_popups_showPopupBlocker_description "決定是否在狀態列顯示有無阻擋彈跳視窗的圖示">
@@ -184,6 +182,8 @@
 <!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
 <!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
 <!ENTITY bookmarks "書籤">
 <!ENTITY microsummaries "即時摘要(動態標題)">
 <!ENTITY browser_microsummary_enabled_description "允許對書籤萃取即時摘要資訊。">

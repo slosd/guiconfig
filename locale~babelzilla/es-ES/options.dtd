@@ -80,12 +80,20 @@
 <!ENTITY session_restore "Restauración de sesiones">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Habilitar la restauración de sesiones">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Pestañas máximas a restaurar">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Número máximo de ventanas que se mostrarán en el menú &quot;Historial&quot; &gt; &quot; Ventanas cerradas recientemente&quot;">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Número máximo de pestañas mostradas en el menú &quot;Historial&quot; &quot;Pestañas cerradas recientemente&quot;">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Máximo de ventanas a restaurar">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Número máximo de ventanas que se mostrarán en el menú &quot;Historial&quot; &gt; &quot; Ventanas cerradas recientemente&quot;">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Restaurar sesión tras un fallo">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Determina si las pestañas y ventanas se deben restaurar tras un fallo.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Máx. de fallos">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Número máximo de fallos que deben ocurrir antes de que se le pregunte por las páginas a restaurar.">
+<!ENTITY browser_sessionstore_privacy_level_name "Guardar datos extra de la sesión">
+<!ENTITY browser_sessionstore_privacy_level_description "Determina cuando se deben guardar datos extra de la sesión (contenido de formularios, posición de barras de desplazamiento y cookies). Use la primera opción con precaución.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "para cualquier sitio">
+<!ENTITY browser_sessionstore_privacy_level_o2 "para sitios no cifrados (no HTTPS)">
+<!ENTITY browser_sessionstore_privacy_level_o3 "para ningún sitio">
 <!-- MISC -->
 <!ENTITY misc "Varios">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "Si lo activa, la ventana actual se cerrará cuando cierre la última pestaña de la ventana.">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "Cerrar ventana con la última pestaña">
 <!ENTITY browser_search_openintab_description "Al realizar una búsqueda en la barra de búsqueda, abrir los resultados en una pestaña nueva.">
 <!ENTITY browser_search_openintab_name "Abrir los resultados de la búsqueda en una pestaña nueva">
 <!ENTITY browser_popups_showPopupBlocker_description "Determina si se muestra el icono de la barra de estado al bloquear una ventana emergente.">
@@ -164,6 +172,10 @@
 <!ENTITY security_ask_for_password_o3 "Pedir la contraseña tras una cantidad de tiempo">
 <!ENTITY security_password_lifetime_name "Tiempo de vida (min)">
 <!ENTITY security_password_lifetime_description "Minutos tras los que se le pedirá la contraseña maestra.">
+<!ENTITY dom_ipc_plugins_enabled_name "Ejecutar cada plugin en un proceso">
+<!ENTITY dom_ipc_plugins_enabled_description "Si un plugin (como Flash) falla, no causará que Firefox también falle.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Tiempo de espera para los plugins que no respondan (seg)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Determina la duración tras la que un proceso no responde se cierra.">
 <!-- STYLE -->
 <!ENTITY style "Estilo">
 <!-- BROWSER -->
@@ -196,8 +208,19 @@
 <!ENTITY layout_frames_force_resizability_name "forzar redimensionable">
 <!ENTITY browser_display_show_image_placeholders_description "Muestra los marcadores de posición mientras se están cargando las imágenes">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar los marcadores de posición para las imágenes">
+<!ENTITY html5_enable_name "Habilitar el analizador HTML5">
+<!ENTITY svg_enabled_name "Habilitar gráficos vectoriales SVG">
+<!ENTITY webgl_enabled_for_all_sites_name "Habilitar WebGL">
+<!ENTITY images "Imágenes">
 <!ENTITY browser_enable_automatic_image_resizing_description "Al ver una página web, la imagen se redimensionará para encajarla en la ventana del navegador si es demasiado grande.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Redimensionar imágenes">
+<!ENTITY gfx_color_management_mode_name "Usar gestión de colores para">
+<!ENTITY gfx_color_management_mode_description "Requiere reiniciar.">
+<!ENTITY gfx_color_management_mode_o1 "ninguna imagen">
+<!ENTITY gfx_color_management_mode_o2 "todas las imágenes">
+<!ENTITY gfx_color_management_mode_o3 "imágenes con etiquetas ICC">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Descargar las fuentes embebidas en las páginas web">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Habilita la descarga de fuentes CSS3 que están incluidas usando @font-face.Requiere reiniciar.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Texto seleccionado">
 <!ENTITY ui_textSelectBackgroundAttention_description "Determina el color de fondo usado para resaltar el texto buscado mientras escribe, como un código hexadecimal o el nombre de un color.">
@@ -226,6 +249,8 @@
 <!ENTITY browser_allTabs_preview_description "Añade un botón en la derecha de la barra de pestañas que muestra una vista previa al pulsar.">
 <!ENTITY browser_ctrlTab_preview_name "Habilitar la vista previa al cambiar entre pestañas">
 <!ENTITY browser_ctrlTab_preview_description "Al pulsar [Ctrl]+[Tab] para cambiar entre pestañas, se muestra una vista previa.">
+<!ENTITY browser_taskbar_previews_enable_name "Habilitar vista previa en la barra de tareas de Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Si está habilitado, Firefox mostrará una vista previa de cada pestaña en la barra de tareas de Windows 7.">
 <!-- OPEN IN BACKGROUND -->
 <!ENTITY open_in_background "Abrir una nueva pestaña en segundo plano desde">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Enlaces en aplicaciones externas">
@@ -236,6 +261,8 @@
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determina si abrir una nueva pestaña al final de la barra de pestañas o tras la actual.">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "Cambiar a la pestaña que la abrió al cerrarla">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "Al cerrar una pestaña, cambiar a la pestaña que la abrió. En otro caso cambia a la pestaña de la derecha o de la izquierda.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Cerrar ventana con la última pestaña">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Si lo activa, la ventana actual se cerrará cuando cierre la última pestaña de la ventana.">
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Marcadores">
 <!-- MICROSUMMARIES -->

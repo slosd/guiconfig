@@ -75,14 +75,19 @@
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_description "Sitzungswiederherstellung aktivieren">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. wiederherstellbare Tabs">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Definiert die maximale Anzahl an Browserfenstern, die wiederhergestellt werden können.
-
-
-(Über &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Fenster&quot;)">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximale Anzahl von Tabs, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximale Anzahl von Fenstern, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Sitzung nach Absturz wiederherstellen">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Legt fest ob die Tabs und Fenster nach einem Absturz wiederhergestellt werden sollen.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. Anzahl Abstürze">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Maximale Anzahl von Abstürzen bevor Sie auswählen können welche Webseiten Sie wiederherstellen möchten.">
+<!ENTITY browser_sessionstore_privacy_level_name "Extra Sitzungsdaten speichern">
+<!ENTITY browser_sessionstore_privacy_level_description "Legt fest ob extra Situngsdaten (Inhalte von Formularen, gesendete Formulare, Position der Bildlaufleiste und Cookies) gespeichert werden sollen. Die erste Option mit Vorsicht benutzen.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "für jede Webseite">
+<!ENTITY browser_sessionstore_privacy_level_o2 "für unverschlüsselte (nicht HTTPS) Webseiten">
+<!ENTITY browser_sessionstore_privacy_level_o3 "für keine Webseite">
 <!ENTITY misc "Verschiedenes">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "Gibt an, ob der letzte Tab eines Browserfensters geschlossen werden kann.">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "Letzter Tab eines Fensters schließbar">
 <!ENTITY browser_search_openintab_description "Wenn die Suchleiste verwendet wird, werden die Ergebnisse in einem neuen Tab geöffnet, anstatt im aktuellen.">
 <!ENTITY browser_search_openintab_name "Suchergebnisse in neuem Tab öffnen">
 <!ENTITY browser_popups_showPopupBlocker_description "Zeigt in der Statusleiste ein Symbol an, wenn ein Popup-Fenster geblockt wurde.">
@@ -155,6 +160,10 @@
 <!ENTITY security_ask_for_password_o3 "Wenn es für eine festzulegende Zeitspanne nicht angefordert wurde.">
 <!ENTITY security_password_lifetime_name "Passwort-Vorhaltezeit (Min)">
 <!ENTITY security_password_lifetime_description "Nach wievielen Minuten nach dem Master-Passwort erneut gefragt wird.">
+<!ENTITY dom_ipc_plugins_enabled_name "Jedes Plugin in einem eigenen Prozess ausführen">
+<!ENTITY dom_ipc_plugins_enabled_description "Wenn Plugins (wie z.B. Flash) abstürzen kann Firefox unabhängig davon weiter ausgeführt werden.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Grenzwert für beschäftigte Plugins (sek)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Legt die Zeit fest, nach der der Prozess eines Plugins, welches nicht mehr reagiert, beendet wird.">
 <!ENTITY style "Aussehen">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_identity_ssl_domain_display_name "SSL-Domains kennzeichnen:">
@@ -184,8 +193,22 @@
 <!ENTITY layout_frames_force_resizability_name "immer größenveränderlich">
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
+<!ENTITY html5_enable_name "HTML5 Parser benutzen">
+<!ENTITY html5_enable_description "�">
+<!ENTITY svg_enabled_name "SVG Vektor Grafiken anzeigen">
+<!ENTITY svg_enabled_description "�">
+<!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
+<!ENTITY webgl_enabled_for_all_sites_description "�">
+<!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Bilder anpassen">
+<!ENTITY gfx_color_management_mode_name "Color management benutzen für">
+<!ENTITY gfx_color_management_mode_description "Benötigt einen Neustart.">
+<!ENTITY gfx_color_management_mode_o1 "keine Bilder">
+<!ENTITY gfx_color_management_mode_o2 "alle Bilder">
+<!ENTITY gfx_color_management_mode_o3 "Bilder mit ICC Tags">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Eingebundene Schriftarten herunterladen">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Aktiviert das Herunterladen von CSS3 Schriftarten die mittels @font-face eingebunden wurden. Benötigt einen Neustart.">
 <!ENTITY text_select "Markierter Text">
 <!ENTITY ui_textSelectBackgroundAttention_description "Bestimmt die Hintergrundfarbe von Text, der von der Suchfunktion gefundenen und farbig unterlegt wurde.">
 <!ENTITY ui_textSelectBackgroundAttention_name "Suchtext-Hintergrundfarbe:">
@@ -207,10 +230,21 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Legt die minimale Tab-Breite fest, bis zu der die Schließen-Schaltfläche angezeigt wird.">
 <!ENTITY tab_preview "Tab-Vorschau">
 <!ENTITY browser_allTabs_preview_name "Tab-Vorschau aktivieren">
+<!ENTITY browser_allTabs_preview_description "Diese Funktion erscheint ein zusätzlicher Button rechts auf der Tableiste, welcher beim Anklicken die Tab-Vorschau anzeigt.">
+<!ENTITY browser_ctrlTab_preview_name "Tab-Vorschau beim Tabwechseln aktivieren">
+<!ENTITY browser_ctrlTab_preview_description "Wenn [STRG]+[Tab] zum Wechseln des aktiven Tabs benutz wird, wird die Tab-Vorschau angezeigt.">
+<!ENTITY browser_taskbar_previews_enable_name "Vorschauen in der Windows 7 Taskleiste anzeigen">
+<!ENTITY browser_taskbar_previews_enable_description "Zeigt unter Windows 7 für jeden geöffneten Tab eine Vorschau in der Taskleiste an.">
+<!ENTITY open_in_background "Tabs im Hintergrund öffnen">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in ext. Anwendung öffnen">
 <!ENTITY browser_tabs_loadInBackground_name "Links in Webseiten">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Lesezeichen im Hintergrund öffnen">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Neuen Tab direkt neben dem aktuellen öffnen">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Legt fest, ob neue Tabs nach dem aktuellen Tab oder am Ende der Tableiste eingefügt werden sollen.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Beim Schließen zum öffnenden Tab wechseln">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Wird ein Tab geschlossen wird zum Tab gewechselt, der den geschlossenen geöffnet hat. Ansonsten wird zum nächsten Tab rechts bzw. links davon gewechselt.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Letzter Tab eines Fensters schließbar">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Gibt an, ob der letzte Tab eines Browserfensters geschlossen werden kann.">
 <!ENTITY bookmarks "Lesezeichen">
 <!ENTITY microsummaries "Microsummaries">
 <!ENTITY browser_microsummary_enabled_description "Informationen aus Microsummaries für Lesezeichen verwenden.">
