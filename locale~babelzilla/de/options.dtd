@@ -194,11 +194,11 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt fÃ¼r Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter fÃ¼r Bilder anzeigen">
 <!ENTITY html5_enable_name "HTML5 Parser benutzen">
-<!ENTITY html5_enable_description " ">
+<!ENTITY html5_enable_description "ï¿½">
 <!ENTITY svg_enabled_name "SVG Vektor Grafiken anzeigen">
-<!ENTITY svg_enabled_description " ">
+<!ENTITY svg_enabled_description "ï¿½">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
-<!ENTITY webgl_enabled_for_all_sites_description " ">
+<!ENTITY webgl_enabled_for_all_sites_description "ï¿½">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "FÃ¼r das Browserfenster zu groÃŸe Bilder werden automatisch verkleinert.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Bilder anpassen">

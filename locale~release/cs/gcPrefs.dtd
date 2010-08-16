@@ -1,0 +1,4 @@
+<!ENTITY prefs.label "Možnosti">
+<!ENTITY prefs.todefault.ask "Zeptat se před obnovou výchozích hodnot">
+<!ENTITY prefs.matchversion "Zobrazit pouze možnosti slučitelné s danou verzí Firefoxu">
+<!ENTITY prefs.sticktopreferences "Umístit položku pro gui:config v nabídce za položku „Předvolby“">

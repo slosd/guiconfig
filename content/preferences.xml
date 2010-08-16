@@ -9,7 +9,7 @@
   <wrapper id="checkbox_is_enabled">
     <script name="dependencies">
       <![CDATA[
-      return value.get();
+      return value.get() && !value.element.locked;
       ]]>
     </script>
   </wrapper>
@@ -194,7 +194,7 @@
       <tab label="&session_restore;" minVersion="3.5">
         <pref key="guiconfig.pseudo.sessionstore.enable"
               label="&guiconfig_pseudo_sessionstore_enable_name;"
-              description="&guiconfig_pseudo_sessionstore_enable_description;"
+              description=""
 							type="Bool"
               default="true">
           <wrapper>
@@ -334,7 +334,8 @@
         <group label="&getaddons;" minVersion="3.0">
           <pref key="extensions.getAddons.showPane"
                 label="&extensions_getAddons_showPane_name;"
-                description="&extensions_getAddons_showPane_description;" />
+                description="&extensions_getAddons_showPane_description;"
+								maxVersion="3.6.*" />
           <pref key="extensions.getAddons.maxResults"
                 label="&extensions_getAddons_maxResults_name;"
                 description="&extensions_getAddons_maxResults_description;" />
@@ -427,10 +428,12 @@
         <group label="&misc;">
         	<pref key="dom.ipc.plugins.enabled"
 					      label="&dom_ipc_plugins_enabled_name;"
-								description="&dom_ipc_plugins_enabled_description;" />
+								description="&dom_ipc_plugins_enabled_description;"
+								minVersion="3.6.4" />
 				  <pref key="dom.ipc.plugins.timeoutSecs"
 					      label="&dom_ipc_plugins_timeoutSecs_name;"
 								description="&dom_ipc_plugins_timeoutSecs_description;"
+                minVersion="3.6.4"
 								indent="indent"
 								wrapper="checkbox_is_enabled">
 					  <wrapper>
@@ -601,7 +604,7 @@
 			<tab label="&misc;">
         <pref key="html5.enable"
               label="&html5_enable_name;"
-              description="&html5_enable_description;"
+              description=""
               minVersion="3.6" />
         <pref key="gfx.downloadable_fonts.enabled"
               label="&gfx_downloadable_fonts_enabled_name;"
@@ -609,10 +612,10 @@
               minVersion="3.1" />
 				<pref key="svg.enabled"
 				      label="&svg_enabled_name;"
-							description="&svg_enabled_description;" />
+							description="" />
 				<pref key="webgl.enabled_for_all_sites"
 				      label="&webgl_enabled_for_all_sites_name;"
-							description="&webgl_enabled_for_all_sites_description;"
+							description=""
 							minVersion="4.0b1" />
 			</tab>
     </tabs>
@@ -620,39 +623,6 @@
   <panel label="&tabs;" icon="tab_tabs">
     <tabs>
       <tab label="&appearance;">
-        <pref key="browser.tabs.tabMinWidth" 
-              label="&browser_tabs_tabMinWidth_name;"
-              description="" />
-        <pref key="browser.tabs.tabMaxWidth" 
-              label="&browser_tabs_tabMaxWidth_name;"
-              description="" />
-        <pref key="browser.tabs.closeButtons"
-              label="&browser_tabs_closeButtons_name;"
-              description="&browser_tabs_closeButtons_description;"
-              minVersion="2.0"
-              mode="select">
-          <option label="&browser_tabs_closeButtons_o1;">0</option>
-          <option label="&browser_tabs_closeButtons_o2;">1</option>
-          <option label="&browser_tabs_closeButtons_o3;">2</option>
-          <option label="&browser_tabs_closeButtons_o4;">3</option>
-        </pref>
-        <pref key="browser.tabs.tabClipWidth"
-              label="&browser_tabs_tabClipWidth_name;"
-              description="&browser_tabs_tabClipWidth_description;"
-              indent="indent">
-          <wrapper>
-            <dependencies>
-              <pref key="browser.tabs.closeButtons" />
-            </dependencies>
-            <script name="dependencies">
-              <![CDATA[
-              return value.get() == 0 || value.get() == 1;
-              ]]>
-            </script>
-          </wrapper>
-        </pref>
-      </tab>
-      <tab label="&misc;">
         <group label="&tab_preview;" minVersion="3.6">
           <pref key="browser.allTabs.previews"
                 label="&browser_allTabs_preview_name;"
@@ -660,11 +630,48 @@
           <pref key="browser.ctrlTab.previews"
                 label="&browser_ctrlTab_preview_name;"
                 description="&browser_ctrlTab_preview_description;" />
-				  <pref key="browser.taskbar.previews.enable"
-					      label="&browser_taskbar_previews_enable_name;"
-								description="&browser_taskbar_previews_enable_description;"
-								platform="WINNT" />
+          <pref key="browser.taskbar.previews.enable"
+                label="&browser_taskbar_previews_enable_name;"
+                description="&browser_taskbar_previews_enable_description;"
+                platform="WINNT" />
         </group>
+				<group label="&misc;">
+	        <pref key="browser.tabs.tabMinWidth" 
+	              label="&browser_tabs_tabMinWidth_name;"
+	              description=""
+	              maxVersion="3.6.*" />
+	        <pref key="browser.tabs.tabMaxWidth" 
+	              label="&browser_tabs_tabMaxWidth_name;"
+	              description=""
+	              maxVersion="3.6.*" />
+	        <pref key="browser.tabs.closeButtons"
+	              label="&browser_tabs_closeButtons_name;"
+	              description="&browser_tabs_closeButtons_description;"
+	              minVersion="2.0"
+	              mode="select">
+	          <option label="&browser_tabs_closeButtons_o1;">0</option>
+	          <option label="&browser_tabs_closeButtons_o2;">1</option>
+	          <option label="&browser_tabs_closeButtons_o3;">2</option>
+	          <option label="&browser_tabs_closeButtons_o4;">3</option>
+	        </pref>
+	        <pref key="browser.tabs.tabClipWidth"
+	              label="&browser_tabs_tabClipWidth_name;"
+	              description="&browser_tabs_tabClipWidth_description;"
+	              indent="indent">
+	          <wrapper>
+	            <dependencies>
+	              <pref key="browser.tabs.closeButtons" />
+	            </dependencies>
+	            <script name="dependencies">
+	              <![CDATA[
+	              return value.get() == 0 || value.get() == 1;
+	              ]]>
+	            </script>
+	          </wrapper>
+	        </pref>
+				</group>
+      </tab>
+      <tab label="&misc;">
         <group label="&open_in_background;">
           <pref key="browser.tabs.loadInBackground"
                 label="&browser_tabs_loadInBackground_name;"

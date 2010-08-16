@@ -76,12 +76,25 @@
 <!ENTITY layout_spellcheckDefault_o1 "отключить">
 <!ENTITY layout_spellcheckDefault_o2 "разрешить в многострочных текстовых полях">
 <!ENTITY layout_spellcheckDefault_o3 "разрешить в много- и однострочных текстовых полях">
+<!-- SESSION RESTORE -->
+<!ENTITY session_restore "Восстановление сессии">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Включает псевдосохранение сессий.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Восстанавливаемых вкладок">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Максимальное количество вкладок, отображаемых в меню «Журнал|Недавно закрытые вкладки».">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Максимальное количество окон отображаемых в меню «Журнал|Недавно закрытые окна».">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Восстановлении сессии после сбоя">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Определяет, нужно ли восстанавливать после сбоя вкладки и окна.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Количество сбоев">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Максимальное количество сбоев, которое должно произойти перед появлением запроса какие страницы вы хотите восстановить.">
+<!ENTITY browser_sessionstore_privacy_level_name "Сохранять дополнительные данные сессии">
+<!ENTITY browser_sessionstore_privacy_level_description "Определяет, какие именно дополнительные данные сессии (содержимое форм, данные, отправляемые через формы, позиции полосы прокрутки и cookies) должны быть сохранены. Используйте первый пункт с осторожностью.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "для любого сайта">
+<!ENTITY browser_sessionstore_privacy_level_o2 "для не шифрованных (не https) сайтов">
+<!ENTITY browser_sessionstore_privacy_level_o3 "ни для каких сайтов">
 <!-- MISC -->
 <!ENTITY misc "Разное">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Максимальное количество окон отображаемых в меню «Журнал|Недавно закрытые окна».">
-<!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "Если этот флажок установлен, текущее окно будет закрыто при закрытии в нём последней вкладки.">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрывать окно по последней вкладке">
 <!ENTITY browser_search_openintab_description "При выполнении поиска через строку поиска открывает результаты в новой вкладке.">
 <!ENTITY browser_search_openintab_name "Открывать результаты поиска в новой вкладке">
 <!ENTITY browser_popups_showPopupBlocker_description "Определяет, будет ли показываться значок в строке состояния при блокировании всплывающего окна или нет.">
@@ -153,6 +166,17 @@
 <!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
 <!ENTITY browser_privatebrowsing_autostart_description "Если этот флажок установлен, Firefox будет запущен в режиме приватного просмотра и сделает эту настройку постоянно действующей до окончания сессии.">
 <!ENTITY browser_privatebrowsing_autostart_name "Запускать в режиме приватного просмотра">
+<!ENTITY master_pass "Мастер-пароль">
+<!ENTITY security_ask_for_password_description "Этот параметр определяет как часто вам придётся вводить мастер-пароль.">
+<!ENTITY security_ask_for_password_o1 "запрашивать пароль всякий раз когда он необходим">
+<!ENTITY security_ask_for_password_o2 "запрашивать пароль когда он необходим в первый раз">
+<!ENTITY security_ask_for_password_o3 "запрашивать пароль спустя определённое время">
+<!ENTITY security_password_lifetime_name "Срок действия (мин)">
+<!ENTITY security_password_lifetime_description "Сколько минут спустя вы снова получите запрос на ввод мастер-пароля.">
+<!ENTITY dom_ipc_plugins_enabled_name "Выполнять каждый подключаемый модуль в виде отдельного процесса">
+<!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Время ожидания для не отвечающих подключаемых модулей (сек)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Определяет отрезок времени, спустя который будет завершён процесс не отвечающего подключаемого модуля.">
 <!-- STYLE -->
 <!ENTITY style "Стиль">
 <!-- BROWSER -->
@@ -170,12 +194,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Скрыть кнопку «Перейти»">
 <!ENTITY browser_preferences_animateFadeIn_description "При переключении между панелями настроек изменяет высоту окна и плавно выводит новую панель примерно через секунду.">
 <!ENTITY browser_preferences_animateFadeIn_name "Анимировать переключение панелей настроек">
-<!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
-<!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
-<!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
-<!ENTITY browser_tabs_closeButtons_o2 "на каждой вкладке">
-<!ENTITY browser_tabs_closeButtons_o3 "нигде">
-<!ENTITY browser_tabs_closeButtons_o4 "в конце панели вкладок">
 <!-- WEBSITES -->
 <!ENTITY websites "Веб-сайты">
 <!ENTITY rendering "Визуализация">
@@ -187,10 +205,26 @@
 <!ENTITY browser_blink_allowed_name "Разрешить мигающий текст">
 <!ENTITY browser_frames_enabled_description "Отображение HTML фреймов.">
 <!ENTITY browser_frames_enabled_name "Разрешить фреймы">
+<!ENTITY layout_frames_force_resizability_description "Принудительно задать фреймам возможность изменять размер.">
+<!ENTITY layout_frames_force_resizability_name "принудить к изменяемому размеру">
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
+<!ENTITY html5_enable_name "Включить анализатор HTML5">
+<!ENTITY html5_enable_description "Определяет, будет ли Firefox игнорировать или выполнять новые элементы, появившиеся в пятой версии HTML.">
+<!ENTITY svg_enabled_name "Включить векторную (SVG) 2D графику">
+<!ENTITY svg_enabled_description "Определяет, будет ли Firefox отображать векторную SVG графику собственным движком или через подключаемый модуль.">
+<!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">
+<!ENTITY webgl_enabled_for_all_sites_description "Определяет, будет ли Firefox обрабатывать внедрённую в веб-страницы 3D графику или нет.">
+<!ENTITY images "Изображения">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Изменять размер изображений">
+<!ENTITY gfx_color_management_mode_name "Использовать управление цветом">
+<!ENTITY gfx_color_management_mode_description "Требуется перезагрузка.">
+<!ENTITY gfx_color_management_mode_o1 "ни для каких изображений">
+<!ENTITY gfx_color_management_mode_o2 "для всех изображений">
+<!ENTITY gfx_color_management_mode_o3 "для изображений с тегом ICC">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Загружать шрифты внедрённые в веб-сайт">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Разрешает загрузку шрифтов CSS3, внедрённых с использованием @font-face. Требуется перезагрузка.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Выделенный текст">
 <!ENTITY ui_textSelectBackgroundAttention_description "Определяет цвет фона (в виде названия или #кода, используемого при поиске по мере набора.">
@@ -199,6 +233,40 @@
 <!ENTITY ui_textSelectBackground_name "Цвет фона">
 <!ENTITY ui_textSelectForeground_description "Определяет цвет текста (в виде названия или #кода), используемого при выделении. Если не указан, то используется значение из настроек ОС.">
 <!ENTITY ui_textSelectForeground_name "Цвет текста">
+<!-- TABS -->
+<!ENTITY tabs "Вкладки">
+<!-- APPEARANCE -->
+<!ENTITY appearance "Внешний вид">
+<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширна вкладки">
+<!ENTITY browser_tabs_tabMaxWidth_name "Максимальная ширина вкладки">
+<!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
+<!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
+<!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
+<!ENTITY browser_tabs_closeButtons_o2 "на каждой вкладке">
+<!ENTITY browser_tabs_closeButtons_o3 "нигде">
+<!ENTITY browser_tabs_closeButtons_o4 "в конце панели вкладок">
+<!ENTITY browser_tabs_tabClipWidth_name "Минимальная ширина вкладки для кнопки закрытия">
+<!ENTITY browser_tabs_tabClipWidth_description "Определяет минимальную ширину вкладки, необходимую для отображения кнопки закрытия.">
+<!-- TAB PREVIEW -->
+<!ENTITY tab_preview "Просмотр вкладок">
+<!ENTITY browser_allTabs_preview_name "Включить просмотр">
+<!ENTITY browser_allTabs_preview_description "Добавляет справа на панели вкладок кнопку, которая отображает при нажатии просмотр вкладок">
+<!ENTITY browser_ctrlTab_preview_name "Включить просмотр при переключении вкладок">
+<!ENTITY browser_ctrlTab_preview_description "Отображает просмотр вкладок при использовании для переключения между вкладками комбинации клавиш Ctrl+Tab.">
+<!ENTITY browser_taskbar_previews_enable_name "Включить просмотр в панели задач Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Если включено, Firefox будет показывать просмотр для каждой вкладки в панели задач Windows 7.">
+<!-- OPEN IN BACKGROUND -->
+<!ENTITY open_in_background "Открывать новую фоновую вкладку для ссылок">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "из внешних приложений">
+<!ENTITY browser_tabs_loadInBackground_name "с веб-сайтов">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Загружать закладки в фоне">
+<!-- MISC -->
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Открывать новую вкладку следом за текущей">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Определяет местоположение вновь открываемой вкладки в конце панели вкладок или рядом с выбранной сейчас вкладкой.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "При закрытии вкладки переключаться на вкладку с которой она была открыта">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "При закрытии вкладки возвращает фокус вкладке с которой та была открыта. Иначе переключается на соседнюю вкладку справа или слева.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрывать окно по последней вкладке">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Если этот флажок установлен, текущее окно будет закрыто при закрытии в нём последней вкладки.">
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Закладки">
 <!-- MICROSUMMARIES -->
@@ -212,8 +280,6 @@
 <!ENTITY browser_microsummary_updateInterval_description "Определяет промежуток (в минутах) между проверками обновлений сводок. По умолчанию 30 минут.">
 <!ENTITY browser_microsummary_updateInterval_name "Интервал обновления (мин)">
 <!-- MISC -->
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "При открытии закладки в новой вкладке она открывается в фоне, не отбирая фокус у текущей вкладки.">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Загружать закладки в фоне">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Задаёт промежуток между проверками живых закладок. Значения меньшие 60 приравниваются к 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Интервал обновления (с)">
 <!ENTITY browser_bookmarks_max_backups_description "Определяет число сохраняемых резервных копий закладок. Установка в 0 отключит резервирование.">

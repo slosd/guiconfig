@@ -122,12 +122,13 @@ GCElement.prototype.__defineSetter__("locked", function(lock) {
   if(this.options.locked != lock) {
     this.disabled = lock;
     lock ? this.addButton("edit") : this.removeButton("edit");
+    this.options.locked = lock;
     this.observer.fire(lock ? "locked" : "unlocked");
   }
 });
 
 GCElement.prototype.__defineGetter__("locked", function() {
-  return this.options.locked;
+  return !!this.options.locked;
 });
 
 /* the "disabled" property is used for options that aren't supposed to be edited right away */
@@ -152,7 +153,7 @@ GCElement.prototype.__defineSetter__("disabled", function(disable) {
 });
 
 GCElement.prototype.__defineGetter__("disabled", function() {
-  return this.options.disabled;
+  return !!this.options.disabled;
 });
 
 GCElement.prototype.set = function(value) {}
