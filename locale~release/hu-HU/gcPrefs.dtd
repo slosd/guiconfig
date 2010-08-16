@@ -1,0 +1,4 @@
+<!ENTITY prefs.label "Beállítások">
+<!ENTITY prefs.todefault.ask "Kérdezzen meg mielőtt az alapértelmezett beállításokat visszaállítja">
+<!ENTITY prefs.matchversion "Csak olyan opciókat mutasson, amik kompatibilisek a saját Firefox verziómmal">
+<!ENTITY prefs.sticktopreferences "Helyezze a gui:config menüpontot a &quot;Beállítások&quot; menüpont alá">

@@ -76,12 +76,25 @@
 <!ENTITY layout_spellcheckDefault_o1 "禁止">
 <!ENTITY layout_spellcheckDefault_o2 "允许在多行文本框中拼写检查">
 <!ENTITY layout_spellcheckDefault_o3 "允许在单行文本框中拼写检查">
+<!-- SESSION RESTORE -->
+<!ENTITY session_restore "浏览会话恢复">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "启用浏览会话恢复">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "最大可恢复的标签页数">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
+<!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
+<!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
+<!ENTITY browser_sessionstore_resume_from_crash_name "崩溃后恢复浏览会话">
+<!ENTITY browser_sessionstore_resume_from_crash_description "指定浏览器崩溃后是否恢复之前打开的标签页和窗口。">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "可发生的最大崩溃数">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "指定在出现页面恢复对话框之前允许发生崩溃的最大次数。">
+<!ENTITY browser_sessionstore_privacy_level_name "保持额外的浏览会话数据">
+<!ENTITY browser_sessionstore_privacy_level_description "指定额外的浏览会话数据（表单内容、表单中发送的数据、滚动条位置以及 cookies）保存的时间。选择第一个选项时请注意安全性。">
+<!ENTITY browser_sessionstore_privacy_level_o1 "应用于全部站点">
+<!ENTITY browser_sessionstore_privacy_level_o2 "应用于未加密(非 HTTPS)站点">
+<!ENTITY browser_sessionstore_privacy_level_o3 "不保存">
 <!-- MISC -->
 <!ENTITY misc "其他">
-<!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
-<!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "如果选中，关闭最后一个关闭最后一个标签同时关闭浏览器。">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "关闭最后一个标签同时关闭浏览器">
 <!ENTITY browser_search_openintab_description "在搜索栏进行搜索时，搜索结果显示在新标签页中。">
 <!ENTITY browser_search_openintab_name "在新标签页中打开搜索结果">
 <!ENTITY browser_popups_showPopupBlocker_description "是否在拦截弹出窗口时在状态栏显示图标。">
@@ -153,6 +166,17 @@
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
 <!ENTITY browser_privatebrowsing_autostart_description "如果选中，Firefox将以隐私模式启动。">
 <!ENTITY browser_privatebrowsing_autostart_name "以隐私模式开始">
+<!ENTITY master_pass "主密码">
+<!ENTITY security_ask_for_password_description "该选项指定何时要求您输入主密码。">
+<!ENTITY security_ask_for_password_o1 "每次需要的时候提示输入">
+<!ENTITY security_ask_for_password_o2 "首次需要的时候提示输入">
+<!ENTITY security_ask_for_password_o3 "特定一段时间后提示输入">
+<!ENTITY security_password_lifetime_name "时间长度（分钟）">
+<!ENTITY security_password_lifetime_description "多少分钟后提示输入主密码。">
+<!ENTITY dom_ipc_plugins_enabled_name "以独立进程运行每个插件">
+<!ENTITY dom_ipc_plugins_enabled_description "若诸如 Flash 等插件崩溃将不会导致 Firefox 同时崩溃。">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "插件无响应时长（秒）">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "指定插件无响应时长超过规定时限后自动结束其进程。">
 <!-- STYLE -->
 <!ENTITY style "样式">
 <!-- BROWSER -->
@@ -170,12 +194,6 @@
 <!ENTITY browser_urlbar_hideGoButton_name "隐藏按钮">
 <!ENTITY browser_preferences_animateFadeIn_description "切换首选项面板时改变窗口高度并淡入显示一秒。">
 <!ENTITY browser_preferences_animateFadeIn_name "切换首选项面板时动态显示">
-<!ENTITY browser_tabs_closeButtons_description "指定是否显示标签页的关闭按钮。">
-<!ENTITY browser_tabs_closeButtons_name "标签页关闭按钮显示在：">
-<!ENTITY browser_tabs_closeButtons_o1 "当前标签页上">
-<!ENTITY browser_tabs_closeButtons_o2 "每个标签页上">
-<!ENTITY browser_tabs_closeButtons_o3 "不显示">
-<!ENTITY browser_tabs_closeButtons_o4 "地址栏末端">
 <!-- WEBSITES -->
 <!ENTITY websites "网站">
 <!ENTITY rendering "渲染">
@@ -187,10 +205,26 @@
 <!ENTITY browser_blink_allowed_name "允许文字闪烁">
 <!ENTITY browser_frames_enabled_description "显示 HTML 框架。">
 <!ENTITY browser_frames_enabled_name "允许框架">
+<!ENTITY layout_frames_force_resizability_description "强制网页框架可改变大小。">
+<!ENTITY layout_frames_force_resizability_name "强制可改变大小">
 <!ENTITY browser_display_show_image_placeholders_description "图片载入时显示占位符。">
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
+<!ENTITY html5_enable_name "启用 HTML5 解析器">
+<!ENTITY html5_enable_description "">
+<!ENTITY svg_enabled_name "启用 SVG 矢量图形">
+<!ENTITY svg_enabled_description "">
+<!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
+<!ENTITY webgl_enabled_for_all_sites_description "">
+<!ENTITY images "图片">
 <!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">
 <!ENTITY browser_enable_automatic_image_resizing_name "图片尺寸自适应">
+<!ENTITY gfx_color_management_mode_name "配色管理应用于">
+<!ENTITY gfx_color_management_mode_description "需要重启浏览器。">
+<!ENTITY gfx_color_management_mode_o1 "任何图片都不">
+<!ENTITY gfx_color_management_mode_o2 "全部图片">
+<!ENTITY gfx_color_management_mode_o3 "带有 ICC标签的图片">
+<!ENTITY gfx_downloadable_fonts_enabled_name "下载网站内嵌的字体">
+<!ENTITY gfx_downloadable_fonts_enabled_description "允许下载使用 @font-face 属性内嵌到网站的 CSS3 字体。启用该功能需要重启浏览器。">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "选中的文字">
 <!ENTITY ui_textSelectBackgroundAttention_description "指定“快速查找”时高亮文字的背景色（十六进制值或颜色名）。">
@@ -199,6 +233,40 @@
 <!ENTITY ui_textSelectBackground_name "背景色">
 <!ENTITY ui_textSelectForeground_description "指定文字背景色（十六进制值或颜色名）。如果未指定该值，则使用操作系统默认背景色。">
 <!ENTITY ui_textSelectForeground_name "文字颜色">
+<!-- TABS -->
+<!ENTITY tabs "标签页">
+<!-- APPEARANCE -->
+<!ENTITY appearance "外观">
+<!ENTITY browser_tabs_tabMinWidth_name "标签页最小宽度">
+<!ENTITY browser_tabs_tabMaxWidth_name "标签页最大宽度">
+<!ENTITY browser_tabs_closeButtons_description "指定是否显示标签页的关闭按钮。">
+<!ENTITY browser_tabs_closeButtons_name "标签页关闭按钮显示在：">
+<!ENTITY browser_tabs_closeButtons_o1 "当前标签页上">
+<!ENTITY browser_tabs_closeButtons_o2 "每个标签页上">
+<!ENTITY browser_tabs_closeButtons_o3 "不显示">
+<!ENTITY browser_tabs_closeButtons_o4 "地址栏末端">
+<!ENTITY browser_tabs_tabClipWidth_name "可显示关闭按钮的最小标签页宽度">
+<!ENTITY browser_tabs_tabClipWidth_description "指定可以显示关闭按钮的最小标签页宽度。">
+<!-- TAB PREVIEW -->
+<!ENTITY tab_preview "标签页预览">
+<!ENTITY browser_allTabs_preview_name "启用标签页预览">
+<!ENTITY browser_allTabs_preview_description "在标签栏右侧添加一个按钮，点击该按钮将显示标签页预览图。">
+<!ENTITY browser_ctrlTab_preview_name "启用标签页切换预览">
+<!ENTITY browser_ctrlTab_preview_description "当使用 [CTRL]+[Tab] 键切换标签页时显示预览图。">
+<!ENTITY browser_taskbar_previews_enable_name "启用 Windows 7 任务栏预览">
+<!ENTITY browser_taskbar_previews_enable_description "启用该选项 Firefox 将在 Windows 7 任务栏中显示每个标签页的预览图。">
+<!-- OPEN IN BACKGROUND -->
+<!ENTITY open_in_background "在后台打开标签页，来自：">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "外部应用程序中的链接">
+<!ENTITY browser_tabs_loadInBackground_name "网站的链接">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
+<!-- MISC -->
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "在紧邻当前标签页打开新标签页">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "指定是在标签栏最右侧还是在当前标签页旁打开新标签页。">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "关闭标签页时切换到其父标签页">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "当关闭一个标签页时，自动切换到打开这个标签页的标签页。否则切换到其邻近的左侧或右侧的标签页。">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "关闭最后一个标签同时关闭浏览器">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "如果选中，关闭最后一个关闭最后一个标签同时关闭浏览器。">
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "书签">
 <!-- MICROSUMMARIES -->
@@ -212,8 +280,6 @@
 <!ENTITY browser_microsummary_updateInterval_description "指定微摘要检查更新的时间间隔，默认每隔 30 分钟检查一次。">
 <!ENTITY browser_microsummary_updateInterval_name "更新间隔（分）">
 <!-- MISC -->
-<!ENTITY browser_tabs_loadBookmarksInBackground_description "当从书签打开新标签页时，不获得焦点。">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "实时书签的刷新时间，最小值为60。">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "刷新间隔（秒）：">
 <!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">

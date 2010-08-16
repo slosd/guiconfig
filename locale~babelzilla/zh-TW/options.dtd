@@ -71,8 +71,22 @@
 <!ENTITY layout_spellcheckDefault_o1 "停用">
 <!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
 <!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
+<!ENTITY session_restore "瀏覽頁組還原">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "啟用「瀏覽頁組還原」">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_description "no description?">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "最大可還原分頁數">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "顯示於「歷史」「最近關閉分頁」選單中的最大分頁數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
 <!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
+<!ENTITY browser_sessionstore_resume_from_crash_name "FF當掉後還原頁組">
+<!ENTITY browser_sessionstore_resume_from_crash_description "決定FF當掉後是否要還原諸視窗及其頁組">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "最大當掉次數">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "開始詢問您要還原哪些分頁之前的最大可當掉次數">
+<!ENTITY browser_sessionstore_privacy_level_name "儲存額外的頁組資訊">
+<!ENTITY browser_sessionstore_privacy_level_description "決定額外頁組資訊(表單內容、表單附送資料、捲動軸標位以及cookies)儲存時機。選用第一個選項時請特加謹慎，可能因此洩露個人機密資料。">
+<!ENTITY browser_sessionstore_privacy_level_o1 "對所有網站">
+<!ENTITY browser_sessionstore_privacy_level_o2 "僅限非加密(HTTPS以外)的網站">
+<!ENTITY browser_sessionstore_privacy_level_o3 "所有網站都不">
 <!ENTITY misc "雜項">
 <!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
 <!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
@@ -139,6 +153,17 @@
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
 <!ENTITY browser_privatebrowsing_autostart_description "此項若勾選，Firefox 會在啟動時自動進入&quot;隱密瀏覽&quot;模式，並運用到整個瀏覽行程直到關閉 Firefox。">
 <!ENTITY browser_privatebrowsing_autostart_name "啟動時自動進入&quot;隱密瀏覽&quot;模式">
+<!ENTITY master_pass "主控密碼">
+<!ENTITY security_ask_for_password_description "此設定決定隔多久會要求您輸入主控密碼。">
+<!ENTITY security_ask_for_password_o1 "需要密碼處，每次都要求輸入">
+<!ENTITY security_ask_for_password_o2 "需要密碼處，只有第一次要求輸入">
+<!ENTITY security_ask_for_password_o3 "需要密碼處，每隔一段時間就要求輸入">
+<!ENTITY security_password_lifetime_name "密碼效期(分鐘)">
+<!ENTITY security_password_lifetime_description "設定分鐘數，過期則提示你要求輸入主控密碼">
+<!ENTITY dom_ipc_plugins_enabled_name "以各別行程執行各外掛程式">
+<!ENTITY dom_ipc_plugins_enabled_description "若外掛程式(例如 Flash)當掉時，不會使FF一起跟著掛掉。">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "外掛程式停止回應時限(秒)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "決定外掛程式行程經過多久沒回應就砍掉它。">
 <!ENTITY style "樣式">
 <!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_identity_ssl_domain_display_name "SSL網域強調顯示">
@@ -164,10 +189,26 @@
 <!ENTITY browser_blink_allowed_name "啟用文字閃爍">
 <!ENTITY browser_frames_enabled_description "顯示 HTML 頁框">
 <!ENTITY browser_frames_enabled_name "允許使用頁框">
+<!ENTITY layout_frames_force_resizability_description "強制頁框大小變成可調整">
+<!ENTITY layout_frames_force_resizability_name "強制成可調整大小">
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
+<!ENTITY html5_enable_name "啟用 HTML5剖析常式">
+<!ENTITY html5_enable_description "no description?">
+<!ENTITY svg_enabled_name "啟用 SVG 向量繪圖">
+<!ENTITY svg_enabled_description "no description?">
+<!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
+<!ENTITY webgl_enabled_for_all_sites_description "no description?">
+<!ENTITY images "圖片">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
 <!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
+<!ENTITY gfx_color_management_mode_name "使用顏色管理於">
+<!ENTITY gfx_color_management_mode_description "需要重新啟動FF才能生效。">
+<!ENTITY gfx_color_management_mode_o1 "無圖片">
+<!ENTITY gfx_color_management_mode_o2 "所有圖片">
+<!ENTITY gfx_color_management_mode_o3 "僅限有ICC標籤的圖片">
+<!ENTITY gfx_downloadable_fonts_enabled_name "下載網頁內嵌的字型">
+<!ENTITY gfx_downloadable_fonts_enabled_description "啟用以@font-face內嵌的CSS3字型下載。需要重新啟動FF才能生效。">
 <!ENTITY text_select "文字標選">
 <!ENTITY ui_textSelectBackgroundAttention_description "以十六進位碼或顏色名稱指定&quot;隨打隨找&quot;功能所找到的文字背景顏色">
 <!ENTITY ui_textSelectBackgroundAttention_name "符合搜尋的文字背景顏色">
@@ -175,13 +216,33 @@
 <!ENTITY ui_textSelectBackground_name "背景顏色">
 <!ENTITY ui_textSelectForeground_description "以十六進位碼或顏色名稱指定所標選文字本身的顏色。。此項若未設，就套用作業系統本身的設定。">
 <!ENTITY ui_textSelectForeground_name "文字顏色">
+<!ENTITY tabs "分頁">
+<!ENTITY appearance "外觀">
+<!ENTITY browser_tabs_tabMinWidth_name "最小頁籤寬度">
+<!ENTITY browser_tabs_tabMaxWidth_name "最大頁籤寬度">
 <!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
 <!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
 <!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">
 <!ENTITY browser_tabs_closeButtons_o2 "顯示於每一分頁">
 <!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
 <!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
+<!ENTITY browser_tabs_tabClipWidth_name "含關閉鈕時的最小頁籤寬度">
+<!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
+<!ENTITY tab_preview "分頁預覽">
+<!ENTITY browser_allTabs_preview_name "啟用「分頁預覽」">
+<!ENTITY browser_allTabs_preview_description "此項於頁籤欄右端新增一按鈕，點按後會顯示一分頁預覽。">
+<!ENTITY browser_ctrlTab_preview_name "切換分頁時，啟用分頁預覽">
+<!ENTITY browser_ctrlTab_preview_description "當使用 [CTRL]+[Tab] 切換分頁時，顯示分頁預覽">
+<!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
+<!ENTITY browser_taskbar_previews_enable_description "啟用後，FF 會 在Windows 7 工具列顯示對各分頁的預覽。">
+<!ENTITY open_in_background "背景中以新分頁開啟">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "外部應用程式中的鏈結">
+<!ENTITY browser_tabs_loadInBackground_name "網頁中的鏈結">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "緊貼當前分頁開新分頁">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "決定新分頁開啟於頁籤欄末端或是目前所選分頁旁邊。">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "關閉分頁時，切回其親分頁">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "關閉一分頁時，切回當初開啟它的分頁。若無親分頁，則切換到右鄰或左鄰分頁。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
 <!ENTITY bookmarks "書籤">

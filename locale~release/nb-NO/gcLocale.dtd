@@ -1,0 +1,9 @@
+<!ENTITY browser.item.label "Avanserte innstillinger">
+<!ENTITY browser.item.access "d">
+<!ENTITY config.search "Search">
+<!ENTITY config.descr.standard "Flytt pekeren over et valg for å se en detaljert beskrivelse">
+<!ENTITY config.save.label "Lagre">
+<!ENTITY config.standard.label "Standard">
+<!ENTITY config.todefault "Sett som standard verdi">
+<!ENTITY config.header.title "gui:config">
+<!ENTITY config.header.description "Avanserte innstillinger ($n er tilgjengelig)">

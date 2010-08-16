@@ -131,7 +131,7 @@ var guiconfig = {
     var Option;
     for(var key in this.Options) {
       Option = this.Options[key];
-      if(!Option.element.disabled && Option.preference.get() != Option.get()) {
+      if((!Option.element.disabled || Option.element.locked) && Option.preference.get() != Option.get()) {
         Option.save();
       }
     }
@@ -175,8 +175,6 @@ var guiconfig = {
     parser.setVar("selectedTab", false);
     parser.setVar("string", string);
     parser.setVar("query", new RegExp("(" + string.makeSearchable(".*") + ")", "i"));
-    dump("search for \""+parser.getVar("string")+"\"\n");
-	//dump("search for \""+parser.getVar("string")+"\", \""+parser.getVar("query")+"\"");
     parser.reset();
     parser.parseWithRuleSet("root");
     this.lastQuery = string;
@@ -480,7 +478,6 @@ var guiconfig = {
           node.empty = true;
           node.show = false;
           parser.setVar("selectedTab", false);
-          dump("panel for \""+this.getVar("string")+"\"\n");
           if(this.getVar("string") == "" || node.getAttribute("label").makeSearchable().match(this.getVar("query"))) {
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
@@ -558,8 +555,7 @@ var guiconfig = {
           "alias": ["checkbox"],
           "filter": "version",
           "handle": function(node, parentNode) {
-      	  dump(node.nodeName);
-            var element = node.getUserData("element"),
+           var element = node.getUserData("element"),
                 options = node.getElementsByTagName("option"),
                 options_data = "";
             node.empty = true;
