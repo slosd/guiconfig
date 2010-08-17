@@ -2,7 +2,8 @@
 <!DOCTYPE overlay SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 <overlay id="gcTools" 
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-		 
+  
+  <!-- The usual "Tools" menu -->
 	<menupopup id="menu_ToolsPopup">
 		<menuitem id="gcToolsItem"
 				  label="&browser.item.label;"
@@ -10,6 +11,15 @@
 				  oncommand="guiconfig.openWindow('config')"
 				  accesskey="&browser.item.access;"/>
 	</menupopup>
+  
+  <!-- Firefox menu used as of version 4.0b1 -->
+  <menupopup id="appmenu-popup">
+    <menuitem id="gcAppItem"
+          label="&browser.item.label;"
+          image="chrome://guiconfig/skin/icons/icon.16.png"
+          oncommand="guiconfig.openWindow('config')"
+          accesskey="&browser.item.access;"/>
+  </menupopup>
 	
 	<script type="application/javascript" src="/content/app/gconfig.core.js"/>
 	<script type="application/javascript" src="/content/app/gconfig.browser.js"/>
