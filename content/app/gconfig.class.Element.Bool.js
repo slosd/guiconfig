@@ -2,7 +2,7 @@ var GCBoolElement = function(options) {
   GCElement.call(this, options);
 }
 
-GCBoolElement.extend(GCElement);
+gcCore.extendProto(GCBoolElement, GCElement);
 
 GCBoolElement.prototype.build = function() {
   var element = new GCElement.Checkbox({

@@ -2,7 +2,7 @@ var GCIntElement = function(options) {
   GCElement.call(this, options);
 }
 
-GCIntElement.extend(GCElement);
+gcCore.extendProto(GCIntElement, GCElement)
 
 GCIntElement.prototype.build = function() {
   var element;
@@ -70,7 +70,7 @@ GCIntElement.set = function(element, value, options) {
       break;
     case "select":
     default:
-      element.setProperty("value", value);
+      gcCore.xulSetProperty(element, "value", value);
       break;
   }
 }
