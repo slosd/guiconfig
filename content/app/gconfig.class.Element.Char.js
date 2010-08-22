@@ -2,7 +2,7 @@ var GCCharElement = function(options) {
   GCElement.call(this, options);
 }
 
-GCCharElement.extend(GCElement);
+gcCore.extendProto(GCCharElement, GCElement)
 
 GCCharElement.prototype.build = function() {
   var element;
@@ -64,11 +64,11 @@ GCCharElement.prototype.get = function() {
 GCCharElement.set = function(element, value, options) {
   switch(options.mode) {
     case "color":
-      element.setProperty("color", value);
+      gcCore.xulSetProperty(element, "color", value);
       break;
     case "select":
     default:
-      element.setProperty("value", value);
+      gcCore.xulSetProperty(element, "value", value);
       break;
   }
 }
