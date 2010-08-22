@@ -41,6 +41,7 @@
               maxVersion="3.0.*"
               label="&browser_urlbar_matchOnlyTyped_name;"
               description="&browser_urlbar_matchOnlyTyped_description;"
+              type="Bool"
               indent="indent" />
         <pref key="browser.fixup.alternate.enabled"
               label="&browser_fixup_alternate_enabled_name;"
@@ -140,6 +141,7 @@
           <pref key="accessibility.typeaheadfind.casesensitive"
                 label="&accessibility_typeaheadfind_casesensitive_name;"
                 description="&accessibility_typeaheadfind_casesensitive_description;"
+                type="Int"
                 minVersion="3.0"
                 mode="select">
             <option label="&accessibility_typeaheadfind_casesensitive_o1;">-1</option>
@@ -165,7 +167,8 @@
           <pref key="accessibility.tabfocus"
                 label="&accessibility_tabfocus_name;"
                 description="&accessibility_tabfocus_description;"
-                mode="select">
+                mode="select"
+                type="Int">
             <option label="&accessibility_tabfocus_o1;">1</option>
             <option label="&accessibility_tabfocus_o2;">2</option>
             <option label="&accessibility_tabfocus_o3;">3</option>
@@ -277,6 +280,7 @@
         <pref key="browser.preferences.instantApply"
               label="&browser_preferences_instantApply_name;"
               description="&browser_preferences_instantApply_description;"
+              type="Bool"
               minVersion="2.0" />
         <pref key="browser.popups.showPopupBlocker"
               label="&browser_popups_showPopupBlocker_name;"
@@ -335,7 +339,8 @@
           <pref key="extensions.getAddons.showPane"
                 label="&extensions_getAddons_showPane_name;"
                 description="&extensions_getAddons_showPane_description;"
-								maxVersion="3.6.*" />
+                type="Bool"
+                maxVersion="3.6.*" />
           <pref key="extensions.getAddons.maxResults"
                 label="&extensions_getAddons_maxResults_name;"
                 description="&extensions_getAddons_maxResults_description;" />
@@ -397,6 +402,7 @@
           <pref key="browser.bookmarks.max_backups"
                 label="&browser_bookmarks_max_backups_name;"
                 description="&browser_bookmarks_max_backups_description;"
+                type="Int"
                 minVersion="2*" />
         </group>
       </tab>
@@ -429,10 +435,12 @@
         	<pref key="dom.ipc.plugins.enabled"
 					      label="&dom_ipc_plugins_enabled_name;"
 								description="&dom_ipc_plugins_enabled_description;"
-								minVersion="3.6.4" />
+                type="Bool"
+                minVersion="3.6.4" />
 				  <pref key="dom.ipc.plugins.timeoutSecs"
 					      label="&dom_ipc_plugins_timeoutSecs_name;"
 								description="&dom_ipc_plugins_timeoutSecs_description;"
+                type="Int"
                 minVersion="3.6.4"
 								indent="indent"
 								wrapper="checkbox_is_enabled">
@@ -504,7 +512,8 @@
 	        <pref key="browser.identity.ssl_domain_display"
 	              label="&browser_identity_ssl_domain_display_name;"
 	              description="&browser_identity_ssl_domain_display_description;"
-	              minVersion="3.0"
+                type="Int"
+                minVersion="3.0"
 	              mode="select">
 	          <option label="&browser_identity_ssl_domain_display_o1;">0</option>
 	          <option label="&browser_identity_ssl_domain_display_o2;">1</option>
@@ -525,9 +534,9 @@
 	        <pref key="browser.urlbar.hideGoButton"
 	              label="&browser_urlbar_hideGoButton_name;"
 	              description="&browser_urlbar_hideGoButton_description;"
-	              minVersion="2.0"
+                type="Bool"
+                minVersion="2.0"
 	              maxVersion="2.*"
-	              type="Bool"
 	              default="0" />
 	        <pref key="browser.preferences.animateFadeIn"
 	              label="&browser_preferences_animateFadeIn_name;"
@@ -551,8 +560,9 @@
 	        <pref key="gfx.color_management.mode"
 	              label="&gfx_color_management_mode_name;"
 	              description="&gfx_color_management_mode_description;"
-	              mode="select"
-	              minVersion="3.5">
+                type="Int"
+                minVersion="3.5"
+                mode="select">
 	          <option label="&gfx_color_management_mode_o1;">0</option>
 	          <option label="&gfx_color_management_mode_o2;">1</option>
 	          <option label="&gfx_color_management_mode_o3;">2</option>
@@ -605,18 +615,21 @@
         <pref key="html5.enable"
               label="&html5_enable_name;"
               description=""
+              type="Bool"
               minVersion="3.6" />
         <pref key="gfx.downloadable_fonts.enabled"
               label="&gfx_downloadable_fonts_enabled_name;"
               description="&gfx_downloadable_fonts_enabled_description;"
+              type="Bool"
               minVersion="3.1" />
 				<pref key="svg.enabled"
 				      label="&svg_enabled_name;"
 							description="" />
 				<pref key="webgl.enabled_for_all_sites"
 				      label="&webgl_enabled_for_all_sites_name;"
-							description=""
-							minVersion="4.0b1" />
+              description=""
+              type="Bool"
+              minVersion="4.0b1" />
 			</tab>
     </tabs>
   </panel>
@@ -639,14 +652,17 @@
 	        <pref key="browser.tabs.tabMinWidth" 
 	              label="&browser_tabs_tabMinWidth_name;"
 	              description=""
-	              maxVersion="3.6.*" />
+                type="Int"
+                maxVersion="3.6.*" />
 	        <pref key="browser.tabs.tabMaxWidth" 
 	              label="&browser_tabs_tabMaxWidth_name;"
 	              description=""
+                type="Int"
 	              maxVersion="3.6.*" />
 	        <pref key="browser.tabs.closeButtons"
 	              label="&browser_tabs_closeButtons_name;"
 	              description="&browser_tabs_closeButtons_description;"
+                type="Int"
 	              minVersion="2.0"
 	              mode="select">
 	          <option label="&browser_tabs_closeButtons_o1;">0</option>
@@ -690,7 +706,8 @@
           <pref key="browser.tabs.insertRelatedAfterCurrent"
                 label="&browser_tabs_insertRelatedAfterCurrent_name;"
                 description="&browser_tabs_insertRelatedAfterCurrent_description;"
-								minVersion="3.6" />
+                type="Bool"
+                minVersion="3.6" />
           <pref key="browser.search.openintab"
                 label="&browser_search_openintab_name;"
                 description="&browser_search_openintab_description;" />
