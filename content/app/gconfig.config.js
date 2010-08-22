@@ -18,12 +18,12 @@ var guiconfig = {
     this.IconSet = new gcCore.IconSet("tango", { os: gcCore.MozRuntime.OS });
     this.XMLPreferences = new gcCore.Parser("chrome://guiconfig/content/preferences.xml");
     this.XMLPreferences.addGlobalFilters({
-      "version": function(node){
-        if (gcCore.GCPreferences.getBoolPref("matchversion")) {
+      "version": function(node) {
+        if(gcCore.GCPreferences.getBoolPref("matchversion")) {
           var minVersion = node.getAttribute("minVersion"),
               maxVersion = node.getAttribute("maxVersion"),
               platform = node.getAttribute("platform");
-          if (!minVersion && !maxVersion && !platform) {
+          if(!minVersion && !maxVersion && !platform) {
             return true;
           }
           else {
