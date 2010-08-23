@@ -1,7 +1,7 @@
 <!ENTITY browser.item.label "Opções avançadas">
 <!ENTITY browser.item.access "v">
 <!ENTITY config.search "Filtrar">
-<!ENTITY config.descr.standard "Passe o cursor do mouse sobre uma opção para uma explicação.">
+<!ENTITY config.descr.standard "Passe o cursor do mouse sobre uma opção para ler sua explicação.">
 <!ENTITY config.save.label "Salvar">
 <!ENTITY config.standard.label "Restaurar tudo">
 <!ENTITY config.todefault "Restaurar opção ao padrão">

@@ -73,7 +73,6 @@
 <!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
 <!ENTITY session_restore "瀏覽頁組還原">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "啟用「瀏覽頁組還原」">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_description "no description?">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "最大可還原分頁數">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "顯示於「歷史」「最近關閉分頁」選單中的最大分頁數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
@@ -194,11 +193,8 @@
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
 <!ENTITY html5_enable_name "啟用 HTML5剖析常式">
-<!ENTITY html5_enable_description "no description?">
 <!ENTITY svg_enabled_name "啟用 SVG 向量繪圖">
-<!ENTITY svg_enabled_description "no description?">
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
-<!ENTITY webgl_enabled_for_all_sites_description "no description?">
 <!ENTITY images "圖片">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
 <!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
