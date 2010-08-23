@@ -79,7 +79,6 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Obnova relace">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Povolit obnovu relace">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Povolí obnovu relace.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. panelů pro obnovu">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximální počet panelů, které jsou zobrazeny v nabídce „Historie“ – „Naposledy zavřené panelu“">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. oken pro obnovu">
@@ -99,7 +98,7 @@
 <!ENTITY browser_search_openintab_name "Otevřít výsledky vyhledávání v novém panelu">
 <!ENTITY browser_popups_showPopupBlocker_description "Určuje, zda zobrazovat ikonu ve stavovém řádku, když bylo nebo nebylo zablokováno vyskakovací okno.">
 <!ENTITY browser_popups_showPopupBlocker_name "Zobrazit ve stavovém řádku ikonu blokování vyskakovacích oken">
-<!ENTITY browser_preferences_instantApply_description "Změny předvoleb budou provedeny okamžitě. Okno s předvolbami není modální. Namísto tlačítek „OK“ a „Zrušit“ se bude objevovat tlačítko „Zavřít“.">
+<!ENTITY browser_preferences_instantApply_description "Změny předvoleb budou prováděny okamžitě. Okno s předvolbami nebude modální. Namísto tlačítek „OK“ a „Zrušit“ se bude objevovat tlačítko „Zavřít“.">
 <!ENTITY browser_preferences_instantApply_name "Použít okamžitě">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Při každém stisknutí F7 bude zobrazeno dialogové okno s upozorněním, že uživatel vstupuje do režimu Procházení stránky.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Zobrazit dialogové okno při zapnutí Procházení stránky">
@@ -192,7 +191,7 @@
 <!ENTITY browser_chrome_toolbar_tips_name "Zobrazovat místní nápovědu">
 <!ENTITY browser_urlbar_hideGoButton_description "Určuje, zda skrýt tlačítko „Přejít“, nebo ne.">
 <!ENTITY browser_urlbar_hideGoButton_name "Skrýt tlačítko „Přejít“">
-<!ENTITY browser_preferences_animateFadeIn_description "Při přepínání panelů v předvolbách bude měnit výšku okna a nový panel se bude pozvolna objevovat během přibližně sekundy.">
+<!ENTITY browser_preferences_animateFadeIn_description "Při přepínání panelů v předvolbách se bude měnit výška okna a nový panel se bude pozvolna objevovat během přibližně sekundy.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animovat přepínání panelů předvoleb">
 <!-- WEBSITES -->
 <!ENTITY websites "Stránky">
@@ -210,11 +209,8 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zobrazí zástupný obrázek během jeho načítání.">
 <!ENTITY browser_display_show_image_placeholders_name "Zobrazit zástupný obrázek">
 <!ENTITY html5_enable_name "Povolit parser HTML5">
-<!ENTITY html5_enable_description "Povolí parser HTML5.">
 <!ENTITY svg_enabled_name "Povolit vektorovou grafiku SVG">
-<!ENTITY svg_enabled_description "Povolí vektorovou grafiku SVG.">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
-<!ENTITY webgl_enabled_for_all_sites_description "Povolí WebGL.">
 <!ENTITY images "Obrázky">
 <!ENTITY browser_enable_automatic_image_resizing_description "Pokud je obrázek prohlížený mimo stránku příliš velký, bude změněna jeho velikost, aby se vešel do okna prohlížeče.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Změnit velikost obrázků">
@@ -317,7 +313,7 @@
 <!ENTITY view_source_editor_path_description "Cesta k vlastnímu editoru.">
 <!ENTITY view_source_editor_path_name "Cesta k editoru">
 <!-- MISC -->
-<!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory zabalené ve formátu JAR.">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory formátu JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Vypnout vyrovnávací paměť XUL">
 <!ENTITY browser_dom_window_dump_enabled_description "Povolí použití příkazu dump() vypisující do standardního výstupu.">
 <!ENTITY browser_dom_window_dump_enabled_name "Povolit dump()">

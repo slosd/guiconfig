@@ -73,7 +73,6 @@
 <!ENTITY layout_spellcheckDefault_o3 "Für ein- und mehrzeilige Textfelder aktivieren">
 <!ENTITY session_restore "Sitzung wiederherstellen">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Sitzungswiederherstellung aktivieren">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. wiederherstellbare Tabs">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximale Anzahl von Tabs, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">
@@ -194,11 +193,8 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
 <!ENTITY html5_enable_name "HTML5 Parser benutzen">
-<!ENTITY html5_enable_description "�">
 <!ENTITY svg_enabled_name "SVG Vektor Grafiken anzeigen">
-<!ENTITY svg_enabled_description "�">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
-<!ENTITY webgl_enabled_for_all_sites_description "�">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Bilder anpassen">
