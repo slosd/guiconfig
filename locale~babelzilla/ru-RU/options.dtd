@@ -73,7 +73,6 @@
 <!ENTITY layout_spellcheckDefault_o3 "разрешить в много- и однострочных текстовых полях">
 <!ENTITY session_restore "Восстановление сессии">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_description "Включает псевдосохранение сессий.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Восстанавливаемых вкладок">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Максимальное количество вкладок, отображаемых в меню «Журнал|Недавно закрытые вкладки».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
@@ -194,11 +193,8 @@
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
 <!ENTITY html5_enable_name "Включить анализатор HTML5">
-<!ENTITY html5_enable_description "Определяет, будет ли Firefox игнорировать или выполнять новые элементы, появившиеся в пятой версии HTML.">
 <!ENTITY svg_enabled_name "Включить векторную (SVG) 2D графику">
-<!ENTITY svg_enabled_description "Определяет, будет ли Firefox отображать векторную SVG графику собственным движком или через подключаемый модуль.">
 <!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">
-<!ENTITY webgl_enabled_for_all_sites_description "Определяет, будет ли Firefox обрабатывать внедрённую в веб-страницы 3D графику или нет.">
 <!ENTITY images "Изображения">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Изменять размер изображений">

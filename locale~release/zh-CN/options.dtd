@@ -79,7 +79,6 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "浏览会话恢复">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "启用浏览会话恢复">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_description "">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "最大可恢复的标签页数">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
@@ -210,11 +209,8 @@
 <!ENTITY browser_display_show_image_placeholders_description "图片载入时显示占位符。">
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
 <!ENTITY html5_enable_name "启用 HTML5 解析器">
-<!ENTITY html5_enable_description "">
 <!ENTITY svg_enabled_name "启用 SVG 矢量图形">
-<!ENTITY svg_enabled_description "">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
-<!ENTITY webgl_enabled_for_all_sites_description "">
 <!ENTITY images "图片">
 <!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">
 <!ENTITY browser_enable_automatic_image_resizing_name "图片尺寸自适应">

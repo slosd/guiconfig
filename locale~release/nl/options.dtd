@@ -79,11 +79,10 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Session restore">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_description "">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
-<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &quot;Recently Closed Tabs&quot; menu.">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &quot;Recently Closed Windows&quot; menu.">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Windows&quot; menu.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "Restore session after crash">
 <!ENTITY browser_sessionstore_resume_from_crash_description "Determines whether the tabs and windows should be restored after a crash.">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. crashes">
@@ -106,11 +105,59 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ">
 <!ENTITY browser_preferences_instantApply_name "Instant toepassing">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Elke keer (F7) wordt ingedrukt, verschijnt een dialoogvenster de waarschuwing dat ze binnenkomen Caret Browsing-modus.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Toon het dialoogvenster bij het invoeren van caret browsing">
 <!ENTITY accessibility_accesskeycausesactivation_description "Met behulp van een sneltoets voor een element is hetzelfde als het activeren van het element. Indien het element is een link, volg de link. Indien het element is een knop, &quot;klik&quot; op de knop.&quot;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,6 +181,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ">
 <!ENTITY alerts_slideIncrement_name "Aantal pixels te verplaatsen per aanwas (px)">
 <!ENTITY alerts_totalOpenTime_description "Bepaalt de hoeveelheid tijd in milliseconden om te laten zien &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts.&quot;&gt;
@@ -143,9 +214,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ">
 <!ENTITY alerts_totalOpenTime_name "alarmfase (ms)">
 <!ENTITY browser_download_manager_showAlertInterval_description "Aantal milliseconden na volledige downloads aan te tonen van de &quot;voltooid&quot; alarm.&quot;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,8 +351,56 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ">
 <!ENTITY browser_urlbar_hideGoButton_name "Verberg de &quot;Go&quot; knop&quot;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -259,11 +426,8 @@
 <!ENTITY browser_display_show_image_placeholders_description "Shows plaatshouders terwijl afbeelding wordt geladen.">
 <!ENTITY browser_display_show_image_placeholders_name "Toon afbeelding plaatshouders">
 <!ENTITY html5_enable_name "Enable the HTML5 parser">
-<!ENTITY html5_enable_description "">
 <!ENTITY svg_enabled_name "Enable SVG vector graphics">
-<!ENTITY svg_enabled_description "">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
-<!ENTITY webgl_enabled_for_all_sites_description "">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding niet in een webpagina, wordt de afbeelding worden aangepast om te passen in het browservenster als het te groot is voor het browservenster.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Resize images">
@@ -278,6 +442,30 @@
 <!ENTITY text_select "Geselecteerde tekst">
 <!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Find As You Type als een hexadecimale code of benoemde kleur.">
 <!ENTITY ui_textSelectBackgroundAttention_name "&quot;Find As You Type&quot; achtergrondkleur&quot;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

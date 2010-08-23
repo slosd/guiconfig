@@ -79,9 +79,19 @@
 <!-- MISC -->
 <!ENTITY session_restore "Restauração de sessão">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Ativar restauração de sessão">
-<!ENTITY browser_sessionstore_max_tabs_undo_name "Máximo de abas a restaurar">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Abas fechadas a lembrar:">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Máximo de abas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir aba&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Janelas fechadas a lembrar:">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Especifica o máximo de janelas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir janela&quot;">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Máximo de janelas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir janela&quot;.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Restaurar sessão após travamento">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Especifica se as abas e janelas abertas quando o navegador travar devem ser reabertas automaticamente na próxima vez em que ele for iniciado.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Máximo de travamentos:">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Número de travamentos consecutivos antes que o navegador pare de restaurar sessões automaticamente e pergunte quais abas e janelas devam ser restauradas. Quando isso ocorre, é possível que umas das páginas em questão seja a causadora do problema.">
+<!ENTITY browser_sessionstore_privacy_level_name "Salvar dados extras de sessão:">
+<!ENTITY browser_sessionstore_privacy_level_description "Especifica quando informações extras (como conteúdo de campos de formulário, posição das barras de rolagem, cookies e outros) devem ser salvas junto com a sessão. Use a opção &quot;para qualquer site&quot; com cuidado.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "para qualquer site">
+<!ENTITY browser_sessionstore_privacy_level_o2 "apenas para sites não criptografados (não HTTPS)">
+<!ENTITY browser_sessionstore_privacy_level_o3 "para nenhum site">
 <!-- BROWSER -->
 <!ENTITY misc "Diversos">
 <!ENTITY browser_search_openintab_description "Abre os resultados das pesquisas realizadas no campo de pesquisa em uma nova aba.">
@@ -153,8 +163,19 @@
 <!ENTITY security_privacy "Privacidade e segurança">
 <!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para deastivar esse recurso.">
 <!ENTITY security_dialog_enable_delay_name "Atraso para instalar complementos (ms):">
-<!ENTITY browser_privatebrowsing_autostart_description "Inicia o Firefox já no modo Navegação Privativa, mantendo-o assim durante toda a sessão.">
-<!ENTITY browser_privatebrowsing_autostart_name "Iniciar o Firefox em Navegação Privativa">
+<!ENTITY browser_privatebrowsing_autostart_description "Inicia o Firefox já no modo &quot;Navegação Privativa&quot;, mantendo-o assim durante toda a sessão.">
+<!ENTITY browser_privatebrowsing_autostart_name "Iniciar o Firefox em navegação privativa">
+<!ENTITY master_pass "Senha mestra">
+<!ENTITY security_ask_for_password_description "Especifica o quão frequentemente a senha mestra será pedida durante a navegação.">
+<!ENTITY security_ask_for_password_o1 "Pedir sempre que for necessária">
+<!ENTITY security_ask_for_password_o2 "Pedir na primeira vez em que for necessária">
+<!ENTITY security_ask_for_password_o3 "Pedir em intervalos de tempo">
+<!ENTITY security_password_lifetime_name "Intervalo (min):">
+<!ENTITY security_password_lifetime_description "Tempo, em minutos, após o qual a senha mestra será novamente pedida.">
+<!ENTITY dom_ipc_plugins_enabled_name "Executar cada plugin em um processo separado">
+<!ENTITY dom_ipc_plugins_enabled_description "Essa opção permite que o Firefox não trave também quando um plugin (como Flash) travar.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Tempo a esperar por plugins que não respondem (s):">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Especifica quanto tempo esperar, em segundos, antes que um plugin que não estiver respondendo seja encerrado.">
 <!-- BROWSER -->
 <!ENTITY style "Estilo">
 <!-- WEBSITES -->
@@ -183,10 +204,23 @@
 <!ENTITY browser_blink_allowed_name "Ativar texto piscante">
 <!ENTITY browser_frames_enabled_description "Permite a exibição de páginas em quadros (frames). Desmarque para forçar o Firefox a não usar quadros.">
 <!ENTITY browser_frames_enabled_name "Usar quadros">
+<!ENTITY layout_frames_force_resizability_description "Faz com que os quadros sempre possam ter suas dimensões alteradas arrastando-se com o mouse as suas bordas.">
+<!ENTITY layout_frames_force_resizability_name "Forçar que sejam redimensionáveis">
 <!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas. (Costuma evitar algumas mudanças bruscas no aspecto da página durante o seu carregamento.)">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
+<!ENTITY html5_enable_name "Ativar interpretador HTML5">
+<!ENTITY svg_enabled_name "Ativar gráficos vetoriais SVG">
+<!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
+<!ENTITY images "Imagens">
 <!ENTITY browser_enable_automatic_image_resizing_description "Reduz o tamanho de uma imagem avulsa (fora de uma página) maior que a janela do navegador para que ela seja exibida por completo no espaço disponível.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Reduzir imagens para exibi-las por completo">
+<!ENTITY gfx_color_management_mode_name "Usar gerenciamento de cores para:">
+<!ENTITY gfx_color_management_mode_description "Alterações a essa opção somente entrarão em vigor após o navegador ser reiniciado.">
+<!ENTITY gfx_color_management_mode_o1 "nenhuma imagem">
+<!ENTITY gfx_color_management_mode_o2 "todas as imagens">
+<!ENTITY gfx_color_management_mode_o3 "imagens que tenham informações ICC">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Baixar fontes usadas nos sites">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Permite que o navegador baixe, se for preciso, fontes definidas nas páginas pelo comando CSS3 &quot;@font-face&quot;.">
 <!-- BOOKMARK -->
 <!ENTITY text_select "Texto selecionado">
 <!ENTITY ui_textSelectBackgroundAttention_description "Especifica, em código hexadecimal ou nome HTML, a cor de realce dos trechos de texto encontrados com a função Localizar.">
@@ -196,23 +230,43 @@
 <!ENTITY ui_textSelectForeground_description "Especifica, em código hexadecimal ou nome HTML, a cor dos caracteres nos trechos de texto selecionados. Se deixada em branco, será usada a cor definida pelo sistema operacional.">
 <!ENTITY ui_textSelectForeground_name "Cor do texto selecionado">
 <!-- MICROSUMMARIES -->
+<!ENTITY tabs "Abas">
 <!-- MISC -->
+<!ENTITY appearance "Aparência">
+<!ENTITY browser_tabs_tabMinWidth_name "Largura mínima das abas:">
+<!ENTITY browser_tabs_tabMaxWidth_name "Largura máxima das abas:">
 <!ENTITY browser_tabs_closeButtons_description "Especifica onde exibir botões para fechar abas.">
 <!ENTITY browser_tabs_closeButtons_name "Mostrar botão Fechar aba:">
 <!ENTITY browser_tabs_closeButtons_o1 "apenas na aba atual">
 <!ENTITY browser_tabs_closeButtons_o2 "em cada aba">
 <!ENTITY browser_tabs_closeButtons_o3 "nunca">
 <!ENTITY browser_tabs_closeButtons_o4 "na extremidade da barra de abas">
+<!ENTITY browser_tabs_tabClipWidth_name "Largura mínima das abas para exibir o botão Fechar:">
+<!ENTITY browser_tabs_tabClipWidth_description "Especifica a largura mínima das abas inativas antes que o botão Fechar seja nelas suprimido.">
 <!-- NETWORK -->
+<!ENTITY tab_preview "Pré-visualização de abas">
+<!ENTITY browser_allTabs_preview_name "Ativar pré-visualização de abas">
+<!ENTITY browser_allTabs_preview_description "Essa opção adiciona ao início da barra de abas um botão que dá acesso à pré-visualização de miniaturas das abas abertas.">
+<!ENTITY browser_ctrlTab_preview_name "Exibir pré-visualização ao trocar abas">
+<!ENTITY browser_ctrlTab_preview_description "Exibe a pré-visualização das abas ao pressionar Ctrl+Tab.">
+<!ENTITY browser_taskbar_previews_enable_name "Exibir pré-visualizações na barra de tarefas do Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Faz o Firefox exibir na barra de tarefas do Windows 7 miniaturas de cada aba aberta.">
 <!-- CONNECTIONS -->
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Carregar em 2° plano favoritos abertos em novas abas">
+<!ENTITY open_in_background "Abas que são abertas em segundo plano">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Links em outros aplicativos no computador">
+<!ENTITY browser_tabs_loadInBackground_name "Links em páginas">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Favoritos">
 <!-- KEEP ALIVE -->
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Abrir novas abas junto à atual">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Especifica se cada nova aba aberta deve ser colocada junto à aba atual ou no final da barra de abas.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Ao fechar uma aba, retornar à aba de origem.">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Especifica que, ao se fechar uma aba, a próxima aba a ser exibida seja aquela na qual havia o link que abriu a aba recém-fechada. Do contrário, uma aba adjacente à fechada será exibida.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Fechar janela ao fechar a última aba">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Fecha a janela atual ao se fechar a sua última aba.">
 <!-- PIPELINING -->
 <!ENTITY bookmarks "Favoritos">
 <!-- DEVELOPMENT -->
-<!ENTITY microsummaries "microrresumos">
+<!ENTITY microsummaries "Microrresumos">
 <!ENTITY browser_microsummary_enabled_description "Mostra como títulos de favoritos informações atualizadas obtidas das respectivas páginas. Disponível para páginas que ofereçam esse recurso (e também para outras páginas, instalando-se complementos específicos).">
 <!ENTITY browser_microsummary_enabled_name "Usar microrresumos">
 <!ENTITY browser_microsummary_generatorUpdateInterval_description "Especifica, em segundos, o intervalo entre as atualizações dos endereços para obtenção dos microrresumos. Se deixado em branco, essas atualizações serão semanais (604800 segundos).">
