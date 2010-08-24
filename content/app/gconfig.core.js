@@ -209,8 +209,8 @@ gcCore.Parser = function(xmlData) {
           "rule": ruleset,
           "ref": Reference,
           "parser": this,
-          "setVar": this.setVar.bind(this),
-          "getVar": this.getVar.bind(this)
+          "setVar": gcCore.bindFn(this.setVar, this),
+          "getVar": gcCore.bindFn(this.getVar, this)
         }
         if(this.testFilter(node, NodeHandler.filter)) {
           NodeHandler.handle.call(environment, node, data);
@@ -359,38 +359,30 @@ gcCore.RegExpNonLetters = new RegExp("["+
 .replace(/(\w{4})/g, "\\u$1")+
 "]", "g");
 
-XULElement.prototype.setProperty = function(name, value) {
-  if(this.hasAttribute(name))
-    this[name] = value;
-  else 
-    this.setAttribute(name, value);
+gcCore.xulSetProperty = function(element, name, value) {
+  if(element.hasAttribute(name))
+	element[name] = value;
+  else
+	element.setAttribute(name, value);
 }
 
-NodeList.prototype.forEach = Array.prototype.forEach;
-
-Function.prototype.bind = function(o) {
+gcCore.bindFn = function(fn, obj) {
   return function(f) {
     return function() {
       var a = arguments;
-      return f.apply(o, a);
+      return f.apply(obj, a);
     }
-  }(this);
+  }(fn);
 }
 
-Function.prototype.extend = function(parent) {
-  this.prototype.__proto__ = parent.prototype;
+gcCore.extendProto = function(child, parent) {
+  child.prototype.__proto__ = parent.prototype;
 }
 
-if(!String.prototype.trim) {
-  String.prototype.trim = function() {
-    return this.replace(/(^\s+|\s+$)/, "");
-  }
-}
-
-String.prototype.makeSearchable = function(join_string) {
+gcCore.strMakeSearchable = function(str, join_string) {
   if(!join_string)
     var join_string = " ";
-  return this.trim().toLowerCase().replace(gcCore.RegExpNonLetters, " ").replace(/\s\s+/, " ").split(" ").sort().join(join_string);
+  return str.replace(/(^\s+|\s+$)/, "").toLowerCase().replace(gcCore.RegExpNonLetters, " ").replace(/\s\s+/, " ").split(" ").sort().join(join_string);
 }
 
 function is_defined() {

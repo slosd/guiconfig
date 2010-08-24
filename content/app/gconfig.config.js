@@ -60,7 +60,7 @@ var guiconfig = {
   adaptSearchBox: function() {
     var searchbox = document.getElementById("searchbox");
     if(gcCore.validateVersion(gcCore.MozInfo.version, "3.5a1"))
-      searchbox.setProperty("type", "search");  // change the type to "search" if it is supported by the used FF version (>=3.5a1)
+    	gcCore.xulSetProperty(searchbox, "type", "search");  // change the type to "search" if it is supported by the used FF version (>=3.5a1)
   },
 
   setButtons: function() {
@@ -174,7 +174,7 @@ var guiconfig = {
     parser.setVar("selectedPanel", false);
     parser.setVar("selectedTab", false);
     parser.setVar("string", string);
-    parser.setVar("query", new RegExp("(" + string.makeSearchable(".*") + ")", "i"));
+    parser.setVar("query", new RegExp("(" + gcCore.strMakeSearchable(string, ".*") + ")", "i"));
     parser.reset();
     parser.parseWithRuleSet("root");
     this.lastQuery = string;
@@ -431,12 +431,12 @@ var guiconfig = {
               "value": node.getAttribute("label")
             }
           });
-          node.set = function(value) {
+          node.set = gcCore.bindFn(function(value) {
             GCBoolElement.set(this.element, value, this.options);
-          }.bind({"element": element.getOptionElement(), "options": optionElementObj.options});
-          node.get = function() {
+          }, {"element": element.getOptionElement(), "options": optionElementObj.options});
+          node.get = gcCore.bindFn(function() {
             return GCBoolElement.get(this.element, null, this.options);
-          }.bind({"element": element.getOptionElement(), "options": optionElementObj.options});
+          }, {"element": element.getOptionElement(), "options": optionElementObj.options});
           element.observer.add(function() {
         	this.observer.fire("modified");
           }, optionElementObj);
@@ -478,7 +478,7 @@ var guiconfig = {
           node.empty = true;
           node.show = false;
           parser.setVar("selectedTab", false);
-          if(this.getVar("string") == "" || node.getAttribute("label").makeSearchable().match(this.getVar("query"))) {
+          if(this.getVar("string") == "" || gcCore.strMakeSearchable(node.getAttribute("label")).match(this.getVar("query"))) {
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
               this.parser.parseWithRuleSet("struct", node);
@@ -504,7 +504,7 @@ var guiconfig = {
           var element = node.getUserData("element");
           node.empty = true;
           node.show = false;
-          if(this.getVar("string") == "" || parentNode.show || node.getAttribute("label").makeSearchable().match(this.getVar("query"))) {
+          if(this.getVar("string") == "" || parentNode.show || gcCore.strMakeSearchable(node.getAttribute("label")).match(this.getVar("query"))) {
             parentNode.empty = false;
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
@@ -533,7 +533,7 @@ var guiconfig = {
           var element = node.getUserData("element");
           node.empty = true;
           node.show = false;
-          if(this.getVar("string") == "" || parentNode.show || node.getAttribute("label").makeSearchable().match(this.getVar("query"))) {
+          if(this.getVar("string") == "" || parentNode.show || gcCore.strMakeSearchable(node.getAttribute("label")).match(this.getVar("query"))) {
             parentNode.empty = false;
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
@@ -564,7 +564,7 @@ var guiconfig = {
               options_data += " " + options[i].getAttribute("label");
             }
             if(this.getVar("string") == "" || parentNode.show ||
-               (node.getAttribute("label") + " " + node.getAttribute("description") + options_data).makeSearchable().match(this.getVar("query"))) {
+               gcCore.strMakeSearchable(node.getAttribute("label") + " " + node.getAttribute("description") + options_data).match(this.getVar("query"))) {
               parentNode.empty = false;
               node.show = true;
               if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
