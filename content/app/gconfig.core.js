@@ -209,8 +209,8 @@ gcCore.Parser = function(xmlData) {
           "rule": ruleset,
           "ref": Reference,
           "parser": this,
-          "setVar": this.setVar.bind(this),
-          "getVar": this.getVar.bind(this)
+          "setVar": gcCore.bindFn(this.setVar, this),
+          "getVar": gcCore.bindFn(this.getVar, this)
         }
         if(this.testFilter(node, NodeHandler.filter)) {
           NodeHandler.handle.call(environment, node, data);

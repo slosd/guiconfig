@@ -22,9 +22,9 @@ GCElement.prototype.buildRow = function() {
   row.setAttribute("class", "optionRow");
   if(this.options.indent)
     row.setAttribute("class", "indent");
-  row.addEventListener("mouseover", function() {
+  row.addEventListener("mouseover", gcCore.bindFn(function() {
     guiconfig.setDescription(this.options.description);
-  }.bind(this), false);
+  }, this), false);
   
   /* create the box containing elements to change the option's value */
   if(is_defined(this.options.wrapper.elements)) {
@@ -70,33 +70,33 @@ GCElement.prototype.addButton = function(buttonName) {
       case 'edit':
         button.setAttribute("label", guiconfig.GCLocale.get("button-edit-enable"));
         button.setAttribute("image", "add");
-        button.addEventListener("click", function() {
+        button.addEventListener("click", gcCore.bindFn(function() {
           this.locked = false;
-        }.bind(this), false);
+        }, this), false);
         break;        
       case 'color':
         button.setAttribute("label", guiconfig.GCLocale.get("button-custom-value"));
         button.setAttribute("icon", "select-color");
-        button.addEventListener("command", function() {
+        button.addEventListener("command", gcCore.bindFn(function() {
           var input = gcCore.userInput("gui:config", guiconfig.GCLocale.get("fill-in-value"));
           if(input != null) {
             this.disabled = false;
             this.set(input);
             this.observer.fire("modified");
           }
-        }.bind(this), false);
+        }, this), false);
         break;        
       case 'file':
         button.setAttribute("label", guiconfig.GCLocale.get("button-file-select", guiconfig.LocaleOptions));
         button.setAttribute("icon", "open");
-        button.addEventListener("command", function() {
+        button.addEventListener("command", gcCore.bindFn(function() {
           var input = gcCore.fileInput(guiconfig.GCLocale.get("choose-file"), this.options.wrapper.fileFilters);
           if(input) {
             this.disabled = false;
             this.set(input.path);
             this.observer.fire("modified");
           }
-        }.bind(this), false);
+        }, this), false);
         break;
     }
     this.elements.addedButtons[buttonName] = button;
@@ -194,7 +194,7 @@ GCElement.Label = function(options) {
   GCElement.Element.call(this, options);
 }
 
-GCElement.Label.extend(GCElement.Element);
+gcCore.extendProto(GCElement.Label, GCElement.Element);
 
 GCElement.Label.prototype.build = function() {
   var label = document.createElement("label");
@@ -210,7 +210,7 @@ GCElement.Group = function(options) {
   GCElement.Element.call(this, options);
 }
 
-GCElement.Group.extend(GCElement.Element);
+gcCore.extendProto(GCElement.Group, GCElement.Element);
 
 GCElement.Group.prototype.build = function() {
   var element = document.createElement("groupbox");
@@ -229,12 +229,13 @@ GCElement.Group.prototype.build = function() {
 GCElement.Checkbox = function(options) {
   GCElement.Element.call(this, options);
 }
-GCElement.Checkbox.extend(GCElement.Element);
+
+gcCore.extendProto(GCElement.Checkbox, GCElement.Element);
 
 GCElement.Checkbox.prototype.build = function() {
   var element = document.createElement("checkbox");
   element.setAttribute("label", this.options.label.value);
-  element.addEventListener("command", this.modified.bind(this), false);
+  element.addEventListener("command", gcCore.bindFn(this.modified, this), false);
   this.optionElement = element;
   this.fragment.appendChild(element);
 }
@@ -245,7 +246,7 @@ GCElement.Textbox = function(options) {
   GCElement.Element.call(this, options);
 }
 
-GCElement.Textbox.extend(GCElement.Element);
+gcCore.extendProto(GCElement.Textbox, GCElement.Element);
 
 GCElement.Textbox.prototype.build = function() {
   var element = document.createElement("textbox");
@@ -256,8 +257,8 @@ GCElement.Textbox.prototype.build = function() {
   else {
     element.setAttribute("flex", "1");
   }
-  element.addEventListener("keyup", this.modified.bind(this), false);
-  element.addEventListener("command", this.modified.bind(this), false);
+  element.addEventListener("keyup", gcCore.bindFn(this.modified, this), false);
+  element.addEventListener("command", gcCore.bindFn(this.modified, this), false);
   this.optionElement = element;
   this.fragment.appendChild(new GCElement.Label(this.options.label).getElement());
   this.fragment.appendChild(element);
@@ -269,7 +270,7 @@ GCElement.Menulist = function(options) {
   GCElement.Element.call(this, options);
 }
 
-GCElement.Menulist.extend(GCElement.Element);
+gcCore.extendProto(GCElement.Menulist, GCElement.Element);
 
 GCElement.Menulist.prototype.build = function() {
   var select = new Array,
@@ -285,7 +286,7 @@ GCElement.Menulist.prototype.build = function() {
     menuitem.setAttribute("value", values[i].value);
     menupopup.appendChild(menuitem);
   }
-  element.addEventListener("command", this.modified.bind(this), false);
+  element.addEventListener("command", gcCore.bindFn(this.modified, this), false);
   element.appendChild(menupopup);
   this.optionElement = element;
   this.fragment.appendChild(new GCElement.Label(this.options.label).getElement());
@@ -298,12 +299,12 @@ GCElement.Colorpicker = function(options) {
   GCElement.Element.call(this, options);
 }
 
-GCElement.Colorpicker.extend(GCElement.Element);
+gcCore.extendProto(GCElement.Colorpicker, GCElement.Element);
 
 GCElement.Colorpicker.prototype.build = function() {
   var element = document.createElement("colorpicker");
   element.setAttribute("type", "button");
-  element.addEventListener("change", this.modified.bind(this), false);
+  element.addEventListener("change", gcCore.bindFn(this.modified, this), false);
   this.optionElement = element;
   this.fragment.appendChild(new GCElement.Label(this.options.label).getElement());
   this.fragment.appendChild(element);
@@ -315,7 +316,7 @@ GCElement.Radiogroup = function(options) {
   GCElement.Element.call(this, options);
 }
 
-GCElement.Radiogroup.extend(GCElement.Element);
+gcCore.extendProto(GCElement.Radiogroup, GCElement.Element);
 
 GCElement.Radiogroup.prototype.build = function() {
   var element = document.createElement("radiogroup"),
@@ -328,7 +329,7 @@ GCElement.Radiogroup.prototype.build = function() {
     radio.setAttribute("value", values[i].value);
     element.appendChild(radio);
   }
-  element.addEventListener("command", this.modified.bind(this), false);
+  element.addEventListener("command", gcCore.bindFn(this.modified, this), false);
   this.optionElement = element;
   this.fragment.appendChild(element);
 }
