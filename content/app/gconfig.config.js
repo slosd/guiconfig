@@ -431,12 +431,12 @@ var guiconfig = {
               "value": node.getAttribute("label")
             }
           });
-          node.set = function(value) {
+          node.set = gcCore.bindFn(function(value) {
             GCBoolElement.set(this.element, value, this.options);
-          }.bind({"element": element.getOptionElement(), "options": optionElementObj.options});
-          node.get = function() {
+          }, {"element": element.getOptionElement(), "options": optionElementObj.options});
+          node.get = gcCore.bindFn(function() {
             return GCBoolElement.get(this.element, null, this.options);
-          }.bind({"element": element.getOptionElement(), "options": optionElementObj.options});
+          }, {"element": element.getOptionElement(), "options": optionElementObj.options});
           element.observer.add(function() {
         	this.observer.fire("modified");
           }, optionElementObj);
