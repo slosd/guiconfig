@@ -9,29 +9,191 @@
   <wrapper id="checkbox_is_enabled">
     <script name="dependencies">
       <![CDATA[
-      return value.get() && !value.element.locked;
+      return value.get() && !value.element.disabled;
+      ]]>
+    </script>
+  </wrapper>
+  <wrapper id="checkbox_is_not_enabled">
+    <script name="dependencies">
+      <![CDATA[
+      return value.get() == false && !value.element.disabled;
+      ]]>
+    </script>
+  </wrapper>
+  <wrapper id="mousewheel_action_scroll">
+    <script name="dependencies">
+      <![CDATA[
+      return value.get() == 0
       ]]>
     </script>
   </wrapper>
   <panel label="&accessibility;" icon="tab_accessibility">
     <tabs>
-      <tab label="&mouseclick;">
-        <group label="&middleclick;">
-          <pref key="middlemouse.contentLoadURL"
-                label="&middlemouse_contentLoadURL_name;"
-                description="&middlemouse_contentLoadURL_description;"  />
-          <pref key="middlemouse.paste"
-                label="&middlemouse_paste_name;"
-                description="&middlemouse_paste_description;" />
-        </group>
-        <group label="&urlbar;">
-          <pref key="browser.urlbar.clickSelectsAll"
-                label="&browser_urlbar_clickSelectsAll_name;"
-                description="&browser_urlbar_clickSelectsAll_description;" />
-          <pref key="browser.urlbar.doubleClickSelectsAll"
-                label="&browser_urlbar_doubleClickSelectsAll_name;"
-                description="&browser_urlbar_doubleClickSelectsAll_description;" />
-        </group>
+      <tab label="&mousebehaviour;">
+        <tabs>
+          <tab label="&mouseclick;">
+            <group label="&middleclick;">
+              <pref key="middlemouse.contentLoadURL"
+                    label="&middlemouse_contentLoadURL_name;"
+                    description="&middlemouse_contentLoadURL_description;"  />
+              <pref key="middlemouse.paste"
+                    label="&middlemouse_paste_name;"
+                    description="&middlemouse_paste_description;" />
+            </group>
+            <group label="&urlbar;">
+              <pref key="browser.urlbar.clickSelectsAll"
+                    label="&browser_urlbar_clickSelectsAll_name;"
+                    description="&browser_urlbar_clickSelectsAll_description;" />
+              <pref key="browser.urlbar.doubleClickSelectsAll"
+                    label="&browser_urlbar_doubleClickSelectsAll_name;"
+                    description="&browser_urlbar_doubleClickSelectsAll_description;" />
+            </group>
+          </tab>
+          <tab label="&mousescrollvertical;">
+            <tabs>
+              <tab label="&mousescrollnone;">
+                <pref key="mousewheel.withnokey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.withnokey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withnokey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.withnokey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withnokey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+              <tab label="&mousescrollshift;">
+                <pref key="mousewheel.withshiftkey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.withshiftkey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withshiftkey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.withshiftkey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withshiftkey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+              <tab label="&mousescrollstrg;">
+                <pref key="mousewheel.withcontrolkey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.withcontrolkey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withcontrolkey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.withcontrolkey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withcontrolkey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+              <tab label="&mousescrollalt;">
+                <pref key="mousewheel.withaltkey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.withaltkey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withaltkey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.withaltkey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.withaltkey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+            </tabs>
+          </tab>
+          <tab label="&mousescrollhorizontal;" minVersion="9">
+            <group label="&mousescrollnone;">
+            </group>
+            <group label="&mousescrollshift;">
+            </group>
+            <group label="&mousescrollstrg;">
+              
+            </group>
+            <group label="&mousescrollalt;">
+              
+            </group>
+          </tab>
+        </tabs>
       </tab>
       <tab label="&urlbar;">
         <pref key="browser.urlbar.autoFill"

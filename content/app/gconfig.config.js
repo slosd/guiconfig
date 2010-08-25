@@ -184,6 +184,8 @@ var guiconfig = {
     parser = this.XMLPreferences.instance();
     parser.bindObj(this);
     parser.setVar("panelIndex", 0);
+    parser.setVar("lastCreatedTabs", new Array());
+    parser.setVar("lastCreatedTabPanels", new Array());
     parser.addFilter("version");
     parser.addHandles({
       "panel": {
@@ -217,12 +219,14 @@ var guiconfig = {
           var tabs = document.createElement("tabs");
           var tabpanels = document.createElement("tabpanels");
           tabpanels.setAttribute("flex", "1");
-          this.setVar("lastCreatedTabs", tabs);
-          this.setVar("lastCreatedTabPanels", tabpanels);
+          this.variables.lastCreatedTabs.push(tabs);
+          this.variables.lastCreatedTabPanels.push(tabpanels);
           tabbox.appendChild(tabs);
           tabbox.appendChild(tabpanels);
           parentNode.appendChild(tabbox);
           this.parser.parseNext();
+          this.variables.lastCreatedTabs.pop();
+          this.variables.lastCreatedTabPanels.pop();
         }
       },
       "tab": {
@@ -235,8 +239,8 @@ var guiconfig = {
           var box = document.createElement("vbox");
           box.setAttribute("flex", "1");
           tabpanel.appendChild(box);
-          this.getVar("lastCreatedTabs").appendChild(tab);
-          this.getVar("lastCreatedTabPanels").appendChild(tabpanel);
+          this.variables.lastCreatedTabs[this.variables.lastCreatedTabs.length-1].appendChild(tab);
+          this.variables.lastCreatedTabPanels[this.variables.lastCreatedTabPanels.length-1].appendChild(tabpanel);
           node.setUserData("element", tab, null);
           this.parser.parseNext(box);
         }
