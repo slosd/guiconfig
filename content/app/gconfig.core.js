@@ -209,6 +209,7 @@ gcCore.Parser = function(xmlData) {
           "rule": ruleset,
           "ref": Reference,
           "parser": this,
+          "variables": Variables,
           "setVar": gcCore.bindFn(this.setVar, this),
           "getVar": gcCore.bindFn(this.getVar, this)
         }

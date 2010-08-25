@@ -34,6 +34,10 @@ Option.prototype.onElementChange = function(topic) {
     case "created":
       this.setElement(this.value);
       break;
+    case "enabled":
+    case "disabled":
+      this.observer.fire(this.key);
+      break;
     case "locked":
       if(this.options.instantApply) {
         this.save();

@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Accessibility">
-<!-- MOUSE CLICK -->
+<!-- MOUSE BEHAVIOUR -->
+<!ENTITY mousebehaviour "Mouse behaviour">
+<!ENTITY mousescrollvertical "Vertical mouse scrolling">
+<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
+<!ENTITY mousescrollnone "with no key">
+<!ENTITY mousescrollshift "with SHIFT key">
+<!ENTITY mousescrollstrg "with STRG key">
+<!ENTITY mousescrollalt "with ALT key">
+<!ENTITY mousewheel_action_name "Action">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
+<!ENTITY mousewheel_action_o1 "Scroll lines">
+<!ENTITY mousewheel_action_o2 "Scroll pages">
+<!ENTITY mousewheel_action_o3 "Go back/forward in the history">
+<!ENTITY mousewheel_action_o4 "Zoom page">
+<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
+<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
+<!ENTITY mousewheel_sysnumlines_name "Use system default">
+<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
 <!ENTITY mouseclick "Mouse click">
 <!ENTITY middleclick "Middle click">
 <!ENTITY middlemouse_contentLoadURL_description "Load the contents of the clipboard as a URL on middle click.">
