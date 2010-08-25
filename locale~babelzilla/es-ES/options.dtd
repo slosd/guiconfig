@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Accesibilidad">
 <!-- MOUSE CLICK -->
+<!ENTITY mousebehaviour "Comportamiento del ratón">
+<!ENTITY mousescrollvertical "Desplazamiento vertical">
+<!ENTITY mousescrollhorizontal "Desplazamiento horizontal">
+<!ENTITY mousescrollnone "sin teclas">
+<!ENTITY mousescrollshift "con Mayús">
+<!ENTITY mousescrollstrg "con Ctrl">
+<!ENTITY mousescrollalt "con Alt">
+<!ENTITY mousewheel_action_name "Acción">
+<!ENTITY mousewheel_action_description "Elija qué hacer al desplazarse en combinación con esta tecla">
+<!ENTITY mousewheel_action_o1 "Desplazar líneas">
+<!ENTITY mousewheel_action_o2 "Desplazar páginas">
+<!ENTITY mousewheel_action_o3 "Ir atrás/adelante en el historial">
+<!ENTITY mousewheel_action_o4 "Hacer zoom">
+<!ENTITY mousewheel_numlines_name "Número de líneas a desplazar">
+<!ENTITY mousewheel_numlines_description "Este es el número de líneas que se desplaza una página">
+<!ENTITY mousewheel_sysnumlines_name "Usar valor por defecto del sistema">
+<!ENTITY mousewheel_sysnumlines_description "Si se habilita, el número de líneas se determina por el sistema operativo">
 <!ENTITY mouseclick "Pulsaciones de ratón">
 <!ENTITY middleclick "Botón central">
 <!ENTITY middlemouse_contentLoadURL_description "Cargar el contenido del portapapeles como una dirección al pulsar el botón central">

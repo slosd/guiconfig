@@ -594,6 +594,9 @@
           </pref>
         </group>
         <group label="&misc;">
+          <pref key="security.dialog_enable_delay"
+                label="&security_dialog_enable_delay_name;"
+                description="&security_dialog_enable_delay_description;" />
         	<pref key="dom.ipc.plugins.enabled"
 					      label="&dom_ipc_plugins_enabled_name;"
 								description="&dom_ipc_plugins_enabled_description;"
@@ -612,9 +615,19 @@
 							</dependencies>
 						</wrapper>
 					</pref>
-          <pref key="security.dialog_enable_delay"
-                label="&security_dialog_enable_delay_name;"
-                description="&security_dialog_enable_delay_description;" />
+          <pref key="dom.ipc.plugins.processLaunchTimeoutSecs"
+                label="&dom_ipc_plugins_processLaunchTimeoutSecs_name;"
+                description="&dom_ipc_plugins_processLaunchTimeoutSecs_description;"
+                type="Int"
+                minVersion="4.0b4"
+                indent="indent"
+                wrapper="checkbox_is_enabled">
+            <wrapper>
+              <dependencies>
+                <pref key="dom.ipc.plugins.enabled" />
+              </dependencies>
+            </wrapper>
+          </pref>
         </group>
       </tab>
       <tab label="&misc;">
@@ -811,6 +824,11 @@
                 platform="WINNT" />
         </group>
 				<group label="&misc;">
+          <pref key="browser.tabs.animate"
+                label="&browser_tabs_animate_name;"
+                description="&browser_tabs_animate_description;"
+                type="Bool"
+                minVersion="4.0b4" />
 	        <pref key="browser.tabs.tabMinWidth" 
 	              label="&browser_tabs_tabMinWidth_name;"
 	              description=""

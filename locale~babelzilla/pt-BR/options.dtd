@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Acessibilidade">
 <!-- MOUSE CLICK -->
+<!ENTITY mousebehaviour "Comportamento do mouse">
+<!ENTITY mousescrollvertical "Rolagem vertical">
+<!ENTITY mousescrollhorizontal "Rolagem horizontal">
+<!ENTITY mousescrollnone "sem teclas">
+<!ENTITY mousescrollshift "com Shift">
+<!ENTITY mousescrollstrg "com Ctrl">
+<!ENTITY mousescrollalt "com Alt">
+<!ENTITY mousewheel_action_name "Ação">
+<!ENTITY mousewheel_action_description "Especifica o que deve ocorrer quando a roda ou scroll do mouse for usado enquanto as teclas especificadas são pressionadas.">
+<!ENTITY mousewheel_action_o1 "Rolar linhas">
+<!ENTITY mousewheel_action_o2 "Rolas páginas">
+<!ENTITY mousewheel_action_o3 "Navegar pelo histórico">
+<!ENTITY mousewheel_action_o4 "Dar zoom na página">
+<!ENTITY mousewheel_numlines_name "Linhas a rolar por vez">
+<!ENTITY mousewheel_numlines_description "Especifica a quantidade de linhas a serem roladas a cada nível que a roda do mouse for rodada.">
+<!ENTITY mousewheel_sysnumlines_name "Usar padrão do sistema">
+<!ENTITY mousewheel_sysnumlines_description "Especifica que a quantidade de linhas a serem roladas seja aquela especificada no sistema operacional.">
 <!ENTITY mouseclick "Cliques">
 <!ENTITY middleclick "Clique na roda (ou botão do meio)">
 <!ENTITY middlemouse_contentLoadURL_description "Cola e carrega um endereço previamente copiado ao clicar a roda (ou botão do meio) do mouse no campo de endereço.">

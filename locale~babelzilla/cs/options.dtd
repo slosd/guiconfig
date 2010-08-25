@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Zpřístupnění">
 <!-- MOUSE CLICK -->
+<!ENTITY mousebehaviour "Chování myši">
+<!ENTITY mousescrollvertical "Svislý posun">
+<!ENTITY mousescrollhorizontal "Vodorovný posun">
+<!ENTITY mousescrollnone "bez klávesy">
+<!ENTITY mousescrollshift "s klávesou SHIFT">
+<!ENTITY mousescrollstrg "s klávesou CTRL">
+<!ENTITY mousescrollalt "s klávesou ALT">
+<!ENTITY mousewheel_action_name "Akce">
+<!ENTITY mousewheel_action_description "Zvolte, co by se mělo stát při posouvání se stisknutou klávesou">
+<!ENTITY mousewheel_action_o1 "Posunout o řádky">
+<!ENTITY mousewheel_action_o2 "Posunout o stránku">
+<!ENTITY mousewheel_action_o3 "Jít zpět/vpřed v historii">
+<!ENTITY mousewheel_action_o4 "Přiblížit/oddálit stránku">
+<!ENTITY mousewheel_numlines_name "Počet řádků posunu">
+<!ENTITY mousewheel_numlines_description "Tento počet udává, o kolik řádků se stránka posune">
+<!ENTITY mousewheel_sysnumlines_name "Použít výchozí nastavení systému">
+<!ENTITY mousewheel_sysnumlines_description "Pokud je povoleno, počet řádků posunu bude dán nastavením operačního systému">
 <!ENTITY mouseclick "Klepnutí myší">
 <!ENTITY middleclick "Klepnutí prostředním tlačítkem">
 <!ENTITY middlemouse_contentLoadURL_description "Při klepnutí prostředním tlačítkem načte obsah schránky jako URL.">
