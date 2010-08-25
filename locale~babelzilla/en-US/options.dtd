@@ -6,7 +6,7 @@
 <!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
 <!ENTITY mousescrollnone "with no key">
 <!ENTITY mousescrollshift "with SHIFT key">
-<!ENTITY mousescrollstrg "with STRG key">
+<!ENTITY mousescrollstrg "with CTRL key">
 <!ENTITY mousescrollalt "with ALT key">
 <!ENTITY mousewheel_action_name "Action">
 <!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
@@ -193,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "If plugins (like Flash) crash they won't cause Firefox to crash as well.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Timeout for non-responding plugins (sec)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. "> 
 <!-- STYLE -->
 <!ENTITY style "Style">
 <!-- BROWSER -->
@@ -250,6 +252,8 @@
 <!ENTITY tabs "Tabs">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Appearance">
+<!ENTITY browser_tabs_animate_name "Animate tabs">
+<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
 <!ENTITY browser_tabs_tabMinWidth_name "Min. tab width">
 <!ENTITY browser_tabs_tabMaxWidth_name "Max. tab width">
 <!ENTITY browser_tabs_closeButtons_description "Determines where to display close buttons. ">

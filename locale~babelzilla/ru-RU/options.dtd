@@ -1,4 +1,21 @@
 <!ENTITY accessibility "Удобства">
+<!ENTITY mousebehaviour "Поведение мыши">
+<!ENTITY mousescrollvertical "Вертикальная прокрутка мышью">
+<!ENTITY mousescrollhorizontal "Горизонтальная прокрутка мышью">
+<!ENTITY mousescrollnone "без модификаторов">
+<!ENTITY mousescrollshift "с клавишей Shift">
+<!ENTITY mousescrollstrg "с клавишей Ctrl">
+<!ENTITY mousescrollalt "с клавишей Alt">
+<!ENTITY mousewheel_action_name "Действие">
+<!ENTITY mousewheel_action_description "Выберите, что должно произойти при прокрутке с этой клавишей модификатором">
+<!ENTITY mousewheel_action_o1 "прокрутить строки">
+<!ENTITY mousewheel_action_o2 "прокрутить страницы">
+<!ENTITY mousewheel_action_o3 "вперёд/назад по истории">
+<!ENTITY mousewheel_action_o4 "масштабировать страницу">
+<!ENTITY mousewheel_numlines_name "Количество прокручиваемых строк">
+<!ENTITY mousewheel_numlines_description "Число строк на которое прокрутится веб-сайт">
+<!ENTITY mousewheel_sysnumlines_name "Использовать системную настройку">
+<!ENTITY mousewheel_sysnumlines_description "Если флажок установлен, число прокручиваемых строк определяется настройками вашей операционной системы">
 <!ENTITY mouseclick "Щелчки мышью">
 <!ENTITY middleclick "Щелчок средней кнопкой">
 <!ENTITY middlemouse_contentLoadURL_description "Щелчок средней кнопкой загружает содержимое буфера обмена как адрес.">
