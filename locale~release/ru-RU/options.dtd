@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Удобства">
-<!-- MOUSE CLICK -->
+<!-- MOUSE BEHAVIOUR -->
+<!ENTITY mousebehaviour "Поведение мыши">
+<!ENTITY mousescrollvertical "Вертикальная прокрутка мышью">
+<!ENTITY mousescrollhorizontal "Горизонтальная прокрутка мышью">
+<!ENTITY mousescrollnone "без модификаторов">
+<!ENTITY mousescrollshift "с клавишей Shift">
+<!ENTITY mousescrollstrg "с клавишей Ctrl">
+<!ENTITY mousescrollalt "с клавишей Alt">
+<!ENTITY mousewheel_action_name "Действие">
+<!ENTITY mousewheel_action_description "Выберите, что должно произойти при прокрутке с этой клавишей модификатором">
+<!ENTITY mousewheel_action_o1 "прокрутить строки">
+<!ENTITY mousewheel_action_o2 "прокрутить страницы">
+<!ENTITY mousewheel_action_o3 "вперёд/назад по истории">
+<!ENTITY mousewheel_action_o4 "масштабировать страницу">
+<!ENTITY mousewheel_numlines_name "Количество прокручиваемых строк">
+<!ENTITY mousewheel_numlines_description "Число строк на которое прокрутится веб-сайт">
+<!ENTITY mousewheel_sysnumlines_name "Использовать системную настройку">
+<!ENTITY mousewheel_sysnumlines_description "Если флажок установлен, число прокручиваемых строк определяется настройками вашей операционной системы">
 <!ENTITY mouseclick "Щелчки мышью">
 <!ENTITY middleclick "Щелчок средней кнопкой">
 <!ENTITY middlemouse_contentLoadURL_description "Щелчок средней кнопкой загружает содержимое буфера обмена как адрес.">
@@ -176,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Время ожидания для не отвечающих подключаемых модулей (сек)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Определяет отрезок времени, спустя который будет завершён процесс не отвечающего подключаемого модуля.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
 <!ENTITY style "Стиль">
 <!-- BROWSER -->
@@ -233,6 +252,8 @@
 <!ENTITY tabs "Вкладки">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Внешний вид">
+<!ENTITY browser_tabs_animate_name "Animate tabs">
+<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
 <!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширна вкладки">
 <!ENTITY browser_tabs_tabMaxWidth_name "Максимальная ширина вкладки">
 <!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">

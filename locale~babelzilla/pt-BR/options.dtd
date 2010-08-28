@@ -1,23 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Acessibilidade">
 <!-- MOUSE CLICK -->
-<!ENTITY mousebehaviour "Comportamento do mouse">
+<!ENTITY mousebehaviour "Mouse">
 <!ENTITY mousescrollvertical "Rolagem vertical">
 <!ENTITY mousescrollhorizontal "Rolagem horizontal">
-<!ENTITY mousescrollnone "sem teclas">
-<!ENTITY mousescrollshift "com Shift">
-<!ENTITY mousescrollstrg "com Ctrl">
-<!ENTITY mousescrollalt "com Alt">
-<!ENTITY mousewheel_action_name "Ação">
-<!ENTITY mousewheel_action_description "Especifica o que deve ocorrer quando a roda ou scroll do mouse for usado enquanto as teclas especificadas são pressionadas.">
-<!ENTITY mousewheel_action_o1 "Rolar linhas">
-<!ENTITY mousewheel_action_o2 "Rolas páginas">
-<!ENTITY mousewheel_action_o3 "Navegar pelo histórico">
-<!ENTITY mousewheel_action_o4 "Dar zoom na página">
-<!ENTITY mousewheel_numlines_name "Linhas a rolar por vez">
-<!ENTITY mousewheel_numlines_description "Especifica a quantidade de linhas a serem roladas a cada nível que a roda do mouse for rodada.">
+<!ENTITY mousescrollnone "Sem teclas">
+<!ENTITY mousescrollshift "Com Shift">
+<!ENTITY mousescrollstrg "Com Ctrl">
+<!ENTITY mousescrollalt "Com Alt">
+<!ENTITY mousewheel_action_name "Ação:">
+<!ENTITY mousewheel_action_description "Especifica o que deve ocorrer quando a roda do mouse for usada enquanto a tecla especificada é pressionada.">
+<!ENTITY mousewheel_action_o1 "rolar linhas">
+<!ENTITY mousewheel_action_o2 "rolas páginas">
+<!ENTITY mousewheel_action_o3 "navegar pelo histórico">
+<!ENTITY mousewheel_action_o4 "dar zoom na página">
+<!ENTITY mousewheel_numlines_name "Linhas a rolar por vez:">
+<!ENTITY mousewheel_numlines_description "Especifica a quantidade de linhas a serem roladas de cada vez com a roda do mouse.">
 <!ENTITY mousewheel_sysnumlines_name "Usar padrão do sistema">
-<!ENTITY mousewheel_sysnumlines_description "Especifica que a quantidade de linhas a serem roladas seja aquela especificada no sistema operacional.">
+<!ENTITY mousewheel_sysnumlines_description "Especifica que a quantidade de linhas a serem roladas seja aquela configurada no sistema operacional.">
 <!ENTITY mouseclick "Cliques">
 <!ENTITY middleclick "Clique na roda (ou botão do meio)">
 <!ENTITY middlemouse_contentLoadURL_description "Cola e carrega um endereço previamente copiado ao clicar a roda (ou botão do meio) do mouse no campo de endereço.">
@@ -29,7 +29,7 @@
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Seleciona todo o conteúdo do campo de endereço ao dar um duplo clique nele.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Selecionar conteúdo ao dar um duplo clique">
 <!-- URLBAR -->
-<!ENTITY urlbar "Campo de endereço">
+<!ENTITY urlbar "Endereços">
 <!ENTITY browser_urlbar_autoFill_description "Completa automaticamente o endereço que você começar a digitar, em vez de apenas exibir uma lista de sugestões.">
 <!ENTITY browser_urlbar_autoFill_name "Completar endereços automaticamente ao digitar">
 <!ENTITY browser_urlbar_matchOnlyTyped_description "Completa apenas endereços previamente digitados, sem tentar usar endereços de páginas visitadas através de links.">
@@ -41,7 +41,7 @@
 <!ENTITY browser_fixup_alternate_suffix_description "Caracteres a inserir no final do endereço que falhou.">
 <!ENTITY browser_fixup_alternate_suffix_name "Sufixo:">
 <!-- AWESOMEBAR -->
-<!ENTITY awesomebar "Sugestões de endereços">
+<!ENTITY awesomebar "Sugestões">
 <!ENTITY urlbar_restrict_name "Filtragem de sugestões">
 <!ENTITY urlbar_match_name "Onde pesquisar">
 <!ENTITY browser_urlbar_restrict_bookmark_description "Restringe as sugestões de endereços às páginas listadas nos favoritos.">

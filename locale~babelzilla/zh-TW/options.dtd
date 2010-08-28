@@ -4,7 +4,7 @@
 <!ENTITY mousescrollhorizontal "滑鼠水平捲動">
 <!ENTITY mousescrollnone "不附加任何鍵">
 <!ENTITY mousescrollshift "附加 SHIFT 鍵">
-<!ENTITY mousescrollstrg "附加 CTRL/STRG 鍵">
+<!ENTITY mousescrollstrg "附加 CTRL 鍵">
 <!ENTITY mousescrollalt "附加 ALT 鍵">
 <!ENTITY mousewheel_action_name "滾輪對應動作">
 <!ENTITY mousewheel_action_description "選擇搭配此按鍵進行捲動時的回應動作">

@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Bedienung">
-<!-- MOUSE CLICK -->
+<!-- MOUSE BEHAVIOUR -->
+<!ENTITY mousebehaviour "Mouse behaviour">
+<!ENTITY mousescrollvertical "Vertical mouse scrolling">
+<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
+<!ENTITY mousescrollnone "with no key">
+<!ENTITY mousescrollshift "with SHIFT key">
+<!ENTITY mousescrollstrg "with CTRL key">
+<!ENTITY mousescrollalt "with ALT key">
+<!ENTITY mousewheel_action_name "Action">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
+<!ENTITY mousewheel_action_o1 "Scroll lines">
+<!ENTITY mousewheel_action_o2 "Scroll pages">
+<!ENTITY mousewheel_action_o3 "Go back/forward in the history">
+<!ENTITY mousewheel_action_o4 "Zoom page">
+<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
+<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
+<!ENTITY mousewheel_sysnumlines_name "Use system default">
+<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
 <!ENTITY mouseclick "Mausklick">
 <!ENTITY middleclick "Mittelklick">
 <!ENTITY middlemouse_contentLoadURL_description "Befindet sich in der Zwischenablage eine URL, wird diese bei einem Mittelklick im Browserfenster geöffnet.">
@@ -176,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Wenn Plugins (wie z.B. Flash) abstürzen kann Firefox unabhängig davon weiter ausgeführt werden.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Grenzwert für beschäftigte Plugins (sek)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Legt die Zeit fest, nach der der Prozess eines Plugins, welches nicht mehr reagiert, beendet wird.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
 <!ENTITY style "Aussehen">
 <!-- BROWSER -->
@@ -233,6 +252,8 @@
 <!ENTITY tabs "Tabs">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Anzeige">
+<!ENTITY browser_tabs_animate_name "Animate tabs">
+<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
 <!ENTITY browser_tabs_tabMinWidth_name "Minimale Tab-Breite">
 <!ENTITY browser_tabs_tabMaxWidth_name "Maximale Tab-Breite">
 <!ENTITY browser_tabs_closeButtons_description "Bestimmt wo Schaltflächen zum Schließen von Tabs angezeigt werden sollen.">
