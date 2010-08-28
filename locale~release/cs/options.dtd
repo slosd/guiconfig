@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Zpřístupnění">
 <!-- MOUSE CLICK -->
+<!ENTITY mousebehaviour "Chování myši">
+<!ENTITY mousescrollvertical "Svislý posun">
+<!ENTITY mousescrollhorizontal "Vodorovný posun">
+<!ENTITY mousescrollnone "bez klávesy">
+<!ENTITY mousescrollshift "s klávesou SHIFT">
+<!ENTITY mousescrollstrg "s klávesou CTRL">
+<!ENTITY mousescrollalt "s klávesou ALT">
+<!ENTITY mousewheel_action_name "Akce">
+<!ENTITY mousewheel_action_description "Zvolte, co by se mělo stát při posouvání se stisknutou klávesou">
+<!ENTITY mousewheel_action_o1 "Posunout o řádky">
+<!ENTITY mousewheel_action_o2 "Posunout o stránku">
+<!ENTITY mousewheel_action_o3 "Jít zpět/vpřed v historii">
+<!ENTITY mousewheel_action_o4 "Přiblížit/oddálit stránku">
+<!ENTITY mousewheel_numlines_name "Počet řádků posunu">
+<!ENTITY mousewheel_numlines_description "Tento počet udává, o kolik řádků se stránka posune">
+<!ENTITY mousewheel_sysnumlines_name "Použít výchozí nastavení systému">
+<!ENTITY mousewheel_sysnumlines_description "Pokud je povoleno, počet řádků posunu bude dán nastavením operačního systému">
 <!ENTITY mouseclick "Klepnutí myší">
 <!ENTITY middleclick "Klepnutí prostředním tlačítkem">
 <!ENTITY middlemouse_contentLoadURL_description "Při klepnutí prostředním tlačítkem načte obsah schránky jako URL.">
@@ -176,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Jestliže zásuvné moduly (jako Flash) spadnou, nezpůsobí pád Firefoxu.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Časový limit pro zásuvné moduly, které neodpovídají (s)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Určuje dobu, po které bude proces s neodpovídajícím zásuvným modulem ukončen.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Časový limit pro spuštění zásuvného modulu (s)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Určuje dobu, po které se bude spuštění zásuvného modulu považovat za neúspěšné.">
 <!-- STYLE -->
 <!ENTITY style "Styl">
 <!-- BROWSER -->
@@ -233,6 +252,8 @@
 <!ENTITY tabs "Panely">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Vzhled">
+<!ENTITY browser_tabs_animate_name "Animovat panely">
+<!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
 <!ENTITY browser_tabs_tabMinWidth_name "Min. šířka panelu">
 <!ENTITY browser_tabs_tabMaxWidth_name "Max. šířka panelu">
 <!ENTITY browser_tabs_closeButtons_description "Určuje, zda zobrazovat tlačítka pro zavření.">

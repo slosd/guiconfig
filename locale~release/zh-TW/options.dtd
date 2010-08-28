@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "近接方面">
-<!-- MOUSE CLICK -->
+<!-- MOUSE BEHAVIOUR -->
+<!ENTITY mousebehaviour "滑鼠操作">
+<!ENTITY mousescrollvertical "滑鼠垂直捲動">
+<!ENTITY mousescrollhorizontal "滑鼠水平捲動">
+<!ENTITY mousescrollnone "不附加任何鍵">
+<!ENTITY mousescrollshift "附加 SHIFT 鍵">
+<!ENTITY mousescrollstrg "附加 CTRL 鍵">
+<!ENTITY mousescrollalt "附加 ALT 鍵">
+<!ENTITY mousewheel_action_name "滾輪對應動作">
+<!ENTITY mousewheel_action_description "選擇搭配此按鍵進行捲動時的回應動作">
+<!ENTITY mousewheel_action_o1 "捲動頁面內行列">
+<!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
+<!ENTITY mousewheel_action_o3 "切換瀏覽紀錄之前頁後頁">
+<!ENTITY mousewheel_action_o4 "切換頁面圖文之縮放">
+<!ENTITY mousewheel_numlines_name "捲動行數">
+<!ENTITY mousewheel_numlines_description "決定某一網頁上捲動時的單位行數">
+<!ENTITY mousewheel_sysnumlines_name "系統預設單位行數">
+<!ENTITY mousewheel_sysnumlines_description "若啟用此項，則由您的作業系統來決定捲動時的單位行數">
 <!ENTITY mouseclick "滑鼠點按">
 <!ENTITY middleclick "滑鼠中鍵">
 <!ENTITY middlemouse_contentLoadURL_description "按滑鼠中鍵時，將剪貼簿內容載入成鏈結。">
@@ -176,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "若外掛程式(例如 Flash)當掉時，不會使FF一起跟著掛掉。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "外掛程式停止回應時限(秒)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "決定外掛程式行程經過多久沒回應就砍掉它。">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
 <!ENTITY style "樣式">
 <!-- BROWSER -->
@@ -233,6 +252,8 @@
 <!ENTITY tabs "分頁">
 <!-- APPEARANCE -->
 <!ENTITY appearance "外觀">
+<!ENTITY browser_tabs_animate_name "Animate tabs">
+<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
 <!ENTITY browser_tabs_tabMinWidth_name "最小頁籤寬度">
 <!ENTITY browser_tabs_tabMaxWidth_name "最大頁籤寬度">
 <!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">

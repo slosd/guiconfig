@@ -181,7 +181,7 @@
               </tab>
             </tabs>
           </tab>
-          <tab label="&mousescrollhorizontal;" minVersion="9">
+          <!--<tab label="&mousescrollhorizontal;">
             <group label="&mousescrollnone;">
             </group>
             <group label="&mousescrollshift;">
@@ -192,44 +192,8 @@
             <group label="&mousescrollalt;">
               
             </group>
-          </tab>
+          </tab>-->
         </tabs>
-      </tab>
-      <tab label="&urlbar;">
-        <pref key="browser.urlbar.autoFill"
-              label="&browser_urlbar_autoFill_name;"
-              description="&browser_urlbar_autoFill_description;" />
-        <pref key="browser.urlbar.matchOnlyTyped"
-              maxVersion="3.0.*"
-              label="&browser_urlbar_matchOnlyTyped_name;"
-              description="&browser_urlbar_matchOnlyTyped_description;"
-              type="Bool"
-              indent="indent" />
-        <pref key="browser.fixup.alternate.enabled"
-              label="&browser_fixup_alternate_enabled_name;"
-              description="&browser_fixup_alternate_enabled_description;" />
-        <pref key="browser.fixup.alternate.prefix"
-              label="&browser_fixup_alternate_prefix_name;"
-              description="&browser_fixup_alternate_prefix_description;"
-              indent="indent"
-              wrapper="checkbox_is_enabled">
-          <wrapper>
-            <dependencies>
-              <pref key="browser.fixup.alternate.enabled" />
-            </dependencies>
-          </wrapper>
-        </pref>
-        <pref key="browser.fixup.alternate.suffix"
-              label="&browser_fixup_alternate_suffix_name;"
-              description="&browser_fixup_alternate_suffix_description;"
-              indent="indent"
-              wrapper="checkbox_is_enabled">
-          <wrapper>
-            <dependencies>
-              <pref key="browser.fixup.alternate.enabled" />
-            </dependencies>
-          </wrapper>
-        </pref>
       </tab>
       <tab label="&awesomebar;" minVersion="3.0">
         <pref key="browser.urlbar.default.behavior"
@@ -439,20 +403,58 @@
 				</pref>
       </tab>
       <tab label="&misc;">
-        <pref key="browser.preferences.instantApply"
-              label="&browser_preferences_instantApply_name;"
-              description="&browser_preferences_instantApply_description;"
-              type="Bool"
-              minVersion="2.0" />
-        <pref key="browser.popups.showPopupBlocker"
-              label="&browser_popups_showPopupBlocker_name;"
-              description="&browser_popups_showPopupBlocker_description;" />
-        <pref key="accessibility.warn_on_browsewithcaret"
-              label="&accessibility_warn_on_browsewithcaret_name;"
-              description="&accessibility_warn_on_browsewithcaret_description;" />
-        <pref key="accessibility.accesskeycausesactivation"
-              label="&accessibility_accesskeycausesactivation_name;"
-              description="&accessibility_accesskeycausesactivation_description;" />
+        <group label="&urlbar;">
+          <pref key="browser.urlbar.autoFill"
+                label="&browser_urlbar_autoFill_name;"
+                description="&browser_urlbar_autoFill_description;" />
+          <pref key="browser.urlbar.matchOnlyTyped"
+                maxVersion="3.0.*"
+                label="&browser_urlbar_matchOnlyTyped_name;"
+                description="&browser_urlbar_matchOnlyTyped_description;"
+                type="Bool"
+                indent="indent" />
+          <pref key="browser.fixup.alternate.enabled"
+                label="&browser_fixup_alternate_enabled_name;"
+                description="&browser_fixup_alternate_enabled_description;" />
+          <pref key="browser.fixup.alternate.prefix"
+                label="&browser_fixup_alternate_prefix_name;"
+                description="&browser_fixup_alternate_prefix_description;"
+                indent="indent"
+                wrapper="checkbox_is_enabled">
+            <wrapper>
+              <dependencies>
+                <pref key="browser.fixup.alternate.enabled" />
+              </dependencies>
+            </wrapper>
+          </pref>
+          <pref key="browser.fixup.alternate.suffix"
+                label="&browser_fixup_alternate_suffix_name;"
+                description="&browser_fixup_alternate_suffix_description;"
+                indent="indent"
+                wrapper="checkbox_is_enabled">
+            <wrapper>
+              <dependencies>
+                <pref key="browser.fixup.alternate.enabled" />
+              </dependencies>
+            </wrapper>
+          </pref>
+        </group>
+        <group label="&misc;">
+          <pref key="browser.preferences.instantApply"
+                label="&browser_preferences_instantApply_name;"
+                description="&browser_preferences_instantApply_description;"
+                type="Bool"
+                minVersion="2.0" />
+          <pref key="browser.popups.showPopupBlocker"
+                label="&browser_popups_showPopupBlocker_name;"
+                description="&browser_popups_showPopupBlocker_description;" />
+          <pref key="accessibility.warn_on_browsewithcaret"
+                label="&accessibility_warn_on_browsewithcaret_name;"
+                description="&accessibility_warn_on_browsewithcaret_description;" />
+          <pref key="accessibility.accesskeycausesactivation"
+                label="&accessibility_accesskeycausesactivation_name;"
+                description="&accessibility_accesskeycausesactivation_description;" />
+        </group>
       </tab>
     </tabs>
   </panel>

@@ -1,6 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "辅助功能">
-<!-- MOUSE CLICK -->
+<!-- MOUSE BEHAVIOUR -->
+<!ENTITY mousebehaviour "鼠标动作">
+<!ENTITY mousescrollvertical "上下滚动鼠标">
+<!ENTITY mousescrollhorizontal "左右滚动鼠标">
+<!ENTITY mousescrollnone "但不按任何键">
+<!ENTITY mousescrollshift "并按下 SHIFT 键">
+<!ENTITY mousescrollstrg "并按下CTRL 键">
+<!ENTITY mousescrollalt "并按下 ALT 键">
+<!ENTITY mousewheel_action_name "动作">
+<!ENTITY mousewheel_action_description "选择按键并滚动鼠标时执行的动作">
+<!ENTITY mousewheel_action_o1 "以行数为单位滚动">
+<!ENTITY mousewheel_action_o2 "滚动页面">
+<!ENTITY mousewheel_action_o3 "在历史记录页面中前进/回退">
+<!ENTITY mousewheel_action_o4 "缩放页面">
+<!ENTITY mousewheel_numlines_name "滚动的行数">
+<!ENTITY mousewheel_numlines_description "该数值表示网页所滚动的行数">
+<!ENTITY mousewheel_sysnumlines_name "使用系统默认值">
+<!ENTITY mousewheel_sysnumlines_description "如果启动该项，则采用系统默认设置的滚动行数">
 <!ENTITY mouseclick "鼠标点击">
 <!ENTITY middleclick "中键点击">
 <!ENTITY middlemouse_contentLoadURL_description "点击中键打开剪贴板中的网址。">
@@ -176,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "若诸如 Flash 等插件崩溃将不会导致 Firefox 同时崩溃。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "插件无响应时长（秒）">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "指定插件无响应时长超过规定时限后自动结束其进程。">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "插件启动的超时时间（秒）">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "指定插件崩溃后允许插件重新启动的时间段。">
 <!-- STYLE -->
 <!ENTITY style "样式">
 <!-- BROWSER -->
@@ -233,6 +252,8 @@
 <!ENTITY tabs "标签页">
 <!-- APPEARANCE -->
 <!ENTITY appearance "外观">
+<!ENTITY browser_tabs_animate_name "标签页动态效果">
+<!ENTITY browser_tabs_animate_description "在标签页重新整理和拖拽时显示打开新标签页的动态效果。">
 <!ENTITY browser_tabs_tabMinWidth_name "标签页最小宽度">
 <!ENTITY browser_tabs_tabMaxWidth_name "标签页最大宽度">
 <!ENTITY browser_tabs_closeButtons_description "指定是否显示标签页的关闭按钮。">

@@ -193,6 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Jestliže zásuvné moduly (jako Flash) spadnou, nezpůsobí pád Firefoxu.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Časový limit pro zásuvné moduly, které neodpovídají (s)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Určuje dobu, po které bude proces s neodpovídajícím zásuvným modulem ukončen.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Časový limit pro spuštění zásuvného modulu (s)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Určuje dobu, po které se bude spuštění zásuvného modulu považovat za neúspěšné.">
 <!-- STYLE -->
 <!ENTITY style "Styl">
 <!-- BROWSER -->
@@ -250,6 +252,8 @@
 <!ENTITY tabs "Panely">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Vzhled">
+<!ENTITY browser_tabs_animate_name "Animovat panely">
+<!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
 <!ENTITY browser_tabs_tabMinWidth_name "Min. šířka panelu">
 <!ENTITY browser_tabs_tabMaxWidth_name "Max. šířka panelu">
 <!ENTITY browser_tabs_closeButtons_description "Určuje, zda zobrazovat tlačítka pro zavření.">
