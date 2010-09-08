@@ -175,6 +175,7 @@ var guiconfig = {
     parser.setVar("selectedTab", false);
     parser.setVar("string", string);
     parser.setVar("query", new RegExp("(" + gcCore.strMakeSearchable(string, ".*") + ")", "i"));
+    parser.setVar("hierarchy_string", "");
     parser.reset();
     parser.parseWithRuleSet("root");
     this.lastQuery = string;
@@ -473,6 +474,9 @@ var guiconfig = {
         "filter": "version",
         "handle": function(node, parentNode) {
           this.parser.parseWithRuleSet(node.nodeName, parentNode);
+    	    if(node.nodeName == "tabs") {
+    	    	this.setVar("selectedTab", false);
+    	    }
         }
       },
       "panel": {
@@ -481,8 +485,9 @@ var guiconfig = {
           var element = node.getUserData("element");
           node.empty = true;
           node.show = false;
-          parser.setVar("selectedTab", false);
-          if(this.getVar("string") == "" || gcCore.strMakeSearchable(node.getAttribute("label")).match(this.getVar("query"))) {
+          this.setVar("selectedTab", false);
+          this.setVar("hierarchy_string", node.getAttribute("label"));
+          if(this.getVar("string") == "" || gcCore.strMakeSearchable(this.getVar("hierarchy_string")).match(this.getVar("query"))) {
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
               this.parser.parseWithRuleSet("struct", node);
@@ -496,6 +501,7 @@ var guiconfig = {
           else {
             element.style.visibility = "visible";
           }
+          this.setVar("hierarchy_string", "");
           if(!this.getVar("selectedPanel") && this.getVar("string") != "") {
             element.radioGroup.selectedItem = element;
             this.setVar("selectedPanel", true);
@@ -508,7 +514,8 @@ var guiconfig = {
           var element = node.getUserData("element");
           node.empty = true;
           node.show = false;
-          if(this.getVar("string") == "" || parentNode.show || gcCore.strMakeSearchable(node.getAttribute("label")).match(this.getVar("query"))) {
+          this.setVar("hierarchy_string", node.getAttribute("label") + " " + this.getVar("hierarchy_string"));
+          if(this.getVar("string") == "" || parentNode.show || gcCore.strMakeSearchable(this.getVar("hierarchy_string")).match(this.getVar("query"))) {
             parentNode.empty = false;
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
@@ -524,6 +531,7 @@ var guiconfig = {
             parentNode.empty = false;
             element.disabled = false;
           }
+          this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label")));
           if(!this.getVar("selectedTab") && this.getVar("string") != "") {
             element.parentNode.parentNode.selectedTab = element;
             this.setVar("selectedTab", true);
@@ -537,7 +545,8 @@ var guiconfig = {
           var element = node.getUserData("element");
           node.empty = true;
           node.show = false;
-          if(this.getVar("string") == "" || parentNode.show || gcCore.strMakeSearchable(node.getAttribute("label")).match(this.getVar("query"))) {
+          this.setVar("hierarchy_string", node.getAttribute("label") + " " + this.getVar("hierarchy_string"));
+          if(this.getVar("string") == "" || parentNode.show || gcCore.strMakeSearchable(this.getVar("hierarchy_string")).match(this.getVar("query"))) {
             parentNode.empty = false;
             node.show = true;
             if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
@@ -553,6 +562,7 @@ var guiconfig = {
             parentNode.empty = false;
             element.style.display = "-moz-groupbox";
           }
+          this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label")));
         }
       },
       "pref": {
@@ -567,8 +577,12 @@ var guiconfig = {
             for(var i = 0, l = options.length; i < l; i++) {
               options_data += " " + options[i].getAttribute("label");
             }
-            if(this.getVar("string") == "" || parentNode.show ||
-               gcCore.strMakeSearchable(node.getAttribute("label") + " " + node.getAttribute("description") + options_data).match(this.getVar("query"))) {
+            if(this.getVar("string") == "" || parentNode.show || 
+               gcCore.strMakeSearchable(node.getAttribute("label") + " " + 
+                                        node.getAttribute("description") + " " + 
+                                        this.getVar("hierarchy_string") + 
+                                        options_data)
+               .match(this.getVar("query"))) {
               parentNode.empty = false;
               node.show = true;
               if(this.getVar("string").indexOf(this.ref.lastQuery) != 0) {
