@@ -181,18 +181,138 @@
               </tab>
             </tabs>
           </tab>
-          <!--<tab label="&mousescrollhorizontal;">
-            <group label="&mousescrollnone;">
-            </group>
-            <group label="&mousescrollshift;">
-            </group>
-            <group label="&mousescrollstrg;">
-              
-            </group>
-            <group label="&mousescrollalt;">
-              
-            </group>
-          </tab>-->
+          <tab label="&mousescrollhorizontal;">
+            <tabs>
+              <tab label="&mousescrollnone;">
+                <pref key="mousewheel.horizscroll.withnokey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.horizscroll.withnokey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withnokey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.horizscroll.withnokey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withnokey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+              <tab label="&mousescrollshift;">
+                <pref key="mousewheel.horizscroll.withshiftkey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.horizscroll.withshiftkey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withshiftkey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.horizscroll.withshiftkey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withshiftkey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+              <tab label="&mousescrollstrg;">
+                <pref key="mousewheel.horizscroll.withcontrolkey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.horizscroll.withcontrolkey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withcontrolkey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.horizscroll.withcontrolkey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withcontrolkey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+              <tab label="&mousescrollalt;">
+                <pref key="mousewheel.horizscroll.withaltkey.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+                <pref key="mousewheel.horizscroll.withaltkey.sysnumlines"
+                      label="&mousewheel_sysnumlines_name;"
+                      description="&mousewheel_sysnumlines_description;"
+                      wrapper="mousewheel_action_scroll">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withaltkey.action" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+                <pref key="mousewheel.horizscroll.withaltkey.numlines"
+                      label="&mousewheel_numlines_name;"
+                      description="&mousewheel_numlines_description;"
+                      indent="indent"
+                      wrapper="checkbox_is_not_enabled">
+                  <wrapper>
+                    <dependencies>
+                      <pref key="mousewheel.horizscroll.withaltkey.sysnumlines" />
+                    </dependencies>
+                  </wrapper>
+                </pref>
+              </tab>
+            </tabs>
+          </tab>
         </tabs>
       </tab>
       <tab label="&awesomebar;" minVersion="3.0">
