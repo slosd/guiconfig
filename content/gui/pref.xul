@@ -16,9 +16,6 @@
 		
 		<hbox>
 			<checkbox preference="pref_todefault_ask" label="&prefs.todefault.ask;"/>
-		</hbox>	
-		<hbox>
-			<checkbox preference="pref_matchversion" label="&prefs.matchversion;"/>
 		</hbox>
 		<hbox>
 			<checkbox preference="pref_sticktopreferences" label="&prefs.sticktopreferences;"/>
