@@ -172,7 +172,6 @@ var guiconfig = {
   searchOptions: function(string) {
     var parser = this.searchPreferencesParser;
     parser.setVar("selectedPanel", false);
-    parser.setVar("selectedTab", false);
     parser.setVar("string", string);
     parser.setVar("query", new RegExp("(" + gcCore.strMakeSearchable(string, ".*") + ")", "i"));
     parser.setVar("hierarchy_string", "");
@@ -225,6 +224,7 @@ var guiconfig = {
           tabbox.appendChild(tabs);
           tabbox.appendChild(tabpanels);
           parentNode.appendChild(tabbox);
+          this.setVar("tabIndex", 0);
           this.parser.parseNext();
           this.variables.lastCreatedTabs.pop();
           this.variables.lastCreatedTabPanels.pop();
@@ -243,6 +243,8 @@ var guiconfig = {
           this.variables.lastCreatedTabs[this.variables.lastCreatedTabs.length-1].appendChild(tab);
           this.variables.lastCreatedTabPanels[this.variables.lastCreatedTabPanels.length-1].appendChild(tabpanel);
           node.setUserData("element", tab, null);
+          tab.setUserData("index", this.getVar("tabIndex"), null);
+          this.variables.tabIndex++;
           this.parser.parseNext(box);
         }
       },
@@ -474,9 +476,6 @@ var guiconfig = {
         "filter": "version",
         "handle": function(node, parentNode) {
           this.parser.parseWithRuleSet(node.nodeName, parentNode);
-    	    if(node.nodeName == "tabs") {
-    	    	this.setVar("selectedTab", false);
-    	    }
         }
       },
       "panel": {
@@ -485,7 +484,6 @@ var guiconfig = {
           var element = node.getUserData("element");
           node.empty = true;
           node.show = false;
-          this.setVar("selectedTab", false);
           this.setVar("hierarchy_string", node.getAttribute("label"));
           if(this.getVar("string") == "" || gcCore.strMakeSearchable(this.getVar("hierarchy_string")).match(this.getVar("query"))) {
             node.show = true;
@@ -501,7 +499,6 @@ var guiconfig = {
           else {
             element.style.visibility = "visible";
           }
-          this.setVar("hierarchy_string", "");
           if(!this.getVar("selectedPanel") && this.getVar("string") != "") {
             element.radioGroup.selectedItem = element;
             this.setVar("selectedPanel", true);
@@ -525,16 +522,17 @@ var guiconfig = {
           }
           else if(this.parser.parseWithRuleSet("struct", node).empty) {
             element.disabled = true;
-            return false;
           }
           else {
             parentNode.empty = false;
             element.disabled = false;
           }
-          this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label")));
-          if(!this.getVar("selectedTab") && this.getVar("string") != "") {
+          this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label"), '', 'g'));
+          if(!element.disabled && 
+          	 (element.parentNode.parentNode.selectedTab.disabled ||
+          		element.getUserData("index") < element.parentNode.parentNode.selectedTab.getUserData("index")) &&
+          	 this.getVar("string") != "") {
             element.parentNode.parentNode.selectedTab = element;
-            this.setVar("selectedTab", true);
           }
         }
       },
@@ -556,13 +554,12 @@ var guiconfig = {
           }
           else if(this.parser.parseNext(node).empty) {
             element.style.display = "none";
-            return false;
           }
           else {
             parentNode.empty = false;
             element.style.display = "-moz-groupbox";
           }
-          this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label")));
+          this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label"), '', 'g'));
         }
       },
       "pref": {
