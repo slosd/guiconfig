@@ -1,23 +1,23 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Bedienung">
 <!-- MOUSE BEHAVIOUR -->
-<!ENTITY mousebehaviour "Mouse behaviour">
-<!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
-<!ENTITY mousescrollnone "with no key">
-<!ENTITY mousescrollshift "with SHIFT key">
-<!ENTITY mousescrollstrg "with CTRL key">
-<!ENTITY mousescrollalt "with ALT key">
-<!ENTITY mousewheel_action_name "Action">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
-<!ENTITY mousewheel_action_o1 "Scroll lines">
-<!ENTITY mousewheel_action_o2 "Scroll pages">
-<!ENTITY mousewheel_action_o3 "Go back/forward in the history">
-<!ENTITY mousewheel_action_o4 "Zoom page">
-<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
-<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
-<!ENTITY mousewheel_sysnumlines_name "Use system default">
-<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
+<!ENTITY mousebehaviour "Mausverhalten">
+<!ENTITY mousescrollvertical "Vertikales Scrollen">
+<!ENTITY mousescrollhorizontal "Horizontales Scrollen">
+<!ENTITY mousescrollnone "ohne Taste">
+<!ENTITY mousescrollshift "mit SHIFT Taste">
+<!ENTITY mousescrollstrg "mit STRG Taste">
+<!ENTITY mousescrollalt "mit ALT Taste">
+<!ENTITY mousewheel_action_name "Aktion">
+<!ENTITY mousewheel_action_description "Wählen Sie was beim Scrollen in Kombination mit dieser Taste geschehen soll.">
+<!ENTITY mousewheel_action_o1 "Zeile scrollen">
+<!ENTITY mousewheel_action_o2 "Seite scrollen">
+<!ENTITY mousewheel_action_o3 "Vor- und rückwärts in der Chronik gehen">
+<!ENTITY mousewheel_action_o4 "Webseite zoomen">
+<!ENTITY mousewheel_numlines_name "Anzahl der gescrollten Zeilen">
+<!ENTITY mousewheel_numlines_description "Die Anzahl der Zeilen, die auf einer Webseite mit dem Mausrad gescrollt werden.">
+<!ENTITY mousewheel_sysnumlines_name "Systemeinstellung verwenden">
+<!ENTITY mousewheel_sysnumlines_description "Wenn aktiviert, wird die Anzahl der gescrollten Zeilen von ihrem Betriebssystem festgelegt.">
 <!ENTITY mouseclick "Mausklick">
 <!ENTITY middleclick "Mittelklick">
 <!ENTITY middlemouse_contentLoadURL_description "Befindet sich in der Zwischenablage eine URL, wird diese bei einem Mittelklick im Browserfenster geöffnet.">
@@ -119,8 +119,8 @@
 <!ENTITY browser_preferences_instantApply_name "Einstellungen sofort übernehmen">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Es erscheint ein Hinweis wenn Caret-Browsing durch Drücken von [F7] aktiviert wird. Diese Funktion(Caret-Browsing) platziert einen beweglichen Cursor in der Webseiten mit dem Text mit der Tastatur ausgewählt und mit dem mit der Tastatur navigiert werden kann.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Warnen beim Einschalten von Caret-Browsing [F7]">
-<!ENTITY accessibility_accesskeycausesactivation_description "Bei Benutzung einer Schnelltaste (unterstrichener Buchstabe oder Tastenkombination) für ein Element wird dieses angewählt.Falls es sich dabei um einen Link oder eine Schaltfläche handelt, wird diese angeklickt.">
-<!ENTITY accessibility_accesskeycausesactivation_name "Schnelltaste(Abkürzungstaste) zum Link &quot;anklicken&quot; zulassen">
+<!ENTITY accessibility_accesskeycausesactivation_description "Bei Benutzung einer Schnelltaste (unterstrichener Buchstabe oder Tastenkombination) für ein Element wird dieses angewählt. Falls es sich dabei um einen Link oder eine Schaltfläche handelt wird diese angeklickt.">
+<!ENTITY accessibility_accesskeycausesactivation_name "Schnelltaste aktiviert Element">
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
 <!-- ALERTS -->
@@ -141,8 +141,8 @@
 <!ENTITY cache "Browsercache">
 <!ENTITY cache_disk "Festplattencache">
 <!ENTITY cache_memory "Memorycache">
-<!ENTITY browser_cache_check_doc_frequency_description "Legt fest, wie oft die Dateien im Cache überprüft werden, ob diese noch mit der Webseite übereinstimmen oder zwischenzeitlich in einer neuen Fassung vorliegen.">
-<!ENTITY browser_cache_check_doc_frequency_name "Browsercache kontrollieren:">
+<!ENTITY browser_cache_check_doc_frequency_description "Legt fest wie oft die Dateien im Cache überprüft werden, ob diese noch mit der Webseite übereinstimmen oder zwischenzeitlich in einer neuen Fassung vorliegen.">
+<!ENTITY browser_cache_check_doc_frequency_name "Browsercache kontrollieren">
 <!ENTITY browser_cache_check_doc_frequency_o1 "Jede Sitzung einmal">
 <!ENTITY browser_cache_check_doc_frequency_o2 "Jedes mal wenn die Webseite geladen wird">
 <!ENTITY browser_cache_check_doc_frequency_o3 "Nie (Datei immer aus dem Cache laden)">
@@ -180,10 +180,10 @@
 <!ENTITY security_privacy "Sicherheit und Datenschutz">
 <!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, die gewartet werden muss, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
 <!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms):">
-<!ENTITY browser_privatebrowsing_autostart_description "Aktiviert, startet Firefox im &quot;Privaten Modus&quot; und behält diesen Modus während der gesamten Sitzung.">
+<!ENTITY browser_privatebrowsing_autostart_description "Wenn aktiviert startet Firefox im &quot;Privaten Modus&quot; und behält diesen Modus während der gesamten Sitzung.">
 <!ENTITY browser_privatebrowsing_autostart_name "Firefox im &quot;Privaten Modus&quot; starten">
 <!ENTITY master_pass "Master-Passwort">
-<!ENTITY security_ask_for_password_description "Bestimmt, wann nach dem Master-Passwort gefragt wird.">
+<!ENTITY security_ask_for_password_description "Bestimmt wann nach dem Master-Passwort gefragt wird.">
 <!ENTITY security_ask_for_password_o1 "Bei jedem Gebrauch">
 <!ENTITY security_ask_for_password_o2 "Bei erstem Gebrauch">
 <!ENTITY security_ask_for_password_o3 "Wenn es für eine festzulegende Zeitspanne nicht angefordert wurde.">
@@ -193,8 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Wenn Plugins (wie z.B. Flash) abstürzen kann Firefox unabhängig davon weiter ausgeführt werden.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Grenzwert für beschäftigte Plugins (sek)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Legt die Zeit fest, nach der der Prozess eines Plugins, welches nicht mehr reagiert, beendet wird.">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Zeitbeschränkung für Pluginstart (sek)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Die Zeitdauer, nach der der Start eines Plugins als fehlgeschlagen angesehen wird.">
 <!-- STYLE -->
 <!ENTITY style "Aussehen">
 <!-- BROWSER -->
@@ -252,8 +252,8 @@
 <!ENTITY tabs "Tabs">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Anzeige">
-<!ENTITY browser_tabs_animate_name "Animate tabs">
-<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
+<!ENTITY browser_tabs_animate_name "Tabs animieren">
+<!ENTITY browser_tabs_animate_description "Aktiviert Animationen wenn ein neuer Tab geöffnet wird, wenn Tabs verschoben werden und wenn ein Tab von der Tableiste gezogen wird.">
 <!ENTITY browser_tabs_tabMinWidth_name "Minimale Tab-Breite">
 <!ENTITY browser_tabs_tabMaxWidth_name "Maximale Tab-Breite">
 <!ENTITY browser_tabs_closeButtons_description "Bestimmt wo Schaltflächen zum Schließen von Tabs angezeigt werden sollen.">
@@ -298,30 +298,30 @@
 <!ENTITY browser_microsummary_updateInterval_name "Aktualisierung (min):">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Gibt in Sekunden an, in welchen Abständen Dynamische Lesezeichen aktualisiert wird.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Aktualisierung (sek):">
+<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Aktualisierung (sek)">
 <!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
-<!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups:">
+<!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!-- NETWORK -->
 <!ENTITY network "Netzwerk">
 <!-- CONNECTIONS -->
 <!ENTITY connections "Verbindungen">
-<!ENTITY network_http_max-connections-per-server_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen pro Server.Mögliche Werte: 1 bis 255.">
+<!ENTITY network_http_max-connections-per-server_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen pro Server. Mögliche Werte: 1 bis 255.">
 <!ENTITY network_http_max-connections-per-server_name "Maximale HTTP-Verbindungen pro Server:">
-<!ENTITY network_http_max-connections_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen.Mögliche Werte: 1 bis 65535.">
+<!ENTITY network_http_max-connections_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen. Mögliche Werte: 1 bis 65535.">
 <!ENTITY network_http_max-connections_name "Maximale HTTP-Verbindungen:">
 <!-- KEEP ALIVE -->
-<!ENTITY keep-alive_connections "Verbindungen aufrechterhalten">
-<!ENTITY network_http_keep-alive_description "Offen gehaltene HTTP-Verbindungen können für mehrere Anfragen(Requests) verwendet werden und verbessern so die Verbindungsgeschwindigkeit.">
-<!ENTITY network_http_keep-alive_name "Verbindungen aufrechterhalten (Keep-Alive)">
-<!ENTITY network_http_max-persistent-connections-per-proxy_description "Maximale Anzahl von Verbindungen, die Firefox pro Proxy-Server aufrechterhalten soll.Mögliche Werte: 1 bis 255.">
+<!ENTITY keep-alive_connections "Verbindungen aufrecht erhalten">
+<!ENTITY network_http_keep-alive_description "Offen gehaltene HTTP-Verbindungen können für mehrere Anfragen (Requests) verwendet werden und verbessern so die Verbindungsgeschwindigkeit.">
+<!ENTITY network_http_keep-alive_name "Verbindungen aufrecht erhalten (Keep-Alive)">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Maximale Anzahl von Verbindungen, die Firefox pro Proxy-Server aufrecht erhalten soll. Mögliche Werte: 1 bis 255.">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Maximale Anzahl von aufrecht zu erhaltenden Verbindungen pro Proxy-Server.">
-<!ENTITY network_http_max-persistent-connections-per-server_description "Maximale Anzahl von Verbindungen, die Firefox pro Server aufrechterhalten soll.Mögliche Werte: 1 bis 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Maximale Anzahl von Verbindungen, die Firefox pro Server aufrecht erhalten soll. Mögliche Werte: 1 bis 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Maximale Anzahl von aufrecht zu erhaltenden Verbindungen pro Server.">
 <!-- PIPELINING -->
 <!ENTITY pipelining "Pipelining">
-<!ENTITY network_http_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung.Muss aber vom Server unterstützt werden.">
-<!ENTITY network_http_pipelining_maxrequests_description "Beschränkt die Anzahl maximal möglicher Anfragen(Requests) pro Pipeline.">
-<!ENTITY network_http_pipelining_maxrequests_name "Maximale Anzahl von Anfragen(Requests) pro Pipeline:">
+<!ENTITY network_http_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung. Muss aber vom Server unterstützt werden.">
+<!ENTITY network_http_pipelining_maxrequests_description "Beschränkt die Anzahl maximal möglicher Anfragen (Requests) pro Pipeline.">
+<!ENTITY network_http_pipelining_maxrequests_name "Maximale Anzahl von Anfragen (Requests) pro Pipeline:">
 <!ENTITY network_http_pipelining_name "Pipelining verwenden">
 <!ENTITY network_http_proxy_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung.Muss aber vom Server unterstützt werden.">
 <!ENTITY network_http_proxy_pipelining_name "Pipelining bei einem Proxy-Server verwenden">

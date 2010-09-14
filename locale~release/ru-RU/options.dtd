@@ -193,8 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Время ожидания для не отвечающих подключаемых модулей (сек)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Определяет отрезок времени, спустя который будет завершён процесс не отвечающего подключаемого модуля.">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Время ожидания запуска подключаемого модуля (сек)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Определяет отрезок времени прошедшего с момента запуска подключаемого модуля, спустя который он считается потерявшим работоспособность.">
 <!-- STYLE -->
 <!ENTITY style "Стиль">
 <!-- BROWSER -->
@@ -252,9 +252,9 @@
 <!ENTITY tabs "Вкладки">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Внешний вид">
-<!ENTITY browser_tabs_animate_name "Animate tabs">
-<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
-<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширна вкладки">
+<!ENTITY browser_tabs_animate_name "Анимировать вкладки">
+<!ENTITY browser_tabs_animate_description "Включает анимацию при открытии новой вкладки, во время перетаскивания и отрывания вкладки.">
+<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширина вкладки">
 <!ENTITY browser_tabs_tabMaxWidth_name "Максимальная ширина вкладки">
 <!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
 <!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
