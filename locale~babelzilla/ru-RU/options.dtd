@@ -180,6 +180,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Время ожидания для не отвечающих подключаемых модулей (сек)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Определяет отрезок времени, спустя который будет завершён процесс не отвечающего подключаемого модуля.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Время ожидания запуска подключаемого модуля (сек)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Определяет отрезок времени прошедшего с момента запуска подключаемого модуля, спустя который он считается потерявшим работоспособность.">
 <!ENTITY style "Стиль">
 <!ENTITY browser_style "Браузер">
 <!ENTITY browser_identity_ssl_domain_display_name "Подчёркивать домены использующие SSL">
@@ -231,7 +233,9 @@
 <!ENTITY ui_textSelectForeground_name "Цвет текста">
 <!ENTITY tabs "Вкладки">
 <!ENTITY appearance "Внешний вид">
-<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширна вкладки">
+<!ENTITY browser_tabs_animate_name "Анимировать вкладки">
+<!ENTITY browser_tabs_animate_description "Включает анимацию при открытии новой вкладки, во время перетаскивания и отрывания вкладки.">
+<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширина вкладки">
 <!ENTITY browser_tabs_tabMaxWidth_name "Максимальная ширина вкладки">
 <!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
 <!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">

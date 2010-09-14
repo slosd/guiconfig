@@ -193,8 +193,8 @@
 <!ENTITY dom_ipc_plugins_enabled_description "若外掛程式(例如 Flash)當掉時，不會使FF一起跟著掛掉。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "外掛程式停止回應時限(秒)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "決定外掛程式行程經過多久沒回應就砍掉它。">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "外掛程式啟動逾時(秒)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "決定若經過多久，外掛程式仍未能完成啟動，則判定為失敗。">
 <!-- STYLE -->
 <!ENTITY style "樣式">
 <!-- BROWSER -->
@@ -252,8 +252,8 @@
 <!ENTITY tabs "分頁">
 <!-- APPEARANCE -->
 <!ENTITY appearance "外觀">
-<!ENTITY browser_tabs_animate_name "Animate tabs">
-<!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
+<!ENTITY browser_tabs_animate_name "分頁動畫效果">
+<!ENTITY browser_tabs_animate_description "於開新分頁、重組分頁或關閉分頁時，啟用動畫效果。">
 <!ENTITY browser_tabs_tabMinWidth_name "最小頁籤寬度">
 <!ENTITY browser_tabs_tabMaxWidth_name "最大頁籤寬度">
 <!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
