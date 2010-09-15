@@ -47,7 +47,7 @@ GCElement.prototype.buildRow = function() {
   row.appendChild(buttons);
   
   if(is_defined(this.options.wrapper.fragment))  {
-	option.appendChild(this.options.wrapper.fragment);
+    option.appendChild(this.options.wrapper.fragment);
   }
   else {
     option.appendChild(this.build().getElement());

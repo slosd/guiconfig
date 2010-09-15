@@ -155,7 +155,7 @@ var guiconfig = {
   
   setDescription: function(txt) {
     var description = txt || "";
-    if(description == this.Elements.description.firstChild.data)
+    if(description == "" || description == this.Elements.description.firstChild.data)
       return false;
     return this.Elements.description.replaceChild(document.createTextNode(description), this.Elements.description.firstChild);
   },
@@ -432,23 +432,27 @@ var guiconfig = {
       },
       "checkbox": {
         "handle": function(node, parentNode) {
-    	  var optionElementObj = this.getVar("lastCreatedOption").element;
-          var element = new GCElement.Checkbox({
-            "label": {
-              "value": node.getAttribute("label")
-            }
-          });
+    	    var lastOption = this.getVar("lastCreatedOption");
+    	    var element = new GCBoolElement({
+	          "label": {
+	            "value": node.getAttribute("label") || "",
+	            "control": lastOption.key + "." + node.getAttribute("value")
+	          },
+	          "description": node.getAttribute("description") || "",
+	          "mode": "default",
+	          "indent": !!node.getAttribute("indent"),
+            "wrapper": {}
+	        });
+    	    var row = element.getElement();
           node.set = gcCore.bindFn(function(value) {
-            GCBoolElement.set(this.element, value, this.options);
-          }, {"element": element.getOptionElement(), "options": optionElementObj.options});
+            GCBoolElement.set(this.element, value);
+          }, {"element": element.elements.element.getOptionElement()});
           node.get = gcCore.bindFn(function() {
-            return GCBoolElement.get(this.element, null, this.options);
-          }, {"element": element.getOptionElement(), "options": optionElementObj.options});
-          element.observer.add(function() {
-        	this.observer.fire("modified");
-          }, optionElementObj);
-          node.setUserData("element", element.getOptionElement(), null);
-          parentNode.appendChild(element.getElement());
+            return GCBoolElement.get(this.element);
+          }, {"element": element.elements.element.getOptionElement()});
+          element.observer.add(lastOption.onElementChange, lastOption);
+          node.setUserData("element", element.elements.element.getOptionElement(), null);
+          parentNode.appendChild(row);
         }
       }
     });
