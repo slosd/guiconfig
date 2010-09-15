@@ -8,7 +8,7 @@ var Option = function(key, options) {
 Option.prototype.onDialogComplete = function() {
   var option;
   if(this.hasElement) {
-	this.element.observer.add(this.onElementChange, this);  // track element from now on
+    this.element.observer.add(this.onElementChange, this);  // track element from now on
   }
   this.preference.observer.add(this.onPrefChange, this);
   this.poll();
