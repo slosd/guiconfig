@@ -123,6 +123,9 @@
 <!ENTITY accessibility_accesskeycausesactivation_name "Access key activates the element">
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
+<!-- WEBSITES -->
+<!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
+<!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
 <!-- ALERTS -->
 <!ENTITY alerts "Alerts">
 <!ENTITY update_showSlidingNotification_description "Display a notification in the browser when updates are available.">

@@ -612,6 +612,30 @@
                 default="-1" />
         </group>
       </tab>
+      <tab label="&websites;">
+        <pref key="html5.enable"
+              label="&html5_enable_name;"
+              description=""
+              type="Bool"
+              minVersion="3.6" />
+        <pref key="svg.enabled"
+              label="&svg_enabled_name;"
+              description="" />
+        <pref key="webgl.enabled_for_all_sites"
+              label="&webgl_enabled_for_all_sites_name;"
+              description=""
+              type="Bool"
+              minVersion="4.0b1" />
+        <pref key="gfx.3d_video.enabled"
+              label="&gfx_3d_video_enabled_name;"
+              description="&gfx_3d_video_enabled_description;"
+              minVersion="4.0b5" />
+        <pref key="gfx.downloadable_fonts.enabled"
+              label="&gfx_downloadable_fonts_enabled_name;"
+              description="&gfx_downloadable_fonts_enabled_description;"
+              type="Bool"
+              minVersion="3.1" />
+      </tab>
       <tab label="&extensions;">
         <pref key="extensions.checkCompatibility"
               label="&extensions_checkCompatibility_name;"
@@ -908,26 +932,6 @@
               mode="color"
               type="Char" />
       </tab>
-			<tab label="&misc;">
-        <pref key="html5.enable"
-              label="&html5_enable_name;"
-              description=""
-              type="Bool"
-              minVersion="3.6" />
-        <pref key="gfx.downloadable_fonts.enabled"
-              label="&gfx_downloadable_fonts_enabled_name;"
-              description="&gfx_downloadable_fonts_enabled_description;"
-              type="Bool"
-              minVersion="3.1" />
-				<pref key="svg.enabled"
-				      label="&svg_enabled_name;"
-							description="" />
-				<pref key="webgl.enabled_for_all_sites"
-				      label="&webgl_enabled_for_all_sites_name;"
-              description=""
-              type="Bool"
-              minVersion="4.0b1" />
-			</tab>
     </tabs>
   </panel>
   <panel label="&tabs;" icon="tab_tabs">
