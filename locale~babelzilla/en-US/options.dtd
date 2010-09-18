@@ -162,6 +162,8 @@
 <!ENTITY browser_cache_memory_capacity_name "Memory cache (KB)">
 <!ENTITY browser_cache_memory_enable_description "Use memory cache, up to capacity specified.">
 <!ENTITY browser_cache_memory_enable_name "Use memory cache">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Max. number of pages in memory">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Recently visited pages are stored in memory and can be displayed faster when using Back and Forward. If set to -1 the number of pages is automatically determined. If set to 0 no pages are stored in memory. ">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Extensions">
 <!ENTITY getaddons "&quot;Get Add-ons&quot; pane">
