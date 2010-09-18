@@ -1,0 +1,4 @@
+<!ENTITY prefs.label "Inställningar">
+<!ENTITY prefs.todefault.ask "Fråga innan standardvärden återställs">
+<!ENTITY prefs.matchversion "Visa endast inställningar kompatibla med din version av Firefox">
+<!ENTITY prefs.sticktopreferences "Placera gui:config-menyn efter objektet &quot;Inställningar&quot;">
