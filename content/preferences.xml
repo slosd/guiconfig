@@ -613,6 +613,10 @@
         </group>
       </tab>
       <tab label="&websites;">
+        <pref key="geo.enabled"
+              label="&geo_enabled_name;"
+              description="&geo_enabled_description;"
+              minVersion="3.5" />
         <pref key="html5.enable"
               label="&html5_enable_name;"
               description=""
