@@ -609,12 +609,14 @@
                 label="&browser_cache_memory_capacity_name;"
                 description="&browser_cache_memory_capacity_description;"
                 type="Int"
-                default="-1" />
+                default="-1"
+                min="-1" />
         </group>
         <group label="&misc;">
           <pref key="browser.sessionhistory.max_total_viewers"
                 label="&browser_sessionhistory_max_total_viewers_name;"
-                description="&browser_sessionhistory_max_total_viewers_description;" />
+                description="&browser_sessionhistory_max_total_viewers_description;"
+                min="-1" />
         </group>
       </tab>
       <tab label="&websites;">
@@ -1042,10 +1044,14 @@
         <group label="&connections;">
           <pref key="network.http.max-connections"
                 label="&network_http_max-connections_name;"
-                description="&network_http_max-connections_description;" />
+                description="&network_http_max-connections_description;"
+                min="1"
+                max="65535" />
           <pref key="network.http.max-connections-per-server"
                 label="&network_http_max-connections-per-server_name;"
-                description="&network_http_max-connections-per-server_description;" />
+                description="&network_http_max-connections-per-server_description;"
+                min="1"
+                max="255" />
         </group>
         <group label="&keep-alive_connections;">
           <pref key="network.http.keep-alive"
@@ -1053,10 +1059,14 @@
                 description="&network_http_keep-alive_description;" />
           <pref key="network.http.max-persistent-connections-per-server"
                 label="&network_http_max-persistent-connections-per-server_name;"
-                description="&network_http_max-persistent-connections-per-server_description;" />
+                description="&network_http_max-persistent-connections-per-server_description;"
+                min="1"
+                max="255" />
           <pref key="network.http.max-persistent-connections-per-proxy"
                 label="&network_http_max-persistent-connections-per-proxy_name;"
-                description="&network_http_max-persistent-connections-per-proxy_description;" />
+                description="&network_http_max-persistent-connections-per-proxy_description;"
+                min="1"
+                max="255" />
         </group>
       </tab>
       <tab label="&pipelining;">

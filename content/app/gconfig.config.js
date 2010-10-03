@@ -296,6 +296,8 @@ var guiconfig = {
             "mode": node.getAttribute("mode") || "default",
             "indent": !!node.getAttribute("indent"),
             "validValues": new Array(),
+            "minValue": node.getAttribute("min"),
+            "maxValue": node.getAttribute("max"),
             "wrapper": {
               "scripts": new Object(),
               "elements": null,
