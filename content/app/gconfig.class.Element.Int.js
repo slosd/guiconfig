@@ -21,7 +21,9 @@ GCIntElement.prototype.build = function() {
     default:
       element = new GCElement.Textbox({
         "label": this.options.label,
-        "type": "number"
+        "type": "number",
+        "min": this.options.minValue,
+        "max": this.options.maxValue
       });
       break;
   }
