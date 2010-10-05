@@ -123,6 +123,11 @@
 <!ENTITY accessibility_accesskeycausesactivation_name "Schnelltaste aktiviert Element">
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
+<!-- WEBSITES -->
+<!ENTITY gfx_3d_video_enabled_name "Aktiviere 3D Video">
+<!ENTITY gfx_3d_video_enabled_description "Aktiviert stereoskopisches Rendern für 3D Videos.">
+<!ENTITY geo_enabled_name "Aktiviere standortbezogenes Surfen">
+<!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
 <!-- ALERTS -->
 <!ENTITY alerts "Hinweisfenster">
 <!ENTITY update_showSlidingNotification_description "Einen Hinweis anzeigen, wenn Updates z.B. für Erweiterungen zur Verfügung stehen.">
@@ -157,6 +162,8 @@
 <!ENTITY browser_cache_memory_capacity_name "Memorycache (KB):">
 <!ENTITY browser_cache_memory_enable_description "Verwende den Memorycache.">
 <!ENTITY browser_cache_memory_enable_name "Benutze Memorycache">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Maximale Seitenzahl in Hauptspeicher">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Kürzlich besuchte Webseiten werden im Hauptspeicher gespeichert und können dadurch schneller angezeigt werden wenn Sie Zurück und Vorwärts verwenden. Bei einem Wert von -1 wird die Seitenzahl automatisch festgelegt. Mit dem Wert 0 werden keine Seiten im Hauptspeicher gespeichert.">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Add-ons">
 <!ENTITY getaddons "&quot;Add-ons herunterladen&quot; Schaltfläche">

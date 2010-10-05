@@ -124,6 +124,11 @@
 <!-- BROWSER -->
 <!ENTITY browser "Navegador">
 <!-- ALERTS -->
+<!ENTITY gfx_3d_video_enabled_name "Habilitar vídeo 3D">
+<!ENTITY gfx_3d_video_enabled_description "Habilita el renderizado estereoscópico para los vídeos 3D.">
+<!ENTITY geo_enabled_name "Habilitar navegación independiente de la ubicación">
+<!ENTITY geo_enabled_description "Cuando se habilita, Firefox le preguntará si quiere decirle a la página que está visitando actualmente donde estás ubicado. Si lo deshabilita se desactivará totalmente.">
+<!-- CACHE -->
 <!ENTITY alerts "Alertas">
 <!ENTITY update_showSlidingNotification_description "Mostrar una notificación en el navegador cuando haya actualizaciones disponibles.">
 <!ENTITY update_showSlidingNotification_name "Mostrar notificación de actualizaciones">
@@ -137,7 +142,7 @@
 <!ENTITY browser_download_manager_showAlertInterval_name "Retraso de la alerta (mseg)">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "Muestra una ventana emergente en la esquina inferior derecha cuando todas las descargas han terminado.">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "Ventana emergente al descargar">
-<!-- CACHE -->
+<!-- EXTENSIONS -->
 <!ENTITY cache "Caché del navegador">
 <!ENTITY cache_disk "Caché de disco">
 <!ENTITY cache_memory "Caché de memoria">
@@ -157,7 +162,9 @@
 <!ENTITY browser_cache_memory_capacity_name "Memoria caché (KB)">
 <!ENTITY browser_cache_memory_enable_description "Usar la memoria caché, hasta la capacidad especificada.">
 <!ENTITY browser_cache_memory_enable_name "Usar memoria caché">
-<!-- EXTENSIONS -->
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Número máximo de páginas en memoria">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Las páginas visitadas recientemente se guardan en la memoria y pueden verse más rápidamente usando los botones Atrás y adelante. Si se establece a -1, el número de páginas se determinará automáticamente. Si se establece a 0, no se guardará ninguna página en memoria.">
+<!-- DOWNLOAD MANAGER -->
 <!ENTITY extensions "Extensiones">
 <!ENTITY getaddons "Panel &quot;Obtener complementos&quot;">
 <!ENTITY extensions_checkCompatibility_description "Esta opción le permite deshabilitar la comprobación de la compatibilidad de extensiones.">
@@ -168,7 +175,7 @@
 <!ENTITY extensions_getAddons_showPane_name "Mostrar panel">
 <!ENTITY extensions_hideInstallButton_description "Ocultar el botón &quot;Instalar&quot; en la ventana &quot;Administrador de complementos&quot;">
 <!ENTITY extensions_hideInstallButton_name "Ocultar el botón &quot;Instalar&quot;">
-<!-- DOWNLOAD MANAGER -->
+<!-- SECURITY -->
 <!ENTITY downloadmanager "Administrador de descargas">
 <!ENTITY browser_download_lastDir_description "Ruta a la última carpeta usada para descargar usando &apos;Guardar como&apos;.">
 <!ENTITY browser_download_lastDir_name "Carpeta de la última descarga">
@@ -176,7 +183,7 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Aviso en ejecutables">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Establecer el administrador de descargas como activo al iniciar una descarga">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Establecer el administrador de descargas como activo al iniciar una descarga">
-<!-- SECURITY -->
+<!-- STYLE -->
 <!ENTITY security_privacy "Seguridad y privacidad">
 <!ENTITY security_dialog_enable_delay_description "Esta opción determina el retraso (en milisegundos) antes de que el botón &quot;Instalar&quot; puede ser pulsado al instalar un complemento. Establezca a 0 para deshabilitar el retraso.">
 <!ENTITY security_dialog_enable_delay_name "Retraso en la instalación de complementos (mseg)">
@@ -195,9 +202,9 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determina la duración tras la que un proceso no responde se cierra.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tiempo de espera para el plugin (seg)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determina el tiempo para el inicio del plugin para que se considere fallo.">
-<!-- STYLE -->
-<!ENTITY style "Estilo">
 <!-- BROWSER -->
+<!ENTITY style "Estilo">
+<!-- WEBSITES -->
 <!ENTITY browser_style "Navegador">
 <!ENTITY browser_identity_ssl_domain_display_name "Enfatizar los dominios que usen SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Cuando un sitio usa SSL para cifrar las comunicaciones, el usuario puede seleccionar enfatizar una parte de la dirección del sitio. Esta opción determina si no se muestra nada, el dominio de segundo nivel (p.ej: mozilla.org) o el dominio completo (p.ej: bugzilla.mozilla.org) en la barra de direcciones.">
@@ -212,7 +219,7 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Ocultar el botón &quot;Ir&quot;">
 <!ENTITY browser_preferences_animateFadeIn_description "Cambia el alto de la ventana y anima el nuevo panel aproximadamente en un segundo al cambiar el panel de opciones.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animar el cambio en el panel de opciones">
-<!-- WEBSITES -->
+<!-- TEXT SELECT -->
 <!ENTITY websites "Páginas web">
 <!ENTITY rendering "Dibujado">
 <!ENTITY nglayout_initialpaint_delay_description "Esta opción especifica el número de milisegundos a esperar antes del primer dibujado de una página. Un valor bajo hará que la página se muestre más rápida, pero hará más lento el dibujado. Un valor alto tendrá el efecto contrario.">
@@ -240,7 +247,7 @@
 <!ENTITY gfx_color_management_mode_o3 "imágenes con etiquetas ICC">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Descargar las fuentes embebidas en las páginas web">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Habilita la descarga de fuentes CSS3 que están incluidas usando @font-face.Requiere reiniciar.">
-<!-- TEXT SELECT -->
+<!-- TABS -->
 <!ENTITY text_select "Texto seleccionado">
 <!ENTITY ui_textSelectBackgroundAttention_description "Determina el color de fondo usado para resaltar el texto buscado mientras escribe, como un código hexadecimal o el nombre de un color.">
 <!ENTITY ui_textSelectBackgroundAttention_name "Color de fondo para el texto resaltado.">
@@ -248,9 +255,9 @@
 <!ENTITY ui_textSelectBackground_name "Color de fondo">
 <!ENTITY ui_textSelectForeground_description "Determina el color de texto a usar para el texto seleccionado, como un código hexadecimal o el nombre de un color. Si no establece esta opción, se usará el valor del sistema operativo.">
 <!ENTITY ui_textSelectForeground_name "Color del texto">
-<!-- TABS -->
-<!ENTITY tabs "Pestañas">
 <!-- APPEARANCE -->
+<!ENTITY tabs "Pestañas">
+<!-- TAB PREVIEW -->
 <!ENTITY appearance "Apariencia">
 <!ENTITY browser_tabs_animate_name "Pestañas animadas">
 <!ENTITY browser_tabs_animate_description "Habilita las pestañas animadas al abrir una nueva pestaña o al colocar las pestañas.">
@@ -264,7 +271,7 @@
 <!ENTITY browser_tabs_closeButtons_o4 "al final de la barra de pestañas">
 <!ENTITY browser_tabs_tabClipWidth_name "Ancho min de pestaña para el botón cerrar">
 <!ENTITY browser_tabs_tabClipWidth_description "Determina el ancho mínimo necesario para mostrar el botón cerrar.">
-<!-- TAB PREVIEW -->
+<!-- OPEN IN BACKGROUND -->
 <!ENTITY tab_preview "Vista previa de pestañas">
 <!ENTITY browser_allTabs_preview_name "Habilitar la vista previa de pestañas">
 <!ENTITY browser_allTabs_preview_description "Añade un botón en la derecha de la barra de pestañas que muestra una vista previa al pulsar.">
@@ -272,21 +279,21 @@
 <!ENTITY browser_ctrlTab_preview_description "Al pulsar [Ctrl]+[Tab] para cambiar entre pestañas, se muestra una vista previa.">
 <!ENTITY browser_taskbar_previews_enable_name "Habilitar vista previa en la barra de tareas de Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "Si está habilitado, Firefox mostrará una vista previa de cada pestaña en la barra de tareas de Windows 7.">
-<!-- OPEN IN BACKGROUND -->
+<!-- MISC -->
 <!ENTITY open_in_background "Abrir una nueva pestaña en segundo plano desde">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Enlaces en aplicaciones externas">
 <!ENTITY browser_tabs_loadInBackground_name "Enlaces en páginas web">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Cargar los marcadores en segundo plano">
-<!-- MISC -->
+<!-- BOOKMARK -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Abrir la nueva pestaña junto a la actual">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determina si abrir una nueva pestaña al final de la barra de pestañas o tras la actual.">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "Cambiar a la pestaña que la abrió al cerrarla">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "Al cerrar una pestaña, cambiar a la pestaña que la abrió. En otro caso cambia a la pestaña de la derecha o de la izquierda.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Cerrar ventana con la última pestaña">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Si lo activa, la ventana actual se cerrará cuando cierre la última pestaña de la ventana.">
-<!-- BOOKMARK -->
-<!ENTITY bookmarks "Marcadores">
 <!-- MICROSUMMARIES -->
+<!ENTITY bookmarks "Marcadores">
+<!-- MISC -->
 <!ENTITY microsummaries "Microresumen">
 <!ENTITY browser_microsummary_enabled_description "Permitir obtener información de los marcadores con los microresúmenes.">
 <!ENTITY browser_microsummary_enabled_name "Usar microresumen">
@@ -296,20 +303,20 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Actualizar los generadores de microresúmenes">
 <!ENTITY browser_microsummary_updateInterval_description "Determina los minutos entre los que se actualizan los microresúmenes en segundos. El valor por defecto es de 30 minutos.">
 <!ENTITY browser_microsummary_updateInterval_name "Intervalo de actualización (min)">
-<!-- MISC -->
+<!-- NETWORK -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Número de segundos entre los que se comprueban los marcadores dinámicos. No se aplicarán valores inferiores a 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalo de actualización (seg)">
 <!ENTITY browser_bookmarks_max_backups_description "Determina el número de copias de seguridad que se mantienen. Un valor de 0 deshabilita las copias.">
 <!ENTITY browser_bookmarks_max_backups_name "Copias de seguridad de los marcadores">
-<!-- NETWORK -->
-<!ENTITY network "Red">
 <!-- CONNECTIONS -->
+<!ENTITY network "Red">
+<!-- KEEP ALIVE -->
 <!ENTITY connections "Conexiones">
 <!ENTITY network_http_max-connections-per-server_description "Esta opción especifica el número total de conexiones que Firefox puede tener abiertas de una vez con cada servidor. Este valor debe estar entre 1 y 255.">
 <!ENTITY network_http_max-connections-per-server_name "Máximo de conexiones HTTP por servidor">
 <!ENTITY network_http_max-connections_description "Esta opción especifica el número total de conexiones que Firefox puede abrir de una vez. Este valor debe estar entre 1 y 65535.">
 <!ENTITY network_http_max-connections_name "Máximo de conexiones HTTP">
-<!-- KEEP ALIVE -->
+<!-- PIPELINING -->
 <!ENTITY keep-alive_connections "Mantener activas las conexiones">
 <!ENTITY network_http_keep-alive_description "Las conexiones HTTP activas pueden reusarse para varias peticiones y mejorar el rendimiento.">
 <!ENTITY network_http_keep-alive_name "Usar las conexiones activas">
@@ -317,7 +324,7 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Máximas conexiones activas por servidor proxy">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Esta opción especifica el número total de conexiones activas que Firefox puede tener abiertas de una vez con un servidor. Este valor debe estar entre 1 y 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Máximas conexiones activas por servidor">
-<!-- PIPELINING -->
+<!-- DEVELOPMENT -->
 <!ENTITY pipelining "Pipeline">
 <!ENTITY network_http_pipelining_description "La técnica de pipeline reduce la carga de la red y puede reducir el tiempo de carga de las páginas, pero puede causar problemas si el servidor no lo admite.">
 <!ENTITY network_http_pipelining_maxrequests_description "Esta opción especifica el número máximo de peticiones con pipeline si está activo.">
@@ -325,9 +332,9 @@
 <!ENTITY network_http_pipelining_name "Usar el pipeline">
 <!ENTITY network_http_proxy_pipelining_description "Esta opción especifica si se usa la técnica de pipeline con un servidor proxy. Esta técnica reduce la carga de la red y puede reducir el tiempo de carga de las páginas, pero puede causar problemas si el servidor no lo admite.">
 <!ENTITY network_http_proxy_pipelining_name "Usar pipeline con un servidor proxy">
-<!-- DEVELOPMENT -->
-<!ENTITY developing "Desarrollo">
 <!-- VIEW SOURCE -->
+<!ENTITY developing "Desarrollo">
+<!-- MISC -->
 <!ENTITY viewsource "Ver código fuente">
 <!ENTITY view_source_editor_external_description "Usar un editor personalizado para ver el código fuente">
 <!ENTITY view_source_editor_external_name "Usar un editor personalizado">

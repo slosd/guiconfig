@@ -123,6 +123,11 @@
 <!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
 <!-- BROWSER -->
 <!ENTITY browser "瀏覽器">
+<!-- WEBSITES -->
+<!ENTITY gfx_3d_video_enabled_name "啟用3D影音">
+<!ENTITY gfx_3d_video_enabled_description "對3D影音啟用立體視覺效果">
+<!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
+<!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
 <!-- ALERTS -->
 <!ENTITY alerts "警示視窗">
 <!ENTITY update_showSlidingNotification_description "有更新檔時，在瀏覽器顯示一份通知。">
@@ -157,6 +162,8 @@
 <!ENTITY browser_cache_memory_capacity_name "RAM 快取記憶區(KB)">
 <!ENTITY browser_cache_memory_enable_description "以指定的最大空間來使用 RAM 快取記憶區">
 <!ENTITY browser_cache_memory_enable_name "使用 RAM 快取記憶區">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "最大記憶頁數">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "最近瀏覽過的網頁係儲存在記憶體中，這樣在用到「前一頁」「後一頁」時，可以顯示得快些。若設為-1，則頁數為自動決定；若設0就完全不予保留。">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "附加元件">
 <!ENTITY getaddons "&quot;取得元件&quot;側頁">

@@ -124,6 +124,11 @@
 <!-- BROWSER -->
 <!ENTITY browser "Webbläsare">
 <!-- ALERTS -->
+<!ENTITY gfx_3d_video_enabled_name "Tillåt 3D-videor">
+<!ENTITY gfx_3d_video_enabled_description "Tillåter stereoskopisk rendering för 3D-videor. ">
+<!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
+<!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet. ">
+<!-- CACHE -->
 <!ENTITY alerts "Meddelanden">
 <!ENTITY update_showSlidingNotification_description "Visa ett meddelande i webbläsaren när en uppdatering är tillgänglig.">
 <!ENTITY update_showSlidingNotification_name "Visa meddelande om uppdatering">
@@ -137,7 +142,7 @@
 <!ENTITY browser_download_manager_showAlertInterval_name "Meddelandens varaktighet (ms)">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "Visa ett meddelande i webbläsaren när alla nerladdningar har slutförts.">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "Visa nerladdningsmeddelande">
-<!-- CACHE -->
+<!-- EXTENSIONS -->
 <!ENTITY cache "Cache">
 <!ENTITY cache_disk "Diskcache">
 <!ENTITY cache_memory "Cacheminne">
@@ -157,7 +162,9 @@
 <!ENTITY browser_cache_memory_capacity_name "Cacheminne (kB)">
 <!ENTITY browser_cache_memory_enable_description "Använd cacheminne, upp till den specificerade kapacitetsnivån.">
 <!ENTITY browser_cache_memory_enable_name "Använd cacheminne">
-<!-- EXTENSIONS -->
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Antal lagrade webbsidor i minnet">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Nyligen besökta webbsidor lagras i minnet och kan visas snabbare när Bakåt- och Framåt-knapparna används. Om värdet sätts till -1 kommer antalet lagrade webbsidor att bestämmas automatiskt. Om det sätts till 0 kommer inga sidor att lagras i minnet. ">
+<!-- DOWNLOAD MANAGER -->
 <!ENTITY extensions "Tillägg">
 <!ENTITY getaddons "&quot;Hämta tillägg&quot;-panelen">
 <!ENTITY extensions_checkCompatibility_description "Den här inställningen tillåter att kompatibilitetskontrollen av tillägg inaktiveras. ">
@@ -168,7 +175,7 @@
 <!ENTITY extensions_getAddons_showPane_name "Visa panelen">
 <!ENTITY extensions_hideInstallButton_description "Göm &quot;Installera&quot;-knappen i fönstret &quot;Tilläggshanteraren&quot;. ">
 <!ENTITY extensions_hideInstallButton_name "Göm &quot;Installera&quot;-knappen">
-<!-- DOWNLOAD MANAGER -->
+<!-- SECURITY -->
 <!ENTITY downloadmanager "Filhämtaren">
 <!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för nerladdning via 'Spara (bild/länk/sida) som...'.">
 <!ENTITY browser_download_lastDir_name "Senaste nerladdningsmapp">
@@ -176,7 +183,7 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för exekverbar fil">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Anger Filhämtarens fönster som aktivt när en nerladdning startas.">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Ange Filhämtarens fönster som aktivt när en nerladdning startas">
-<!-- SECURITY -->
+<!-- STYLE -->
 <!ENTITY security_privacy "Säkerhet och integritet">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen. ">
 <!ENTITY security_dialog_enable_delay_name "Fördröjning vid tilläggsinstallation (ms)">
@@ -195,9 +202,9 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Anger en tidsgräns efter vilken processen för den insticksmodul som inte svarar avslutas.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tidsgräns för insticksmodulstart (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Anger en tidsgräns när en insticksmodul startas, efter vilken starten anses ha misslyckats. ">
-<!-- STYLE -->
-<!ENTITY style "Stil">
 <!-- BROWSER -->
+<!ENTITY style "Stil">
+<!-- WEBSITES -->
 <!ENTITY browser_style "Webbläsare">
 <!ENTITY browser_identity_ssl_domain_display_name "Framhäv domäner som använder SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "När en webbplats använder SSL för att kryptera kommunikationen, kan användaren välja att få en del av webbplatsens URL framhävd i användargränssnittet. Den här inställningen styr vad som skall visas i adressfältet: Ingenting, andranivådomänen (t.ex.: mozilla.org) eller den fullständiga domänen (t.ex.: bugzilla.mozilla.org). ">
@@ -212,7 +219,7 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Göm &quot;Gå&quot;-knappen">
 <!ENTITY browser_preferences_animateFadeIn_description "Ändrar höjden på fönstret och tonar in den nya panelen under ungefär en sekund när du byter panel i inställningar-dialogrutor.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animera byte av inställningar-paneler">
-<!-- WEBSITES -->
+<!-- TEXT SELECT -->
 <!ENTITY websites "Webbplatser">
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan första renderingen av en sida. Låga värden gör att sidan kommer att visas snabbare, men gör samtidigt att det tar längre tid innan renderingen slutförs. Höga värden ger motsatt effekt.">
@@ -240,7 +247,7 @@
 <!ENTITY gfx_color_management_mode_o3 "för bilder med ICC-taggar">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Ladda ner fonter inbäddade i webbplatser">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Medger nerladdning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
-<!-- TEXT SELECT -->
+<!-- TABS -->
 <!ENTITY text_select "Markerad text">
 <!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för sidsökfältet genom att välja en hexkod eller en namngiven färg. ">
 <!ENTITY ui_textSelectBackgroundAttention_name "Sidsökfältets bakgrundsfärg">
@@ -248,9 +255,9 @@
 <!ENTITY ui_textSelectBackground_name "Bakgrundsfärg">
 <!ENTITY ui_textSelectForeground_description "Ändra textfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">
 <!ENTITY ui_textSelectForeground_name "Textfärg">
-<!-- TABS -->
-<!ENTITY tabs "Flikar">
 <!-- APPEARANCE -->
+<!ENTITY tabs "Flikar">
+<!-- TAB PREVIEW -->
 <!ENTITY appearance "Utseende">
 <!ENTITY browser_tabs_animate_name "Animera flikar">
 <!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om ovh när en flik tas bort. ">
@@ -264,7 +271,7 @@
 <!ENTITY browser_tabs_closeButtons_o4 "i slutet av flikfältet">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. flikbredd för stängknappar">
 <!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar skall visas. ">
-<!-- TAB PREVIEW -->
+<!-- OPEN IN BACKGROUND -->
 <!ENTITY tab_preview "Förhandsvisning av flik">
 <!ENTITY browser_allTabs_preview_name "Aktivera förhandsvisning av flik">
 <!ENTITY browser_allTabs_preview_description "Det här lägger till en knapp till höger om flikfältet, som när den klickas visar en förhandsvisning av fliken. ">
@@ -272,21 +279,21 @@
 <!ENTITY browser_ctrlTab_preview_description "När [CTRL]+[TAB] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad. ">
 <!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet i Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (endast Windows 7).">
-<!-- OPEN IN BACKGROUND -->
+<!-- MISC -->
 <!ENTITY open_in_background "Öppna en ny flik i bakgrunden från">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Länkar i externa program">
 <!ENTITY browser_tabs_loadInBackground_name "Länkar på webbplatser">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Bokmärken">
-<!-- MISC -->
+<!-- BOOKMARK -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Öppna ny flik bredvid aktuell flik">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bestämmer om en ny flik öppnas i slutet av flikfältet eller precis efter den för närvarande aktiva fliken. ">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "När en flik stängs, växla till fliken som öppnade den">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "När en flik stängs, byt fokus till fliken som öppnade den. I annat fall, växla till den angränsande fliken till höger eller den angränsande fliken till vänster. ">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Stäng fönstret när sista fliken stängs">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Om ikryssad kommer det aktuella fönstret att stängas när du stänger den sista fliken i fönstret. Du kan stänga den sista fliken med ett mittenklick eller genom att trycka ner [CTRL]+[W].">
-<!-- BOOKMARK -->
-<!ENTITY bookmarks "Bokmärken">
 <!-- MICROSUMMARIES -->
+<!ENTITY bookmarks "Bokmärken">
+<!-- MISC -->
 <!ENTITY microsummaries "Mikrosammanfattningar">
 <!ENTITY browser_microsummary_enabled_description "Tillåt att information för bokmärken samlas in med hjälp av mikrosammanfattningar.">
 <!ENTITY browser_microsummary_enabled_name "Använd mikrosammanfattningar">
@@ -296,20 +303,20 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Uppdatera mikrosammanfattningsgeneratorer">
 <!ENTITY browser_microsummary_updateInterval_description "Anger antalet minuter mellan uppdateringskontroller av mikrosammanfattningar. Standardvärdet är 30 minuter.">
 <!ENTITY browser_microsummary_updateInterval_name "Uppdateringsintervall (min)">
-<!-- MISC -->
+<!-- NETWORK -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Antalet sekunder mellan kontroller av smarta bokmärken. Värden under 60 antas vara 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Uppdateringsintervall (s)">
 <!ENTITY browser_bookmarks_max_backups_description "Anger hur många säkerhetskopior som sparas. Att ange värdet 0 inaktiverar säkerhetskopieringsfunktionen.">
 <!ENTITY browser_bookmarks_max_backups_name "Säkerhetskopior av bokmärken">
-<!-- NETWORK -->
-<!ENTITY network "Nätverk">
 <!-- CONNECTIONS -->
+<!ENTITY network "Nätverk">
+<!-- KEEP ALIVE -->
 <!ENTITY connections "Anslutningar">
 <!ENTITY network_http_max-connections-per-server_description "Den här inställningen bestämmer det högsta antalet samtidiga anslutningar, som Firefox kan ha öppna mot en enskild server. Värdet måste vara mellan 1 och 255.">
 <!ENTITY network_http_max-connections-per-server_name "Antal HTTP-anslutningar per server">
 <!ENTITY network_http_max-connections_description "Den här inställningen bestämmer det totala antalet samtidiga anslutningar, som Firefox kan ha öppna. Värdet måste vara mellan 1 och 65535.">
 <!ENTITY network_http_max-connections_name "Antal HTTP-anslutningar">
-<!-- KEEP ALIVE -->
+<!-- PIPELINING -->
 <!ENTITY keep-alive_connections "Beständiga anslutningar">
 <!ENTITY network_http_keep-alive_description "Beständiga HTTP-anslutningar (äv. &quot;keep-alive-anslutningar&quot;) kan återanvändas för multipla förfrågningar och därmed förbättra prestandan.">
 <!ENTITY network_http_keep-alive_name "Använd beständiga anslutningar">
@@ -317,7 +324,7 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Antal beständiga anslutningar per proxyserver">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Den här inställningen bestämmer det högsta antalet samtidiga beständiga anslutningar, som Firefox kan ha öppna mot en enskild server. Värdet måste vara mellan 1 och 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Antal beständiga anslutningar per server">
-<!-- PIPELINING -->
+<!-- DEVELOPMENT -->
 <!ENTITY pipelining "Pipelining">
 <!ENTITY network_http_pipelining_description "Pipelining minskar belastningen på nätverket och kan minska tiden det tar att ladda webbsidor, men det kan samtidigt orsaka problem med att ladda sidor från servrar som inte stödjer pipelining.">
 <!ENTITY network_http_pipelining_maxrequests_description "Den här inställningen bestämmer det högsta antalet samtidiga förfrågningar som kan pipas när pipelining är aktiverat.  ">
@@ -325,9 +332,9 @@
 <!ENTITY network_http_pipelining_name "Använd pipelining">
 <!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida pipelining skall användas mot en proxyserver. Pipelining minskar belastningen på nätverket och kan minska tiden det tar att ladda webbsidor, men det kan samtidigt orsaka problem med att ladda sidor från servrar som inte stödjer pipelining.">
 <!ENTITY network_http_proxy_pipelining_name "Använd pipelining mot en proxyserver">
-<!-- DEVELOPMENT -->
-<!ENTITY developing "Utveckling">
 <!-- VIEW SOURCE -->
+<!ENTITY developing "Utveckling">
+<!-- MISC -->
 <!ENTITY viewsource "Visa källkod">
 <!ENTITY view_source_editor_external_description "Använd en egen, extern redigerare för att visa källkoden när du väljer &quot;Visa källkod&quot; i webbsidans snabbmeny.">
 <!ENTITY view_source_editor_external_name "Använd egen redigerare">

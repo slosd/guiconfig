@@ -123,6 +123,11 @@
 <!ENTITY accessibility_accesskeycausesactivation_name "Клавиша доступа активизирует элемент">
 <!-- BROWSER -->
 <!ENTITY browser "Браузер">
+<!-- WEBSITES -->
+<!ENTITY gfx_3d_video_enabled_name "Включить 3D видео">
+<!ENTITY gfx_3d_video_enabled_description "Включает стереоскопическое построение и отображение для 3D видео.">
+<!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">
+<!ENTITY geo_enabled_description "Если включено, Firefox будет спрашивать вас хотите ли вы сообщить веб-сайту, посещаемому в настоящий момент, место вашего расположения. Отключение этой настройки выключает эту функцию полностью.">
 <!-- ALERTS -->
 <!ENTITY alerts "Уведомления">
 <!ENTITY update_showSlidingNotification_description "Отображает в браузере уведомление при наличии обновлений.">
@@ -157,6 +162,8 @@
 <!ENTITY browser_cache_memory_capacity_name "Кэш в памяти (КБ)">
 <!ENTITY browser_cache_memory_enable_description "Разрешает использовать кэш в памяти с заданным размером.">
 <!ENTITY browser_cache_memory_enable_name "Использовать кэш в памяти">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Количество страниц в памяти">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Недавно посещённые страницы будут сохраняться в памяти и, при использовании кнопок «Назад» и «Вперёд», могут отображаться быстрее. Если установлено в -1, количество сохраняемых страниц определяется автоматически. Если установлено в 0, страницы в памяти не сохраняются.">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Расширения">
 <!ENTITY getaddons "Панель «Поиск дополнений»">
