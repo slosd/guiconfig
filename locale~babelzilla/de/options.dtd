@@ -44,13 +44,13 @@
 <!ENTITY browser_urlbar_restrict_bookmark_name "Auf Lesezeichen beschränken">
 <!ENTITY browser_urlbar_restrict_history_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, die Sie bereits besucht haben.">
 <!ENTITY browser_urlbar_restrict_history_name "Auf Chronik beschränken">
-<!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, denen Sie Schlagwörter (Tags) zugewiesen haben.">
-<!ENTITY browser_urlbar_restrict_tag_name "Auf Schlagwörter(Tags) beschränken">
-<!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Adressen beschränkt, die Sie selbst eingegeben haben.">
+<!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, denen Sie Schlagwörter (Tags) zugewiesen haben.">
+<!ENTITY browser_urlbar_restrict_tag_name "Auf Schlagwörter (Tags) beschränken">
+<!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Adressen beschränkt, die Sie selbst eingegeben haben.">
 <!ENTITY browser_urlbar_restrict_typed_name "Auf selbst eingegebene Adressen beschränken">
-<!ENTITY browser_urlbar_match_title_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, deren Titel den eingegebenen Begriff enthalten.">
+<!ENTITY browser_urlbar_match_title_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, deren Titel den eingegebenen Begriff enthalten.">
 <!ENTITY browser_urlbar_match_title_name "Im Titel suchen">
-<!ENTITY browser_urlbar_match_url_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) werden auf Webseiten beschränkt, deren Adresse den eingegebenen Begriff enthalten.">
+<!ENTITY browser_urlbar_match_url_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, deren Adresse den eingegebenen Begriff enthalten.">
 <!ENTITY browser_urlbar_match_url_name "In der Adresse (URL) suchen">
 <!ENTITY browser_urlbar_matchBehavior_description "Das Suchverhalten definiert, ob bei der Suche auf Wortgrenzen geachtet wird, wenn nach Einträgen für die &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) gesucht wird.">
 <!ENTITY browser_urlbar_matchBehavior_name "Suchverhalten:">
@@ -115,9 +115,9 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "Bei Benutzung einer Schnelltaste (unterstrichener Buchstabe oder Tastenkombination) für ein Element wird dieses angewählt. Falls es sich dabei um einen Link oder eine Schaltfläche handelt wird diese angeklickt.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Schnelltaste aktiviert Element">
 <!ENTITY browser "Browser">
-<!ENTITY gfx_3d_video_enabled_name "Aktiviere 3D Video">
+<!ENTITY gfx_3d_video_enabled_name "3D Video aktivieren">
 <!ENTITY gfx_3d_video_enabled_description "Aktiviert stereoskopisches Rendern für 3D Videos.">
-<!ENTITY geo_enabled_name "Aktiviere standortbezogenes Surfen">
+<!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
 <!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
 <!ENTITY alerts "Hinweisfenster">
 <!ENTITY update_showSlidingNotification_description "Einen Hinweis anzeigen, wenn Updates z.B. für Erweiterungen zur Verfügung stehen.">
