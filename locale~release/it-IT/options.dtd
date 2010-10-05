@@ -123,6 +123,11 @@
 <!ENTITY accessibility_accesskeycausesactivation_name "Attivazione degli elementi tramite accesskey">
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
+<!-- WEBSITES -->
+<!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
+<!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
+<!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
+<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. ">
 <!-- ALERTS -->
 <!ENTITY alerts "Finestre di avviso">
 <!ENTITY update_showSlidingNotification_description "Quando sono disponibili degli aggiornamenti verrà visualizzata una notifica nel browser.">
@@ -157,6 +162,8 @@
 <!ENTITY browser_cache_memory_capacity_name "Cache in memoria (in KB):">
 <!ENTITY browser_cache_memory_enable_description "Utilizza la cache in memoria fino alla quantità definita.">
 <!ENTITY browser_cache_memory_enable_name "Utilizza la cache in memoria">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Max. number of pages in memory">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Recently visited pages are stored in memory and can be displayed faster when using Back and Forward. If set to -1 the number of pages is automatically determined. If set to 0 no pages are stored in memory. ">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Estensioni">
 <!ENTITY getaddons "Pannello Esplora">
