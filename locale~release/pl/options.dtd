@@ -1,4 +1,6 @@
+<!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Dostępność">
+<!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Zachowanie myszy">
 <!ENTITY mousescrollvertical "Przewijanie w pionie">
 <!ENTITY mousescrollhorizontal "Przewijanie w poziomie">
@@ -26,6 +28,7 @@
 <!ENTITY browser_urlbar_clickSelectsAll_name "Zaznacz zawartość po kliknięciu">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Zaznacz zawartość paska adresu po kliknięciu go podwójnie.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Zaznacz zawartość po podwójnym kliknięciu">
+<!-- URLBAR -->
 <!ENTITY urlbar "Pasek adresu">
 <!ENTITY browser_urlbar_autoFill_description "Włącza autouzupełnianie adresu.">
 <!ENTITY browser_urlbar_autoFill_name "Autouzupełnianie adresu">
@@ -37,6 +40,7 @@
 <!ENTITY browser_fixup_alternate_prefix_name "Na początku dodaj">
 <!ENTITY browser_fixup_alternate_suffix_description "Znaki, które mają zostać wstawione na końcu adresu.">
 <!ENTITY browser_fixup_alternate_suffix_name "Na końcu dodaj">
+<!-- AWESOMEBAR -->
 <!ENTITY awesomebar "Inteligentny pasek adresu">
 <!ENTITY urlbar_restrict_name "Ogranicz wyniki do">
 <!ENTITY urlbar_match_name "Przeszukiwane miejsca">
@@ -60,6 +64,7 @@
 <!ENTITY browser_urlbar_matchBehavior_o4 "Szukaj na początkach adresów URL i tytułów">
 <!ENTITY browser_urlbar_maxRichResults_description "Określa maksymalną liczbę wpisów wyświetlanych w rozwijalnym menu paska adresu.">
 <!ENTITY browser_urlbar_maxRichResults_name "Liczba wpisów w rozwijalnym menu">
+<!-- WEBSITES -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Określa sposób obsługi rozróżniania znaków. Kiedy wybrana jest opcja &quot;Wykryj automatycznie&quot;, w kryterium wyszukiwania rozróżniana jest wielkosć znaków, jeśli zawiera ono wielkie litery, ale nie składa się wyłącznie z nich.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozróżnianie wielkości znaków">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Wykryj automatycznie">
@@ -88,6 +93,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "Wyłącz">
 <!ENTITY layout_spellcheckDefault_o2 "Włącz dla wieloliniowych pól tekstowych">
 <!ENTITY layout_spellcheckDefault_o3 "Włącz dla wieloliniowych i jednoliniowych pól tekstowych">
+<!-- SESSION RESTORE -->
 <!ENTITY session_restore "Przywracanie sesji">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Włącz przywracanie sesji">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Maksymalna liczba przywracanych kart">
@@ -103,6 +109,7 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "na wszystkich stronach">
 <!ENTITY browser_sessionstore_privacy_level_o2 "na niezaszyfrowanych (nie HTTPS) stronach">
 <!ENTITY browser_sessionstore_privacy_level_o3 "na żadnych stronach">
+<!-- MISC -->
 <!ENTITY misc "Rozmaite">
 <!ENTITY browser_search_openintab_description "Po wciśnięciu przycisku wyszukiwania jego wyniki zostaną otwarte w nowej karcie.">
 <!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
@@ -114,7 +121,14 @@
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Wyświetl okno dialogowe podczas wchodzenia w tryb przeglądania z użyciem kursora.">
 <!ENTITY accessibility_accesskeycausesactivation_description "Klawisze dostępu (Alt + Shift + klawisz) aktywują elementy stron internetowych. Jeżeli dany element jest odnośnikiem, przeglądarka przechodzi pod wskazany adres, natomiast jeśli jest on przyciskiem, klawisz skrótu &quot;wciska&quot; przycisk.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Włącz klawisze dostępu">
+<!-- BROWSER -->
 <!ENTITY browser "Przeglądarka">
+<!-- WEBSITES -->
+<!ENTITY gfx_3d_video_enabled_name "Włącz wideo 3D">
+<!ENTITY gfx_3d_video_enabled_description "Włącza stereoskopowe renderowanie trójwymiarowego wideo.">
+<!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
+<!ENTITY geo_enabled_description "Kiedy ta funkcja jest włączona, Firefox może pytać Cię, czy chcesz poinformować obecnie odwiedzaną witrynę o swoim położeniu geograficzym. Odznaczenie tego pola całkowicie wyłącza tę funkcję.">
+<!-- ALERTS -->
 <!ENTITY alerts "Okna informacyjne">
 <!ENTITY update_showSlidingNotification_description "Wyświetl powiadomienie w oknie przeglądarki, kiedy dostępne są aktualizacje.">
 <!ENTITY update_showSlidingNotification_name "Wyświetl powiadomienie o dostepności aktualizacji">
@@ -128,6 +142,7 @@
 <!ENTITY browser_download_manager_showAlertInterval_name "Czas wyświetlania informacji (ms)">
 <!ENTITY browser_download_manager_showAlertOnComplete_description "Wyświetla informację o zakończeniu pobierania plików w prawym dolnym rogu ekranu.">
 <!ENTITY browser_download_manager_showAlertOnComplete_name "Wyświetl komunikat po zakończeniu pobierania">
+<!-- CACHE -->
 <!ENTITY cache "Bufor przeglądarki">
 <!ENTITY cache_disk "Cache dysku">
 <!ENTITY cache_memory "Cache pamięci">
@@ -147,6 +162,9 @@
 <!ENTITY browser_cache_memory_capacity_name "Rozmiar bufora w RAM-ie (KB)">
 <!ENTITY browser_cache_memory_enable_description "Używaj bufora w RAM-ie (uwzględniając określony limit pojemności).">
 <!ENTITY browser_cache_memory_enable_name "Używaj bufora w RAM-ie">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Maksymalna liczba stron przechowywanych w pamięci">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Ostatnio odwiedzone strony są przechowywane w pamięci, dzięki czemu mogą zostać wyświetlone szybciej po użyciu przycisków &quot;Wstecz&quot; oraz &quot;Do przodu&quot;. Gdy ustawienie to ma wartość -1, liczba stron przechowywanych w pamięci jest określana automatycznie. Nadanie mu wartości 0 powoduje, że żadne strony nie są przechowywane w pamięci.">
+<!-- EXTENSIONS -->
 <!ENTITY extensions "Rozszerzenia">
 <!ENTITY getaddons "Panel &quot;Pobierz rozszerzenia&quot;">
 <!ENTITY extensions_checkCompatibility_description "To ustawienie pozwala na wyłączenie sprawdzania zgodności rozszerzeń z wersją przeglądarki.">
@@ -157,6 +175,7 @@
 <!ENTITY extensions_getAddons_showPane_name "Wyświetlaj panel">
 <!ENTITY extensions_hideInstallButton_description "Ukryj przycisk &quot;Zainstaluj&quot; okna menedżera dodatków.">
 <!ENTITY extensions_hideInstallButton_name "Ukryj przycisk &quot;Zainstaluj&quot;">
+<!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Menedżer pobierania plików">
 <!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
 <!ENTITY browser_download_lastDir_name "Ostatni katalog pobierania">
@@ -164,6 +183,7 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Ostrzegaj przed otwarciem plików wykonywalnych">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Ustawia okienko &quot;Pobieranie plików&quot; jako aktywne po rozpoczęciu pobierania plików.">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Przejdź do okna &quot;Pobieranie plików&quot; po rozpoczęciu pobierania">
+<!-- SECURITY -->
 <!ENTITY security_privacy "Bezpieczeństwo i prywatność">
 <!ENTITY security_dialog_enable_delay_description "To ustawienie określa okres czasu (w milisekundach), który musi upłynąć, nim możliwe będzie kliknięcie przycisku &quot;Zainstaluj&quot; w oknie instalacji rozszerzenia. Ustaw na 0, aby wyłączyć konieczność czekania.">
 <!ENTITY security_dialog_enable_delay_name "Czas przed instalacją rozszerzenia (w milisekundach)">
@@ -182,7 +202,9 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Określa okres czasu, po którym proces nieodpowiadającej wtyczki zostanie zakończony.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Czas oczekiwania na uruchomienie wtyczki (w sek.)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Określa okres czasu, po którym uruchamianie wtyczki zostanie uznane za niepomyślne.">
+<!-- STYLE -->
 <!ENTITY style "Styl">
+<!-- BROWSER -->
 <!ENTITY browser_style "Przeglądarka">
 <!ENTITY browser_identity_ssl_domain_display_name "Wyróżnianie domen używających SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Kiedy witryna używa SSL aby szyfrować połączenie, użytkownik może ustawić wyróżnianie części adresu URL w interfejsie. To ustawienie określa, czy wyświetlana ma być pełna domena, domena drugiego poziomu czy nic.">
@@ -197,6 +219,7 @@
 <!ENTITY browser_urlbar_hideGoButton_name "Ukryj przycisk &quot;Przejdź&quot;">
 <!ENTITY browser_preferences_animateFadeIn_description "Zmienia wysokość okna i powoduje stopniowe pojawianie się nowego panelu preferencji w ciągu ok. sekundy po dokonaniu jego wyboru.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animuj przejścia między menu">
+<!-- WEBSITES -->
 <!ENTITY websites "Witryny">
 <!ENTITY rendering "Renderowanie">
 <!ENTITY nglayout_initialpaint_delay_description "To ustawienie określa liczbę milisekund, które przeglądarka ma odczekać przed pierwszym renderowaniem strony. Niższe wartości spowodują szybsze wyświetlanie strony, ale sprawią, że renderowanie będzie dłużej trwało. Odwrotnie przy wartościach większych.">
@@ -224,6 +247,7 @@
 <!ENTITY gfx_color_management_mode_o3 "obrazkach z tagami ICC">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Pobieraj czcionki załączone do witryn">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Włącza pobieranie czcionek CSS3, które są załączane do witryn przy pomocy dyrektywy @font-face. Wymaga ponownego uruchomienia przeglądarki.">
+<!-- TEXT SELECT -->
 <!ENTITY text_select "Zaznaczony tekst">
 <!ENTITY ui_textSelectBackgroundAttention_description "Okresla kolor tła tekstu zaznaczonego za pomocą funkcji szybkiego wyszukiwania w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
 <!ENTITY ui_textSelectBackgroundAttention_name "Kolor podświetlonego tekstu">
@@ -231,7 +255,9 @@
 <!ENTITY ui_textSelectBackground_name "Kolor tła">
 <!ENTITY ui_textSelectForeground_description "Okresla kolor zaznaczonego tekstu w formacie szesnastkowym lub za pomocą nazwy koloru w języku angielskim. Jeżeli to pole pozostanie puste zostanie użyta domyślny kolor systemu.">
 <!ENTITY ui_textSelectForeground_name "Kolor tekstu">
+<!-- TABS -->
 <!ENTITY tabs "Karty">
+<!-- APPEARANCE -->
 <!ENTITY appearance "Wygląd">
 <!ENTITY browser_tabs_animate_name "Animuj karty">
 <!ENTITY browser_tabs_animate_description "Włącza animacje odtwarzane podczas otwierania kart, zmiany ich kolejności i usuwania ich.">
@@ -245,6 +271,7 @@
 <!ENTITY browser_tabs_closeButtons_o4 "na końcu paska kart">
 <!ENTITY browser_tabs_tabClipWidth_name "Minimalna szerokość karty dla przycisku zamknięcia">
 <!ENTITY browser_tabs_tabClipWidth_description "Określa najmniejszą szerokość karty przy której wyświetlany będzie przycisk zamknięcia karty.">
+<!-- TAB PREVIEW -->
 <!ENTITY tab_preview "Podgląd kart">
 <!ENTITY browser_allTabs_preview_name "Włącz podgląd kart">
 <!ENTITY browser_allTabs_preview_description "Włączenie tej funkcji powoduje dodanie przycisku po prawej stronie paska kart, który wyświetla podgląd karty po kliknięciu go.">
@@ -252,17 +279,21 @@
 <!ENTITY browser_ctrlTab_preview_description "Wyświetla podgląd kart przy zmianie ich przy pomocy skrótu [CTRL]+[Tab].">
 <!ENTITY browser_taskbar_previews_enable_name "Włącz podglądy w pasku zadań Windowsa 7">
 <!ENTITY browser_taskbar_previews_enable_description "Włączenie tej opcji sprawi, że Firefox będzie wyświetlał podgląd każdej karty na pasku zadań Windowsa 7.">
+<!-- OPEN IN BACKGROUND -->
 <!ENTITY open_in_background "Otwiera nową kartę w tle z">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Odnośńiki w innych aplikacjach">
 <!ENTITY browser_tabs_loadInBackground_name "Odnośniki na stronach internetowych">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
+<!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Otwieraj nowe karty obok aktywnej">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Określa, czy nowe karty mają być otwierane obok aktywnej czy na końcu paska kart.">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "Przy zamykaniu przełączaj do karty źródłowej">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "Przy zamykaniu karty przełącza do karty, z której zamykana zostala otwarta. Jeśli opcja ta nie zostanie włączona, włączona zostanie karta znajdująca się po prawej lub po lewej od aktywnej.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Zamknij okno po zamknięciu ostatniej karty">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Jeśli zaznaczone, otwarte okno zostanie zamknięte, gdy zamkniesz ostatnią kartę w tym oknie.">
+<!-- BOOKMARK -->
 <!ENTITY bookmarks "Subskrypcje">
+<!-- MICROSUMMARIES -->
 <!ENTITY microsummaries "Mikropodsumowania">
 <!ENTITY browser_microsummary_enabled_description "Pozwól na pobieranie i wyświetlanie informacji o treści stron dodanych do zakładek.">
 <!ENTITY browser_microsummary_enabled_name "Używaj mikropodsumowań">
@@ -272,16 +303,20 @@
 <!ENTITY browser_microsummary_updateGenerators_name "Aktualizuj generatory mikropodsumowań">
 <!ENTITY browser_microsummary_updateInterval_description "Określa minutowy odstęp czasu między sprawdzeniami aktualizacji mikropodsumowań. Domyślna wartość to 30 minut.">
 <!ENTITY browser_microsummary_updateInterval_name "Częstotliwość aktualizacji (w min.)">
+<!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Liczba sekund między kolejnymi sprawdzeniami aktualizacji subskrybowanych kanałów RSS. Wartości poniżej 60 są uznawane za 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Odświeżaj co (sek.)">
 <!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
 <!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
+<!-- NETWORK -->
 <!ENTITY network "Sieć">
+<!-- CONNECTIONS -->
 <!ENTITY connections "Połączenia">
 <!ENTITY network_http_max-connections-per-server_description "To ustawienie określa maksymalną liczbę jednoczesnych połączeń z jednym serwerem, które Firefox może utworzyć. Ta wartość musi być z zakresu od 1 do 255.">
 <!ENTITY network_http_max-connections-per-server_name "Maksymalna liczba połączeń HTTP na serwer">
 <!ENTITY network_http_max-connections_description "To ustawienie określa maksymalną liczbę jednoczesnych połączeń, które Firefox może utworzyć. Ta wartość musi być z zakresu od 1 do 65535.">
 <!ENTITY network_http_max-connections_name "Maksymalna liczba połączeń HTTP">
+<!-- KEEP ALIVE -->
 <!ENTITY keep-alive_connections "Połączenia keep-alive">
 <!ENTITY network_http_keep-alive_description "Połączenia keep-alive HTTP to połączenia, które mogą zostać użyte ponownie w celu wysłania wielu zapytań i poprawienia wydajności.">
 <!ENTITY network_http_keep-alive_name "Maksymalna liczba połączeń keep-alive">
@@ -289,6 +324,7 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Maksymalna liczba połączeń keep-alive na serwer proxy">
 <!ENTITY network_http_max-persistent-connections-per-server_description "To ustawienie określa maksymalną liczbę połączeń keep-alive, którą Firefox może jednocześnie otworzyć z jednym serwerem. Wartość ta musi być z przedziału od 1 do 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Maksymalna liczba połączeń keep-alive na serwer">
+<!-- PIPELINING -->
 <!ENTITY pipelining "Przetwarzanie potokowe">
 <!ENTITY network_http_pipelining_description "Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">
 <!ENTITY network_http_pipelining_maxrequests_description "To ustawienie określa maksymalną liczbę jednocześnie przetwarzanych potokowo zapytań, gdy przetwarzanie to jest włączone.">
@@ -296,12 +332,15 @@
 <!ENTITY network_http_pipelining_name "Użyj przetwarzania potokowego">
 <!ENTITY network_http_proxy_pipelining_description "To ustawienie określa, czy przetwarzanie potokowe ma być używane na serwerze proxy. Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">
 <!ENTITY network_http_proxy_pipelining_name "Używaj przetwarzania potokowego z serwerem proxy">
+<!-- DEVELOPMENT -->
 <!ENTITY developing "Programowanie">
+<!-- VIEW SOURCE -->
 <!ENTITY viewsource "Pokaz źródło strony">
 <!ENTITY view_source_editor_external_description "Używaj własnego edytora do wyświetlania źródła stron.">
 <!ENTITY view_source_editor_external_name "Używaj własnego edytora">
 <!ENTITY view_source_editor_path_description "Ścieżka do własnego edytora.">
 <!ENTITY view_source_editor_path_name "Ścieżka do edytora">
+<!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
 <!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
