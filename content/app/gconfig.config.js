@@ -155,7 +155,7 @@ var guiconfig = {
   
   setDescription: function(txt) {
     var description = txt || "";
-    if(description == "" || description == this.Elements.description.firstChild.data)
+    if(description == this.Elements.description.firstChild.data)
       return false;
     return this.Elements.description.replaceChild(document.createTextNode(description), this.Elements.description.firstChild);
   },
@@ -292,7 +292,7 @@ var guiconfig = {
               "value": node.getAttribute("label") || "",
               "control": key
             },
-            "description": node.getAttribute("description") || "",
+            "description": node.getAttribute("description"),
             "mode": node.getAttribute("mode") || "default",
             "indent": !!node.getAttribute("indent"),
             "validValues": new Array(),

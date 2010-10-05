@@ -22,9 +22,11 @@ GCElement.prototype.buildRow = function() {
   row.setAttribute("class", "optionRow");
   if(this.options.indent)
     row.setAttribute("class", "indent");
-  row.addEventListener("mouseover", gcCore.bindFn(function() {
-    guiconfig.setDescription(this.options.description);
-  }, this), false);
+  if(this.options.description != null) {
+    row.addEventListener("mouseover", gcCore.bindFn(function() {
+      guiconfig.setDescription(this.options.description);
+    }, this), false);
+  }
   
   /* create the box containing elements to change the option's value */
   if(is_defined(this.options.wrapper.elements)) {
