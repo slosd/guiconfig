@@ -11,10 +11,10 @@ VERSION="1.1.3a1"
 BUILD="pre"
 
 FFMINVERSION="3.0"
-FFMAXVERSION="4.0b8pre"
+FFMAXVERSION="4.0b9pre"
 
 BUILDDIR=".tmp"
-BUILDTYPE="release"
+BUILDTYPE="babelzilla"
 LOCALES="cs de en-US es-ES fr it-IT pl pt-BR ru-RU sv-SE zh-CN zh-TW"
 
 function validfile() {
