@@ -8,5 +8,5 @@ style chrome://guiconfig/content/button.xul chrome://guiconfig/skin/style/gcbutt
 overlay chrome://browser/content/browser.xul chrome://guiconfig/content/gui/browser.xul
 overlay chrome://browser/content/browser.xul chrome://guiconfig/content/gui/button.xul
 
-#locale guiconfig en-US locale~babelzilla/en-US/
-locale guiconfig de locale~babelzilla/de/
+locale guiconfig en-US locale~babelzilla/en-US/
+#locale guiconfig de locale~babelzilla/de/

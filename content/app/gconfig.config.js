@@ -19,18 +19,15 @@ var guiconfig = {
     this.XMLPreferences = new gcCore.Parser("chrome://guiconfig/content/preferences.xml");
     this.XMLPreferences.addGlobalFilters({
       "version": function(node) {
-        if(gcCore.GCPreferences.getBoolPref("matchversion")) {
-          var minVersion = node.getAttribute("minVersion"),
-              maxVersion = node.getAttribute("maxVersion"),
-              platform = node.getAttribute("platform");
-          if(!minVersion && !maxVersion && !platform) {
-            return true;
-          }
-          else {
-        	return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion) && (!platform || platform == gcCore.MozRuntime.OS);
-          }
+        var minVersion = node.getAttribute("minVersion"),
+            maxVersion = node.getAttribute("maxVersion"),
+            platform = node.getAttribute("platform");
+        if(!minVersion && !maxVersion && !platform) {
+          return true;
         }
-        return true;
+        else {
+          return gcCore.validateVersion(gcCore.MozInfo.version, minVersion, maxVersion) && (!platform || platform == gcCore.MozRuntime.OS);
+        }
       }
     });
     this.preparePreferenceParser();
@@ -334,6 +331,7 @@ var guiconfig = {
         }
       },
       "wrapper": {
+        "filter": "version",
         "handle": function(node) {
           switch(this.rule) {
             case "root":  // global wrapper
@@ -381,6 +379,7 @@ var guiconfig = {
         }
       },
       "bindings": {
+        "filter": "version",
         "parseNext": "wrapper-pref",
         "handle": function(node){
           var optionWrapper = this.getVar("lastCreatedOptionWrapper");
@@ -388,6 +387,7 @@ var guiconfig = {
         }
       },
       "dependencies": {
+        "filter": "version",
         "parseNext": "wrapper-pref",
         "handle": function(node){
           var optionWrapper = this.getVar("lastCreatedOptionWrapper");
@@ -395,6 +395,7 @@ var guiconfig = {
         }
       },
       "pref": {
+        "filter": "version",
         "rule": "wrapper-pref",
         "handle": function(node, wrapperProperty) {
           wrapperProperty.push(new Option(node.getAttribute("key"), {
