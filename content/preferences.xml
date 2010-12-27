@@ -1001,6 +1001,10 @@
                 description="&browser_tabs_animate_description;"
                 type="Bool"
                 minVersion="4.0b4" />
+          <pref key="browser.panorama.animate_zoom"
+                label="&browser_panorama_animate_zoom_name;"
+                description="&browser_panorama_animate_zoom_description;"
+                minVersion="4.0b4" />
 	        <pref key="browser.tabs.tabMinWidth" 
 	              label="&browser_tabs_tabMinWidth_name;"
 	              description=""

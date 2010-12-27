@@ -268,6 +268,8 @@
 <!ENTITY tabs "Tabs">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Appearance">
+<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
+<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animate tabs">
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
 <!ENTITY browser_tabs_tabMinWidth_name "Min. tab width">
