@@ -96,6 +96,8 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Session restore">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
@@ -126,6 +128,10 @@
 <!-- WEBSITES -->
 <!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
 <!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
+<!ENTITY mozilla_widget_render_mode_name "Enable Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Enables hardware acceleration for rendering. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
 <!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. "> 
 <!-- ALERTS -->
@@ -167,6 +173,8 @@
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Extensions">
 <!ENTITY getaddons "&quot;Get Add-ons&quot; pane">
+<!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
+<!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
 <!ENTITY extensions_checkCompatibility_description "This preference allows disabling of extension compatibility checking. ">
 <!ENTITY extensions_checkCompatibility_name "Enable extension compatibility checking">
 <!ENTITY extensions_getAddons_maxResults_description "Determines the maximum number of results to display in the pane when you perform a search.">
@@ -236,6 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Show image placeholders">
 <!ENTITY html5_enable_name "Enable the HTML5 parser">
 <!ENTITY svg_enabled_name "Enable SVG vector graphics">
+<!ENTITY svg_smil_enabled_name "Enable SVG animations">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "When viewing an image not in a web page, the image will be resized to fit in the browser window if it is too large for the browser window.">

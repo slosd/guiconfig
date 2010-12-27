@@ -23,7 +23,7 @@
   <wrapper id="mousewheel_action_scroll">
     <script name="dependencies">
       <![CDATA[
-      return value.get() == 0
+      return value.get() == 0;
       ]]>
     </script>
   </wrapper>
@@ -476,6 +476,16 @@
             </dependencies>
           </wrapper>
         </pref>
+        <pref key="browser.sessionstore.max_concurrent_tabs"
+              label="&browser_sessionstore_max_concurrent_tabs_name;"
+              description="&browser_sessionstore_max_concurrent_tabs_description;"
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+            </dependencies>
+          </wrapper>
+        </pref>
         <pref key="browser.sessionstore.max_windows_undo"
               label="&browser_sessionstore_max_windows_undo_name;"
               description="&browser_sessionstore_max_windows_undo_description;"
@@ -631,12 +641,33 @@
               minVersion="3.6" />
         <pref key="svg.enabled"
               label="&svg_enabled_name;"
-              description="" />
+              description=""
+              maxVersion="4.0b7" />
+        <pref key="svg.smil.enabled"
+              label="&svg_smil_enabled_name;"
+              description=""
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <dependencies maxVersion="4.0b7">
+              <pref key="svg.enabled" />
+            </dependencies>
+          </wrapper>
+        </pref>
         <pref key="webgl.enabled_for_all_sites"
               label="&webgl_enabled_for_all_sites_name;"
               description=""
               type="Bool"
               minVersion="4.0b1" />
+        <pref key="mozilla.widget.render-mode"
+              label="&mozilla_widget_render_mode_name;"
+              description="&mozilla_widget_render_mode_description;"
+              platform="WINNT"
+              minVersion="3.7a2" /><!-- ??? -->
+        <pref key="gfx.font_rendering.directwrite.enabled"
+              label="&gfx_font_rendering_directwrite_enabled_name;"
+              description="&gfx_font_rendering_directwrite_enabled_description;"
+              platform="WINNT"
+              minVersion="3.7a2" />
         <pref key="gfx.3d_video.enabled"
               label="&gfx_3d_video_enabled_name;"
               description="&gfx_3d_video_enabled_description;"
@@ -654,6 +685,10 @@
               minVersion="2.0b1"
               type="Bool"
               default="1" />
+        <pref key="extensions.alwaysUnpack"
+              label="&extensions_alwaysUnpack_name;"
+              description="extensions_alwaysUnpack_description;"
+              minVersion="4.0b6" /><!-- TODO get exact version -->
         <group label="&getaddons;" minVersion="3.0">
           <pref key="extensions.getAddons.showPane"
                 label="&extensions_getAddons_showPane_name;"
