@@ -659,10 +659,27 @@
               type="Bool"
               minVersion="4.0b1" />
         <pref key="mozilla.widget.render-mode"
-              label="&mozilla_widget_render_mode_name;"
-              description="&mozilla_widget_render_mode_description;"
+              minVersion="3.7a2"
               platform="WINNT"
-              minVersion="3.7a2" /><!-- ??? -->
+              type="Int"><!-- ??? -->
+          <wrapper>
+            <script name="setValue">
+              <![CDATA[
+              var checkbox = this.options.wrapper.elements.getElementsByTagName('checkbox')[0];
+              checkbox.set(value == 6);
+              ]]>
+            </script>
+            <script name="getValue">
+              <![CDATA[
+              var checkbox = this.options.wrapper.elements.getElementsByTagName('checkbox')[0];
+              return checkbox.get() ? 6 : -1;
+              ]]>
+            </script>
+            <elements>
+              <checkbox label="&mozilla_widget_render_mode_name;" description="&mozilla_widget_render_mode_description;" />
+            </elements>
+          </wrapper>
+        </pref>
         <pref key="gfx.font_rendering.directwrite.enabled"
               label="&gfx_font_rendering_directwrite_enabled_name;"
               description="&gfx_font_rendering_directwrite_enabled_description;"
