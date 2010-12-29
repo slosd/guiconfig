@@ -79,11 +79,15 @@ var guiconfig = {
     var popup = this.Elements.contextMenu,
         menuitems = popup.childNodes;
     popup.addEventListener("popupshowing", function(event) {
-      var node = document.popupNode;
+      var node = document.popupNode,
+          key, value;
       while(node.getAttribute("context") != "gcConfigContextMenu") {
         node = node.parentNode;
       }
-      this.currentOption = guiconfig.getPreferenceByKey(node.getAttribute("id").replace(/^gcPref/, ""));
+      var key = node.getAttribute("id").replace(/^gcPref(.*?)(#.*|$)/, "$1");
+      var value = node.getAttribute("id").replace(/^.*(?:#(.*))$/, "$1");
+      this.currentOption = guiconfig.getPreferenceByKey(key);
+      this.currentValue = value;
       if(this.currentOption.element.disabled) {
         event.preventDefault();
       }
@@ -439,7 +443,7 @@ var guiconfig = {
     	    var element = new GCBoolElement({
 	          "label": {
 	            "value": node.getAttribute("label") || "",
-	            "control": lastOption.key + "." + node.getAttribute("value")
+	            "control": lastOption.key + "#" + node.getAttribute("value")
 	          },
 	          "description": node.getAttribute("description") || "",
 	          "mode": "default",
