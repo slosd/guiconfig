@@ -90,6 +90,8 @@
 <!ENTITY layout_spellcheckDefault_o3 "Włącz dla wieloliniowych i jednoliniowych pól tekstowych">
 <!ENTITY session_restore "Przywracanie sesji">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Włącz przywracanie sesji">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Maksymalna liczba równocześnie przywracanych kart">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Kiedy ustawiona jest na 0, tylko aktywne karty zostaną przywrócone w każdym z otwartych okien, natomiast jeśli liczba ta zostanie ustawiona na mniejszą niż zero, wszystkie karty zostaną przywrócone w tym samym momencie.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Maksymalna liczba przywracanych kart">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maksymalna liczba kart wyświetlanych w menu &quot;Historia &gt; Ostatnio zamknięte karty&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Maksymalna liczba przywracalnych okien">
@@ -117,6 +119,10 @@
 <!ENTITY browser "Przeglądarka">
 <!ENTITY gfx_3d_video_enabled_name "Włącz wideo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Włącza stereoskopowe renderowanie trójwymiarowego wideo.">
+<!ENTITY mozilla_widget_render_mode_name "Włącz Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Włącza sprzętowe przyspieszanie renderowania (wymaga Windowsa 7 lub Windowsa Visty z aktualizacją &quot;Vista Platform&quot;).">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Włącz DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Włącza sprzętowe przyspieszanie wyświetlania tekstu (wymaga Windowsa 7 lub Windowsa Visty z aktualizacją &quot;Vista Platform&quot;).">
 <!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
 <!ENTITY geo_enabled_description "Kiedy ta funkcja jest włączona, Firefox może pytać Cię, czy chcesz poinformować obecnie odwiedzaną witrynę o swoim położeniu geograficzym. Odznaczenie tego pola całkowicie wyłącza tę funkcję.">
 <!ENTITY alerts "Okna informacyjne">
@@ -155,6 +161,8 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Ostatnio odwiedzone strony są przechowywane w pamięci, dzięki czemu mogą zostać wyświetlone szybciej po użyciu przycisków &quot;Wstecz&quot; oraz &quot;Do przodu&quot;. Gdy ustawienie to ma wartość -1, liczba stron przechowywanych w pamięci jest określana automatycznie. Nadanie mu wartości 0 powoduje, że żadne strony nie są przechowywane w pamięci.">
 <!ENTITY extensions "Rozszerzenia">
 <!ENTITY getaddons "Panel &quot;Pobierz rozszerzenia&quot;">
+<!ENTITY extensions_alwaysUnpack_name "Zawsze rozpakowuj rozszerzenia">
+<!ENTITY extensions_alwaysUnpack_description "Gdy to ustawienie jest włączone, rozszerzenia są rozpakowywane do katalogu Twojego profilu podczas ich instalacji.">
 <!ENTITY extensions_checkCompatibility_description "To ustawienie pozwala na wyłączenie sprawdzania zgodności rozszerzeń z wersją przeglądarki.">
 <!ENTITY extensions_checkCompatibility_name "Włącz sprawdzanie zgodności rozszerzeń">
 <!ENTITY extensions_getAddons_maxResults_description "Określa maksymalną liczbę wyników wyświetlanych w panelu podczas wyszukiwania.">
@@ -219,6 +227,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
 <!ENTITY html5_enable_name "Włącz parser HTML5">
 <!ENTITY svg_enabled_name "Włącz obsługę grafiki wektorowej SVG">
+<!ENTITY svg_smil_enabled_name "Włącz wyświetlanie animacji SVG">
 <!ENTITY webgl_enabled_for_all_sites_name "Włącz WebGL">
 <!ENTITY images "Obrazki">
 <!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">

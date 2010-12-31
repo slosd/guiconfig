@@ -479,7 +479,8 @@
         <pref key="browser.sessionstore.max_concurrent_tabs"
               label="&browser_sessionstore_max_concurrent_tabs_name;"
               description="&browser_sessionstore_max_concurrent_tabs_description;"
-              wrapper="checkbox_is_enabled">
+              minVersion="4.0b7"
+              wrapper="checkbox_is_enabled"><!-- check version -->
           <wrapper>
             <dependencies>
               <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
@@ -704,7 +705,7 @@
               default="1" />
         <pref key="extensions.alwaysUnpack"
               label="&extensions_alwaysUnpack_name;"
-              description="extensions_alwaysUnpack_description;"
+              description="&extensions_alwaysUnpack_description;"
               minVersion="4.0b6" /><!-- TODO get exact version -->
         <group label="&getaddons;" minVersion="3.0">
           <pref key="extensions.getAddons.showPane"
