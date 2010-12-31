@@ -1,4 +1,6 @@
 <!ENTITY accessibility "Accessibilité">
+<!ENTITY mousescrollvertical "Défilement vertical de la souris">
+<!ENTITY mousescrollhorizontal "Défilement horizontal de la souris">
 <!ENTITY mousescrollnone "sans touche">
 <!ENTITY mousescrollshift "avec la touche Maj">
 <!ENTITY mousescrollstrg "avec la touche Ctrl">
