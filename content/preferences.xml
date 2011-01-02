@@ -469,8 +469,7 @@
         <pref key="browser.sessionstore.max_tabs_undo"
               label="&browser_sessionstore_max_tabs_undo_name;"
               description="&browser_sessionstore_max_tabs_undo_description;"
-              wrapper="checkbox_is_enabled"
-              indent="indent">
+              wrapper="checkbox_is_enabled">
           <wrapper>
             <dependencies>
               <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
@@ -480,8 +479,7 @@
         <pref key="browser.sessionstore.max_windows_undo"
               label="&browser_sessionstore_max_windows_undo_name;"
               description="&browser_sessionstore_max_windows_undo_description;"
-              wrapper="checkbox_is_enabled"
-              indent="indent">
+              wrapper="checkbox_is_enabled">
           <wrapper>
             <dependencies>
               <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
@@ -492,19 +490,38 @@
               label="&browser_sessionstore_max_concurrent_tabs_name;"
               description="&browser_sessionstore_max_concurrent_tabs_description;"
               minVersion="4.0b7"
-              min="-1" /><!-- check version -->
+              min="-1"
+              wrapper="checkbox_is_enabled"><!-- check version -->
+          <wrapper>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+            </dependencies>
+          </wrapper>
+        </pref>
         <pref key="browser.sessionstore.privacy_level"
               label="&browser_sessionstore_privacy_level_name;"
               description="&browser_sessionstore_privacy_level_description;"
-              mode="select">
+              mode="select"
+              wrapper="checkbox_is_enabled">
           <option label="&browser_sessionstore_privacy_level_o1;">0</option>
           <option label="&browser_sessionstore_privacy_level_o2;">1</option>
           <option label="&browser_sessionstore_privacy_level_o3;">2</option>
+          <wrapper>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+            </dependencies>
+          </wrapper>
         </pref>
         <pref key="browser.sessionstore.resume_from_crash"
               label="&browser_sessionstore_resume_from_crash_name;"
               description="&browser_sessionstore_resume_from_crash_description;"
-              wrapper="checkbox_is_enabled" />
+              wrapper="checkbox_is_enabled">
+          <wrapper>
+            <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
+            </dependencies>
+          </wrapper>
+        </pref>
         <pref key="browser.sessionstore.max_resumed_crashes"
               label="&browser_sessionstore_max_resumed_crashes_name;"
               description="&browser_sessionstore_max_resumed_crashes_description;"
@@ -512,6 +529,7 @@
               indent="indent">
           <wrapper>
             <dependencies>
+              <pref key="guiconfig.pseudo.sessionstore.enable" type="Bool" />
               <pref key="browser.sessionstore.resume_from_crash" />
             </dependencies>
           </wrapper>
