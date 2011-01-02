@@ -248,6 +248,8 @@
 <!ENTITY ui_textSelectForeground_name "Kolor tekstu">
 <!ENTITY tabs "Karty">
 <!ENTITY appearance "Wygląd">
+<!ENTITY browser_panorama_animate_zoom_name "Animuj przechodzenie do trybu panoramicznego">
+<!ENTITY browser_panorama_animate_zoom_description "Wyświetlaj animacje podczas otwierania/zamykania panoramicznego widoku kart (skrót: CTRL-E).">
 <!ENTITY browser_tabs_animate_name "Animuj karty">
 <!ENTITY browser_tabs_animate_description "Włącza animacje odtwarzane podczas otwierania kart, zmiany ich kolejności i usuwania ich.">
 <!ENTITY browser_tabs_tabMinWidth_name "Minimalna szerokość karty">

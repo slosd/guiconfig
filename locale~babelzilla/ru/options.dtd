@@ -96,6 +96,8 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Восстановление сессии">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Одновременно восстанавливаемых вкладок">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Количество одновременно восстанавливаемых вкладок. Если задано 0, в каждом окне загрузится только выбранная вкладка. Если задано меньше 0 — все вкладки будут восстанавлены одновременно.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Восстанавливаемых вкладок">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Максимальное количество вкладок, отображаемых в меню «Журнал|Недавно закрытые вкладки».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
@@ -125,7 +127,11 @@
 <!ENTITY browser "Браузер">
 <!-- WEBSITES -->
 <!ENTITY gfx_3d_video_enabled_name "Включить 3D видео">
-<!ENTITY gfx_3d_video_enabled_description "Включает стереоскопическое построение и отображение для 3D видео.">
+<!ENTITY gfx_3d_video_enabled_description "Включает стереоскопическую визуализацию для 3D видео.">
+<!ENTITY mozilla_widget_render_mode_name "Включить Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Включает аппаратное ускорение для визуализации. (Требуется Windows 7 или Windows Vista с обновлением Vista Platform)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Включить DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Включает аппаратное ускорение для отображения текста. (Требуется Windows 7 или Windows Vista с обновлением Vista Platform)">
 <!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">
 <!ENTITY geo_enabled_description "Если включено, Firefox будет спрашивать вас хотите ли вы сообщить веб-сайту, посещаемому в настоящий момент, место вашего расположения. Отключение этой настройки выключает эту функцию полностью.">
 <!-- ALERTS -->
@@ -167,6 +173,8 @@
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Расширения">
 <!ENTITY getaddons "Панель «Поиск дополнений»">
+<!ENTITY extensions_alwaysUnpack_name "Всегда распаковывать расширения">
+<!ENTITY extensions_alwaysUnpack_description "Если включено, во время установки расширения будут распаковаться в папку вашего профиля.">
 <!ENTITY extensions_checkCompatibility_description "Эта настройка позволяет отключить проверку расширений на совместимость.">
 <!ENTITY extensions_checkCompatibility_name "Включить проверку расширений на совместимость">
 <!ENTITY extensions_getAddons_maxResults_description "Определяет максимальное число результатов, отображаемых в панели при выполнении поиска.">
@@ -236,6 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
 <!ENTITY html5_enable_name "Включить анализатор HTML5">
 <!ENTITY svg_enabled_name "Включить векторную (SVG) 2D графику">
+<!ENTITY svg_smil_enabled_name "Включить SVG-анимацию">
 <!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">
 <!ENTITY images "Изображения">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
@@ -259,6 +268,8 @@
 <!ENTITY tabs "Вкладки">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Внешний вид">
+<!ENTITY browser_panorama_animate_zoom_name "Анимировать масштабирование панорам">
+<!ENTITY browser_panorama_animate_zoom_description "Включает анимацию при открытии/закрытии панорамного просмотра вкладок (по Ctrl+E).">
 <!ENTITY browser_tabs_animate_name "Анимировать вкладки">
 <!ENTITY browser_tabs_animate_description "Включает анимацию при открытии новой вкладки, во время перетаскивания и отрывания вкладки.">
 <!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширина вкладки">

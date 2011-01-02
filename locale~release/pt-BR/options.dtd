@@ -96,6 +96,8 @@
 <!-- MISC -->
 <!ENTITY session_restore "Restauração de sessão">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Ativar restauração de sessão">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Abas fechadas a lembrar:">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Máximo de abas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir aba&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Janelas fechadas a lembrar:">
@@ -126,6 +128,10 @@
 <!-- CACHE -->
 <!ENTITY gfx_3d_video_enabled_name "Ativar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Ativa a exibição estereoscópica de vídeos 3D. (Exige equipamento compatível.)">
+<!ENTITY mozilla_widget_render_mode_name "Enable Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Enables hardware acceleration for rendering. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
 <!ENTITY geo_enabled_name "Ativar localização">
 <!ENTITY geo_enabled_description "Permite que o Firefox pergunte a você se deseja informar a sua localização atual aos sites que a requisitarem. Desmarque essa opção para desativar a geolocalização no Firefox.">
 <!-- EXTENSIONS -->
@@ -167,6 +173,8 @@
 <!-- SECURITY -->
 <!ENTITY extensions "Complementos">
 <!ENTITY getaddons "Painel &quot;Adicionar&quot;">
+<!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
+<!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
 <!ENTITY extensions_checkCompatibility_description "Desmarque essa opção para evitar a verificação de compatibilidade ao instalar extensões ou atualizações.">
 <!ENTITY extensions_checkCompatibility_name "Verificar compatibilidade das extensões">
 <!ENTITY extensions_getAddons_maxResults_description "Especifica quantos complementos no máximo devem ser listados ao se pesquisar na aba &quot;Adicionar&quot;.">
@@ -236,6 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
 <!ENTITY html5_enable_name "Ativar interpretador HTML5">
 <!ENTITY svg_enabled_name "Ativar gráficos vetoriais SVG">
+<!ENTITY svg_smil_enabled_name "Enable SVG animations">
 <!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
 <!ENTITY images "Imagens">
 <!ENTITY browser_enable_automatic_image_resizing_description "Reduz o tamanho de uma imagem avulsa (fora de uma página) maior que a janela do navegador para que ela seja exibida por completo no espaço disponível.">
@@ -259,6 +268,8 @@
 <!ENTITY tabs "Abas">
 <!-- NETWORK -->
 <!ENTITY appearance "Aparência">
+<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
+<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animar abas">
 <!ENTITY browser_tabs_animate_description "Anima as abas quando elas são abertas, reorganizadas e removidas.">
 <!ENTITY browser_tabs_tabMinWidth_name "Largura mínima das abas:">

@@ -96,6 +96,8 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Restauración de sesiones">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Habilitar la restauración de sesiones">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Número máximo de pestañas concurrentes">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "El número de pestañas que pueden restaurarse a la vez. Si se establece a 0, sólo la pestaña seleccionada se cargará en cada ventana. Si se establece a un valor menor que 0, todas las pestañas se restaurarán a la vez.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Pestañas máximas a restaurar">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Número máximo de pestañas mostradas en el menú &quot;Historial&quot; &quot;Pestañas cerradas recientemente&quot;">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Máximo de ventanas a restaurar">
@@ -126,6 +128,10 @@
 <!-- ALERTS -->
 <!ENTITY gfx_3d_video_enabled_name "Habilitar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Habilita el renderizado estereoscópico para los vídeos 3D.">
+<!ENTITY mozilla_widget_render_mode_name "Habilitar Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Habilita la aceleración hardware para el dibujado. (requiere Windows 7 o Windows Vista con la actualización de la plataforma Vista)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Habilitar DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Habilita la aceleración hardware para mostrar texto. (requiere Windows 7 o Windows Vista con la actualización de la plataforma Vista)">
 <!ENTITY geo_enabled_name "Habilitar navegación independiente de la ubicación">
 <!ENTITY geo_enabled_description "Cuando se habilita, Firefox le preguntará si quiere decirle a la página que está visitando actualmente donde estás ubicado. Si lo deshabilita se desactivará totalmente.">
 <!-- CACHE -->
@@ -167,6 +173,8 @@
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY extensions "Extensiones">
 <!ENTITY getaddons "Panel &quot;Obtener complementos&quot;">
+<!ENTITY extensions_alwaysUnpack_name "Descomprimir siempre las extensiones">
+<!ENTITY extensions_alwaysUnpack_description "Si se habilita, las extensiones se descomprimerán en la carpeta del perfil durante la instalación">
 <!ENTITY extensions_checkCompatibility_description "Esta opción le permite deshabilitar la comprobación de la compatibilidad de extensiones.">
 <!ENTITY extensions_checkCompatibility_name "Habilitar la comprobación de compatibilidad de extensiones">
 <!ENTITY extensions_getAddons_maxResults_description "Determina el máximo número de resultados a mostrar en el panel al realizar una búsqueda.">
@@ -236,6 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar los marcadores de posición para las imágenes">
 <!ENTITY html5_enable_name "Habilitar el analizador HTML5">
 <!ENTITY svg_enabled_name "Habilitar gráficos vectoriales SVG">
+<!ENTITY svg_smil_enabled_name "Habilitar animaciones SVG">
 <!ENTITY webgl_enabled_for_all_sites_name "Habilitar WebGL">
 <!ENTITY images "Imágenes">
 <!ENTITY browser_enable_automatic_image_resizing_description "Al ver una página web, la imagen se redimensionará para encajarla en la ventana del navegador si es demasiado grande.">
@@ -259,6 +268,8 @@
 <!ENTITY tabs "Pestañas">
 <!-- TAB PREVIEW -->
 <!ENTITY appearance "Apariencia">
+<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
+<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Pestañas animadas">
 <!ENTITY browser_tabs_animate_description "Habilita las pestañas animadas al abrir una nueva pestaña o al colocar las pestañas.">
 <!ENTITY browser_tabs_tabMinWidth_name "Ancho mín de pestañas">

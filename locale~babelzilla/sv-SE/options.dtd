@@ -258,9 +258,9 @@
 <!ENTITY gfx_downloadable_fonts_enabled_description "Medger nerladdning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Markerad text">
-<!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för sidsökfältet genom att välja en hexkod eller en namngiven färg. ">
+<!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för sidsökfältet genom att välja en hexkod eller en namngiven färg.">
 <!ENTITY ui_textSelectBackgroundAttention_name "Sidsökfältets bakgrundsfärg">
-<!ENTITY ui_textSelectBackground_description "Ändra bakgrundsfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde. ">
+<!ENTITY ui_textSelectBackground_description "Ändra bakgrundsfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">
 <!ENTITY ui_textSelectBackground_name "Bakgrundsfärg">
 <!ENTITY ui_textSelectForeground_description "Ändra textfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">
 <!ENTITY ui_textSelectForeground_name "Textfärg">
@@ -268,24 +268,26 @@
 <!ENTITY tabs "Flikar">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Utseende">
+<!ENTITY browser_panorama_animate_zoom_name "Animera panoramazoomning">
+<!ENTITY browser_panorama_animate_zoom_description "Aktivera animationer när du öppnar/stänger Panoramavyn för dina flikar (vid Ctrl+E).">
 <!ENTITY browser_tabs_animate_name "Animera flikar">
-<!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om ovh när en flik tas bort. ">
+<!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om ovh när en flik tas bort.">
 <!ENTITY browser_tabs_tabMinWidth_name "Flikbredd (minimum)">
 <!ENTITY browser_tabs_tabMaxWidth_name "Flikbredd (maximum)">
-<!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar skall visas. ">
+<!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar skall visas.">
 <!ENTITY browser_tabs_closeButtons_name "Stängknappar för flikar visas">
 <!ENTITY browser_tabs_closeButtons_o1 "endast på den aktiva fliken">
 <!ENTITY browser_tabs_closeButtons_o2 "på varje flik">
 <!ENTITY browser_tabs_closeButtons_o3 "aldrig">
 <!ENTITY browser_tabs_closeButtons_o4 "i slutet av flikfältet">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. flikbredd för stängknappar">
-<!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar skall visas. ">
+<!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar skall visas.">
 <!-- TAB PREVIEW -->
 <!ENTITY tab_preview "Förhandsvisning av flik">
 <!ENTITY browser_allTabs_preview_name "Aktivera förhandsvisning av flik">
-<!ENTITY browser_allTabs_preview_description "Det här lägger till en knapp till höger om flikfältet, som när den klickas visar en förhandsvisning av fliken. ">
+<!ENTITY browser_allTabs_preview_description "Det här lägger till en knapp till höger om flikfältet, som när den klickas visar en förhandsvisning av fliken.">
 <!ENTITY browser_ctrlTab_preview_name "Aktivera förhandsvisning vid byte av flik">
-<!ENTITY browser_ctrlTab_preview_description "När [CTRL]+[TAB] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad. ">
+<!ENTITY browser_ctrlTab_preview_description "När [CTRL]+[TAB] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
 <!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet i Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (endast Windows 7).">
 <!-- OPEN IN BACKGROUND -->
@@ -295,7 +297,7 @@
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Bokmärken">
 <!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Öppna ny flik bredvid aktuell flik">
-<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bestämmer om en ny flik öppnas i slutet av flikfältet eller precis efter den för närvarande aktiva fliken. ">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bestämmer om en ny flik öppnas i slutet av flikfältet eller precis efter den för närvarande aktiva fliken.">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "När en flik stängs, växla till fliken som öppnade den">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "När en flik stängs, byt fokus till fliken som öppnade den. I annat fall, växla till den angränsande fliken till höger eller den angränsande fliken till vänster. ">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Stäng fönstret när sista fliken stängs">
