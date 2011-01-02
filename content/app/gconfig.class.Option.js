@@ -11,7 +11,12 @@ Option.prototype.onDialogComplete = function() {
     this.element.observer.add(this.onElementChange, this);  // track element from now on
   }
   this.preference.observer.add(this.onPrefChange, this);
-  this.poll();
+  if(!this.preference.exists && this.key.indexOf('guiconfig.pseudo') == 0 && this.options.defaultValue) {
+    this.set(this.options.defaultValue);
+  }
+  else {
+    this.poll();
+  }
   for(var i = 0, l = this.options.wrapper.dependencies.length; i < l; i++) {
     var option = guiconfig.getPreferenceByKey(this.options.wrapper.dependencies[i].key);
     if(!is_defined(option)) {
@@ -90,7 +95,7 @@ Option.prototype.reset = function() {
     this.set(this.options.wrapper.scripts.resetPref.call(this));
   }
   else {
-    this.set(this.preference.getDefault());
+    this.set(this.options.defaultValue || this.preference.getDefault());
     if(this.options.instantApply) {
       this.save();
     }
