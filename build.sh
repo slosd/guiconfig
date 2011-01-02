@@ -7,15 +7,16 @@
 
 APPNAME="gui:config"
 SHORTNAME="guiconfig"
-VERSION="1.1.3a2"
+VERSION="1.1.3b1"
 BUILD="pre"
 
 FFMINVERSION="3.0"
 FFMAXVERSION="4.0b9pre"
 
 BUILDDIR=".tmp"
-BUILDTYPE="babelzilla"
-LOCALES="cs de en-US es-ES fr it-IT pl pt-BR ru-RU sv-SE zh-CN zh-TW"
+#BUILDTYPE="babelzilla"
+BUILDTYPE="release"
+LOCALES="cs de en-US es-ES fr it-IT pl pt-BR ru sv-SE zh-CN zh-TW"
 
 function validfile() {
   if [ ! -f $1 ]; then return 1; fi

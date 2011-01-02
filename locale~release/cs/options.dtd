@@ -96,8 +96,10 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Obnova relace">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Povolit obnovu relace">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. počet najednou obnovených panelů">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Počet panelů, které se mohou najednou obnovit. Je-li nastavena 0, v každém okně se obnoví pouze vybraný panel. Je-li nastavena hodnota menší než 0, najednou budou obnoveny všechny panely.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. panelů pro obnovu">
-<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximální počet panelů, které jsou zobrazeny v nabídce „Historie“ – „Naposledy zavřené panelu“">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximální počet panelů, které jsou zobrazeny v nabídce „Historie“ – „Naposledy zavřené panely“">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. oken pro obnovu">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Maximální počet oken, která jsou zobrazena v nabídce „Historie“ – „Naposledy zavřená okna“">
 <!ENTITY browser_sessionstore_resume_from_crash_name "Obnovit relaci po pádu">
@@ -126,6 +128,10 @@
 <!-- ALERTS -->
 <!ENTITY gfx_3d_video_enabled_name "Povolit 3D video">
 <!ENTITY gfx_3d_video_enabled_description "Povolí stereoskopické vykreslování trojrozměrných videí.">
+<!ENTITY mozilla_widget_render_mode_name "Povolit Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Povolí hardwarovou akceleraci pro vykreslování. (Vyžaduje Windows 7 nebo Windows Vista s aktualizací Vista Platform.)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Povolit DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Povolí hardwarovou akceleraci pro zobrazování textu. (Vyžaduje Windows 7 nebo Windows Vista s aktualizací Vista Platform.)">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">
 <!ENTITY geo_enabled_description "Pokud je povoleno, Firefox se smí zeptat, zda oznámit navštěvované stránce místo, kde se nacházíte. Zakázání této možnosti tuto vlastnost zcela vypne.">
 <!-- CACHE -->
@@ -167,6 +173,8 @@
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY extensions "Rozšíření">
 <!ENTITY getaddons "Panel „Získat nové doplňky“">
+<!ENTITY extensions_alwaysUnpack_name "Vždy rozbalovat rozšíření">
+<!ENTITY extensions_alwaysUnpack_description "Je-li povoleno, jsou rozšíření během instalace rozbalena do složky profilu.">
 <!ENTITY extensions_checkCompatibility_description "Tato předvolba umožňuje vypnout kontrolu kompatibility rozšíření.">
 <!ENTITY extensions_checkCompatibility_name "Zapnout kontrolu kompatibility rozšíření">
 <!ENTITY extensions_getAddons_maxResults_description "Určuje maximální počet výsledků, který se bude zobrazovat v panelu při vyhledávání.">
@@ -236,6 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Zobrazit zástupný obrázek">
 <!ENTITY html5_enable_name "Povolit parser HTML5">
 <!ENTITY svg_enabled_name "Povolit vektorovou grafiku SVG">
+<!ENTITY svg_smil_enabled_name "Povolit animované SVG">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
 <!ENTITY images "Obrázky">
 <!ENTITY browser_enable_automatic_image_resizing_description "Pokud je obrázek prohlížený mimo stránku příliš velký, bude změněna jeho velikost, aby se vešel do okna prohlížeče.">
@@ -259,6 +268,8 @@
 <!ENTITY tabs "Panely">
 <!-- TAB PREVIEW -->
 <!ENTITY appearance "Vzhled">
+<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
+<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animovat panely">
 <!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
 <!ENTITY browser_tabs_tabMinWidth_name "Min. šířka panelu">

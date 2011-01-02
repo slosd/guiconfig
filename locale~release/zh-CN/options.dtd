@@ -96,6 +96,8 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "浏览会话恢复">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "启用浏览会话恢复">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "最大可同时恢复的标签页数">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "可同时恢复打开的最大标签页数量。如果设置为 0 则仅允许每个窗口恢复显示一个所选标签页。如果设置为 0 以下的数值则同时恢复显示所有标签页。">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "最大可恢复的标签页数">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
@@ -126,6 +128,10 @@
 <!-- WEBSITES -->
 <!ENTITY gfx_3d_video_enabled_name "启用 3D 视频">
 <!ENTITY gfx_3d_video_enabled_description "启用 3D 视频的立体渲染功能。">
+<!ENTITY mozilla_widget_render_mode_name "启用 Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "启用硬件加速渲染网页。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "启用 DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "启用硬件加速显示文本。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">
 <!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">
 <!-- ALERTS -->
@@ -166,7 +172,9 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近访问过的页面可以保存在内存中并在点击前进/后退按钮时加快显示。如果该值设为 -1 则使用自动设定的页面数，如果设置为 0 则页面不保存到内存中。">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "扩展">
-<!ENTITY getaddons "“获得扩充软件”面板">
+<!ENTITY getaddons "“获取附加组件”面板">
+<!ENTITY extensions_alwaysUnpack_name "总是解压缩显示扩展">
+<!ENTITY extensions_alwaysUnpack_description "如果启用该项，则扩展在安装时将解压缩到您的配置文件夹。">
 <!ENTITY extensions_checkCompatibility_description "这个选项允许打开或者关闭扩展兼容性检查">
 <!ENTITY extensions_checkCompatibility_name "打开扩展兼容性检查">
 <!ENTITY extensions_getAddons_maxResults_description "决定“获得扩充软件”中的最大查找结果">
@@ -236,6 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
 <!ENTITY html5_enable_name "启用 HTML5 解析器">
 <!ENTITY svg_enabled_name "启用 SVG 矢量图形">
+<!ENTITY svg_smil_enabled_name "启用 SVG 动态效果">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
 <!ENTITY images "图片">
 <!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">
@@ -259,6 +268,8 @@
 <!ENTITY tabs "标签页">
 <!-- APPEARANCE -->
 <!ENTITY appearance "外观">
+<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
+<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "标签页动态效果">
 <!ENTITY browser_tabs_animate_description "在标签页重新整理和拖拽时显示打开新标签页的动态效果。">
 <!ENTITY browser_tabs_tabMinWidth_name "标签页最小宽度">
