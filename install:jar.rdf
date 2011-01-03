@@ -24,14 +24,15 @@
     <em:optionsURL>chrome://guiconfig/content/gui/pref.xul</em:optionsURL>
     
     <em:translator>Stanislav Horáček (cs)</em:translator>
-    <em:translator>Markus Stadler (de)</em:translator>
-    <em:translator>Jürgen Berg (en-US)</em:translator>
+    <em:translator>Markus Stadler, slosd (de)</em:translator>
+    <em:translator>Jürgen Berg, slosd (en-US)</em:translator>
     <em:translator>Proyecto Nave - http://www.proyectonave.es (es-ES)</em:translator>
     <em:translator>myahoo (fr)</em:translator>
     <em:translator>Indigo - www.extenzilla.org (it-IT)</em:translator>
     <em:translator>Wacław Jacek (pl-PL)</em:translator>
     <em:translator>Éctor (petruc) from BabelZilla.org (pt-BR)</em:translator>
     <em:translator>Пирятинский Виталий (ru-RU)</em:translator>
+    <em:translator>Mikael Hiort af Ornäs (sv-SE)</em:translator>
     <em:translator>fang5566, taizi (zh-CN)</em:translator>
     <em:translator>Tsprajna (zh-TW)</em:translator>
     
