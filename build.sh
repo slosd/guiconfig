@@ -7,8 +7,8 @@
 
 APPNAME="gui:config"
 SHORTNAME="guiconfig"
-VERSION="1.1.3b1"
-BUILD="pre"
+VERSION="1.1.3"
+BUILD="final"
 
 FFMINVERSION="3.0"
 FFMAXVERSION="4.0.*"
