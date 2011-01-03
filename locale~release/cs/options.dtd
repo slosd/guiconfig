@@ -268,8 +268,8 @@
 <!ENTITY tabs "Panely">
 <!-- TAB PREVIEW -->
 <!ENTITY appearance "Vzhled">
-<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
-<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_panorama_animate_zoom_name "Animovat přiblížení Panorama">
+<!ENTITY browser_panorama_animate_zoom_description "Povolí animace při otevírání/zavírání zobrazení panelů zvaného Panorama (při CTRL-E).">
 <!ENTITY browser_tabs_animate_name "Animovat panely">
 <!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
 <!ENTITY browser_tabs_tabMinWidth_name "Min. šířka panelu">

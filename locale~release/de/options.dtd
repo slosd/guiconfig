@@ -96,8 +96,8 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "Sitzung wiederherstellen">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. Zahl simultaner Tabs">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Die Anzahl der gleichzeitig zu ladenden Tabs. Bei 0 wird in jedem Fenster nur der gerade ausgewählte Tab geladen. Bei einem Wert unter 0, werden alle Tabs gleichzeitig geladen.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. wiederherstellbare Tabs">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximale Anzahl von Tabs, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">
@@ -128,10 +128,10 @@
 <!-- WEBSITES -->
 <!ENTITY gfx_3d_video_enabled_name "3D Video aktivieren">
 <!ENTITY gfx_3d_video_enabled_description "Aktiviert stereoskopisches Rendern für 3D Videos.">
-<!ENTITY mozilla_widget_render_mode_name "Enable Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "Enables hardware acceleration for rendering. (requires Windows 7 or Windows Vista with Vista Platform update)">
-<!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
-<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY mozilla_widget_render_mode_name "Aktiviere Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "Aktiviert Hardwarebeschleunigung für die Darstellung. (benötigt Windows 7 oder Windows Vista mit Vista Platform Update)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktiviere DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiviert Hardwarebeschleunigung für die Textdarstellung. (benötigt Windows 7 oder Windows Vista mit Vista Platform Update)">
 <!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
 <!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
 <!-- ALERTS -->
@@ -173,8 +173,8 @@
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Add-ons">
 <!ENTITY getaddons "&quot;Add-ons herunterladen&quot; Schaltfläche">
-<!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
-<!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
+<!ENTITY extensions_alwaysUnpack_name "Erweiterungen immer entpacken">
+<!ENTITY extensions_alwaysUnpack_description "Wenn aktiviert, werden Erweiterungen während der Installation in Ihrem Profilordner entpackt.">
 <!ENTITY extensions_checkCompatibility_description "Wenn die Kompatibilitätsprüfung für Add-ons deaktiviert wird, können z.B. Testversionen von Add-ons installieren werden.">
 <!ENTITY extensions_checkCompatibility_name "Add-ons Kompatibilitätsprüfung aktivieren">
 <!ENTITY extensions_getAddons_maxResults_description "Legt die Anzahl der maximal anzuzeigenden Suchergebnisse fest.">
@@ -244,7 +244,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
 <!ENTITY html5_enable_name "HTML5 Parser benutzen">
 <!ENTITY svg_enabled_name "SVG Vektor Grafiken anzeigen">
-<!ENTITY svg_smil_enabled_name "Enable SVG animations">
+<!ENTITY svg_smil_enabled_name "Aktiviere SVG Animationen">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
@@ -268,8 +268,8 @@
 <!ENTITY tabs "Tabs">
 <!-- APPEARANCE -->
 <!ENTITY appearance "Anzeige">
-<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
-<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_panorama_animate_zoom_name "Animiere Panorama Zoom">
+<!ENTITY browser_panorama_animate_zoom_description "Aktiviert die Animation beim Öffnen und Schließen der Panorama-Ansicht Ihrer Tabs (mit STRG-E).">
 <!ENTITY browser_tabs_animate_name "Tabs animieren">
 <!ENTITY browser_tabs_animate_description "Aktiviert Animationen wenn ein neuer Tab geöffnet wird, wenn Tabs verschoben werden und wenn ein Tab von der Tableiste gezogen wird.">
 <!ENTITY browser_tabs_tabMinWidth_name "Minimale Tab-Breite">

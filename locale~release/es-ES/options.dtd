@@ -268,8 +268,8 @@
 <!ENTITY tabs "Pestañas">
 <!-- TAB PREVIEW -->
 <!ENTITY appearance "Apariencia">
-<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
-<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_panorama_animate_zoom_name "Animación en el zoom panorámico">
+<!ENTITY browser_panorama_animate_zoom_description "Habilita las animaciones al abrir/cerrar la vista panorámica para todas las pestañas (CTRL-E).">
 <!ENTITY browser_tabs_animate_name "Pestañas animadas">
 <!ENTITY browser_tabs_animate_description "Habilita las pestañas animadas al abrir una nueva pestaña o al colocar las pestañas.">
 <!ENTITY browser_tabs_tabMinWidth_name "Ancho mín de pestañas">
