@@ -629,6 +629,7 @@
           <pref key="browser.sessionhistory.max_total_viewers"
                 label="&browser_sessionhistory_max_total_viewers_name;"
                 description="&browser_sessionhistory_max_total_viewers_description;"
+                type="Int"
                 min="-1" />
         </group>
       </tab>
@@ -636,6 +637,7 @@
         <pref key="geo.enabled"
               label="&geo_enabled_name;"
               description="&geo_enabled_description;"
+              type="Bool"
               minVersion="3.5" />
         <pref key="html5.enable"
               label="&html5_enable_name;"
@@ -645,10 +647,12 @@
         <pref key="svg.enabled"
               label="&svg_enabled_name;"
               description=""
+              type="Bool"
               maxVersion="4.0b7" />
         <pref key="svg.smil.enabled"
               label="&svg_smil_enabled_name;"
               description=""
+              type="Bool"
               wrapper="checkbox_is_enabled">
           <wrapper>
             <dependencies maxVersion="4.0b7">
@@ -687,10 +691,12 @@
               label="&gfx_font_rendering_directwrite_enabled_name;"
               description="&gfx_font_rendering_directwrite_enabled_description;"
               platform="WINNT"
+              type="Bool"
               minVersion="3.7a2" />
         <pref key="gfx.3d_video.enabled"
               label="&gfx_3d_video_enabled_name;"
               description="&gfx_3d_video_enabled_description;"
+              type="Bool"
               minVersion="4.0b5" />
         <pref key="gfx.downloadable_fonts.enabled"
               label="&gfx_downloadable_fonts_enabled_name;"
@@ -708,6 +714,7 @@
         <pref key="extensions.alwaysUnpack"
               label="&extensions_alwaysUnpack_name;"
               description="&extensions_alwaysUnpack_description;"
+              type="Bool"
               minVersion="4.0b6" /><!-- TODO get exact version -->
         <group label="&getaddons;" minVersion="3.0">
           <pref key="extensions.getAddons.showPane"
