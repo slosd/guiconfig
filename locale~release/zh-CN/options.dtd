@@ -268,8 +268,8 @@
 <!ENTITY tabs "标签页">
 <!-- APPEARANCE -->
 <!ENTITY appearance "外观">
-<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
-<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_panorama_animate_zoom_name "动态显示 Panorama 缩放">
+<!ENTITY browser_panorama_animate_zoom_description "打开/关闭标签页 Panorama 视图时启用动态效果（CTRl-E）。">
 <!ENTITY browser_tabs_animate_name "标签页动态效果">
 <!ENTITY browser_tabs_animate_description "在标签页重新整理和拖拽时显示打开新标签页的动态效果。">
 <!ENTITY browser_tabs_tabMinWidth_name "标签页最小宽度">
