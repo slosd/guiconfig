@@ -121,7 +121,7 @@ GCElement.prototype.hasButton = function(buttonName) {
 
 /* the "locked" property is used for options that don't exist in the about:config */
 GCElement.prototype.__defineSetter__("locked", function(lock) {
-  if(this.options.locked != lock) {
+  if(this.options.locked != lock && this.options.wrapper.elements == null) {
     this.disabled = lock;
     lock ? this.addButton("edit") : this.removeButton("edit");
     this.options.locked = lock;
@@ -135,7 +135,7 @@ GCElement.prototype.__defineGetter__("locked", function() {
 
 /* the "disabled" property is used for options that aren't supposed to be edited right away */
 GCElement.prototype.__defineSetter__("disabled", function(disable) {
-  if(this.options.disabled != disable) {
+  if(this.options.disabled != disable && this.options.wrapper.elements == null) {
     var optionElement = this.elements.element.getOptionElement();
     var elements = [
       optionElement,
