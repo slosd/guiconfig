@@ -1,4 +1,7 @@
 <!ENTITY accessibility "Доступність">
+<!ENTITY mousebehaviour "Поведінка миші">
+<!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
+<!ENTITY mousescrollhorizontal "Горизонтальний скролінг мишею">
 <!ENTITY mouseclick "Клацання мишкою">
 <!ENTITY middleclick "Середня клавіша">
 <!ENTITY middlemouse_paste_name "Вставити текст з буферу обміну">
