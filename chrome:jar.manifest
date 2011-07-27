@@ -5,6 +5,8 @@ skin		guiconfig		classic/1.0			jar:chrome/guiconfig.jar!/skin/
 style		chrome://global/content/customizeToolbar.xul	chrome://guiconfig/skin/style/gcbutton.css
 style		chrome://guiconfig/content/button.xul			chrome://guiconfig/skin/style/gcbutton.css
 
+override chrome://guiconfig/content/gui/inlinepref.xul chrome://guiconfig/content/gui/pref.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion<=6.*
+
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/gui/browser.xul
 overlay		chrome://browser/content/browser.xul			chrome://guiconfig/content/gui/button.xul
 

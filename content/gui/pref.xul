@@ -10,7 +10,6 @@
 	<prefpane id="gcpanecommon" label="">
 		<preferences>
 			<preference id="pref_todefault_ask" name="extensions.guiconfig.todefault.ask" type="bool"/>
-			<preference id="pref_matchversion" name="extensions.guiconfig.matchversion" type="bool"/>
 			<preference id="pref_sticktopreferences" name="extensions.guiconfig.sticktopreferences" type="bool"/>
 		</preferences>
 		
