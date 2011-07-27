@@ -728,7 +728,7 @@
         </group>
       </tab>
       <tab label="&bookmarks;">
-        <group label="&microsummaries;" minVersion="2.0">
+        <group label="&microsummaries;" minVersion="2.0" maxVersion="5.*">
           <pref key="browser.microsummary.enabled"
                 label="&browser_microsummary_enabled_name;"
                 description="&browser_microsummary_enabled_description;" />
