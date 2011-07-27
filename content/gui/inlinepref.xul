@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://guiconfig/locale/gcPrefs.dtd">
+ 
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <setting pref="extensions.guiconfig.todefault.ask" type="bool" title="&prefs.todefault.ask.title;">
+    &prefs.todefault.ask;
+  </setting>
+  <setting pref="extensions.guiconfig.sticktopreferences" type="bool" title="&prefs.sticktopreferences.title;">
+    &prefs.sticktopreferences;
+  </setting>
+</vbox>
