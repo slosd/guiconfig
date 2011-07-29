@@ -703,6 +703,11 @@
               description="&gfx_downloadable_fonts_enabled_description;"
               type="Bool"
               minVersion="3.1" />
+        <pref key="dom.max_script_run_time"
+              label="&dom_max_script_run_time_name;"
+              description="&dom_max_script_run_time_description;"
+              type="Int"
+              min="0" />
       </tab>
       <tab label="&extensions;">
         <pref key="extensions.checkCompatibility"
