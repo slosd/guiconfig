@@ -1188,6 +1188,11 @@
             label="&browser_dom_window_dump_enabled_name;" 
             description="&browser_dom_window_dump_enabled_description;"
             type="Bool" />
+      <pref key="devtools.inspector.enabled"
+            label="&devtools_inspector_enabled_name;"
+            description="&devtools_inspector_enabled_description;"
+            type="Bool"
+            minVersion="4.0" />
       <pref key="javascript.options.strict"
             label="&javascript_options_strict_name;"
             description="&javascript_options_strict_description;"
