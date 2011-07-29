@@ -1,4 +1,5 @@
 <!ENTITY prefs.label "Налаштування">
+<!ENTITY prefs.todefault.ask.title "Ask before restoring">
 <!ENTITY prefs.todefault.ask "Запитувати перед відновленням значень за умовчанням">
-<!ENTITY prefs.matchversion "Показувати лише ті налаштування, що сумісні з версією firefox">
+<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
 <!ENTITY prefs.sticktopreferences "Розмістити елемент меню gui:config після &quot;Налаштування&quot;">
