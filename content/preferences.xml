@@ -889,6 +889,12 @@
                 description="&browser_download_manager_alertOnEXEOpen_description;"
                 type="Bool"
                 default="1" />
+          <pref key="browser.download.manager.addToRecentDocs"
+                label="&browser_download_manager_addToRecentDocs_name;"
+                description="&browser_download_manager_addToRecentDocs_description;"
+                type="Bool"
+                default="1"
+                platform="WINNT" />
           <pref key="browser.download.lastDir"
                 label="&browser_download_lastDir_name;"
                 description="&browser_download_lastDir_description;"
