@@ -1,4 +1,3 @@
 <!ENTITY prefs.label "- opcje">
 <!ENTITY prefs.todefault.ask "Pytaj przed przywróceniem domyślnych ustawień">
-<!ENTITY prefs.matchversion "Wyświetlaj wyłącznie opcje kompatybilne z używaną wersją Firefoksa">
 <!ENTITY prefs.sticktopreferences "Umieść wpis gui:config w menu pod wpisem &quot;Preferencje&quot;">
