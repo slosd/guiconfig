@@ -7,18 +7,14 @@
      title="gui:config &prefs.label;"
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<prefpane id="gcpanecommon" label="">
-		<preferences>
-			<preference id="pref_todefault_ask" name="extensions.guiconfig.todefault.ask" type="bool"/>
-			<preference id="pref_sticktopreferences" name="extensions.guiconfig.sticktopreferences" type="bool"/>
-		</preferences>
-		
-		<hbox>
-			<checkbox preference="pref_todefault_ask" label="&prefs.todefault.ask;"/>
-		</hbox>
-		<hbox>
-			<checkbox preference="pref_sticktopreferences" label="&prefs.sticktopreferences;"/>
-		</hbox>
-	</prefpane>
+  <prefpane id="gcpanecommon" label="">
+    <preferences>
+      <preference id="pref_todefault_ask" name="extensions.guiconfig.todefault.ask" type="bool"/>
+    </preferences>
+    
+    <hbox>
+      <checkbox preference="pref_todefault_ask" label="&prefs.todefault.ask;"/>
+    </hbox>
+  </prefpane>
 
 </prefwindow>
