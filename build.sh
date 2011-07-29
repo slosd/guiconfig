@@ -7,14 +7,14 @@
 
 APPNAME="gui:config"
 SHORTNAME="guiconfig"
-VERSION="1.1.5a2"
-BUILD="pre"
+VERSION="1.1.5b1"
+BUILD="final"
 
 FFMINVERSION="3.0"
 FFMAXVERSION="7.*"
 
-BUILDTYPE="babelzilla"
-#BUILDTYPE="release"
+#BUILDTYPE="babelzilla"
+BUILDTYPE="release"
 LOCALES="cs de en-US es-ES fr it-IT pl pt-BR ru sv-SE zh-CN zh-TW"
 
 BUILDDIR=".tmp"

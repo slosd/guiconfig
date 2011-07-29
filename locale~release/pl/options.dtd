@@ -126,6 +126,8 @@
 <!-- BROWSER -->
 <!ENTITY browser "Przeglądarka">
 <!-- WEBSITES -->
+<!ENTITY dom_max_script_run_time_description "Określa liczbę sekund, po których Firefox informuje, ze skrypt wykonywany jest zbyt długo.">
+<!ENTITY dom_max_script_run_time_name "Maks. czas działania skryptów (w sek.)">
 <!ENTITY gfx_3d_video_enabled_name "Włącz wideo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Włącza stereoskopowe renderowanie trójwymiarowego wideo.">
 <!ENTITY mozilla_widget_render_mode_name "Włącz Direct2D">
@@ -185,6 +187,13 @@
 <!ENTITY extensions_hideInstallButton_name "Ukryj przycisk &quot;Zainstaluj&quot;">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Menedżer pobierania plików">
+<!ENTITY browser_download_manager_quitBehavior_description "Określa co robić z pobieranymi plikami, kiedy Firefox jest zamykany.">
+<!ENTITY browser_download_manager_quitBehavior_name "Traktowanie pobieranych plików przy zamykaniu">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Wstrzymaj i wznów po ponownym uruchomieniu">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Wstrzymaj">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Anuluj">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Określa, czy pobrane pliki mają być dodawane do menu &quot;Ostatnie dokumenty&quot; menu Start.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Dodawaj pobrane pliki do menu &quot;Ostatnie dokumenty&quot;">
 <!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
 <!ENTITY browser_download_lastDir_name "Ostatni katalog pobierania">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Ostrzegaj, jeżeli podjęta zostanie próba otwarcia wykonywalnego pliku w menedżerze pobierania.">
@@ -354,6 +363,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
+<!ENTITY devtools_inspector_enabled_description "Włącza inspektora w menu &quot;Programista WWW&quot; (wymaga ponownego uruchomienia Firefoksa).">
+<!ENTITY devtools_inspector_enabled_name "Włącz inspektora">
 <!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
 <!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
 <!ENTITY javascript_options_showInConsole_description "Określa, czy błędy i ostrzeżenia od chrome'a mają być wyświetlane w konsoli JavaScriptu.">

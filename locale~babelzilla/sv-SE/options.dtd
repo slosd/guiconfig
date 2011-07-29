@@ -20,8 +20,8 @@
 <!ENTITY mousewheel_sysnumlines_description "Med det här alternativet bestäms antalet rader att rulla av ditt operativsystem">
 <!ENTITY mouseclick "Musklick">
 <!ENTITY middleclick "Mittenklick">
-<!ENTITY middlemouse_contentLoadURL_description "Ladda innehållet i Urklipp som en URL vid mittenklick.">
-<!ENTITY middlemouse_contentLoadURL_name "Ladda Urklipp som URL">
+<!ENTITY middlemouse_contentLoadURL_description "Läs in innehållet i Urklipp som en URL vid mittenklick.">
+<!ENTITY middlemouse_contentLoadURL_name "Läs in Urklipp som URL">
 <!ENTITY middlemouse_paste_description "Klistra in innehållet i Urklipp i ett textfält vid mittenklick.">
 <!ENTITY middlemouse_paste_name "Klistra in text från Urklipp">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Markera innehållet i adressfältet när det klickas.">
@@ -126,6 +126,8 @@
 <!-- BROWSER -->
 <!ENTITY browser "Webbläsare">
 <!-- WEBSITES -->
+<!ENTITY dom_max_script_run_time_description "Bestämmer det antal sekunder efter vilka Firefox meddelar dig att ett skript tar för lång tid på sig att köras.">
+<!ENTITY dom_max_script_run_time_name "Maxkörtid för skript (s)">
 <!ENTITY gfx_3d_video_enabled_name "Tillåt 3D-videor">
 <!ENTITY gfx_3d_video_enabled_description "Tillåter stereoskopisk rendering för 3D-videor.">
 <!ENTITY mozilla_widget_render_mode_name "Aktivera Direct2D">
@@ -140,14 +142,14 @@
 <!ENTITY update_showSlidingNotification_name "Visa meddelande om uppdatering">
 <!ENTITY alerts_slideIncrementTime_description "Styr antalet millisekunder mellan rörliga övergångar. Används i situationer där meddelandet rör sig och antalet millisekunder mellan tonförändringar ändras när meddelandet tonar in och ut.">
 <!ENTITY alerts_slideIncrementTime_name "Rörelsens varaktighet (ms)">
-<!ENTITY alerts_slideIncrement_description "Den här inställningen styr hastigheten hos &quot;Nedladdning slutförd&quot;-liknande meddelanden som visar sig i det nedre högra hörnet av skärmen. Rent specifikt styr den antalet pixlar som flyttas per steg.">
+<!ENTITY alerts_slideIncrement_description "Den här inställningen styr hastigheten hos &quot;Filhämtning slutförd&quot;-liknande meddelanden som visar sig i det nedre högra hörnet av skärmen. Rent specifikt styr den antalet pixlar som flyttas per steg.">
 <!ENTITY alerts_slideIncrement_name "Antalet pixlar som flyttas per steg (px)">
-<!ENTITY alerts_totalOpenTime_description "Styr under hur lång tid i millisekunder som &quot;Nedladdning slutförd&quot;-liknande meddelanden (som visar sig i det nedre högra hörnet av skärmen) skall visas.">
+<!ENTITY alerts_totalOpenTime_description "Styr under hur lång tid i millisekunder som &quot;Filhämtning slutförd&quot;-liknande meddelanden (som visar sig i det nedre högra hörnet av skärmen) skall visas.">
 <!ENTITY alerts_totalOpenTime_name "Meddelandens varaktighet (ms)">
-<!ENTITY browser_download_manager_showAlertInterval_description "Antalet millisekunder efter en nerladdnings slutförande som &quot;slutförd&quot;-meddelandet skall visas.">
+<!ENTITY browser_download_manager_showAlertInterval_description "Antalet millisekunder efter en hämtnings slutförande som &quot;slutförd&quot;-meddelandet skall visas.">
 <!ENTITY browser_download_manager_showAlertInterval_name "Meddelandens varaktighet (ms)">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "Visa ett meddelande i webbläsaren när alla nerladdningar har slutförts.">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "Visa nerladdningsmeddelande">
+<!ENTITY browser_download_manager_showAlertOnComplete_description "Visa ett meddelande i webbläsaren när alla hämtningar har slutförts.">
+<!ENTITY browser_download_manager_showAlertOnComplete_name "Visa hämtningsmeddelande">
 <!-- CACHE -->
 <!ENTITY cache "Cache">
 <!ENTITY cache_disk "Diskcache">
@@ -185,12 +187,19 @@
 <!ENTITY extensions_hideInstallButton_name "Göm &quot;Installera&quot;-knappen">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Filhämtaren">
-<!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för nerladdning via 'Spara (bild/länk/sida) som...'.">
-<!ENTITY browser_download_lastDir_name "Senaste nerladdningsmapp">
+<!ENTITY browser_download_manager_quitBehavior_description "Bestämmer vad som skall hända med aktiva hämtningar när Firefox avslutas.">
+<!ENTITY browser_download_manager_quitBehavior_name "Beteende vid programavslut">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Pausa aktiva hämtningar och återuppta dem automatiskt vid nästa programstart">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Pausa aktiva hämtningar">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Avbryt aktiva hämtningar">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Bestämmer huruvida hämtade filer skall läggas till i listan &quot;Nyligen använda dokument&amp;quot i Start-menyn.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Lägg till hämtade filer i listan &quot;Nyligen använda dokument&amp;quot">
+<!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för hämtning via &quot;Spara (bild/länk/sida) som…&quot;.">
+<!ENTITY browser_download_lastDir_name "Senaste hämtningsmapp">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Varna användare som försöker öppna en exekverbar fil i Filhämtaren.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för exekverbar fil">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Anger Filhämtarens fönster som aktivt när en nerladdning startas.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Ange Filhämtarens fönster som aktivt när en nerladdning startas">
+<!ENTITY browser_download_manager_focusWhenStarting_description "Anger Filhämtarens fönster som aktivt när en hämtning startas.">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Ange Filhämtarens fönster som aktivt när en hämtning startas">
 <!-- SECURITY -->
 <!ENTITY security_privacy "Säkerhet och integritet">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">
@@ -232,7 +241,7 @@
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan första renderingen av en sida. Låga värden gör att sidan kommer att visas snabbare, men gör samtidigt att det tar längre tid innan renderingen slutförs. Höga värden ger motsatt effekt.">
 <!ENTITY nglayout_initialpaint_delay_name "Tidsfördröjning innan en sida visas (ms)">
-<!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda laddningstiden, men ökar den totala laddningstiden.">
+<!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda inläsningstiden, men ökar den totala inläsningstiden.">
 <!ENTITY content_notify_interval_name "Tidsfördröjning innan en sida ritas om (µs)">
 <!ENTITY browser_blink_allowed_description "Användning av blinkningstaggen eller CSS-instruktionen &quot;text-decoration: blink&quot; kommer resultera i blinkande element.">
 <!ENTITY browser_blink_allowed_name "Tillåt blinkande text">
@@ -240,7 +249,7 @@
 <!ENTITY browser_frames_enabled_name "Tillåt ramar">
 <!ENTITY layout_frames_force_resizability_description "Tvinga HTML-ramar att vara justerbara.">
 <!ENTITY layout_frames_force_resizability_name "Tvinga justerbarhet">
-<!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild laddar.">
+<!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild läses in.">
 <!ENTITY browser_display_show_image_placeholders_name "Visa bildplatshållare">
 <!ENTITY html5_enable_name "Aktivera HTML5-parsern">
 <!ENTITY svg_enabled_name "Tillåt SVG-vektorgrafik">
@@ -254,8 +263,8 @@
 <!ENTITY gfx_color_management_mode_o1 "inte för några bilder">
 <!ENTITY gfx_color_management_mode_o2 "för alla bilder">
 <!ENTITY gfx_color_management_mode_o3 "för bilder med ICC-taggar">
-<!ENTITY gfx_downloadable_fonts_enabled_name "Ladda ner fonter inbäddade i webbplatser">
-<!ENTITY gfx_downloadable_fonts_enabled_description "Medger nerladdning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Hämta fonter inbäddade i webbplatser">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Medger hämtning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Markerad text">
 <!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för sidsökfältet genom att välja en hexkod eller en namngiven färg.">
@@ -337,11 +346,11 @@
 <!ENTITY network_http_max-persistent-connections-per-server_name "Antal beständiga anslutningar per server">
 <!-- PIPELINING -->
 <!ENTITY pipelining "Pipelining">
-<!ENTITY network_http_pipelining_description "Pipelining minskar belastningen på nätverket och kan minska tiden det tar att ladda webbsidor, men det kan samtidigt orsaka problem med att ladda sidor från servrar som inte stödjer pipelining.">
+<!ENTITY network_http_pipelining_description "Pipelining minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer pipelining.">
 <!ENTITY network_http_pipelining_maxrequests_description "Den här inställningen bestämmer det högsta antalet samtidiga förfrågningar som kan pipas när pipelining är aktiverat.  ">
 <!ENTITY network_http_pipelining_maxrequests_name "Antal förfrågningar att pipa">
 <!ENTITY network_http_pipelining_name "Använd pipelining">
-<!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida pipelining skall användas mot en proxyserver. Pipelining minskar belastningen på nätverket och kan minska tiden det tar att ladda webbsidor, men det kan samtidigt orsaka problem med att ladda sidor från servrar som inte stödjer pipelining.">
+<!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida pipelining skall användas mot en proxyserver. Pipelining minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer pipelining.">
 <!ENTITY network_http_proxy_pipelining_name "Använd pipelining mot en proxyserver">
 <!-- DEVELOPMENT -->
 <!ENTITY developing "Utveckling">
@@ -354,6 +363,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Ändringar i fönster och dialoger kräver inte omstart. Fungerar inte med filer förpackade i en JAR-fil.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Inaktivera XUL-cache">
+<!ENTITY devtools_inspector_enabled_description "Aktiverar Granskaren i menyn &quot;Webbutvecklare&quot;. (Kräver omstart)">
+<!ENTITY devtools_inspector_enabled_name "Aktivera Granskaren">
 <!ENTITY browser_dom_window_dump_enabled_description "Tillåter användning av programsatsen dump() för att skriva till standardkonsolen.">
 <!ENTITY browser_dom_window_dump_enabled_name "Tillåt dump()">
 <!ENTITY javascript_options_showInConsole_description "Bestämmer om chrome-fel och varningar skall loggas till JavaScript-konsolen.">

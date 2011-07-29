@@ -1,4 +1,5 @@
 <!ENTITY prefs.label "Opties">
+<!ENTITY prefs.todefault.ask.title "Ask before restoring">
 <!ENTITY prefs.todefault.ask "Vraag voordat standaardwaarden worden hersteld">
-<!ENTITY prefs.matchversion "Alleen opties weergeven die compatibel zijn met uw versie van Firefox">
+<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
 <!ENTITY prefs.sticktopreferences "Plaats de gui:config menu item na de &quot;Voorkeuren&quot; item">

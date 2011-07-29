@@ -1,3 +1,5 @@
 <!ENTITY prefs.label "- opcje">
+<!ENTITY prefs.todefault.ask.title "Pytaj przed przywróceniem">
 <!ENTITY prefs.todefault.ask "Pytaj przed przywróceniem domyślnych ustawień">
+<!ENTITY prefs.sticktopreferences.title "Umieść wpis u góry menu">
 <!ENTITY prefs.sticktopreferences "Umieść wpis gui:config w menu pod wpisem &quot;Preferencje&quot;">

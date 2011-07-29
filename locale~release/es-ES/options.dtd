@@ -126,6 +126,8 @@
 <!-- BROWSER -->
 <!ENTITY browser "Navegador">
 <!-- ALERTS -->
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
+<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_3d_video_enabled_name "Habilitar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Habilita el renderizado estereoscópico para los vídeos 3D.">
 <!ENTITY mozilla_widget_render_mode_name "Habilitar Direct2D">
@@ -185,6 +187,13 @@
 <!ENTITY extensions_hideInstallButton_name "Ocultar el botón &quot;Instalar&quot;">
 <!-- SECURITY -->
 <!ENTITY downloadmanager "Administrador de descargas">
+<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
+<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "Ruta a la última carpeta usada para descargar usando &apos;Guardar como&apos;.">
 <!ENTITY browser_download_lastDir_name "Carpeta de la última descarga">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avisar al usuario si intenta abrir un ejecutable desde el administrador de descargas.">
@@ -354,6 +363,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "No será necesario reiniciar para aplicar los cambios en ventanas y cuadros de diálogo. No funciona con archivos empaquetados en un JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deshabilitar la caché XUL">
+<!ENTITY devtools_inspector_enabled_description "Enables the Inspector in the &quot;Web Developer&quot; menu. (Requires restart)">
+<!ENTITY devtools_inspector_enabled_name "Enable Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "Habilita el uso de mensajes de depuración en la consola de errores.">
 <!ENTITY browser_dom_window_dump_enabled_name "Habilitar depuración">
 <!ENTITY javascript_options_showInConsole_description "Determina si registrar los errores y avisos chrome en la consola Javascript.">

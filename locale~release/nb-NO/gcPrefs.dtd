@@ -1,4 +1,5 @@
 <!ENTITY prefs.label "Alternativer">
+<!ENTITY prefs.todefault.ask.title "Ask before restoring">
 <!ENTITY prefs.todefault.ask "Spør før standardinnstillinger gjenopprettes">
-<!ENTITY prefs.matchversion "Vis bare alternativer som er kompatible med din versjon av firefox">
+<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
 <!ENTITY prefs.sticktopreferences "Place the gui:config menu entry after the &quot;Preferences&quot; entry">

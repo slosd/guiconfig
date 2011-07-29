@@ -1,9 +1,9 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Доступність">
 <!-- MOUSE BEHAVIOUR -->
-<!ENTITY mousebehaviour "Mouse behaviour">
-<!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
+<!ENTITY mousebehaviour "Поведінка миші">
+<!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
+<!ENTITY mousescrollhorizontal "Горизонтальний скролінг мишею">
 <!ENTITY mousescrollnone "with no key">
 <!ENTITY mousescrollshift "with SHIFT key">
 <!ENTITY mousescrollstrg "with CTRL key">
@@ -126,6 +126,8 @@
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
 <!-- WEBSITES -->
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
+<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
 <!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
 <!ENTITY mozilla_widget_render_mode_name "Enable Direct2D">
@@ -185,6 +187,13 @@
 <!ENTITY extensions_hideInstallButton_name "Hide &quot;Install&quot; button">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
+<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
+<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "Path to the last directory used for a download via 'Save As.'.">
 <!ENTITY browser_download_lastDir_name "Last download directory">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Warn the user attempting to open an executable from the Download Manager. ">
@@ -354,6 +363,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Changes to windows and dialogs do not require a restart. Doesn't work with files packaged in a JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Disable XUL cache">
+<!ENTITY devtools_inspector_enabled_description "Enables the Inspector in the &quot;Web Developer&quot; menu. (Requires restart)">
+<!ENTITY devtools_inspector_enabled_name "Enable Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "Enables the use of the dump() statement to print to the standard console.">
 <!ENTITY browser_dom_window_dump_enabled_name "Enable dump()">
 <!ENTITY javascript_options_showInConsole_description "Determines whether to log chrome errors and warnings to the JavaScript Console.">

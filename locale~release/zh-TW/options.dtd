@@ -96,8 +96,8 @@
 <!-- SESSION RESTORE -->
 <!ENTITY session_restore "瀏覽頁組還原">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "啟用「瀏覽頁組還原」">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "最大並行分頁數">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "允許同時還原的分頁數. 若設為 0 則各視窗僅載入選取中的分頁, 若設值小於0 則會同時還原所有分頁.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "最大可還原分頁數">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "顯示於「歷史」「最近關閉分頁」選單中的最大分頁數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
@@ -126,12 +126,14 @@
 <!-- BROWSER -->
 <!ENTITY browser "瀏覽器">
 <!-- WEBSITES -->
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
+<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_3d_video_enabled_name "啟用3D影音">
 <!ENTITY gfx_3d_video_enabled_description "對3D影音啟用立體視覺效果">
-<!ENTITY mozilla_widget_render_mode_name "Enable Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "Enables hardware acceleration for rendering. (requires Windows 7 or Windows Vista with Vista Platform update)">
-<!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
-<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY mozilla_widget_render_mode_name "啟用 Direct2D">
+<!ENTITY mozilla_widget_render_mode_description "對頁面加工啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
 <!-- ALERTS -->
@@ -173,8 +175,8 @@
 <!-- EXTENSIONS -->
 <!ENTITY extensions "附加元件">
 <!ENTITY getaddons "&quot;取得元件&quot;側頁">
-<!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
-<!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
+<!ENTITY extensions_alwaysUnpack_name "附加元件一律予以解壓縮">
+<!ENTITY extensions_alwaysUnpack_description "啟用時, 附加元件安裝過程中一律予以解壓縮到 profile資料夾.">
 <!ENTITY extensions_checkCompatibility_description "此選項可以啟用/停用&quot;元件相容性檢查&quot;。">
 <!ENTITY extensions_checkCompatibility_name "啟用元件相容性檢查">
 <!ENTITY extensions_getAddons_maxResults_description "決定您進行一項搜尋時要顯示於側頁內的最大搜尋結果數目">
@@ -185,6 +187,13 @@
 <!ENTITY extensions_hideInstallButton_name "不顯示&quot;安裝&quot;按鈕">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "下載管理員">
+<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
+<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "當使用者要從下載管理員開啟的項目是執行檔時，予以警示">
@@ -244,7 +253,7 @@
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
 <!ENTITY html5_enable_name "啟用 HTML5剖析常式">
 <!ENTITY svg_enabled_name "啟用 SVG 向量繪圖">
-<!ENTITY svg_smil_enabled_name "Enable SVG animations">
+<!ENTITY svg_smil_enabled_name "啟用 SVG 動畫效果">
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
 <!ENTITY images "圖片">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
@@ -268,8 +277,8 @@
 <!ENTITY tabs "分頁">
 <!-- APPEARANCE -->
 <!ENTITY appearance "外觀">
-<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
-<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_panorama_animate_zoom_name "全景縮放過程採動畫效果">
+<!ENTITY browser_panorama_animate_zoom_description "對分頁開啟/關閉全景檢視(按 CTRL-E)時, 啟用動畫效果.">
 <!ENTITY browser_tabs_animate_name "分頁動畫效果">
 <!ENTITY browser_tabs_animate_description "於開新分頁、重組分頁或關閉分頁時，啟用動畫效果。">
 <!ENTITY browser_tabs_tabMinWidth_name "最小頁籤寬度">
@@ -354,6 +363,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "對視窗本身和對話視窗的變更設定不需重新啟動 Firefox。(此選項對於以 JAR 方式封裝的檔案無效)。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
+<!ENTITY devtools_inspector_enabled_description "Enables the Inspector in the &quot;Web Developer&quot; menu. (Requires restart)">
+<!ENTITY devtools_inspector_enabled_name "Enable Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "啟用以 dump() 指令來印出到標準主控台。">
 <!ENTITY browser_dom_window_dump_enabled_name "啟用 dump()">
 <!ENTITY javascript_options_showInConsole_description "決定是否要在 JavaScript 主控台記錄 chrome 的各項錯誤和警告。">
