@@ -3,18 +3,9 @@
 <overlay id="gcTools" 
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   
-  <!-- The usual "Tools" menu -->
-  <menupopup id="menu_ToolsPopup">
+  <!-- The "Edit" menu -->
+  <menupopup id="menu_EditPopup">
     <menuitem id="gcToolsItem" insertafter="menu_preferences"
-          label="&browser.item.label;"
-          image="chrome://guiconfig/skin/icons/icon.16.png"
-          oncommand="guiconfig.openWindow('config')"
-          accesskey="&browser.item.access;"/>
-  </menupopup>
-  
-  <!-- Firefox menu used as of version 4.0b1 -->
-  <menupopup id="appmenu_customizeMenu">
-    <menuitem id="gcAppItem" insertafter="appmenu_preferences"
           label="&browser.item.label;"
           image="chrome://guiconfig/skin/icons/icon.16.png"
           oncommand="guiconfig.openWindow('config')"

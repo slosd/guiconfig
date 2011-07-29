@@ -260,10 +260,10 @@ GCElement.Textbox.prototype.build = function() {
     element.setAttribute("flex", "1");
   }
   if(is_defined(this.options.min)) {
-  	element.setAttribute("min", this.options.min);
+    element.setAttribute("min", this.options.min);
   }
   if(is_defined(this.options.max)) {
-  	element.setAttribute("max", this.options.max);
+    element.setAttribute("max", this.options.max);
   }
   element.addEventListener("keyup", gcCore.bindFn(this.modified, this), false);
   element.addEventListener("command", gcCore.bindFn(this.modified, this), false);

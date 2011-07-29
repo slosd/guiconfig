@@ -54,7 +54,7 @@ var guiconfig = {
   adaptSearchBox: function() {
     var searchbox = document.getElementById("searchbox");
     if(gcCore.validateVersion(gcCore.MozInfo.version, "3.5a1"))
-    	gcCore.xulSetProperty(searchbox, "type", "search");  // change the type to "search" if it is supported by the used FF version (>=3.5a1)
+      gcCore.xulSetProperty(searchbox, "type", "search");  // change the type to "search" if it is supported by the used FF version (>=3.5a1)
   },
 
   setButtons: function() {
@@ -94,7 +94,7 @@ var guiconfig = {
       switch(value) {
         case "reset":
           f = function() {
-        	  this.popup.currentOption.reset();
+            this.popup.currentOption.reset();
           }
           break;
         default:
@@ -436,18 +436,18 @@ var guiconfig = {
       },
       "checkbox": {
         "handle": function(node, parentNode) {
-    	    var lastOption = this.getVar("lastCreatedOption");
-    	    var element = new GCBoolElement({
-	          "label": {
-	            "value": node.getAttribute("label") || "",
-	            "control": lastOption.key + "#" + node.getAttribute("value")
-	          },
-	          "description": node.getAttribute("description") || "",
-	          "mode": "default",
-	          "indent": !!node.getAttribute("indent"),
+          var lastOption = this.getVar("lastCreatedOption");
+          var element = new GCBoolElement({
+            "label": {
+              "value": node.getAttribute("label") || "",
+              "control": lastOption.key + "#" + node.getAttribute("value")
+            },
+            "description": node.getAttribute("description") || "",
+            "mode": "default",
+            "indent": !!node.getAttribute("indent"),
             "wrapper": {}
-	        });
-    	    var row = element.getElement();
+          });
+          var row = element.getElement();
           node.set = gcCore.bindFn(function(value) {
             GCBoolElement.set(this.element, value);
           }, {"element": element.elements.element.getOptionElement()});
@@ -537,9 +537,9 @@ var guiconfig = {
           }
           this.setVar("hierarchy_string", this.getVar("hierarchy_string").replace(node.getAttribute("label"), '', 'g'));
           if(!element.disabled && 
-          	 (element.parentNode.parentNode.selectedTab.disabled ||
-          		element.getUserData("index") < element.parentNode.parentNode.selectedTab.getUserData("index")) &&
-          	 this.getVar("string") != "") {
+             (element.parentNode.parentNode.selectedTab.disabled ||
+              element.getUserData("index") < element.parentNode.parentNode.selectedTab.getUserData("index")) &&
+             this.getVar("string") != "") {
             element.parentNode.parentNode.selectedTab = element;
           }
         }
@@ -607,9 +607,9 @@ var guiconfig = {
     });
     parser.addHandles({
       "group": {
-    	"rule": "elements",
-    	"parseNext": "elements-group"
-    	/* handle: previously defined */
+      "rule": "elements",
+      "parseNext": "elements-group"
+      /* handle: previously defined */
       }
     });
     parser.addRuleSet("root", ["panel"]);

@@ -362,9 +362,9 @@ gcCore.RegExpNonLetters = new RegExp("["+
 
 gcCore.xulSetProperty = function(element, name, value) {
   if(element.hasAttribute(name))
-	element[name] = value;
+  element[name] = value;
   else
-	element.setAttribute(name, value);
+  element.setAttribute(name, value);
 }
 
 gcCore.bindFn = function(fn, obj) {

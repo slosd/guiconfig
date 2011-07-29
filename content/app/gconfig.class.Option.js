@@ -86,7 +86,7 @@ Option.prototype.get = function() {
     }
   }
   else {
-	return this.value;
+  return this.value;
   }
 }
 

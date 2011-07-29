@@ -3,13 +3,13 @@
 <!DOCTYPE overlay SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 <overlay id="gcTools" 
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-	
-	<toolbarpalette id="BrowserToolbarPalette">
-		<toolbarbutton id="gcButtonPref"
-					   class="toolbarbutton-1"
-					   label="&browser.item.label;"
-					   tooltiptext="&browser.item.label;"
-					   oncommand="guiconfig.openWindow('config');"/>
-	</toolbarpalette>
-	
+  
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="gcButtonPref"
+             class="toolbarbutton-1"
+             label="&browser.item.label;"
+             tooltiptext="&browser.item.label;"
+             oncommand="guiconfig.openWindow('config');"/>
+  </toolbarpalette>
+  
 </overlay>

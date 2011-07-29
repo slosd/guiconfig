@@ -5,7 +5,4 @@
   <setting pref="extensions.guiconfig.todefault.ask" type="bool" title="&prefs.todefault.ask.title;">
     &prefs.todefault.ask;
   </setting>
-  <setting pref="extensions.guiconfig.sticktopreferences" type="bool" title="&prefs.sticktopreferences.title;">
-    &prefs.sticktopreferences;
-  </setting>
 </vbox>
