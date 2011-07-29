@@ -185,6 +185,11 @@
 <!ENTITY extensions_hideInstallButton_name "Hide &quot;Install&quot; button">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
+<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
+<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
 <!ENTITY browser_download_lastDir_description "Path to the last directory used for a download via 'Save As.'.">
 <!ENTITY browser_download_lastDir_name "Last download directory">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Warn the user attempting to open an executable from the Download Manager. ">
