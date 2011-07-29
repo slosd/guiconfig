@@ -1,4 +1,3 @@
 <!ENTITY prefs.label "選項">
 <!ENTITY prefs.todefault.ask "在還原為預設值之前先問過我">
-<!ENTITY prefs.matchversion "只顯示與您的 Firefox 版本相容的選項">
 <!ENTITY prefs.sticktopreferences "將「進階設定(gui:config)」選單項目放在 Firefox「選項」之下">

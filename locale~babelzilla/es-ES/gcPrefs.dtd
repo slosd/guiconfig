@@ -1,4 +1,5 @@
 <!ENTITY prefs.label "Opciones">
+<!ENTITY prefs.todefault.ask.title "Preguntar antes de restaurar">
 <!ENTITY prefs.todefault.ask "Preguntar antes de restaurar los valores por defecto">
-<!ENTITY prefs.matchversion "Mostrar sólo las opciones compatibles con su versión de firefox">
+<!ENTITY prefs.sticktopreferences.title "Colocación en el menú">
 <!ENTITY prefs.sticktopreferences "Colocar la entrada de menú para gui:config después de la entrada de &quot;Opciones&quot;">
