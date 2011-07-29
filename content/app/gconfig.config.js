@@ -37,9 +37,6 @@ var guiconfig = {
     this.setButtons();
     this.buildContextMenu();
     this.createPreferences();
-    window.setTimeout(function() {
-      guiconfig.Elements.window.centerWindowOnScreen();
-    }, 200);
   },
   
   getDialogElements: function() {

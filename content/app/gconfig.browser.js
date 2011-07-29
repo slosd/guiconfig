@@ -65,7 +65,7 @@ var guiconfig = {
 			this[window_name].focus();
 		}
 		else {
-			this[window_name] = window.open(chrome, window_name, "chrome");
+			this[window_name] = window.openDialog(chrome, window_name, "chrome, dialog, resizable=no");
 		}
 	},
 	
