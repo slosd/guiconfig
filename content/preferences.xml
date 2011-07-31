@@ -399,6 +399,11 @@
                 description="&accessibility_typeaheadfind_timeout_description;" />
         </group>
         <group label="&misc;">
+          <pref key="prompts.tab_modal.enabled"
+                label="&prompts_tab_modal_enabled_name;"
+                description="&prompts_tab_modal_enabled_description;"
+                type="Bool"
+                minVersion="4.0" />
           <pref key="signon.prefillForms"
                 label="&signon_prefillForms_name;"
                 description="&signon_prefillForms_description;"
