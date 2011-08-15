@@ -929,6 +929,10 @@
                 description="&alerts_totalOpenTime_description;" />
         </group>
         <group label="&misc;">
+          <pref key="browser.urlbar.formatting.enabled"
+                label="&browser_urlbar_formatting_enabled_name;"
+                description="&browser_urlbar_formatting_enabled_description;"
+                minVersion="6.0" />
           <pref key="browser.identity.ssl_domain_display"
                 label="&browser_identity_ssl_domain_display_name;"
                 description="&browser_identity_ssl_domain_display_description;"
