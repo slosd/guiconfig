@@ -1,5 +1,5 @@
-<!ENTITY prefs.label "- Preferências">
-<!ENTITY prefs.todefault.ask.title "Ask before restoring">
+<!ENTITY prefs.label "- Opções">
+<!ENTITY prefs.todefault.ask.title "Perguntar antes de restaurar">
 <!ENTITY prefs.todefault.ask "Perguntar antes de restaurar todas as opções aos valores padrão">
-<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
+<!ENTITY prefs.sticktopreferences.title "Anexar entrada no menu">
 <!ENTITY prefs.sticktopreferences "Colocar no menu o comando &quot;Opções avançadas&quot; embaixo de &quot;Opções&quot;">

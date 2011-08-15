@@ -96,8 +96,8 @@
 <!-- MISC -->
 <!ENTITY session_restore "Restauração de sessão">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Ativar restauração de sessão">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Quantidade máxima de abas simultâneas:">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "A quantidade de abas que podem ser restauradas simultaneamente. Se a quantidade for 0, apenas será carregada a aba selecionada em cada janela. Se a quantidade for menor que 0, todas as abas serão restauradas ao mesmo tempo.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Abas fechadas a lembrar:">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Máximo de abas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir aba&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Janelas fechadas a lembrar:">
@@ -126,14 +126,14 @@
 <!-- ALERTS -->
 <!ENTITY browser "Navegador">
 <!-- CACHE -->
-<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
-<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
+<!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
+<!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (em segundos):">
 <!ENTITY gfx_3d_video_enabled_name "Ativar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Ativa a exibição estereoscópica de vídeos 3D. (Exige equipamento compatível.)">
 <!ENTITY mozilla_widget_render_mode_name "Ativar Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "Enables hardware acceleration for rendering. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY mozilla_widget_render_mode_description "Ativa aceleração por hardware para renderização (necessário Windows 7 ou Windows Vista com Platform Update).">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Ativar DirectWrite">
-<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Ativa aceleração por hardware para exibição de texto (necessário Windows 7 ou Windows Vista com Platform Update).">
 <!ENTITY geo_enabled_name "Ativar localização">
 <!ENTITY geo_enabled_description "Permite que o Firefox pergunte a você se deseja informar a sua localização atual aos sites que a requisitarem. Desmarque essa opção para desativar a geolocalização no Firefox.">
 <!-- EXTENSIONS -->
@@ -187,19 +187,19 @@
 <!ENTITY extensions_hideInstallButton_name "Esconder botão &quot;Instalar&quot;">
 <!-- STYLE -->
 <!ENTITY downloadmanager "Janela de downloads">
-<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
-<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
-<!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
-<!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
+<!ENTITY browser_download_manager_quitBehavior_description "Determina o que fazer com os downloads ativos ao sair do Firefox.">
+<!ENTITY browser_download_manager_quitBehavior_name "Comportamento ao sair">
+<!ENTITY browser_download_manager_quitBehavior_o1 "Pausar os downloads ativos e continuar quando o Firefox for iniciado novamente">
+<!ENTITY browser_download_manager_quitBehavior_o2 "Pausar os downloads ativos">
+<!ENTITY browser_download_manager_quitBehavior_o3 "Cancelar os downloads ativos">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Determina se os arquivos baixados devem ser adicionados aos &quot;Itens Recentes&quot; no menu do Windows.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Adicionar downloads aos &quot;Itens Recentes&quot;">
 <!ENTITY browser_download_lastDir_description "Especifica o caminho para a última pasta na qual foi salvo um arquivo com o Firefox. Essa pasta será automaticamente indicada na janela &quot;Salvar como&quot; na próxima vez.">
 <!ENTITY browser_download_lastDir_name "Última pasta onde algo foi salvo:">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Exibe um aviso quando um arquivo executável salvo da internet está prestes a ser aberto (executado) a partir da janela de downloads.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Alertar ao abrir arquivo executável">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Exibe a janela de downloads na frente das demais janelas do navegador quando um arquivo começar a ser baixado.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Abrir a janela de downloads em 1º plano ao começar a baixar um arquivo">
+<!ENTITY browser_download_manager_focusWhenStarting_name "Abrir a janela de downloads em primeiro plano ao começar a baixar um arquivo">
 <!-- BROWSER -->
 <!ENTITY security_privacy "Privacidade e segurança">
 <!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para deastivar esse recurso.">
@@ -277,8 +277,8 @@
 <!ENTITY tabs "Abas">
 <!-- NETWORK -->
 <!ENTITY appearance "Aparência">
-<!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
-<!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_panorama_animate_zoom_name "Animação no agrupamento de abas (Panorama)">
+<!ENTITY browser_panorama_animate_zoom_description "Ativa a animação ao abrir e fechar o modo de visualização de grupo de abas (Ctrl+Shift+E).">
 <!ENTITY browser_tabs_animate_name "Animar abas">
 <!ENTITY browser_tabs_animate_description "Anima as abas quando elas são abertas, reorganizadas e removidas.">
 <!ENTITY browser_tabs_tabMinWidth_name "Largura mínima das abas:">
@@ -363,8 +363,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Exibe as alterações nos arquivos XUL (janelas e caixas de diálogo de extensões) sem reiniciar o navegador. Não funciona com arquivos compactados em JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Desabilitar cache de XUL">
-<!ENTITY devtools_inspector_enabled_description "Enables the Inspector in the &quot;Web Developer&quot; menu. (Requires restart)">
-<!ENTITY devtools_inspector_enabled_name "Enable Inspector">
+<!ENTITY devtools_inspector_enabled_description "Acrescenta o item &quot;Inspecionar&quot; no menu &quot;Desenvolvedor web&quot; (necessário reiniciar o navegador).">
+<!ENTITY devtools_inspector_enabled_name "Ativar a função &quot;Inspecionar&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Em códigos JavaScript, permite usar a função dump() para exibir dados na janela de console do Firefox.">
 <!ENTITY browser_dom_window_dump_enabled_name "Ativar função dump()">
 <!ENTITY javascript_options_showInConsole_description "Exibe mensagens no Console de erros sobre falhas de chrome (erros ocorridos em complementos e no navegador).">
