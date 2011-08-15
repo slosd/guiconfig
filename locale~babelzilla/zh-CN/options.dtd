@@ -117,6 +117,8 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "使用快捷键激活元素，例如点击链接和按钮。">
 <!ENTITY accessibility_accesskeycausesactivation_name "通过快捷键激活元素">
 <!ENTITY browser "浏览器">
+<!ENTITY dom_max_script_run_time_description "指定在多少秒之后 Firefox 提示您当前某个脚本运行时间太长。">
+<!ENTITY dom_max_script_run_time_name "脚本可执行的最长时间（秒）">
 <!ENTITY gfx_3d_video_enabled_name "启用 3D 视频">
 <!ENTITY gfx_3d_video_enabled_description "启用 3D 视频的立体渲染功能。">
 <!ENTITY mozilla_widget_render_mode_name "启用 Direct2D">
@@ -172,6 +174,13 @@
 <!ENTITY extensions_hideInstallButton_description "隐藏“扩充软件管理”窗口中的“安装”按钮。">
 <!ENTITY extensions_hideInstallButton_name "隐藏“安装”按钮">
 <!ENTITY downloadmanager "下载管理器">
+<!ENTITY browser_download_manager_quitBehavior_description "指定 Firefox 退出时对于正在下载项目的处理方式。">
+<!ENTITY browser_download_manager_quitBehavior_name "执行方式">
+<!ENTITY browser_download_manager_quitBehavior_o1 "暂停下载并在下次下载时自动恢复">
+<!ENTITY browser_download_manager_quitBehavior_o2 "暂停正在下载的项目">
+<!ENTITY browser_download_manager_quitBehavior_o3 "取消正在下载的项目">
+<!ENTITY browser_download_manager_addToRecentDocs_description "指定是否添加下载的文件到开始菜单的&quot;最近使用的文件&quot;中。">
+<!ENTITY browser_download_manager_addToRecentDocs_name "添加下载的文件到&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
 <!ENTITY browser_download_lastDir_name "上一次保存目录">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "用户试图从下载管理器打开可执行文件时弹出警告。">
@@ -321,6 +330,8 @@
 <!ENTITY view_source_editor_path_name "编辑器路径：">
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
+<!ENTITY devtools_inspector_enabled_description "启用 &quot;Web 开发人员&quot;菜单下的 Inspector。（需要重启）">
+<!ENTITY devtools_inspector_enabled_name "启用 Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
 <!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
 <!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">
