@@ -225,6 +225,8 @@
 <!ENTITY style "Style">
 <!-- BROWSER -->
 <!ENTITY browser_style "Browser">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Emphasize domains using SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "When a site uses SSL to encrypt communications, the user can choose to have a portion of the site’s URL emphasized in the UI. This preference determines whether to show nothing, the second-level domain (e.g.: mozilla.org) or the full domain (e.g.: bugzilla.mozilla.org) in the Location Bar. ">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Don't show domain">
