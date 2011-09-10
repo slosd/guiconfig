@@ -7,7 +7,7 @@
 
 APPNAME="gui:config"
 SHORTNAME="guiconfig"
-VERSION="1.1.5b1"
+VERSION="1.2"
 BUILD="final"
 
 FFMINVERSION="3.0"
