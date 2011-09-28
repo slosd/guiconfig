@@ -7,11 +7,11 @@
 
 APPNAME="gui:config"
 SHORTNAME="guiconfig"
-VERSION="1.2"
+VERSION="1.2.1"
 BUILD="final"
 
 FFMINVERSION="3.0"
-FFMAXVERSION="7.*"
+FFMAXVERSION="8.*"
 
 #BUILDTYPE="babelzilla"
 BUILDTYPE="release"
