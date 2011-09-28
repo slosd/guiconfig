@@ -376,6 +376,12 @@ gcCore.bindFn = function(fn, obj) {
   }(fn);
 }
 
+gcCore.log = function(msg) {
+  setTimeout(function() {
+    throw msg;
+  }, 1);
+}
+
 gcCore.extendProto = function(child, parent) {
   child.prototype.__proto__ = parent.prototype;
 }

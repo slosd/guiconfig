@@ -272,51 +272,56 @@ var guiconfig = {
         "filter": "version",
         "handle": function(node, parentNode) {
           var key = node.getAttribute("key");
-          var option = new Option(key, {
-            "type": node.getAttribute("type"),
-            "defaultValue": node.getAttribute("default"),
-            "version": node.getAttribute("version"),
-            "minVersion": node.getAttribute("minVersion"),
-            "maxVersion": node.getAttribute("maxVersion"),
-            "instantApply": gcCore.MozPreferences.getBoolPref("browser.preferences.instantApply"),
-            "wrapper": {
-              "bindings": new Array(),
-              "dependencies": new Array(),
-              "scripts": new Object()
-            } 
-          });
-          var element = option.addElement({
-            "label": {
-              "value": node.getAttribute("label") || "",
-              "control": key
-            },
-            "description": node.getAttribute("description"),
-            "mode": node.getAttribute("mode") || "default",
-            "indent": !!node.getAttribute("indent"),
-            "validValues": new Array(),
-            "minValue": node.getAttribute("min"),
-            "maxValue": node.getAttribute("max"),
-            "wrapper": {
-              "scripts": new Object(),
-              "elements": null,
-              "fileFilters": new Array()
+          try {
+            var option = new Option(key, {
+              "type": node.getAttribute("type"),
+              "defaultValue": node.getAttribute("default"),
+              "version": node.getAttribute("version"),
+              "minVersion": node.getAttribute("minVersion"),
+              "maxVersion": node.getAttribute("maxVersion"),
+              "instantApply": gcCore.MozPreferences.getBoolPref("browser.preferences.instantApply"),
+              "wrapper": {
+                "bindings": new Array(),
+                "dependencies": new Array(),
+                "scripts": new Object()
+              } 
+            });
+            var element = option.addElement({
+              "label": {
+                "value": node.getAttribute("label") || "",
+                "control": key
+              },
+              "description": node.getAttribute("description"),
+              "mode": node.getAttribute("mode") || "default",
+              "indent": !!node.getAttribute("indent"),
+              "validValues": new Array(),
+              "minValue": node.getAttribute("min"),
+              "maxValue": node.getAttribute("max"),
+              "wrapper": {
+                "scripts": new Object(),
+                "elements": null,
+                "fileFilters": new Array()
+              }
+            });
+            /* assign global wrapper */
+            var wrapperID = node.getAttribute("wrapper");
+            if(is_defined(wrapperID) && is_defined(this.ref.Wrappers[wrapperID])) {
+              var wrapper = this.ref.Wrappers[wrapperID];
+              this.ref.assignWrapper(option.options.wrapper, wrapper.optionWrapper);
+              this.ref.assignWrapper(element.options.wrapper, wrapper.elementWrapper);
             }
-          });
-          /* assign global wrapper */
-          var wrapperID = node.getAttribute("wrapper");
-          if(is_defined(wrapperID) && is_defined(this.ref.Wrappers[wrapperID])) {
-            var wrapper = this.ref.Wrappers[wrapperID];
-            this.ref.assignWrapper(option.options.wrapper, wrapper.optionWrapper);
-            this.ref.assignWrapper(element.options.wrapper, wrapper.elementWrapper);
+            this.setVar("lastCreatedOptionWrapper", option.options.wrapper);
+            this.setVar("lastCreatedElementWrapper", element.options.wrapper);
+            this.ref.Options[key] = option;  // add the preference to the global Option object
+            element.Option = option;  // assign the preference to its element (used for the context menu)
+            this.setVar("lastCreatedOption", option);
+            this.parser.parseWithRuleSet("pref");
+            parentNode.appendChild(element.getElement());  // after parsing the <pref> content we can build the element
+            node.setUserData("element", element.elements.row, null);
           }
-          this.setVar("lastCreatedOptionWrapper", option.options.wrapper);
-          this.setVar("lastCreatedElementWrapper", element.options.wrapper);
-          this.ref.Options[key] = option;  // add the preference to the global Option object
-          element.Option = option;  // assign the preference to its element (used for the context menu)
-          this.setVar("lastCreatedOption", option);
-          this.parser.parseWithRuleSet("pref");
-          parentNode.appendChild(element.getElement());  // after parsing the <pref> content we can build the element
-          node.setUserData("element", element.elements.row, null);
+          catch(e) {
+            gcCore.log(e);
+          }
         }
       },
       "option": {
@@ -574,11 +579,13 @@ var guiconfig = {
           "alias": ["checkbox"],
           "filter": "version",
           "handle": function(node, parentNode) {
-           var element = node.getUserData("element"),
+            var element = node.getUserData("element"),
                 options = node.getElementsByTagName("option"),
                 options_data = "";
             node.empty = true;
             node.show = false;
+            if(!element) // element doesn't exist if something went wrong when the preference was created
+              return;
             for(var i = 0, l = options.length; i < l; i++) {
               options_data += " " + options[i].getAttribute("label");
             }
