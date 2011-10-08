@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Determina cuantas entradas deben aparecer (como máximo) en la lista desplegable de la barra de direcciones.">
 <!ENTITY browser_urlbar_maxRichResults_name "Entradas en la lista desplegable">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Determina si se distinguen las mayúsculas. Si usa &quot;Determinar automáticamente&quot; la búsqueda distingue mayúsculas si la cadena contiene mayúsculas, pero no todos los caracteres.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Distinguir mayúsculas">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Determinar automáticamente">
@@ -223,6 +225,8 @@
 <!ENTITY style "Estilo">
 <!-- WEBSITES -->
 <!ENTITY browser_style "Navegador">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Enfatizar los dominios que usen SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Cuando un sitio usa SSL para cifrar las comunicaciones, el usuario puede seleccionar enfatizar una parte de la dirección del sitio. Esta opción determina si no se muestra nada, el dominio de segundo nivel (p.ej: mozilla.org) o el dominio completo (p.ej: bugzilla.mozilla.org) en la barra de direcciones.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "No mostrar el dominio">

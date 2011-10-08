@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Określa maksymalną liczbę wpisów wyświetlanych w rozwijalnym menu paska adresu.">
 <!ENTITY browser_urlbar_maxRichResults_name "Liczba wpisów w rozwijalnym menu">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Określa sposób obsługi rozróżniania znaków. Kiedy wybrana jest opcja &quot;Wykryj automatycznie&quot;, w kryterium wyszukiwania rozróżniana jest wielkosć znaków, jeśli zawiera ono wielkie litery, ale nie składa się wyłącznie z nich.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozróżnianie wielkości znaków">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Wykryj automatycznie">
@@ -223,6 +225,8 @@
 <!ENTITY style "Styl">
 <!-- BROWSER -->
 <!ENTITY browser_style "Przeglądarka">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Wyróżnianie domen używających SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Kiedy witryna używa SSL aby szyfrować połączenie, użytkownik może ustawić wyróżnianie części adresu URL w interfejsie. To ustawienie określa, czy wyświetlana ma być pełna domena, domena drugiego poziomu czy nic.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Nie wyświetlaj domeny">

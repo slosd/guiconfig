@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "指定地址欄的下拉式選單最多顯示多少個項目">
 <!ENTITY browser_urlbar_maxRichResults_name "下拉式選單項目數">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "決定是否辨識大小寫。勾選&quot;自動判斷&quot;時，則在搜尋中，僅對含有大寫字母但非全部大寫的搜尋字串，視為須分別大小寫。">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "辨識大小寫">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自動判斷">
@@ -223,6 +225,8 @@
 <!ENTITY style "樣式">
 <!-- BROWSER -->
 <!ENTITY browser_style "瀏覽器">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "SSL網域強調顯示">
 <!ENTITY browser_identity_ssl_domain_display_description "當網站使用SSL對其通訊加密時，使用者可以在UI中選擇對其URL的一部份予以強調顯示。此選項設定地址欄內是否不要顯示網域、顯示次階網域(例如: mozilla.org)或顯示完全網域(例如: bugzilla.mozilla.org)">
 <!ENTITY browser_identity_ssl_domain_display_o1 "不要顯示網域">

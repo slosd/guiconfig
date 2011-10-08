@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Определяет, сколько (максимум) записей должно появляться в выпадающем списке адресной строки.">
 <!ENTITY browser_urlbar_maxRichResults_name "Записей в выпадающем списке">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Определяет как обрабатывать чувствительность к регистру. Если выбрана настройка «Определять автоматически», то поиск будет регистрозависимым только в том случае, когда поисковая строка содержит и прописные и строчные символы.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Чувствительность к регистру">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "определять автоматически">
@@ -223,6 +225,8 @@
 <!ENTITY style "Стиль">
 <!-- BROWSER -->
 <!ENTITY browser_style "Браузер">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Подчёркивать домены использующие SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "При использовании сайтом SSL для зашифрованной передачи данных, пользователь может счесть необходимым выделить часть адреса сайта подчёркиванием. Эта настройка определяет какая часть адреса будет отображаться в адресной строке: никакая, домен второго уровня (например: mozilla.org) или весь домен (например: bugzilla.mozilla.org).">
 <!ENTITY browser_identity_ssl_domain_display_o1 "не показывать домен">

@@ -60,6 +60,8 @@
 <!ENTITY browser_urlbar_matchBehavior_o4 "Nur am Anfang der Adresse oder des Webseitentitels suchen">
 <!ENTITY browser_urlbar_maxRichResults_description "Gibt an, wie viele Einträge maximal in der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste(AwesomeBar) erscheinen.">
 <!ENTITY browser_urlbar_maxRichResults_name "Max. Einträge in der &quot;Dropdown&quot;-Liste:">
+<!ENTITY prompts_tab_modal_enabled_description "Legt fest, ob die neuen Tab-modalen Eingabeaufforderungen oder die alten Fenster-modalen Eingabeaufforderungen verwendet werden sollen.">
+<!ENTITY prompts_tab_modal_enabled_name "Tab-modale Eingabeaufforderungen (Alert-Fenster) aktivieren">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Legt fest, ob bei der Suche zwischen Groß- u. Kleinschreibung unterschieden wird. Bei [automatisch bestimmen] wird nur zwischen Groß- u. Kleinbuchstaben unterschieden, wenn der Suchtext Großbuchstaben enthält, ansonsten wird nicht zwischen Groß- u. Kleinschreibung unterschieden.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Groß- u. Kleinschreibung">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "automatisch bestimmen">
@@ -207,6 +209,8 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Die Zeitdauer, nach der der Start eines Plugins als fehlgeschlagen angesehen wird.">
 <!ENTITY style "Aussehen">
 <!ENTITY browser_style "Browser">
+<!ENTITY browser_urlbar_formatting_enabled_name "Domainformatierung aktivieren">
+<!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
 <!ENTITY browser_identity_ssl_domain_display_name "SSL-Domains kennzeichnen:">
 <!ENTITY browser_identity_ssl_domain_display_description "Falls eine Webseite eine SSL-geschützte Verbindung (https) verwendet, kann dies extra gekennzeichnet werden, indem Teile der Domain hervorgehoben werden. Dabei kann gewählt werden zwischen keiner zusätzlichen Kennzeichnung, Kennzeichnung der Second-Level-Domain (z.B.: mozilla.org) oder der kompletten Domain (z.B.: addons.mozilla.org) in der Adressleiste.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Keine Kennzeichnung">
