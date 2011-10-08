@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Determina il numero massimo di elementi da mostrare nel menu a discesa della Barra di ricerca.">
 <!ENTITY browser_urlbar_maxRichResults_name "Voci nel menu a discesa">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Determines how case-sensitivity is handled. When &quot;Automatically determined&quot; the search is case-sensitive if the search string contains upper-case characters but isn't all-caps. ">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Case Sensitive">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automatically determined">
@@ -223,6 +225,8 @@
 <!ENTITY style "Stile">
 <!-- BROWSER -->
 <!ENTITY browser_style "Browser">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Emphasize domains using SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "When a site uses SSL to encrypt communications, the user can choose to have a portion of the site’s URL emphasized in the UI. This preference determines whether to show nothing, the second-level domain (e.g.: mozilla.org) or the full domain (e.g.: bugzilla.mozilla.org) in the Location Bar. ">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Don't show domain">

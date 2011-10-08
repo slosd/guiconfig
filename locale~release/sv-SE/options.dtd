@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Bestämmer det maximala antalet resultat som skall visas i adressfältet vid sökning.">
 <!ENTITY browser_urlbar_maxRichResults_name "Antal sökresultat">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Avgör hur skiftlägeskänslighet skall hanteras. I läget &quot;Bestäm automatiskt&quot; är sökningen skiftlägeskänslig om söksträngen innehåller versaler, men inte endast består av versaler.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Skiftlägeskänslig">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Bestäm automatiskt">
@@ -223,6 +225,8 @@
 <!ENTITY style "Stil">
 <!-- BROWSER -->
 <!ENTITY browser_style "Webbläsare">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Framhäv domäner som använder SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "När en webbplats använder SSL för att kryptera kommunikationen, kan användaren välja att få en del av webbplatsens URL framhävd i användargränssnittet. Den här inställningen styr vad som skall visas i adressfältet: Ingenting, andranivådomänen (t.ex.: mozilla.org) eller den fullständiga domänen (t.ex.: bugzilla.mozilla.org).">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Visa inte domän">

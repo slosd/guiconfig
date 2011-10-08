@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Especifica a quantidade máxima de sugestões oferecidas enquanto se digita no campo de endereço.">
 <!ENTITY browser_urlbar_maxRichResults_name "Máximo de sugestões:">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Especifica se a pesquisa de texto iniciada automaticamente ao se começar a digitar deve diferenciar maiúsculas de minúsculas. &quot;Automático&quot; não diferencia se o texto digitado for todo em minúsculas ou em maiúsculas, mas diferencia se nele houver ambas.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Diferenciar maiúsculas de minúsculas:">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "automático">
@@ -223,6 +225,8 @@
 <!ENTITY style "Estilo">
 <!-- TEXT SELECT -->
 <!ENTITY browser_style "Navegador">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Realçe de domínio SSL:">
 <!ENTITY browser_identity_ssl_domain_display_description "Especifica o trecho do domínio a ser realçado quando a conexão for segura (SSL): domínio principal (ex.: &quot;mozilla.org&quot;), domínio completo (ex.: &quot;bugzilla.mozilla.org&quot;) ou nenhum.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "nenhum">

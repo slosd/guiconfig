@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Précise combien d&apos;entrées (au maximum) doivent apparaître dans le menu déroulant de la barre d&apos;adresse.">
 <!ENTITY browser_urlbar_maxRichResults_name "Entrées dans le menu déroulant">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Précise comment la sensibilité de casse est réglée. Quand « Déterminé automatiquement » est choisi, la recherche est sensible à la casse si le texte recherché contient des capitales, mais pas totalement.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Sensible à la casse">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Déterminé automatiquement">
@@ -223,6 +225,8 @@
 <!ENTITY style "Style">
 <!-- BROWSER -->
 <!ENTITY browser_style "Navigateur">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
 <!ENTITY browser_identity_ssl_domain_display_name "Importance du domaine lors de l&apos;utilisation de SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Lorsqu&apos;un site utilise le protocole SSL pour crypter les échanges, l&apos;utilisateur peut choisir d&apos;avoir une partie de l&apos;URL du site soulignée dans l&apos;interface. Cette préférence précise s&apos;il faudra afficher dans la barre d&apos;adresse le domaine de deuxième niveau (par exemple « mozilla.org »), le domaine complet (par exemple : « bugzilla.mozilla.org ») ou bien aucun nom de domaine.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Ne pas afficher le domaine">
