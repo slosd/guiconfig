@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE overlay SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
-<overlay id="gcTools" 
+<overlay id="gcTools"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  
+
   <!-- The "Edit" menu -->
   <menupopup id="menu_EditPopup">
     <menuitem id="gcToolsItem" insertafter="menu_preferences"
@@ -11,9 +11,18 @@
           oncommand="guiconfig.openWindow('config')"
           accesskey="&browser.item.access;"/>
   </menupopup>
-  
+
+  <!-- Firefox menu used as of version 4.0b1 -->
+  <menupopup id="appmenu_customizeMenu">
+    <menuitem id="gcAppItem" insertafter="appmenu_preferences"
+          label="&browser.item.label;"
+          image="chrome://guiconfig/skin/icons/icon.16.png"
+          oncommand="guiconfig.openWindow('config')"
+          accesskey="&browser.item.access;"/>
+  </menupopup>
+
   <script type="application/javascript" src="/content/app/gconfig.core.js"/>
   <script type="application/javascript" src="/content/app/gconfig.browser.js"/>
   <script type="application/javascript">guiconfig.init();</script>
-  
+
 </overlay>
