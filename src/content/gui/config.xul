@@ -16,7 +16,7 @@
         title="&browser.item.label;"
         buttons="accept,extra1,cancel"
     buttonlabelextra1="&config.standard.label;"
-    onload=""
+    onload="guiconfig.init();"
     ondialogaccept="return guiconfig.savePreferences();"
     ondialogcancel=""
     ondialogextra1="return guiconfig.resetPreferences();"
@@ -46,6 +46,5 @@
   <script type="application/javascript" src="/content/app/gconfig.class.Element.Bool.js"/>
   <script type="application/javascript" src="/content/app/gconfig.class.Element.Int.js"/>
   <script type="application/javascript" src="/content/app/gconfig.class.Element.Char.js"/>
-  <script type="application/javascript">guiconfig.init();</script>
   
 </dialog>
