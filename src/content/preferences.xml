@@ -49,7 +49,7 @@
                     description="&browser_urlbar_doubleClickSelectsAll_description;" />
             </group>
           </tab>
-          <tab label="&mousescrollvertical;">
+          <tab label="&mousescrollvertical;" maxVersion="16.*">
             <tabs>
               <tab label="&mousescrollnone;">
                 <pref key="mousewheel.withnokey.action"
@@ -181,7 +181,55 @@
               </tab>
             </tabs>
           </tab>
-          <tab label="&mousescrollhorizontal;">
+          <tab label="&mousescrollvertical;" minVersion="17.0b1">
+            <tabs>
+              <tab label="&mousescrollnone;">
+                <pref key="mousewheel.default.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+              </tab>
+              <tab label="&mousescrollshift;">
+                <pref key="mousewheel.with_shift.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+              </tab>
+              <tab label="&mousescrollstrg;">
+                <pref key="mousewheel.with_control.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+              </tab>
+              <tab label="&mousescrollalt;">
+                <pref key="mousewheel.with_alt.action"
+                      label="&mousewheel_action_name;"
+                      description="&mousewheel_action_description;"
+                      mode="select">
+                  <option label="&mousewheel_action_o1;">0</option>
+                  <option label="&mousewheel_action_o2;">1</option>
+                  <option label="&mousewheel_action_o3;">2</option>
+                  <option label="&mousewheel_action_o4;">3</option>
+                </pref>
+              </tab>
+            </tabs>
+          </tab>
+          <tab label="&mousescrollhorizontal;" maxVersion="16.*">
             <tabs>
               <tab label="&mousescrollnone;">
                 <pref key="mousewheel.horizscroll.withnokey.action"
@@ -383,7 +431,7 @@
         </pref>
       </tab>
       <tab label="&websites;">
-        <group label="&accessibility_typeaheadfind_label;">   
+        <group label="&accessibility_typeaheadfind_label;">
           <pref key="accessibility.typeaheadfind.casesensitive"
                 label="&accessibility_typeaheadfind_casesensitive_name;"
                 description="&accessibility_typeaheadfind_casesensitive_description;"
@@ -954,7 +1002,7 @@
             </wrapper>
           </pref>
           <pref key="browser.chrome.toolbar_tips"
-                label="&browser_chrome_toolbar_tips_name;" 
+                label="&browser_chrome_toolbar_tips_name;"
                 description="&browser_chrome_toolbar_tips_description;" />
           <pref key="browser.urlbar.hideGoButton"
                 label="&browser_urlbar_hideGoButton_name;"
@@ -1063,12 +1111,12 @@
                 label="&browser_panorama_animate_zoom_name;"
                 description="&browser_panorama_animate_zoom_description;"
                 minVersion="4.0b4" />
-          <pref key="browser.tabs.tabMinWidth" 
+          <pref key="browser.tabs.tabMinWidth"
                 label="&browser_tabs_tabMinWidth_name;"
                 description=""
                 type="Int"
                 maxVersion="3.6.*" />
-          <pref key="browser.tabs.tabMaxWidth" 
+          <pref key="browser.tabs.tabMaxWidth"
                 label="&browser_tabs_tabMaxWidth_name;"
                 description=""
                 type="Int"
@@ -1200,7 +1248,7 @@
     </group>
     <group label="&misc;">
       <pref key="browser.dom.window.dump.enabled"
-            label="&browser_dom_window_dump_enabled_name;" 
+            label="&browser_dom_window_dump_enabled_name;"
             description="&browser_dom_window_dump_enabled_description;"
             type="Bool" />
       <pref key="devtools.inspector.enabled"
