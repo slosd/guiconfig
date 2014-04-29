@@ -1,6 +1,11 @@
 content guiconfig jar:chrome/guiconfig.jar!/content/
 
-skin guiconfig classic/1.0 jar:chrome/guiconfig.jar!/skin/
+skin guiconfig    classic/1.0 jar:chrome/guiconfig.jar!/skin/common/
+skin guiconfig-os classic/1.0 jar:chrome/guiconfig.jar!/skin/common/
+skin guiconfig-os classic/1.0 jar:chrome/guiconfig.jar!/skin/unix/    os=Linux
+skin guiconfig-os classic/1.0 jar:chrome/guiconfig.jar!/skin/unix/    os=SunOS
+skin guiconfig-os classic/1.0 jar:chrome/guiconfig.jar!/skin/unix/    os=FreeBSD
+skin guiconfig-os classic/1.0 jar:chrome/guiconfig.jar!/skin/unix/    os=OpenBSD
 
 style chrome://global/content/customizeToolbar.xul chrome://guiconfig/skin/style/gcbutton.css
 style chrome://guiconfig/content/button.xul chrome://guiconfig/skin/style/gcbutton.css

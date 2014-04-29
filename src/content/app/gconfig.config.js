@@ -15,7 +15,7 @@ var guiconfig = {
   
   init: function() {
     this.GCLocale = new gcCore.Locale("gc_locale");
-    this.IconSet = new gcCore.IconSet("tango", { os: gcCore.MozRuntime.OS });
+    this.IconSet = new gcCore.IconSet("icons", { os: gcCore.MozRuntime.OS });
     this.XMLPreferences = new gcCore.Parser("chrome://guiconfig/content/preferences.xml");
     this.XMLPreferences.addGlobalFilters({
       "version": function(node) {

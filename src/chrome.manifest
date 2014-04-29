@@ -1,6 +1,11 @@
 content guiconfig content/
 
-skin guiconfig classic/1.0 skin/
+skin guiconfig    classic/1.0 skin/common/
+skin guiconfig-os classic/1.0 skin/common/
+skin guiconfig-os classic/1.0 skin/unix/    os=Linux
+skin guiconfig-os classic/1.0 skin/unix/    os=SunOS
+skin guiconfig-os classic/1.0 skin/unix/    os=FreeBSD
+skin guiconfig-os classic/1.0 skin/unix/    os=OpenBSD
 
 style chrome://global/content/customizeToolbar.xul chrome://guiconfig/skin/style/gcbutton.css
 style chrome://guiconfig/content/button.xul chrome://guiconfig/skin/style/gcbutton.css
