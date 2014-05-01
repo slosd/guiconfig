@@ -224,6 +224,7 @@ var guiconfig = {
           parentNode.appendChild(tabbox);
           this.setVar("tabIndex", 0);
           this.parser.parseNext();
+          tabbox.selectedIndex = 0;
           this.variables.lastCreatedTabs.pop();
           this.variables.lastCreatedTabPanels.pop();
         }
