@@ -7,11 +7,11 @@
 
 APPNAME="gui:config"
 SHORTNAME="guiconfig"
-VERSION="1.2.2"
+VERSION="1.2.3"
 BUILD="final"
 
-FFMINVERSION="3.0"
-FFMAXVERSION="9.*"
+FFMINVERSION="21.0"
+FFMAXVERSION="29.*"
 
 #BUILDTYPE="babelzilla"
 BUILDTYPE="release"
@@ -101,8 +101,8 @@ fi
 mkdir -p $BUILDDIR/chrome
 cp -r defaults $BUILDDIR
 cp -r content skin $BUILDDIR/chrome
-cp "chrome:jar.manifest" $BUILDDIR/chrome.manifest
-cp "install:jar.rdf" $BUILDDIR/install.rdf
+cp "chrome.tpl.manifest" $BUILDDIR/chrome.manifest
+cp "install.tpl.rdf" $BUILDDIR/install.rdf
 mkdir $BUILDDIR/chrome/locale
 rm -r "$BUILDDIR/".* 2> /dev/null
 
