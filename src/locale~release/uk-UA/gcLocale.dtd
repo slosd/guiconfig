@@ -9,3 +9,4 @@
 <!ENTITY config.header.description "Поглиблені налаштування (доступно $n)">
 <!ENTITY config.choosefile "Обрати файл">
 <!ENTITY config.browse "Перегляд...">
+<!ENTITY config.searchresults "Search results">

@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Mouse behaviour">
 <!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
 <!ENTITY mousescrollnone "with no key">
 <!ENTITY mousescrollshift "with SHIFT key">
 <!ENTITY mousescrollstrg "with CTRL key">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
 <!ENTITY mousewheel_action_o4 "Zoom page">
-<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
-<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
-<!ENTITY mousewheel_sysnumlines_name "Use system default">
-<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
 <!ENTITY mouseclick "Mouse click">
 <!ENTITY middleclick "Middle click">
 <!ENTITY middlemouse_contentLoadURL_description "Load the contents of the clipboard as a URL on middle click.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Urlbar">
 <!ENTITY browser_urlbar_autoFill_description "Slår på integrert autoutfylling.">
 <!ENTITY browser_urlbar_autoFill_name "Integrert autoutfylling">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Only autocomplete addresses you typed previously in the addressbar. ">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Only match typed">
 <!ENTITY browser_fixup_alternate_enabled_description "If an address can not be found the following characters will be added to the address. ">
 <!ENTITY browser_fixup_alternate_enabled_name "Use alternate addresses">
 <!ENTITY browser_fixup_alternate_prefix_description "Characters to insert at the beginning of the address. ">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Max. search results">
 <!ENTITY extensions_getAddons_showPane_description "Determines whether to show the &quot;Get Add-ons&quot; pane in the &quot;Add-ons Manager&quot; window.">
 <!ENTITY extensions_getAddons_showPane_name "Show pane">
-<!ENTITY extensions_hideInstallButton_description "Hide the &quot;Install&quot; button in the &quot;Add-ons Manager&quot; window. ">
-<!ENTITY extensions_hideInstallButton_name "Hide &quot;Install&quot; button">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
 <!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Security and Privacy">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
-<!ENTITY browser_privatebrowsing_autostart_description "If checked, Firefox will start in &quot;Private Browsing&quot; mode and makes this permanent throughout the whole session.">
-<!ENTITY browser_privatebrowsing_autostart_name "Start in &quot;Private Browsing&quot; mode">
 <!ENTITY master_pass "Master password">
 <!ENTITY security_ask_for_password_description "This preference determines how often you are required to enter the master password. ">
 <!ENTITY security_ask_for_password_o1 "Ask for password whenever needed">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
-<!ENTITY style "Stil">
 <!-- BROWSER -->
 <!ENTITY browser_style "Nettleser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Vis Favicon-er">
 <!ENTITY browser_chrome_toolbar_tips_description "Angir oppførselen til verktøytips for chrome-elementer">
 <!ENTITY browser_chrome_toolbar_tips_name "Vis verktøytips">
-<!ENTITY browser_urlbar_hideGoButton_description "Angir om «Gå til»-knappen skal vises">
-<!ENTITY browser_urlbar_hideGoButton_name "Skjul «Gå til»-knappen">
 <!ENTITY browser_preferences_animateFadeIn_description "Endrer høyden på vinduet, og toner inn det nye panelet ved bytting av paneler.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animer bytte mellom paneler">
 <!-- WEBSITES -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Vis erstatninger mens bilder lastes">
 <!ENTITY browser_display_show_image_placeholders_name "Vis erstatninger">
 <!ENTITY html5_enable_name "Enable the HTML5 parser">
-<!ENTITY svg_enabled_name "Enable SVG vector graphics">
-<!ENTITY svg_smil_enabled_name "Enable SVG animations">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Når du ser på et bilde som ikke er en del av en nettside, vil bildet skaleres ned slik at det passer i vinduet.">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animate tabs">
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
-<!ENTITY browser_tabs_tabMinWidth_name "Min. tab width">
-<!ENTITY browser_tabs_tabMaxWidth_name "Max. tab width">
 <!ENTITY browser_tabs_closeButtons_description "Determines where to display close buttons. ">
 <!ENTITY browser_tabs_closeButtons_name "Close buttons for tabs are displayed">
 <!ENTITY browser_tabs_closeButtons_o1 "on the active tab only">
@@ -318,15 +300,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Bokmerker">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "Microsummaries">
-<!ENTITY browser_microsummary_enabled_description "Allow to retrieve information for bookmarks with microsummaries.">
-<!ENTITY browser_microsummary_enabled_name "Use microsummaries">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Determines seconds between microsummary generator update checks in seconds. If unspecified, updates occur weekly (604800 seconds).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Update interval (sec)">
-<!ENTITY browser_microsummary_updateGenerators_description "Determines whether to periodically check for updates to microsummary generators.">
-<!ENTITY browser_microsummary_updateGenerators_name "Update microsummaries generators">
-<!ENTITY browser_microsummary_updateInterval_description "Determines minutes between microsummary update checks in seconds. Default is 30 minutes.">
-<!ENTITY browser_microsummary_updateInterval_name "Update interval (min)">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Antall sekunder mellom hver oppdatering av levende bokmerker. Verdier under 60 blir satt til 60;">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Oppdateringfrekvens (sek)">

@@ -9,3 +9,4 @@
 <!ENTITY config.header.description "Haladó beállítások ($n elérhető)">
 <!ENTITY config.choosefile "Fájl kiválasztása">
 <!ENTITY config.browse "Tallózás">
+<!ENTITY config.searchresults "Search results">

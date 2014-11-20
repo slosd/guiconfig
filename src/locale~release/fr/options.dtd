@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Mouse behaviour">
 <!ENTITY mousescrollvertical "Défilement vertical de la souris">
-<!ENTITY mousescrollhorizontal "Défilement horizontal de la souris">
 <!ENTITY mousescrollnone "sans touche">
 <!ENTITY mousescrollshift "avec la touche Maj">
 <!ENTITY mousescrollstrg "avec la touche Ctrl">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
 <!ENTITY mousewheel_action_o4 "Zoom page">
-<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
-<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
-<!ENTITY mousewheel_sysnumlines_name "Use system default">
-<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
 <!ENTITY mouseclick "Clic de la souris">
 <!ENTITY middleclick "Clics centraux">
 <!ENTITY middlemouse_contentLoadURL_description "Charge le contenu du presse-papiers en tant qu'URL, par un clic central.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Barre d'adresse">
 <!ENTITY browser_urlbar_autoFill_description "Active la saisie semi-automatique en ligne.">
 <!ENTITY browser_urlbar_autoFill_name "Saisie semi-automatique en ligne">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Ne faire la saisie semi-automatique que pour les adresses que vous aviez déjà tapé dans la barre d'adresse.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Juste celles déjà tapées">
 <!ENTITY browser_fixup_alternate_enabled_description "Si une adresse n'est pas trouvée, les caractères suivants y seront ajoutés.">
 <!ENTITY browser_fixup_alternate_enabled_name "Utiliser des adresses alternatives">
 <!ENTITY browser_fixup_alternate_prefix_description "Caractères à insérer au début de l'adresse">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Nombre maximal de résultats">
 <!ENTITY extensions_getAddons_showPane_description "Précise si l&apos;onglet « Catalogue » doit être affiché dans la fenêtre des modules complémentaires.">
 <!ENTITY extensions_getAddons_showPane_name "Afficher le panneau">
-<!ENTITY extensions_hideInstallButton_description "Masquer le bouton « Installer » de l&apos;onglet « Extensions » de la fenêtre des modules complémentaires.">
-<!ENTITY extensions_hideInstallButton_name "Masquer le bouton « Installer »">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Gestionnaire des téléchargements">
 <!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Sécurité et confidentialité">
 <!ENTITY security_dialog_enable_delay_description "Cette configuration précise le délai (en millisecondes) avant que le bouton « Installer » puisse être cliqué, lors de l&apos;installation d&apos;une extension. Entrer la valeur zéro pour désactiver ce délai.">
 <!ENTITY security_dialog_enable_delay_name "Délai d&apos;installation d&apos;extension (ms)">
-<!ENTITY browser_privatebrowsing_autostart_description "Si la case est cochée, Firefox démarrera en mode « Navigation privée » et continuera à le faire durant la totalité de la session.">
-<!ENTITY browser_privatebrowsing_autostart_name "Démarrer en mode « Navigation privée »">
 <!ENTITY master_pass "Master password">
 <!ENTITY security_ask_for_password_description "This preference determines how often you are required to enter the master password. ">
 <!ENTITY security_ask_for_password_o1 "Demander un mot de passe chaque fois que nécessaire">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
-<!ENTITY style "Style">
 <!-- BROWSER -->
 <!ENTITY browser_style "Navigateur">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Voir les favicônes">
 <!ENTITY browser_chrome_toolbar_tips_description "Détermine le comportement des infobulles pour les éléments chrome.">
 <!ENTITY browser_chrome_toolbar_tips_name "Afficher les infobulles">
-<!ENTITY browser_urlbar_hideGoButton_description "Détermine si le bouton de validation d&apos;adresse doit être affiché">
-<!ENTITY browser_urlbar_hideGoButton_name "Masquer le bouton « Aller »">
 <!ENTITY browser_preferences_animateFadeIn_description "Modifie la hauteur de la fenêtre et fond avec le nouveau panneau en à peu près une seconde, lors du changement de panneau des préférences.">
 <!ENTITY browser_preferences_animateFadeIn_name "Changement animé des panneaux de préférences">
 <!-- WEBSITES -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Voir les cadres d&apos;emplacement des images avant qu&apos;elles ne soient complètement chargées">
 <!ENTITY browser_display_show_image_placeholders_name "Voir les emplacements d&apos;images">
 <!ENTITY html5_enable_name "Enable the HTML5 parser">
-<!ENTITY svg_enabled_name "Enable SVG vector graphics">
-<!ENTITY svg_smil_enabled_name "Enable SVG animations">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Lors du chargement d&apos;une image seule, hors d&apos;une page Web, si elle est trop grande elle sera alors redimensionnée afin de s&apos;adapter à la largeur de la fenêtre du navigateur">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animate tabs">
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
-<!ENTITY browser_tabs_tabMinWidth_name "Min. tab width">
-<!ENTITY browser_tabs_tabMaxWidth_name "Max. tab width">
 <!ENTITY browser_tabs_closeButtons_description "Précise où afficher les boutons de clôture d&apos;onglets.">
 <!ENTITY browser_tabs_closeButtons_name "Les boutons de fermeture sont affichés">
 <!ENTITY browser_tabs_closeButtons_o1 "juste sur l&apos;onglet en cours">
@@ -318,15 +300,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Marque-pages">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "Microrésumés">
-<!ENTITY browser_microsummary_enabled_description "Permet d&apos;extraire une information pour les marque-pages depuis les microrésumés.">
-<!ENTITY browser_microsummary_enabled_name "Utiliser les microrésumés">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Précise le nombre de secondes entre les mises à jours de générateurs de microrésumés. Si ce n&apos;est pas précisé, la mise à jour est hebdomadaire (toutes les 604 800 secondes).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Intervalle de mise à jour (secondes)">
-<!ENTITY browser_microsummary_updateGenerators_description "Précise s&apos;il faut vérifier périodiquement les mises à jour des générateurs de microrésumés.">
-<!ENTITY browser_microsummary_updateGenerators_name "Mettre à jour les générateurs de microrésumés">
-<!ENTITY browser_microsummary_updateInterval_description "Précise le nombre de minutes entre les vérifications de mises à jour des microrésumés. La valeur par défaut est 30 minutes.">
-<!ENTITY browser_microsummary_updateInterval_name "Fréquence de mise à jour (min)">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Nombre de secondes entre chaque actualisation des marque-pages dynamiques. Les valeurs inférieures à 60 sont considérées comme étant 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalle d&apos;actualisation (s)">

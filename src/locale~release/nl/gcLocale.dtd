@@ -8,4 +8,5 @@
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.header.description "Geavanceerde instellingen ($n beschikbaar)">
 <!ENTITY config.choosefile "Choose File">
-<!ENTITY config.browse " Browse...">
+<!ENTITY config.browse "Browse...">
+<!ENTITY config.searchresults "Search results">

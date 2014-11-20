@@ -9,3 +9,4 @@
 <!ENTITY config.header.description "Opções avançadas ($n disponíveis)">
 <!ENTITY config.choosefile "Escolher arquivo">
 <!ENTITY config.browse "Procurar...">
+<!ENTITY config.searchresults "Search results">

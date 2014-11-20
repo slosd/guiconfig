@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Mouse behaviour">
 <!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
 <!ENTITY mousescrollnone "with no key">
 <!ENTITY mousescrollshift "with SHIFT key">
 <!ENTITY mousescrollstrg "with CTRL key">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
 <!ENTITY mousewheel_action_o4 "Zoom page">
-<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
-<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
-<!ENTITY mousewheel_sysnumlines_name "Use system default">
-<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
 <!ENTITY mouseclick "Muisklik">
 <!ENTITY middleclick "Klik van de middelste muisknop">
 <!ENTITY middlemouse_contentLoadURL_description "Laad de inhoud van het klembord als URL bij een klik van de middelste muisknop.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "URLBar">
 <!ENTITY browser_urlbar_autoFill_description "Maakt inline autocomplete.">
 <!ENTITY browser_urlbar_autoFill_name "Inline AutoAanvullen">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Alleen autocomplete adressen die u eerder hebt getypt in de adresbalk.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Alleen match getypt">
 <!ENTITY browser_fixup_alternate_enabled_description "Als een adres niet gevonden kan worden de volgende karakters worden toegevoegd aan het adres.">
 <!ENTITY browser_fixup_alternate_enabled_name "Gebruik alternatieve adressen">
 <!ENTITY browser_fixup_alternate_prefix_description "Characters te voegen aan het begin van het adres.">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Max. search results">
 <!ENTITY extensions_getAddons_showPane_description "Determines whether to show the &quot;Get Add-ons&quot; pane in the &quot;Add-ons Manager&quot; window.">
 <!ENTITY extensions_getAddons_showPane_name "Show pane">
-<!ENTITY extensions_hideInstallButton_description "Hide the &quot;Install&quot; button in the &quot;Add-ons Manager&quot; window. ">
-<!ENTITY extensions_hideInstallButton_name "Hide &quot;Install&quot; button">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "downloadmanager">
 <!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Security and Privacy">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
-<!ENTITY browser_privatebrowsing_autostart_description "If checked, Firefox will start in &quot;Private Browsing&quot; mode and makes this permanent throughout the whole session.">
-<!ENTITY browser_privatebrowsing_autostart_name "Start in &quot;Private Browsing&quot; mode">
 <!ENTITY master_pass "Master password">
 <!ENTITY security_ask_for_password_description "This preference determines how often you are required to enter the master password. ">
 <!ENTITY security_ask_for_password_o1 "Ask for password whenever needed">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
-<!ENTITY style "Style">
 <!-- BROWSER -->
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Toon Favicons">
 <!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltip gedrag voor chromen elementen.">
 <!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
-<!ENTITY browser_urlbar_hideGoButton_description "Bepaalt of om aan te tonen de &quot;Go&quot; knop of niet.&quot;&gt;">
-<!ENTITY browser_urlbar_hideGoButton_name "Verberg de &quot;Go&quot; knop&quot;&gt;">
 <!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
 <!-- WEBSITES -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Shows plaatshouders terwijl afbeelding wordt geladen.">
 <!ENTITY browser_display_show_image_placeholders_name "Toon afbeelding plaatshouders">
 <!ENTITY html5_enable_name "Enable the HTML5 parser">
-<!ENTITY svg_enabled_name "Enable SVG vector graphics">
-<!ENTITY svg_smil_enabled_name "Enable SVG animations">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding niet in een webpagina, wordt de afbeelding worden aangepast om te passen in het browservenster als het te groot is voor het browservenster.">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animate tabs">
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
-<!ENTITY browser_tabs_tabMinWidth_name "Min. tab width">
-<!ENTITY browser_tabs_tabMaxWidth_name "Max. tab width">
 <!ENTITY browser_tabs_closeButtons_description "bepaalt waar te sluiten elkaar knoppen.">
 <!ENTITY browser_tabs_closeButtons_name "Sluiten knoppen voor tabbladen worden weergegeven">
 <!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">
@@ -318,15 +300,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Bladwijzers">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "Microsummaries">
-<!ENTITY browser_microsummary_enabled_description "Laat op te halen informatie voor bladwijzers met microsummaries.">
-<!ENTITY browser_microsummary_enabled_name "Gebruik microsummaries">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Bepaalt seconden tussen update microsummary generator controles in seconden. Indien niet gespecificeerd, updates gebeuren wekelijkse (604800 seconden).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Update interval (sec)">
-<!ENTITY browser_microsummary_updateGenerators_description "Bepaalt of periodiek te controleren op updates voor microsummary generatoren.">
-<!ENTITY browser_microsummary_updateGenerators_name "Update microsummaries generatoren">
-<!ENTITY browser_microsummary_updateInterval_description "Bepaalt minuten tussen de controles microsummary update in seconden. Standaard is 30 minuten.">
-<!ENTITY browser_microsummary_updateInterval_name "Update interval (min)">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Het aantal seconden tussen Live Bookmark controles. Waarden onder de 60 wordt verondersteld dat 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Vernieuw interval (sec)">

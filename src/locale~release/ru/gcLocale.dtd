@@ -9,3 +9,4 @@
 <!ENTITY config.header.description "Дополнительные настройки (доступно $n)">
 <!ENTITY config.choosefile "Выберите файл редактора">
 <!ENTITY config.browse "Обзор…">
+<!ENTITY config.searchresults "Search results">

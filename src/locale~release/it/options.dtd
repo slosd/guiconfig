@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Mouse behaviour">
 <!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousescrollhorizontal "Horizontal mouse scrolling">
 <!ENTITY mousescrollnone "with no key">
 <!ENTITY mousescrollshift "with SHIFT key">
 <!ENTITY mousescrollstrg "with CTRL key">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
 <!ENTITY mousewheel_action_o4 "Zoom page">
-<!ENTITY mousewheel_numlines_name "Number of lines to scroll">
-<!ENTITY mousewheel_numlines_description "This is the number of lines a website is scrolled">
-<!ENTITY mousewheel_sysnumlines_name "Use system default">
-<!ENTITY mousewheel_sysnumlines_description "If enabled the number of lines to scroll is determined by your operating system">
 <!ENTITY mouseclick "Clic del mouse">
 <!ENTITY middleclick "Clic centrale">
 <!ENTITY middlemouse_contentLoadURL_description "Al clic del tasto centrale carica il contenuto degli appunti come fosse un URL.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Barra degli indirizzi">
 <!ENTITY browser_urlbar_autoFill_description "Attiva il completamento automatico per la Barra degli indirizzi.">
 <!ENTITY browser_urlbar_autoFill_name "Completamento automatico">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Il completamento automatico viene utilizzato solo per gli indirizzi che sono stati precedentemente inseriti nella Barra degli indirizzi.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Solo indirizzi già inseriti">
 <!ENTITY browser_fixup_alternate_enabled_description "Qualora un indirizzo inserito nella Barra degli indirizzi non produca nessun risultato verranno aggiunti i seguenti caratteri.">
 <!ENTITY browser_fixup_alternate_enabled_name "Utilizza un indirizzo alternativo">
 <!ENTITY browser_fixup_alternate_prefix_description "I caratteri da inserire all&apos;inizio dell&apos;indirizzo.">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Numero di risultati">
 <!ENTITY extensions_getAddons_showPane_description "Specifica se mostrare o meno il pannello Esplora nella finestra Componenti aggiuntivi">
 <!ENTITY extensions_getAddons_showPane_name "Mostra pannello">
-<!ENTITY extensions_hideInstallButton_description "Nasconde il pulsante Installa nella finestra Componenti aggiuntivi">
-<!ENTITY extensions_hideInstallButton_name "Nascondi il pulsante Installa">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Gestione download">
 <!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Security and Privacy">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
-<!ENTITY browser_privatebrowsing_autostart_description "If checked, Firefox will start in &quot;Private Browsing&quot; mode and makes this permanent throughout the whole session.">
-<!ENTITY browser_privatebrowsing_autostart_name "Start in &quot;Private Browsing&quot; mode">
 <!ENTITY master_pass "Master password">
 <!ENTITY security_ask_for_password_description "This preference determines how often you are required to enter the master password. ">
 <!ENTITY security_ask_for_password_o1 "Ask for password whenever needed">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
-<!ENTITY style "Stile">
 <!-- BROWSER -->
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Mostra favicon">
 <!ENTITY browser_chrome_toolbar_tips_description "Specifica il comportamento dei suggerimenti per gli elementi di tipo chrome">
 <!ENTITY browser_chrome_toolbar_tips_name "Mostra suggerimenti">
-<!ENTITY browser_urlbar_hideGoButton_description "Stabilisce se visualizzare o meno il pulsante Vai.">
-<!ENTITY browser_urlbar_hideGoButton_name "Nascondi il pulsante Vai">
 <!ENTITY browser_preferences_animateFadeIn_description "Cambia l&apos;altezza della finestra e genera un effetto dissolvenza per circa un secondo quando si passa da un pannello all&apos;altro nella finestra delle Opzioni.">
 <!ENTITY browser_preferences_animateFadeIn_name "Dissolvenza in apertura all&apos;interno della finestra Opzioni">
 <!-- WEBSITES -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Visualizza i segnaposto durante il periodo di caricamento delle immagini.">
 <!ENTITY browser_display_show_image_placeholders_name "Mostra segnaposto">
 <!ENTITY html5_enable_name "Enable the HTML5 parser">
-<!ENTITY svg_enabled_name "Enable SVG vector graphics">
-<!ENTITY svg_smil_enabled_name "Enable SVG animations">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Quando si visualizza un&apos;immagine che non è contenuta in una pagina web, l&apos;immagine, se troppo grande, verrà ridimensionata per adattarsi alle dimensioni della finestra del browser.">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
 <!ENTITY browser_tabs_animate_name "Animate tabs">
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
-<!ENTITY browser_tabs_tabMinWidth_name "Min. tab width">
-<!ENTITY browser_tabs_tabMaxWidth_name "Max. tab width">
 <!ENTITY browser_tabs_closeButtons_description "Specifica dove visualizzare i pulsanti di chiusura.">
 <!ENTITY browser_tabs_closeButtons_name "Mostra i pulsanti di chiusura delle schede">
 <!ENTITY browser_tabs_closeButtons_o1 "solo sulle schede attive">
@@ -318,15 +300,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Segnalibri">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "Titoli live">
-<!ENTITY browser_microsummary_enabled_description "Consente di ottenere informazioni dai segnalibri per mezzo dei Titoli live.">
-<!ENTITY browser_microsummary_enabled_name "Utilizza i Titoli live">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Determina in secondi l&apos;intervallo di aggiornamento dei generatori di Titoli live. Il valore predefinito è una settimana (604800 secondi).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Intervallo di aggiornamento (in secondi)">
-<!ENTITY browser_microsummary_updateGenerators_description "Stabilisce se effettuare un controllo periodico degli aggiornamenti dei generatori di Titoli live.">
-<!ENTITY browser_microsummary_updateGenerators_name "Aggiorna i generatori di Titoli live">
-<!ENTITY browser_microsummary_updateInterval_description "Determina in minuti l&apos;intervallo di aggiornamento dei Titoli live. Il valore predefinito è 30 minuti.">
-<!ENTITY browser_microsummary_updateInterval_name "Intervallo di aggiornamento (in minuti)">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Indica, in secondi, l&apos;intervallo tra i vari controlli dei Segnalibri live. Valori inferiori a 60 saranno considerati pari a 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervallo di aggiornamento (in secondi):">

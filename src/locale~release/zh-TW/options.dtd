@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "滑鼠操作">
 <!ENTITY mousescrollvertical "滑鼠垂直捲動">
-<!ENTITY mousescrollhorizontal "滑鼠水平捲動">
 <!ENTITY mousescrollnone "不附加任何鍵">
 <!ENTITY mousescrollshift "附加 SHIFT 鍵">
 <!ENTITY mousescrollstrg "附加 CTRL 鍵">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
 <!ENTITY mousewheel_action_o3 "切換瀏覽紀錄之前頁後頁">
 <!ENTITY mousewheel_action_o4 "切換頁面圖文之縮放">
-<!ENTITY mousewheel_numlines_name "捲動行數">
-<!ENTITY mousewheel_numlines_description "決定某一網頁上捲動時的單位行數">
-<!ENTITY mousewheel_sysnumlines_name "系統預設單位行數">
-<!ENTITY mousewheel_sysnumlines_description "若啟用此項，則由您的作業系統來決定捲動時的單位行數">
 <!ENTITY mouseclick "滑鼠點按">
 <!ENTITY middleclick "滑鼠中鍵">
 <!ENTITY middlemouse_contentLoadURL_description "按滑鼠中鍵時，將剪貼簿內容載入成鏈結。">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "地址欄">
 <!ENTITY browser_urlbar_autoFill_description "啟用行內自動補足。">
 <!ENTITY browser_urlbar_autoFill_name "行內自動補足">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "僅針對您先前在地址欄鍵入過的地址進行自動補足">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "僅限符合手動輸入者">
 <!ENTITY browser_fixup_alternate_enabled_description "查無該地址時，自動添加下列字元。">
 <!ENTITY browser_fixup_alternate_enabled_name "地址自動替代">
 <!ENTITY browser_fixup_alternate_prefix_description "添加於行首的字元">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "最大搜尋結果數目">
 <!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
 <!ENTITY extensions_getAddons_showPane_name "顯示側頁">
-<!ENTITY extensions_hideInstallButton_description "在&quot;附加元件管理員&quot;視窗中，不顯示&quot;安裝&quot;按鈕。">
-<!ENTITY extensions_hideInstallButton_name "不顯示&quot;安裝&quot;按鈕">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "下載管理員">
 <!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "安全性及隱私">
 <!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
-<!ENTITY browser_privatebrowsing_autostart_description "此項若勾選，Firefox 會在啟動時自動進入&quot;隱密瀏覽&quot;模式，並運用到整個瀏覽行程直到關閉 Firefox。">
-<!ENTITY browser_privatebrowsing_autostart_name "啟動時自動進入&quot;隱密瀏覽&quot;模式">
 <!ENTITY master_pass "主控密碼">
 <!ENTITY security_ask_for_password_description "此設定決定隔多久會要求您輸入主控密碼。">
 <!ENTITY security_ask_for_password_o1 "需要密碼處，每次都要求輸入">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "外掛程式啟動逾時(秒)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "決定若經過多久，外掛程式仍未能完成啟動，則判定為失敗。">
 <!-- STYLE -->
-<!ENTITY style "樣式">
 <!-- BROWSER -->
 <!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "顯示小圖示">
 <!ENTITY browser_chrome_toolbar_tips_description "決定是否對chrome元件顯示用法提示">
 <!ENTITY browser_chrome_toolbar_tips_name "顯示用法提示">
-<!ENTITY browser_urlbar_hideGoButton_description "決定是否顯示&quot;Go&quot;按鈕">
-<!ENTITY browser_urlbar_hideGoButton_name "隱藏&quot;Go&quot;按鈕">
 <!ENTITY browser_preferences_animateFadeIn_description "當切換設定控制頁時，在大約超過一秒的時間內改變視窗高度並淡入新的控制頁。">
 <!ENTITY browser_preferences_animateFadeIn_name "切換設定控制頁時顯示動畫效果">
 <!-- WEBSITES -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
 <!ENTITY html5_enable_name "啟用 HTML5剖析常式">
-<!ENTITY svg_enabled_name "啟用 SVG 向量繪圖">
-<!ENTITY svg_smil_enabled_name "啟用 SVG 動畫效果">
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
 <!ENTITY images "圖片">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "對分頁開啟/關閉全景檢視(按 CTRL-E)時, 啟用動畫效果.">
 <!ENTITY browser_tabs_animate_name "分頁動畫效果">
 <!ENTITY browser_tabs_animate_description "於開新分頁、重組分頁或關閉分頁時，啟用動畫效果。">
-<!ENTITY browser_tabs_tabMinWidth_name "最小頁籤寬度">
-<!ENTITY browser_tabs_tabMaxWidth_name "最大頁籤寬度">
 <!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
 <!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
 <!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">
@@ -318,15 +300,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "書籤">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "即時摘要(動態標題)">
-<!ENTITY browser_microsummary_enabled_description "允許對書籤萃取即時摘要資訊。">
-<!ENTITY browser_microsummary_enabled_name "啟用即時摘要">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "指定即時摘要產生器檢查更新間隔秒數。若未特別指定，預設為每週檢查一次(604800 秒)。">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "即時摘要產生器檢查更新間隔秒數">
-<!ENTITY browser_microsummary_updateGenerators_description "指定是否要對即時摘要產生器定期檢查更新。">
-<!ENTITY browser_microsummary_updateGenerators_name "即時摘要產生器定期檢查更新">
-<!ENTITY browser_microsummary_updateInterval_description "指定即時摘要檢查更新間隔分鐘數。預設為30分鐘。">
-<!ENTITY browser_microsummary_updateInterval_name "即時摘要檢查更新間隔分鐘數">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">

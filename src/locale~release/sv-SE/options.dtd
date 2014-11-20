@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Egenskaper för mus">
 <!ENTITY mousescrollvertical "Vertikal musrullning">
-<!ENTITY mousescrollhorizontal "Horisontell musrullning">
 <!ENTITY mousescrollnone "utan styrtangent">
 <!ENTITY mousescrollshift "med SKIFT-tangenten">
 <!ENTITY mousescrollstrg "med CTRL-tangenten">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "Bläddra sidor">
 <!ENTITY mousewheel_action_o3 "Gå bakåt/framåt i historiken">
 <!ENTITY mousewheel_action_o4 "Zoomning av sidan">
-<!ENTITY mousewheel_numlines_name "Antal rader att rulla">
-<!ENTITY mousewheel_numlines_description "Det här är det antal rader en webbsida rullas per steg med mushjulet">
-<!ENTITY mousewheel_sysnumlines_name "Använd systemets standard">
-<!ENTITY mousewheel_sysnumlines_description "Med det här alternativet bestäms antalet rader att rulla av ditt operativsystem">
 <!ENTITY mouseclick "Musklick">
 <!ENTITY middleclick "Mittenklick">
 <!ENTITY middlemouse_contentLoadURL_description "Läs in innehållet i Urklipp som en URL vid mittenklick.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Adressfält">
 <!ENTITY browser_urlbar_autoFill_description "Aktiverar funktionen Komplettera automatiskt.">
 <!ENTITY browser_urlbar_autoFill_name "Komplettera automatiskt">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Komplettera endast adresser som du tidigare har skrivit in i adressfältet. ">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Matcha endast skrivna">
 <!ENTITY browser_fixup_alternate_enabled_description "Om en adress inte kan hittas kommer följande tecken att bifogas adressen. ">
 <!ENTITY browser_fixup_alternate_enabled_name "Använd alternativa adresser">
 <!ENTITY browser_fixup_alternate_prefix_description "Tecken som infogas i början av adressen. ">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Antal sökresultat">
 <!ENTITY extensions_getAddons_showPane_description "Bestämmer om &quot;Hämta tillägg&quot;-panelen i fönstret &quot;Tilläggshanteraren&quot; skall visas eller inte.">
 <!ENTITY extensions_getAddons_showPane_name "Visa panelen">
-<!ENTITY extensions_hideInstallButton_description "Göm &quot;Installera&quot;-knappen i fönstret &quot;Tilläggshanteraren&quot;.">
-<!ENTITY extensions_hideInstallButton_name "Göm &quot;Installera&quot;-knappen">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Filhämtaren">
 <!ENTITY browser_download_manager_quitBehavior_description "Bestämmer vad som skall hända med aktiva hämtningar när Firefox avslutas.">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Säkerhet och integritet">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">
 <!ENTITY security_dialog_enable_delay_name "Fördröjning vid tilläggsinstallation (ms)">
-<!ENTITY browser_privatebrowsing_autostart_description "Om ikryssad, kommer Firefox att starta i läget &quot;Privat surfning&quot; och sedan bibehålla det läget under hela sessionen.">
-<!ENTITY browser_privatebrowsing_autostart_name "Starta i läget &quot;Privat surfning&quot;">
 <!ENTITY master_pass "Huvudlösenord">
 <!ENTITY security_ask_for_password_description "Den här inställningen bestämmer hur ofta du måste ange huvudlösenordet.">
 <!ENTITY security_ask_for_password_o1 "Fråga efter lösenord varje gång det krävs">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tidsgräns för insticksmodulstart (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Anger en tidsgräns när en insticksmodul startas, efter vilken starten anses ha misslyckats.">
 <!-- STYLE -->
-<!ENTITY style "Stil">
 <!-- BROWSER -->
 <!ENTITY browser_style "Webbläsare">
 <!ENTITY browser_urlbar_formatting_enabled_name "Aktivera domänformatering">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Visa sajtikoner">
 <!ENTITY browser_chrome_toolbar_tips_description "Styr beteendet hos verktygstips för chrome-element.">
 <!ENTITY browser_chrome_toolbar_tips_name "Visa verktygstips">
-<!ENTITY browser_urlbar_hideGoButton_description "Bestämmer huruvida &quot;Gå&quot;-knappen skall visas.">
-<!ENTITY browser_urlbar_hideGoButton_name "Göm &quot;Gå&quot;-knappen">
 <!ENTITY browser_preferences_animateFadeIn_description "Ändrar höjden på fönstret och tonar in den nya panelen under ungefär en sekund när du byter panel i inställningar-dialogrutor.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animera byte av inställningar-paneler">
 <!-- WEBSITES -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild läses in.">
 <!ENTITY browser_display_show_image_placeholders_name "Visa bildplatshållare">
 <!ENTITY html5_enable_name "Aktivera HTML5-parsern">
-<!ENTITY svg_enabled_name "Tillåt SVG-vektorgrafik">
-<!ENTITY svg_smil_enabled_name "Tillåt SVG-animationer">
 <!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "När en bild visas ensam och inte som en del av en webbsida, kommer dess storlek att anpassas till webbläsarfönstret om den är för stor för att få plats i det.">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Aktivera animationer när du öppnar/stänger Panoramavyn för dina flikar (vid Ctrl+E).">
 <!ENTITY browser_tabs_animate_name "Animera flikar">
 <!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om ovh när en flik tas bort.">
-<!ENTITY browser_tabs_tabMinWidth_name "Flikbredd (minimum)">
-<!ENTITY browser_tabs_tabMaxWidth_name "Flikbredd (maximum)">
 <!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar skall visas.">
 <!ENTITY browser_tabs_closeButtons_name "Stängknappar för flikar visas">
 <!ENTITY browser_tabs_closeButtons_o1 "endast på den aktiva fliken">
@@ -318,15 +300,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Bokmärken">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "Mikrosammanfattningar">
-<!ENTITY browser_microsummary_enabled_description "Tillåt att information för bokmärken samlas in med hjälp av mikrosammanfattningar.">
-<!ENTITY browser_microsummary_enabled_name "Använd mikrosammanfattningar">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Anger antalet sekunder mellan mikrosammanfattningsgeneratorns uppdateringskontroller. Om inget annat anges, kommer uppdateringar att göras veckovis (604800 sekunder).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Uppdateringsintervall (s)">
-<!ENTITY browser_microsummary_updateGenerators_description "Bestämmer huruvida det skall ske regelbundna sökningar efter uppdateringar för mikrosammanfattningsgeneratorer.">
-<!ENTITY browser_microsummary_updateGenerators_name "Uppdatera mikrosammanfattningsgeneratorer">
-<!ENTITY browser_microsummary_updateInterval_description "Anger antalet minuter mellan uppdateringskontroller av mikrosammanfattningar. Standardvärdet är 30 minuter.">
-<!ENTITY browser_microsummary_updateInterval_name "Uppdateringsintervall (min)">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Antalet sekunder mellan kontroller av smarta bokmärken. Värden under 60 antas vara 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Uppdateringsintervall (s)">
