@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE bindings [
+  <!ENTITY % preferencesDTD SYSTEM "chrome://global/locale/preferences.dtd">
+  %preferencesDTD;
+  <!ENTITY % gcDTD SYSTEM "chrome://guiconfig/locale/gcLocale.dtd" >
+  %gcDTD;
+]>
+
+<bindings id="guiconfigBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xbl="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <binding id="gcprefwindow" extends="chrome://global/content/bindings/preferences.xml#prefwindow">
+    <resources>
+      <stylesheet src="chrome://guiconfig/skin/style/gcprefwindow.css"/>
+    </resources>
+    <content title="&browser.item.label;"
+             closebuttonlabel="&preferencesCloseButton.label;"
+             closebuttonaccesskey="&preferencesCloseButton.accesskey;"
+             dlgbuttons="accept,cancel" persist="lastSelected screenX screenY" role="dialog">
+      <xul:windowdragbox orient="vertical">
+        <xul:radiogroup anonid="selector" orient="horizontal" class="paneSelector chromeclass-toolbar" role="listbox"/>
+      </xul:windowdragbox>
+
+      <xul:hbox id="guiconfig-preference-search">
+        <xul:spacer flex="1"/>
+        <xul:textbox type="search" timeout="500" emptytext="&config.search;" xbl:inherits="oncommand=onsearch"/>
+      </xul:hbox>
+
+      <xul:hbox flex="1" class="paneDeckContainer">
+        <xul:deck anonid="paneDeck" flex="1">
+          <children includes="prefpane"/>
+        </xul:deck>
+      </xul:hbox>
+
+      <xul:hbox>
+        <xul:description anonid="description" flex="1">&config.descr.standard;</xul:description>
+      </xul:hbox>
+
+      <xul:hbox anonid="dlg-buttons" class="prefWindow-dlgbuttons">
+        <xul:button dlgtype="disclosure" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="help" class="dialog-button" hidden="true" icon="help"/>
+        <xul:button dlgtype="extra2" class="dialog-button" hidden="true"/>
+        <xul:button dlgtype="extra1" class="dialog-button" hidden="true"/>
+        <xul:spacer anonid="spacer" flex="1"/>
+        <xul:button dlgtype="cancel" class="dialog-button" icon="cancel"/>
+        <xul:button dlgtype="accept" class="dialog-button" icon="accept"/>
+      </xul:hbox>
+
+      <children/>
+    </content>
+
+    <implementation>
+      <property name="descriptionText" onget="return this._description.textContent;" onset="return this._description.textContent = val;"/>
+      <property name="_description" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'description');"/>
+    </implementation>
+  </binding>
+</bindings>

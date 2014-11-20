@@ -128,7 +128,7 @@
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
 <!-- WEBSITES -->
-<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. "> 
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
 <!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
@@ -137,7 +137,7 @@
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
-<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. "> 
+<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. ">
 <!-- ALERTS -->
 <!ENTITY alerts "Alerts">
 <!ENTITY update_showSlidingNotification_description "Display a notification in the browser when updates are available.">
@@ -220,7 +220,7 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Timeout for non-responding plugins (sec)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
-<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. "> 
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
 <!-- STYLE -->
 <!ENTITY style "Style">
 <!-- BROWSER -->

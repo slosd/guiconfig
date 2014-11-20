@@ -7,3 +7,5 @@
 <!ENTITY config.todefault "Встановити значення за умовчанням">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.header.description "Поглиблені налаштування (доступно $n)">
+<!ENTITY config.choosefile "Обрати файл">
+<!ENTITY config.browse "Перегляд...">

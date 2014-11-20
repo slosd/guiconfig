@@ -7,3 +7,5 @@
 <!ENTITY config.todefault "還原到預設值">
 <!ENTITY config.header.title "進階設定(gui:config)">
 <!ENTITY config.header.description "進階設定 (共計 $n 項)">
+<!ENTITY config.choosefile "選一個既有檔案">
+<!ENTITY config.browse "瀏覽...">

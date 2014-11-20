@@ -7,3 +7,5 @@
 <!ENTITY config.todefault "Przywróć domyślną wartość">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.header.description "Opcje zaawansowane (dostępne: $n)">
+<!ENTITY config.choosefile "Wybierz plik">
+<!ENTITY config.browse "Przeglądaj...">

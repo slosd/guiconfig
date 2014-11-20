@@ -1,0 +1,23 @@
+#gcPreferencesDialog {
+	-moz-binding: url('chrome://guiconfig/content/bindings/preferences.xml#gcprefwindow');
+}
+
+#guiconfig-search-results,
+radio[pane=guiconfig-search-results] {
+  display: none;
+}
+
+.search-active #guiconfig-search-results,
+.search-active radio[pane=guiconfig-search-results] {
+  display: -moz-box;
+}
+
+.prefrow.highlight {
+  animation: highlight 1s;
+}
+
+@keyframes highlight {
+  0%   { background: transparent; }
+  50%  { background: red; }
+  100% { background: transparent; }
+}

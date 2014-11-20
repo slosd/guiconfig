@@ -65,8 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Especifica a quantidade máxima de sugestões oferecidas enquanto se digita no campo de endereço.">
 <!ENTITY browser_urlbar_maxRichResults_name "Máximo de sugestões:">
 <!-- WEBSITES -->
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "Determina se as mensagens dos sites devem ser exibidas dentro da própria aba (novo) ou em uma janela separada (modo antigo).">
+<!ENTITY prompts_tab_modal_enabled_name "Ativar mensagens dos sites dentro da aba">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Especifica se a pesquisa de texto iniciada automaticamente ao se começar a digitar deve diferenciar maiúsculas de minúsculas. &quot;Automático&quot; não diferencia se o texto digitado for todo em minúsculas ou em maiúsculas, mas diferencia se nele houver ambas.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Diferenciar maiúsculas de minúsculas:">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "automático">
@@ -129,7 +129,7 @@
 <!ENTITY browser "Navegador">
 <!-- CACHE -->
 <!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
-<!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (em segundos):">
+<!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
 <!ENTITY gfx_3d_video_enabled_name "Ativar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Ativa a exibição estereoscópica de vídeos 3D. (Exige equipamento compatível.)">
 <!ENTITY mozilla_widget_render_mode_name "Ativar Direct2D">
@@ -204,7 +204,7 @@
 <!ENTITY browser_download_manager_focusWhenStarting_name "Abrir a janela de downloads em primeiro plano ao começar a baixar um arquivo">
 <!-- BROWSER -->
 <!ENTITY security_privacy "Privacidade e segurança">
-<!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para deastivar esse recurso.">
+<!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para desativar esse recurso.">
 <!ENTITY security_dialog_enable_delay_name "Atraso para instalar complementos (ms):">
 <!ENTITY browser_privatebrowsing_autostart_description "Inicia o Firefox já no modo &quot;Navegação Privativa&quot;, mantendo-o assim durante toda a sessão.">
 <!ENTITY browser_privatebrowsing_autostart_name "Iniciar o Firefox em navegação privativa">
@@ -225,16 +225,16 @@
 <!ENTITY style "Estilo">
 <!-- TEXT SELECT -->
 <!ENTITY browser_style "Navegador">
-<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
-<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
-<!ENTITY browser_identity_ssl_domain_display_name "Realçe de domínio SSL:">
+<!ENTITY browser_urlbar_formatting_enabled_name "Ativar formatação de domínio">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determina se o domínio deve ser formatado no campo de endereço.">
+<!ENTITY browser_identity_ssl_domain_display_name "Realce de domínio SSL:">
 <!ENTITY browser_identity_ssl_domain_display_description "Especifica o trecho do domínio a ser realçado quando a conexão for segura (SSL): domínio principal (ex.: &quot;mozilla.org&quot;), domínio completo (ex.: &quot;bugzilla.mozilla.org&quot;) ou nenhum.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "nenhum">
 <!ENTITY browser_identity_ssl_domain_display_o2 "domínio principal">
 <!ENTITY browser_identity_ssl_domain_display_o3 "domínio completo">
 <!ENTITY browser_chrome_favicons_description "Exibe os ícones especificados por sites e páginas (favicons) para melhor identificá-los.">
 <!ENTITY browser_chrome_favicons_name "Mostrar ícones de sites e páginas">
-<!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre os mesmos.">
+<!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre eles.">
 <!ENTITY browser_chrome_toolbar_tips_name "Mostrar dicas de tela para ferramentas">
 <!ENTITY browser_urlbar_hideGoButton_description "Remove o botão &quot;Ir&quot; da extremidade do campo de endereço.">
 <!ENTITY browser_urlbar_hideGoButton_name "Não mostrar o botão &quot;Ir&quot;">
@@ -245,8 +245,8 @@
 <!ENTITY rendering "Exibição">
 <!ENTITY nglayout_initialpaint_delay_description "Especifica o tempo, em milissegundos, antes da primeira exibição de uma página sendo carregada. Valores menores fazem as páginas serem exibidas mais rapidamente porém demorarem mais para terminar de carregar. Valores maiores têm o efeito oposto.">
 <!ENTITY nglayout_initialpaint_delay_name "Atraso de exibição (ms):">
-<!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as re-exibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
-<!ENTITY content_notify_interval_name "Intervalo mínimo entre re-exibições (µs):">
+<!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as reexibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
+<!ENTITY content_notify_interval_name "Intervalo mínimo entre reexibições (µs):">
 <!ENTITY browser_blink_allowed_description "Permite que itens na página com a tag HTML &quot;blink&quot; ou com o estilo CSS &quot;text-decoration: blink&quot; sejam exibidos piscando. Desmarque para que não pisquem.">
 <!ENTITY browser_blink_allowed_name "Ativar texto piscante">
 <!ENTITY browser_frames_enabled_description "Permite a exibição de páginas em quadros (frames). Desmarque para forçar o Firefox a não usar quadros.">

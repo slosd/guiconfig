@@ -1,5 +1,5 @@
 <!ENTITY prefs.label "Налаштування">
-<!ENTITY prefs.todefault.ask.title "Ask before restoring">
+<!ENTITY prefs.todefault.ask.title "Питати перед відновленням">
 <!ENTITY prefs.todefault.ask "Запитувати перед відновленням значень за умовчанням">
-<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
+<!ENTITY prefs.sticktopreferences.title "Додати рядок меню">
 <!ENTITY prefs.sticktopreferences "Розмістити елемент меню gui:config після &quot;Налаштування&quot;">

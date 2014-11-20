@@ -3,12 +3,12 @@
 <overlay id="gcTools"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <!-- The "Edit" menu -->
-  <menupopup id="menu_EditPopup">
+  <!-- The usual "Tools" menu -->
+  <menupopup id="menu_ToolsPopup">
     <menuitem id="gcToolsItem" insertafter="menu_preferences"
           label="&browser.item.label;"
           image="chrome://guiconfig/skin/icons/icon.16.png"
-          oncommand="guiconfig.openWindow('config')"
+          oncommand="guiconfig.browser.showPreferencesDialog()"
           accesskey="&browser.item.access;"/>
   </menupopup>
 
@@ -17,12 +17,10 @@
     <menuitem id="gcAppItem" insertafter="appmenu_preferences"
           label="&browser.item.label;"
           image="chrome://guiconfig/skin/icons/icon.16.png"
-          oncommand="guiconfig.openWindow('config')"
+          oncommand="guiconfig.browser.showPreferencesDialog()"
           accesskey="&browser.item.access;"/>
   </menupopup>
 
-  <script type="application/javascript" src="/content/app/gconfig.core.js"/>
-  <script type="application/javascript" src="/content/app/gconfig.browser.js"/>
-  <script type="application/javascript">guiconfig.init();</script>
-
+  <script type="application/javascript" src="/content/core.js"/>
+  <script type="application/javascript" src="/content/browser.js"/>
 </overlay>

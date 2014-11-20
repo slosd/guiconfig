@@ -65,6 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Especifica a quantidade máxima de sugestões oferecidas enquanto se digita no campo de endereço.">
 <!ENTITY browser_urlbar_maxRichResults_name "Máximo de sugestões:">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Determina se as mensagens dos sites devem ser exibidas dentro da própria aba (novo) ou em uma janela separada (modo antigo).">
+<!ENTITY prompts_tab_modal_enabled_name "Ativar mensagens dos sites dentro da aba">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Especifica se a pesquisa de texto iniciada automaticamente ao se começar a digitar deve diferenciar maiúsculas de minúsculas. &quot;Automático&quot; não diferencia se o texto digitado for todo em minúsculas ou em maiúsculas, mas diferencia se nele houver ambas.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Diferenciar maiúsculas de minúsculas:">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "automático">
@@ -127,7 +129,7 @@
 <!ENTITY browser "Navegador">
 <!-- CACHE -->
 <!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
-<!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (em segundos):">
+<!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
 <!ENTITY gfx_3d_video_enabled_name "Ativar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Ativa a exibição estereoscópica de vídeos 3D. (Exige equipamento compatível.)">
 <!ENTITY mozilla_widget_render_mode_name "Ativar Direct2D">
@@ -202,7 +204,7 @@
 <!ENTITY browser_download_manager_focusWhenStarting_name "Abrir a janela de downloads em primeiro plano ao começar a baixar um arquivo">
 <!-- BROWSER -->
 <!ENTITY security_privacy "Privacidade e segurança">
-<!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para deastivar esse recurso.">
+<!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para desativar esse recurso.">
 <!ENTITY security_dialog_enable_delay_name "Atraso para instalar complementos (ms):">
 <!ENTITY browser_privatebrowsing_autostart_description "Inicia o Firefox já no modo &quot;Navegação Privativa&quot;, mantendo-o assim durante toda a sessão.">
 <!ENTITY browser_privatebrowsing_autostart_name "Iniciar o Firefox em navegação privativa">
@@ -223,14 +225,16 @@
 <!ENTITY style "Estilo">
 <!-- TEXT SELECT -->
 <!ENTITY browser_style "Navegador">
-<!ENTITY browser_identity_ssl_domain_display_name "Realçe de domínio SSL:">
+<!ENTITY browser_urlbar_formatting_enabled_name "Ativar formatação de domínio">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determina se o domínio deve ser formatado no campo de endereço.">
+<!ENTITY browser_identity_ssl_domain_display_name "Realce de domínio SSL:">
 <!ENTITY browser_identity_ssl_domain_display_description "Especifica o trecho do domínio a ser realçado quando a conexão for segura (SSL): domínio principal (ex.: &quot;mozilla.org&quot;), domínio completo (ex.: &quot;bugzilla.mozilla.org&quot;) ou nenhum.">
 <!ENTITY browser_identity_ssl_domain_display_o1 "nenhum">
 <!ENTITY browser_identity_ssl_domain_display_o2 "domínio principal">
 <!ENTITY browser_identity_ssl_domain_display_o3 "domínio completo">
 <!ENTITY browser_chrome_favicons_description "Exibe os ícones especificados por sites e páginas (favicons) para melhor identificá-los.">
 <!ENTITY browser_chrome_favicons_name "Mostrar ícones de sites e páginas">
-<!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre os mesmos.">
+<!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre eles.">
 <!ENTITY browser_chrome_toolbar_tips_name "Mostrar dicas de tela para ferramentas">
 <!ENTITY browser_urlbar_hideGoButton_description "Remove o botão &quot;Ir&quot; da extremidade do campo de endereço.">
 <!ENTITY browser_urlbar_hideGoButton_name "Não mostrar o botão &quot;Ir&quot;">
@@ -241,8 +245,8 @@
 <!ENTITY rendering "Exibição">
 <!ENTITY nglayout_initialpaint_delay_description "Especifica o tempo, em milissegundos, antes da primeira exibição de uma página sendo carregada. Valores menores fazem as páginas serem exibidas mais rapidamente porém demorarem mais para terminar de carregar. Valores maiores têm o efeito oposto.">
 <!ENTITY nglayout_initialpaint_delay_name "Atraso de exibição (ms):">
-<!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as re-exibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
-<!ENTITY content_notify_interval_name "Intervalo mínimo entre re-exibições (µs):">
+<!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as reexibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
+<!ENTITY content_notify_interval_name "Intervalo mínimo entre reexibições (µs):">
 <!ENTITY browser_blink_allowed_description "Permite que itens na página com a tag HTML &quot;blink&quot; ou com o estilo CSS &quot;text-decoration: blink&quot; sejam exibidos piscando. Desmarque para que não pisquem.">
 <!ENTITY browser_blink_allowed_name "Ativar texto piscante">
 <!ENTITY browser_frames_enabled_description "Permite a exibição de páginas em quadros (frames). Desmarque para forçar o Firefox a não usar quadros.">
@@ -328,12 +332,15 @@
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Atualizar RSS a cada (s):">
 <!ENTITY browser_bookmarks_max_backups_description "Especifica quantas cópias de segurança da lista de favoritos serão mantidas pelo navegador. Digite 0 para não manter cópias do arquivo de favoritos.">
 <!ENTITY browser_bookmarks_max_backups_name "Nº de cópias do arquivo de favoritos:">
+<!-- NETWORK -->
 <!ENTITY network "Rede">
+<!-- CONNECTIONS -->
 <!ENTITY connections "Conexões">
 <!ENTITY network_http_max-connections-per-server_description "Especifica o limite máximo de conexões abertas simultaneamente com cada servidor. Valores aceitos de 1 a 255.">
 <!ENTITY network_http_max-connections-per-server_name "Máximo de conexões HTTP por servidor:">
 <!ENTITY network_http_max-connections_description "Especifica o limite máximo de conexões abertas simultaneamente pelo Firefox. Valores aceitos de 1 a 65535.">
 <!ENTITY network_http_max-connections_name "Máximo de conexões HTTP:">
+<!-- KEEP ALIVE -->
 <!ENTITY keep-alive_connections "Conexões persistentes (keep-alive)">
 <!ENTITY network_http_keep-alive_description "Conexões HTTP persistentes (keep-alive) não são fechadas após o carregamento da página, sendo reutilizadas para carregar mais rapidamente outras páginas do mesmo servidor.">
 <!ENTITY network_http_keep-alive_name "Usar conexões HTTP persistentes">
@@ -341,6 +348,7 @@
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Máximo de conexões persistentes por servidor proxy:">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Especifica o limite máximo de conexões persistentes abertas simultaneamente com cada servidor. Valores aceitos de 1 a 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Máximo de conexões persistentes por servidor:">
+<!-- PIPELINING -->
 <!ENTITY pipelining "Pedidos sequenciais">
 <!ENTITY network_http_pipelining_description "Enviar a um servidor vários pedidos juntos em uma sequência (pipelining) reduz o tráfego de dados e pode acelerar o carregamento das páginas, porém pode causar problemas com servidores que não suportem esse recurso.">
 <!ENTITY network_http_pipelining_maxrequests_description "Especifica o máximo de pedidos que podem ser enviados em cada sequência quando esse recurso estiver ativo.">
@@ -348,12 +356,15 @@
 <!ENTITY network_http_pipelining_name "Enviar pedidos sequenciais (pipelining)">
 <!ENTITY network_http_proxy_pipelining_description "Faz o Firefox enviar pedidos sequenciais quando estiver conectado à Intervet através um servidor proxy.">
 <!ENTITY network_http_proxy_pipelining_name "Enviar pedidos sequenciais ao usar servidor proxy">
+<!-- DEVELOPMENT -->
 <!ENTITY developing "Desenvolvedor">
+<!-- VIEW SOURCE -->
 <!ENTITY viewsource "Código-fonte">
 <!ENTITY view_source_editor_external_description "Faz o código-fonte da página ser mostrado em um programa específico em vez do visualizador embutido do Firefox.">
 <!ENTITY view_source_editor_external_name "Usar editor externo">
 <!ENTITY view_source_editor_path_description "Caminho para o editor externo de código-fonte.">
 <!ENTITY view_source_editor_path_name "Local do programa:">
+<!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Exibe as alterações nos arquivos XUL (janelas e caixas de diálogo de extensões) sem reiniciar o navegador. Não funciona com arquivos compactados em JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Desabilitar cache de XUL">
 <!ENTITY devtools_inspector_enabled_description "Acrescenta o item &quot;Inspecionar&quot; no menu &quot;Desenvolvedor web&quot; (necessário reiniciar o navegador).">

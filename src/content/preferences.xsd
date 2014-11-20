@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:p="http://guiconfig.freedig.org/preferences"
+        targetNamespace="http://guiconfig.freedig.org/preferences"
+        elementFormDefault="qualified">
+
+<!-- represents any kind of integer or float number -->
+<simpleType name="number-type">
+  <restriction base="string">
+    <pattern value="[+-]*[0-9]+\.?[0-9]*" />
+  </restriction>
+</simpleType>
+
+<!-- platforms to filter by -->
+<simpleType name="platform-type">
+  <restriction base="string">
+    <enumeration value="WINNT" />
+    <enumeration value="Linux" />
+    <enumeration value="Darwin" />
+  </restriction>
+</simpleType>
+
+<!-- data type of preferences -->
+<simpleType name="preference-type">
+  <restriction base="string">
+    <enumeration value="int" />
+    <enumeration value="bool" />
+    <enumeration value="string" />
+  </restriction>
+</simpleType>
+
+<!-- label attribute -->
+<attributeGroup name="labeled">
+  <attribute name="label" type="string" use="required" />
+</attributeGroup>
+
+
+<!-- label and description attribute -->
+<attributeGroup name="informative">
+  <attributeGroup ref="p:labeled" />
+  <attribute name="description" type="string" use="required" />
+</attributeGroup>
+
+<!-- attributes to define the scope of a preference -->
+<attributeGroup name="filterable">
+  <attribute name="minVersion" type="string" />
+  <attribute name="maxVersion" type="string" />
+  <attribute name="platform" type="p:platform-type" />
+</attributeGroup>
+
+<!-- a container that only contains preferences or groups of preferences -->
+<complexType name="flat-container">
+  <sequence minOccurs="0" maxOccurs="unbounded">
+    <choice>
+      <element name="group" type="p:flat-container" />
+      <element name="pref" type="p:preference" />
+    </choice>
+  </sequence>
+
+  <attributeGroup ref="p:labeled" />
+  <attributeGroup ref="p:filterable" />
+</complexType>
+
+<!-- a container that contains more structured preferences -->
+<complexType name="container">
+  <complexContent>
+    <extension base="p:flat-container">
+      <sequence minOccurs="0" maxOccurs="unbounded">
+        <element name="concerns">
+          <complexType>
+            <sequence minOccurs="1" maxOccurs="unbounded">
+              <element name="concern" type="p:container" />
+            </sequence>
+
+            <attributeGroup ref="p:filterable" />
+          </complexType>
+        </element>
+      </sequence>
+    </extension>
+  </complexContent>
+</complexType>
+
+<!-- a container that holds a view definition for a preference -->
+<complexType name="view-container">
+  <sequence minOccurs="0" maxOccurs="unbounded">
+    <choice>
+      <element name="group">
+        <complexType>
+          <complexContent>
+            <extension base="p:view-container">
+              <attributeGroup ref="p:labeled" />
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="checkbox" type="p:view-element" />
+    </choice>
+  </sequence>
+</complexType>
+
+<!-- an element that describes a view of a preference -->
+<complexType name="view-element">
+  <attributeGroup ref="p:informative" />
+  <attribute name="value" type="string" />
+</complexType>
+
+<!-- a type of presentation of a preference -->
+<simpleType name="mode-type">
+  <restriction base="string">
+    <enumeration value="radio" />
+    <enumeration value="select" />
+    <enumeration value="color" />
+  </restriction>
+</simpleType>
+
+<!-- a method that can be overridden -->
+<simpleType name="override-type">
+  <restriction base="string">
+    <enumeration value="getValue" />
+    <enumeration value="setValue" />
+    <enumeration value="getPref" />
+    <enumeration value="setPref" />
+    <enumeration value="dependencies" />
+  </restriction>
+</simpleType>
+
+<!-- a filter for an open-file dialog -->
+<simpleType name="file-filter-type">
+  <restriction base="string">
+    <enumeration value="All" />
+    <enumeration value="HTML" />
+    <enumeration value="Text" />
+    <enumeration value="Images" />
+    <enumeration value="XML" />
+    <enumeration value="XUL" />
+    <enumeration value="Apps" />
+    <enumeration value="AllowURLs" />
+    <enumeration value="Audio" />
+    <enumeration value="Video" />
+  </restriction>
+</simpleType>
+
+<!-- a preference -->
+<complexType name="preference">
+  <sequence minOccurs="0" maxOccurs="unbounded">
+    <choice>
+      <element name="option">
+        <complexType>
+          <simpleContent>
+            <extension base="string">
+              <attributeGroup ref="p:labeled" />
+              <attributeGroup ref="p:filterable" />
+            </extension>
+          </simpleContent>
+        </complexType>
+      </element>
+      <element name="mode">
+        <complexType>
+          <choice maxOccurs="unbounded">
+            <element name="filterExtension">
+              <complexType>
+                <attribute name="label" type="string" use="required" />
+                <attribute name="value" type="string" use="required" />
+              </complexType>
+            </element>
+            <element name="filterType">
+              <complexType>
+                <attribute name="value" type="p:file-filter-type" use="required" />
+              </complexType>
+            </element>
+          </choice>
+
+          <attribute name="name" use="required">
+            <simpleType>
+              <restriction base="string">
+                <enumeration value="file" />
+              </restriction>
+            </simpleType>
+          </attribute>
+        </complexType>
+      </element>
+      <element name="behavior">
+        <complexType>
+          <sequence minOccurs="1" maxOccurs="unbounded">
+            <element name="override">
+              <complexType>
+                <simpleContent>
+                  <extension base="string">
+                    <attribute name="name" type="p:override-type" use="required" />
+                  </extension>
+                </simpleContent>
+              </complexType>
+            </element>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="view" type="p:view-container" />
+      <element name="dependency">
+        <complexType>
+          <attributeGroup ref="p:filterable" />
+          <attribute name="key" type="string" use="required" />
+          <attribute name="equals" type="string" />
+          <attribute name="in" type="string" />
+        </complexType>
+      </element>
+      <element name="binding">
+        <complexType>
+          <attribute name="key" type="string" />
+          <attribute name="type" type="p:preference-type" />
+        </complexType>
+      </element>
+    </choice>
+  </sequence>
+
+  <attributeGroup ref="p:filterable" />
+  <attribute name="key" type="string" use="required" />
+  <attribute name="label" type="string" />
+  <attribute name="description" type="string" />
+  <attribute name="type" type="p:preference-type" use="required" />
+  <attribute name="mode" type="p:mode-type" />
+  <attribute name="default" type="string" />
+  <attribute name="minValue" type="p:number-type" />
+  <attribute name="maxValue" type="p:number-type" />
+  <attribute name="indent">
+    <simpleType>
+      <restriction base="string">
+        <enumeration value="indent" />
+      </restriction>
+    </simpleType>
+  </attribute>
+  <attribute name="wrapper" type="string" />
+</complexType>
+
+<!-- document root -->
+<element name="preferences">
+  <complexType>
+    <sequence minOccurs="0" maxOccurs="unbounded">
+      <element name="category">
+        <complexType>
+          <complexContent>
+            <extension base="p:container">
+              <attribute name="icon" />
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+
+  <key name="pref-key">
+    <selector xpath=".//p:pref" />
+    <field xpath="@key" />
+  </key>
+  <keyref name="pref-key-ref" refer="p:pref-key">
+    <selector xpath=".//p:prefref" />
+    <field xpath="@key" />
+  </keyref>
+</element>
+
+</schema>
