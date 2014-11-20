@@ -65,8 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "指定智能地址栏下拉列表最多显示的条目数。">
 <!ENTITY browser_urlbar_maxRichResults_name "下拉列表中的条目数">
 <!-- WEBSITES -->
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "指定使用新的标签式模提示对话框还是旧的窗口式对话框">
+<!ENTITY prompts_tab_modal_enabled_name "启用标签式模态提示对话框">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "定义如区分大小写。当设定为自动决定时，如果搜索字符串中含有大写字符，则区分大小写。">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "区分大小写">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自动决定">
@@ -225,8 +225,8 @@
 <!ENTITY style "样式">
 <!-- BROWSER -->
 <!ENTITY browser_style "浏览器样式">
-<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
-<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
+<!ENTITY browser_urlbar_formatting_enabled_name "启用域名格式化">
+<!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
 <!ENTITY browser_identity_ssl_domain_display_name "高亮使用SSL的域名">
 <!ENTITY browser_identity_ssl_domain_display_description "这个选项可以控制当访问用SSL加密的网站时，如何高亮调域名。例如访问bugzilla.mozilla.org时：二级高亮显示mozilla.org；完全高亮显示bugzilla.mozilla.org">
 <!ENTITY browser_identity_ssl_domain_display_o1 "不高亮">

@@ -7,3 +7,5 @@
 <!ENTITY config.todefault "Använd standardvärdet">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.header.description "Avancerade inställningar ($n tillgängliga)">
+<!ENTITY config.choosefile " Välj fil">
+<!ENTITY config.browse " Bläddra…">

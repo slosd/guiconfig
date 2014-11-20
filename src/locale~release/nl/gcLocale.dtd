@@ -7,3 +7,5 @@
 <!ENTITY config.todefault "Instellen op de standaard waarde">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.header.description "Geavanceerde instellingen ($n beschikbaar)">
+<!ENTITY config.choosefile "Choose File">
+<!ENTITY config.browse " Browse...">

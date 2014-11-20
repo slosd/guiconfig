@@ -4,10 +4,10 @@
 <!ENTITY mousebehaviour "Поведінка миші">
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
 <!ENTITY mousescrollhorizontal "Горизонтальний скролінг мишею">
-<!ENTITY mousescrollnone "with no key">
-<!ENTITY mousescrollshift "with SHIFT key">
-<!ENTITY mousescrollstrg "with CTRL key">
-<!ENTITY mousescrollalt "with ALT key">
+<!ENTITY mousescrollnone "без клавіш">
+<!ENTITY mousescrollshift "з клавішею SHIFT">
+<!ENTITY mousescrollstrg "з клавішею CTRL">
+<!ENTITY mousescrollalt "з клавішею ALT">
 <!ENTITY mousewheel_action_name "Action">
 <!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
 <!ENTITY mousewheel_action_o1 "Scroll lines">

@@ -7,7 +7,7 @@
     <em:id>guiconfig@slosd.net</em:id>
     <em:iconURL>chrome://guiconfig/skin/icons/icon.32.png</em:iconURL>
     <em:type>2</em:type>
-   
+
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -15,15 +15,15 @@
         <em:maxVersion>%FFMAXVERSION%</em:maxVersion>
       </Description>
     </em:targetApplication>
-    
+
     <em:name>%NAME%</em:name>
     <em:version>%VERSION%</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://guiconfig.freedig.org</em:homepageURL>
-    <em:optionsURL>chrome://guiconfig/content/gui/inlinepref.xul</em:optionsURL>
+    <em:optionsURL>chrome://guiconfig/content/ui/inlinepref.xul</em:optionsURL>
     <em:optionsType>2</em:optionsType>
-    
+
     <em:translator>Stanislav Horáček (cs)</em:translator>
     <em:translator>Markus Stadler, slosd (de)</em:translator>
     <em:translator>Jürgen Berg, slosd (en-US)</em:translator>
@@ -36,7 +36,7 @@
     <em:translator>Mikael Hiort af Ornäs (sv-SE)</em:translator>
     <em:translator>fang5566, taizi (zh-CN)</em:translator>
     <em:translator>Tsprajna (zh-TW)</em:translator>
-    
+
     <em:contributor>this extension uses icons from the Tango Desktop Project (http://tango.freedesktop.org/Tango_Desktop_Project)</em:contributor>
   </Description>
 </RDF>

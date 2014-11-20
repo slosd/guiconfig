@@ -7,3 +7,5 @@
 <!ENTITY config.todefault "Změnit na výchozí hodnotu">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.header.description "Pokročilé nastavení ($n dostupných)">
+<!ENTITY config.choosefile "Vybrat soubor">
+<!ENTITY config.browse "Procházet...">

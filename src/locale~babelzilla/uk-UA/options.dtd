@@ -2,6 +2,10 @@
 <!ENTITY mousebehaviour "Поведінка миші">
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
 <!ENTITY mousescrollhorizontal "Горизонтальний скролінг мишею">
+<!ENTITY mousescrollnone "без клавіш">
+<!ENTITY mousescrollshift "з клавішею SHIFT">
+<!ENTITY mousescrollstrg "з клавішею CTRL">
+<!ENTITY mousescrollalt "з клавішею ALT">
 <!ENTITY mouseclick "Клацання мишкою">
 <!ENTITY middleclick "Середня клавіша">
 <!ENTITY middlemouse_paste_name "Вставити текст з буферу обміну">

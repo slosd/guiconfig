@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+
+<project name="gui:config" default="build">
+  <property file="build.properties"/>
+
+  <property name="src.dir" value="${basedir}/src" />
+  <property name="build.dir" value="${basedir}/build" />
+  <property name="xpi.dir" value="${basedir}/releases" />
+  <property name="locales.release.dir" value="${src.dir}/locale~release" />
+  <property name="locales.babelzilla.dir" value="${src.dir}/locale~babelzilla" />
+
+  <target name="build" depends="prepare-build,prepare-full-locales">
+    <antcall target="validate-preferences" />
+
+    <copy file="${src.dir}/install.tpl.rdf" tofile="${build.dir}/install.rdf" overwrite="true" />
+    <replace file="${build.dir}/install.rdf" propertyFile="build.properties">
+      <replacefilter token="%NAME%" property="name"/>
+      <replacefilter token="%VERSION%" property="version"/>
+      <replacefilter token="%FFMINVERSION%" property="firefox.minversion"/>
+      <replacefilter token="%FFMAXVERSION%" property="firefox.maxversion"/>
+    </replace>
+
+    <copy file="${src.dir}/chrome.tpl.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true" />
+    <antcall target="fill-chrome-manifest" />
+
+    <antcall target="createXPI">
+      <param name="file" value="guiconfig-${version}.xpi" />
+    </antcall>
+
+    <delete dir="${build.dir}"/>
+  </target>
+
+  <target name="build-babelzilla" depends="prepare-build,prepare-babelzilla-locales">
+    <antcall target="validate-preferences" />
+
+    <copy file="${src.dir}/install.tpl.rdf" tofile="${build.dir}/install.rdf" overwrite="true" />
+    <replace file="${build.dir}/install.rdf" propertyFile="build.properties">
+      <replacefilter token="%NAME%" property="name"/>
+      <replacefilter token="%VERSION%" value="${version}-babelzilla"/>
+      <replacefilter token="%FFMINVERSION%" property="firefox.minversion"/>
+      <replacefilter token="%FFMAXVERSION%" property="firefox.maxversion"/>
+    </replace>
+
+    <copy file="${src.dir}/chrome.tpl.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true" />
+    <antcall target="fill-chrome-manifest" />
+
+    <antcall target="createXPI">
+      <param name="file" value="guiconfig-${version}-babelzilla.xpi" />
+    </antcall>
+
+    <delete dir="${build.dir}"/>
+  </target>
+
+  <target name="validate-preferences">
+    <copy file="${build.dir}/content/preferences.xml" tofile="${build.dir}/content/preferences.local.xml" overwrite="true" />
+
+    <replace file="${build.dir}/content/preferences.local.xml">
+      <replacefilter token="chrome://guiconfig/locale/" value="../locale/en-US/"/>
+      <replacefilter token="chrome://guiconfig/content/" value="."/>
+    </replace>
+
+    <schemavalidate file="${build.dir}/content/preferences.local.xml">
+      <property name="http://java.sun.com/xml/jaxp/properties/schemaLanguage" value="http://www.w3.org/2001/XMLSchema"/>
+    </schemavalidate>
+    <delete file="${build.dir}/content/preferences.local.xml"/>
+  </target>
+
+  <target name="prepare-build">
+    <mkdir dir="${build.dir}" />
+    <mkdir dir="${xpi.dir}" />
+
+    <copy todir="${build.dir}" overwrite="true">
+      <fileset dir="${src.dir}">
+        <include name="content/**/*.js" />
+        <include name="content/**/*.xul" />
+        <include name="content/**/*.xml" />
+        <include name="content/**/*.xsl" />
+        <include name="content/**/*.xsd" />
+        <include name="defaults/**/*.js" />
+        <include name="skin/**/*.png" />
+        <include name="skin/**/*.svg" />
+        <include name="skin/**/*.css" />
+
+        <exclude name="**/.*" />
+        <exclude name="**/*~" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="prepare-full-locales" depends="prepare-build">
+    <script language="javascript">
+      var locales = project.getProperty("locales");
+      project.setProperty("locales.dir", locales.replaceAll("( |$)", "/$1"));
+    </script>
+
+    <copy todir="${build.dir}/locale" overwrite="true">
+      <fileset dir="${locales.release.dir}" includes="${locales.dir}">
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="prepare-babelzilla-locales" depends="prepare-build">
+    <copy todir="${build.dir}/locale" overwrite="true">
+      <fileset dir="${locales.babelzilla.dir}">
+        <include name="**/*.dtd" />
+        <include name="**/*.properties" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="fill-chrome-manifest" depends="prepare-build">
+    <dirset id="locales.dirs" dir="${build.dir}/locale" includes="*" />
+    <pathconvert property="locales.list" refid="locales.dirs" pathsep="&#xA;" />
+    <script language="javascript">
+      var pathPrefixRegex = "(?m)^.*?\/([^\/]+)$";
+      var localeTemplate = "locale guiconfig $1 locale/$1/";
+      var localesList = project.getProperty("locales.list");
+      var localesChromeManifest = localesList.replaceAll(pathPrefixRegex, localeTemplate);
+      project.setProperty("locales.chrome.manifest", localesChromeManifest);
+    </script>
+    <echo file="${build.dir}/chrome.manifest" append="true">${locales.chrome.manifest}</echo>
+  </target>
+
+  <target name="createXPI">
+    <zip destfile="${xpi.dir}/${file}" basedir="${build.dir}" update="false" />
+  </target>
+</project>

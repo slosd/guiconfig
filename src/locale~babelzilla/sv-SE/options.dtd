@@ -65,13 +65,15 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Bestämmer det maximala antalet resultat som skall visas i adressfältet vid sökning.">
 <!ENTITY browser_urlbar_maxRichResults_name "Antal sökresultat">
 <!-- WEBSITES -->
+<!ENTITY prompts_tab_modal_enabled_description "Avgör om aviseringar skall visas i de nya modala meddelandeflikarna eller i de gamla modala meddelandefönstren.">
+<!ENTITY prompts_tab_modal_enabled_name "Aktivera modala meddelandeflikar (varningar)">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Avgör hur skiftlägeskänslighet skall hanteras. I läget &quot;Bestäm automatiskt&quot; är sökningen skiftlägeskänslig om söksträngen innehåller versaler, men inte endast består av versaler.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Skiftlägeskänslig">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Bestäm automatiskt">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Inte skiftlägeskänslig">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Skiftlägeskänslig">
-<!ENTITY accessibility_typeaheadfind_label "Sidsökfältet (Find as you type)">
-<!ENTITY accessibility_typeaheadfind_timeout_description "Bestämmer hur lång tid som får gå utan ytterligare tangentnedslag, innan sidsökfältet försvinner.">
+<!ENTITY accessibility_typeaheadfind_label "Söklisten (Sök medan du skriver)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Bestämmer hur lång tid som får gå utan ytterligare tangentnedslag, innan söklisten försvinner.">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Tidsgräns (ms)">
 <!ENTITY signon_prefillForms_description "Fyll automatiskt i formulärfält med användarnamn och lösenord.">
 <!ENTITY signon_prefillForms_name "Fyll automatiskt i formulärfält för inloggning">
@@ -119,7 +121,7 @@
 <!ENTITY browser_popups_showPopupBlocker_name "Visa popup-blockeringsikon i statusfältet">
 <!ENTITY browser_preferences_instantApply_description "Ändringar i inställningar verkställs direkt. Inställningar-fönstret är inte längre modalt, så istället för knapparna &quot;OK&quot; och &quot;Avbryt&quot; finns där bara en &quot;Stäng&quot;-knapp.">
 <!ENTITY browser_preferences_instantApply_name "Verkställ automatiskt">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Varje gång (F7) trycks ned visas en dialogruta som gör användarna uppmärksamma på att de går över till textmarkörläge.">
+<!ENTITY accessibility_warn_on_browsewithcaret_description "Varje gång [F7] trycks ned visas en dialogruta som gör användarna uppmärksamma på att de går över till textmarkörläge.">
 <!ENTITY accessibility_warn_on_browsewithcaret_name "Visa dialogruta när textmarkörläge påbörjas">
 <!ENTITY accessibility_accesskeycausesactivation_description "Att använda en snabbtangent för ett element blir samma sak som att aktivera elementet. Om elementet är en länk, följs länken. Om elementet är en knapp, klickas knappen.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Snabbtangent aktiverar elementet">
@@ -223,6 +225,8 @@
 <!ENTITY style "Stil">
 <!-- BROWSER -->
 <!ENTITY browser_style "Webbläsare">
+<!ENTITY browser_urlbar_formatting_enabled_name "Aktivera domänformatering">
+<!ENTITY browser_urlbar_formatting_enabled_description "Avgör huruvida domänen i adressfältet skall formateras eller inte.">
 <!ENTITY browser_identity_ssl_domain_display_name "Framhäv domäner som använder SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "När en webbplats använder SSL för att kryptera kommunikationen, kan användaren välja att få en del av webbplatsens URL framhävd i användargränssnittet. Den här inställningen styr vad som skall visas i adressfältet: Ingenting, andranivådomänen (t.ex.: mozilla.org) eller den fullständiga domänen (t.ex.: bugzilla.mozilla.org).">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Visa inte domän">
@@ -267,8 +271,8 @@
 <!ENTITY gfx_downloadable_fonts_enabled_description "Medger hämtning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Markerad text">
-<!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för sidsökfältet genom att välja en hexkod eller en namngiven färg.">
-<!ENTITY ui_textSelectBackgroundAttention_name "Sidsökfältets bakgrundsfärg">
+<!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för söklisten genom att välja en hexkod eller en namngiven färg.">
+<!ENTITY ui_textSelectBackgroundAttention_name "Söklistens bakgrundsfärg">
 <!ENTITY ui_textSelectBackground_description "Ändra bakgrundsfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">
 <!ENTITY ui_textSelectBackground_name "Bakgrundsfärg">
 <!ENTITY ui_textSelectForeground_description "Ändra textfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">

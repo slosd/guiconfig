@@ -65,8 +65,8 @@
 <!ENTITY browser_urlbar_maxRichResults_description "Určuje, kolik výsledků by se nejvýš mělo objevit v adresním řádku.">
 <!ENTITY browser_urlbar_maxRichResults_name "Max. počet výsledků">
 <!-- WEBSITES -->
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "Určuje, zda se budou používat nové modální dialogy pro panel, nebo staré modální dialogy pro celé okno.">
+<!ENTITY prompts_tab_modal_enabled_name "Povolit modální dialogy (upozornění) pro panel">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Určuje, zda se bude rozlišovat velikost písmen. Při volbě „Automaticky rozpoznat“ se bude velikost rozlišovat, pokud hledaný řetězec obsahuje velká písmena, ale není celý velkými písmeny.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozlišovat velikost písmen">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automaticky rozpoznat">
@@ -225,8 +225,8 @@
 <!ENTITY style "Styl">
 <!-- WEBSITES -->
 <!ENTITY browser_style "Prohlížeč">
-<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
-<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
+<!ENTITY browser_urlbar_formatting_enabled_name "Povolit formátování domény">
+<!ENTITY browser_urlbar_formatting_enabled_description "Určuje, zda se bude bude formátovat doména v adresním řádku.">
 <!ENTITY browser_identity_ssl_domain_display_name "Zvýraznit domény používající SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Pokud stránka používá k šifrování komunikace SSL, uživatel může vybrat, jaká část URL stránka bude v uživatelském rozhraní zvýrazněna. Tato předvolba určuje, zda v adresním řádku nezobrazovat nic, zobrazovat doménu druhého řádu (např. mozilla.org) nebo celou doménu (např. bugzilla.mozilla.org).">
 <!ENTITY browser_identity_ssl_domain_display_o1 "Nezobrazovat doménu">
