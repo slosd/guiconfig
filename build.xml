@@ -51,6 +51,32 @@
     <delete dir="${build.dir}"/>
   </target>
 
+  <target name="clear-locales">
+    <exec executable="egrep" outputproperty="entities">
+      <arg value="-o"/>
+      <arg value="&amp;(\S+);"/>
+      <arg file="${src.dir}/content/preferences.xml"/>
+    </exec>
+    <script language="javascript">
+    <![CDATA[
+      var entities = project.getProperty("entities");
+      var pattern = "(^<!--|<!ENTITY " + entities.replaceAll("(&|;)", "").replaceAll("\n", " |<!ENTITY ") + " )";
+      project.setProperty("pattern", pattern);
+    ]]>
+    </script>
+    <apply executable="egrep" parallel="false">
+      <arg value="${pattern}"/>
+      <fileset dir="${locales.babelzilla.dir}" includes="*/options.dtd"/>
+      <redirector>
+        <outputmapper type="glob" from="*.dtd" to="${locales.babelzilla.dir}/*.clear.dtd"/>
+      </redirector>
+    </apply>
+    <move todir="${locales.babelzilla.dir}">
+      <fileset dir="${locales.babelzilla.dir}" includes="*/options.clear.dtd"/>
+      <mapper type="glob" from="*.clear.dtd" to="*.dtd"/>
+    </move>
+  </target>
+
   <target name="validate-preferences">
     <copy file="${build.dir}/content/preferences.xml" tofile="${build.dir}/content/preferences.local.xml" overwrite="true" />
 
