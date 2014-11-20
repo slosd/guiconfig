@@ -29,110 +29,6 @@
                     type="bool" />
             </group>
           </concern>
-          <concern label="&mousescrollvertical;" maxVersion="16.*">
-            <concerns>
-              <concern label="&mousescrollnone;">
-                <pref key="mousewheel.withnokey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.withnokey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.withnokey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.withnokey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.withnokey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-              <concern label="&mousescrollshift;">
-                <pref key="mousewheel.withshiftkey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.withshiftkey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.withshiftkey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.withshiftkey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.withshiftkey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-              <concern label="&mousescrollstrg;">
-                <pref key="mousewheel.withcontrolkey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.withcontrolkey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.withcontrolkey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.withcontrolkey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.withcontrolkey.sysnumlines" equals="0" />
-                </pref>
-              </concern>
-              <concern label="&mousescrollalt;">
-                <pref key="mousewheel.withaltkey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.withaltkey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.withaltkey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.withaltkey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.withaltkey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-            </concerns>
-          </concern>
           <concern label="&mousescrollvertical;" minVersion="17.0b1">
             <group label="&mousescrollnone;">
               <pref key="mousewheel.default.action"
@@ -182,110 +78,6 @@
                 <option label="&mousewheel_action_o4;">3</option>
               </pref>
             </group>
-          </concern>
-          <concern label="&mousescrollhorizontal;" maxVersion="16.*">
-            <concerns>
-              <concern label="&mousescrollnone;">
-                <pref key="mousewheel.horizscroll.withnokey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.horizscroll.withnokey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.horizscroll.withnokey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.horizscroll.withnokey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.horizscroll.withnokey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-              <concern label="&mousescrollshift;">
-                <pref key="mousewheel.horizscroll.withshiftkey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.horizscroll.withshiftkey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.horizscroll.withshiftkey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.horizscroll.withshiftkey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.horizscroll.withshiftkey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-              <concern label="&mousescrollstrg;">
-                <pref key="mousewheel.horizscroll.withcontrolkey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.horizscroll.withcontrolkey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.horizscroll.withcontrolkey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.horizscroll.withcontrolkey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.horizscroll.withcontrolkey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-              <concern label="&mousescrollalt;">
-                <pref key="mousewheel.horizscroll.withaltkey.action"
-                      label="&mousewheel_action_name;"
-                      description="&mousewheel_action_description;"
-                      type="int"
-                      mode="select">
-                  <option label="&mousewheel_action_o1;">0</option>
-                  <option label="&mousewheel_action_o2;">1</option>
-                  <option label="&mousewheel_action_o3;">2</option>
-                  <option label="&mousewheel_action_o4;">3</option>
-                </pref>
-                <pref key="mousewheel.horizscroll.withaltkey.sysnumlines"
-                      label="&mousewheel_sysnumlines_name;"
-                      description="&mousewheel_sysnumlines_description;"
-                      type="bool">
-                  <dependency key="mousewheel.horizscroll.withaltkey.action" equals="0" />
-                </pref>
-                <pref key="mousewheel.horizscroll.withaltkey.numlines"
-                      label="&mousewheel_numlines_name;"
-                      description="&mousewheel_numlines_description;"
-                      type="int"
-                      indent="indent">
-                  <dependency key="mousewheel.horizscroll.withaltkey.sysnumlines" equals="false" />
-                </pref>
-              </concern>
-            </concerns>
           </concern>
         </concerns>
       </concern>
@@ -497,12 +289,6 @@
                 label="&browser_urlbar_autoFill_name;"
                 description="&browser_urlbar_autoFill_description;"
                 type="bool" />
-          <pref key="browser.urlbar.matchOnlyTyped"
-                maxVersion="3.0.*"
-                label="&browser_urlbar_matchOnlyTyped_name;"
-                description="&browser_urlbar_matchOnlyTyped_description;"
-                type="bool"
-                indent="indent" />
           <pref key="browser.fixup.alternate.enabled"
                 label="&browser_fixup_alternate_enabled_name;"
                 description="&browser_fixup_alternate_enabled_description;"
@@ -602,17 +388,6 @@
               description=""
               type="bool"
               minVersion="3.6" />
-        <pref key="svg.enabled"
-              label="&svg_enabled_name;"
-              description=""
-              type="bool"
-              maxVersion="4.0b7" />
-        <pref key="svg.smil.enabled"
-              label="&svg_smil_enabled_name;"
-              description=""
-              type="bool">
-          <dependency key="svg.enabled" equals="true" maxVersion="4.0b7" />
-        </pref>
         <pref key="webgl.enabled_for_all_sites"
               label="&webgl_enabled_for_all_sites_name;"
               description=""
@@ -686,47 +461,6 @@
                 type="int" />
         </group>
       </concern>
-      <concern label="&bookmarks;">
-        <group label="&microsummaries;" minVersion="2.0" maxVersion="5.*">
-          <pref key="browser.microsummary.enabled"
-                label="&browser_microsummary_enabled_name;"
-                description="&browser_microsummary_enabled_description;"
-                type="bool" />
-          <pref key="browser.microsummary.updateInterval"
-                label="&browser_microsummary_updateInterval_name;"
-                description="&browser_microsummary_updateInterval_description;"
-                type="int"
-                indent="indent">
-            <dependency key="browser.microsummary.enabled" equals="true" />
-          </pref>
-          <pref key="browser.microsummary.updateGenerators"
-                label="&browser_microsummary_updateGenerators_name;"
-                description="&browser_microsummary_updateGenerators_description;"
-                type="bool">
-            <dependency key="browser.microsummary.enabled" equals="true" />
-          </pref>
-          <pref key="browser.microsummary.generatorUpdateInterval"
-                label="&browser_microsummary_generatorUpdateInterval_name;"
-                description="&browser_microsummary_generatorUpdateInterval_description;"
-                type="int"
-                indent="indent">
-            <dependency key="browser.microsummary.enabled" equals="true" />
-            <dependency key="browser.microsummary.updateGenerators" equals="true" />
-          </pref>
-        </group>
-        <group label="&misc;">
-          <pref key="browser.bookmarks.livemark_refresh_seconds"
-                label="&browser_bookmarks_livemark_refresh_seconds_name;"
-                description="&browser_bookmarks_livemark_refresh_seconds_description;"
-                type="int"
-                default="3600" />
-          <pref key="browser.bookmarks.max_backups"
-                label="&browser_bookmarks_max_backups_name;"
-                description="&browser_bookmarks_max_backups_description;"
-                type="int"
-                minVersion="2*" />
-        </group>
-      </concern>
       <concern label="&security_privacy;">
         <group label="&master_pass;">
           <pref key="security.ask_for_password"
@@ -774,6 +508,18 @@
         </group>
       </concern>
       <concern label="&misc;">
+        <group label="&bookmarks;">
+          <pref key="browser.bookmarks.livemark_refresh_seconds"
+                label="&browser_bookmarks_livemark_refresh_seconds_name;"
+                description="&browser_bookmarks_livemark_refresh_seconds_description;"
+                type="int"
+                default="3600" />
+          <pref key="browser.bookmarks.max_backups"
+                label="&browser_bookmarks_max_backups_name;"
+                description="&browser_bookmarks_max_backups_description;"
+                type="int"
+                minVersion="2*" />
+        </group>
         <group label="&alerts;">
           <pref key="update.showSlidingNotification"
                 label="&update_showSlidingNotification_name;"
@@ -870,13 +616,6 @@
                 label="&browser_chrome_toolbar_tips_name;"
                 description="&browser_chrome_toolbar_tips_description;"
                 type="bool" />
-          <pref key="browser.urlbar.hideGoButton"
-                label="&browser_urlbar_hideGoButton_name;"
-                description="&browser_urlbar_hideGoButton_description;"
-                type="bool"
-                minVersion="2.0"
-                maxVersion="2.*"
-                default="0" />
           <pref key="browser.preferences.animateFadeIn"
                 label="&browser_preferences_animateFadeIn_name;"
                 description="&browser_preferences_animateFadeIn_description;"
@@ -982,16 +721,6 @@
                 description="&browser_panorama_animate_zoom_description;"
                 type="bool"
                 minVersion="4.0b4" />
-          <pref key="browser.tabs.tabMinWidth"
-                label="&browser_tabs_tabMinWidth_name;"
-                description=""
-                type="int"
-                maxVersion="3.6.*" />
-          <pref key="browser.tabs.tabMaxWidth"
-                label="&browser_tabs_tabMaxWidth_name;"
-                description=""
-                type="int"
-                maxVersion="3.6.*" />
           <pref key="browser.tabs.closeButtons"
                 label="&browser_tabs_closeButtons_name;"
                 description="&browser_tabs_closeButtons_description;"
