@@ -997,7 +997,8 @@
                 description="&browser_tabs_closeButtons_description;"
                 type="int"
                 mode="select"
-                minVersion="2.0">
+                minVersion="2.0"
+                maxVersion="30.*">
             <option label="&browser_tabs_closeButtons_o1;">0</option>
             <option label="&browser_tabs_closeButtons_o2;">1</option>
             <option label="&browser_tabs_closeButtons_o3;">2</option>
@@ -1007,6 +1008,8 @@
                 label="&browser_tabs_tabClipWidth_name;"
                 description="&browser_tabs_tabClipWidth_description;"
                 type="int"
+                minVersion="2.0"
+                maxVersion="30.*"
                 indent="indent">
             <dependency key="browser.tabs.closeButtons" in="0, 1" />
           </pref>
