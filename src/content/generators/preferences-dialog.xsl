@@ -10,7 +10,7 @@
               media-type="application/vnd.mozilla.xul+xml" />
 
   <xsl:template match="p:category">
-    <prefpane id="category{position()}" label="{@label}" image="chrome://guiconfig/skin/tango/tab_icons/{@icon}.png" flex="1">
+    <prefpane id="category{position()}" label="{@label}" image="chrome://guiconfig/skin/icons/categories/{@icon}.png" flex="1">
       <preferences>
         <xsl:apply-templates select=".//p:pref[@key and @type]" mode="preferences" />
       </preferences>
@@ -105,7 +105,7 @@
       </xsl:if>
       <xsl:apply-templates select="." mode="element" />
       <menupopup>
-        <menuitem label="&config.todefault;" class="menuitem-iconic" image="/skin/tango/actions/reset.png" oncommand="guiconfig.preferences.resetPreference('{@key}')" />
+        <menuitem label="&config.todefault;" class="menuitem-iconic" image="/skin/icons/actions/reset.png" oncommand="guiconfig.preferences.resetPreference('{@key}')" />
       </menupopup>
     </hbox>
   </xsl:template>

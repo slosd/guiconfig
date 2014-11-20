@@ -6,7 +6,7 @@ style chrome://global/content/customizeToolbar.xul chrome://guiconfig/skin/style
 style chrome://guiconfig/content/ui/button.xul chrome://guiconfig/skin/style/gcbutton.css
 
 # adds the menu items to the normal menu as well as to the app menu
-overlay chrome://browser/content/browser.xul chrome://guiconfig/content/ui/browser.xul
+overlay chrome://browser/content/browser.xul chrome://guiconfig/content/ui/browser_menu_default.xul
 
 # override the former overlay if on OS with the option menu item in the "Edit" popup
 override chrome://guiconfig/content/ui/browser_menu_default.xul chrome://guiconfig/content/ui/browser_menu_edit.xul os=Linux
