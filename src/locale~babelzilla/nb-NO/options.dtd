@@ -55,14 +55,11 @@
 <!ENTITY browser_download_lastDir_name "Sist brukte nedlastingsmappe">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Gjør Nedlastinger-vinduet til aktivt vindu når du starter en nedlasting">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Gjør Nedlastinger-vinduet til aktivt vindu når nedlastingen starter">
-<!ENTITY style "Stil">
 <!ENTITY browser_style "Nettleser">
 <!ENTITY browser_chrome_favicons_description "Angir om Favicon-er skal vises">
 <!ENTITY browser_chrome_favicons_name "Vis Favicon-er">
 <!ENTITY browser_chrome_toolbar_tips_description "Angir oppførselen til verktøytips for chrome-elementer">
 <!ENTITY browser_chrome_toolbar_tips_name "Vis verktøytips">
-<!ENTITY browser_urlbar_hideGoButton_description "Angir om «Gå til»-knappen skal vises">
-<!ENTITY browser_urlbar_hideGoButton_name "Skjul «Gå til»-knappen">
 <!ENTITY browser_preferences_animateFadeIn_description "Endrer høyden på vinduet, og toner inn det nye panelet ved bytting av paneler.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animer bytte mellom paneler">
 <!ENTITY browser_blink_allowed_description "«blink»-taggen eller CSS tekstdekorasjon vil resultere i blinkende elementer.">

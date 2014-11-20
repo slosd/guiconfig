@@ -1,7 +1,6 @@
 <!ENTITY accessibility "Bedienung">
 <!ENTITY mousebehaviour "Mausverhalten">
 <!ENTITY mousescrollvertical "Vertikales Scrollen">
-<!ENTITY mousescrollhorizontal "Horizontales Scrollen">
 <!ENTITY mousescrollnone "ohne Taste">
 <!ENTITY mousescrollshift "mit SHIFT Taste">
 <!ENTITY mousescrollstrg "mit STRG Taste">
@@ -12,10 +11,6 @@
 <!ENTITY mousewheel_action_o2 "Seite scrollen">
 <!ENTITY mousewheel_action_o3 "Vor- und rückwärts in der Chronik gehen">
 <!ENTITY mousewheel_action_o4 "Webseite zoomen">
-<!ENTITY mousewheel_numlines_name "Anzahl der gescrollten Zeilen">
-<!ENTITY mousewheel_numlines_description "Die Anzahl der Zeilen, die auf einer Webseite mit dem Mausrad gescrollt werden.">
-<!ENTITY mousewheel_sysnumlines_name "Systemeinstellung verwenden">
-<!ENTITY mousewheel_sysnumlines_description "Wenn aktiviert, wird die Anzahl der gescrollten Zeilen von ihrem Betriebssystem festgelegt.">
 <!ENTITY mouseclick "Mausklick">
 <!ENTITY middleclick "Mittelklick">
 <!ENTITY middlemouse_contentLoadURL_description "Befindet sich in der Zwischenablage eine URL, wird diese bei einem Mittelklick im Browserfenster geöffnet.">
@@ -29,8 +24,6 @@
 <!ENTITY urlbar "Adressleiste">
 <!ENTITY browser_urlbar_autoFill_description "Wenn diese Funktion aktiviert ist, wird die URL während der Eingabe in der Adressleiste vervollständigt.">
 <!ENTITY browser_urlbar_autoFill_name "Adresse beim Tippen automatisch vervollständigen">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Nur Adressen, die schon einmal in die Adressleiste eingegeben wurden, werden vervollständigt.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Nur selbst eingetippte Adressen">
 <!ENTITY browser_fixup_alternate_enabled_description "Wenn eine Adresse nicht gefunden werden kann, wird sie um die hier anzugebenden Zeichen ergänzt.">
 <!ENTITY browser_fixup_alternate_enabled_name "Alternative Adresse suchen">
 <!ENTITY browser_fixup_alternate_prefix_description "Dieser Text wird vor der eingegebenen Adresse eingefügt. (Beispiel: www.)">
@@ -173,8 +166,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Anzahl maximaler Suchergebnisse:">
 <!ENTITY extensions_getAddons_showPane_description "Zeigt die &quot;Add-ons herunterladen&quot; Schaltfläche im Firefox Add-on-Manager(&quot;Extras&quot; &gt; &quot;Add-ons&quot;) an.">
 <!ENTITY extensions_getAddons_showPane_name "Reiter anzeigen">
-<!ENTITY extensions_hideInstallButton_description "Die Schaltfläche &quot;Installieren&quot; im &quot;Add-ons-Manager&quot; ausblenden.">
-<!ENTITY extensions_hideInstallButton_name "Schaltfläche &quot;Installieren&quot; ausblenden">
 <!ENTITY downloadmanager "Download-Manager">
 <!ENTITY browser_download_manager_quitBehavior_description "Legt fest was beim Beenden von Firefox mit aktiven Downloads geschehen soll.">
 <!ENTITY browser_download_manager_quitBehavior_name "Verhalten beim Beenden">
@@ -192,8 +183,6 @@
 <!ENTITY security_privacy "Sicherheit und Datenschutz">
 <!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, die gewartet werden muss, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
 <!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms):">
-<!ENTITY browser_privatebrowsing_autostart_description "Wenn aktiviert startet Firefox im &quot;Privaten Modus&quot; und behält diesen Modus während der gesamten Sitzung.">
-<!ENTITY browser_privatebrowsing_autostart_name "Firefox im &quot;Privaten Modus&quot; starten">
 <!ENTITY master_pass "Master-Passwort">
 <!ENTITY security_ask_for_password_description "Bestimmt wann nach dem Master-Passwort gefragt wird.">
 <!ENTITY security_ask_for_password_o1 "Bei jedem Gebrauch">
@@ -207,7 +196,6 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Legt die Zeit fest, nach der der Prozess eines Plugins, welches nicht mehr reagiert, beendet wird.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Zeitbeschränkung für Pluginstart (sek)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Die Zeitdauer, nach der der Start eines Plugins als fehlgeschlagen angesehen wird.">
-<!ENTITY style "Aussehen">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Domainformatierung aktivieren">
 <!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
@@ -220,8 +208,6 @@
 <!ENTITY browser_chrome_favicons_name "Favicons anzeigen">
 <!ENTITY browser_chrome_toolbar_tips_description "Zeigt Tooltips über Schaltflächen in der Symbolleiste, über Lesezeichen und über Elementen einer Webseite an.">
 <!ENTITY browser_chrome_toolbar_tips_name "Tooltips anzeigen">
-<!ENTITY browser_urlbar_hideGoButton_description "Legt fest, ob rechts neben der Adresszeile die &quot;Go&quot;-Schaltfläche angezeigt wird.">
-<!ENTITY browser_urlbar_hideGoButton_name "&quot;Go&quot;-Schaltfläche verstecken">
 <!ENTITY browser_preferences_animateFadeIn_description "Wenn dies aktiviert ist, werden im &quot;Einstellungen&quot;-Dialog die Karteikarten sanft eingeblendet.">
 <!ENTITY browser_preferences_animateFadeIn_name "&quot;Einstellungen&quot;-Karteikarten sanft einblenden">
 <!ENTITY websites "Webseiten">
@@ -239,8 +225,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
 <!ENTITY html5_enable_name "HTML5 Parser benutzen">
-<!ENTITY svg_enabled_name "SVG Vektor Grafiken anzeigen">
-<!ENTITY svg_smil_enabled_name "Aktiviere SVG Animationen">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
@@ -265,8 +249,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Aktiviert die Animation beim Öffnen und Schließen der Panorama-Ansicht Ihrer Tabs (mit STRG-E).">
 <!ENTITY browser_tabs_animate_name "Tabs animieren">
 <!ENTITY browser_tabs_animate_description "Aktiviert Animationen wenn ein neuer Tab geöffnet wird, wenn Tabs verschoben werden und wenn ein Tab von der Tableiste gezogen wird.">
-<!ENTITY browser_tabs_tabMinWidth_name "Minimale Tab-Breite">
-<!ENTITY browser_tabs_tabMaxWidth_name "Maximale Tab-Breite">
 <!ENTITY browser_tabs_closeButtons_description "Bestimmt wo Schaltflächen zum Schließen von Tabs angezeigt werden sollen.">
 <!ENTITY browser_tabs_closeButtons_name "&quot;Schließen&quot; Schaltflächen anzeigen:">
 <!ENTITY browser_tabs_closeButtons_o1 "nur im aktiven Tab">
@@ -293,15 +275,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Letzter Tab eines Fensters schließbar">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Gibt an, ob der letzte Tab eines Browserfensters geschlossen werden kann.">
 <!ENTITY bookmarks "Lesezeichen">
-<!ENTITY microsummaries "Microsummaries">
-<!ENTITY browser_microsummary_enabled_description "Informationen aus Microsummaries für Lesezeichen verwenden.">
-<!ENTITY browser_microsummary_enabled_name "Microsummaries aktivieren">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Das Intervall, in Sekunden, in dem Microsummary-Generatoren aktualisiert werden.Wird kein Wert angegeben, so findet die Aktualisierung wöchentlich statt (entspricht 604800 Sekunden).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Aktualisierung (sek):">
-<!ENTITY browser_microsummary_updateGenerators_description "Aktualisiert Microsummary-Generatoren.">
-<!ENTITY browser_microsummary_updateGenerators_name "Microsummary-Generatoren aktualisieren">
-<!ENTITY browser_microsummary_updateInterval_description "Das Intervall, in Minuten, in dem Microsummaries aktualisiert werden. (Standard ist 30 Minuten)">
-<!ENTITY browser_microsummary_updateInterval_name "Aktualisierung (min):">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Gibt in Sekunden an, in welchen Abständen Dynamische Lesezeichen aktualisiert wird.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Aktualisierung (sek)">
 <!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">

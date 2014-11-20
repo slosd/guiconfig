@@ -3,7 +3,6 @@
 <!-- MOUSE CLICK -->
 <!ENTITY mousebehaviour "Chování myši">
 <!ENTITY mousescrollvertical "Svislý posun">
-<!ENTITY mousescrollhorizontal "Vodorovný posun">
 <!ENTITY mousescrollnone "bez klávesy">
 <!ENTITY mousescrollshift "s klávesou SHIFT">
 <!ENTITY mousescrollstrg "s klávesou CTRL">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "Posunout o stránku">
 <!ENTITY mousewheel_action_o3 "Jít zpět/vpřed v historii">
 <!ENTITY mousewheel_action_o4 "Přiblížit/oddálit stránku">
-<!ENTITY mousewheel_numlines_name "Počet řádků posunu">
-<!ENTITY mousewheel_numlines_description "Tento počet udává, o kolik řádků se stránka posune">
-<!ENTITY mousewheel_sysnumlines_name "Použít výchozí nastavení systému">
-<!ENTITY mousewheel_sysnumlines_description "Pokud je povoleno, počet řádků posunu bude dán nastavením operačního systému">
 <!ENTITY mouseclick "Klepnutí myší">
 <!ENTITY middleclick "Klepnutí prostředním tlačítkem">
 <!ENTITY middlemouse_contentLoadURL_description "Při klepnutí prostředním tlačítkem načte obsah schránky jako URL.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Adresní řádek">
 <!ENTITY browser_urlbar_autoFill_description "Povolí automatické dokončování.">
 <!ENTITY browser_urlbar_autoFill_name "Automatické dokončování">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Automaticky dokončí pouze adresy, které byly do adresního řádku zadány předem.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Jenom již zadané">
 <!ENTITY browser_fixup_alternate_enabled_description "Pokud nebude adresa nalezena, přidají se k ní následující znaky.">
 <!ENTITY browser_fixup_alternate_enabled_name "Použít alternativní adresy">
 <!ENTITY browser_fixup_alternate_prefix_description "Znaky, které se budou vkládat na začátek adresy.">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Max. výsledků vyhledávání">
 <!ENTITY extensions_getAddons_showPane_description "Určuje, zda zobrazovat v okně „Správce doplňků“ panel „Získat nová rozšíření“.">
 <!ENTITY extensions_getAddons_showPane_name "Zobrazit panel">
-<!ENTITY extensions_hideInstallButton_description "Skryje v okně „Správce doplňků“ tlačítko „Instalovat“">
-<!ENTITY extensions_hideInstallButton_name "Skrýt tlačítko „Instalovat“">
 <!-- SECURITY -->
 <!ENTITY downloadmanager "Správce stahování">
 <!ENTITY browser_download_manager_quitBehavior_description "Určuje, co se stane s probíhajícím stahováním při ukončení Firefoxu.">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Zabezpečení a soukromí">
 <!ENTITY security_dialog_enable_delay_description "Tato předvolba určuje dobu zdržení (v milisekundách) před tím, než bude možno při instalaci doplňku klepnout na tlačítko „Instalovat“. Pro vypnutí zdržení zadejte 0.">
 <!ENTITY security_dialog_enable_delay_name "Zdržení při instalaci doplňku (ms)">
-<!ENTITY browser_privatebrowsing_autostart_description "Pokud je zaškrtnuto, Firefox se spustí v režimu „Anonymní prohlížení“, který bude trvat po celou dobu relace.">
-<!ENTITY browser_privatebrowsing_autostart_name "Spustit v režimu „Anonymní prohlížení“">
 <!ENTITY master_pass "Hlavní heslo">
 <!ENTITY security_ask_for_password_description "Tato předvolba určuje, jak často bude vyžadováno zadání hlavního hesla.">
 <!ENTITY security_ask_for_password_o1 "Požadovat heslo, kdykoliv je potřeba">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Časový limit pro spuštění zásuvného modulu (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Určuje dobu, po které se bude spuštění zásuvného modulu považovat za neúspěšné.">
 <!-- BROWSER -->
-<!ENTITY style "Styl">
 <!-- WEBSITES -->
 <!ENTITY browser_style "Prohlížeč">
 <!ENTITY browser_urlbar_formatting_enabled_name "Povolit formátování domény">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Zobrazovat oblíbené ikony">
 <!ENTITY browser_chrome_toolbar_tips_description "Určuje chování místní nápovědy pro prvky chrome.">
 <!ENTITY browser_chrome_toolbar_tips_name "Zobrazovat místní nápovědu">
-<!ENTITY browser_urlbar_hideGoButton_description "Určuje, zda skrýt tlačítko „Přejít“, nebo ne.">
-<!ENTITY browser_urlbar_hideGoButton_name "Skrýt tlačítko „Přejít“">
 <!ENTITY browser_preferences_animateFadeIn_description "Při přepínání panelů v předvolbách se bude měnit výška okna a nový panel se bude pozvolna objevovat během přibližně sekundy.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animovat přepínání panelů předvoleb">
 <!-- TEXT SELECT -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zobrazí zástupný obrázek během jeho načítání.">
 <!ENTITY browser_display_show_image_placeholders_name "Zobrazit zástupný obrázek">
 <!ENTITY html5_enable_name "Povolit parser HTML5">
-<!ENTITY svg_enabled_name "Povolit vektorovou grafiku SVG">
-<!ENTITY svg_smil_enabled_name "Povolit animované SVG">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
 <!ENTITY images "Obrázky">
 <!ENTITY browser_enable_automatic_image_resizing_description "Pokud je obrázek prohlížený mimo stránku příliš velký, bude změněna jeho velikost, aby se vešel do okna prohlížeče.">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Povolí animace při otevírání/zavírání zobrazení panelů zvaného Panorama (při CTRL-E).">
 <!ENTITY browser_tabs_animate_name "Animovat panely">
 <!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
-<!ENTITY browser_tabs_tabMinWidth_name "Min. šířka panelu">
-<!ENTITY browser_tabs_tabMaxWidth_name "Max. šířka panelu">
 <!ENTITY browser_tabs_closeButtons_description "Určuje, zda zobrazovat tlačítka pro zavření.">
 <!ENTITY browser_tabs_closeButtons_name "Tlačítka pro zavření panelů jsou zobrazena">
 <!ENTITY browser_tabs_closeButtons_o1 "jen na aktivním panelu">
@@ -318,15 +300,6 @@
 <!-- MICROSUMMARIES -->
 <!ENTITY bookmarks "Záložky">
 <!-- MISC -->
-<!ENTITY microsummaries "Minisouhrny">
-<!ENTITY browser_microsummary_enabled_description "Povolí získávání informací pro záložky s minisouhrny.">
-<!ENTITY browser_microsummary_enabled_name "Použít minisouhrny">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Určuje počet sekund mezi kontrolami aktualizací zdroje minisouhrnů. Není-li stanoveno, aktualizuje se týdně (604800 sekund).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Interval mezi aktualizacemi (s)">
-<!ENTITY browser_microsummary_updateGenerators_description "Určuje, zda pravidelně kontrolovat aktualizace ve zdrojích minisouhrnů.">
-<!ENTITY browser_microsummary_updateGenerators_name "Aktualizovat zdroje minisouhrnů">
-<!ENTITY browser_microsummary_updateInterval_description "Určuje v sekundách dobu mezi kontrolami aktualizací minisouhrnů. Výchozí je 30 minut.">
-<!ENTITY browser_microsummary_updateInterval_name "Interval mezi aktualizacemi (min)">
 <!-- NETWORK -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Počet sekund mezi kontrolami Aktuálních záložek. Hodnoty menší než 60 bude zaokrouhleny na 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Obnovovací interval (s)">

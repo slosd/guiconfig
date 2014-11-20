@@ -1,7 +1,6 @@
 <!ENTITY accessibility "Dostępność">
 <!ENTITY mousebehaviour "Zachowanie myszy">
 <!ENTITY mousescrollvertical "Przewijanie w pionie">
-<!ENTITY mousescrollhorizontal "Przewijanie w poziomie">
 <!ENTITY mousescrollnone "Bez wciskania klawiszy">
 <!ENTITY mousescrollshift "Z klawiszem Shift">
 <!ENTITY mousescrollstrg "Z klawiszem Ctrl">
@@ -12,10 +11,6 @@
 <!ENTITY mousewheel_action_o2 "Przewiń o pewną liczbę stron">
 <!ENTITY mousewheel_action_o3 "Przejdź do poprzedniej/następnej strony z historii">
 <!ENTITY mousewheel_action_o4 "Powiększ/pomniejsz stronę">
-<!ENTITY mousewheel_numlines_name "Liczba linii przeskakiwanych podczas przewijania">
-<!ENTITY mousewheel_numlines_description "Określa liczbę linii, które są przeskakiwane podczas przewijania strony">
-<!ENTITY mousewheel_sysnumlines_name "Użyj domyślnej wartości systemu">
-<!ENTITY mousewheel_sysnumlines_description "Jeśli to ustawienie jest włączone, liczba przeskakiwanych linii określana jest przez Twój system operacyjny">
 <!ENTITY mouseclick "Mysz">
 <!ENTITY middleclick "Działanie środkowego przycisku myszy">
 <!ENTITY middlemouse_contentLoadURL_description "Przejdź pod adres znajdujący się obecnie w schowku po kliknięciu środkowym przyciskiem myszy.">
@@ -29,8 +24,6 @@
 <!ENTITY urlbar "Pasek adresu">
 <!ENTITY browser_urlbar_autoFill_description "Włącza autouzupełnianie adresu.">
 <!ENTITY browser_urlbar_autoFill_name "Autouzupełnianie adresu">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Proponuj wyłącznie adresy, które zostały wcześniej wprowadzone.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Dopasowuj tylko uprzednio wprowadzone">
 <!ENTITY browser_fixup_alternate_enabled_description "Jeżeli strona o podanym adresie nie może zostać znaleziona, poniższe znaki zostaną dodane do adresu.">
 <!ENTITY browser_fixup_alternate_enabled_name "Używaj alternatywnych adresów">
 <!ENTITY browser_fixup_alternate_prefix_description "Znaki, które mają zostać wstawione na początku adresu.">
@@ -171,8 +164,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Maksymalna liczba wyników wyszukiwania">
 <!ENTITY extensions_getAddons_showPane_description "Określa, czy w oknie &quot;Dodatki&quot; wyświetlany ma być panel &quot;Pobierz rozszerzenia&quot;.">
 <!ENTITY extensions_getAddons_showPane_name "Wyświetlaj panel">
-<!ENTITY extensions_hideInstallButton_description "Ukryj przycisk &quot;Zainstaluj&quot; okna menedżera dodatków.">
-<!ENTITY extensions_hideInstallButton_name "Ukryj przycisk &quot;Zainstaluj&quot;">
 <!ENTITY downloadmanager "Menedżer pobierania plików">
 <!ENTITY browser_download_manager_quitBehavior_description "Określa co robić z pobieranymi plikami, kiedy Firefox jest zamykany.">
 <!ENTITY browser_download_manager_quitBehavior_name "Traktowanie pobieranych plików przy zamykaniu">
@@ -190,8 +181,6 @@
 <!ENTITY security_privacy "Bezpieczeństwo i prywatność">
 <!ENTITY security_dialog_enable_delay_description "To ustawienie określa okres czasu (w milisekundach), który musi upłynąć, nim możliwe będzie kliknięcie przycisku &quot;Zainstaluj&quot; w oknie instalacji rozszerzenia. Ustaw na 0, aby wyłączyć konieczność czekania.">
 <!ENTITY security_dialog_enable_delay_name "Czas przed instalacją rozszerzenia (w milisekundach)">
-<!ENTITY browser_privatebrowsing_autostart_description "Jeśli to pole jest zaznaczone, Firefox będzie uruchamiał się w &quot;trybie prywatnym&quot; i używał go przez cały czas trwania sesji.">
-<!ENTITY browser_privatebrowsing_autostart_name "Rozpocznij pracę w &quot;trybie prywatnym&quot;">
 <!ENTITY master_pass "Główne hasło">
 <!ENTITY security_ask_for_password_description "To ustawienie określa, jak często wprowadzać musisz główne hasło.">
 <!ENTITY security_ask_for_password_o1 "Proś o wprowadzenie za każdym razem">
@@ -205,7 +194,6 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Określa okres czasu, po którym proces nieodpowiadającej wtyczki zostanie zakończony.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Czas oczekiwania na uruchomienie wtyczki (w sek.)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Określa okres czasu, po którym uruchamianie wtyczki zostanie uznane za niepomyślne.">
-<!ENTITY style "Styl">
 <!ENTITY browser_style "Przeglądarka">
 <!ENTITY browser_identity_ssl_domain_display_name "Wyróżnianie domen używających SSL">
 <!ENTITY browser_identity_ssl_domain_display_description "Kiedy witryna używa SSL aby szyfrować połączenie, użytkownik może ustawić wyróżnianie części adresu URL w interfejsie. To ustawienie określa, czy wyświetlana ma być pełna domena, domena drugiego poziomu czy nic.">
@@ -216,8 +204,6 @@
 <!ENTITY browser_chrome_favicons_name "Pokazuj favikony">
 <!ENTITY browser_chrome_toolbar_tips_description "Określa zachowanie wskazówek przypisanych do interfejsu chrome.">
 <!ENTITY browser_chrome_toolbar_tips_name "Pokazuj wskazówki">
-<!ENTITY browser_urlbar_hideGoButton_description "Określa, czy przycisk &quot;Przejdź&quot; ma być pokazywany, czy nie.">
-<!ENTITY browser_urlbar_hideGoButton_name "Ukryj przycisk &quot;Przejdź&quot;">
 <!ENTITY browser_preferences_animateFadeIn_description "Zmienia wysokość okna i powoduje stopniowe pojawianie się nowego panelu preferencji w ciągu ok. sekundy po dokonaniu jego wyboru.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animuj przejścia między menu">
 <!ENTITY websites "Witryny">
@@ -235,8 +221,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
 <!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
 <!ENTITY html5_enable_name "Włącz parser HTML5">
-<!ENTITY svg_enabled_name "Włącz obsługę grafiki wektorowej SVG">
-<!ENTITY svg_smil_enabled_name "Włącz wyświetlanie animacji SVG">
 <!ENTITY webgl_enabled_for_all_sites_name "Włącz WebGL">
 <!ENTITY images "Obrazki">
 <!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
@@ -261,8 +245,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Wyświetlaj animacje podczas otwierania/zamykania panoramicznego widoku kart (skrót: CTRL-E).">
 <!ENTITY browser_tabs_animate_name "Animuj karty">
 <!ENTITY browser_tabs_animate_description "Włącza animacje odtwarzane podczas otwierania kart, zmiany ich kolejności i usuwania ich.">
-<!ENTITY browser_tabs_tabMinWidth_name "Minimalna szerokość karty">
-<!ENTITY browser_tabs_tabMaxWidth_name "Maksymalna szerokość karty">
 <!ENTITY browser_tabs_closeButtons_description "Określa gdzie wyświetlać przyciski zamykające.">
 <!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
 <!ENTITY browser_tabs_closeButtons_o1 "tylko na aktywnej karcie">
@@ -289,15 +271,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Zamknij okno po zamknięciu ostatniej karty">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Jeśli zaznaczone, otwarte okno zostanie zamknięte, gdy zamkniesz ostatnią kartę w tym oknie.">
 <!ENTITY bookmarks "Subskrypcje">
-<!ENTITY microsummaries "Mikropodsumowania">
-<!ENTITY browser_microsummary_enabled_description "Pozwól na pobieranie i wyświetlanie informacji o treści stron dodanych do zakładek.">
-<!ENTITY browser_microsummary_enabled_name "Używaj mikropodsumowań">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Określa liczbę sekund między sprawdzeniami dostępności aktualizacji generatorów mikropodsumowań. Jeżeli wartość ta nie zostanie określona dostępność aktualizacji będzie sprawdzana co tydzień (604800 sekund).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Częstotliwość aktualizacji (w sek.)">
-<!ENTITY browser_microsummary_updateGenerators_description "Określa, czy przeglądarka ma sprawdzać, czy są dostępne aktualizacje generatorów mikropodsumowań.">
-<!ENTITY browser_microsummary_updateGenerators_name "Aktualizuj generatory mikropodsumowań">
-<!ENTITY browser_microsummary_updateInterval_description "Określa minutowy odstęp czasu między sprawdzeniami aktualizacji mikropodsumowań. Domyślna wartość to 30 minut.">
-<!ENTITY browser_microsummary_updateInterval_name "Częstotliwość aktualizacji (w min.)">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Liczba sekund między kolejnymi sprawdzeniami aktualizacji subskrybowanych kanałów RSS. Wartości poniżej 60 są uznawane za 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Odświeżaj co (sek.)">
 <!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">

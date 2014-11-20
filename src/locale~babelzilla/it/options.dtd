@@ -12,8 +12,6 @@
 <!ENTITY urlbar "Barra degli indirizzi">
 <!ENTITY browser_urlbar_autoFill_description "Attiva il completamento automatico per la Barra degli indirizzi.">
 <!ENTITY browser_urlbar_autoFill_name "Completamento automatico">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Il completamento automatico viene utilizzato solo per gli indirizzi che sono stati precedentemente inseriti nella Barra degli indirizzi.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Solo indirizzi già inseriti">
 <!ENTITY browser_fixup_alternate_enabled_description "Qualora un indirizzo inserito nella Barra degli indirizzi non produca nessun risultato verranno aggiunti i seguenti caratteri.">
 <!ENTITY browser_fixup_alternate_enabled_name "Utilizza un indirizzo alternativo">
 <!ENTITY browser_fixup_alternate_prefix_description "I caratteri da inserire all&apos;inizio dell&apos;indirizzo.">
@@ -108,8 +106,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Numero di risultati">
 <!ENTITY extensions_getAddons_showPane_description "Specifica se mostrare o meno il pannello Esplora nella finestra Componenti aggiuntivi">
 <!ENTITY extensions_getAddons_showPane_name "Mostra pannello">
-<!ENTITY extensions_hideInstallButton_description "Nasconde il pulsante Installa nella finestra Componenti aggiuntivi">
-<!ENTITY extensions_hideInstallButton_name "Nascondi il pulsante Installa">
 <!ENTITY downloadmanager "Gestione download">
 <!ENTITY browser_download_lastDir_description "Indica il percorso dell&apos;ultima cartella utilizzata per un download tramite &apos;Salva destinazione con nome..&apos;">
 <!ENTITY browser_download_lastDir_name "Ultima cartella di download">
@@ -117,14 +113,11 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Avviso file eseguibili">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Imposta la finestra di gestione dei download come attiva quando si avvia un download.">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Imposta la finestra di gestione dei download come attiva quando si avvia un download">
-<!ENTITY style "Stile">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_description "Stabilisce se visualizzare o meno le favicon.">
 <!ENTITY browser_chrome_favicons_name "Mostra favicon">
 <!ENTITY browser_chrome_toolbar_tips_description "Specifica il comportamento dei suggerimenti per gli elementi di tipo chrome">
 <!ENTITY browser_chrome_toolbar_tips_name "Mostra suggerimenti">
-<!ENTITY browser_urlbar_hideGoButton_description "Stabilisce se visualizzare o meno il pulsante Vai.">
-<!ENTITY browser_urlbar_hideGoButton_name "Nascondi il pulsante Vai">
 <!ENTITY browser_preferences_animateFadeIn_description "Cambia l&apos;altezza della finestra e genera un effetto dissolvenza per circa un secondo quando si passa da un pannello all&apos;altro nella finestra delle Opzioni.">
 <!ENTITY browser_preferences_animateFadeIn_name "Dissolvenza in apertura all&apos;interno della finestra Opzioni">
 <!ENTITY rendering "Rendering">
@@ -155,15 +148,6 @@
 <!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
 <!ENTITY bookmarks "Segnalibri">
-<!ENTITY microsummaries "Titoli live">
-<!ENTITY browser_microsummary_enabled_description "Consente di ottenere informazioni dai segnalibri per mezzo dei Titoli live.">
-<!ENTITY browser_microsummary_enabled_name "Utilizza i Titoli live">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Determina in secondi l&apos;intervallo di aggiornamento dei generatori di Titoli live. Il valore predefinito è una settimana (604800 secondi).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Intervallo di aggiornamento (in secondi)">
-<!ENTITY browser_microsummary_updateGenerators_description "Stabilisce se effettuare un controllo periodico degli aggiornamenti dei generatori di Titoli live.">
-<!ENTITY browser_microsummary_updateGenerators_name "Aggiorna i generatori di Titoli live">
-<!ENTITY browser_microsummary_updateInterval_description "Determina in minuti l&apos;intervallo di aggiornamento dei Titoli live. Il valore predefinito è 30 minuti.">
-<!ENTITY browser_microsummary_updateInterval_name "Intervallo di aggiornamento (in minuti)">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Indica, in secondi, l&apos;intervallo tra i vari controlli dei Segnalibri live. Valori inferiori a 60 saranno considerati pari a 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervallo di aggiornamento (in secondi):">
 <!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">

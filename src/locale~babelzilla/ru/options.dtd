@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Поведение мыши">
 <!ENTITY mousescrollvertical "Вертикальная прокрутка мышью">
-<!ENTITY mousescrollhorizontal "Горизонтальная прокрутка мышью">
 <!ENTITY mousescrollnone "без модификаторов">
 <!ENTITY mousescrollshift "с клавишей Shift">
 <!ENTITY mousescrollstrg "с клавишей Ctrl">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "прокрутить страницы">
 <!ENTITY mousewheel_action_o3 "вперёд/назад по истории">
 <!ENTITY mousewheel_action_o4 "масштабировать страницу">
-<!ENTITY mousewheel_numlines_name "Количество прокручиваемых строк">
-<!ENTITY mousewheel_numlines_description "Число строк на которое прокрутится веб-сайт">
-<!ENTITY mousewheel_sysnumlines_name "Использовать системную настройку">
-<!ENTITY mousewheel_sysnumlines_description "Если флажок установлен, число прокручиваемых строк определяется настройками вашей операционной системы">
 <!ENTITY mouseclick "Щелчки мышью">
 <!ENTITY middleclick "Щелчок средней кнопкой">
 <!ENTITY middlemouse_contentLoadURL_description "Щелчок средней кнопкой загружает содержимое буфера обмена как адрес.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Строка адреса">
 <!ENTITY browser_urlbar_autoFill_description "Включает встроенное автодополнение адресов.">
 <!ENTITY browser_urlbar_autoFill_name "Встроенное автодополнение">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Разрешает автодополнение только адресами ранее набранными в адресной строке.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Только соответствующие набранному">
 <!ENTITY browser_fixup_alternate_enabled_description "Если адрес не найден, то добавить к адресу следующие символы.">
 <!ENTITY browser_fixup_alternate_enabled_name "Использовать альтернативные адреса">
 <!ENTITY browser_fixup_alternate_prefix_description "Символы добавляемые в начале адреса.">
@@ -183,8 +176,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Число поисковых результатов">
 <!ENTITY extensions_getAddons_showPane_description "Определяет будет ли отображаться панель «Поиск дополнений» в окне менеджера дополнений.">
 <!ENTITY extensions_getAddons_showPane_name "Показать панель">
-<!ENTITY extensions_hideInstallButton_description "Скрывает кнопку «Установить» в окне менеджера дополнений.">
-<!ENTITY extensions_hideInstallButton_name "Скрыть кнопку «Установить»">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Менеджер загрузок">
 <!ENTITY browser_download_manager_quitBehavior_description "Определяет, что делать с активными загрузками при выходе из Firefox.">
@@ -204,8 +195,6 @@
 <!ENTITY security_privacy "Безопасность и защита">
 <!ENTITY security_dialog_enable_delay_description "Эта настройка задаёт задержку (в миллисекундах) активации кнопки «Установить» при установке дополнения. Установите в 0, чтобы отключить задержку.">
 <!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
-<!ENTITY browser_privatebrowsing_autostart_description "Если этот флажок установлен, Firefox будет запущен в режиме приватного просмотра и сделает эту настройку постоянно действующей до окончания сессии.">
-<!ENTITY browser_privatebrowsing_autostart_name "Запускать в режиме приватного просмотра">
 <!ENTITY master_pass "Мастер-пароль">
 <!ENTITY security_ask_for_password_description "Этот параметр определяет как часто вам придётся вводить мастер-пароль.">
 <!ENTITY security_ask_for_password_o1 "запрашивать пароль всякий раз когда он необходим">
@@ -220,7 +209,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Время ожидания запуска подключаемого модуля (сек)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Определяет отрезок времени прошедшего с момента запуска подключаемого модуля, спустя который он считается потерявшим работоспособность.">
 <!-- STYLE -->
-<!ENTITY style "Стиль">
 <!-- BROWSER -->
 <!ENTITY browser_style "Браузер">
 <!ENTITY browser_identity_ssl_domain_display_name "Подчёркивать домены использующие SSL">
@@ -232,8 +220,6 @@
 <!ENTITY browser_chrome_favicons_name "Показывать значки сайтов">
 <!ENTITY browser_chrome_toolbar_tips_description "Определяет поведение всплывающих подсказок для элементов chrome интерфейса.">
 <!ENTITY browser_chrome_toolbar_tips_name "Показывать всплывающие подсказки">
-<!ENTITY browser_urlbar_hideGoButton_description "Определяет, будет ли отображаться кнопка «Перейти» или нет.">
-<!ENTITY browser_urlbar_hideGoButton_name "Скрыть кнопку «Перейти»">
 <!ENTITY browser_preferences_animateFadeIn_description "При переключении между панелями настроек изменяет высоту окна и плавно выводит новую панель примерно через секунду.">
 <!ENTITY browser_preferences_animateFadeIn_name "Анимировать переключение панелей настроек">
 <!-- WEBSITES -->
@@ -252,8 +238,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
 <!ENTITY html5_enable_name "Включить анализатор HTML5">
-<!ENTITY svg_enabled_name "Включить векторную (SVG) 2D графику">
-<!ENTITY svg_smil_enabled_name "Включить SVG-анимацию">
 <!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">
 <!ENTITY images "Изображения">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
@@ -281,8 +265,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Включает анимацию при открытии/закрытии панорамного просмотра вкладок (по Ctrl+E).">
 <!ENTITY browser_tabs_animate_name "Анимировать вкладки">
 <!ENTITY browser_tabs_animate_description "Включает анимацию при открытии новой вкладки, во время перетаскивания и отрывания вкладки.">
-<!ENTITY browser_tabs_tabMinWidth_name "Минимальная ширина вкладки">
-<!ENTITY browser_tabs_tabMaxWidth_name "Максимальная ширина вкладки">
 <!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
 <!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
 <!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
@@ -314,15 +296,6 @@
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Закладки">
 <!-- MICROSUMMARIES -->
-<!ENTITY microsummaries "Сводки">
-<!ENTITY browser_microsummary_enabled_description "Разрешает загружать информацию для закладок со сводками.">
-<!ENTITY browser_microsummary_enabled_name "Использовать сводки">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Определяет промежуток (в секундах) между проверками обновлений для генераторов сводок. Если не задано, обновление проводится еженедельно (604800 секунд).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Интервал обновления (с)">
-<!ENTITY browser_microsummary_updateGenerators_description "Определяет, будут ли периодически проверяться на наличие обновлений генераторы сводок или нет.">
-<!ENTITY browser_microsummary_updateGenerators_name "Обновить генераторы сводок">
-<!ENTITY browser_microsummary_updateInterval_description "Определяет промежуток (в минутах) между проверками обновлений сводок. По умолчанию 30 минут.">
-<!ENTITY browser_microsummary_updateInterval_name "Интервал обновления (мин)">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Задаёт промежуток между проверками живых закладок. Значения меньшие 60 приравниваются к 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Интервал обновления (с)">

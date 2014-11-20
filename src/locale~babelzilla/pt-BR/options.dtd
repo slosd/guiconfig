@@ -3,7 +3,6 @@
 <!-- MOUSE CLICK -->
 <!ENTITY mousebehaviour "Mouse">
 <!ENTITY mousescrollvertical "Rolagem vertical">
-<!ENTITY mousescrollhorizontal "Rolagem horizontal">
 <!ENTITY mousescrollnone "Sem teclas">
 <!ENTITY mousescrollshift "Com Shift">
 <!ENTITY mousescrollstrg "Com Ctrl">
@@ -14,10 +13,6 @@
 <!ENTITY mousewheel_action_o2 "rolas páginas">
 <!ENTITY mousewheel_action_o3 "navegar pelo histórico">
 <!ENTITY mousewheel_action_o4 "dar zoom na página">
-<!ENTITY mousewheel_numlines_name "Linhas a rolar por vez:">
-<!ENTITY mousewheel_numlines_description "Especifica a quantidade de linhas a serem roladas de cada vez com a roda do mouse.">
-<!ENTITY mousewheel_sysnumlines_name "Usar padrão do sistema">
-<!ENTITY mousewheel_sysnumlines_description "Especifica que a quantidade de linhas a serem roladas seja aquela configurada no sistema operacional.">
 <!ENTITY mouseclick "Cliques">
 <!ENTITY middleclick "Clique na roda (ou botão do meio)">
 <!ENTITY middlemouse_contentLoadURL_description "Cola e carrega um endereço previamente copiado ao clicar a roda (ou botão do meio) do mouse no campo de endereço.">
@@ -32,8 +27,6 @@
 <!ENTITY urlbar "Endereços">
 <!ENTITY browser_urlbar_autoFill_description "Completa automaticamente o endereço que você começar a digitar, em vez de apenas exibir uma lista de sugestões.">
 <!ENTITY browser_urlbar_autoFill_name "Completar endereços automaticamente ao digitar">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Completa apenas endereços previamente digitados, sem tentar usar endereços de páginas visitadas através de links.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Completar somente endereços previamente digitados">
 <!ENTITY browser_fixup_alternate_enabled_description "No caso do endereço digitado não ser encontrado (ex.: quando digitar um nome de site sem terminar em &quot;.com&quot; ou similar), faz com que o Firefox adicione o prefixo e o sufixo indicados e tente carregar o novo endereço.">
 <!ENTITY browser_fixup_alternate_enabled_name "Tentar endereço alternativo">
 <!ENTITY browser_fixup_alternate_prefix_description "Caracteres a inserir no início do endereço que falhou.">
@@ -185,8 +178,6 @@
 <!ENTITY extensions_getAddons_maxResults_name "Máximo de resultados de pesquisa:">
 <!ENTITY extensions_getAddons_showPane_description "Especifica se o painel &quot;Adicionar&quot; deve ser exibido na janela &quot;Complementos&quot;.">
 <!ENTITY extensions_getAddons_showPane_name "Mostrar painel &quot;Adicionar&quot;">
-<!ENTITY extensions_hideInstallButton_description "Remove os botões para instalar imediatamente complementos listados no painel &quot;Adicionar&quot; da janela &quot;Complementos&quot;">
-<!ENTITY extensions_hideInstallButton_name "Esconder botão &quot;Instalar&quot;">
 <!-- STYLE -->
 <!ENTITY downloadmanager "Janela de downloads">
 <!ENTITY browser_download_manager_quitBehavior_description "Determina o que fazer com os downloads ativos ao sair do Firefox.">
@@ -206,8 +197,6 @@
 <!ENTITY security_privacy "Privacidade e segurança">
 <!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para desativar esse recurso.">
 <!ENTITY security_dialog_enable_delay_name "Atraso para instalar complementos (ms):">
-<!ENTITY browser_privatebrowsing_autostart_description "Inicia o Firefox já no modo &quot;Navegação Privativa&quot;, mantendo-o assim durante toda a sessão.">
-<!ENTITY browser_privatebrowsing_autostart_name "Iniciar o Firefox em navegação privativa">
 <!ENTITY master_pass "Senha mestra">
 <!ENTITY security_ask_for_password_description "Especifica o quão frequentemente a senha mestra será pedida durante a navegação.">
 <!ENTITY security_ask_for_password_o1 "Pedir sempre que for necessária">
@@ -222,7 +211,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tempo limite para carregar plugins (s):">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Especifica, em segundos, quanto tempo aguardar para o carregamento de um plugin antes de o considerar travado.">
 <!-- WEBSITES -->
-<!ENTITY style "Estilo">
 <!-- TEXT SELECT -->
 <!ENTITY browser_style "Navegador">
 <!ENTITY browser_urlbar_formatting_enabled_name "Ativar formatação de domínio">
@@ -236,8 +224,6 @@
 <!ENTITY browser_chrome_favicons_name "Mostrar ícones de sites e páginas">
 <!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre eles.">
 <!ENTITY browser_chrome_toolbar_tips_name "Mostrar dicas de tela para ferramentas">
-<!ENTITY browser_urlbar_hideGoButton_description "Remove o botão &quot;Ir&quot; da extremidade do campo de endereço.">
-<!ENTITY browser_urlbar_hideGoButton_name "Não mostrar o botão &quot;Ir&quot;">
 <!ENTITY browser_preferences_animateFadeIn_description "Muda suavemente o conteúdo e ajusta a altura da janela de opções do Firefox a cada mudança de painel.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animar mudanças de painel na janela de opções">
 <!-- BOOKMARK -->
@@ -256,8 +242,6 @@
 <!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas. (Costuma evitar algumas mudanças bruscas no aspecto da página durante o seu carregamento.)">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
 <!ENTITY html5_enable_name "Ativar interpretador HTML5">
-<!ENTITY svg_enabled_name "Ativar gráficos vetoriais SVG">
-<!ENTITY svg_smil_enabled_name "Ativar animações em SVG">
 <!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
 <!ENTITY images "Imagens">
 <!ENTITY browser_enable_automatic_image_resizing_description "Reduz o tamanho de uma imagem avulsa (fora de uma página) maior que a janela do navegador para que ela seja exibida por completo no espaço disponível.">
@@ -285,8 +269,6 @@
 <!ENTITY browser_panorama_animate_zoom_description "Ativa a animação ao abrir e fechar o modo de visualização de grupo de abas (Ctrl+Shift+E).">
 <!ENTITY browser_tabs_animate_name "Animar abas">
 <!ENTITY browser_tabs_animate_description "Anima as abas quando elas são abertas, reorganizadas e removidas.">
-<!ENTITY browser_tabs_tabMinWidth_name "Largura mínima das abas:">
-<!ENTITY browser_tabs_tabMaxWidth_name "Largura máxima das abas:">
 <!ENTITY browser_tabs_closeButtons_description "Especifica onde exibir botões para fechar abas.">
 <!ENTITY browser_tabs_closeButtons_name "Mostrar botão Fechar aba:">
 <!ENTITY browser_tabs_closeButtons_o1 "apenas na aba atual">
@@ -318,15 +300,6 @@
 <!-- DEVELOPMENT -->
 <!ENTITY bookmarks "Favoritos">
 <!-- VIEW SOURCE -->
-<!ENTITY microsummaries "Microrresumos">
-<!ENTITY browser_microsummary_enabled_description "Mostra como títulos de favoritos informações atualizadas obtidas das respectivas páginas. Disponível para páginas que ofereçam esse recurso (e também para outras páginas, instalando-se complementos específicos).">
-<!ENTITY browser_microsummary_enabled_name "Usar microrresumos">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Especifica, em segundos, o intervalo entre as atualizações dos endereços para obtenção dos microrresumos. Se deixado em branco, essas atualizações serão semanais (604800 segundos).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Atualizar fontes a cada (s):">
-<!ENTITY browser_microsummary_updateGenerators_description "Especifica se o Firefox deve periodicamente atualizar os endereços para obtenção dos microrresumos.">
-<!ENTITY browser_microsummary_updateGenerators_name "Atualizar fontes dos microrresumos">
-<!ENTITY browser_microsummary_updateInterval_description "Especifica, em minutos, o intervalo entre as atualizações dos microrresumos para as páginas que não o especificarem. O padrão é de 30 minutos.">
-<!ENTITY browser_microsummary_updateInterval_name "Atualizar microrresumos a cada (min):">
 <!-- MISC -->
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Especifica, em segundos, o tempo entre cada procura por atualizações nos RSS presentes nos favoritos. Valores menores que 60 serão considerados como 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Atualizar RSS a cada (s):">

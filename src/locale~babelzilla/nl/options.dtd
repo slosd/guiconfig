@@ -12,8 +12,6 @@
 <!ENTITY urlbar "URLBar">
 <!ENTITY browser_urlbar_autoFill_description "Maakt inline autocomplete.">
 <!ENTITY browser_urlbar_autoFill_name "Inline AutoAanvullen">
-<!ENTITY browser_urlbar_matchOnlyTyped_description "Alleen autocomplete adressen die u eerder hebt getypt in de adresbalk.">
-<!ENTITY browser_urlbar_matchOnlyTyped_name "Alleen match getypt">
 <!ENTITY browser_fixup_alternate_enabled_description "Als een adres niet gevonden kan worden de volgende karakters worden toegevoegd aan het adres.">
 <!ENTITY browser_fixup_alternate_enabled_name "Gebruik alternatieve adressen">
 <!ENTITY browser_fixup_alternate_prefix_description "Characters te voegen aan het begin van het adres.">
@@ -93,14 +91,11 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Waarschuwen van uitvoerbare">
 <!ENTITY browser_download_manager_focusWhenStarting_description "Stelt de Download Manager venster als actief bij het starten van een download.">
 <!ENTITY browser_download_manager_focusWhenStarting_name "Stel de Download Manager venster als actief bij het starten van een download">
-<!ENTITY style "Style">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_description "Bepaalt of om aan te tonen favicons of niet.">
 <!ENTITY browser_chrome_favicons_name "Toon Favicons">
 <!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltip gedrag voor chromen elementen.">
 <!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
-<!ENTITY browser_urlbar_hideGoButton_description "Bepaalt of om aan te tonen de &quot;Go&quot; knop of niet.&quot;&gt;">
-<!ENTITY browser_urlbar_hideGoButton_name "Verberg de &quot;Go&quot; knop&quot;&gt;">
 <!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
 <!ENTITY browser_blink_allowed_description "Gebruik van de blink-tag of de tekst's CSS-decoration: blink zal leiden tot knipperende elementen.">
@@ -126,15 +121,6 @@
 <!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
 <!ENTITY bookmarks "Bladwijzers">
-<!ENTITY microsummaries "Microsummaries">
-<!ENTITY browser_microsummary_enabled_description "Laat op te halen informatie voor bladwijzers met microsummaries.">
-<!ENTITY browser_microsummary_enabled_name "Gebruik microsummaries">
-<!ENTITY browser_microsummary_generatorUpdateInterval_description "Bepaalt seconden tussen update microsummary generator controles in seconden. Indien niet gespecificeerd, updates gebeuren wekelijkse (604800 seconden).">
-<!ENTITY browser_microsummary_generatorUpdateInterval_name "Update interval (sec)">
-<!ENTITY browser_microsummary_updateGenerators_description "Bepaalt of periodiek te controleren op updates voor microsummary generatoren.">
-<!ENTITY browser_microsummary_updateGenerators_name "Update microsummaries generatoren">
-<!ENTITY browser_microsummary_updateInterval_description "Bepaalt minuten tussen de controles microsummary update in seconden. Standaard is 30 minuten.">
-<!ENTITY browser_microsummary_updateInterval_name "Update interval (min)">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Het aantal seconden tussen Live Bookmark controles. Waarden onder de 60 wordt verondersteld dat 60.">
 <!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Vernieuw interval (sec)">
 <!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal back-ups bewaard. Instellen op 0 schakelt backups.">

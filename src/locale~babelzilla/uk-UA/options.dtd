@@ -1,7 +1,6 @@
 <!ENTITY accessibility "Доступність">
 <!ENTITY mousebehaviour "Поведінка миші">
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
-<!ENTITY mousescrollhorizontal "Горизонтальний скролінг мишею">
 <!ENTITY mousescrollnone "без клавіш">
 <!ENTITY mousescrollshift "з клавішею SHIFT">
 <!ENTITY mousescrollstrg "з клавішею CTRL">
