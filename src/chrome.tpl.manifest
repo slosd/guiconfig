@@ -2,8 +2,8 @@ content guiconfig content/
 
 skin guiconfig classic/1.0 skin/
 
-style chrome://global/content/customizeToolbar.xul chrome://guiconfig/skin/style/gcbutton.css
-style chrome://guiconfig/content/ui/button.xul chrome://guiconfig/skin/style/gcbutton.css
+style chrome://global/content/customizeToolbar.xul chrome://guiconfig/skin/style/button.css
+style chrome://guiconfig/content/ui/button.xul chrome://guiconfig/skin/style/button.css
 
 # adds the menu items to the normal menu as well as to the app menu
 overlay chrome://browser/content/browser.xul chrome://guiconfig/content/ui/browser_menu_default.xul
