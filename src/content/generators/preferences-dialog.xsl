@@ -83,6 +83,9 @@
       <xsl:if test="@default">
         <xsl:attribute name="default"><xsl:value-of select="@default"/></xsl:attribute>
       </xsl:if>
+      <xsl:if test="@inverted">
+        <xsl:attribute name="inverted">true</xsl:attribute>
+      </xsl:if>
       <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
       <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
       <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>

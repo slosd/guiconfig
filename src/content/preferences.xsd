@@ -228,6 +228,13 @@
       </restriction>
     </simpleType>
   </attribute>
+  <attribute name="inverted">
+    <simpleType>
+      <restriction base="string">
+        <enumeration value="inverted" />
+      </restriction>
+    </simpleType>
+  </attribute>
   <attribute name="wrapper" type="string" />
 </complexType>
 
