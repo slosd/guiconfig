@@ -7,6 +7,10 @@ var guiconfig = (function(guiconfig) {
   var prefpane_current;
   var prefpane_search_results;
 
+  var sandbox = Components.utils.Sandbox(window, {
+    sandboxPrototype: { 'guiconfig': guiconfig }
+  });
+
   var query_is_match = function(query, text) {
     return text.indexOf(query) !== -1;
   };
@@ -22,7 +26,7 @@ var guiconfig = (function(guiconfig) {
       var scriptResult = guiconfig.core.buildPreferenceScript(document);
       var script = scriptResult.querySelector('script');
       try {
-        eval(script.firstChild.nodeValue, window);
+        Components.utils.evalInSandbox(script.textContent, sandbox);
       } catch(e) {
         console.log(e);
       }
