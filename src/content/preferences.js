@@ -127,7 +127,7 @@ var guiconfig = (function(guiconfig) {
         }
       }
       for (var elem of view.querySelectorAll('label, textbox, menulist, colorpicker, radiogroup, checkbox, button')) {
-        elem.setAttribute('disabled', disabled);
+        elem.disabled = disabled;
       }
     },
 
