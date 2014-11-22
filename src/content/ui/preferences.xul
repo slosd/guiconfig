@@ -5,12 +5,9 @@
 <!DOCTYPE prefwindow SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 
 <prefwindow id="gcPreferencesDialog"
-            onload="guiconfig.preferences.load()"
             onsearch="guiconfig.preferences.search(this.value)"
             xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <stringbundleset id="gcStrings">
-    <stringbundle id="gcLocale" src="chrome://guiconfig/locale/gcLocale.properties"/>
-  </stringbundleset>
   <script type="application/javascript" src="/content/core.js"/>
   <script type="application/javascript" src="/content/preferences.js" />
+  <script>guiconfig.preferences.load();</script>
 </prefwindow>

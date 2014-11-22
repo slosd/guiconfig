@@ -2,57 +2,65 @@ var guiconfig = (function(guiconfig) {
   if (guiconfig.preferences)
     return guiconfig;
 
-  var locale = document.getElementById('gcLocale');
   var pref_window = document.getElementById('gcPreferencesDialog');
-  var prefpane_current;
-  var prefpane_search_results;
+  var prefpane_current, prefpane_search_results, pref_script;
+  var prefpanes_loaded = false;
 
   var sandbox = Components.utils.Sandbox(window, {
     sandboxPrototype: { 'guiconfig': guiconfig }
   });
 
-  var query_is_match = function(query, text) {
-    return text.indexOf(query) !== -1;
-  };
-
   guiconfig.preferences = {
     load: function() {
-      var panesResult = guiconfig.core.buildPreferencePanes(document);
-      var panes = panesResult.querySelectorAll('prefpane');
-      for (var pane of panes) {
-        pref_window.addPane(pane);
-      }
+      guiconfig.core.buildPreferencePanes(document, function(result) {
+        var panes = result.querySelectorAll('prefpane');
+        for (var pane of panes) {
+          pref_window.addPane(pane);
+        }
+        pref_window.showPane(panes[0]);
 
-      var scriptResult = guiconfig.core.buildPreferenceScript(document);
-      var script = scriptResult.querySelector('script');
+        prefpanes_loaded = true;
+        if (pref_script) {
+          guiconfig.preferences.runScript(pref_script);
+        }
+      });
+
+      guiconfig.core.buildPreferenceScript(document, function(result) {
+        pref_script = result.querySelector('script').textContent;
+        if (prefpanes_loaded) {
+          guiconfig.preferences.runScript(pref_script);
+        }
+      });
+    },
+
+    runScript: function(script) {
       try {
-        Components.utils.evalInSandbox(script.textContent, sandbox);
+        Components.utils.evalInSandbox(script, sandbox);
       } catch(e) {
         console.log(e);
       }
-
-      pref_window.showPane(panes[0]);
     },
 
     search: function(query) {
       if (query) {
-        var fragment = guiconfig.core.buildPreferenceSearchResult(document, query);
-        if (!prefpane_search_results) {
-          prefpane_search_results = fragment.firstChild;
-          pref_window.addPane(prefpane_search_results);
-        } else {
-          for (var child of prefpane_search_results.children) {
-            prefpane_search_results.removeChild(child);
+        guiconfig.core.buildPreferenceSearchResult(document, query, function(result) {
+          if (!prefpane_search_results) {
+            prefpane_search_results = result.firstChild;
+            pref_window.addPane(prefpane_search_results);
+          } else {
+            for (var child of prefpane_search_results.children) {
+              prefpane_search_results.removeChild(child);
+            }
+            for (var child of result.firstChild.children) {
+              prefpane_search_results.appendChild(child);
+            }
           }
-          for (var child of fragment.firstChild.children) {
-            prefpane_search_results.appendChild(child);
+          if (!pref_window.classList.contains('search-active')) {
+            prefpane_current = pref_window.currentPane;
+            pref_window.classList.add('search-active');
           }
-        }
-        if (!pref_window.classList.contains('search-active')) {
-          prefpane_current = pref_window.currentPane;
-          pref_window.classList.add('search-active');
-        }
-        pref_window.showPane(prefpane_search_results);
+          pref_window.showPane(prefpane_search_results);
+        });
       } else {
         if (pref_window.currentPane === prefpane_search_results) {
           pref_window.showPane(prefpane_current);

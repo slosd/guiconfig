@@ -16,6 +16,15 @@ var guiconfig = (function(guiconfig) {
     return preferenceIsSupported(node);
   };
 
+  var transform = function(xml, xsl, doc, params) {
+    var xsltProcessor = Cc["@mozilla.org/document-transformer;1?type=xslt"].createInstance(Ci.nsIXSLTProcessor);
+    for (var name in params) {
+      xsltProcessor.setParameter(null, name, params[name]);
+    }
+    xsltProcessor.importStylesheet(xsl);
+    return xsltProcessor.transformToFragment(xml, doc);
+  };
+
   guiconfig.core = {
     getDirectoryService: function() {
       return Cc["@mozilla.org/file/directory_service;1"].getService(Ci.nsIProperties);
@@ -72,48 +81,51 @@ var guiconfig = (function(guiconfig) {
       return this.getPrefService().getBranch('extensions.guiconfig.');
     },
 
-    applyXSLT: function(xsl_uri, xml_uri, doc, params) {
-      var request, xsl, xml, uiDoc;
-      var xsltProcessor = Cc["@mozilla.org/document-transformer;1?type=xslt"].createInstance(Ci.nsIXSLTProcessor);
+    applyXSLT: function(xsl_uri, xml_uri, doc, onTransformed, params) {
+      var xsl, xml, uiDoc;
 
-      request = new XMLHttpRequest();
-      request.open('GET', xsl_uri, false);
-      request.send(null);
-      xsl = request.responseXML;
+      var requestXsl = new XMLHttpRequest();
+      requestXsl.onload = function() {
+        xsl = requestXsl.responseXML;
+        if (xml)
+          onTransformed(transform(xml, xsl, doc, params));
+      };
+      requestXsl.open('GET', xsl_uri);
+      requestXsl.send(null);
 
-      request = new XMLHttpRequest();
-      request.open('GET', xml_uri, false);
-      request.send(null);
-      xml = request.responseXML;
-
-      for (var name in params) {
-        xsltProcessor.setParameter(null, name, params[name]);
-      }
-
-      xsltProcessor.importStylesheet(xsl);
-      return xsltProcessor.transformToFragment(xml, doc);
+      var requestXml = new XMLHttpRequest();
+      requestXml.onload = function() {
+        xml = requestXml.responseXML;
+        if (xsl)
+          onTransformed(transform(xml, xsl, doc, params));
+      };
+      requestXml.open('GET', xml_uri);
+      requestXml.send(null);
     },
 
-    buildPreferencePanes: function(document) {
-      var xsltResult = this.applyXSLT(
+    buildPreferencePanes: function(document, onFinished) {
+      this.applyXSLT(
           'chrome://guiconfig/content/generators/preferences-dialog.xsl',
-          'chrome://guiconfig/content/preferences.xml', document);
-      return this.cloneXUL(xsltResult, document, document.createDocumentFragment());
+          'chrome://guiconfig/content/preferences.xml', document,
+          function(result) {
+            onFinished(guiconfig.core.cloneXUL(result, document, document.createDocumentFragment()));
+          });
     },
 
-    buildPreferenceScript: function(document) {
-      var xsltResult = this.applyXSLT(
+    buildPreferenceScript: function(document, onFinished) {
+      this.applyXSLT(
           'chrome://guiconfig/content/generators/preferences-script.xsl',
-          'chrome://guiconfig/content/preferences.xml', document);
-      return xsltResult;
+          'chrome://guiconfig/content/preferences.xml', document, onFinished);
     },
 
-    buildPreferenceSearchResult: function(document, query, target) {
-      var xsltResult = this.applyXSLT(
+    buildPreferenceSearchResult: function(document, query, onFinished) {
+      this.applyXSLT(
           'chrome://guiconfig/content/generators/preferences-search.xsl',
           'chrome://guiconfig/content/preferences.xml', document,
+          function(result) {
+            onFinished(guiconfig.core.cloneXUL(result, document, document.createDocumentFragment()));
+          },
           { 'query': query });
-      return this.cloneXUL(xsltResult, document, target || document.createDocumentFragment());
     },
 
     cloneXUL: function(dom, document, target) {
