@@ -119,8 +119,6 @@
 <!-- ALERTS -->
 <!ENTITY dom_max_script_run_time_description "Určuje dobu v sekundách, po které Firefox upozorní, že vykonávání skriptu trvá příliš dlouho.">
 <!ENTITY dom_max_script_run_time_name "Max. doba běhu skriptu (s)">
-<!ENTITY gfx_3d_video_enabled_name "Povolit 3D video">
-<!ENTITY gfx_3d_video_enabled_description "Povolí stereoskopické vykreslování trojrozměrných videí.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Povolit DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Povolí hardwarovou akceleraci pro zobrazování textu. (Vyžaduje Windows 7 nebo Windows Vista s aktualizací Vista Platform.)">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">

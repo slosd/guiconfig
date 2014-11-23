@@ -106,8 +106,6 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "對元件使用近接鍵，其作用方式與啟動該元件相同。元件如果是鏈結，就開啟該鏈結；元件如果是按鈕，就點選該按鈕。">
 <!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
 <!ENTITY browser "瀏覽器">
-<!ENTITY gfx_3d_video_enabled_name "啟用3D影音">
-<!ENTITY gfx_3d_video_enabled_description "對3D影音啟用立體視覺效果">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">

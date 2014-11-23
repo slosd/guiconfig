@@ -119,8 +119,6 @@
 <!-- CACHE -->
 <!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
 <!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
-<!ENTITY gfx_3d_video_enabled_name "Ativar vídeo 3D">
-<!ENTITY gfx_3d_video_enabled_description "Ativa a exibição estereoscópica de vídeos 3D. (Exige equipamento compatível.)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Ativar DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Ativa aceleração por hardware para exibição de texto (necessário Windows 7 ou Windows Vista com Platform Update).">
 <!ENTITY geo_enabled_name "Ativar localização">

@@ -117,8 +117,6 @@
 <!-- WEBSITES -->
 <!ENTITY dom_max_script_run_time_description "Определяет количество секунд, спустя которое Firefox будет предупреждать вас, что выполнение сценария занимает много времени.">
 <!ENTITY dom_max_script_run_time_name "Время выполнения сценария (сек)">
-<!ENTITY gfx_3d_video_enabled_name "Включить 3D видео">
-<!ENTITY gfx_3d_video_enabled_description "Включает стереоскопическую визуализацию для 3D видео.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Включить DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Включает аппаратное ускорение для отображения текста. (Требуется Windows 7 или Windows Vista с обновлением Vista Platform)">
 <!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">

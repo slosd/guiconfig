@@ -386,11 +386,6 @@
               platform="WINNT"
               type="bool"
               minVersion="3.7a2" />
-        <pref key="gfx.3d_video.enabled"
-              label="&gfx_3d_video_enabled_name;"
-              description="&gfx_3d_video_enabled_description;"
-              type="bool"
-              minVersion="4.0b5" />
         <pref key="gfx.downloadable_fonts.enabled"
               label="&gfx_downloadable_fonts_enabled_name;"
               description="&gfx_downloadable_fonts_enabled_description;"

@@ -110,8 +110,6 @@
 <!ENTITY browser "Browser">
 <!ENTITY dom_max_script_run_time_description "Legt fest nach welcher Dauer Firefox eine Warnung für ein lange dauerndes Skript zeigt.">
 <!ENTITY dom_max_script_run_time_name "Max. Skriptlaufzeit (Sek)">
-<!ENTITY gfx_3d_video_enabled_name "3D Video aktivieren">
-<!ENTITY gfx_3d_video_enabled_description "Aktiviert stereoskopisches Rendern für 3D Videos.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktiviere DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiviert Hardwarebeschleunigung für die Textdarstellung. (benötigt Windows 7 oder Windows Vista mit Vista Platform Update)">
 <!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">

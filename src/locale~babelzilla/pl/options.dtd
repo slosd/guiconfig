@@ -108,8 +108,6 @@
 <!ENTITY browser "Przeglądarka">
 <!ENTITY dom_max_script_run_time_description "Określa liczbę sekund, po których Firefox informuje, ze skrypt wykonywany jest zbyt długo.">
 <!ENTITY dom_max_script_run_time_name "Maks. czas działania skryptów (w sek.)">
-<!ENTITY gfx_3d_video_enabled_name "Włącz wideo 3D">
-<!ENTITY gfx_3d_video_enabled_description "Włącza stereoskopowe renderowanie trójwymiarowego wideo.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Włącz DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Włącza sprzętowe przyspieszanie wyświetlania tekstu (wymaga Windowsa 7 lub Windowsa Visty z aktualizacją &quot;Vista Platform&quot;).">
 <!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">

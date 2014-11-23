@@ -110,8 +110,6 @@
 <!ENTITY browser "浏览器">
 <!ENTITY dom_max_script_run_time_description "指定在多少秒之后 Firefox 提示您当前某个脚本运行时间太长。">
 <!ENTITY dom_max_script_run_time_name "脚本可执行的最长时间（秒）">
-<!ENTITY gfx_3d_video_enabled_name "启用 3D 视频">
-<!ENTITY gfx_3d_video_enabled_description "启用 3D 视频的立体渲染功能。">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "启用 DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "启用硬件加速显示文本。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">

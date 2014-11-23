@@ -119,8 +119,6 @@
 <!-- WEBSITES -->
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
-<!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
-<!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">

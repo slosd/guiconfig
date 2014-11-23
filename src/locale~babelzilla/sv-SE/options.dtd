@@ -119,8 +119,6 @@
 <!-- WEBSITES -->
 <!ENTITY dom_max_script_run_time_description "Bestämmer det antal sekunder efter vilka Firefox meddelar dig att ett skript tar för lång tid på sig att köras.">
 <!ENTITY dom_max_script_run_time_name "Maxkörtid för skript (s)">
-<!ENTITY gfx_3d_video_enabled_name "Tillåt 3D-videor">
-<!ENTITY gfx_3d_video_enabled_description "Tillåter stereoskopisk rendering för 3D-videor.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktivera DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiverar hårdvaruacceleration för textvisning. (Kräver Windows 7 eller Windows Vista med Vista Platform-uppdatering)">
 <!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
