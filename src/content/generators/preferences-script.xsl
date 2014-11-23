@@ -11,11 +11,11 @@
               cdata-section-elements="script" />
 
   <xsl:template match="p:pref" mode="script_init_dependency">
-    guiconfig.preferences.registerDependencies('<xsl:value-of select="@key" />', [<xsl:apply-templates select="p:dependency" mode="json" />]);
+    registerDependencies('<xsl:value-of select="@key" />', [<xsl:apply-templates select="p:dependency" mode="json" />]);
   </xsl:template>
 
   <xsl:template match="p:pref" mode="script_init_behavior">
-    guiconfig.preferences.registerBehavior('<xsl:value-of select="@key" />', {
+    registerBehavior('<xsl:value-of select="@key" />', {
       <xsl:for-each select="p:behavior/p:override">
         '<xsl:value-of select="@name" />': function(view, value) { <xsl:value-of select="string(.)" /> },
       </xsl:for-each>
@@ -23,7 +23,7 @@
   </xsl:template>
 
   <xsl:template match="p:pref" mode="script_init_button_select_file">
-    guiconfig.preferences.registerSelectFileButton('<xsl:value-of select="@key" />',
+    registerSelectFileButton('<xsl:value-of select="@key" />',
         [<xsl:for-each select="p:mode/p:filterType">
            '<xsl:value-of select="@value" />'<xsl:if test="position() != last()">,</xsl:if>
          </xsl:for-each>]);

@@ -12,6 +12,5 @@
              oncommand="guiconfig.browser.showPreferencesDialog();"/>
   </toolbarpalette>
 
-  <script type="application/javascript" src="/content/core.js"/>
   <script type="application/javascript" src="/content/browser.js"/>
 </overlay>

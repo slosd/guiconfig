@@ -1,14 +1,84 @@
 var guiconfig = (function(guiconfig) {
-  if (guiconfig.preferences)
-    return guiconfig;
-
   var pref_window = document.getElementById('gcPreferencesDialog');
   var prefpane_current, prefpane_search_results, pref_script;
   var prefpanes_loaded = false;
 
   var sandbox = Components.utils.Sandbox(window, {
-    sandboxPrototype: { 'guiconfig': guiconfig }
+    sandboxPrototype: {
+      registerSelectFileButton: function(key, types) {
+        var view = document.getElementById(key + '-view');
+        if (!view) return;
+
+        for (var elem of view.querySelectorAll('button.select-file')) {
+          elem.addEventListener('command', function() {
+            var file = guiconfig.core.selectFile(window, elem.getAttribute('title'), types);
+            if (file) {
+              document.getElementById(key).value = file.path;
+            }
+          }, true);
+        }
+      },
+      registerBehavior: function(prefKey, behavior) {
+        var pref = document.getElementById(prefKey);
+        if (!pref) return;
+        var view = document.getElementById(prefKey + '-view');
+        if (!view) return;
+
+        if (typeof behavior.setValue === 'function') {
+          pref.addEventListener('change', function() {
+            behavior.setValue(view, pref.value);
+          });
+          behavior.setValue(view, pref.value);
+        }
+
+        if (typeof behavior.getValue === 'function') {
+          view.addEventListener('command', function() {
+            var value = behavior.getValue(view);
+            if (pref.value !== value) {
+              pref.value = value;
+            }
+          });
+        }
+      },
+      registerDependencies: function(prefKey, dependencies) {
+        var view = document.getElementById(prefKey + '-view');
+        if (!view) return;
+
+        for (var dependency of dependencies) {
+          var pref = document.getElementById(dependency.key);
+          if (pref) {
+            pref.addEventListener('change', function() {
+              checkDependencies(view, dependencies);
+            });
+          }
+        }
+        checkDependencies(view, dependencies);
+      }
+    }
   });
+
+  var runScript = function(script) {
+    try {
+      Components.utils.evalInSandbox(script, sandbox);
+    } catch(e) {
+      console.log(e);
+    }
+  };
+
+  var checkDependencies = function(view, dependencies) {
+    var disabled = false;
+    for (var dependency of dependencies) {
+      if (!guiconfig.core.isApplicationVersionBetween(dependency.minVersion, dependency.maxVersion) ||
+             dependency.equals && (document.getElementById(dependency.key) || {}).value !== dependency.equals ||
+             dependency.in && dependency.in.indexOf((document.getElementById(dependency.key) || {}).value) === -1) {
+        disabled = true;
+        break;
+      }
+    }
+    for (var elem of view.querySelectorAll('label, textbox, menulist, colorpicker, radiogroup, checkbox, button')) {
+      elem.disabled = disabled;
+    }
+  };
 
   guiconfig.preferences = {
     load: function() {
@@ -21,24 +91,16 @@ var guiconfig = (function(guiconfig) {
 
         prefpanes_loaded = true;
         if (pref_script) {
-          guiconfig.preferences.runScript(pref_script);
+          runScript(pref_script);
         }
       });
 
       guiconfig.core.buildPreferenceScript(document, function(result) {
         pref_script = result.querySelector('script').textContent;
         if (prefpanes_loaded) {
-          guiconfig.preferences.runScript(pref_script);
+          runScript(pref_script);
         }
       });
-    },
-
-    runScript: function(script) {
-      try {
-        Components.utils.evalInSandbox(script, sandbox);
-      } catch(e) {
-        console.log(e);
-      }
     },
 
     search: function(query) {
@@ -85,9 +147,7 @@ var guiconfig = (function(guiconfig) {
       while (node) {
         switch (node.nodeName) {
           case 'hbox':
-            if (node.classList.contains('highlight')) {
-              node.classList.remove('highlight');
-            }
+            node.classList.remove('highlight');
             setTimeout((function(node) {
               return function() {
                 node.classList.add('highlight');
@@ -102,77 +162,6 @@ var guiconfig = (function(guiconfig) {
             break;
         }
         node = node.parentNode;
-      }
-    },
-
-    registerBehavior: function(prefKey, behavior) {
-      var pref = document.getElementById(prefKey);
-      if (!pref) return;
-      var view = document.getElementById(prefKey + '-view');
-      if (!view) return;
-
-      if (typeof behavior.setValue === 'function') {
-        pref.addEventListener('change', function() {
-          behavior.setValue(view, pref.value);
-        });
-        behavior.setValue(view, pref.value);
-      }
-
-      if (typeof behavior.getValue === 'function') {
-        view.addEventListener('command', function() {
-          var value = behavior.getValue(view);
-          if (pref.value !== value) {
-            pref.value = value;
-          }
-        });
-      }
-    },
-
-    checkDependencies: function(view, dependencies) {
-      var disabled = false;
-      for (var dependency of dependencies) {
-        if (!guiconfig.core.isApplicationVersionBetween(dependency.minVersion, dependency.maxVersion) ||
-               dependency.equals && (document.getElementById(dependency.key) || {}).value !== dependency.equals ||
-               dependency.in && dependency.in.indexOf((document.getElementById(dependency.key) || {}).value) === -1) {
-          disabled = true;
-          break;
-        }
-      }
-      for (var elem of view.querySelectorAll('label, textbox, menulist, colorpicker, radiogroup, checkbox, button')) {
-        elem.disabled = disabled;
-      }
-    },
-
-    registerDependencies: function(prefKey, dependencies) {
-      var view = document.getElementById(prefKey + '-view');
-      if (!view) return;
-
-      for (var dependency of dependencies) {
-        var pref = document.getElementById(dependency.key);
-        if (pref) {
-          pref.addEventListener('change', function() {
-            guiconfig.preferences.checkDependencies(view, dependencies);
-          });
-        }
-      }
-      this.checkDependencies(view, dependencies);
-    },
-
-    selectFile: function(prefKey, title, filterTypes) {
-      var file = guiconfig.core.selectFile(window, title, filterTypes);
-      if (file) {
-        document.getElementById(prefKey).value = file.path;
-      }
-    },
-
-    registerSelectFileButton: function(key, types) {
-      var view = document.getElementById(key + '-view');
-      if (!view) return;
-
-      for (var elem of view.querySelectorAll('button.select-file')) {
-        elem.addEventListener('command', function() {
-          guiconfig.preferences.selectFile(key, elem.getAttribute('title'), types);
-        }, true);
       }
     }
   };
