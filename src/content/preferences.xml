@@ -200,13 +200,10 @@
                 description="&prompts_tab_modal_enabled_description;"
                 type="bool"
                 minVersion="4.0" />
-          <pref key="signon.prefillForms"
+          <pref key="signon.autofillForms"
                 label="&signon_prefillForms_name;"
                 description="&signon_prefillForms_description;"
-                type="bool"
-                default="1">
-            <binding key="signon.autofillForms" />
-          </pref>
+                type="bool"/>
           <pref key="accessibility.tabfocus"
                 label="&accessibility_tabfocus_name;"
                 description="&accessibility_tabfocus_description;"
