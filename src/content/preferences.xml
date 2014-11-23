@@ -84,7 +84,8 @@
       <concern label="&awesomebar;" minVersion="3.0">
         <pref key="browser.urlbar.default.behavior"
               type="int"
-              minVersion="3.5">
+              minVersion="3.5"
+              maxVersion="35.*">
           <behavior>
             <override name="setValue">
             <![CDATA[
@@ -134,6 +135,11 @@
             </group>
           </view>
         </pref>
+        <pref key="browser.urlbar.suggest.history.onlyTyped"
+              label="&browser_urlbar_restrict_typed_name;"
+              description="&browser_urlbar_restrict_typed_description;"
+              type="bool"
+              minVersion="36" />
         <pref key="browser.urlbar.maxRichResults"
               label="&browser_urlbar_maxRichResults_name;"
               description="&browser_urlbar_maxRichResults_description;"
