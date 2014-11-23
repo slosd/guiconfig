@@ -112,8 +112,6 @@
 <!ENTITY browser_search_openintab_name "Öppna sökresultat i en ny flik">
 <!ENTITY browser_preferences_instantApply_description "Ändringar i inställningar verkställs direkt. Inställningar-fönstret är inte längre modalt, så istället för knapparna &quot;OK&quot; och &quot;Avbryt&quot; finns där bara en &quot;Stäng&quot;-knapp.">
 <!ENTITY browser_preferences_instantApply_name "Verkställ automatiskt">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Varje gång [F7] trycks ned visas en dialogruta som gör användarna uppmärksamma på att de går över till textmarkörläge.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Visa dialogruta när textmarkörläge påbörjas">
 <!ENTITY accessibility_accesskeycausesactivation_description "Att använda en snabbtangent för ett element blir samma sak som att aktivera elementet. Om elementet är en länk, följs länken. Om elementet är en knapp, klickas knappen.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Snabbtangent aktiverar elementet">
 <!-- BROWSER -->

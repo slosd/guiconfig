@@ -112,8 +112,6 @@
 <!ENTITY browser_search_openintab_name "Abrir resultados de pesquisa em nova aba">
 <!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar opções instantaneamente">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Exibe um aviso cada vez que F7 for pressionada para ativar o cursor de teclado, recurso que permite selecionar texto e navegar pelos itens da página usando as setas do teclado.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Avisar ao ativar o cursor de teclado">
 <!ENTITY accessibility_accesskeycausesactivation_description "Permite que itens da página sejam acionados (ex.: seguir links, clicar botões) ao se pressionar as teclas de acesso correspondentes, quando definidas pela página.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Ativar teclas de acesso para itens da página">
 <!-- ALERTS -->

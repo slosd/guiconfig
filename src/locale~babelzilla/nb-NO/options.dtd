@@ -16,8 +16,6 @@
 <!ENTITY misc "Diverse">
 <!ENTITY browser_preferences_instantApply_description "Endring av innstillinger trer i kraft øyeblikkelig. Innstillingsvinduet er ikke modalt, så i stedet for «Ok» eller «Avbryt», finnes kun «Lukk».">
 <!ENTITY browser_preferences_instantApply_name "Lagre øyeblikkelig">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Vis en advarsel når du trykker F7 for å endre til å bruke piltastene for navigering på nettsider.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Vis dialogboks når jeg endrer til å bruke piltastene for navigering innenfor nettsider">
 <!ENTITY accessibility_accesskeycausesactivation_description "Å benytte en hurtigtast for dette elementet er det samme som å aktivere det. Dersom elementet er en lenke, åpnes lenken. Er elementet er en knapp, blir knappen trykket.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Hurtigtasten aktiverer elementet">
 <!ENTITY browser "Nettleser">

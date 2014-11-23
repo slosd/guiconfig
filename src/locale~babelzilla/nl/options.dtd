@@ -47,8 +47,6 @@
 <!ENTITY browser_search_openintab_name "Open de zoekresultaten in een nieuw tabblad">
 <!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn actief onmiddellijk. De voorkeuren venster is niet modaal. In plaats van &quot;OK&quot; en &quot;Annuleren&quot; knoppen, is er slechts een &quot;Sluiten&quot;.&quot;&gt;">
 <!ENTITY browser_preferences_instantApply_name "Instant toepassing">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Elke keer (F7) wordt ingedrukt, verschijnt een dialoogvenster de waarschuwing dat ze binnenkomen Caret Browsing-modus.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Toon het dialoogvenster bij het invoeren van caret browsing">
 <!ENTITY accessibility_accesskeycausesactivation_description "Met behulp van een sneltoets voor een element is hetzelfde als het activeren van het element. Indien het element is een link, volg de link. Indien het element is een knop, &quot;klik&quot; op de knop.&quot;&gt;">
 <!ENTITY accessibility_accesskeycausesactivation_name "Toegang toets activeert het element">
 <!ENTITY browser "Browser">

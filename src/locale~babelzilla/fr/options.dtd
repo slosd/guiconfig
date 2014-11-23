@@ -85,8 +85,6 @@
 <!ENTITY browser_search_openintab_name "Ouvrir les résultats de la recherche dans un nouvel onglet">
 <!ENTITY browser_preferences_instantApply_description "Les modifications des préférences sont aussitôt actives. Leur fenêtre n&apos;est plus modale : à la place des boutons « OK » et « Annuler » il n&apos;y a que le bouton « Fermer »">
 <!ENTITY browser_preferences_instantApply_name "Appliquer dès maintenant">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "À chaque appui sur F7 une boîte de dialogue apparaît, prévenant l&apos;utilisateur qu&apos;il passe en mode de navigation au curseur.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Voir la boîte de dialogue lors de la navigation au curseur">
 <!ENTITY accessibility_accesskeycausesactivation_description "L&apos;utilisation d&apos;un raccourci clavier pour un élément a le même effet que d&apos;activer l&apos;élément. Selon le cas, cela revient à suivre un lien ou à cliquer sur un bouton.">
 <!ENTITY accessibility_accesskeycausesactivation_name "La touche d&apos;accès active l&apos;élément">
 <!ENTITY browser "Navigateur">

@@ -112,8 +112,6 @@
 <!ENTITY browser_search_openintab_name "Open search results in a new tab">
 <!ENTITY browser_preferences_instantApply_description "Changes to preferences are active immediately. The preferences window is not modal. Instead of &quot;OK&quot; and &quot;Cancel&quot; buttons, there is only a &quot;Close&quot; button.">
 <!ENTITY browser_preferences_instantApply_name "Instant apply">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Each time (F7) is pressed, display a dialog box warning the user that they are entering Caret Browsing mode.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Show dialog box when entering caret browsing">
 <!ENTITY accessibility_accesskeycausesactivation_description "Using an access key for an element is the same as activating the element. If the element is a link, follow the link. If the element is a button, click the button.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Access key activates the element">
 <!-- BROWSER -->

@@ -110,8 +110,6 @@
 <!ENTITY browser_search_openintab_name "Открывать результаты поиска в новой вкладке">
 <!ENTITY browser_preferences_instantApply_description "Изменения параметров настроек используются немедленно. Окно настроек становится не модальным. Вместо кнопок «OK» и «Отмена» будет только кнопка «Закрыть».">
 <!ENTITY browser_preferences_instantApply_name "Применять немедленно">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Каждый раз при нажатии клавиши «F7» отображает диалоговое окно с предупреждением о переходе в режим активного курсора.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "При входе в режим активного курсора показать диалоговое окно">
 <!ENTITY accessibility_accesskeycausesactivation_description "Использование клавиши доступа к элементу эквивалентно активации этого элемента. Если элемент является ссылкой, переход по ссылке. Если элемент кнопка — «нажатие» кнопки.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Клавиша доступа активизирует элемент">
 <!-- BROWSER -->

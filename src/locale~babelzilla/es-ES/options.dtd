@@ -110,8 +110,6 @@
 <!ENTITY browser_search_openintab_name "Abrir los resultados de la búsqueda en una pestaña nueva">
 <!ENTITY browser_preferences_instantApply_description "Los cambios en las opciones se aplican inmediatamente. La ventana de opciones no es modal. En lugar de los botones &quot;OK&quot; y &quot;Cancelar&quot;, sólo hay un botón de &quot;Cerrar&quot;.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar instantáneamente">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Cada vez que pulse F7 se mostrará un cuadro de diálogo avisando al usuario que se está entrando en el modo del cursor.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Mostrar un cuadro de diálogo al entrar en el modo del cursor">
 <!ENTITY accessibility_accesskeycausesactivation_description "Activar los elementos usando atajos de teclado. Si el elemento es un enlace, se seguirá, si es un botón se pulsará.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Activar los elementos usando los atajos">
 <!-- BROWSER -->

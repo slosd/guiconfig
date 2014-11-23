@@ -103,8 +103,6 @@
 <!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
 <!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
 <!ENTITY browser_preferences_instantApply_name "立刻生效">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "每次按下(F7)鍵，都顯示對話視窗提醒使用者將要進入鍵盤按鍵瀏覽模式">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "進入鍵盤按鍵瀏覽模式時顯示對話視窗">
 <!ENTITY accessibility_accesskeycausesactivation_description "對元件使用近接鍵，其作用方式與啟動該元件相同。元件如果是鏈結，就開啟該鏈結；元件如果是按鈕，就點選該按鈕。">
 <!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
 <!ENTITY browser "瀏覽器">

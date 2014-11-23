@@ -313,10 +313,6 @@
               description="&browser_preferences_instantApply_description;"
               type="bool"
               minVersion="2.0" />
-        <pref key="accessibility.warn_on_browsewithcaret"
-              label="&accessibility_warn_on_browsewithcaret_name;"
-              description="&accessibility_warn_on_browsewithcaret_description;"
-              type="bool" />
         <pref key="accessibility.accesskeycausesactivation"
               label="&accessibility_accesskeycausesactivation_name;"
               description="&accessibility_accesskeycausesactivation_description;"

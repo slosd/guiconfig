@@ -112,8 +112,6 @@
 <!ENTITY browser_search_openintab_name "Otevřít výsledky vyhledávání v novém panelu">
 <!ENTITY browser_preferences_instantApply_description "Změny předvoleb budou prováděny okamžitě. Okno s předvolbami nebude modální. Namísto tlačítek „OK“ a „Zrušit“ se bude objevovat tlačítko „Zavřít“.">
 <!ENTITY browser_preferences_instantApply_name "Použít okamžitě">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Při každém stisknutí F7 bude zobrazeno dialogové okno s upozorněním, že uživatel vstupuje do režimu Procházení stránky.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Zobrazit dialogové okno při zapnutí Procházení stránky">
 <!ENTITY accessibility_accesskeycausesactivation_description "Použití horké klávesy pro prvek bude stejné jako jeho aktivace. Pokud je prvek odkazem, bude tento odkaz zobrazen. Pokud je prvek tlačítko, bude stisknuto.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Horká klávesa aktivuje prvek">
 <!-- BROWSER -->

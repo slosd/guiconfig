@@ -103,8 +103,6 @@
 <!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
 <!ENTITY browser_preferences_instantApply_description "Wprowadzane ustawienia są zastosowywane od razu, a zamiast przycisków &quot;OK&quot; i &quot;Anuluj&quot; wyświetlany jest tylko przycisk &quot;Zamknij&quot;.">
 <!ENTITY browser_preferences_instantApply_name "Natychmiastowe zastosowywanie zmian w ustawieniach gui:configa">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "Za każdym razem, kiedy wciśnięty zostanie klawisz F7 wyświetl okno ostrzegające użytkownika o wejściu w tryb przeglądania w użyciem kursora.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Wyświetl okno dialogowe podczas wchodzenia w tryb przeglądania z użyciem kursora.">
 <!ENTITY accessibility_accesskeycausesactivation_description "Klawisze dostępu (Alt + Shift + klawisz) aktywują elementy stron internetowych. Jeżeli dany element jest odnośnikiem, przeglądarka przechodzi pod wskazany adres, natomiast jeśli jest on przyciskiem, klawisz skrótu &quot;wciska&quot; przycisk.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Włącz klawisze dostępu">
 <!ENTITY browser "Przeglądarka">
