@@ -259,7 +259,7 @@
     <field xpath="@key" />
   </key>
   <keyref name="pref-key-ref" refer="p:pref-key">
-    <selector xpath=".//p:prefref" />
+    <selector xpath=".//p:dependency" />
     <field xpath="@key" />
   </keyref>
 </element>

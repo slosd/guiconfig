@@ -5,6 +5,10 @@ var guiconfig = (function(guiconfig) {
 
   var sandbox = Components.utils.Sandbox(window, {
     sandboxPrototype: {
+      getPreferenceByKey: function(key) {
+        var elem = document.getElementById(key);
+        return elem.nodeName == 'preference' ? elem : null;
+      },
       registerSelectFileButton: function(key, types) {
         var view = document.getElementById(key + '-view');
         if (!view) return;
