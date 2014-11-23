@@ -81,7 +81,7 @@
           </concern>
         </concerns>
       </concern>
-      <concern label="&awesomebar;" minVersion="3.0">
+      <concern label="&urlbar;" minVersion="3.0">
         <pref key="browser.urlbar.default.behavior"
               type="int"
               minVersion="3.5"
@@ -140,10 +140,6 @@
               description="&browser_urlbar_restrict_typed_description;"
               type="bool"
               minVersion="36" />
-        <pref key="browser.urlbar.maxRichResults"
-              label="&browser_urlbar_maxRichResults_name;"
-              description="&browser_urlbar_maxRichResults_description;"
-              type="int" />
         <pref key="browser.urlbar.matchBehavior"
               label="&browser_urlbar_matchBehavior_name;"
               description="&browser_urlbar_matchBehavior_description;"
@@ -153,6 +149,32 @@
           <option label="&browser_urlbar_matchBehavior_o2;">1</option>
           <option label="&browser_urlbar_matchBehavior_o3;">2</option>
           <option label="&browser_urlbar_matchBehavior_o4;" minVersion="3.0">3</option>
+        </pref>
+        <pref key="browser.urlbar.maxRichResults"
+              label="&browser_urlbar_maxRichResults_name;"
+              description="&browser_urlbar_maxRichResults_description;"
+              type="int" />
+        <pref key="browser.urlbar.autoFill"
+              label="&browser_urlbar_autoFill_name;"
+              description="&browser_urlbar_autoFill_description;"
+              type="bool" />
+        <pref key="browser.fixup.alternate.enabled"
+              label="&browser_fixup_alternate_enabled_name;"
+              description="&browser_fixup_alternate_enabled_description;"
+              type="bool" />
+        <pref key="browser.fixup.alternate.prefix"
+              label="&browser_fixup_alternate_prefix_name;"
+              description="&browser_fixup_alternate_prefix_description;"
+              type="string"
+              indent="indent">
+          <dependency key="browser.fixup.alternate.enabled" equals="true" />
+        </pref>
+        <pref key="browser.fixup.alternate.suffix"
+              label="&browser_fixup_alternate_suffix_name;"
+              description="&browser_fixup_alternate_suffix_description;"
+              type="string"
+              indent="indent">
+          <dependency key="browser.fixup.alternate.enabled" equals="true" />
         </pref>
       </concern>
       <concern label="&websites;">
@@ -289,49 +311,23 @@
         </pref>
       </concern>
       <concern label="&misc;">
-        <group label="&urlbar;">
-          <pref key="browser.urlbar.autoFill"
-                label="&browser_urlbar_autoFill_name;"
-                description="&browser_urlbar_autoFill_description;"
-                type="bool" />
-          <pref key="browser.fixup.alternate.enabled"
-                label="&browser_fixup_alternate_enabled_name;"
-                description="&browser_fixup_alternate_enabled_description;"
-                type="bool" />
-          <pref key="browser.fixup.alternate.prefix"
-                label="&browser_fixup_alternate_prefix_name;"
-                description="&browser_fixup_alternate_prefix_description;"
-                type="string"
-                indent="indent">
-            <dependency key="browser.fixup.alternate.enabled" equals="true" />
-          </pref>
-          <pref key="browser.fixup.alternate.suffix"
-                label="&browser_fixup_alternate_suffix_name;"
-                description="&browser_fixup_alternate_suffix_description;"
-                type="string"
-                indent="indent">
-            <dependency key="browser.fixup.alternate.enabled" equals="true" />
-          </pref>
-        </group>
-        <group label="&misc;">
-          <pref key="browser.preferences.instantApply"
-                label="&browser_preferences_instantApply_name;"
-                description="&browser_preferences_instantApply_description;"
-                type="bool"
-                minVersion="2.0" />
-          <pref key="browser.popups.showPopupBlocker"
-                label="&browser_popups_showPopupBlocker_name;"
-                description="&browser_popups_showPopupBlocker_description;"
-                type="bool" />
-          <pref key="accessibility.warn_on_browsewithcaret"
-                label="&accessibility_warn_on_browsewithcaret_name;"
-                description="&accessibility_warn_on_browsewithcaret_description;"
-                type="bool" />
-          <pref key="accessibility.accesskeycausesactivation"
-                label="&accessibility_accesskeycausesactivation_name;"
-                description="&accessibility_accesskeycausesactivation_description;"
-                type="bool" />
-        </group>
+        <pref key="browser.preferences.instantApply"
+              label="&browser_preferences_instantApply_name;"
+              description="&browser_preferences_instantApply_description;"
+              type="bool"
+              minVersion="2.0" />
+        <pref key="browser.popups.showPopupBlocker"
+              label="&browser_popups_showPopupBlocker_name;"
+              description="&browser_popups_showPopupBlocker_description;"
+              type="bool" />
+        <pref key="accessibility.warn_on_browsewithcaret"
+              label="&accessibility_warn_on_browsewithcaret_name;"
+              description="&accessibility_warn_on_browsewithcaret_description;"
+              type="bool" />
+        <pref key="accessibility.accesskeycausesactivation"
+              label="&accessibility_accesskeycausesactivation_name;"
+              description="&accessibility_accesskeycausesactivation_description;"
+              type="bool" />
       </concern>
     </concerns>
   </category>
