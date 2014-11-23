@@ -121,8 +121,6 @@
 <!ENTITY dom_max_script_run_time_name "Max. doba běhu skriptu (s)">
 <!ENTITY gfx_3d_video_enabled_name "Povolit 3D video">
 <!ENTITY gfx_3d_video_enabled_description "Povolí stereoskopické vykreslování trojrozměrných videí.">
-<!ENTITY mozilla_widget_render_mode_name "Povolit Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "Povolí hardwarovou akceleraci pro vykreslování. (Vyžaduje Windows 7 nebo Windows Vista s aktualizací Vista Platform.)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Povolit DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Povolí hardwarovou akceleraci pro zobrazování textu. (Vyžaduje Windows 7 nebo Windows Vista s aktualizací Vista Platform.)">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">

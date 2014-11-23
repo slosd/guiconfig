@@ -380,28 +380,6 @@
               inverted="inverted"
               minVersion="4.0b1">
         </pref>
-        <pref key="mozilla.widget.render-mode"
-              minVersion="3.7a2"
-              platform="WINNT"
-              type="int">
-          <behavior>
-            <override name="setValue">
-              <![CDATA[
-              var checkbox = view.getElementsByTagName('checkbox')[0];
-              checkbox.checked = value == 6;
-              ]]>
-            </override>
-            <override name="getValue">
-              <![CDATA[
-              var checkbox = view.getElementsByTagName('checkbox')[0];
-              return checkbox.checked ? 6 : -1;
-              ]]>
-            </override>
-          </behavior>
-          <view>
-            <checkbox label="&mozilla_widget_render_mode_name;" description="&mozilla_widget_render_mode_description;" />
-          </view>
-        </pref>
         <pref key="gfx.font_rendering.directwrite.enabled"
               label="&gfx_font_rendering_directwrite_enabled_name;"
               description="&gfx_font_rendering_directwrite_enabled_description;"

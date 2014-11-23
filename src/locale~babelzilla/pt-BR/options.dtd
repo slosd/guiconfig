@@ -121,8 +121,6 @@
 <!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
 <!ENTITY gfx_3d_video_enabled_name "Ativar vídeo 3D">
 <!ENTITY gfx_3d_video_enabled_description "Ativa a exibição estereoscópica de vídeos 3D. (Exige equipamento compatível.)">
-<!ENTITY mozilla_widget_render_mode_name "Ativar Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "Ativa aceleração por hardware para renderização (necessário Windows 7 ou Windows Vista com Platform Update).">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Ativar DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Ativa aceleração por hardware para exibição de texto (necessário Windows 7 ou Windows Vista com Platform Update).">
 <!ENTITY geo_enabled_name "Ativar localização">
