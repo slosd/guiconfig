@@ -233,7 +233,6 @@
 <!ENTITY layout_frames_force_resizability_name "принудить к изменяемому размеру">
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
-<!ENTITY html5_enable_name "Включить анализатор HTML5">
 <!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">
 <!ENTITY images "Изображения">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">

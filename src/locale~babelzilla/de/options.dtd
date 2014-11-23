@@ -220,7 +220,6 @@
 <!ENTITY layout_frames_force_resizability_name "immer größenveränderlich">
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
-<!ENTITY html5_enable_name "HTML5 Parser benutzen">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">

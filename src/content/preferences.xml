@@ -373,11 +373,6 @@
               description="&geo_enabled_description;"
               type="bool"
               minVersion="3.5" />
-        <pref key="html5.enable"
-              label="&html5_enable_name;"
-              description=""
-              type="bool"
-              minVersion="3.6" />
         <pref key="webgl.disabled"
               label="&webgl_enabled_for_all_sites_name;"
               description=""

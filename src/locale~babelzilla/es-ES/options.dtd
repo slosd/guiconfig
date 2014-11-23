@@ -233,7 +233,6 @@
 <!ENTITY layout_frames_force_resizability_name "forzar redimensionable">
 <!ENTITY browser_display_show_image_placeholders_description "Muestra los marcadores de posición mientras se están cargando las imágenes">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar los marcadores de posición para las imágenes">
-<!ENTITY html5_enable_name "Habilitar el analizador HTML5">
 <!ENTITY webgl_enabled_for_all_sites_name "Habilitar WebGL">
 <!ENTITY images "Imágenes">
 <!ENTITY browser_enable_automatic_image_resizing_description "Al ver una página web, la imagen se redimensionará para encajarla en la ventana del navegador si es demasiado grande.">

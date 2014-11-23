@@ -237,7 +237,6 @@
 <!ENTITY layout_frames_force_resizability_name "Tvinga justerbarhet">
 <!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild läses in.">
 <!ENTITY browser_display_show_image_placeholders_name "Visa bildplatshållare">
-<!ENTITY html5_enable_name "Aktivera HTML5-parsern">
 <!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">
 <!ENTITY images "Bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "När en bild visas ensam och inte som en del av en webbsida, kommer dess storlek att anpassas till webbläsarfönstret om den är för stor för att få plats i det.">

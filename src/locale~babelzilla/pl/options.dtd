@@ -216,7 +216,6 @@
 <!ENTITY layout_frames_force_resizability_name "wymuś możliwość zmiany rozmiaru">
 <!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
 <!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
-<!ENTITY html5_enable_name "Włącz parser HTML5">
 <!ENTITY webgl_enabled_for_all_sites_name "Włącz WebGL">
 <!ENTITY images "Obrazki">
 <!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">

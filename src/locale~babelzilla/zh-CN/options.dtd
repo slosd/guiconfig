@@ -220,7 +220,6 @@
 <!ENTITY layout_frames_force_resizability_name "强制可改变大小">
 <!ENTITY browser_display_show_image_placeholders_description "图片载入时显示占位符。">
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
-<!ENTITY html5_enable_name "启用 HTML5 解析器">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
 <!ENTITY images "图片">
 <!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">

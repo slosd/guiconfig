@@ -237,7 +237,6 @@
 <!ENTITY layout_frames_force_resizability_name "Forçar que sejam redimensionáveis">
 <!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas. (Costuma evitar algumas mudanças bruscas no aspecto da página durante o seu carregamento.)">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
-<!ENTITY html5_enable_name "Ativar interpretador HTML5">
 <!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
 <!ENTITY images "Imagens">
 <!ENTITY browser_enable_automatic_image_resizing_description "Reduz o tamanho de uma imagem avulsa (fora de uma página) maior que a janela do navegador para que ela seja exibida por completo no espaço disponível.">

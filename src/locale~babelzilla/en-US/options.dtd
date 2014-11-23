@@ -237,7 +237,6 @@
 <!ENTITY layout_frames_force_resizability_name "force resizeable">
 <!ENTITY browser_display_show_image_placeholders_description "Shows placeholders while image is loading.">
 <!ENTITY browser_display_show_image_placeholders_name "Show image placeholders">
-<!ENTITY html5_enable_name "Enable the HTML5 parser">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "When viewing an image not in a web page, the image will be resized to fit in the browser window if it is too large for the browser window.">

@@ -237,7 +237,6 @@
 <!ENTITY layout_frames_force_resizability_name "Vynutit změnu velikosti">
 <!ENTITY browser_display_show_image_placeholders_description "Zobrazí zástupný obrázek během jeho načítání.">
 <!ENTITY browser_display_show_image_placeholders_name "Zobrazit zástupný obrázek">
-<!ENTITY html5_enable_name "Povolit parser HTML5">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
 <!ENTITY images "Obrázky">
 <!ENTITY browser_enable_automatic_image_resizing_description "Pokud je obrázek prohlížený mimo stránku příliš velký, bude změněna jeho velikost, aby se vešel do okna prohlížeče.">
