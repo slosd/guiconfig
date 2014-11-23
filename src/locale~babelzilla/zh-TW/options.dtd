@@ -101,8 +101,6 @@
 <!ENTITY misc "雜項">
 <!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
 <!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
-<!ENTITY browser_popups_showPopupBlocker_description "決定是否在狀態列顯示有無阻擋彈跳視窗的圖示">
-<!ENTITY browser_popups_showPopupBlocker_name "在狀態列顯示圖示">
 <!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
 <!ENTITY browser_preferences_instantApply_name "立刻生效">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "每次按下(F7)鍵，都顯示對話視窗提醒使用者將要進入鍵盤按鍵瀏覽模式">

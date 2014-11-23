@@ -103,8 +103,6 @@
 <!ENTITY misc "Verschiedenes">
 <!ENTITY browser_search_openintab_description "Wenn die Suchleiste verwendet wird, werden die Ergebnisse in einem neuen Tab geöffnet, anstatt im aktuellen.">
 <!ENTITY browser_search_openintab_name "Suchergebnisse in neuem Tab öffnen">
-<!ENTITY browser_popups_showPopupBlocker_description "Zeigt in der Statusleiste ein Symbol an, wenn ein Popup-Fenster geblockt wurde.">
-<!ENTITY browser_popups_showPopupBlocker_name "Popup-Blocker Symbol anzeigen">
 <!ENTITY browser_preferences_instantApply_description "Änderungen im &quot;Einstellungen&quot;-Dialog werden sofort übernommen. Die Schaltflächen &quot;OK&quot; und &quot;Abbrechen&quot; werden durch eine &quot;Schließen&quot;-Schaltfläche ersetzt.">
 <!ENTITY browser_preferences_instantApply_name "Einstellungen sofort übernehmen">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Es erscheint ein Hinweis wenn Caret-Browsing durch Drücken von [F7] aktiviert wird. Diese Funktion(Caret-Browsing) platziert einen beweglichen Cursor in der Webseiten mit dem Text mit der Tastatur ausgewählt und mit dem mit der Tastatur navigiert werden kann.">

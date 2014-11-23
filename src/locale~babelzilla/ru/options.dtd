@@ -108,8 +108,6 @@
 <!ENTITY misc "Разное">
 <!ENTITY browser_search_openintab_description "При выполнении поиска через строку поиска открывает результаты в новой вкладке.">
 <!ENTITY browser_search_openintab_name "Открывать результаты поиска в новой вкладке">
-<!ENTITY browser_popups_showPopupBlocker_description "Определяет, будет ли показываться значок в строке состояния при блокировании всплывающего окна или нет.">
-<!ENTITY browser_popups_showPopupBlocker_name "Показывать значок в строке состояния">
 <!ENTITY browser_preferences_instantApply_description "Изменения параметров настроек используются немедленно. Окно настроек становится не модальным. Вместо кнопок «OK» и «Отмена» будет только кнопка «Закрыть».">
 <!ENTITY browser_preferences_instantApply_name "Применять немедленно">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Каждый раз при нажатии клавиши «F7» отображает диалоговое окно с предупреждением о переходе в режим активного курсора.">

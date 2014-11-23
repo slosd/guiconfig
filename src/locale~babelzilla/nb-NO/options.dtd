@@ -14,8 +14,6 @@
 <!ENTITY browser_backspace_action_o2 "Som Page Up">
 <!ENTITY browser_backspace_action_o3 "Gjør ingenting">
 <!ENTITY misc "Diverse">
-<!ENTITY browser_popups_showPopupBlocker_description "Angir om et ikon skal vises i statuslinjen når et sprettoppvindu har blitt blokkert">
-<!ENTITY browser_popups_showPopupBlocker_name "Vis ikon i statuslinjen">
 <!ENTITY browser_preferences_instantApply_description "Endring av innstillinger trer i kraft øyeblikkelig. Innstillingsvinduet er ikke modalt, så i stedet for «Ok» eller «Avbryt», finnes kun «Lukk».">
 <!ENTITY browser_preferences_instantApply_name "Lagre øyeblikkelig">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Vis en advarsel når du trykker F7 for å endre til å bruke piltastene for navigering på nettsider.">

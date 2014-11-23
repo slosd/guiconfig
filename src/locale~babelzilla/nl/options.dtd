@@ -45,8 +45,6 @@
 <!ENTITY misc "Diversen">
 <!ENTITY browser_search_openintab_description "Bij het uitvoeren van een zoekopdracht van de Search Bar, opent u de resultaten in een nieuw tabblad.">
 <!ENTITY browser_search_openintab_name "Open de zoekresultaten in een nieuw tabblad">
-<!ENTITY browser_popups_showPopupBlocker_description "Bepaalt of om aan te tonen een icoon in de statusbalk wanneer een pop-up is geblokkeerd of niet.">
-<!ENTITY browser_popups_showPopupBlocker_name "Toon icoon in de statusbalk">
 <!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn actief onmiddellijk. De voorkeuren venster is niet modaal. In plaats van &quot;OK&quot; en &quot;Annuleren&quot; knoppen, is er slechts een &quot;Sluiten&quot;.&quot;&gt;">
 <!ENTITY browser_preferences_instantApply_name "Instant toepassing">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Elke keer (F7) wordt ingedrukt, verschijnt een dialoogvenster de waarschuwing dat ze binnenkomen Caret Browsing-modus.">

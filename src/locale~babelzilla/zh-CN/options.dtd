@@ -103,8 +103,6 @@
 <!ENTITY misc "其他">
 <!ENTITY browser_search_openintab_description "在搜索栏进行搜索时，搜索结果显示在新标签页中。">
 <!ENTITY browser_search_openintab_name "在新标签页中打开搜索结果">
-<!ENTITY browser_popups_showPopupBlocker_description "是否在拦截弹出窗口时在状态栏显示图标。">
-<!ENTITY browser_popups_showPopupBlocker_name "在状态栏显示图标">
 <!ENTITY browser_preferences_instantApply_description "设定更改时立即生效。与常见选项窗口同时显示“确定”和“取消”按钮不同的是，此时只显示一个“关闭”按钮。">
 <!ENTITY browser_preferences_instantApply_name "立即生效">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "每次按下 F7 时显示是否进入光标浏览模式的对话框。">

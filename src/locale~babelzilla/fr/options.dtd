@@ -83,8 +83,6 @@
 <!ENTITY misc "Divers">
 <!ENTITY browser_search_openintab_description "Lorsqu&apos;une requête est lancée depuis la barre de recherche, ouvrir la page de résultat dans un nouvel onglet.">
 <!ENTITY browser_search_openintab_name "Ouvrir les résultats de la recherche dans un nouvel onglet">
-<!ENTITY browser_popups_showPopupBlocker_description "Détermine si une icône doit être affichée dans la barre d&apos;état quand un popup a été bloqué">
-<!ENTITY browser_popups_showPopupBlocker_name "Voir l&apos;icône dans la barre d&apos;état">
 <!ENTITY browser_preferences_instantApply_description "Les modifications des préférences sont aussitôt actives. Leur fenêtre n&apos;est plus modale : à la place des boutons « OK » et « Annuler » il n&apos;y a que le bouton « Fermer »">
 <!ENTITY browser_preferences_instantApply_name "Appliquer dès maintenant">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "À chaque appui sur F7 une boîte de dialogue apparaît, prévenant l&apos;utilisateur qu&apos;il passe en mode de navigation au curseur.">

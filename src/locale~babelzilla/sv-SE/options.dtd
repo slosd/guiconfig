@@ -110,8 +110,6 @@
 <!ENTITY misc "Övrigt">
 <!ENTITY browser_search_openintab_description "När en sökning utförs i sökfältet öppnas resultatsidan i en ny flik.">
 <!ENTITY browser_search_openintab_name "Öppna sökresultat i en ny flik">
-<!ENTITY browser_popups_showPopupBlocker_description "Bestämmer om den ikon som syns i statusfältet när ett popup-fönster har blockerats skall visas eller inte.">
-<!ENTITY browser_popups_showPopupBlocker_name "Visa popup-blockeringsikon i statusfältet">
 <!ENTITY browser_preferences_instantApply_description "Ändringar i inställningar verkställs direkt. Inställningar-fönstret är inte längre modalt, så istället för knapparna &quot;OK&quot; och &quot;Avbryt&quot; finns där bara en &quot;Stäng&quot;-knapp.">
 <!ENTITY browser_preferences_instantApply_name "Verkställ automatiskt">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Varje gång [F7] trycks ned visas en dialogruta som gör användarna uppmärksamma på att de går över till textmarkörläge.">

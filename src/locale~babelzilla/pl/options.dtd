@@ -101,8 +101,6 @@
 <!ENTITY misc "Rozmaite">
 <!ENTITY browser_search_openintab_description "Po wciśnięciu przycisku wyszukiwania jego wyniki zostaną otwarte w nowej karcie.">
 <!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
-<!ENTITY browser_popups_showPopupBlocker_description "Określa, czy przeglądarka ma wyświetlać ikonę na pasku stanu w przypadku zablokowania wyskakującego okienka czy nie.">
-<!ENTITY browser_popups_showPopupBlocker_name "Wyświetlaj ikonę informującą o zablokowaniu wyskakującego okna na pasku stanu">
 <!ENTITY browser_preferences_instantApply_description "Wprowadzane ustawienia są zastosowywane od razu, a zamiast przycisków &quot;OK&quot; i &quot;Anuluj&quot; wyświetlany jest tylko przycisk &quot;Zamknij&quot;.">
 <!ENTITY browser_preferences_instantApply_name "Natychmiastowe zastosowywanie zmian w ustawieniach gui:configa">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Za każdym razem, kiedy wciśnięty zostanie klawisz F7 wyświetl okno ostrzegające użytkownika o wejściu w tryb przeglądania w użyciem kursora.">

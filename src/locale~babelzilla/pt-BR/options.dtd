@@ -110,8 +110,6 @@
 <!ENTITY misc "Diversos">
 <!ENTITY browser_search_openintab_description "Abre os resultados das pesquisas realizadas no campo de pesquisa em uma nova aba.">
 <!ENTITY browser_search_openintab_name "Abrir resultados de pesquisa em nova aba">
-<!ENTITY browser_popups_showPopupBlocker_description "Exibe um ícone na barra de status quando a abertura de popups for bloqueada.">
-<!ENTITY browser_popups_showPopupBlocker_name "Mostrar ícone na barra de status ao bloquear popups">
 <!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar opções instantaneamente">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Exibe um aviso cada vez que F7 for pressionada para ativar o cursor de teclado, recurso que permite selecionar texto e navegar pelos itens da página usando as setas do teclado.">

@@ -57,8 +57,6 @@
 <!ENTITY misc "Varie">
 <!ENTITY browser_search_openintab_description "Quando si effettua una ricerca con la Barra di ricerca, apre i risultati in una nuova scheda.">
 <!ENTITY browser_search_openintab_name "Apri i risultati della ricerca in una nuova scheda">
-<!ENTITY browser_popups_showPopupBlocker_description "Stabilisce se visualizzare o meno un icona nella barra di stato quando una finestra pop-up viene bloccata.">
-<!ENTITY browser_popups_showPopupBlocker_name "Mostra l&apos;icona nella barra di stato">
 <!ENTITY browser_preferences_instantApply_description "Le modifiche nella finestra Opzioni sono immediatamente attive. La finestra delle Opzioni non è modale. Al posto dei pulsanti &apos;OK&apos; e &apos;Annulla&apos; è presente solo il tasto &apos;Chiudi&apos;.">
 <!ENTITY browser_preferences_instantApply_name "Applica subito">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Ogni volta che il tasto F7 viene premuto una finestra di dialogo avvertirà l&apos;utente che si sta entrando nella modalità di navigazione nel testo.">

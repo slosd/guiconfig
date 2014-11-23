@@ -110,8 +110,6 @@
 <!ENTITY misc "Různé">
 <!ENTITY browser_search_openintab_description "Pokud se vyhledává pomocí lišty hledání, výsledky jsou otevřeny v novém panelu.">
 <!ENTITY browser_search_openintab_name "Otevřít výsledky vyhledávání v novém panelu">
-<!ENTITY browser_popups_showPopupBlocker_description "Určuje, zda zobrazovat ikonu ve stavovém řádku, když bylo nebo nebylo zablokováno vyskakovací okno.">
-<!ENTITY browser_popups_showPopupBlocker_name "Zobrazit ve stavovém řádku ikonu blokování vyskakovacích oken">
 <!ENTITY browser_preferences_instantApply_description "Změny předvoleb budou prováděny okamžitě. Okno s předvolbami nebude modální. Namísto tlačítek „OK“ a „Zrušit“ se bude objevovat tlačítko „Zavřít“.">
 <!ENTITY browser_preferences_instantApply_name "Použít okamžitě">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Při každém stisknutí F7 bude zobrazeno dialogové okno s upozorněním, že uživatel vstupuje do režimu Procházení stránky.">

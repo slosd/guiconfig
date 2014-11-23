@@ -108,8 +108,6 @@
 <!ENTITY misc "Varios">
 <!ENTITY browser_search_openintab_description "Al realizar una búsqueda en la barra de búsqueda, abrir los resultados en una pestaña nueva.">
 <!ENTITY browser_search_openintab_name "Abrir los resultados de la búsqueda en una pestaña nueva">
-<!ENTITY browser_popups_showPopupBlocker_description "Determina si se muestra el icono de la barra de estado al bloquear una ventana emergente.">
-<!ENTITY browser_popups_showPopupBlocker_name "Mostrar icono en la barra de estado">
 <!ENTITY browser_preferences_instantApply_description "Los cambios en las opciones se aplican inmediatamente. La ventana de opciones no es modal. En lugar de los botones &quot;OK&quot; y &quot;Cancelar&quot;, sólo hay un botón de &quot;Cerrar&quot;.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar instantáneamente">
 <!ENTITY accessibility_warn_on_browsewithcaret_description "Cada vez que pulse F7 se mostrará un cuadro de diálogo avisando al usuario que se está entrando en el modo del cursor.">
