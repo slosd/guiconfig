@@ -186,8 +186,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Fermer la fenêtre en même temps que le dernier onglet">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Si la case est cochée, la fenêtre en cours sera fermée lorsque vous fermerez le dernier onglet de cette fenêtre.">
 <!ENTITY bookmarks "Marque-pages">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Nombre de secondes entre chaque actualisation des marque-pages dynamiques. Les valeurs inférieures à 60 sont considérées comme étant 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalle d&apos;actualisation (s)">
 <!ENTITY browser_bookmarks_max_backups_description "Détermine le nombre de sauvegardes à effectuer. La valeur 0 les désactivera.">
 <!ENTITY browser_bookmarks_max_backups_name "Sauvegarde des marque-pages">
 <!ENTITY network "Réseau">

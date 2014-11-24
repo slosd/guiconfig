@@ -259,8 +259,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Letzter Tab eines Fensters schließbar">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Gibt an, ob der letzte Tab eines Browserfensters geschlossen werden kann.">
 <!ENTITY bookmarks "Lesezeichen">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Gibt in Sekunden an, in welchen Abständen Dynamische Lesezeichen aktualisiert wird.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Aktualisierung (sek)">
 <!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
 <!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!ENTITY network "Netzwerk">

@@ -285,8 +285,6 @@
 <!ENTITY bookmarks "Favoritos">
 <!-- VIEW SOURCE -->
 <!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Especifica, em segundos, o tempo entre cada procura por atualizações nos RSS presentes nos favoritos. Valores menores que 60 serão considerados como 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Atualizar RSS a cada (s):">
 <!ENTITY browser_bookmarks_max_backups_description "Especifica quantas cópias de segurança da lista de favoritos serão mantidas pelo navegador. Digite 0 para não manter cópias do arquivo de favoritos.">
 <!ENTITY browser_bookmarks_max_backups_name "Nº de cópias do arquivo de favoritos:">
 <!-- NETWORK -->

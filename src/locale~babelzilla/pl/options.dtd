@@ -255,8 +255,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Zamknij okno po zamknięciu ostatniej karty">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Jeśli zaznaczone, otwarte okno zostanie zamknięte, gdy zamkniesz ostatnią kartę w tym oknie.">
 <!ENTITY bookmarks "Subskrypcje">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Liczba sekund między kolejnymi sprawdzeniami aktualizacji subskrybowanych kanałów RSS. Wartości poniżej 60 są uznawane za 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Odświeżaj co (sek.)">
 <!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
 <!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
 <!ENTITY network "Sieć">

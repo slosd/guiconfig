@@ -67,7 +67,5 @@
 <!ENTITY browser_enable_automatic_image_resizing_description "Når du ser på et bilde som ikke er en del av en nettside, vil bildet skaleres ned slik at det passer i vinduet.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Endre størrelsen på bilder">
 <!ENTITY bookmarks "Bokmerker">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Antall sekunder mellom hver oppdatering av levende bokmerker. Verdier under 60 blir satt til 60;">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Oppdateringfrekvens (sek)">
 <!ENTITY browser_bookmarks_max_backups_description "Angir antall sikkerhetskopier. Er denne satt til 0 vil sikkerhetskopier skrus av">
 <!ENTITY browser_bookmarks_max_backups_name "Sikkerhetskopi av bokmerker">

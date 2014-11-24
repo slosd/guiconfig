@@ -285,8 +285,6 @@
 <!ENTITY bookmarks "Záložky">
 <!-- MISC -->
 <!-- NETWORK -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Počet sekund mezi kontrolami Aktuálních záložek. Hodnoty menší než 60 bude zaokrouhleny na 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Obnovovací interval (s)">
 <!ENTITY browser_bookmarks_max_backups_description "Určuje počet uchovávaných záloh. Nastavení na 0 zálohy vypne.">
 <!ENTITY browser_bookmarks_max_backups_name "Zálohy záložek">
 <!-- CONNECTIONS -->

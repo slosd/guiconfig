@@ -246,8 +246,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
 <!ENTITY bookmarks "書籤">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">
 <!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
 <!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!ENTITY network "網路">

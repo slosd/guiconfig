@@ -259,8 +259,6 @@
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "关闭最后一个标签同时关闭浏览器">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "如果选中，关闭最后一个关闭最后一个标签同时关闭浏览器。">
 <!ENTITY bookmarks "书签">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "实时书签的刷新时间，最小值为60。">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "刷新间隔（秒）：">
 <!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
 <!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
 <!ENTITY network "网络">

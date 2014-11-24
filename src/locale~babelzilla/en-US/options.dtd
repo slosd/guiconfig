@@ -285,8 +285,6 @@
 <!ENTITY bookmarks "Bookmarks">
 <!-- MICROSUMMARIES -->
 <!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "The number of seconds between Live Bookmark checks. Values under 60 are assumed to be 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Refresh interval (sec)">
 <!ENTITY browser_bookmarks_max_backups_description "Determines the number of backups kept. Setting to 0 will disable backups.">
 <!ENTITY browser_bookmarks_max_backups_name "Bookmarks backups">
 <!-- NETWORK -->

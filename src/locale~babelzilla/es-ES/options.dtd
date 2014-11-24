@@ -281,8 +281,6 @@
 <!ENTITY bookmarks "Marcadores">
 <!-- MISC -->
 <!-- NETWORK -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Número de segundos entre los que se comprueban los marcadores dinámicos. No se aplicarán valores inferiores a 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalo de actualización (seg)">
 <!ENTITY browser_bookmarks_max_backups_description "Determina el número de copias de seguridad que se mantienen. Un valor de 0 deshabilita las copias.">
 <!ENTITY browser_bookmarks_max_backups_name "Copias de seguridad de los marcadores">
 <!-- CONNECTIONS -->

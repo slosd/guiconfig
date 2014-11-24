@@ -281,8 +281,6 @@
 <!ENTITY bookmarks "Закладки">
 <!-- MICROSUMMARIES -->
 <!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Задаёт промежуток между проверками живых закладок. Значения меньшие 60 приравниваются к 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Интервал обновления (с)">
 <!ENTITY browser_bookmarks_max_backups_description "Определяет число сохраняемых резервных копий закладок. Установка в 0 отключит резервирование.">
 <!ENTITY browser_bookmarks_max_backups_name "Резервные копии">
 <!-- NETWORK -->

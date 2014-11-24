@@ -449,11 +449,6 @@
       </concern>
       <concern label="&misc;">
         <group label="&bookmarks;">
-          <pref key="browser.bookmarks.livemark_refresh_seconds"
-                label="&browser_bookmarks_livemark_refresh_seconds_name;"
-                description="&browser_bookmarks_livemark_refresh_seconds_description;"
-                type="int"
-                default="3600" />
           <pref key="browser.bookmarks.max_backups"
                 label="&browser_bookmarks_max_backups_name;"
                 description="&browser_bookmarks_max_backups_description;"

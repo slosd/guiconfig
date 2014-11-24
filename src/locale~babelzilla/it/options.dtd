@@ -144,8 +144,6 @@
 <!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
 <!ENTITY bookmarks "Segnalibri">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Indica, in secondi, l&apos;intervallo tra i vari controlli dei Segnalibri live. Valori inferiori a 60 saranno considerati pari a 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervallo di aggiornamento (in secondi):">
 <!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">
 <!ENTITY browser_bookmarks_max_backups_name "Backup dei segnalibri">
 <!ENTITY network "Rete">

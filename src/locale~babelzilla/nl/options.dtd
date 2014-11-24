@@ -117,8 +117,6 @@
 <!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
 <!ENTITY bookmarks "Bladwijzers">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Het aantal seconden tussen Live Bookmark controles. Waarden onder de 60 wordt verondersteld dat 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Vernieuw interval (sec)">
 <!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal back-ups bewaard. Instellen op 0 schakelt backups.">
 <!ENTITY browser_bookmarks_max_backups_name "back-ups">
 <!ENTITY developing "Ontwikkeling">

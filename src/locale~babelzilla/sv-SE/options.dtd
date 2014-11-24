@@ -285,8 +285,6 @@
 <!ENTITY bookmarks "Bokmärken">
 <!-- MICROSUMMARIES -->
 <!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Antalet sekunder mellan kontroller av smarta bokmärken. Värden under 60 antas vara 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Uppdateringsintervall (s)">
 <!ENTITY browser_bookmarks_max_backups_description "Anger hur många säkerhetskopior som sparas. Att ange värdet 0 inaktiverar säkerhetskopieringsfunktionen.">
 <!ENTITY browser_bookmarks_max_backups_name "Säkerhetskopior av bokmärken">
 <!-- NETWORK -->
