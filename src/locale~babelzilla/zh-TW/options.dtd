@@ -204,8 +204,6 @@
 <!ENTITY browser_tabs_tabClipWidth_name "含關閉鈕時的最小頁籤寬度">
 <!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
 <!ENTITY tab_preview "分頁預覽">
-<!ENTITY browser_allTabs_preview_name "啟用「分頁預覽」">
-<!ENTITY browser_allTabs_preview_description "此項於頁籤欄右端新增一按鈕，點按後會顯示一分頁預覽。">
 <!ENTITY browser_ctrlTab_preview_name "切換分頁時，啟用分頁預覽">
 <!ENTITY browser_ctrlTab_preview_description "當使用 [CTRL]+[Tab] 切換分頁時，顯示分頁預覽">
 <!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">

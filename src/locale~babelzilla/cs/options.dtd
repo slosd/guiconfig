@@ -233,8 +233,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Určuje minimální šířku panelu nezbytnou pro zobrazení tlačítka pro zavření.">
 <!-- OPEN IN BACKGROUND -->
 <!ENTITY tab_preview "Náhledy panelů">
-<!ENTITY browser_allTabs_preview_name "Povolit náhledy panelů">
-<!ENTITY browser_allTabs_preview_description "Přidá na pravou stranu lišty panelů tlačítko, které při klepnutí zobrazí náhledy panelů.">
 <!ENTITY browser_ctrlTab_preview_name "Povolit náhledy panelů při přepínání panelů">
 <!ENTITY browser_ctrlTab_preview_description "Náhledy panelů se budou zobrazovat při jejich přepínání pomocí [CTRL]+[Tab].">
 <!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">

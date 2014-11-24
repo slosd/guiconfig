@@ -212,8 +212,6 @@
 <!ENTITY browser_tabs_tabClipWidth_name "Minimale Tab-Breite mit Schließen-Schaltfläche">
 <!ENTITY browser_tabs_tabClipWidth_description "Legt die minimale Tab-Breite fest, bis zu der die Schließen-Schaltfläche angezeigt wird.">
 <!ENTITY tab_preview "Tab-Vorschau">
-<!ENTITY browser_allTabs_preview_name "Tab-Vorschau aktivieren">
-<!ENTITY browser_allTabs_preview_description "Diese Funktion erscheint ein zusätzlicher Button rechts auf der Tableiste, welcher beim Anklicken die Tab-Vorschau anzeigt.">
 <!ENTITY browser_ctrlTab_preview_name "Tab-Vorschau beim Tabwechseln aktivieren">
 <!ENTITY browser_ctrlTab_preview_description "Wenn [STRG]+[Tab] zum Wechseln des aktiven Tabs benutz wird, wird die Tab-Vorschau angezeigt.">
 <!ENTITY browser_taskbar_previews_enable_name "Vorschauen in der Windows 7 Taskleiste anzeigen">

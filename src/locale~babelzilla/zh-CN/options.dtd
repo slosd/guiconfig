@@ -212,8 +212,6 @@
 <!ENTITY browser_tabs_tabClipWidth_name "可显示关闭按钮的最小标签页宽度">
 <!ENTITY browser_tabs_tabClipWidth_description "指定可以显示关闭按钮的最小标签页宽度。">
 <!ENTITY tab_preview "标签页预览">
-<!ENTITY browser_allTabs_preview_name "启用标签页预览">
-<!ENTITY browser_allTabs_preview_description "在标签栏右侧添加一个按钮，点击该按钮将显示标签页预览图。">
 <!ENTITY browser_ctrlTab_preview_name "启用标签页切换预览">
 <!ENTITY browser_ctrlTab_preview_description "当使用 [CTRL]+[Tab] 键切换标签页时显示预览图。">
 <!ENTITY browser_taskbar_previews_enable_name "启用 Windows 7 任务栏预览">

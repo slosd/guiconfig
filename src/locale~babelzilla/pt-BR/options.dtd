@@ -232,8 +232,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Especifica a largura mínima das abas inativas antes que o botão Fechar seja nelas suprimido.">
 <!-- CONNECTIONS -->
 <!ENTITY tab_preview "Pré-visualização de abas">
-<!ENTITY browser_allTabs_preview_name "Ativar pré-visualização de abas">
-<!ENTITY browser_allTabs_preview_description "Essa opção adiciona ao início da barra de abas um botão que dá acesso à pré-visualização de miniaturas das abas abertas.">
 <!ENTITY browser_ctrlTab_preview_name "Exibir pré-visualização ao trocar abas">
 <!ENTITY browser_ctrlTab_preview_description "Exibe a pré-visualização das abas ao pressionar Ctrl+Tab.">
 <!ENTITY browser_taskbar_previews_enable_name "Exibir pré-visualizações na barra de tarefas do Windows 7">

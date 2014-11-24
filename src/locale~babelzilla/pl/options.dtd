@@ -208,8 +208,6 @@
 <!ENTITY browser_tabs_tabClipWidth_name "Minimalna szerokość karty dla przycisku zamknięcia">
 <!ENTITY browser_tabs_tabClipWidth_description "Określa najmniejszą szerokość karty przy której wyświetlany będzie przycisk zamknięcia karty.">
 <!ENTITY tab_preview "Podgląd kart">
-<!ENTITY browser_allTabs_preview_name "Włącz podgląd kart">
-<!ENTITY browser_allTabs_preview_description "Włączenie tej funkcji powoduje dodanie przycisku po prawej stronie paska kart, który wyświetla podgląd karty po kliknięciu go.">
 <!ENTITY browser_ctrlTab_preview_name "Włącz wyświetlanie podglądów kart podczas ich wyboru">
 <!ENTITY browser_ctrlTab_preview_description "Wyświetla podgląd kart przy zmianie ich przy pomocy skrótu [CTRL]+[Tab].">
 <!ENTITY browser_taskbar_previews_enable_name "Włącz podglądy w pasku zadań Windowsa 7">

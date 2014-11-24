@@ -233,8 +233,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar skall visas.">
 <!-- TAB PREVIEW -->
 <!ENTITY tab_preview "Förhandsvisning av flik">
-<!ENTITY browser_allTabs_preview_name "Aktivera förhandsvisning av flik">
-<!ENTITY browser_allTabs_preview_description "Det här lägger till en knapp till höger om flikfältet, som när den klickas visar en förhandsvisning av fliken.">
 <!ENTITY browser_ctrlTab_preview_name "Aktivera förhandsvisning vid byte av flik">
 <!ENTITY browser_ctrlTab_preview_description "När [CTRL]+[TAB] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
 <!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet i Windows 7">

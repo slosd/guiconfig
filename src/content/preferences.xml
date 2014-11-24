@@ -562,10 +562,6 @@
     <concerns>
       <concern label="&appearance;">
         <group label="&tab_preview;" minVersion="3.6">
-          <pref key="browser.allTabs.previews"
-                label="&browser_allTabs_preview_name;"
-                description="&browser_allTabs_preview_description;"
-                type="bool" />
           <pref key="browser.ctrlTab.previews"
                 label="&browser_ctrlTab_preview_name;"
                 description="&browser_ctrlTab_preview_description;"

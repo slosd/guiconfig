@@ -233,8 +233,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Determines the minimum tab width necessary to display the close button. ">
 <!-- TAB PREVIEW -->
 <!ENTITY tab_preview "Tab preview">
-<!ENTITY browser_allTabs_preview_name "Enable tab preview">
-<!ENTITY browser_allTabs_preview_description "This adds a button on the right of the tabbar which shows a tab preview when clicked. ">
 <!ENTITY browser_ctrlTab_preview_name "Enable tab preview when switching tabs">
 <!ENTITY browser_ctrlTab_preview_description "When using [CTRL]+[Tab] to switch tabs a tab preview is shown. ">
 <!ENTITY browser_taskbar_previews_enable_name "Enable previews in the Windows 7 taskbar">

@@ -229,8 +229,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Determina el ancho mínimo necesario para mostrar el botón cerrar.">
 <!-- OPEN IN BACKGROUND -->
 <!ENTITY tab_preview "Vista previa de pestañas">
-<!ENTITY browser_allTabs_preview_name "Habilitar la vista previa de pestañas">
-<!ENTITY browser_allTabs_preview_description "Añade un botón en la derecha de la barra de pestañas que muestra una vista previa al pulsar.">
 <!ENTITY browser_ctrlTab_preview_name "Habilitar la vista previa al cambiar entre pestañas">
 <!ENTITY browser_ctrlTab_preview_description "Al pulsar [Ctrl]+[Tab] para cambiar entre pestañas, se muestra una vista previa.">
 <!ENTITY browser_taskbar_previews_enable_name "Habilitar vista previa en la barra de tareas de Windows 7">
