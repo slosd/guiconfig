@@ -160,11 +160,6 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Czas oczekiwania na uruchomienie wtyczki (w sek.)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Określa okres czasu, po którym uruchamianie wtyczki zostanie uznane za niepomyślne.">
 <!ENTITY browser_style "Przeglądarka">
-<!ENTITY browser_identity_ssl_domain_display_name "Wyróżnianie domen używających SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "Kiedy witryna używa SSL aby szyfrować połączenie, użytkownik może ustawić wyróżnianie części adresu URL w interfejsie. To ustawienie określa, czy wyświetlana ma być pełna domena, domena drugiego poziomu czy nic.">
-<!ENTITY browser_identity_ssl_domain_display_o1 "Nie wyświetlaj domeny">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Wyświetlaj domenę drugiego poziomu">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Wyświetlaj pełną domenę">
 <!ENTITY browser_chrome_favicons_description "Określa, czy przeglądarka ma pokazywać favikony, czy nie.">
 <!ENTITY browser_chrome_favicons_name "Pokazuj favikony">
 <!ENTITY browser_chrome_toolbar_tips_description "Określa zachowanie wskazówek przypisanych do interfejsu chrome.">

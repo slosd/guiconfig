@@ -125,11 +125,6 @@
 <!ENTITY security_dialog_enable_delay_name "Délai d&apos;installation d&apos;extension (ms)">
 <!ENTITY dom_ipc_plugins_enabled_name "Exécuter chaque plugin dans un processus différent">
 <!ENTITY browser_style "Navigateur">
-<!ENTITY browser_identity_ssl_domain_display_name "Importance du domaine lors de l&apos;utilisation de SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "Lorsqu&apos;un site utilise le protocole SSL pour crypter les échanges, l&apos;utilisateur peut choisir d&apos;avoir une partie de l&apos;URL du site soulignée dans l&apos;interface. Cette préférence précise s&apos;il faudra afficher dans la barre d&apos;adresse le domaine de deuxième niveau (par exemple « mozilla.org »), le domaine complet (par exemple : « bugzilla.mozilla.org ») ou bien aucun nom de domaine.">
-<!ENTITY browser_identity_ssl_domain_display_o1 "Ne pas afficher le domaine">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Afficher le domaine de deuxième niveau">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Afficher le domaine complet">
 <!ENTITY browser_chrome_favicons_description "Choisir si l&apos;on veut ou non voir les favicônes">
 <!ENTITY browser_chrome_favicons_name "Voir les favicônes">
 <!ENTITY browser_chrome_toolbar_tips_description "Détermine le comportement des infobulles pour les éléments chrome.">

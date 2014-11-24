@@ -180,11 +180,6 @@
 <!ENTITY browser_style "Webbläsare">
 <!ENTITY browser_urlbar_formatting_enabled_name "Aktivera domänformatering">
 <!ENTITY browser_urlbar_formatting_enabled_description "Avgör huruvida domänen i adressfältet skall formateras eller inte.">
-<!ENTITY browser_identity_ssl_domain_display_name "Framhäv domäner som använder SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "När en webbplats använder SSL för att kryptera kommunikationen, kan användaren välja att få en del av webbplatsens URL framhävd i användargränssnittet. Den här inställningen styr vad som skall visas i adressfältet: Ingenting, andranivådomänen (t.ex.: mozilla.org) eller den fullständiga domänen (t.ex.: bugzilla.mozilla.org).">
-<!ENTITY browser_identity_ssl_domain_display_o1 "Visa inte domän">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Visa andranivådomän">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Visa fullständig domän">
 <!ENTITY browser_chrome_favicons_description "Bestämmer huruvida sajtikoner skall visas.">
 <!ENTITY browser_chrome_favicons_name "Visa sajtikoner">
 <!ENTITY browser_chrome_toolbar_tips_description "Styr beteendet hos verktygstips för chrome-element.">

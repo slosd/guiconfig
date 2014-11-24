@@ -176,11 +176,6 @@
 <!-- STYLE -->
 <!-- BROWSER -->
 <!ENTITY browser_style "Браузер">
-<!ENTITY browser_identity_ssl_domain_display_name "Подчёркивать домены использующие SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "При использовании сайтом SSL для зашифрованной передачи данных, пользователь может счесть необходимым выделить часть адреса сайта подчёркиванием. Эта настройка определяет какая часть адреса будет отображаться в адресной строке: никакая, домен второго уровня (например: mozilla.org) или весь домен (например: bugzilla.mozilla.org).">
-<!ENTITY browser_identity_ssl_domain_display_o1 "не показывать домен">
-<!ENTITY browser_identity_ssl_domain_display_o2 "показывать домен второго уровня">
-<!ENTITY browser_identity_ssl_domain_display_o3 "показывать весь домен">
 <!ENTITY browser_chrome_favicons_description "Определяет, будут ли отображаться значки сайтов или нет.">
 <!ENTITY browser_chrome_favicons_name "Показывать значки сайтов">
 <!ENTITY browser_chrome_toolbar_tips_description "Определяет поведение всплывающих подсказок для элементов chrome интерфейса.">

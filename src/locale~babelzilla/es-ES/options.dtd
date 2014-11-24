@@ -176,11 +176,6 @@
 <!-- BROWSER -->
 <!-- WEBSITES -->
 <!ENTITY browser_style "Navegador">
-<!ENTITY browser_identity_ssl_domain_display_name "Enfatizar los dominios que usen SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "Cuando un sitio usa SSL para cifrar las comunicaciones, el usuario puede seleccionar enfatizar una parte de la dirección del sitio. Esta opción determina si no se muestra nada, el dominio de segundo nivel (p.ej: mozilla.org) o el dominio completo (p.ej: bugzilla.mozilla.org) en la barra de direcciones.">
-<!ENTITY browser_identity_ssl_domain_display_o1 "No mostrar el dominio">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Mostrar el dominio de segundo nivel">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Mostrar el dominio completo">
 <!ENTITY browser_chrome_favicons_description "Determina si se muestran o no los favicons.">
 <!ENTITY browser_chrome_favicons_name "Mostrar favicons">
 <!ENTITY browser_chrome_toolbar_tips_description "Determina el comportamiento de los títulos emergentes para los elementos chrome.">

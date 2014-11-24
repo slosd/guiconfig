@@ -164,11 +164,6 @@
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Domainformatierung aktivieren">
 <!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
-<!ENTITY browser_identity_ssl_domain_display_name "SSL-Domains kennzeichnen:">
-<!ENTITY browser_identity_ssl_domain_display_description "Falls eine Webseite eine SSL-geschützte Verbindung (https) verwendet, kann dies extra gekennzeichnet werden, indem Teile der Domain hervorgehoben werden. Dabei kann gewählt werden zwischen keiner zusätzlichen Kennzeichnung, Kennzeichnung der Second-Level-Domain (z.B.: mozilla.org) oder der kompletten Domain (z.B.: addons.mozilla.org) in der Adressleiste.">
-<!ENTITY browser_identity_ssl_domain_display_o1 "Keine Kennzeichnung">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Kennzeichnung der Second-Level-Domain">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Kennzeichnung der gesamten Domain">
 <!ENTITY browser_chrome_favicons_description "Zeigt das Favicon in der Adressleiste an. (Favicon = Lesezeichen-Symbol für Webseiten.)">
 <!ENTITY browser_chrome_favicons_name "Favicons anzeigen">
 <!ENTITY browser_chrome_toolbar_tips_description "Zeigt Tooltips über Schaltflächen in der Symbolleiste, über Lesezeichen und über Elementen einer Webseite an.">

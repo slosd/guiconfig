@@ -484,16 +484,6 @@
               description="&browser_urlbar_formatting_enabled_description;"
               type="bool"
               minVersion="6.0" />
-        <pref key="browser.identity.ssl_domain_display"
-              label="&browser_identity_ssl_domain_display_name;"
-              description="&browser_identity_ssl_domain_display_description;"
-              type="int"
-              mode="select"
-              minVersion="3.0">
-          <option label="&browser_identity_ssl_domain_display_o1;">0</option>
-          <option label="&browser_identity_ssl_domain_display_o2;">1</option>
-          <option label="&browser_identity_ssl_domain_display_o3;">2</option>
-        </pref>
         <pref key="browser.chrome.favicons"
               label="&browser_chrome_favicons_name;"
               description="&browser_chrome_favicons_description;"

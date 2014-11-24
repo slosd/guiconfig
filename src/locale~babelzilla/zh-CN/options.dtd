@@ -164,11 +164,6 @@
 <!ENTITY browser_style "浏览器样式">
 <!ENTITY browser_urlbar_formatting_enabled_name "启用域名格式化">
 <!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
-<!ENTITY browser_identity_ssl_domain_display_name "高亮使用SSL的域名">
-<!ENTITY browser_identity_ssl_domain_display_description "这个选项可以控制当访问用SSL加密的网站时，如何高亮调域名。例如访问bugzilla.mozilla.org时：二级高亮显示mozilla.org；完全高亮显示bugzilla.mozilla.org">
-<!ENTITY browser_identity_ssl_domain_display_o1 "不高亮">
-<!ENTITY browser_identity_ssl_domain_display_o2 "二级高亮">
-<!ENTITY browser_identity_ssl_domain_display_o3 "完全高亮">
 <!ENTITY browser_chrome_favicons_description "是否显示网站小图标。">
 <!ENTITY browser_chrome_favicons_name "显示网站小图标">
 <!ENTITY browser_chrome_toolbar_tips_description "是否显示 chrome 元素的工具提示。">

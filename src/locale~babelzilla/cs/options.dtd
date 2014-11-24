@@ -180,11 +180,6 @@
 <!ENTITY browser_style "Prohlížeč">
 <!ENTITY browser_urlbar_formatting_enabled_name "Povolit formátování domény">
 <!ENTITY browser_urlbar_formatting_enabled_description "Určuje, zda se bude bude formátovat doména v adresním řádku.">
-<!ENTITY browser_identity_ssl_domain_display_name "Zvýraznit domény používající SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "Pokud stránka používá k šifrování komunikace SSL, uživatel může vybrat, jaká část URL stránka bude v uživatelském rozhraní zvýrazněna. Tato předvolba určuje, zda v adresním řádku nezobrazovat nic, zobrazovat doménu druhého řádu (např. mozilla.org) nebo celou doménu (např. bugzilla.mozilla.org).">
-<!ENTITY browser_identity_ssl_domain_display_o1 "Nezobrazovat doménu">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Zobrazovat doménu druhého řádu">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Zobrazovat celou doménu">
 <!ENTITY browser_chrome_favicons_description "Určuje, zda se bude, či nebude zobrazovat oblíbená ikona.">
 <!ENTITY browser_chrome_favicons_name "Zobrazovat oblíbené ikony">
 <!ENTITY browser_chrome_toolbar_tips_description "Určuje chování místní nápovědy pro prvky chrome.">

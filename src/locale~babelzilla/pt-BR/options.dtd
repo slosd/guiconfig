@@ -180,11 +180,6 @@
 <!ENTITY browser_style "Navegador">
 <!ENTITY browser_urlbar_formatting_enabled_name "Ativar formatação de domínio">
 <!ENTITY browser_urlbar_formatting_enabled_description "Determina se o domínio deve ser formatado no campo de endereço.">
-<!ENTITY browser_identity_ssl_domain_display_name "Realce de domínio SSL:">
-<!ENTITY browser_identity_ssl_domain_display_description "Especifica o trecho do domínio a ser realçado quando a conexão for segura (SSL): domínio principal (ex.: &quot;mozilla.org&quot;), domínio completo (ex.: &quot;bugzilla.mozilla.org&quot;) ou nenhum.">
-<!ENTITY browser_identity_ssl_domain_display_o1 "nenhum">
-<!ENTITY browser_identity_ssl_domain_display_o2 "domínio principal">
-<!ENTITY browser_identity_ssl_domain_display_o3 "domínio completo">
 <!ENTITY browser_chrome_favicons_description "Exibe os ícones especificados por sites e páginas (favicons) para melhor identificá-los.">
 <!ENTITY browser_chrome_favicons_name "Mostrar ícones de sites e páginas">
 <!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre eles.">
