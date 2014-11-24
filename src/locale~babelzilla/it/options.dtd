@@ -62,13 +62,6 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "Questa opzione rende l&apos;utilizzo dell&apos;accesskey di un elemento equivalente all&apos;azione compiuta sull&apos;elemento stesso. Se è un collegamento verrà attivato, se è un pulsante verrà premuto.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Attivazione degli elementi tramite accesskey">
 <!ENTITY browser "Browser">
-<!ENTITY alerts "Finestre di avviso">
-<!ENTITY alerts_slideIncrementTime_description "Imposta il numero di millisecondi di ogni movimento di scorrimento nei casi in cui la finestra di avviso si sposta, e il numero di millisecondi delle fasi di dissolvenza quando la finestra compare e scompare.">
-<!ENTITY alerts_slideIncrementTime_name "Durata dello spostamento (in millisecondi):">
-<!ENTITY alerts_slideIncrement_description "Questa preferenza controlla la velocità delle finestre di avviso simili alla finestra &apos;Download completati&apos; che appare in basso a destra. In particolare controlla il numero di pixel che vengono spostati ad ogni incremento.">
-<!ENTITY alerts_slideIncrement_name "Numero di pixel da spostare ad ogni incremento:">
-<!ENTITY alerts_totalOpenTime_description "Definisce in millisecondi la durata di visualizzazione delle finestre simili alla finestra &apos;Download completati&apos; che appare in basso a destra.">
-<!ENTITY alerts_totalOpenTime_name "Durata dell&apos;avviso (in millisecondi):">
 <!ENTITY cache "Cache del browser">
 <!ENTITY cache_disk "Cache su disco">
 <!ENTITY cache_memory "Cache in memoria">

@@ -122,13 +122,6 @@
 <!ENTITY geo_enabled_name "Habilitar navegación independiente de la ubicación">
 <!ENTITY geo_enabled_description "Cuando se habilita, Firefox le preguntará si quiere decirle a la página que está visitando actualmente donde estás ubicado. Si lo deshabilita se desactivará totalmente.">
 <!-- CACHE -->
-<!ENTITY alerts "Alertas">
-<!ENTITY alerts_slideIncrementTime_description "Controla el número de milissegundos entre los movimientos de desplazamiento para las situaciones que mueven un cuadro de alerta, y el número de milisegundos entre la entrada y la salida del aviso.">
-<!ENTITY alerts_slideIncrementTime_name "Duración del movimiento (ms)">
-<!ENTITY alerts_slideIncrement_description "Esta opción controla la velocidad de las alertas de &quot;Descargas completas&quot; que aparecen en la esquina inferior derecha. Específicamente, controla el número de pixels a mover en cada incremento.">
-<!ENTITY alerts_slideIncrement_name "Número de pixels a mover por incremento (px)">
-<!ENTITY alerts_totalOpenTime_description "Controla el tiempo en milisegundos que se muestra la alerta de &quot;Descargas completas&quot; en la esquina inferior izquierda.">
-<!ENTITY alerts_totalOpenTime_name "Periodo de alerta (ms)">
 <!-- EXTENSIONS -->
 <!ENTITY cache "Caché del navegador">
 <!ENTITY cache_disk "Caché de disco">

@@ -479,51 +479,35 @@
   <category label="&appearance;" icon="style">
     <concerns>
       <concern label="&browser_style;">
-        <group label="&alerts;">
-          <pref key="alerts.slideIncrement"
-                label="&alerts_slideIncrement_name;"
-                description="&alerts_slideIncrement_description;"
-                type="int" />
-          <pref key="alerts.slideIncrementTime"
-                label="&alerts_slideIncrementTime_name;"
-                description="&alerts_slideIncrementTime_description;"
-                type="int" />
-          <pref key="alerts.totalOpenTime"
-                label="&alerts_totalOpenTime_name;"
-                description="&alerts_totalOpenTime_description;"
-                type="int" />
-        </group>
-        <group label="&misc;">
-          <pref key="browser.urlbar.formatting.enabled"
-                label="&browser_urlbar_formatting_enabled_name;"
-                description="&browser_urlbar_formatting_enabled_description;"
-                type="bool"
-                minVersion="6.0" />
-          <pref key="browser.identity.ssl_domain_display"
-                label="&browser_identity_ssl_domain_display_name;"
-                description="&browser_identity_ssl_domain_display_description;"
-                type="int"
-                mode="select"
-                minVersion="3.0">
-            <option label="&browser_identity_ssl_domain_display_o1;">0</option>
-            <option label="&browser_identity_ssl_domain_display_o2;">1</option>
-            <option label="&browser_identity_ssl_domain_display_o3;">2</option>
-          </pref>
-          <pref key="browser.chrome.favicons"
-                label="&browser_chrome_favicons_name;"
-                description="&browser_chrome_favicons_description;"
-                type="bool">
-            <binding key="browser.chrome.site_icons" />
-          </pref>
-          <pref key="browser.chrome.toolbar_tips"
-                label="&browser_chrome_toolbar_tips_name;"
-                description="&browser_chrome_toolbar_tips_description;"
-                type="bool" />
-          <pref key="browser.preferences.animateFadeIn"
-                label="&browser_preferences_animateFadeIn_name;"
-                description="&browser_preferences_animateFadeIn_description;"
-                type="bool" />
-        </group>
+        <pref key="browser.urlbar.formatting.enabled"
+              label="&browser_urlbar_formatting_enabled_name;"
+              description="&browser_urlbar_formatting_enabled_description;"
+              type="bool"
+              minVersion="6.0" />
+        <pref key="browser.identity.ssl_domain_display"
+              label="&browser_identity_ssl_domain_display_name;"
+              description="&browser_identity_ssl_domain_display_description;"
+              type="int"
+              mode="select"
+              minVersion="3.0">
+          <option label="&browser_identity_ssl_domain_display_o1;">0</option>
+          <option label="&browser_identity_ssl_domain_display_o2;">1</option>
+          <option label="&browser_identity_ssl_domain_display_o3;">2</option>
+        </pref>
+        <pref key="browser.chrome.favicons"
+              label="&browser_chrome_favicons_name;"
+              description="&browser_chrome_favicons_description;"
+              type="bool">
+          <binding key="browser.chrome.site_icons" />
+        </pref>
+        <pref key="browser.chrome.toolbar_tips"
+              label="&browser_chrome_toolbar_tips_name;"
+              description="&browser_chrome_toolbar_tips_description;"
+              type="bool" />
+        <pref key="browser.preferences.animateFadeIn"
+              label="&browser_preferences_animateFadeIn_name;"
+              description="&browser_preferences_animateFadeIn_description;"
+              type="bool" />
       </concern>
       <concern label="&websites;">
         <group label="&rendering;">

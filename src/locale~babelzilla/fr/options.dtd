@@ -88,13 +88,6 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "L&apos;utilisation d&apos;un raccourci clavier pour un élément a le même effet que d&apos;activer l&apos;élément. Selon le cas, cela revient à suivre un lien ou à cliquer sur un bouton.">
 <!ENTITY accessibility_accesskeycausesactivation_name "La touche d&apos;accès active l&apos;élément">
 <!ENTITY browser "Navigateur">
-<!ENTITY alerts "Alertes">
-<!ENTITY alerts_slideIncrementTime_description "Contrôle le nombre de millisecondes entre les gestes de défilement dans les cas où l&apos;alerte se déplace, et le nombre de millisecondes entre les changements de couleur lorsque l&apos;alerte disparaît / réapparaît.">
-<!ENTITY alerts_slideIncrementTime_name "Durée du mouvement (en ms)">
-<!ENTITY alerts_slideIncrement_description "Cette préférence contrôle la vitesse de l&apos;alerte de type « Téléchargements terminés » apparaissant en bas à droite. Plus précisément, cela gère l&apos;incrémentation (nombre de pixels à déplacer).">
-<!ENTITY alerts_slideIncrement_name "Nombre de pixels à déplacer par pas d&apos;incrémentation (px)">
-<!ENTITY alerts_totalOpenTime_description "Détermine la durée d&apos;attente en millisecondes avant l&apos;affichage de l&apos;alerte de type « Téléchargements terminés » apparaissant en bas à droite.">
-<!ENTITY alerts_totalOpenTime_name "Durée d&apos;alerte (ms)">
 <!ENTITY cache "Cache du navigateur">
 <!ENTITY cache_disk "Cache sur disque">
 <!ENTITY cache_memory "Mémoire cache">

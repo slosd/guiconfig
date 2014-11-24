@@ -124,13 +124,6 @@
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
 <!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. ">
 <!-- ALERTS -->
-<!ENTITY alerts "Alerts">
-<!ENTITY alerts_slideIncrementTime_description "Controls the number of milliseconds between sliding movements for situations where the alert moves and the number of milliseconds between fading changes when the alert fades in and out.">
-<!ENTITY alerts_slideIncrementTime_name "Duration of the movement (ms)">
-<!ENTITY alerts_slideIncrement_description "This preference controls the speed of &quot;Downloads Complete&quot;-style alerts that appear in the bottom-right. Specifically, it controls the number of pixels to move per increment.">
-<!ENTITY alerts_slideIncrement_name "Number of pixels to move per increment (px)">
-<!ENTITY alerts_totalOpenTime_description "Controls the amount of time in milliseconds to show &quot;Downloads Complete&quot;-style alerts that appear in the bottom-right.">
-<!ENTITY alerts_totalOpenTime_name "Alert period (ms)">
 <!-- CACHE -->
 <!ENTITY cache "Browser cache">
 <!ENTITY cache_disk "Disk cache">

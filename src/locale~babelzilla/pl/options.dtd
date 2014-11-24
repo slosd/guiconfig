@@ -112,13 +112,6 @@
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Włącza sprzętowe przyspieszanie wyświetlania tekstu (wymaga Windowsa 7 lub Windowsa Visty z aktualizacją &quot;Vista Platform&quot;).">
 <!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
 <!ENTITY geo_enabled_description "Kiedy ta funkcja jest włączona, Firefox może pytać Cię, czy chcesz poinformować obecnie odwiedzaną witrynę o swoim położeniu geograficzym. Odznaczenie tego pola całkowicie wyłącza tę funkcję.">
-<!ENTITY alerts "Okna informacyjne">
-<!ENTITY alerts_slideIncrementTime_description "Kontroluje ilość milisekund pomiędzy kolejnymi przesunięciami okna, gdy to się pojawia/chowa.">
-<!ENTITY alerts_slideIncrementTime_name "Przerwa między kolejnymi krokami (ms)">
-<!ENTITY alerts_slideIncrement_description "To ustawienie określa szybkość najazdu i odjazdu okien typu &quot;Pobieranie zakończone&quot;, które pojawiają się w prawym dolnym rogu ekranu. Dokładnie rzecz biorąc określa ono, o ile pikseli okno ma się przesunąć za każdym krokiem.">
-<!ENTITY alerts_slideIncrement_name "Przesuwaj okienko co krok o (px)">
-<!ENTITY alerts_totalOpenTime_description "Kontroluje czas wyświetlania okien typu &quot;Pobieranie zakończone&quot;, które pojawiają się w prawym dolnym rogu ekranu w milisekundach.">
-<!ENTITY alerts_totalOpenTime_name "Czas wyświetlania okien (ms)">
 <!ENTITY cache "Bufor przeglądarki">
 <!ENTITY cache_disk "Cache dysku">
 <!ENTITY cache_memory "Cache pamięci">

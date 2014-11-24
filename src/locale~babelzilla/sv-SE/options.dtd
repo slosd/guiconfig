@@ -124,13 +124,6 @@
 <!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
 <!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet.">
 <!-- ALERTS -->
-<!ENTITY alerts "Meddelanden">
-<!ENTITY alerts_slideIncrementTime_description "Styr antalet millisekunder mellan rörliga övergångar. Används i situationer där meddelandet rör sig och antalet millisekunder mellan tonförändringar ändras när meddelandet tonar in och ut.">
-<!ENTITY alerts_slideIncrementTime_name "Rörelsens varaktighet (ms)">
-<!ENTITY alerts_slideIncrement_description "Den här inställningen styr hastigheten hos &quot;Filhämtning slutförd&quot;-liknande meddelanden som visar sig i det nedre högra hörnet av skärmen. Rent specifikt styr den antalet pixlar som flyttas per steg.">
-<!ENTITY alerts_slideIncrement_name "Antalet pixlar som flyttas per steg (px)">
-<!ENTITY alerts_totalOpenTime_description "Styr under hur lång tid i millisekunder som &quot;Filhämtning slutförd&quot;-liknande meddelanden (som visar sig i det nedre högra hörnet av skärmen) skall visas.">
-<!ENTITY alerts_totalOpenTime_name "Meddelandens varaktighet (ms)">
 <!-- CACHE -->
 <!ENTITY cache "Cache">
 <!ENTITY cache_disk "Diskcache">

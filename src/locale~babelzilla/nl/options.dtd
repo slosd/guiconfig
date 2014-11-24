@@ -50,13 +50,6 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "Met behulp van een sneltoets voor een element is hetzelfde als het activeren van het element. Indien het element is een link, volg de link. Indien het element is een knop, &quot;klik&quot; op de knop.&quot;&gt;">
 <!ENTITY accessibility_accesskeycausesactivation_name "Toegang toets activeert het element">
 <!ENTITY browser "Browser">
-<!ENTITY alerts "Alerts">
-<!ENTITY alerts_slideIncrementTime_description "Controls het aantal milliseconden tussen glijdende bewegingen voor situaties waarin de signalering beweegt en het aantal milliseconden tussen fading verandert wanneer de signalering vervaagt in en uit.">
-<!ENTITY alerts_slideIncrementTime_name "Duur van de beweging (ms)">
-<!ENTITY alerts_slideIncrement_description "Deze voorkeur bepaalt de snelheid van de &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts. Met name de controles is het aantal pixels te verplaatsen per increment.&quot;&gt;">
-<!ENTITY alerts_slideIncrement_name "Aantal pixels te verplaatsen per aanwas (px)">
-<!ENTITY alerts_totalOpenTime_description "Bepaalt de hoeveelheid tijd in milliseconden om te laten zien &quot;Downloads Complete&quot;-stijl waarschuwingen die worden weergegeven in de bottom-rechts.&quot;&gt;">
-<!ENTITY alerts_totalOpenTime_name "alarmfase (ms)">
 <!ENTITY cache "Browser cache">
 <!ENTITY browser_cache_check_doc_frequency_description "Hoe vaak controleren de afstandsbediening pagina voor een nieuwere versie dan wat zou kunnen worden in de cache.">
 <!ENTITY browser_cache_check_doc_frequency_name "Check browser cache">

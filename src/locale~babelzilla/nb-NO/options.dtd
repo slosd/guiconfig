@@ -19,13 +19,6 @@
 <!ENTITY accessibility_accesskeycausesactivation_description "Å benytte en hurtigtast for dette elementet er det samme som å aktivere det. Dersom elementet er en lenke, åpnes lenken. Er elementet er en knapp, blir knappen trykket.">
 <!ENTITY accessibility_accesskeycausesactivation_name "Hurtigtasten aktiverer elementet">
 <!ENTITY browser "Nettleser">
-<!ENTITY alerts "Varslinger">
-<!ENTITY alerts_slideIncrementTime_description "Angir hvor mange millisekunder det skal gå mellom hver glidende bevegelse, og hvor mange millisekunder det skal gå mellom hver overgang når varslingen toner inn og ut.">
-<!ENTITY alerts_slideIncrementTime_name "Hastighet (ms)">
-<!ENTITY alerts_slideIncrement_description "Denne innstillingen angir hastigheten til «Nedlasting fullført»-varslinger som dukker opp nederst til høyre. Helt spesifikt kontrollerer den hvor mange punkter den skal bevege seg for hver gang.">
-<!ENTITY alerts_slideIncrement_name "Antall punkter den skal flyttes for hver gang (px)">
-<!ENTITY alerts_totalOpenTime_description "Kontrollerer hvor lenge, i millisekunder, «Nedlasting Fullført»-varslinger skal synes nederst til høyre.">
-<!ENTITY alerts_totalOpenTime_name "Varslingstid (ms)">
 <!ENTITY cache "Mellomlager">
 <!ENTITY browser_cache_check_doc_frequency_description "Hvor ofte nettleseren skal kontrollere nettsidene for nyere versjoner som kan finnes i mellomlageret">
 <!ENTITY browser_cache_check_doc_frequency_name "Kontroller nettleserens mellomlager">

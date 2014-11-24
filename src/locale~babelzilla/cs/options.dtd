@@ -124,13 +124,6 @@
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">
 <!ENTITY geo_enabled_description "Pokud je povoleno, Firefox se smí zeptat, zda oznámit navštěvované stránce místo, kde se nacházíte. Zakázání této možnosti tuto vlastnost zcela vypne.">
 <!-- CACHE -->
-<!ENTITY alerts "Upozornění">
-<!ENTITY alerts_slideIncrementTime_description "Udává počet milisekund mezi vysunutím a zasunutím v případech, kdy se výstraha posouvá, a počet milisekund mezi změnou blednutí, pokud se výstraha pozvolna objevuje a mizí.">
-<!ENTITY alerts_slideIncrementTime_name "Doba trvání pohybu (ms)">
-<!ENTITY alerts_slideIncrement_description "Tato předvolba udává rychlost posunu výstrah typu „Stahování dokončeno“, které se objevují vpravo dole. Konkrétně stanovuje, o kolik pixelů se posune v rámci jednoho přírůstku.">
-<!ENTITY alerts_slideIncrement_name "Počet pixelů posunu za přírůstek (px)">
-<!ENTITY alerts_totalOpenTime_description "Stanovuje čas v milisekundách, po který se okno s výstrahou typu „Stahování dokončeno“ objeví vpravo dole.">
-<!ENTITY alerts_totalOpenTime_name "Doba trvání upozornění (ms)">
 <!-- EXTENSIONS -->
 <!ENTITY cache "Vyrovnávací paměť">
 <!ENTITY cache_disk "Vyrovnávací paměť na disku">

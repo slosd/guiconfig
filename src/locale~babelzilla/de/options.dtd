@@ -114,13 +114,6 @@
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiviert Hardwarebeschleunigung für die Textdarstellung. (benötigt Windows 7 oder Windows Vista mit Vista Platform Update)">
 <!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
 <!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
-<!ENTITY alerts "Hinweisfenster">
-<!ENTITY alerts_slideIncrementTime_description "Dauer des Einblendvorganges des Hinweisfensters (normalerweise rechts unten).">
-<!ENTITY alerts_slideIncrementTime_name "Dauer der Bewegung (ms):">
-<!ENTITY alerts_slideIncrement_description "Bestimmt die Geschwindigkeit, mit der das Hinweisfenster (normalerweise rechts unten) eingeblendet wird. Je mehr Pixel pro Schritt, desto schneller.">
-<!ENTITY alerts_slideIncrement_name "Pixel pro Schritt (px):">
-<!ENTITY alerts_totalOpenTime_description "Anzeigedauer des Hinweisfensters (normalerw. rechts unten).">
-<!ENTITY alerts_totalOpenTime_name "Hinweisdauer (ms):">
 <!ENTITY cache "Browsercache">
 <!ENTITY cache_disk "Festplattencache">
 <!ENTITY cache_memory "Memorycache">

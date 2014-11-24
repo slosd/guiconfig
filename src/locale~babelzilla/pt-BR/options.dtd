@@ -124,13 +124,6 @@
 <!ENTITY geo_enabled_name "Ativar localização">
 <!ENTITY geo_enabled_description "Permite que o Firefox pergunte a você se deseja informar a sua localização atual aos sites que a requisitarem. Desmarque essa opção para desativar a geolocalização no Firefox.">
 <!-- EXTENSIONS -->
-<!ENTITY alerts "Notificações">
-<!ENTITY alerts_slideIncrementTime_description "Especifica o tempo, em milissegundos, de cada quadro das animações de exibição ou remoção dos avisos, dando-lhes um aspecto mais suave ou mais rápido, tanto no efeito de deslizamento quanto no de transparência.">
-<!ENTITY alerts_slideIncrementTime_name "Tempo de cada quadro (ms):">
-<!ENTITY alerts_slideIncrement_description "Ajusta a velocidade em que os avisos no canto inferior direito da tela (ex.: &quot;downloads concluídos&quot;, &quot;atualizações disponíveis&quot;) aparecem e somem, especificando quantos pixels os avisos se moverão em cada quadro dessas animações.">
-<!ENTITY alerts_slideIncrement_name "Pixels por quadro:">
-<!ENTITY alerts_totalOpenTime_description "Especifica por quanto tempo, em milissegundos, os avisos no canto inferior direito da tela serão exibidos.">
-<!ENTITY alerts_totalOpenTime_name "Tempo de aviso (ms):">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY cache "Cache">
 <!ENTITY cache_disk "Cache de disco">
