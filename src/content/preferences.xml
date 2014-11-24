@@ -639,8 +639,7 @@
                 label="&browser_tabs_closeWindowWithLastTab_name;"
                 description="&browser_tabs_closeWindowWithLastTab_description;"
                 type="bool"
-                minVersion="3.5"
-                default="0" />
+                minVersion="3.5" />
         </group>
       </concern>
     </concerns>
