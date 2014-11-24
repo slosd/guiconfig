@@ -252,8 +252,6 @@
 <!ENTITY view_source_editor_path_name "编辑器路径：">
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
-<!ENTITY devtools_inspector_enabled_description "启用 &quot;Web 开发人员&quot;菜单下的 Inspector。（需要重启）">
-<!ENTITY devtools_inspector_enabled_name "启用 Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
 <!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
 <!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">

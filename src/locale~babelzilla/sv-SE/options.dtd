@@ -285,8 +285,6 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Ändringar i fönster och dialoger kräver inte omstart. Fungerar inte med filer förpackade i en JAR-fil.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Inaktivera XUL-cache">
-<!ENTITY devtools_inspector_enabled_description "Aktiverar Granskaren i menyn &quot;Webbutvecklare&quot;. (Kräver omstart)">
-<!ENTITY devtools_inspector_enabled_name "Aktivera Granskaren">
 <!ENTITY browser_dom_window_dump_enabled_description "Tillåter användning av programsatsen dump() för att skriva till standardkonsolen.">
 <!ENTITY browser_dom_window_dump_enabled_name "Tillåt dump()">
 <!ENTITY javascript_options_showInConsole_description "Bestämmer om chrome-fel och varningar skall loggas till JavaScript-konsolen.">

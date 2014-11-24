@@ -285,8 +285,6 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory formátu JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Vypnout vyrovnávací paměť XUL">
-<!ENTITY devtools_inspector_enabled_description "Povolí Inspektor v nabídce „Vývoj webu“. (Vyžaduje restart.)">
-<!ENTITY devtools_inspector_enabled_name "Povolit Inspektor">
 <!ENTITY browser_dom_window_dump_enabled_description "Povolí použití příkazu dump() vypisující do standardního výstupu.">
 <!ENTITY browser_dom_window_dump_enabled_name "Povolit dump()">
 <!ENTITY javascript_options_showInConsole_description "Určuje, zda se budou zaznamenávat chyby a varování chrome do konzole JavaScriptu.">

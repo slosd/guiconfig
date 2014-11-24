@@ -252,8 +252,6 @@
 <!ENTITY view_source_editor_path_name "Pfad zum Editor:">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Veränderungen an Fenstern und Dialogen benötigen keinen Neustart.Funktioniert nicht mit JAR-gepackten Dateien.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deaktiviert XUL-Cache">
-<!ENTITY devtools_inspector_enabled_description "Aktiviert den Inspektor im &quot;Web Entwickler&quot; Menü. (Neustart erforderlich)">
-<!ENTITY devtools_inspector_enabled_name "Inspektor aktivieren">
 <!ENTITY browser_dom_window_dump_enabled_description "Aktiviert die Funktion dump(), mit der Daten auf die Standardkonsole ausgegeben werden können.">
 <!ENTITY browser_dom_window_dump_enabled_name "dump() aktivieren">
 <!ENTITY javascript_options_showInConsole_description "Zeigt Chrome-Fehler und Warnungen in der JavaScript-Konsole.">

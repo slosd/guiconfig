@@ -248,8 +248,6 @@
 <!ENTITY view_source_editor_path_name "Ścieżka do edytora">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
-<!ENTITY devtools_inspector_enabled_description "Włącza inspektora w menu &quot;Programista WWW&quot; (wymaga ponownego uruchomienia Firefoksa).">
-<!ENTITY devtools_inspector_enabled_name "Włącz inspektora">
 <!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
 <!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
 <!ENTITY javascript_options_showInConsole_description "Określa, czy błędy i ostrzeżenia od chrome'a mają być wyświetlane w konsoli JavaScriptu.">

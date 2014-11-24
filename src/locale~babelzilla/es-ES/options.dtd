@@ -280,8 +280,6 @@
 <!ENTITY view_source_editor_path_name "Ruta del editor">
 <!ENTITY nglayout_debug_disable_xul_cache_description "No será necesario reiniciar para aplicar los cambios en ventanas y cuadros de diálogo. No funciona con archivos empaquetados en un JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deshabilitar la caché XUL">
-<!ENTITY devtools_inspector_enabled_description "Habilita el inspector en el menú &quot;Desarrollo web&quot; (requiere reiniciar)">
-<!ENTITY devtools_inspector_enabled_name "Habilitar inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "Habilita el uso de mensajes de depuración en la consola de errores.">
 <!ENTITY browser_dom_window_dump_enabled_name "Habilitar depuración">
 <!ENTITY javascript_options_showInConsole_description "Determina si registrar los errores y avisos chrome en la consola Javascript.">
