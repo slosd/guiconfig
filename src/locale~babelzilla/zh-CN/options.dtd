@@ -115,18 +115,12 @@
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">
 <!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">
 <!ENTITY alerts "提示">
-<!ENTITY update_showSlidingNotification_description "当有可用的更新时显示更新通知。">
-<!ENTITY update_showSlidingNotification_name "显示更新通知">
 <!ENTITY alerts_slideIncrementTime_description "控制提示窗口滑动或淡入淡出显示的时间长短（单位：毫秒）。">
 <!ENTITY alerts_slideIncrementTime_name "移动持续期间（毫秒）">
 <!ENTITY alerts_slideIncrement_description "该选项用于控制浏览器右下角“下载完成”之类的提示窗口弹出的速度（以每次上升所移动的像素值表示）。">
 <!ENTITY alerts_slideIncrement_name "每次上升所移动的像素值(px)">
 <!ENTITY alerts_totalOpenTime_description "控制在右下角弹出的“下载完成”之类的提示窗口的时间长短（单位：毫秒）。">
 <!ENTITY alerts_totalOpenTime_name "提示时间（毫秒）">
-<!ENTITY browser_download_manager_showAlertInterval_description "下载完成后，显示完成的间隔时间（毫秒）。">
-<!ENTITY browser_download_manager_showAlertInterval_name "提示延迟（毫秒）">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "所有下载完成后在右下角显示弹出窗口。">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "下载后弹出提示窗口">
 <!ENTITY cache "浏览器缓存">
 <!ENTITY cache_disk "磁盘缓存">
 <!ENTITY cache_memory "内存缓存">

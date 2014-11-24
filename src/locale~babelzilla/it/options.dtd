@@ -63,18 +63,12 @@
 <!ENTITY accessibility_accesskeycausesactivation_name "Attivazione degli elementi tramite accesskey">
 <!ENTITY browser "Browser">
 <!ENTITY alerts "Finestre di avviso">
-<!ENTITY update_showSlidingNotification_description "Quando sono disponibili degli aggiornamenti verrà visualizzata una notifica nel browser.">
-<!ENTITY update_showSlidingNotification_name "Mostra le notifiche di aggiornamento">
 <!ENTITY alerts_slideIncrementTime_description "Imposta il numero di millisecondi di ogni movimento di scorrimento nei casi in cui la finestra di avviso si sposta, e il numero di millisecondi delle fasi di dissolvenza quando la finestra compare e scompare.">
 <!ENTITY alerts_slideIncrementTime_name "Durata dello spostamento (in millisecondi):">
 <!ENTITY alerts_slideIncrement_description "Questa preferenza controlla la velocità delle finestre di avviso simili alla finestra &apos;Download completati&apos; che appare in basso a destra. In particolare controlla il numero di pixel che vengono spostati ad ogni incremento.">
 <!ENTITY alerts_slideIncrement_name "Numero di pixel da spostare ad ogni incremento:">
 <!ENTITY alerts_totalOpenTime_description "Definisce in millisecondi la durata di visualizzazione delle finestre simili alla finestra &apos;Download completati&apos; che appare in basso a destra.">
 <!ENTITY alerts_totalOpenTime_name "Durata dell&apos;avviso (in millisecondi):">
-<!ENTITY browser_download_manager_showAlertInterval_description "Specifica quanti millisecondi dopo il completamento dei download visualizzare la finestra di avviso.">
-<!ENTITY browser_download_manager_showAlertInterval_name "Ritardo (in millisecondi):">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "Visualizza una finestra pop-up in basso a destra nello schermo quando tutti i download sono stati completati.">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "Avviso pop-up dopo il download">
 <!ENTITY cache "Cache del browser">
 <!ENTITY cache_disk "Cache su disco">
 <!ENTITY cache_memory "Cache in memoria">

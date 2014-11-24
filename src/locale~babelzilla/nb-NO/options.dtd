@@ -26,10 +26,6 @@
 <!ENTITY alerts_slideIncrement_name "Antall punkter den skal flyttes for hver gang (px)">
 <!ENTITY alerts_totalOpenTime_description "Kontrollerer hvor lenge, i millisekunder, «Nedlasting Fullført»-varslinger skal synes nederst til høyre.">
 <!ENTITY alerts_totalOpenTime_name "Varslingstid (ms)">
-<!ENTITY browser_download_manager_showAlertInterval_description "Antall millisekunder etter nedlastingen varselet for fullført nedlasting skal vises.">
-<!ENTITY browser_download_manager_showAlertInterval_name "Forsinkelse (ms)">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "Vis sprettoppvindu nederst til høyre i vinduet når alle nedlastinger er fullført.">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "Sprettoppvindu ved fullført nedlasting">
 <!ENTITY cache "Mellomlager">
 <!ENTITY browser_cache_check_doc_frequency_description "Hvor ofte nettleseren skal kontrollere nettsidene for nyere versjoner som kan finnes i mellomlageret">
 <!ENTITY browser_cache_check_doc_frequency_name "Kontroller nettleserens mellomlager">

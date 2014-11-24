@@ -455,24 +455,6 @@
                 type="int"
                 minVersion="2*" />
         </group>
-        <group label="&alerts;">
-          <pref key="update.showSlidingNotification"
-                label="&update_showSlidingNotification_name;"
-                description="&update_showSlidingNotification_description;"
-                type="bool"
-                default="1">
-            <binding key="update_notifications.enabled" />
-          </pref>
-          <pref key="browser.download.manager.showAlertOnComplete"
-                label="&browser_download_manager_showAlertOnComplete_name;"
-                description="&browser_download_manager_showAlertOnComplete_description;"
-                type="bool" />
-          <pref key="browser.download.manager.showAlertInterval"
-                label="&browser_download_manager_showAlertInterval_name;"
-                description="&browser_download_manager_showAlertInterval_description;"
-                type="int"
-                indent="indent" />
-        </group>
         <group label="&downloadmanager;">
           <pref key="browser.download.manager.focusWhenStarting"
                 label="&browser_download_manager_focusWhenStarting_name;"

@@ -111,18 +111,12 @@
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
 <!ENTITY alerts "警示視窗">
-<!ENTITY update_showSlidingNotification_description "有更新檔時，在瀏覽器顯示一份通知。">
-<!ENTITY update_showSlidingNotification_name "顯示更新通知">
 <!ENTITY alerts_slideIncrementTime_description "控制各警示視窗滑出/入或淡出/入動作期間毫秒數。">
 <!ENTITY alerts_slideIncrementTime_name "移動為時(毫秒)">
 <!ENTITY alerts_slideIncrement_description "此設定控制出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的速度。特別是以每一增距移動多少像素來控制。">
 <!ENTITY alerts_slideIncrement_name "每一增距移動多少像素(以像素為單位)">
 <!ENTITY alerts_totalOpenTime_description "此設定控制以毫秒為單位、出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的時間長度。">
 <!ENTITY alerts_totalOpenTime_name "警示週期(毫秒)">
-<!ENTITY browser_download_manager_showAlertInterval_description "下載完成後經過多少千分之一秒再顯示&quot;完成&quot;警示。">
-<!ENTITY browser_download_manager_showAlertInterval_name "警示延時 (毫秒)">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "下載完所有項目後，在螢幕右下角顯示彈跳視窗。">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "下載完成後以彈跳視窗警示">
 <!ENTITY cache "瀏覽器的快取記憶區">
 <!ENTITY cache_disk "硬碟快取記憶區">
 <!ENTITY cache_memory "RAM 快取記憶區">
