@@ -193,8 +193,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Tidsfördröjning innan en sida visas (ms)">
 <!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda inläsningstiden, men ökar den totala inläsningstiden.">
 <!ENTITY content_notify_interval_name "Tidsfördröjning innan en sida ritas om (µs)">
-<!ENTITY browser_blink_allowed_description "Användning av blinkningstaggen eller CSS-instruktionen &quot;text-decoration: blink&quot; kommer resultera i blinkande element.">
-<!ENTITY browser_blink_allowed_name "Tillåt blinkande text">
 <!ENTITY browser_frames_enabled_description "Visa HTML-ramar.">
 <!ENTITY browser_frames_enabled_name "Tillåt ramar">
 <!ENTITY layout_frames_force_resizability_description "Tvinga HTML-ramar att vara justerbara.">

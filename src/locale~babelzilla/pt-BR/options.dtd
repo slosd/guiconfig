@@ -193,8 +193,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Atraso de exibição (ms):">
 <!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as reexibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
 <!ENTITY content_notify_interval_name "Intervalo mínimo entre reexibições (µs):">
-<!ENTITY browser_blink_allowed_description "Permite que itens na página com a tag HTML &quot;blink&quot; ou com o estilo CSS &quot;text-decoration: blink&quot; sejam exibidos piscando. Desmarque para que não pisquem.">
-<!ENTITY browser_blink_allowed_name "Ativar texto piscante">
 <!ENTITY browser_frames_enabled_description "Permite a exibição de páginas em quadros (frames). Desmarque para forçar o Firefox a não usar quadros.">
 <!ENTITY browser_frames_enabled_name "Usar quadros">
 <!ENTITY layout_frames_force_resizability_description "Faz com que os quadros sempre possam ter suas dimensões alteradas arrastando-se com o mouse as suas bordas.">

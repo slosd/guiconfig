@@ -189,8 +189,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Retraso antes de mostrar una página (milisegundos)">
 <!ENTITY content_notify_interval_description "Firefox dibuja periodicamente todos los datos recibidos de una página web. Esta opción especifica el tiempo mínimo a esperar entre el redibujado de una página en microsegundos. Un valor bajo bajará el tiempo de carga aparente, pero aumentará el total.">
 <!ENTITY content_notify_interval_name "Retraso antes de redibujar una página (microseg)">
-<!ENTITY browser_blink_allowed_description "Permite el uso de la etiqueta blink o el estilo CSS: text-decoration: blink que consigue elementos que parpadean.">
-<!ENTITY browser_blink_allowed_name "Habilitar el texto parpadeante">
 <!ENTITY browser_frames_enabled_description "Muestra marcos HTML.">
 <!ENTITY browser_frames_enabled_name "Permitir marcos">
 <!ENTITY layout_frames_force_resizability_description "Forzar los marcos a ser redimensionables.">

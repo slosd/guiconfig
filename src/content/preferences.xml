@@ -533,10 +533,6 @@
                 type="bool" />
         </group>
         <group label="&misc;">
-          <pref key="browser.blink_allowed"
-                label="&browser_blink_allowed_name;"
-                description="&browser_blink_allowed_description;"
-                type="bool" />
           <pref key="browser.frames.enabled"
                 label="&browser_frames_enabled_name;"
                 description="&browser_frames_enabled_description;"

@@ -45,8 +45,6 @@
 <!ENTITY browser_chrome_toolbar_tips_name "Vis verktøytips">
 <!ENTITY browser_preferences_animateFadeIn_description "Endrer høyden på vinduet, og toner inn det nye panelet ved bytting av paneler.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animer bytte mellom paneler">
-<!ENTITY browser_blink_allowed_description "«blink»-taggen eller CSS tekstdekorasjon vil resultere i blinkende elementer.">
-<!ENTITY browser_blink_allowed_name "Tillat blinkende tekst">
 <!ENTITY browser_frames_enabled_description "Vis HTML-rammer">
 <!ENTITY browser_frames_enabled_name "Tillat rammer">
 <!ENTITY browser_display_show_image_placeholders_description "Vis erstatninger mens bilder lastes">

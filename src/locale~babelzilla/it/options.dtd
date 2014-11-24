@@ -106,8 +106,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Ritardo nella visualizzazione delle pagine (millisecondi)">
 <!ENTITY content_notify_interval_description "Il rendering dei dati ricevuti da un sito web è effettuato periodicamente. Questa preferenza indica, in microsecondi, l&apos;intervallo minimo di attesa tra i redrawing della pagina. Valori più bassi diminuiranno il tempo di caricamento percepito ma incrementeranno il tempo di caricamento totale.">
 <!ENTITY content_notify_interval_name "Ritardo prima del redrawing della pagina (microsecondi)">
-<!ENTITY browser_blink_allowed_description "L&apos;utilizzo dell&apos;etichetta blink o della proprietà CSS text-decoration: blink produrrà un elemento lampeggiante.">
-<!ENTITY browser_blink_allowed_name "Attiva testo lampeggiante">
 <!ENTITY browser_frames_enabled_description "Visualizza i riquadri HTML.">
 <!ENTITY browser_frames_enabled_name "Permetti riquadri">
 <!ENTITY browser_display_show_image_placeholders_description "Visualizza i segnaposto durante il periodo di caricamento delle immagini.">

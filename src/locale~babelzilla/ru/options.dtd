@@ -189,8 +189,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Задержка перед отображением страницы (мс)">
 <!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
 <!ENTITY content_notify_interval_name "Задержка перед перерисовкой страницы (мкс)">
-<!ENTITY browser_blink_allowed_description "При использовании тега blink или CSS-стиля text-decoration: blink результатом будет мигающий элемент.">
-<!ENTITY browser_blink_allowed_name "Разрешить мигающий текст">
 <!ENTITY browser_frames_enabled_description "Отображение HTML фреймов.">
 <!ENTITY browser_frames_enabled_name "Разрешить фреймы">
 <!ENTITY layout_frames_force_resizability_description "Принудительно задать фреймам возможность изменять размер.">

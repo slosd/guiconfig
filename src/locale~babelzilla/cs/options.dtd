@@ -193,8 +193,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Prodleva před zobrazením stránky (milisekund)">
 <!ENTITY content_notify_interval_description "Firefox pravidelně vykresluje všechna data, která pro stránku obdrží. Tato předvolba stanovuje minimální dobu v mikrosekundách, kterou bude čekat mezi překreslováním stránky. Nižší hodnoty způsobí, že se načítání stránky bude zdát rychlejší, ale celkový čas načítání se zvýší.">
 <!ENTITY content_notify_interval_name "Prodleva před překreslením stránky (mikrosekund)">
-<!ENTITY browser_blink_allowed_description "Výsledkem použití tagu nebo hodnoty CSS text-decoration: blink bude blikání prvku.">
-<!ENTITY browser_blink_allowed_name "Povolit blikající text">
 <!ENTITY browser_frames_enabled_description "Zobrazí HTML rámy.">
 <!ENTITY browser_frames_enabled_name "Povolit rámy">
 <!ENTITY layout_frames_force_resizability_description "Vynutí u rámů možnost změny velikosti">

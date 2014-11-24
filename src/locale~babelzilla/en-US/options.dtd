@@ -193,8 +193,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Delay before displaying a page (millisec)">
 <!ENTITY content_notify_interval_description "Firefox periodically renders all received data of a website. This preference specifies the minimum amount of time to wait between redrawing the page in microseconds. Lower values will lower the perceived loading time but increase total loading time.">
 <!ENTITY content_notify_interval_name "Delay before redrawing a page (microsec)">
-<!ENTITY browser_blink_allowed_description "Use of the blink tag or CSS's text-decoration: blink will result in blinking elements.">
-<!ENTITY browser_blink_allowed_name "Enable blinking text">
 <!ENTITY browser_frames_enabled_description "Display HTML frames.">
 <!ENTITY browser_frames_enabled_name "Allow frames">
 <!ENTITY layout_frames_force_resizability_description "Force frames to be resizeable. ">

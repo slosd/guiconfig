@@ -79,8 +79,6 @@
 <!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
 <!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
-<!ENTITY browser_blink_allowed_description "Gebruik van de blink-tag of de tekst's CSS-decoration: blink zal leiden tot knipperende elementen.">
-<!ENTITY browser_blink_allowed_name "Schakel knipperende tekst">
 <!ENTITY browser_frames_enabled_description "Toon HTML frames.">
 <!ENTITY browser_frames_enabled_name "frames toestaan">
 <!ENTITY browser_display_show_image_placeholders_description "Shows plaatshouders terwijl afbeelding wordt geladen.">
