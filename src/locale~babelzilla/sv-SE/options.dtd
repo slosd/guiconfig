@@ -259,14 +259,9 @@
 <!ENTITY network "Nätverk">
 <!-- CONNECTIONS -->
 <!ENTITY connections "Anslutningar">
-<!ENTITY network_http_max-connections-per-server_description "Den här inställningen bestämmer det högsta antalet samtidiga anslutningar, som Firefox kan ha öppna mot en enskild server. Värdet måste vara mellan 1 och 255.">
-<!ENTITY network_http_max-connections-per-server_name "Antal HTTP-anslutningar per server">
 <!ENTITY network_http_max-connections_description "Den här inställningen bestämmer det totala antalet samtidiga anslutningar, som Firefox kan ha öppna. Värdet måste vara mellan 1 och 65535.">
 <!ENTITY network_http_max-connections_name "Antal HTTP-anslutningar">
 <!-- KEEP ALIVE -->
-<!ENTITY keep-alive_connections "Beständiga anslutningar">
-<!ENTITY network_http_keep-alive_description "Beständiga HTTP-anslutningar (äv. &quot;keep-alive-anslutningar&quot;) kan återanvändas för multipla förfrågningar och därmed förbättra prestandan.">
-<!ENTITY network_http_keep-alive_name "Använd beständiga anslutningar">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Den här inställningen bestämmer det högsta antalet samtidiga beständiga anslutningar, som Firefox kan ha öppna mot en enskild proxyserver. Värdet måste vara mellan 1 och 255.">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Antal beständiga anslutningar per proxyserver">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Den här inställningen bestämmer det högsta antalet samtidiga beständiga anslutningar, som Firefox kan ha öppna mot en enskild server. Värdet måste vara mellan 1 och 255.">

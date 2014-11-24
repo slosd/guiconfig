@@ -231,13 +231,8 @@
 <!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!ENTITY network "Netzwerk">
 <!ENTITY connections "Verbindungen">
-<!ENTITY network_http_max-connections-per-server_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen pro Server. Mögliche Werte: 1 bis 255.">
-<!ENTITY network_http_max-connections-per-server_name "Maximale HTTP-Verbindungen pro Server:">
 <!ENTITY network_http_max-connections_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen. Mögliche Werte: 1 bis 65535.">
 <!ENTITY network_http_max-connections_name "Maximale HTTP-Verbindungen:">
-<!ENTITY keep-alive_connections "Verbindungen aufrecht erhalten">
-<!ENTITY network_http_keep-alive_description "Offen gehaltene HTTP-Verbindungen können für mehrere Anfragen (Requests) verwendet werden und verbessern so die Verbindungsgeschwindigkeit.">
-<!ENTITY network_http_keep-alive_name "Verbindungen aufrecht erhalten (Keep-Alive)">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Maximale Anzahl von Verbindungen, die Firefox pro Proxy-Server aufrecht erhalten soll. Mögliche Werte: 1 bis 255.">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Maximale Anzahl von aufrecht zu erhaltenden Verbindungen pro Proxy-Server.">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Maximale Anzahl von Verbindungen, die Firefox pro Server aufrecht erhalten soll. Mögliche Werte: 1 bis 255.">

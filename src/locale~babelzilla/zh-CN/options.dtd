@@ -231,13 +231,8 @@
 <!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
 <!ENTITY network "网络">
 <!ENTITY connections "连接">
-<!ENTITY network_http_max-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大HTTP连接数。值域在1和255之间。">
-<!ENTITY network_http_max-connections-per-server_name "每个服务器的最大连接数。">
 <!ENTITY network_http_max-connections_description "这个选项定义了Firefox可以同时打开的最大HTTP连接数。值域在1和65535之间。">
 <!ENTITY network_http_max-connections_name "最大HTTP连接数">
-<!ENTITY keep-alive_connections "保持活跃连接（Keep-alive）">
-<!ENTITY network_http_keep-alive_description "HTTP保持活跃连接可以进行多请求重用同一连接，可以增加Firefox的性能。">
-<!ENTITY network_http_keep-alive_name "使用保持活跃连接">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "这个选项定义了Firefox针对特定代理服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "针对特定代理服务器的最大保持活跃连接数">
 <!ENTITY network_http_max-persistent-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">

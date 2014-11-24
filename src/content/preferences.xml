@@ -645,56 +645,40 @@
     </concerns>
   </category>
   <category label="&network;" icon="network">
-    <concerns>
-      <concern label="&connections;">
-        <group label="&connections;">
-          <pref key="network.http.max-connections"
-                label="&network_http_max-connections_name;"
-                description="&network_http_max-connections_description;"
-                type="int"
-                minValue="1"
-                maxValue="65535" />
-          <pref key="network.http.max-connections-per-server"
-                label="&network_http_max-connections-per-server_name;"
-                description="&network_http_max-connections-per-server_description;"
-                type="int"
-                minValue="1"
-                maxValue="255" />
-        </group>
-        <group label="&keep-alive_connections;">
-          <pref key="network.http.keep-alive"
-                label="&network_http_keep-alive_name;"
-                description="&network_http_keep-alive_description;"
-                type="bool" />
-          <pref key="network.http.max-persistent-connections-per-server"
-                label="&network_http_max-persistent-connections-per-server_name;"
-                description="&network_http_max-persistent-connections-per-server_description;"
-                type="int"
-                minValue="1"
-                maxValue="255" />
-          <pref key="network.http.max-persistent-connections-per-proxy"
-                label="&network_http_max-persistent-connections-per-proxy_name;"
-                description="&network_http_max-persistent-connections-per-proxy_description;"
-                type="int"
-                minValue="1"
-                maxValue="255" />
-        </group>
-      </concern>
-      <concern label="&pipelining;">
-        <pref key="network.http.pipelining"
-              label="&network_http_pipelining_name;"
-              description="&network_http_pipelining_description;"
-              type="bool" />
-        <pref key="network.http.proxy.pipelining"
-              label="&network_http_proxy_pipelining_name;"
-              description="&network_http_proxy_pipelining_description;"
-              type="bool" />
-        <pref key="network.http.pipelining.maxrequests"
-              label="&network_http_pipelining_maxrequests_name;"
-              description="&network_http_pipelining_maxrequests_description;"
-              type="int" />
-      </concern>
-    </concerns>
+    <group label="&connections;">
+      <pref key="network.http.max-connections"
+            label="&network_http_max-connections_name;"
+            description="&network_http_max-connections_description;"
+            type="int"
+            minValue="1"
+            maxValue="65535" />
+      <pref key="network.http.max-persistent-connections-per-server"
+            label="&network_http_max-persistent-connections-per-server_name;"
+            description="&network_http_max-persistent-connections-per-server_description;"
+            type="int"
+            minValue="1"
+            maxValue="255" />
+      <pref key="network.http.max-persistent-connections-per-proxy"
+            label="&network_http_max-persistent-connections-per-proxy_name;"
+            description="&network_http_max-persistent-connections-per-proxy_description;"
+            type="int"
+            minValue="1"
+            maxValue="255" />
+    </group>
+    <group label="&pipelining;">
+      <pref key="network.http.pipelining"
+            label="&network_http_pipelining_name;"
+            description="&network_http_pipelining_description;"
+            type="bool" />
+      <pref key="network.http.proxy.pipelining"
+            label="&network_http_proxy_pipelining_name;"
+            description="&network_http_proxy_pipelining_description;"
+            type="bool" />
+      <pref key="network.http.pipelining.maxrequests"
+            label="&network_http_pipelining_maxrequests_name;"
+            description="&network_http_pipelining_maxrequests_description;"
+            type="int" />
+    </group>
   </category>
   <category label="&developing;" icon="developing">
     <group label="&viewsource;">

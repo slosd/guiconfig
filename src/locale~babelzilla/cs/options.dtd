@@ -259,14 +259,9 @@
 <!ENTITY network "Síť">
 <!-- KEEP ALIVE -->
 <!ENTITY connections "Spojení">
-<!ENTITY network_http_max-connections-per-server_description "Tato předvolba stanovuje celkový počet spojení, které může Firefox mít najednou s jedním serverem. Tato hodnota musí být mezi 1 a 255.">
-<!ENTITY network_http_max-connections-per-server_name "Max. HTTP spojení na server">
 <!ENTITY network_http_max-connections_description "Tato předvolba stanovuje celkový počet spojení, které může Firefox najednou mít. Tato hodnota musí být mezi 1 a 65535.">
 <!ENTITY network_http_max-connections_name "Max. HTTP spojení">
 <!-- PIPELINING -->
-<!ENTITY keep-alive_connections "Udržující spojení (keep-alive)">
-<!ENTITY network_http_keep-alive_description "Udržující (keep-alive) HTTP spojení mohou být použita při více požadavcích a zlepšují výkon.">
-<!ENTITY network_http_keep-alive_name "Použít udržující spojení">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Tato předvolba stanovuje celkové množství udržujících spojení, které může Firfox najednou otevřít s jedním proxy serverem. Tato hodnota musí být mezi 1 a 255.">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Max. udržujících spojení na proxy server">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Tato předvolba stanovuje celkové množství udržujících spojení, které může Firefox najednou otevřít s jedním serverem. Tato hodnota musí být mezi 1 a 255.">
