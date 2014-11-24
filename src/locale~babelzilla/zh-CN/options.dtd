@@ -153,19 +153,12 @@
 <!ENTITY extensions_getAddons_showPane_description "决定是否在“扩充软件管理”窗口中显示“获得扩充软件”面板">
 <!ENTITY extensions_getAddons_showPane_name "显示面板">
 <!ENTITY downloadmanager "下载管理器">
-<!ENTITY browser_download_manager_quitBehavior_description "指定 Firefox 退出时对于正在下载项目的处理方式。">
-<!ENTITY browser_download_manager_quitBehavior_name "执行方式">
-<!ENTITY browser_download_manager_quitBehavior_o1 "暂停下载并在下次下载时自动恢复">
-<!ENTITY browser_download_manager_quitBehavior_o2 "暂停正在下载的项目">
-<!ENTITY browser_download_manager_quitBehavior_o3 "取消正在下载的项目">
 <!ENTITY browser_download_manager_addToRecentDocs_description "指定是否添加下载的文件到开始菜单的&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_manager_addToRecentDocs_name "添加下载的文件到&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
 <!ENTITY browser_download_lastDir_name "上一次保存目录">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "用户试图从下载管理器打开可执行文件时弹出警告。">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "打开可执行文件时警告">
-<!ENTITY browser_download_manager_focusWhenStarting_description "下载开始时显示下载窗口。">
-<!ENTITY browser_download_manager_focusWhenStarting_name "下载开始时显示下载窗口">
 <!ENTITY security_privacy "安全和隐私">
 <!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">

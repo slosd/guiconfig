@@ -166,19 +166,12 @@
 <!ENTITY extensions_getAddons_showPane_name "Mostrar painel &quot;Adicionar&quot;">
 <!-- STYLE -->
 <!ENTITY downloadmanager "Janela de downloads">
-<!ENTITY browser_download_manager_quitBehavior_description "Determina o que fazer com os downloads ativos ao sair do Firefox.">
-<!ENTITY browser_download_manager_quitBehavior_name "Comportamento ao sair">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pausar os downloads ativos e continuar quando o Firefox for iniciado novamente">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pausar os downloads ativos">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Cancelar os downloads ativos">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determina se os arquivos baixados devem ser adicionados aos &quot;Itens Recentes&quot; no menu do Windows.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Adicionar downloads aos &quot;Itens Recentes&quot;">
 <!ENTITY browser_download_lastDir_description "Especifica o caminho para a última pasta na qual foi salvo um arquivo com o Firefox. Essa pasta será automaticamente indicada na janela &quot;Salvar como&quot; na próxima vez.">
 <!ENTITY browser_download_lastDir_name "Última pasta onde algo foi salvo:">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Exibe um aviso quando um arquivo executável salvo da internet está prestes a ser aberto (executado) a partir da janela de downloads.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Alertar ao abrir arquivo executável">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Exibe a janela de downloads na frente das demais janelas do navegador quando um arquivo começar a ser baixado.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Abrir a janela de downloads em primeiro plano ao começar a baixar um arquivo">
 <!-- BROWSER -->
 <!ENTITY security_privacy "Privacidade e segurança">
 <!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para desativar esse recurso.">

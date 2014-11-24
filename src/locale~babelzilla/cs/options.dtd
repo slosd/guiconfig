@@ -166,19 +166,12 @@
 <!ENTITY extensions_getAddons_showPane_name "Zobrazit panel">
 <!-- SECURITY -->
 <!ENTITY downloadmanager "Správce stahování">
-<!ENTITY browser_download_manager_quitBehavior_description "Určuje, co se stane s probíhajícím stahováním při ukončení Firefoxu.">
-<!ENTITY browser_download_manager_quitBehavior_name "Chování při ukončení">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pozastavit a automaticky pokračovat při zahájení dalšího stahování">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pozastavit probíhající stahování">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Zrušit probíhající stahování">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Určuje, zda se stažené soubory přidají do „Posledních dokumentů“ v nabídce Start">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Přidat stahování do „Posledních dokumentů“">
 <!ENTITY browser_download_lastDir_description "Cesta k poslednímu adresáři použitému pro stahování pomocí „Uložit jako“.">
 <!ENTITY browser_download_lastDir_name "Poslední adresář pro stahování">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Varuje uživatele při pokusu o otevření spustitelného souboru ze Správce stahování.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varovat při spustitelných">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Okno Správce stahování bude při zahájení stahování aktivováno.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Aktivovat okno Správce stahování při zahájení stahování">
 <!-- STYLE -->
 <!ENTITY security_privacy "Zabezpečení a soukromí">
 <!ENTITY security_dialog_enable_delay_description "Tato předvolba určuje dobu zdržení (v milisekundách) před tím, než bude možno při instalaci doplňku klepnout na tlačítko „Instalovat“. Pro vypnutí zdržení zadejte 0.">

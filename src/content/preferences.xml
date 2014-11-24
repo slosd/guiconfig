@@ -456,20 +456,6 @@
                 minVersion="2*" />
         </group>
         <group label="&downloadmanager;">
-          <pref key="browser.download.manager.focusWhenStarting"
-                label="&browser_download_manager_focusWhenStarting_name;"
-                description="&browser_download_manager_focusWhenStarting_description;"
-                type="bool" />
-          <pref key="browser.download.manager.quitBehavior"
-                label="&browser_download_manager_quitBehavior_name;"
-                description="&browser_download_manager_quitBehavior_description;"
-                type="int"
-                mode="select"
-                minVersion="3.0">
-            <option label="&browser_download_manager_quitBehavior_o1;">0</option>
-            <option label="&browser_download_manager_quitBehavior_o2;">1</option>
-            <option label="&browser_download_manager_quitBehavior_o3;">2</option>
-          </pref>
           <pref key="browser.download.manager.alertOnEXEOpen"
                 label="&browser_download_manager_alertOnEXEOpen_name;"
                 description="&browser_download_manager_alertOnEXEOpen_description;"

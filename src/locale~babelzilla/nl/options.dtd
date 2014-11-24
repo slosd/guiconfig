@@ -79,8 +79,6 @@
 <!ENTITY browser_download_lastDir_name "Last download directory">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Waarschuw de gebruiker probeert te openen een uitvoerbaar van de Download Manager.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Waarschuwen van uitvoerbare">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Stelt de Download Manager venster als actief bij het starten van een download.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Stel de Download Manager venster als actief bij het starten van een download">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_description "Bepaalt of om aan te tonen favicons of niet.">
 <!ENTITY browser_chrome_favicons_name "Toon Favicons">

@@ -153,8 +153,6 @@
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "當使用者要從下載管理員開啟的項目是執行檔時，予以警示">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
-<!ENTITY browser_download_manager_focusWhenStarting_description "開始一項下載時，將下載管理員視窗設為啟動">
-<!ENTITY browser_download_manager_focusWhenStarting_name "開始下載時啟動下載管理員視窗">
 <!ENTITY security_privacy "安全性及隱私">
 <!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">

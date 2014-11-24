@@ -101,8 +101,6 @@
 <!ENTITY browser_download_lastDir_name "Ultima cartella di download">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avvisa l&apos;utente di ogni tentativo di aprire un file eseguibile dalla Gestione download">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Avviso file eseguibili">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Imposta la finestra di gestione dei download come attiva quando si avvia un download.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Imposta la finestra di gestione dei download come attiva quando si avvia un download">
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_description "Stabilisce se visualizzare o meno le favicon.">
 <!ENTITY browser_chrome_favicons_name "Mostra favicon">

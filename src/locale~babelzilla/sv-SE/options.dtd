@@ -166,19 +166,12 @@
 <!ENTITY extensions_getAddons_showPane_name "Visa panelen">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Filhämtaren">
-<!ENTITY browser_download_manager_quitBehavior_description "Bestämmer vad som skall hända med aktiva hämtningar när Firefox avslutas.">
-<!ENTITY browser_download_manager_quitBehavior_name "Beteende vid programavslut">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pausa aktiva hämtningar och återuppta dem automatiskt vid nästa programstart">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pausa aktiva hämtningar">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Avbryt aktiva hämtningar">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Bestämmer huruvida hämtade filer skall läggas till i listan &quot;Nyligen använda dokument&amp;quot i Start-menyn.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Lägg till hämtade filer i listan &quot;Nyligen använda dokument&amp;quot">
 <!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för hämtning via &quot;Spara (bild/länk/sida) som…&quot;.">
 <!ENTITY browser_download_lastDir_name "Senaste hämtningsmapp">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Varna användare som försöker öppna en exekverbar fil i Filhämtaren.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för exekverbar fil">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Anger Filhämtarens fönster som aktivt när en hämtning startas.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Ange Filhämtarens fönster som aktivt när en hämtning startas">
 <!-- SECURITY -->
 <!ENTITY security_privacy "Säkerhet och integritet">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">

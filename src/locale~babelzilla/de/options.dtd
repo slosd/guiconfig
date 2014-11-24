@@ -153,19 +153,12 @@
 <!ENTITY extensions_getAddons_showPane_description "Zeigt die &quot;Add-ons herunterladen&quot; Schaltfläche im Firefox Add-on-Manager(&quot;Extras&quot; &gt; &quot;Add-ons&quot;) an.">
 <!ENTITY extensions_getAddons_showPane_name "Reiter anzeigen">
 <!ENTITY downloadmanager "Download-Manager">
-<!ENTITY browser_download_manager_quitBehavior_description "Legt fest was beim Beenden von Firefox mit aktiven Downloads geschehen soll.">
-<!ENTITY browser_download_manager_quitBehavior_name "Verhalten beim Beenden">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pausieren und automatisch beim nächsten Start wiederaufnehmen">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Aktive Downloads pausieren">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Aktive Downloads abbrechen">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Legt fest ob heruntergeladene Dateien in die Liste der zuletzt benutzten Dateien im Startmenü eingetragen werden.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Zu &quot;Verwendete Dateien&quot; hinzufügen">
 <!ENTITY browser_download_lastDir_description "Das Zielverzeichnis des letzten Downloads.">
 <!ENTITY browser_download_lastDir_name "Letztes Download-Verzeichnis:">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Firefox warnt Sie, bevor Sie eine ausführbare Datei aus dem Download-Manager öffnen.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Vor ausführbaren Dateien warnen">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Holt den Download-Manager in den Vordergrund, wenn ein Download beginnt.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Download-Manager beim Downloadstart in den Vordergrund holen">
 <!ENTITY security_privacy "Sicherheit und Datenschutz">
 <!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, die gewartet werden muss, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
 <!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms):">

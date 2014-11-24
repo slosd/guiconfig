@@ -45,8 +45,6 @@
 <!ENTITY browser_cache_memory_enable_name "Bruk mellomlager i minne">
 <!ENTITY browser_download_lastDir_description "Stien til mappen som sist ble brukt ved nedlasting via «Lagre som»">
 <!ENTITY browser_download_lastDir_name "Sist brukte nedlastingsmappe">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Gjør Nedlastinger-vinduet til aktivt vindu når du starter en nedlasting">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Gjør Nedlastinger-vinduet til aktivt vindu når nedlastingen starter">
 <!ENTITY browser_style "Nettleser">
 <!ENTITY browser_chrome_favicons_description "Angir om Favicon-er skal vises">
 <!ENTITY browser_chrome_favicons_name "Vis Favicon-er">

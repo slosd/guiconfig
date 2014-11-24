@@ -151,19 +151,12 @@
 <!ENTITY extensions_getAddons_showPane_description "Określa, czy w oknie &quot;Dodatki&quot; wyświetlany ma być panel &quot;Pobierz rozszerzenia&quot;.">
 <!ENTITY extensions_getAddons_showPane_name "Wyświetlaj panel">
 <!ENTITY downloadmanager "Menedżer pobierania plików">
-<!ENTITY browser_download_manager_quitBehavior_description "Określa co robić z pobieranymi plikami, kiedy Firefox jest zamykany.">
-<!ENTITY browser_download_manager_quitBehavior_name "Traktowanie pobieranych plików przy zamykaniu">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Wstrzymaj i wznów po ponownym uruchomieniu">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Wstrzymaj">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Anuluj">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Określa, czy pobrane pliki mają być dodawane do menu &quot;Ostatnie dokumenty&quot; menu Start.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Dodawaj pobrane pliki do menu &quot;Ostatnie dokumenty&quot;">
 <!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
 <!ENTITY browser_download_lastDir_name "Ostatni katalog pobierania">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Ostrzegaj, jeżeli podjęta zostanie próba otwarcia wykonywalnego pliku w menedżerze pobierania.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Ostrzegaj przed otwarciem plików wykonywalnych">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Ustawia okienko &quot;Pobieranie plików&quot; jako aktywne po rozpoczęciu pobierania plików.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Przejdź do okna &quot;Pobieranie plików&quot; po rozpoczęciu pobierania">
 <!ENTITY security_privacy "Bezpieczeństwo i prywatność">
 <!ENTITY security_dialog_enable_delay_description "To ustawienie określa okres czasu (w milisekundach), który musi upłynąć, nim możliwe będzie kliknięcie przycisku &quot;Zainstaluj&quot; w oknie instalacji rozszerzenia. Ustaw na 0, aby wyłączyć konieczność czekania.">
 <!ENTITY security_dialog_enable_delay_name "Czas przed instalacją rozszerzenia (w milisekundach)">

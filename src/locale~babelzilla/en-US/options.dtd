@@ -166,19 +166,12 @@
 <!ENTITY extensions_getAddons_showPane_name "Show pane">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
-<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
-<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "Path to the last directory used for a download via 'Save As.'.">
 <!ENTITY browser_download_lastDir_name "Last download directory">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Warn the user attempting to open an executable from the Download Manager. ">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Warn of executable">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Sets the Download Manager window as active when starting a download.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Set the Download Manager window as active when starting a download">
 <!-- SECURITY -->
 <!ENTITY security_privacy "Security and Privacy">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">

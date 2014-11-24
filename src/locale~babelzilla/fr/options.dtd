@@ -127,8 +127,6 @@
 <!ENTITY browser_download_lastDir_name "Dernier dossier de téléchargement">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avertir l&apos;utilisateur lors de la demande d&apos;ouverture d&apos;un exécutable depuis le gestionnaire de téléchargements">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Avertissement d&apos;exécutable">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Rend active la fenêtre du « Gestionnaire de téléchargements » dès que l&apos;un d&apos;eux débute">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Rendre active la fenêtre du « Gestionnaire de téléchargements » dès que l&apos;un d&apos;eux débute">
 <!ENTITY security_privacy "Sécurité et confidentialité">
 <!ENTITY security_dialog_enable_delay_description "Cette configuration précise le délai (en millisecondes) avant que le bouton « Installer » puisse être cliqué, lors de l&apos;installation d&apos;une extension. Entrer la valeur zéro pour désactiver ce délai.">
 <!ENTITY security_dialog_enable_delay_name "Délai d&apos;installation d&apos;extension (ms)">

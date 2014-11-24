@@ -164,19 +164,12 @@
 <!ENTITY extensions_getAddons_showPane_name "Показать панель">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Менеджер загрузок">
-<!ENTITY browser_download_manager_quitBehavior_description "Определяет, что делать с активными загрузками при выходе из Firefox.">
-<!ENTITY browser_download_manager_quitBehavior_name "Поведение при выходе">
-<!ENTITY browser_download_manager_quitBehavior_o1 "остановить и автоматически продолжить при следующем запуске">
-<!ENTITY browser_download_manager_quitBehavior_o2 "остановить">
-<!ENTITY browser_download_manager_quitBehavior_o3 "отменить">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Определяет, будут ли загруженные файлы добавляться в меню «Документы» кнопки «Пуск».">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Добавлять загруженные файлы в историю документов">
 <!ENTITY browser_download_lastDir_description "Путь к каталогу последним использовавшемуся для загрузки через «Сохранить как…».">
 <!ENTITY browser_download_lastDir_name "Последний каталог загрузки">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Предупреждает пользователя, пытающегося открыть выполнимую программу из менеджера загрузок.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Предупреждать о выполнимых">
-<!ENTITY browser_download_manager_focusWhenStarting_description "При начале загрузки делает активным окно менеджера загрузок.">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Переходить в окно менеджера загрузок при начале загрузки">
 <!-- SECURITY -->
 <!ENTITY security_privacy "Безопасность и защита">
 <!ENTITY security_dialog_enable_delay_description "Эта настройка задаёт задержку (в миллисекундах) активации кнопки «Установить» при установке дополнения. Установите в 0, чтобы отключить задержку.">
