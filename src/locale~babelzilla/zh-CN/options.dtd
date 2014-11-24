@@ -176,10 +176,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "显示一页后延迟(毫秒 ms )">
 <!ENTITY content_notify_interval_description "Firefox定期渲染从特定网站收到的全部数据，这个值决定了每次渲染的最小时间片，较低的数值会在观感上加快渲染速度，但是会拖慢整体渲染速度。（微秒 µs 10e-6）">
 <!ENTITY content_notify_interval_name "重画页面前等待（微秒 µs）">
-<!ENTITY browser_frames_enabled_description "显示 HTML 框架。">
-<!ENTITY browser_frames_enabled_name "允许框架">
-<!ENTITY layout_frames_force_resizability_description "强制网页框架可改变大小。">
-<!ENTITY layout_frames_force_resizability_name "强制可改变大小">
+<!ENTITY layout_frames_force_resizability_name "强制网页框架可改变大小">
 <!ENTITY browser_display_show_image_placeholders_description "图片载入时显示占位符。">
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">

@@ -193,10 +193,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "Delay before displaying a page (millisec)">
 <!ENTITY content_notify_interval_description "Firefox periodically renders all received data of a website. This preference specifies the minimum amount of time to wait between redrawing the page in microseconds. Lower values will lower the perceived loading time but increase total loading time.">
 <!ENTITY content_notify_interval_name "Delay before redrawing a page (microsec)">
-<!ENTITY browser_frames_enabled_description "Display HTML frames.">
-<!ENTITY browser_frames_enabled_name "Allow frames">
-<!ENTITY layout_frames_force_resizability_description "Force frames to be resizeable. ">
-<!ENTITY layout_frames_force_resizability_name "force resizeable">
+<!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
 <!ENTITY browser_display_show_image_placeholders_description "Shows placeholders while image is loading.">
 <!ENTITY browser_display_show_image_placeholders_name "Show image placeholders">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">

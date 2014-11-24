@@ -137,8 +137,6 @@
 <!ENTITY nglayout_initialpaint_delay_name "Durée avant l&apos;affichage de la page (en ms)">
 <!ENTITY content_notify_interval_description "Firefox utilise périodiquement toutes les données reçues depuis un site Web. Cette préférence précise la durée minimale d&apos;attente avant d&apos;afficher la page à nouveau, en microsecondes. Les plus petites valeurs vont réduire le temps de chargement perçu, mais cela augmentera la durée totale de chargement.">
 <!ENTITY content_notify_interval_name "Durée avant le ré-affichage de la page (en µs)">
-<!ENTITY browser_frames_enabled_description "Afficher les cadres HTML">
-<!ENTITY browser_frames_enabled_name "Autoriser les cadres">
 <!ENTITY browser_display_show_image_placeholders_description "Voir les cadres d&apos;emplacement des images avant qu&apos;elles ne soient complètement chargées">
 <!ENTITY browser_display_show_image_placeholders_name "Voir les emplacements d&apos;images">
 <!ENTITY images "Images">

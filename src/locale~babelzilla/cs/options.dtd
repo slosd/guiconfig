@@ -193,10 +193,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "Prodleva před zobrazením stránky (milisekund)">
 <!ENTITY content_notify_interval_description "Firefox pravidelně vykresluje všechna data, která pro stránku obdrží. Tato předvolba stanovuje minimální dobu v mikrosekundách, kterou bude čekat mezi překreslováním stránky. Nižší hodnoty způsobí, že se načítání stránky bude zdát rychlejší, ale celkový čas načítání se zvýší.">
 <!ENTITY content_notify_interval_name "Prodleva před překreslením stránky (mikrosekund)">
-<!ENTITY browser_frames_enabled_description "Zobrazí HTML rámy.">
-<!ENTITY browser_frames_enabled_name "Povolit rámy">
-<!ENTITY layout_frames_force_resizability_description "Vynutí u rámů možnost změny velikosti">
-<!ENTITY layout_frames_force_resizability_name "Vynutit změnu velikosti">
+<!ENTITY layout_frames_force_resizability_name "Vynutí u rámů možnost změny velikosti">
 <!ENTITY browser_display_show_image_placeholders_description "Zobrazí zástupný obrázek během jeho načítání.">
 <!ENTITY browser_display_show_image_placeholders_name "Zobrazit zástupný obrázek">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">

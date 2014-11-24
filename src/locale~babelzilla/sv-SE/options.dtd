@@ -193,10 +193,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "Tidsfördröjning innan en sida visas (ms)">
 <!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda inläsningstiden, men ökar den totala inläsningstiden.">
 <!ENTITY content_notify_interval_name "Tidsfördröjning innan en sida ritas om (µs)">
-<!ENTITY browser_frames_enabled_description "Visa HTML-ramar.">
-<!ENTITY browser_frames_enabled_name "Tillåt ramar">
-<!ENTITY layout_frames_force_resizability_description "Tvinga HTML-ramar att vara justerbara.">
-<!ENTITY layout_frames_force_resizability_name "Tvinga justerbarhet">
+<!ENTITY layout_frames_force_resizability_name "Tvinga HTML-ramar att vara justerbara">
 <!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild läses in.">
 <!ENTITY browser_display_show_image_placeholders_name "Visa bildplatshållare">
 <!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">

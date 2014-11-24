@@ -79,8 +79,6 @@
 <!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
 <!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
-<!ENTITY browser_frames_enabled_description "Toon HTML frames.">
-<!ENTITY browser_frames_enabled_name "frames toestaan">
 <!ENTITY browser_display_show_image_placeholders_description "Shows plaatshouders terwijl afbeelding wordt geladen.">
 <!ENTITY browser_display_show_image_placeholders_name "Toon afbeelding plaatshouders">
 <!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding niet in een webpagina, wordt de afbeelding worden aangepast om te passen in het browservenster als het te groot is voor het browservenster.">

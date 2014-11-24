@@ -45,8 +45,6 @@
 <!ENTITY browser_chrome_toolbar_tips_name "Vis verktøytips">
 <!ENTITY browser_preferences_animateFadeIn_description "Endrer høyden på vinduet, og toner inn det nye panelet ved bytting av paneler.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animer bytte mellom paneler">
-<!ENTITY browser_frames_enabled_description "Vis HTML-rammer">
-<!ENTITY browser_frames_enabled_name "Tillat rammer">
 <!ENTITY browser_display_show_image_placeholders_description "Vis erstatninger mens bilder lastes">
 <!ENTITY browser_display_show_image_placeholders_name "Vis erstatninger">
 <!ENTITY browser_enable_automatic_image_resizing_description "Når du ser på et bilde som ikke er en del av en nettside, vil bildet skaleres ned slik at det passer i vinduet.">

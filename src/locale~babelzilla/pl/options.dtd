@@ -172,10 +172,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "Czas przed wyświetleniem strony (w milisekundach)">
 <!ENTITY content_notify_interval_description "Firefox okresowo renderuje dane strony. To ustawienie określa minimalny okres czasu, który musi upłynąć, zanim Firefox ponownie będzie renderował stronę (w mikrosekundach). Niższe wartości spowodują pozorne powolniejsze wczytywanie strony, ale zwiększą całkowity jego czas.">
 <!ENTITY content_notify_interval_name "Czas przed ponownym renderowaniem strony (w mikrosekundach)">
-<!ENTITY browser_frames_enabled_description "Wyświetlaj ramki HTML.">
-<!ENTITY browser_frames_enabled_name "Zezwól na użycie ramek">
-<!ENTITY layout_frames_force_resizability_description "Wymuś możliwość zmiany rozmiaru ramek.">
-<!ENTITY layout_frames_force_resizability_name "wymuś możliwość zmiany rozmiaru">
+<!ENTITY layout_frames_force_resizability_name "Wymuś możliwość zmiany rozmiaru ramek">
 <!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
 <!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
 <!ENTITY webgl_enabled_for_all_sites_name "Włącz WebGL">

@@ -189,10 +189,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "Задержка перед отображением страницы (мс)">
 <!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
 <!ENTITY content_notify_interval_name "Задержка перед перерисовкой страницы (мкс)">
-<!ENTITY browser_frames_enabled_description "Отображение HTML фреймов.">
-<!ENTITY browser_frames_enabled_name "Разрешить фреймы">
-<!ENTITY layout_frames_force_resizability_description "Принудительно задать фреймам возможность изменять размер.">
-<!ENTITY layout_frames_force_resizability_name "принудить к изменяемому размеру">
+<!ENTITY layout_frames_force_resizability_name "Принудительно задать фреймам возможность изменять размер">
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_display_show_image_placeholders_name "Показывать заполнители изображений">
 <!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">

@@ -168,10 +168,7 @@
 <!ENTITY nglayout_initialpaint_delay_name "顯示頁面延時(毫秒;千分之一秒)">
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
 <!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
-<!ENTITY browser_frames_enabled_description "顯示 HTML 頁框">
-<!ENTITY browser_frames_enabled_name "允許使用頁框">
-<!ENTITY layout_frames_force_resizability_description "強制頁框大小變成可調整">
-<!ENTITY layout_frames_force_resizability_name "強制成可調整大小">
+<!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
