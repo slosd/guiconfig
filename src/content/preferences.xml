@@ -193,6 +193,10 @@
                 label="&accessibility_typeaheadfind_timeout_name;"
                 description="&accessibility_typeaheadfind_timeout_description;"
                 type="int" />
+          <pref key="accessibility.typeaheadfind.prefillwithselection"
+                label="&accessibility_typeaheadfind_prefillwithselection_name;"
+                description=""
+                type="bool" />
         </group>
         <group label="&misc;">
           <pref key="prompts.tab_modal.enabled"

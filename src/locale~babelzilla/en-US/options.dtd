@@ -68,6 +68,7 @@
 <!ENTITY accessibility_typeaheadfind_label "Find as you type">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Determines after what amout of time with no further keyboard input the Find Bar disappears. ">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (millisec)">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
 <!ENTITY signon_prefillForms_description "Automatically fill form fields with usernames and passwords.">
 <!ENTITY signon_prefillForms_name "Auto-fill login form fields">
 <!ENTITY accessibility_tabfocus_description "This preference determines which elements can be focused by pressing Tab.">
