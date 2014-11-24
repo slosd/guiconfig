@@ -189,13 +189,6 @@
 <!ENTITY security_privacy "Privacidade e segurança">
 <!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para desativar esse recurso.">
 <!ENTITY security_dialog_enable_delay_name "Atraso para instalar complementos (ms):">
-<!ENTITY master_pass "Senha mestra">
-<!ENTITY security_ask_for_password_description "Especifica o quão frequentemente a senha mestra será pedida durante a navegação.">
-<!ENTITY security_ask_for_password_o1 "Pedir sempre que for necessária">
-<!ENTITY security_ask_for_password_o2 "Pedir na primeira vez em que for necessária">
-<!ENTITY security_ask_for_password_o3 "Pedir em intervalos de tempo">
-<!ENTITY security_password_lifetime_name "Intervalo (min):">
-<!ENTITY security_password_lifetime_description "Tempo, em minutos, após o qual a senha mestra será novamente pedida.">
 <!ENTITY dom_ipc_plugins_enabled_name "Executar cada plugin em um processo separado">
 <!ENTITY dom_ipc_plugins_enabled_description "Essa opção permite que o Firefox não trave também quando um plugin (como Flash) travar.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Tempo a esperar por plugins que não respondem (s):">

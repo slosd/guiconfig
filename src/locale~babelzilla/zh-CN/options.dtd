@@ -175,13 +175,6 @@
 <!ENTITY security_privacy "安全和隐私">
 <!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
-<!ENTITY master_pass "主密码">
-<!ENTITY security_ask_for_password_description "该选项指定何时要求您输入主密码。">
-<!ENTITY security_ask_for_password_o1 "每次需要的时候提示输入">
-<!ENTITY security_ask_for_password_o2 "首次需要的时候提示输入">
-<!ENTITY security_ask_for_password_o3 "特定一段时间后提示输入">
-<!ENTITY security_password_lifetime_name "时间长度（分钟）">
-<!ENTITY security_password_lifetime_description "多少分钟后提示输入主密码。">
 <!ENTITY dom_ipc_plugins_enabled_name "以独立进程运行每个插件">
 <!ENTITY dom_ipc_plugins_enabled_description "若诸如 Flash 等插件崩溃将不会导致 Firefox 同时崩溃。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "插件无响应时长（秒）">

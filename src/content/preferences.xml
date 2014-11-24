@@ -421,50 +421,31 @@
         </group>
       </concern>
       <concern label="&security_privacy;">
-        <group label="&master_pass;">
-          <pref key="security.ask_for_password"
-                description="&security_ask_for_password_description;"
-                type="int"
-                mode="radio">
-            <option label="&security_ask_for_password_o1;">0</option>
-            <option label="&security_ask_for_password_o2;">1</option>
-            <option label="&security_ask_for_password_o3;">2</option>
-          </pref>
-          <pref key="security.password_lifetime"
-                label="&security_password_lifetime_name;"
-                description="&security_password_lifetime_description;"
-                type="int"
-                indent="indent">
-            <dependency key="security.ask_for_password" equals="2" />
-          </pref>
-        </group>
-        <group label="&misc;">
-          <pref key="security.dialog_enable_delay"
-                label="&security_dialog_enable_delay_name;"
-                description="&security_dialog_enable_delay_description;"
-                type="int" />
-          <pref key="dom.ipc.plugins.enabled"
-                label="&dom_ipc_plugins_enabled_name;"
-                description="&dom_ipc_plugins_enabled_description;"
-                type="bool"
-                minVersion="3.6.4" />
-          <pref key="dom.ipc.plugins.timeoutSecs"
-                label="&dom_ipc_plugins_timeoutSecs_name;"
-                description="&dom_ipc_plugins_timeoutSecs_description;"
-                type="int"
-                minVersion="3.6.4"
-                indent="indent">
-            <dependency key="dom.ipc.plugins.enabled" equals="true" />
-          </pref>
-          <pref key="dom.ipc.plugins.processLaunchTimeoutSecs"
-                label="&dom_ipc_plugins_processLaunchTimeoutSecs_name;"
-                description="&dom_ipc_plugins_processLaunchTimeoutSecs_description;"
-                type="int"
-                minVersion="4.0b4"
-                indent="indent">
-            <dependency key="dom.ipc.plugins.enabled" equals="true" />
-          </pref>
-        </group>
+        <pref key="security.dialog_enable_delay"
+              label="&security_dialog_enable_delay_name;"
+              description="&security_dialog_enable_delay_description;"
+              type="int" />
+        <pref key="dom.ipc.plugins.enabled"
+              label="&dom_ipc_plugins_enabled_name;"
+              description="&dom_ipc_plugins_enabled_description;"
+              type="bool"
+              minVersion="3.6.4" />
+        <pref key="dom.ipc.plugins.timeoutSecs"
+              label="&dom_ipc_plugins_timeoutSecs_name;"
+              description="&dom_ipc_plugins_timeoutSecs_description;"
+              type="int"
+              minVersion="3.6.4"
+              indent="indent">
+          <dependency key="dom.ipc.plugins.enabled" equals="true" />
+        </pref>
+        <pref key="dom.ipc.plugins.processLaunchTimeoutSecs"
+              label="&dom_ipc_plugins_processLaunchTimeoutSecs_name;"
+              description="&dom_ipc_plugins_processLaunchTimeoutSecs_description;"
+              type="int"
+              minVersion="4.0b4"
+              indent="indent">
+          <dependency key="dom.ipc.plugins.enabled" equals="true" />
+        </pref>
       </concern>
       <concern label="&misc;">
         <group label="&bookmarks;">

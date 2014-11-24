@@ -189,13 +189,6 @@
 <!ENTITY security_privacy "Säkerhet och integritet">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">
 <!ENTITY security_dialog_enable_delay_name "Fördröjning vid tilläggsinstallation (ms)">
-<!ENTITY master_pass "Huvudlösenord">
-<!ENTITY security_ask_for_password_description "Den här inställningen bestämmer hur ofta du måste ange huvudlösenordet.">
-<!ENTITY security_ask_for_password_o1 "Fråga efter lösenord varje gång det krävs">
-<!ENTITY security_ask_for_password_o2 "Fråga efter lösenord endast första gången det krävs">
-<!ENTITY security_ask_for_password_o3 "Fråga efter lösenord efter en viss tidsperiod">
-<!ENTITY security_password_lifetime_name "Giltighetstid (min)">
-<!ENTITY security_password_lifetime_description "Det antal minuter som skall passera efter en tillståndsbekräftelse innan du ombeds ange huvudlösenordet igen.">
 <!ENTITY dom_ipc_plugins_enabled_name "Kör varje insticksmodul i en egen process">
 <!ENTITY dom_ipc_plugins_enabled_description "Om insticksmoduler (som Flash och Java) kraschar kommer de inte förorsaka att även Firefox gör det.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Tidsgräns för insticksmoduler som inte svarar (s)">

@@ -189,13 +189,6 @@
 <!ENTITY security_privacy "Zabezpečení a soukromí">
 <!ENTITY security_dialog_enable_delay_description "Tato předvolba určuje dobu zdržení (v milisekundách) před tím, než bude možno při instalaci doplňku klepnout na tlačítko „Instalovat“. Pro vypnutí zdržení zadejte 0.">
 <!ENTITY security_dialog_enable_delay_name "Zdržení při instalaci doplňku (ms)">
-<!ENTITY master_pass "Hlavní heslo">
-<!ENTITY security_ask_for_password_description "Tato předvolba určuje, jak často bude vyžadováno zadání hlavního hesla.">
-<!ENTITY security_ask_for_password_o1 "Požadovat heslo, kdykoliv je potřeba">
-<!ENTITY security_ask_for_password_o2 "Požadovat heslo, když je potřeba poprvé">
-<!ENTITY security_ask_for_password_o3 "Požadovat heslo po určitém čase">
-<!ENTITY security_password_lifetime_name "Životnost (min)">
-<!ENTITY security_password_lifetime_description "Počet minut, po kterém bude vyžadováno zadání hlavního hesla.">
 <!ENTITY dom_ipc_plugins_enabled_name "Spouštět každý zásuvný modul ve vlastním procesu">
 <!ENTITY dom_ipc_plugins_enabled_description "Jestliže zásuvné moduly (jako Flash) spadnou, nezpůsobí pád Firefoxu.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Časový limit pro zásuvné moduly, které neodpovídají (s)">

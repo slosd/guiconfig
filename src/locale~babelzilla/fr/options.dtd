@@ -138,10 +138,6 @@
 <!ENTITY security_privacy "Sécurité et confidentialité">
 <!ENTITY security_dialog_enable_delay_description "Cette configuration précise le délai (en millisecondes) avant que le bouton « Installer » puisse être cliqué, lors de l&apos;installation d&apos;une extension. Entrer la valeur zéro pour désactiver ce délai.">
 <!ENTITY security_dialog_enable_delay_name "Délai d&apos;installation d&apos;extension (ms)">
-<!ENTITY security_ask_for_password_o1 "Demander un mot de passe chaque fois que nécessaire">
-<!ENTITY security_ask_for_password_o2 "Demander un mot de passe la première fois que nécessaire">
-<!ENTITY security_ask_for_password_o3 "Demander un mot de passe après une durée particulière">
-<!ENTITY security_password_lifetime_name "Durée (min)">
 <!ENTITY dom_ipc_plugins_enabled_name "Exécuter chaque plugin dans un processus différent">
 <!ENTITY browser_style "Navigateur">
 <!ENTITY browser_identity_ssl_domain_display_name "Importance du domaine lors de l&apos;utilisation de SSL">

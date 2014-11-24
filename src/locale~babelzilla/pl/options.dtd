@@ -173,13 +173,6 @@
 <!ENTITY security_privacy "Bezpieczeństwo i prywatność">
 <!ENTITY security_dialog_enable_delay_description "To ustawienie określa okres czasu (w milisekundach), który musi upłynąć, nim możliwe będzie kliknięcie przycisku &quot;Zainstaluj&quot; w oknie instalacji rozszerzenia. Ustaw na 0, aby wyłączyć konieczność czekania.">
 <!ENTITY security_dialog_enable_delay_name "Czas przed instalacją rozszerzenia (w milisekundach)">
-<!ENTITY master_pass "Główne hasło">
-<!ENTITY security_ask_for_password_description "To ustawienie określa, jak często wprowadzać musisz główne hasło.">
-<!ENTITY security_ask_for_password_o1 "Proś o wprowadzenie za każdym razem">
-<!ENTITY security_ask_for_password_o2 "Proś o wprowadzenie tylko jeden raz podczas całej sesji">
-<!ENTITY security_ask_for_password_o3 "Proś o wprowadzenie co pewien okres czasu">
-<!ENTITY security_password_lifetime_name "Okres czasu (w minutach)">
-<!ENTITY security_password_lifetime_description "Liczba minut, po upłynięciu której wyświetlona zostanie prośba o wprowadzenie głównego hasła.">
 <!ENTITY dom_ipc_plugins_enabled_name "Uruchamiaj wszystkie wtyczki jako osobne procesy">
 <!ENTITY dom_ipc_plugins_enabled_description "Jeśli wtyczki (takie jak Flash) spowodują awarię, Firefox nie zostanie zamknięty razem z nimi.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Czas oczekiwania na nieodpowiadające wtyczki (w sek.)">

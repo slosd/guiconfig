@@ -187,13 +187,6 @@
 <!ENTITY security_privacy "Seguridad y privacidad">
 <!ENTITY security_dialog_enable_delay_description "Esta opción determina el retraso (en milisegundos) antes de que el botón &quot;Instalar&quot; puede ser pulsado al instalar un complemento. Establezca a 0 para deshabilitar el retraso.">
 <!ENTITY security_dialog_enable_delay_name "Retraso en la instalación de complementos (mseg)">
-<!ENTITY master_pass "Contraseña maestra">
-<!ENTITY security_ask_for_password_description "Esta opción determina con cuanta frecuencia tiene que introducir la contraseña maestra.">
-<!ENTITY security_ask_for_password_o1 "Pedir la contraseña siempre que sea necesario">
-<!ENTITY security_ask_for_password_o2 "Pedir la contraseña la primera vez que sea necesario">
-<!ENTITY security_ask_for_password_o3 "Pedir la contraseña tras una cantidad de tiempo">
-<!ENTITY security_password_lifetime_name "Tiempo de vida (min)">
-<!ENTITY security_password_lifetime_description "Minutos tras los que se le pedirá la contraseña maestra.">
 <!ENTITY dom_ipc_plugins_enabled_name "Ejecutar cada plugin en un proceso">
 <!ENTITY dom_ipc_plugins_enabled_description "Si un plugin (como Flash) falla, no causará que Firefox también falle.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Tiempo de espera para los plugins que no respondan (seg)">

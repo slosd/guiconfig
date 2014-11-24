@@ -175,13 +175,6 @@
 <!ENTITY security_privacy "Sicherheit und Datenschutz">
 <!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, die gewartet werden muss, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
 <!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms):">
-<!ENTITY master_pass "Master-Passwort">
-<!ENTITY security_ask_for_password_description "Bestimmt wann nach dem Master-Passwort gefragt wird.">
-<!ENTITY security_ask_for_password_o1 "Bei jedem Gebrauch">
-<!ENTITY security_ask_for_password_o2 "Bei erstem Gebrauch">
-<!ENTITY security_ask_for_password_o3 "Wenn es für eine festzulegende Zeitspanne nicht angefordert wurde.">
-<!ENTITY security_password_lifetime_name "Passwort-Vorhaltezeit (Min)">
-<!ENTITY security_password_lifetime_description "Nach wievielen Minuten nach dem Master-Passwort erneut gefragt wird.">
 <!ENTITY dom_ipc_plugins_enabled_name "Jedes Plugin in einem eigenen Prozess ausführen">
 <!ENTITY dom_ipc_plugins_enabled_description "Wenn Plugins (wie z.B. Flash) abstürzen kann Firefox unabhängig davon weiter ausgeführt werden.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Grenzwert für beschäftigte Plugins (sek)">

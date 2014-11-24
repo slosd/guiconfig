@@ -187,13 +187,6 @@
 <!ENTITY security_privacy "Безопасность и защита">
 <!ENTITY security_dialog_enable_delay_description "Эта настройка задаёт задержку (в миллисекундах) активации кнопки «Установить» при установке дополнения. Установите в 0, чтобы отключить задержку.">
 <!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
-<!ENTITY master_pass "Мастер-пароль">
-<!ENTITY security_ask_for_password_description "Этот параметр определяет как часто вам придётся вводить мастер-пароль.">
-<!ENTITY security_ask_for_password_o1 "запрашивать пароль всякий раз когда он необходим">
-<!ENTITY security_ask_for_password_o2 "запрашивать пароль когда он необходим в первый раз">
-<!ENTITY security_ask_for_password_o3 "запрашивать пароль спустя определённое время">
-<!ENTITY security_password_lifetime_name "Срок действия (мин)">
-<!ENTITY security_password_lifetime_description "Сколько минут спустя вы снова получите запрос на ввод мастер-пароля.">
 <!ENTITY dom_ipc_plugins_enabled_name "Выполнять каждый подключаемый модуль в виде отдельного процесса">
 <!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Время ожидания для не отвечающих подключаемых модулей (сек)">

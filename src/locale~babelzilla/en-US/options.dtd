@@ -189,13 +189,6 @@
 <!ENTITY security_privacy "Security and Privacy">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
-<!ENTITY master_pass "Master password">
-<!ENTITY security_ask_for_password_description "This preference determines how often you are required to enter the master password. ">
-<!ENTITY security_ask_for_password_o1 "Ask for password whenever needed">
-<!ENTITY security_ask_for_password_o2 "Ask for password the first time it's needed">
-<!ENTITY security_ask_for_password_o3 "Ask for password after a specific amount of time">
-<!ENTITY security_password_lifetime_name "Lifetime (min)">
-<!ENTITY security_password_lifetime_description "Minutes after which you are prompted for the master password. ">
 <!ENTITY dom_ipc_plugins_enabled_name "Execute each plugin in an own process">
 <!ENTITY dom_ipc_plugins_enabled_description "If plugins (like Flash) crash they won't cause Firefox to crash as well.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Timeout for non-responding plugins (sec)">
