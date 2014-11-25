@@ -118,6 +118,13 @@
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
 <!-- WEBSITES -->
+<!ENTITY browser_zoom "Browser zoom">
+<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
+<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
+<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
+<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">

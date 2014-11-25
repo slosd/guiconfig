@@ -372,34 +372,53 @@
         </group>
       </concern>
       <concern label="&websites;">
-        <pref key="geo.enabled"
-              label="&geo_enabled_name;"
-              description="&geo_enabled_description;"
-              type="bool"
-              minVersion="3.5" />
-        <pref key="webgl.disabled"
-              label="&webgl_enabled_for_all_sites_name;"
-              description=""
-              type="bool"
-              inverted="inverted"
-              minVersion="4.0b1">
-        </pref>
-        <pref key="gfx.font_rendering.directwrite.enabled"
-              label="&gfx_font_rendering_directwrite_enabled_name;"
-              description="&gfx_font_rendering_directwrite_enabled_description;"
-              platform="WINNT"
-              type="bool"
-              minVersion="3.7a2" />
-        <pref key="gfx.downloadable_fonts.enabled"
-              label="&gfx_downloadable_fonts_enabled_name;"
-              description="&gfx_downloadable_fonts_enabled_description;"
-              type="bool"
-              minVersion="3.1" />
-        <pref key="dom.max_script_run_time"
-              label="&dom_max_script_run_time_name;"
-              description="&dom_max_script_run_time_description;"
-              type="int"
-              minValue="0" />
+        <group label="&browser_zoom;">
+          <pref key="browser.zoom.full"
+                label="&browser_zoom_full_name;"
+                description="&browser_zoom_full_description;"
+                type="bool" />
+          <pref key="browser.zoom.siteSpecific"
+                label="&browser_zoom_siteSpecific_name;"
+                description="&browser_zoom_siteSpecific_description;"
+                type="bool" />
+          <pref key="browser.zoom.updateBackgroundTabs"
+                label="&browser_zoom_updateBackgroundTabs_name;"
+                description="&browser_zoom_updateBackgroundTabs_description;"
+                type="bool"
+                indent="indent">
+            <dependency key="browser.zoom.siteSpecific" equals="true" />
+          </pref>
+        </group>
+        <group label="&misc;">
+          <pref key="geo.enabled"
+                label="&geo_enabled_name;"
+                description="&geo_enabled_description;"
+                type="bool"
+                minVersion="3.5" />
+          <pref key="webgl.disabled"
+                label="&webgl_enabled_for_all_sites_name;"
+                description=""
+                type="bool"
+                inverted="inverted"
+                minVersion="4.0b1">
+          </pref>
+          <pref key="gfx.font_rendering.directwrite.enabled"
+                label="&gfx_font_rendering_directwrite_enabled_name;"
+                description="&gfx_font_rendering_directwrite_enabled_description;"
+                platform="WINNT"
+                type="bool"
+                minVersion="3.7a2" />
+          <pref key="gfx.downloadable_fonts.enabled"
+                label="&gfx_downloadable_fonts_enabled_name;"
+                description="&gfx_downloadable_fonts_enabled_description;"
+                type="bool"
+                minVersion="3.1" />
+          <pref key="dom.max_script_run_time"
+                label="&dom_max_script_run_time_name;"
+                description="&dom_max_script_run_time_description;"
+                type="int"
+                minValue="0" />
+        </group>
       </concern>
       <concern label="&extensions;">
         <pref key="extensions.checkCompatibility"
