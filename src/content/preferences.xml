@@ -476,6 +476,11 @@
       </concern>
       <concern label="&misc;">
         <group label="&new_tab_page;">
+          <pref key="browser.pagethumbnails.capturing_disabled"
+                label="&browser_pagethumbnails_capturing_disabled_name;"
+                description="&browser_pagethumbnails_capturing_disabled_description;"
+                type="bool"
+                inverted="inverted" />
           <pref key="browser.newtabpage.rows"
                 label="&browser_newtabpage_rows_name;"
                 description="&browser_newtabpage_rows_description;"
