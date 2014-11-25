@@ -61,6 +61,8 @@ var guiconfig = (function(guiconfig) {
         }
         cloneXUL(child, document, targetItem);
         target.appendChild(targetItem);
+      } else if (child.nodeType === Node.TEXT_NODE && child.nodeValue.match(/\S/)) {
+        target.appendChild(document.createTextNode(child.nodeValue));
       }
     }
     return target;

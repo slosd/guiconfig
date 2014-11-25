@@ -21,3 +21,9 @@ radio[pane=guiconfig-search-results] {
   50%  { background: red; }
   100% { background: transparent; }
 }
+
+groupbox description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}

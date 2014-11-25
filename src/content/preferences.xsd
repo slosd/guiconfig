@@ -59,6 +59,7 @@
 
   <attributeGroup ref="p:labeled" />
   <attributeGroup ref="p:filterable" />
+  <attribute name="description" type="string" />
 </complexType>
 
 <!-- a container that contains more structured preferences -->
@@ -89,6 +90,7 @@
           <complexContent>
             <extension base="p:view-container">
               <attributeGroup ref="p:labeled" />
+              <attribute name="description" type="string" />
             </extension>
           </complexContent>
         </complexType>

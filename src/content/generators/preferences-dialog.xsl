@@ -59,6 +59,9 @@
       <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
 
       <caption label="{@label}" />
+      <xsl:if test="@description">
+        <description><xsl:value-of select="@description" /></description>
+      </xsl:if>
       <xsl:apply-templates />
     </groupbox>
   </xsl:template>
