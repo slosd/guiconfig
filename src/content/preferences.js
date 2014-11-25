@@ -73,8 +73,8 @@ var guiconfig = (function(guiconfig) {
     var disabled = false;
     for (var dependency of dependencies) {
       if (!guiconfig.core.isApplicationVersionBetween(dependency.minVersion, dependency.maxVersion) ||
-             dependency.equals && (document.getElementById(dependency.key) || {}).value !== dependency.equals ||
-             dependency.in && dependency.in.indexOf((document.getElementById(dependency.key) || {}).value) === -1) {
+             dependency.hasOwnProperty('equals') && (document.getElementById(dependency.key) || {}).value !== dependency.equals ||
+             dependency.hasOwnProperty('in') && dependency.in.indexOf((document.getElementById(dependency.key) || {}).value) === -1) {
         disabled = true;
         break;
       }
