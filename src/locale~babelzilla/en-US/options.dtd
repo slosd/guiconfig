@@ -187,6 +187,12 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
 <!ENTITY browser_newtab_url_name "URL for new tabs">
 <!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- BOOKMARK -->
+<!ENTITY bookmarks "Bookmarks">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
+<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_max_backups_description "Determines the number of backups kept. Setting to 0 will disable backups.">
+<!ENTITY browser_bookmarks_max_backups_name "Bookmarks backups">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
 <!ENTITY browser_download_animateNotifications_name "Animate download icon">
@@ -288,12 +294,6 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "When closing a tab, switch to the tab that opened it. Otherwise switch to the adjacent right tab or the adjacent left tab. ">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Close window with last tab">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "If checked, the current window will be closed when you close the last tab in that window. You can close the last tab with a middle click or by pressing [CTRL]+[W].">
-<!-- BOOKMARK -->
-<!ENTITY bookmarks "Bookmarks">
-<!-- MICROSUMMARIES -->
-<!-- MISC -->
-<!ENTITY browser_bookmarks_max_backups_description "Determines the number of backups kept. Setting to 0 will disable backups.">
-<!ENTITY browser_bookmarks_max_backups_name "Bookmarks backups">
 <!-- NETWORK -->
 <!ENTITY network "Network">
 <!-- CONNECTIONS -->
