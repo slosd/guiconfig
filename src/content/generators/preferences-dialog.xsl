@@ -133,7 +133,7 @@
     <xsl:choose>
       <xsl:when test="$mode = 'select'">
         <label value="{@label}" />
-        <menulist preference="{@key}" flex="1">
+        <menulist preference="{@key}">
           <menupopup>
             <xsl:for-each select="p:option">
               <menuitem label="{@label}" crop="end" value="{text()}" />
@@ -164,10 +164,18 @@
       </xsl:when>
       <xsl:otherwise>
         <label value="{@label}" />
-        <textbox preference="{@key}" flex="1">
-          <xsl:if test="@type = 'int'">
-            <xsl:attribute name="type">number</xsl:attribute>
-          </xsl:if>
+        <xsl:if test="@type = 'int'">
+          <spacer flex="1" />
+        </xsl:if>
+        <textbox preference="{@key}">
+          <xsl:choose>
+            <xsl:when test="@type = 'int'">
+              <xsl:attribute name="type">number</xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:attribute name="flex">1</xsl:attribute>
+            </xsl:otherwise>
+          </xsl:choose>
           <xsl:if test="@minValue">
             <xsl:attribute name="min"><xsl:value-of select="@minValue" /></xsl:attribute>
           </xsl:if>
