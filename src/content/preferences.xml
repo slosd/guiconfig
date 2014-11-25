@@ -541,6 +541,15 @@
             <option label="&gfx_color_management_mode_o2;">1</option>
             <option label="&gfx_color_management_mode_o3;">2</option>
           </pref>
+          <pref key="image.animation_mode"
+                label="&image_animation_mode_name;"
+                description="&image_animation_mode_description;"
+                type="string"
+                mode="select">
+            <option label="&image_animation_mode_o1;">normal</option>
+            <option label="&image_animation_mode_o2;">once</option>
+            <option label="&image_animation_mode_o3;">none</option>
+          </pref>
           <pref key="browser.display.show_image_placeholders"
                 label="&browser_display_show_image_placeholders_name;"
                 description="&browser_display_show_image_placeholders_description;"

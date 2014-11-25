@@ -214,6 +214,11 @@
 <!ENTITY gfx_color_management_mode_o1 "no images">
 <!ENTITY gfx_color_management_mode_o2 "all images">
 <!ENTITY gfx_color_management_mode_o3 "images with ICC tags">
+<!ENTITY image_animation_mode_name "Animated images">
+<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
+<!ENTITY image_animation_mode_o1 "Loop indefinitely">
+<!ENTITY image_animation_mode_o2 "Run animation once">
+<!ENTITY image_animation_mode_o3 "Never run the animation">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Download fonts embedded in the website">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Enables downloading of CSS3 fonts which are embedded using @font-face. Restart required.">
 <!-- TEXT SELECT -->
