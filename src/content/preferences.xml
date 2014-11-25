@@ -312,6 +312,10 @@
         </pref>
       </concern>
       <concern label="&misc;">
+        <pref key="browser.preferences.inContent"
+              label="&browser_preferences_inContent_name;"
+              description="&browser_preferences_inContent_description;"
+              type="bool" />
         <pref key="browser.preferences.instantApply"
               label="&browser_preferences_instantApply_name;"
               description="&browser_preferences_instantApply_description;"

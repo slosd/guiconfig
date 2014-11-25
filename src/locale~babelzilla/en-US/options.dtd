@@ -111,6 +111,8 @@
 <!ENTITY misc "Miscellaneous">
 <!ENTITY browser_search_openintab_description "When performing a search from the Search Bar, open the results in a new tab. ">
 <!ENTITY browser_search_openintab_name "Open search results in a new tab">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
 <!ENTITY browser_preferences_instantApply_description "Changes to preferences are active immediately. The preferences window is not modal. Instead of &quot;OK&quot; and &quot;Cancel&quot; buttons, there is only a &quot;Close&quot; button.">
 <!ENTITY browser_preferences_instantApply_name "Instant apply">
 <!ENTITY accessibility_accesskeycausesactivation_description "Using an access key for an element is the same as activating the element. If the element is a link, follow the link. If the element is a button, click the button.">
