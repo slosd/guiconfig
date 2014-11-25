@@ -91,7 +91,11 @@ var guiconfig = (function(guiconfig) {
         for (var pane of panes) {
           pref_window.addPane(pane);
         }
-        pref_window.showPane(panes[0]);
+        prefpane_search_results = panes[panes.length - 1];
+
+        var lastSelectedPane = pref_window.lastSelected ? document.getElementById(pref_window.lastSelected) : null;
+        pref_window.showPane(lastSelectedPane != null && lastSelectedPane != prefpane_search_results ?
+          lastSelectedPane : panes[0]);
 
         prefpanes_loaded = true;
         if (pref_script) {
@@ -110,16 +114,11 @@ var guiconfig = (function(guiconfig) {
     search: function(query) {
       if (query) {
         guiconfig.core.buildPreferenceSearchResult(document, query, function(result) {
-          if (!prefpane_search_results) {
-            prefpane_search_results = result.firstChild;
-            pref_window.addPane(prefpane_search_results);
-          } else {
-            for (var child of prefpane_search_results.children) {
-              prefpane_search_results.removeChild(child);
-            }
-            for (var child of result.firstChild.children) {
-              prefpane_search_results.appendChild(child);
-            }
+          for (var child of prefpane_search_results.children) {
+            prefpane_search_results.removeChild(child);
+          }
+          for (var child of result.firstChild.children) {
+            prefpane_search_results.appendChild(child);
           }
           if (!pref_window.classList.contains('search-active')) {
             prefpane_current = pref_window.currentPane;

@@ -50,7 +50,7 @@
   <xsl:template match="/p:preferences">
     <xsl:variable name="query_set" select="str:split(translate($query, $chars_upper, $chars_lower), ' ')" />
 
-    <prefpane id="guiconfig-search-results" label="&config.searchresults;" image="chrome://guiconfig/skin/icons/categories/search.png" flex="1">
+    <prefpane>
       <vbox flex="1" style="overflow:auto">
         <xsl:for-each select="//p:pref">
           <xsl:variable name="info">

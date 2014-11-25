@@ -194,6 +194,8 @@
 
   <xsl:template match="/p:preferences">
     <xsl:apply-templates />
+
+    <prefpane id="guiconfig-search-results" label="&config.searchresults;" image="chrome://guiconfig/skin/icons/categories/search.png" flex="1"></prefpane>
   </xsl:template>
 
 </xsl:stylesheet>
