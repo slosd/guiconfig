@@ -303,12 +303,16 @@
               label="&browser_sessionstore_max_serialize_back_name;"
               description="&browser_sessionstore_max_serialize_back_description;"
               type="int"
-              minValue="-1" />
+              minValue="-1">
+          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
+        </pref>
         <pref key="browser.sessionstore.max_serialize_forward"
               label="&browser_sessionstore_max_serialize_forward_name;"
               description="&browser_sessionstore_max_serialize_forward_description;"
               type="int"
-              minValue="-1" />
+              minValue="-1">
+          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
+        </pref>
         <pref key="browser.sessionstore.max_concurrent_tabs"
               label="&browser_sessionstore_max_concurrent_tabs_name;"
               description="&browser_sessionstore_max_concurrent_tabs_description;"
