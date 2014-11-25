@@ -731,6 +731,10 @@
                 label="&browser_tabs_loadBookmarksInBackground_name;"
                 description=""
                 type="bool" />
+          <pref key="browser.search.context.loadInBackground"
+                label="&browser_search_context_loadInBackground_name;"
+                description=""
+                type="bool" />
         </group>
         <group label="&misc;">
           <pref key="browser.tabs.selectOwnerOnClose"

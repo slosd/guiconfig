@@ -291,6 +291,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in external applications">
 <!ENTITY browser_tabs_loadInBackground_name "Links in websites">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Bookmarks">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
 <!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Open new tab next to current">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determines whether to open a new tab at the end of the tab bar or after the currently selected tab. ">
