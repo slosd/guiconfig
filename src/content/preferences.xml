@@ -3,84 +3,8 @@
 <preferences xmlns="http://guiconfig.freedig.org/preferences"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://guiconfig.freedig.org/preferences preferences.xsd">
-  <category label="&accessibility;" icon="accessibility">
+  <category label="&browser;" icon="browser">
     <concerns>
-      <concern label="&mousebehaviour;">
-        <concerns>
-          <concern label="&mouseclick;">
-            <group label="&middleclick;">
-              <pref key="middlemouse.contentLoadURL"
-                    label="&middlemouse_contentLoadURL_name;"
-                    description="&middlemouse_contentLoadURL_description;"
-                    type="bool" />
-              <pref key="middlemouse.paste"
-                    label="&middlemouse_paste_name;"
-                    description="&middlemouse_paste_description;"
-                    type="bool" />
-            </group>
-            <group label="&urlbar;">
-              <pref key="browser.urlbar.clickSelectsAll"
-                    label="&browser_urlbar_clickSelectsAll_name;"
-                    description="&browser_urlbar_clickSelectsAll_description;"
-                    type="bool" />
-              <pref key="browser.urlbar.doubleClickSelectsAll"
-                    label="&browser_urlbar_doubleClickSelectsAll_name;"
-                    description="&browser_urlbar_doubleClickSelectsAll_description;"
-                    type="bool" />
-            </group>
-          </concern>
-          <concern label="&mousescrollvertical;" minVersion="17.0b1">
-            <group label="&mousescrollnone;">
-              <pref key="mousewheel.default.action"
-                    label="&mousewheel_action_name;"
-                    description="&mousewheel_action_description;"
-                    type="int"
-                    mode="select">
-                <option label="&mousewheel_action_o1;">0</option>
-                <option label="&mousewheel_action_o2;">1</option>
-                <option label="&mousewheel_action_o3;">2</option>
-                <option label="&mousewheel_action_o4;">3</option>
-              </pref>
-            </group>
-            <group label="&mousescrollshift;">
-              <pref key="mousewheel.with_shift.action"
-                    label="&mousewheel_action_name;"
-                    description="&mousewheel_action_description;"
-                    type="int"
-                    mode="select">
-                <option label="&mousewheel_action_o1;">0</option>
-                <option label="&mousewheel_action_o2;">1</option>
-                <option label="&mousewheel_action_o3;">2</option>
-                <option label="&mousewheel_action_o4;">3</option>
-              </pref>
-            </group>
-            <group label="&mousescrollstrg;">
-              <pref key="mousewheel.with_control.action"
-                    label="&mousewheel_action_name;"
-                    description="&mousewheel_action_description;"
-                    type="int"
-                    mode="select">
-                <option label="&mousewheel_action_o1;">0</option>
-                <option label="&mousewheel_action_o2;">1</option>
-                <option label="&mousewheel_action_o3;">2</option>
-                <option label="&mousewheel_action_o4;">3</option>
-              </pref>
-            </group>
-            <group label="&mousescrollalt;">
-              <pref key="mousewheel.with_alt.action"
-                    label="&mousewheel_action_name;"
-                    description="&mousewheel_action_description;"
-                    type="int"
-                    mode="select">
-                <option label="&mousewheel_action_o1;">0</option>
-                <option label="&mousewheel_action_o2;">1</option>
-                <option label="&mousewheel_action_o3;">2</option>
-                <option label="&mousewheel_action_o4;">3</option>
-              </pref>
-            </group>
-          </concern>
-        </concerns>
-      </concern>
       <concern label="&urlbar;" minVersion="3.0">
         <pref key="browser.urlbar.default.behavior"
               type="int"
@@ -158,6 +82,15 @@
               label="&browser_urlbar_autoFill_name;"
               description="&browser_urlbar_autoFill_description;"
               type="bool" />
+        <pref key="browser.urlbar.formatting.enabled"
+              label="&browser_urlbar_formatting_enabled_name;"
+              description="&browser_urlbar_formatting_enabled_description;"
+              type="bool"
+              minVersion="6.0" />
+        <pref key="browser.urlbar.trimURLs"
+              label="&browser_urlbar_trimURLs_name;"
+              description="&browser_urlbar_trimURLs_description;"
+              type="bool" />
         <pref key="browser.fixup.alternate.enabled"
               label="&browser_fixup_alternate_enabled_name;"
               description="&browser_fixup_alternate_enabled_description;"
@@ -198,46 +131,38 @@
                 description=""
                 type="bool" />
         </group>
+        <group label="&browser_zoom;">
+          <pref key="browser.zoom.full"
+                label="&browser_zoom_full_name;"
+                description="&browser_zoom_full_description;"
+                type="bool" />
+          <pref key="browser.zoom.siteSpecific"
+                label="&browser_zoom_siteSpecific_name;"
+                description="&browser_zoom_siteSpecific_description;"
+                type="bool" />
+          <pref key="browser.zoom.updateBackgroundTabs"
+                label="&browser_zoom_updateBackgroundTabs_name;"
+                description="&browser_zoom_updateBackgroundTabs_description;"
+                type="bool"
+                indent="indent">
+            <dependency key="browser.zoom.siteSpecific" equals="true" />
+          </pref>
+        </group>
         <group label="&misc;">
           <pref key="prompts.tab_modal.enabled"
                 label="&prompts_tab_modal_enabled_name;"
                 description="&prompts_tab_modal_enabled_description;"
                 type="bool"
                 minVersion="4.0" />
-          <pref key="signon.autofillForms"
-                label="&signon_prefillForms_name;"
-                description="&signon_prefillForms_description;"
-                type="bool"/>
-          <pref key="accessibility.tabfocus"
-                label="&accessibility_tabfocus_name;"
-                description="&accessibility_tabfocus_description;"
+          <pref key="layout.frames.force_resizability"
+                label="&layout_frames_force_resizability_name;"
+                description=""
+                type="bool" />
+          <pref key="dom.max_script_run_time"
+                label="&dom_max_script_run_time_name;"
+                description="&dom_max_script_run_time_description;"
                 type="int"
-                mode="select">
-            <option label="&accessibility_tabfocus_o1;">1</option>
-            <option label="&accessibility_tabfocus_o2;">2</option>
-            <option label="&accessibility_tabfocus_o3;">3</option>
-            <option label="&accessibility_tabfocus_o4;">4</option>
-            <option label="&accessibility_tabfocus_o5;">7</option>
-            <option label="&accessibility_tabfocus_o6;">6</option>
-          </pref>
-          <pref key="browser.backspace_action"
-                label="&browser_backspace_action_name;"
-                description="&browser_backspace_action_description;"
-                type="int"
-                mode="select">
-            <option label="&browser_backspace_action_o1;">0</option>
-            <option label="&browser_backspace_action_o2;">1</option>
-            <option label="&browser_backspace_action_o3;">2</option>
-          </pref>
-          <pref key="layout.spellcheckDefault"
-                label="&layout_spellcheckDefault_name;"
-                description="&layout_spellcheckDefault_description;"
-                type="int"
-                mode="select">
-            <option label="&layout_spellcheckDefault_o1;">0</option>
-            <option label="&layout_spellcheckDefault_o2;">1</option>
-            <option label="&layout_spellcheckDefault_o3;">2</option>
-          </pref>
+                minValue="0" />
         </group>
       </concern>
       <concern label="&session_restore;" minVersion="3.5">
@@ -347,25 +272,101 @@
           <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
         </pref>
       </concern>
-      <concern label="&misc;">
-        <pref key="browser.preferences.inContent"
-              label="&browser_preferences_inContent_name;"
-              description="&browser_preferences_inContent_description;"
-              type="bool" />
-        <pref key="browser.preferences.instantApply"
-              label="&browser_preferences_instantApply_name;"
-              description="&browser_preferences_instantApply_description;"
-              type="bool"
-              minVersion="2.0" />
-        <pref key="accessibility.accesskeycausesactivation"
-              label="&accessibility_accesskeycausesactivation_name;"
-              description="&accessibility_accesskeycausesactivation_description;"
-              type="bool" />
+      <concern label="&extensions_plugins;">
+        <group label="&getaddons;" minVersion="3.0">
+          <pref key="extensions.getAddons.showPane"
+                label="&extensions_getAddons_showPane_name;"
+                description="&extensions_getAddons_showPane_description;"
+                type="bool" />
+          <pref key="extensions.getAddons.maxResults"
+                label="&extensions_getAddons_maxResults_name;"
+                description="&extensions_getAddons_maxResults_description;"
+                type="int" />
+        </group>
+        <group label="&installation;">
+          <pref key="security.dialog_enable_delay"
+                label="&security_dialog_enable_delay_name;"
+                description="&security_dialog_enable_delay_description;"
+                type="int" />
+          <pref key="extensions.checkCompatibility"
+                label="&extensions_checkCompatibility_name;"
+                description="&extensions_checkCompatibility_description;"
+                minVersion="2.0b1"
+                type="bool"
+                default="1" />
+          <pref key="extensions.alwaysUnpack"
+                label="&extensions_alwaysUnpack_name;"
+                description="&extensions_alwaysUnpack_description;"
+                type="bool"
+                minVersion="4.0b6" /><!-- TODO get exact version -->
+        </group>
+        <group label="&plugins;">
+          <pref key="dom.ipc.plugins.enabled"
+                label="&dom_ipc_plugins_enabled_name;"
+                description="&dom_ipc_plugins_enabled_description;"
+                type="bool"
+                minVersion="3.6.4" />
+          <pref key="dom.ipc.plugins.timeoutSecs"
+                label="&dom_ipc_plugins_timeoutSecs_name;"
+                description="&dom_ipc_plugins_timeoutSecs_description;"
+                type="int"
+                minVersion="3.6.4"
+                indent="indent">
+            <dependency key="dom.ipc.plugins.enabled" equals="true" />
+          </pref>
+          <pref key="dom.ipc.plugins.processLaunchTimeoutSecs"
+                label="&dom_ipc_plugins_processLaunchTimeoutSecs_name;"
+                description="&dom_ipc_plugins_processLaunchTimeoutSecs_description;"
+                type="int"
+                minVersion="4.0b4"
+                indent="indent">
+            <dependency key="dom.ipc.plugins.enabled" equals="true" />
+          </pref>
+        </group>
       </concern>
-    </concerns>
-  </category>
-  <category label="&browser;" icon="browser">
-    <concerns>
+      <concern label="&library;">
+        <group label="&bookmarks;">
+          <pref key="browser.bookmarks.autoExportHTML"
+                label="&browser_bookmarks_autoExportHTML_name;"
+                description="&browser_bookmarks_autoExportHTML_description;"
+                type="bool" />
+          <pref key="browser.bookmarks.max_backups"
+                label="&browser_bookmarks_max_backups_name;"
+                description="&browser_bookmarks_max_backups_description;"
+                type="int"
+                minVersion="2*" />
+        </group>
+        <group label="&history;">
+          <pref key="places.history.expiration.max_pages"
+                label="&places_history_expiration_max_pages_name;"
+                description="&places_history_expiration_max_pages_description;"
+                type="int"
+                default="-1"
+                minValue="-1" />
+        </group>
+        <group label="&downloads;">
+          <pref key="browser.download.animateNotifications"
+                label="&browser_download_animateNotifications_name;"
+                description="&browser_download_animateNotifications_description;"
+                type="bool" />
+          <pref key="browser.download.manager.alertOnEXEOpen"
+                label="&browser_download_manager_alertOnEXEOpen_name;"
+                description="&browser_download_manager_alertOnEXEOpen_description;"
+                type="bool"
+                default="1" />
+          <pref key="browser.download.manager.addToRecentDocs"
+                label="&browser_download_manager_addToRecentDocs_name;"
+                description="&browser_download_manager_addToRecentDocs_description;"
+                type="bool"
+                default="1"
+                platform="WINNT" />
+          <pref key="browser.download.lastDir"
+                label="&browser_download_lastDir_name;"
+                description="&browser_download_lastDir_description;"
+                type="string"
+                default="" />
+        </group>
+      </concern>
       <concern label="&cache;">
         <pref key="browser.cache.check_doc_frequency"
               label="&browser_cache_check_doc_frequency_name;"
@@ -411,353 +412,324 @@
                 minValue="-1" />
         </group>
       </concern>
-      <concern label="&websites;">
-        <group label="&browser_zoom;">
-          <pref key="browser.zoom.full"
-                label="&browser_zoom_full_name;"
-                description="&browser_zoom_full_description;"
-                type="bool" />
-          <pref key="browser.zoom.siteSpecific"
-                label="&browser_zoom_siteSpecific_name;"
-                description="&browser_zoom_siteSpecific_description;"
-                type="bool" />
-          <pref key="browser.zoom.updateBackgroundTabs"
-                label="&browser_zoom_updateBackgroundTabs_name;"
-                description="&browser_zoom_updateBackgroundTabs_description;"
-                type="bool"
-                indent="indent">
-            <dependency key="browser.zoom.siteSpecific" equals="true" />
-          </pref>
-        </group>
-        <group label="&misc;">
-          <pref key="geo.enabled"
-                label="&geo_enabled_name;"
-                description="&geo_enabled_description;"
-                type="bool"
-                minVersion="3.5" />
-          <pref key="webgl.disabled"
-                label="&webgl_enabled_for_all_sites_name;"
-                description=""
-                type="bool"
-                inverted="inverted"
-                minVersion="4.0b1">
-          </pref>
-          <pref key="gfx.font_rendering.directwrite.enabled"
-                label="&gfx_font_rendering_directwrite_enabled_name;"
-                description="&gfx_font_rendering_directwrite_enabled_description;"
-                platform="WINNT"
-                type="bool"
-                minVersion="3.7a2" />
-          <pref key="gfx.downloadable_fonts.enabled"
-                label="&gfx_downloadable_fonts_enabled_name;"
-                description="&gfx_downloadable_fonts_enabled_description;"
-                type="bool"
-                minVersion="3.1" />
-          <pref key="dom.max_script_run_time"
-                label="&dom_max_script_run_time_name;"
-                description="&dom_max_script_run_time_description;"
-                type="int"
-                minValue="0" />
-        </group>
-      </concern>
-      <concern label="&extensions;">
-        <pref key="extensions.checkCompatibility"
-              label="&extensions_checkCompatibility_name;"
-              description="&extensions_checkCompatibility_description;"
-              minVersion="2.0b1"
-              type="bool"
-              default="1" />
-        <pref key="extensions.alwaysUnpack"
-              label="&extensions_alwaysUnpack_name;"
-              description="&extensions_alwaysUnpack_description;"
-              type="bool"
-              minVersion="4.0b6" /><!-- TODO get exact version -->
-        <group label="&getaddons;" minVersion="3.0">
-          <pref key="extensions.getAddons.showPane"
-                label="&extensions_getAddons_showPane_name;"
-                description="&extensions_getAddons_showPane_description;"
-                type="bool" />
-          <pref key="extensions.getAddons.maxResults"
-                label="&extensions_getAddons_maxResults_name;"
-                description="&extensions_getAddons_maxResults_description;"
-                type="int" />
-        </group>
-      </concern>
-      <concern label="&security_privacy;">
-        <pref key="security.dialog_enable_delay"
-              label="&security_dialog_enable_delay_name;"
-              description="&security_dialog_enable_delay_description;"
-              type="int" />
-        <pref key="dom.ipc.plugins.enabled"
-              label="&dom_ipc_plugins_enabled_name;"
-              description="&dom_ipc_plugins_enabled_description;"
-              type="bool"
-              minVersion="3.6.4" />
-        <pref key="dom.ipc.plugins.timeoutSecs"
-              label="&dom_ipc_plugins_timeoutSecs_name;"
-              description="&dom_ipc_plugins_timeoutSecs_description;"
-              type="int"
-              minVersion="3.6.4"
-              indent="indent">
-          <dependency key="dom.ipc.plugins.enabled" equals="true" />
-        </pref>
-        <pref key="dom.ipc.plugins.processLaunchTimeoutSecs"
-              label="&dom_ipc_plugins_processLaunchTimeoutSecs_name;"
-              description="&dom_ipc_plugins_processLaunchTimeoutSecs_description;"
-              type="int"
-              minVersion="4.0b4"
-              indent="indent">
-          <dependency key="dom.ipc.plugins.enabled" equals="true" />
-        </pref>
-      </concern>
-      <concern label="&misc;">
-        <group label="&new_tab_page;">
-          <pref key="browser.pagethumbnails.capturing_disabled"
-                label="&browser_pagethumbnails_capturing_disabled_name;"
-                description="&browser_pagethumbnails_capturing_disabled_description;"
-                type="bool"
-                inverted="inverted" />
-          <pref key="browser.newtabpage.rows"
-                label="&browser_newtabpage_rows_name;"
-                description="&browser_newtabpage_rows_description;"
-                type="int" />
-          <pref key="browser.newtabpage.columns"
-                label="&browser_newtabpage_columns_name;"
-                description="&browser_newtabpage_columns_description;"
-                type="int" />
-          <pref key="browser.newtab.url"
-                label="&browser_newtab_url_name;"
-                description="&browser_newtab_url_description;"
-                type="string" />
-        </group>
-        <group label="&bookmarks;">
-          <pref key="browser.bookmarks.autoExportHTML"
-                label="&browser_bookmarks_autoExportHTML_name;"
-                description="&browser_bookmarks_autoExportHTML_description;"
-                type="bool" />
-          <pref key="browser.bookmarks.max_backups"
-                label="&browser_bookmarks_max_backups_name;"
-                description="&browser_bookmarks_max_backups_description;"
-                type="int"
-                minVersion="2*" />
-        </group>
-        <group label="&history;">
-          <pref key="places.history.expiration.max_pages"
-                label="&places_history_expiration_max_pages_name;"
-                description="&places_history_expiration_max_pages_description;"
-                type="int"
-                default="-1"
-                minValue="-1" />
-        </group>
-        <group label="&downloadmanager;">
-          <pref key="browser.download.animateNotifications"
-                label="&browser_download_animateNotifications_name;"
-                description="&browser_download_animateNotifications_description;"
-                type="bool" />
-          <pref key="browser.download.manager.alertOnEXEOpen"
-                label="&browser_download_manager_alertOnEXEOpen_name;"
-                description="&browser_download_manager_alertOnEXEOpen_description;"
-                type="bool"
-                default="1" />
-          <pref key="browser.download.manager.addToRecentDocs"
-                label="&browser_download_manager_addToRecentDocs_name;"
-                description="&browser_download_manager_addToRecentDocs_description;"
-                type="bool"
-                default="1"
-                platform="WINNT" />
-          <pref key="browser.download.lastDir"
-                label="&browser_download_lastDir_name;"
-                description="&browser_download_lastDir_description;"
-                type="string"
-                default="" />
-        </group>
-      </concern>
     </concerns>
+  </category>
+  <category label="&content;" icon="content">
+    <group label="&rendering;">
+      <pref key="nglayout.initialpaint.delay"
+            label="&nglayout_initialpaint_delay_name;"
+            description="&nglayout_initialpaint_delay_description;"
+            type="int"
+            default="250" />
+      <pref key="content.notify.interval"
+            label="&content_notify_interval_name;"
+            description="&content_notify_interval_description;"
+            type="int"
+            default="120000" />
+    </group>
+    <group label="&images;">
+      <pref key="gfx.color_management.mode"
+            label="&gfx_color_management_mode_name;"
+            description="&gfx_color_management_mode_description;"
+            type="int"
+            mode="select"
+            minVersion="3.5">
+        <option label="&gfx_color_management_mode_o1;">0</option>
+        <option label="&gfx_color_management_mode_o2;">1</option>
+        <option label="&gfx_color_management_mode_o3;">2</option>
+      </pref>
+      <pref key="image.animation_mode"
+            label="&image_animation_mode_name;"
+            description="&image_animation_mode_description;"
+            type="string"
+            mode="select">
+        <option label="&image_animation_mode_o1;">normal</option>
+        <option label="&image_animation_mode_o2;">once</option>
+        <option label="&image_animation_mode_o3;">none</option>
+      </pref>
+      <pref key="browser.display.show_image_placeholders"
+            label="&browser_display_show_image_placeholders_name;"
+            description="&browser_display_show_image_placeholders_description;"
+            type="bool" />
+      <pref key="browser.enable_automatic_image_resizing"
+            label="&browser_enable_automatic_image_resizing_name;"
+            description="&browser_enable_automatic_image_resizing_description;"
+            type="bool" />
+    </group>
+    <group label="&misc;">
+      <pref key="geo.enabled"
+            label="&geo_enabled_name;"
+            description="&geo_enabled_description;"
+            type="bool"
+            minVersion="3.5" />
+      <pref key="webgl.disabled"
+            label="&webgl_enabled_for_all_sites_name;"
+            description=""
+            type="bool"
+            inverted="inverted"
+            minVersion="4.0b1">
+      </pref>
+      <pref key="gfx.font_rendering.directwrite.enabled"
+            label="&gfx_font_rendering_directwrite_enabled_name;"
+            description="&gfx_font_rendering_directwrite_enabled_description;"
+            platform="WINNT"
+            type="bool"
+            minVersion="3.7a2" />
+      <pref key="gfx.downloadable_fonts.enabled"
+            label="&gfx_downloadable_fonts_enabled_name;"
+            description="&gfx_downloadable_fonts_enabled_description;"
+            type="bool"
+            minVersion="3.1" />
+      <pref key="signon.autofillForms"
+            label="&signon_prefillForms_name;"
+            description="&signon_prefillForms_description;"
+            type="bool"/>
+      <pref key="layout.spellcheckDefault"
+            label="&layout_spellcheckDefault_name;"
+            description="&layout_spellcheckDefault_description;"
+            type="int"
+            mode="select">
+        <option label="&layout_spellcheckDefault_o1;">0</option>
+        <option label="&layout_spellcheckDefault_o2;">1</option>
+        <option label="&layout_spellcheckDefault_o3;">2</option>
+      </pref>
+    </group>
+  </category>
+  <category label="&input;" icon="input">
+    <group label="&middleclick;">
+      <pref key="middlemouse.contentLoadURL"
+            label="&middlemouse_contentLoadURL_name;"
+            description="&middlemouse_contentLoadURL_description;"
+            type="bool" />
+      <pref key="middlemouse.paste"
+            label="&middlemouse_paste_name;"
+            description="&middlemouse_paste_description;"
+            type="bool" />
+    </group>
+    <group label="&urlbar;">
+      <pref key="browser.urlbar.clickSelectsAll"
+            label="&browser_urlbar_clickSelectsAll_name;"
+            description="&browser_urlbar_clickSelectsAll_description;"
+            type="bool" />
+      <pref key="browser.urlbar.doubleClickSelectsAll"
+            label="&browser_urlbar_doubleClickSelectsAll_name;"
+            description="&browser_urlbar_doubleClickSelectsAll_description;"
+            type="bool" />
+    </group>
+    <group label="&mousescrollvertical;" description="&mousewheel_action_description;" minVersion="17.0b1">
+      <pref key="mousewheel.default.action"
+            label="&mousewheel_default_action_name;"
+            description=""
+            type="int"
+            mode="select">
+        <option label="&mousewheel_action_o1;">0</option>
+        <option label="&mousewheel_action_o2;">1</option>
+        <option label="&mousewheel_action_o3;">2</option>
+        <option label="&mousewheel_action_o4;">3</option>
+      </pref>
+      <pref key="mousewheel.with_shift.action"
+            label="&mousewheel_with_shift_action_name;"
+            description=""
+            type="int"
+            mode="select">
+        <option label="&mousewheel_action_o1;">0</option>
+        <option label="&mousewheel_action_o2;">1</option>
+        <option label="&mousewheel_action_o3;">2</option>
+        <option label="&mousewheel_action_o4;">3</option>
+      </pref>
+      <pref key="mousewheel.with_control.action"
+            label="&mousewheel_with_control_action_name;"
+            description=""
+            type="int"
+            mode="select">
+        <option label="&mousewheel_action_o1;">0</option>
+        <option label="&mousewheel_action_o2;">1</option>
+        <option label="&mousewheel_action_o3;">2</option>
+        <option label="&mousewheel_action_o4;">3</option>
+      </pref>
+      <pref key="mousewheel.with_alt.action"
+            label="&mousewheel_with_alt_action_name;"
+            description=""
+            type="int"
+            mode="select">
+        <option label="&mousewheel_action_o1;">0</option>
+        <option label="&mousewheel_action_o2;">1</option>
+        <option label="&mousewheel_action_o3;">2</option>
+        <option label="&mousewheel_action_o4;">3</option>
+      </pref>
+    </group>
+    <group label="&misc;">
+      <pref key="accessibility.tabfocus"
+            label="&accessibility_tabfocus_name;"
+            description="&accessibility_tabfocus_description;"
+            type="int"
+            mode="select">
+        <option label="&accessibility_tabfocus_o1;">1</option>
+        <option label="&accessibility_tabfocus_o2;">2</option>
+        <option label="&accessibility_tabfocus_o3;">3</option>
+        <option label="&accessibility_tabfocus_o4;">4</option>
+        <option label="&accessibility_tabfocus_o5;">7</option>
+        <option label="&accessibility_tabfocus_o6;">6</option>
+      </pref>
+      <pref key="browser.backspace_action"
+            label="&browser_backspace_action_name;"
+            description="&browser_backspace_action_description;"
+            type="int"
+            mode="select">
+        <option label="&browser_backspace_action_o1;">0</option>
+        <option label="&browser_backspace_action_o2;">1</option>
+        <option label="&browser_backspace_action_o3;">2</option>
+      </pref>
+      <pref key="accessibility.accesskeycausesactivation"
+            label="&accessibility_accesskeycausesactivation_name;"
+            description="&accessibility_accesskeycausesactivation_description;"
+            type="bool" />
+    </group>
   </category>
   <category label="&appearance;" icon="style">
-    <concerns>
-      <concern label="&browser_style;">
-        <pref key="browser.urlbar.formatting.enabled"
-              label="&browser_urlbar_formatting_enabled_name;"
-              description="&browser_urlbar_formatting_enabled_description;"
-              type="bool"
-              minVersion="6.0" />
-        <pref key="browser.urlbar.trimURLs"
-              label="&browser_urlbar_trimURLs_name;"
-              description="&browser_urlbar_trimURLs_description;"
-              type="bool" />
-        <pref key="browser.chrome.favicons"
-              label="&browser_chrome_favicons_name;"
-              description="&browser_chrome_favicons_description;"
-              type="bool">
-          <binding key="browser.chrome.site_icons" />
-        </pref>
-        <pref key="browser.chrome.toolbar_tips"
-              label="&browser_chrome_toolbar_tips_name;"
-              description="&browser_chrome_toolbar_tips_description;"
-              type="bool" />
-        <pref key="browser.preferences.animateFadeIn"
-              label="&browser_preferences_animateFadeIn_name;"
-              description="&browser_preferences_animateFadeIn_description;"
-              type="bool" />
-      </concern>
-      <concern label="&websites;">
-        <group label="&rendering;">
-          <pref key="nglayout.initialpaint.delay"
-                label="&nglayout_initialpaint_delay_name;"
-                description="&nglayout_initialpaint_delay_description;"
-                type="int"
-                default="250" />
-          <pref key="content.notify.interval"
-                label="&content_notify_interval_name;"
-                description="&content_notify_interval_description;"
-                type="int"
-                default="120000" />
-        </group>
-        <group label="&images;">
-          <pref key="gfx.color_management.mode"
-                label="&gfx_color_management_mode_name;"
-                description="&gfx_color_management_mode_description;"
-                type="int"
-                mode="select"
-                minVersion="3.5">
-            <option label="&gfx_color_management_mode_o1;">0</option>
-            <option label="&gfx_color_management_mode_o2;">1</option>
-            <option label="&gfx_color_management_mode_o3;">2</option>
-          </pref>
-          <pref key="image.animation_mode"
-                label="&image_animation_mode_name;"
-                description="&image_animation_mode_description;"
-                type="string"
-                mode="select">
-            <option label="&image_animation_mode_o1;">normal</option>
-            <option label="&image_animation_mode_o2;">once</option>
-            <option label="&image_animation_mode_o3;">none</option>
-          </pref>
-          <pref key="browser.display.show_image_placeholders"
-                label="&browser_display_show_image_placeholders_name;"
-                description="&browser_display_show_image_placeholders_description;"
-                type="bool" />
-          <pref key="browser.enable_automatic_image_resizing"
-                label="&browser_enable_automatic_image_resizing_name;"
-                description="&browser_enable_automatic_image_resizing_description;"
-                type="bool" />
-        </group>
-        <group label="&misc;">
-          <pref key="layout.frames.force_resizability"
-                label="&layout_frames_force_resizability_name;"
-                description=""
-                type="bool" />
-        </group>
-      </concern>
-      <concern label="&text_select;">
-        <pref key="ui.textSelectBackground"
-              label="&ui_textSelectBackground_name;"
-              description="&ui_textSelectBackground_description;"
-              type="string"
-              mode="color" />
-        <pref key="ui.textSelectForeground"
-              label="&ui_textSelectForeground_name;"
-              description="&ui_textSelectForeground_description;"
-              type="string"
-              mode="color" />
-        <pref key="ui.textSelectBackgroundAttention"
-              label="&ui_textSelectBackgroundAttention_name;"
-              description="&ui_textSelectBackgroundAttention_description;"
-              type="string"
-              mode="color" />
-      </concern>
-    </concerns>
+    <group label="&browser_style;">
+      <pref key="browser.chrome.favicons"
+            label="&browser_chrome_favicons_name;"
+            description="&browser_chrome_favicons_description;"
+            type="bool">
+        <binding key="browser.chrome.site_icons" />
+      </pref>
+      <pref key="browser.chrome.toolbar_tips"
+            label="&browser_chrome_toolbar_tips_name;"
+            description="&browser_chrome_toolbar_tips_description;"
+            type="bool" />
+      <pref key="browser.preferences.instantApply"
+            label="&browser_preferences_instantApply_name;"
+            description="&browser_preferences_instantApply_description;"
+            type="bool"
+            minVersion="2.0" />
+      <pref key="browser.preferences.inContent"
+            label="&browser_preferences_inContent_name;"
+            description="&browser_preferences_inContent_description;"
+            type="bool" />
+      <pref key="browser.preferences.animateFadeIn"
+            label="&browser_preferences_animateFadeIn_name;"
+            description="&browser_preferences_animateFadeIn_description;"
+            type="bool" />
+    </group>
+    <group label="&new_tab_page;">
+      <pref key="browser.pagethumbnails.capturing_disabled"
+            label="&browser_pagethumbnails_capturing_disabled_name;"
+            description="&browser_pagethumbnails_capturing_disabled_description;"
+            type="bool"
+            inverted="inverted" />
+      <pref key="browser.newtabpage.rows"
+            label="&browser_newtabpage_rows_name;"
+            description="&browser_newtabpage_rows_description;"
+            type="int" />
+      <pref key="browser.newtabpage.columns"
+            label="&browser_newtabpage_columns_name;"
+            description="&browser_newtabpage_columns_description;"
+            type="int" />
+      <pref key="browser.newtab.url"
+            label="&browser_newtab_url_name;"
+            description="&browser_newtab_url_description;"
+            type="string" />
+    </group>
+    <group label="&text_select;">
+      <pref key="ui.textSelectBackground"
+            label="&ui_textSelectBackground_name;"
+            description="&ui_textSelectBackground_description;"
+            type="string"
+            mode="color" />
+      <pref key="ui.textSelectForeground"
+            label="&ui_textSelectForeground_name;"
+            description="&ui_textSelectForeground_description;"
+            type="string"
+            mode="color" />
+      <pref key="ui.textSelectBackgroundAttention"
+            label="&ui_textSelectBackgroundAttention_name;"
+            description="&ui_textSelectBackgroundAttention_description;"
+            type="string"
+            mode="color" />
+    </group>
   </category>
   <category label="&tabs;" icon="tabs">
-    <concerns>
-      <concern label="&appearance;">
-        <group label="&tab_preview;" minVersion="3.6">
-          <pref key="browser.ctrlTab.previews"
-                label="&browser_ctrlTab_preview_name;"
-                description="&browser_ctrlTab_preview_description;"
-                type="bool" />
-          <pref key="browser.taskbar.previews.enable"
-                label="&browser_taskbar_previews_enable_name;"
-                description="&browser_taskbar_previews_enable_description;"
-                type="bool"
-                platform="WINNT" />
-        </group>
-        <group label="&misc;">
-          <pref key="browser.tabs.animate"
-                label="&browser_tabs_animate_name;"
-                description="&browser_tabs_animate_description;"
-                type="bool"
-                minVersion="4.0b4" />
-          <pref key="browser.panorama.animate_zoom"
-                label="&browser_panorama_animate_zoom_name;"
-                description="&browser_panorama_animate_zoom_description;"
-                type="bool"
-                minVersion="4.0b4" />
-          <pref key="browser.tabs.closeButtons"
-                label="&browser_tabs_closeButtons_name;"
-                description="&browser_tabs_closeButtons_description;"
-                type="int"
-                mode="select"
-                minVersion="2.0"
-                maxVersion="30.*">
-            <option label="&browser_tabs_closeButtons_o1;">0</option>
-            <option label="&browser_tabs_closeButtons_o2;">1</option>
-            <option label="&browser_tabs_closeButtons_o3;">2</option>
-            <option label="&browser_tabs_closeButtons_o4;">3</option>
-          </pref>
-          <pref key="browser.tabs.tabClipWidth"
-                label="&browser_tabs_tabClipWidth_name;"
-                description="&browser_tabs_tabClipWidth_description;"
-                type="int"
-                minVersion="2.0"
-                maxVersion="30.*"
-                indent="indent">
-            <dependency key="browser.tabs.closeButtons" in="0, 1" />
-          </pref>
-        </group>
-      </concern>
-      <concern label="&misc;">
-        <group label="&open_in_background;">
-          <pref key="browser.tabs.loadInBackground"
-                label="&browser_tabs_loadInBackground_name;"
-                description=""
-                type="bool" />
-          <pref key="browser.tabs.loadDivertedInBackground"
-                label="&browser_tabs_loadDivertedInBackground_name;"
-                description=""
-                type="bool" />
-          <pref key="browser.tabs.loadBookmarksInBackground"
-                label="&browser_tabs_loadBookmarksInBackground_name;"
-                description=""
-                type="bool" />
-          <pref key="browser.search.context.loadInBackground"
-                label="&browser_search_context_loadInBackground_name;"
-                description=""
-                type="bool" />
-        </group>
-        <group label="&misc;">
-          <pref key="browser.tabs.selectOwnerOnClose"
-                label="&browser_tabs_selectOwnerOnClose_name;"
-                description="&browser_tabs_selectOwnerOnClose_description;"
-                type="bool" />
-          <pref key="browser.tabs.insertRelatedAfterCurrent"
-                label="&browser_tabs_insertRelatedAfterCurrent_name;"
-                description="&browser_tabs_insertRelatedAfterCurrent_description;"
-                type="bool"
-                minVersion="3.6" />
-          <pref key="browser.search.openintab"
-                label="&browser_search_openintab_name;"
-                description="&browser_search_openintab_description;"
-                type="bool" />
-          <pref key="browser.tabs.closeWindowWithLastTab"
-                label="&browser_tabs_closeWindowWithLastTab_name;"
-                description="&browser_tabs_closeWindowWithLastTab_description;"
-                type="bool"
-                minVersion="3.5" />
-        </group>
-      </concern>
-    </concerns>
+    <group label="&tab_preview;" minVersion="3.6">
+      <pref key="browser.ctrlTab.previews"
+            label="&browser_ctrlTab_preview_name;"
+            description="&browser_ctrlTab_preview_description;"
+            type="bool" />
+      <pref key="browser.taskbar.previews.enable"
+            label="&browser_taskbar_previews_enable_name;"
+            description="&browser_taskbar_previews_enable_description;"
+            type="bool"
+            platform="WINNT" />
+    </group>
+    <group label="&open_in_background;">
+      <pref key="browser.tabs.loadInBackground"
+            label="&browser_tabs_loadInBackground_name;"
+            description=""
+            type="bool" />
+      <pref key="browser.tabs.loadDivertedInBackground"
+            label="&browser_tabs_loadDivertedInBackground_name;"
+            description=""
+            type="bool" />
+      <pref key="browser.tabs.loadBookmarksInBackground"
+            label="&browser_tabs_loadBookmarksInBackground_name;"
+            description=""
+            type="bool" />
+      <pref key="browser.search.context.loadInBackground"
+            label="&browser_search_context_loadInBackground_name;"
+            description=""
+            type="bool" />
+    </group>
+    <group label="&misc;">
+      <pref key="browser.tabs.animate"
+            label="&browser_tabs_animate_name;"
+            description="&browser_tabs_animate_description;"
+            type="bool"
+            minVersion="4.0b4" />
+      <pref key="browser.panorama.animate_zoom"
+            label="&browser_panorama_animate_zoom_name;"
+            description="&browser_panorama_animate_zoom_description;"
+            type="bool"
+            minVersion="4.0b4" />
+      <pref key="browser.tabs.closeButtons"
+            label="&browser_tabs_closeButtons_name;"
+            description="&browser_tabs_closeButtons_description;"
+            type="int"
+            mode="select"
+            minVersion="2.0"
+            maxVersion="30.*">
+        <option label="&browser_tabs_closeButtons_o1;">0</option>
+        <option label="&browser_tabs_closeButtons_o2;">1</option>
+        <option label="&browser_tabs_closeButtons_o3;">2</option>
+        <option label="&browser_tabs_closeButtons_o4;">3</option>
+      </pref>
+      <pref key="browser.tabs.tabClipWidth"
+            label="&browser_tabs_tabClipWidth_name;"
+            description="&browser_tabs_tabClipWidth_description;"
+            type="int"
+            minVersion="2.0"
+            maxVersion="30.*"
+            indent="indent">
+        <dependency key="browser.tabs.closeButtons" in="0, 1" />
+      </pref>
+      <pref key="browser.tabs.selectOwnerOnClose"
+            label="&browser_tabs_selectOwnerOnClose_name;"
+            description="&browser_tabs_selectOwnerOnClose_description;"
+            type="bool" />
+      <pref key="browser.tabs.insertRelatedAfterCurrent"
+            label="&browser_tabs_insertRelatedAfterCurrent_name;"
+            description="&browser_tabs_insertRelatedAfterCurrent_description;"
+            type="bool"
+            minVersion="3.6" />
+      <pref key="browser.search.openintab"
+            label="&browser_search_openintab_name;"
+            description="&browser_search_openintab_description;"
+            type="bool" />
+      <pref key="browser.tabs.closeWindowWithLastTab"
+            label="&browser_tabs_closeWindowWithLastTab_name;"
+            description="&browser_tabs_closeWindowWithLastTab_description;"
+            type="bool"
+            minVersion="3.5" />
+    </group>
   </category>
   <category label="&network;" icon="network">
     <group label="&connections;">

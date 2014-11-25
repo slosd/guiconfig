@@ -1,14 +1,14 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Accessibility">
 <!-- MOUSE BEHAVIOUR -->
+<!ENTITY input "Input">
 <!ENTITY mousebehaviour "Mouse behaviour">
 <!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousescrollnone "with no key">
-<!ENTITY mousescrollshift "with SHIFT key">
-<!ENTITY mousescrollstrg "with CTRL key">
-<!ENTITY mousescrollalt "with ALT key">
-<!ENTITY mousewheel_action_name "Action">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_default_action_name "Action with no key">
+<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
+<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
+<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
 <!ENTITY mousewheel_action_o1 "Scroll lines">
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
@@ -168,6 +168,8 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Recently visited pages are stored in memory and can be displayed faster when using Back and Forward. If set to -1 the number of pages is automatically determined. If set to 0 no pages are stored in memory. ">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Extensions">
+<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!ENTITY installation "Installation">
 <!ENTITY getaddons "&quot;Get Add-ons&quot; pane">
 <!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
 <!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
@@ -187,6 +189,8 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
 <!ENTITY browser_newtab_url_name "URL for new tabs">
 <!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- LIBRARY -->
+<!ENTITY library "Library">
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Bookmarks">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
@@ -199,6 +203,7 @@
 <!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
+<!ENTITY downloads "Downloads">
 <!ENTITY browser_download_animateNotifications_name "Animate download icon">
 <!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
@@ -209,6 +214,7 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Warn of executable">
 <!-- SECURITY -->
 <!ENTITY security_privacy "Security and Privacy">
+<!ENTITY plugins "Plugins">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
 <!ENTITY dom_ipc_plugins_enabled_name "Execute each plugin in an own process">
@@ -217,6 +223,8 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+<!-- CONTENT -->
+<!ENTITY content "Content">
 <!-- STYLE -->
 <!-- BROWSER -->
 <!ENTITY browser_style "Browser">
