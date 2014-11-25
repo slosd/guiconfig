@@ -193,6 +193,10 @@
 <!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
 <!ENTITY browser_bookmarks_max_backups_description "Determines the number of backups kept. Setting to 0 will disable backups.">
 <!ENTITY browser_bookmarks_max_backups_name "Bookmarks backups">
+<!-- HISTORY -->
+<!ENTITY history "History">
+<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
+<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
 <!ENTITY browser_download_animateNotifications_name "Animate download icon">

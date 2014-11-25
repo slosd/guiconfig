@@ -541,6 +541,14 @@
                 type="int"
                 minVersion="2*" />
         </group>
+        <group label="&history;">
+          <pref key="places.history.expiration.max_pages"
+                label="&places_history_expiration_max_pages_name;"
+                description="&places_history_expiration_max_pages_description;"
+                type="int"
+                default="-1"
+                minValue="-1" />
+        </group>
         <group label="&downloadmanager;">
           <pref key="browser.download.animateNotifications"
                 label="&browser_download_animateNotifications_name;"
