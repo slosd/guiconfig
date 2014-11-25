@@ -20,9 +20,9 @@
       <xsl:attribute name="onmouseover">guiconfig.preferences.setDescription('<xsl:value-of select="@description" />')</xsl:attribute>
       <xsl:attribute name="onmouseout">guiconfig.preferences.setDescription('')</xsl:attribute>
     </xsl:if>
-    <xsl:attribute name="data-minVersion"><xsl:value-of select="ancestor-or-self::*[@minVersion]/@minVersion" /></xsl:attribute>
-    <xsl:attribute name="data-maxVersion"><xsl:value-of select="ancestor-or-self::*[@maxVersion]/@maxVersion" /></xsl:attribute>
-    <xsl:attribute name="data-platform"><xsl:value-of select="ancestor-or-self::*[@platform]/@platform" /></xsl:attribute>
+    <xsl:attribute name="data-minVersion"><xsl:value-of select="ancestor-or-self::*[@minVersion][1]/@minVersion" /></xsl:attribute>
+    <xsl:attribute name="data-maxVersion"><xsl:value-of select="ancestor-or-self::*[@maxVersion][1]/@maxVersion" /></xsl:attribute>
+    <xsl:attribute name="data-platform"><xsl:value-of select="ancestor-or-self::*[@platform][1]/@platform" /></xsl:attribute>
     <label style="font-size: smaller">
       <xsl:attribute name="value">
         <xsl:for-each select="ancestor::*[@label]">
