@@ -524,6 +524,10 @@
                 minVersion="2*" />
         </group>
         <group label="&downloadmanager;">
+          <pref key="browser.download.animateNotifications"
+                label="&browser_download_animateNotifications_name;"
+                description="&browser_download_animateNotifications_description;"
+                type="bool" />
           <pref key="browser.download.manager.alertOnEXEOpen"
                 label="&browser_download_manager_alertOnEXEOpen_name;"
                 description="&browser_download_manager_alertOnEXEOpen_description;"

@@ -185,6 +185,8 @@
 <!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Downloadmanager">
+<!ENTITY browser_download_animateNotifications_name "Animate download icon">
+<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "Path to the last directory used for a download via 'Save As.'.">
