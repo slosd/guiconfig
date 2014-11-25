@@ -277,6 +277,28 @@
               type="int">
           <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
         </pref>
+        <pref key="browser.sessionstore.restore_on_demand"
+              label="&browser_sessionstore_restore_on_demand_name;"
+              description="&browser_sessionstore_restore_on_demand_description;"
+              type="bool">
+          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
+        </pref>
+        <pref key="browser.sessionstore.restore_pinned_tabs_on_demand"
+              label="&browser_sessionstore_restore_pinned_tabs_on_demand_name;"
+              description="&browser_sessionstore_restore_pinned_tabs_on_demand_description;"
+              type="bool"
+              indent="indent">
+          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
+          <dependency key="browser.sessionstore.restore_on_demand" equals="true" />
+        </pref>
+        <pref key="browser.sessionstore.restore_hidden_tabs"
+              label="&browser_sessionstore_restore_hidden_tabs_name;"
+              description="&browser_sessionstore_restore_hidden_tabs_description;"
+              type="bool"
+              indent="indent">
+          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
+          <dependency key="browser.sessionstore.restore_on_demand" equals="false" />
+        </pref>
         <pref key="browser.sessionstore.max_concurrent_tabs"
               label="&browser_sessionstore_max_concurrent_tabs_name;"
               description="&browser_sessionstore_max_concurrent_tabs_description;"
@@ -284,16 +306,6 @@
               minVersion="4.0b7"
               maxVersion="8.0a2"
               minValue="-1"><!-- check version -->
-          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
-        </pref>
-        <pref key="browser.sessionstore.privacy_level"
-              label="&browser_sessionstore_privacy_level_name;"
-              description="&browser_sessionstore_privacy_level_description;"
-              type="int"
-              mode="select">
-          <option label="&browser_sessionstore_privacy_level_o1;">0</option>
-          <option label="&browser_sessionstore_privacy_level_o2;">1</option>
-          <option label="&browser_sessionstore_privacy_level_o3;">2</option>
           <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
         </pref>
         <pref key="browser.sessionstore.resume_from_crash"
@@ -309,6 +321,16 @@
               indent="indent">
           <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
           <dependency key="browser.sessionstore.resume_from_crash" equals="true" />
+        </pref>
+        <pref key="browser.sessionstore.privacy_level"
+              label="&browser_sessionstore_privacy_level_name;"
+              description="&browser_sessionstore_privacy_level_description;"
+              type="int"
+              mode="select">
+          <option label="&browser_sessionstore_privacy_level_o1;">0</option>
+          <option label="&browser_sessionstore_privacy_level_o2;">1</option>
+          <option label="&browser_sessionstore_privacy_level_o3;">2</option>
+          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
         </pref>
       </concern>
       <concern label="&misc;">
