@@ -299,6 +299,16 @@
           <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
           <dependency key="browser.sessionstore.restore_on_demand" equals="false" />
         </pref>
+        <pref key="browser.sessionstore.max_serialize_back"
+              label="&browser_sessionstore_max_serialize_back_name;"
+              description="&browser_sessionstore_max_serialize_back_description;"
+              type="int"
+              minValue="-1" />
+        <pref key="browser.sessionstore.max_serialize_forward"
+              label="&browser_sessionstore_max_serialize_forward_name;"
+              description="&browser_sessionstore_max_serialize_forward_description;"
+              type="int"
+              minValue="-1" />
         <pref key="browser.sessionstore.max_concurrent_tabs"
               label="&browser_sessionstore_max_concurrent_tabs_name;"
               description="&browser_sessionstore_max_concurrent_tabs_description;"

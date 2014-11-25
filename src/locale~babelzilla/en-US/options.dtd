@@ -104,6 +104,10 @@
 <!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
 <!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
 <!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "Restore session after crash">
 <!ENTITY browser_sessionstore_resume_from_crash_description "Determines whether the tabs and windows should be restored after a crash.">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. crashes">
