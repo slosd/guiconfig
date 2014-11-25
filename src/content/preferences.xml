@@ -521,6 +521,10 @@
               description="&browser_urlbar_formatting_enabled_description;"
               type="bool"
               minVersion="6.0" />
+        <pref key="browser.urlbar.trimURLs"
+              label="&browser_urlbar_trimURLs_name;"
+              description="&browser_urlbar_trimURLs_description;"
+              type="bool" />
         <pref key="browser.chrome.favicons"
               label="&browser_chrome_favicons_name;"
               description="&browser_chrome_favicons_description;"

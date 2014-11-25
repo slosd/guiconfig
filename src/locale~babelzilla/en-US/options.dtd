@@ -196,6 +196,8 @@
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
 <!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
+<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
+<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_chrome_favicons_description "Determines whether to show Favicons or not.">
 <!ENTITY browser_chrome_favicons_name "Show Favicons">
 <!ENTITY browser_chrome_toolbar_tips_description "Determines tooltip behavior for chrome elements.">
