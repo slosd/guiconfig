@@ -1,11 +1,6 @@
 <!ENTITY accessibility "辅助功能">
 <!ENTITY mousebehaviour "鼠标动作">
 <!ENTITY mousescrollvertical "上下滚动鼠标">
-<!ENTITY mousescrollnone "但不按任何键">
-<!ENTITY mousescrollshift "并按下 SHIFT 键">
-<!ENTITY mousescrollstrg "并按下CTRL 键">
-<!ENTITY mousescrollalt "并按下 ALT 键">
-<!ENTITY mousewheel_action_name "动作">
 <!ENTITY mousewheel_action_description "选择按键并滚动鼠标时执行的动作">
 <!ENTITY mousewheel_action_o1 "以行数为单位滚动">
 <!ENTITY mousewheel_action_o2 "滚动页面">
@@ -145,6 +140,9 @@
 <!ENTITY extensions_getAddons_maxResults_name "最大查找结果">
 <!ENTITY extensions_getAddons_showPane_description "决定是否在“扩充软件管理”窗口中显示“获得扩充软件”面板">
 <!ENTITY extensions_getAddons_showPane_name "显示面板">
+<!ENTITY bookmarks "书签">
+<!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
+<!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
 <!ENTITY downloadmanager "下载管理器">
 <!ENTITY browser_download_manager_addToRecentDocs_description "指定是否添加下载的文件到开始菜单的&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_manager_addToRecentDocs_name "添加下载的文件到&quot;最近使用的文件&quot;中。">
@@ -226,9 +224,6 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "当关闭一个标签页时，自动切换到打开这个标签页的标签页。否则切换到其邻近的左侧或右侧的标签页。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "关闭最后一个标签同时关闭浏览器">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "如果选中，关闭最后一个关闭最后一个标签同时关闭浏览器。">
-<!ENTITY bookmarks "书签">
-<!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
-<!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
 <!ENTITY network "网络">
 <!ENTITY connections "连接">
 <!ENTITY network_http_max-connections_description "这个选项定义了Firefox可以同时打开的最大HTTP连接数。值域在1和65535之间。">
@@ -252,6 +247,8 @@
 <!ENTITY view_source_editor_path_name "编辑器路径：">
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
+<!ENTITY devtools_inspector_enabled_description "启用 &quot;Web 开发人员&quot;菜单下的 Inspector。（需要重启）">
+<!ENTITY devtools_inspector_enabled_name "启用 Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
 <!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
 <!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">

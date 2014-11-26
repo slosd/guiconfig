@@ -3,11 +3,6 @@
 <!-- MOUSE CLICK -->
 <!ENTITY mousebehaviour "Chování myši">
 <!ENTITY mousescrollvertical "Svislý posun">
-<!ENTITY mousescrollnone "bez klávesy">
-<!ENTITY mousescrollshift "s klávesou SHIFT">
-<!ENTITY mousescrollstrg "s klávesou CTRL">
-<!ENTITY mousescrollalt "s klávesou ALT">
-<!ENTITY mousewheel_action_name "Akce">
 <!ENTITY mousewheel_action_description "Zvolte, co by se mělo stát při posouvání se stisknutou klávesou">
 <!ENTITY mousewheel_action_o1 "Posunout o řádky">
 <!ENTITY mousewheel_action_o2 "Posunout o stránku">
@@ -158,6 +153,13 @@
 <!ENTITY extensions_getAddons_showPane_description "Určuje, zda zobrazovat v okně „Správce doplňků“ panel „Získat nová rozšíření“.">
 <!ENTITY extensions_getAddons_showPane_name "Zobrazit panel">
 <!-- SECURITY -->
+<!-- STYLE -->
+<!-- BROWSER -->
+<!ENTITY bookmarks "Záložky">
+<!ENTITY browser_bookmarks_max_backups_description "Určuje počet uchovávaných záloh. Nastavení na 0 zálohy vypne.">
+<!ENTITY browser_bookmarks_max_backups_name "Zálohy záložek">
+<!-- WEBSITES -->
+<!-- TEXT SELECT -->
 <!ENTITY downloadmanager "Správce stahování">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Určuje, zda se stažené soubory přidají do „Posledních dokumentů“ v nabídce Start">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Přidat stahování do „Posledních dokumentů“">
@@ -165,7 +167,7 @@
 <!ENTITY browser_download_lastDir_name "Poslední adresář pro stahování">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Varuje uživatele při pokusu o otevření spustitelného souboru ze Správce stahování.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varovat při spustitelných">
-<!-- STYLE -->
+<!-- TABS -->
 <!ENTITY security_privacy "Zabezpečení a soukromí">
 <!ENTITY security_dialog_enable_delay_description "Tato předvolba určuje dobu zdržení (v milisekundách) před tím, než bude možno při instalaci doplňku klepnout na tlačítko „Instalovat“. Pro vypnutí zdržení zadejte 0.">
 <!ENTITY security_dialog_enable_delay_name "Zdržení při instalaci doplňku (ms)">
@@ -175,8 +177,9 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Určuje dobu, po které bude proces s neodpovídajícím zásuvným modulem ukončen.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Časový limit pro spuštění zásuvného modulu (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Určuje dobu, po které se bude spuštění zásuvného modulu považovat za neúspěšné.">
-<!-- BROWSER -->
-<!-- WEBSITES -->
+<!-- APPEARANCE -->
+<!-- TAB PREVIEW -->
+<!-- OPEN IN BACKGROUND -->
 <!ENTITY browser_style "Prohlížeč">
 <!ENTITY browser_urlbar_formatting_enabled_name "Povolit formátování domény">
 <!ENTITY browser_urlbar_formatting_enabled_description "Určuje, zda se bude bude formátovat doména v adresním řádku.">
@@ -186,7 +189,7 @@
 <!ENTITY browser_chrome_toolbar_tips_name "Zobrazovat místní nápovědu">
 <!ENTITY browser_preferences_animateFadeIn_description "Při přepínání panelů v předvolbách se bude měnit výška okna a nový panel se bude pozvolna objevovat během přibližně sekundy.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animovat přepínání panelů předvoleb">
-<!-- TEXT SELECT -->
+<!-- MISC -->
 <!ENTITY websites "Stránky">
 <!ENTITY rendering "Vykreslování">
 <!ENTITY nglayout_initialpaint_delay_description "Tato předvolba stanovuje počet milisekund před prvním vykreslením stránky. S nižšími hodnotami se stránka zobrazí rychleji, ale bude trvat déle, než se vykreslování dokončí. Vyšší hodnoty budou mít opačný účinek.">
@@ -207,7 +210,7 @@
 <!ENTITY gfx_color_management_mode_o3 "obrázky s tagy ICC">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Stahovat fonty vložené do stránek">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Povolí stahování CSS3 fontů, které jsou vloženy pomocí @font-face. Vyžaduje restart.">
-<!-- TABS -->
+<!-- BOOKMARK -->
 <!ENTITY text_select "Vybraný text">
 <!ENTITY ui_textSelectBackgroundAttention_description "Určuje barvu pozadí použitou pro vyhledávání na stránce, a to pomocí šestnáctkového kódu nebo názvu barvy.">
 <!ENTITY ui_textSelectBackgroundAttention_name "Barva pozadí vyhledávání">
@@ -215,9 +218,9 @@
 <!ENTITY ui_textSelectBackground_name "Barva pozadí">
 <!ENTITY ui_textSelectForeground_description "Určuje barvu textu použitou při výběru textu, a to pomocí šestnáctkového kódu nebo názvu barvy. Pokud tato předvolba není nastavena, použije se výchozí hodnota operačního systému.">
 <!ENTITY ui_textSelectForeground_name "Barva textu">
-<!-- APPEARANCE -->
+<!-- MICROSUMMARIES -->
 <!ENTITY tabs "Panely">
-<!-- TAB PREVIEW -->
+<!-- MISC -->
 <!ENTITY appearance "Vzhled">
 <!ENTITY browser_panorama_animate_zoom_name "Animovat přiblížení Panorama">
 <!ENTITY browser_panorama_animate_zoom_description "Povolí animace při otevírání/zavírání zobrazení panelů zvaného Panorama (při CTRL-E).">
@@ -231,42 +234,36 @@
 <!ENTITY browser_tabs_closeButtons_o4 "na konci lišty panelů">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. šířka panelu pro tlačítko pro zavření">
 <!ENTITY browser_tabs_tabClipWidth_description "Určuje minimální šířku panelu nezbytnou pro zobrazení tlačítka pro zavření.">
-<!-- OPEN IN BACKGROUND -->
+<!-- NETWORK -->
 <!ENTITY tab_preview "Náhledy panelů">
 <!ENTITY browser_ctrlTab_preview_name "Povolit náhledy panelů při přepínání panelů">
 <!ENTITY browser_ctrlTab_preview_description "Náhledy panelů se budou zobrazovat při jejich přepínání pomocí [CTRL]+[Tab].">
 <!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
-<!-- MISC -->
+<!-- CONNECTIONS -->
 <!ENTITY open_in_background "Otevřít nový panel na pozadí">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Odkazy na externí aplikace">
 <!ENTITY browser_tabs_loadInBackground_name "Odkazy na stránky">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Záložky">
-<!-- BOOKMARK -->
+<!-- KEEP ALIVE -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Otevřít nový panel vedle stávajícího">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Určuje, zda se bude nový panel otevírat na konci lišty panelů, nebo vedle aktuálního panelu.">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "Při zavření panelu přepnout na panel, který ho otevřel">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "Pokus se panel zavírá, přepne na panel, který ho otevřel. Jinak přepne na přilehlý pravý nebo levý panel.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "S posledním panelem zavřít okno">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Je-li zaškrtnuto, při zavření posledního panelu v okně bude zavřeno celé okno. Poslední panel lze zavřít klepnutím prostředním tlačítkem nebo stisknutím [CTRL]+[W].">
-<!-- MICROSUMMARIES -->
-<!ENTITY bookmarks "Záložky">
-<!-- MISC -->
-<!-- NETWORK -->
-<!ENTITY browser_bookmarks_max_backups_description "Určuje počet uchovávaných záloh. Nastavení na 0 zálohy vypne.">
-<!ENTITY browser_bookmarks_max_backups_name "Zálohy záložek">
-<!-- CONNECTIONS -->
+<!-- PIPELINING -->
 <!ENTITY network "Síť">
-<!-- KEEP ALIVE -->
+<!-- DEVELOPMENT -->
 <!ENTITY connections "Spojení">
 <!ENTITY network_http_max-connections_description "Tato předvolba stanovuje celkový počet spojení, které může Firefox najednou mít. Tato hodnota musí být mezi 1 a 65535.">
 <!ENTITY network_http_max-connections_name "Max. HTTP spojení">
-<!-- PIPELINING -->
+<!-- VIEW SOURCE -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Tato předvolba stanovuje celkové množství udržujících spojení, které může Firfox najednou otevřít s jedním proxy serverem. Tato hodnota musí být mezi 1 a 255.">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Max. udržujících spojení na proxy server">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Tato předvolba stanovuje celkové množství udržujících spojení, které může Firefox najednou otevřít s jedním serverem. Tato hodnota musí být mezi 1 a 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Max. udržujících spojení na server">
-<!-- DEVELOPMENT -->
+<!-- MISC -->
 <!ENTITY pipelining "Proudové zpracování">
 <!ENTITY network_http_pipelining_description "Proudové zpracování snižuje zátěž sítě a může zkrátit dobu načítání stránky, ale mohou se objevit problémy se servery, které proudové zpracování nepodporují.">
 <!ENTITY network_http_pipelining_maxrequests_description "Pokud je proudové zpracování povoleno, tato předvolba stanovuje maximální počet požadavků, které budou najednou zpracovány.">
@@ -274,17 +271,17 @@
 <!ENTITY network_http_pipelining_name "Použít proudové zpracování">
 <!ENTITY network_http_proxy_pipelining_description "Tato předvolba stanovuje, zda se bude proudové zpracování používat s proxy servery. Proudové zpracování snižuje zátěž sítě a může zkrátit dobu načítání stránky, ale mohou se objevit problémy se servery, které proudové zpracování nepodporují.">
 <!ENTITY network_http_proxy_pipelining_name "Použít proudové zpracování s proxy servery">
-<!-- VIEW SOURCE -->
-<!ENTITY developing "Vývoj">
 <!-- MISC -->
+<!ENTITY developing "Vývoj">
 <!ENTITY viewsource "Zobrazení zdrojového kódu">
 <!ENTITY view_source_editor_external_description "Pro zobrazení zdrojového kódu se použije vlastní editor.">
 <!ENTITY view_source_editor_external_name "Použít vlastní editor">
 <!ENTITY view_source_editor_path_description "Cesta k vlastnímu editoru.">
 <!ENTITY view_source_editor_path_name "Cesta k editoru">
-<!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory formátu JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Vypnout vyrovnávací paměť XUL">
+<!ENTITY devtools_inspector_enabled_description "Povolí Inspektor v nabídce „Vývoj webu“. (Vyžaduje restart.)">
+<!ENTITY devtools_inspector_enabled_name "Povolit Inspektor">
 <!ENTITY browser_dom_window_dump_enabled_description "Povolí použití příkazu dump() vypisující do standardního výstupu.">
 <!ENTITY browser_dom_window_dump_enabled_name "Povolit dump()">
 <!ENTITY javascript_options_showInConsole_description "Určuje, zda se budou zaznamenávat chyby a varování chrome do konzole JavaScriptu.">

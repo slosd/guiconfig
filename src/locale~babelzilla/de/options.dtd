@@ -1,11 +1,6 @@
 <!ENTITY accessibility "Bedienung">
 <!ENTITY mousebehaviour "Mausverhalten">
 <!ENTITY mousescrollvertical "Vertikales Scrollen">
-<!ENTITY mousescrollnone "ohne Taste">
-<!ENTITY mousescrollshift "mit SHIFT Taste">
-<!ENTITY mousescrollstrg "mit STRG Taste">
-<!ENTITY mousescrollalt "mit ALT Taste">
-<!ENTITY mousewheel_action_name "Aktion">
 <!ENTITY mousewheel_action_description "Wählen Sie was beim Scrollen in Kombination mit dieser Taste geschehen soll.">
 <!ENTITY mousewheel_action_o1 "Zeile scrollen">
 <!ENTITY mousewheel_action_o2 "Seite scrollen">
@@ -145,6 +140,9 @@
 <!ENTITY extensions_getAddons_maxResults_name "Anzahl maximaler Suchergebnisse:">
 <!ENTITY extensions_getAddons_showPane_description "Zeigt die &quot;Add-ons herunterladen&quot; Schaltfläche im Firefox Add-on-Manager(&quot;Extras&quot; &gt; &quot;Add-ons&quot;) an.">
 <!ENTITY extensions_getAddons_showPane_name "Reiter anzeigen">
+<!ENTITY bookmarks "Lesezeichen">
+<!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
+<!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!ENTITY downloadmanager "Download-Manager">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Legt fest ob heruntergeladene Dateien in die Liste der zuletzt benutzten Dateien im Startmenü eingetragen werden.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Zu &quot;Verwendete Dateien&quot; hinzufügen">
@@ -226,9 +224,6 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "Wird ein Tab geschlossen wird zum Tab gewechselt, der den geschlossenen geöffnet hat. Ansonsten wird zum nächsten Tab rechts bzw. links davon gewechselt.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Letzter Tab eines Fensters schließbar">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Gibt an, ob der letzte Tab eines Browserfensters geschlossen werden kann.">
-<!ENTITY bookmarks "Lesezeichen">
-<!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
-<!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!ENTITY network "Netzwerk">
 <!ENTITY connections "Verbindungen">
 <!ENTITY network_http_max-connections_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen. Mögliche Werte: 1 bis 65535.">
@@ -252,6 +247,8 @@
 <!ENTITY view_source_editor_path_name "Pfad zum Editor:">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Veränderungen an Fenstern und Dialogen benötigen keinen Neustart.Funktioniert nicht mit JAR-gepackten Dateien.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deaktiviert XUL-Cache">
+<!ENTITY devtools_inspector_enabled_description "Aktiviert den Inspektor im &quot;Web Entwickler&quot; Menü. (Neustart erforderlich)">
+<!ENTITY devtools_inspector_enabled_name "Inspektor aktivieren">
 <!ENTITY browser_dom_window_dump_enabled_description "Aktiviert die Funktion dump(), mit der Daten auf die Standardkonsole ausgegeben werden können.">
 <!ENTITY browser_dom_window_dump_enabled_name "dump() aktivieren">
 <!ENTITY javascript_options_showInConsole_description "Zeigt Chrome-Fehler und Warnungen in der JavaScript-Konsole.">

@@ -89,6 +89,9 @@
 <!ENTITY extensions_getAddons_maxResults_name "Numero di risultati">
 <!ENTITY extensions_getAddons_showPane_description "Specifica se mostrare o meno il pannello Esplora nella finestra Componenti aggiuntivi">
 <!ENTITY extensions_getAddons_showPane_name "Mostra pannello">
+<!ENTITY bookmarks "Segnalibri">
+<!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">
+<!ENTITY browser_bookmarks_max_backups_name "Backup dei segnalibri">
 <!ENTITY downloadmanager "Gestione download">
 <!ENTITY browser_download_lastDir_description "Indica il percorso dell&apos;ultima cartella utilizzata per un download tramite &apos;Salva destinazione con nome..&apos;">
 <!ENTITY browser_download_lastDir_name "Ultima cartella di download">
@@ -124,9 +127,6 @@
 <!ENTITY browser_tabs_closeButtons_o3 "mai">
 <!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
-<!ENTITY bookmarks "Segnalibri">
-<!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">
-<!ENTITY browser_bookmarks_max_backups_name "Backup dei segnalibri">
 <!ENTITY network "Rete">
 <!ENTITY connections "Connessioni">
 <!ENTITY network_http_max-connections_description "Questa preferenza specifica il numero di connessioni totali che possono essere aperte da Firefox nello stesso momento. Il valore deve essere un intero tra 1 e 65535.">

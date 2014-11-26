@@ -67,6 +67,9 @@
 <!ENTITY browser_cache_memory_capacity_name "Memory cache (KB)">
 <!ENTITY browser_cache_memory_enable_description "Gebruik geheugen cache, tot bepaalde capaciteit.">
 <!ENTITY browser_cache_memory_enable_name "Gebruik geheugen cache">
+<!ENTITY bookmarks "Bladwijzers">
+<!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal back-ups bewaard. Instellen op 0 schakelt backups.">
+<!ENTITY browser_bookmarks_max_backups_name "back-ups">
 <!ENTITY downloadmanager "downloadmanager">
 <!ENTITY browser_download_lastDir_description "Pad naar de laatste directory voor een download gebruikt via 'Opslaan als..">
 <!ENTITY browser_download_lastDir_name "Last download directory">
@@ -97,9 +100,6 @@
 <!ENTITY browser_tabs_closeButtons_o3 "nooit">
 <!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
-<!ENTITY bookmarks "Bladwijzers">
-<!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal back-ups bewaard. Instellen op 0 schakelt backups.">
-<!ENTITY browser_bookmarks_max_backups_name "back-ups">
 <!ENTITY developing "Ontwikkeling">
 <!ENTITY viewsource "Bekijk Bron">
 <!ENTITY view_source_editor_external_description "Gebruik een aangepaste editor voor View Source.">

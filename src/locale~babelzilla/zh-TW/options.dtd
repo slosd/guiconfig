@@ -1,11 +1,6 @@
 <!ENTITY accessibility "近接方面">
 <!ENTITY mousebehaviour "滑鼠操作">
 <!ENTITY mousescrollvertical "滑鼠垂直捲動">
-<!ENTITY mousescrollnone "不附加任何鍵">
-<!ENTITY mousescrollshift "附加 SHIFT 鍵">
-<!ENTITY mousescrollstrg "附加 CTRL 鍵">
-<!ENTITY mousescrollalt "附加 ALT 鍵">
-<!ENTITY mousewheel_action_name "滾輪對應動作">
 <!ENTITY mousewheel_action_description "選擇搭配此按鍵進行捲動時的回應動作">
 <!ENTITY mousewheel_action_o1 "捲動頁面內行列">
 <!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
@@ -141,6 +136,9 @@
 <!ENTITY extensions_getAddons_maxResults_name "最大搜尋結果數目">
 <!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
 <!ENTITY extensions_getAddons_showPane_name "顯示側頁">
+<!ENTITY bookmarks "書籤">
+<!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
+<!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!ENTITY downloadmanager "下載管理員">
 <!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
@@ -218,9 +216,6 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "關閉一分頁時，切回當初開啟它的分頁。若無親分頁，則切換到右鄰或左鄰分頁。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
-<!ENTITY bookmarks "書籤">
-<!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
-<!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!ENTITY network "網路">
 <!ENTITY connections "連線">
 <!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">

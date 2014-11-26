@@ -1,11 +1,6 @@
 <!ENTITY accessibility "Dostępność">
 <!ENTITY mousebehaviour "Zachowanie myszy">
 <!ENTITY mousescrollvertical "Przewijanie w pionie">
-<!ENTITY mousescrollnone "Bez wciskania klawiszy">
-<!ENTITY mousescrollshift "Z klawiszem Shift">
-<!ENTITY mousescrollstrg "Z klawiszem Ctrl">
-<!ENTITY mousescrollalt "Z klawiszem Alt">
-<!ENTITY mousewheel_action_name "Działanie">
 <!ENTITY mousewheel_action_description "Wybierz, co się stanie, jeśli przewiniesz kółkiem myszy, trzymając wciśnięty ten klawisz">
 <!ENTITY mousewheel_action_o1 "Przewiń o pewną liczbę linii">
 <!ENTITY mousewheel_action_o2 "Przewiń o pewną liczbę stron">
@@ -143,6 +138,9 @@
 <!ENTITY extensions_getAddons_maxResults_name "Maksymalna liczba wyników wyszukiwania">
 <!ENTITY extensions_getAddons_showPane_description "Określa, czy w oknie &quot;Dodatki&quot; wyświetlany ma być panel &quot;Pobierz rozszerzenia&quot;.">
 <!ENTITY extensions_getAddons_showPane_name "Wyświetlaj panel">
+<!ENTITY bookmarks "Subskrypcje">
+<!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
+<!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
 <!ENTITY downloadmanager "Menedżer pobierania plików">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Określa, czy pobrane pliki mają być dodawane do menu &quot;Ostatnie dokumenty&quot; menu Start.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Dodawaj pobrane pliki do menu &quot;Ostatnie dokumenty&quot;">
@@ -222,9 +220,6 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "Przy zamykaniu karty przełącza do karty, z której zamykana zostala otwarta. Jeśli opcja ta nie zostanie włączona, włączona zostanie karta znajdująca się po prawej lub po lewej od aktywnej.">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Zamknij okno po zamknięciu ostatniej karty">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Jeśli zaznaczone, otwarte okno zostanie zamknięte, gdy zamkniesz ostatnią kartę w tym oknie.">
-<!ENTITY bookmarks "Subskrypcje">
-<!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
-<!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
 <!ENTITY network "Sieć">
 <!ENTITY connections "Połączenia">
 <!ENTITY network_http_max-connections_description "To ustawienie określa maksymalną liczbę jednoczesnych połączeń, które Firefox może utworzyć. Ta wartość musi być z zakresu od 1 do 65535.">
@@ -248,6 +243,8 @@
 <!ENTITY view_source_editor_path_name "Ścieżka do edytora">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
+<!ENTITY devtools_inspector_enabled_description "Włącza inspektora w menu &quot;Programista WWW&quot; (wymaga ponownego uruchomienia Firefoksa).">
+<!ENTITY devtools_inspector_enabled_name "Włącz inspektora">
 <!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
 <!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
 <!ENTITY javascript_options_showInConsole_description "Określa, czy błędy i ostrzeżenia od chrome'a mają być wyświetlane w konsoli JavaScriptu.">

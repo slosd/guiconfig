@@ -1,10 +1,6 @@
 <!ENTITY accessibility "Доступність">
 <!ENTITY mousebehaviour "Поведінка миші">
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
-<!ENTITY mousescrollnone "без клавіш">
-<!ENTITY mousescrollshift "з клавішею SHIFT">
-<!ENTITY mousescrollstrg "з клавішею CTRL">
-<!ENTITY mousescrollalt "з клавішею ALT">
 <!ENTITY mouseclick "Клацання мишкою">
 <!ENTITY middleclick "Середня клавіша">
 <!ENTITY middlemouse_paste_name "Вставити текст з буферу обміну">
@@ -25,6 +21,6 @@
 <!ENTITY browser_cache_memory_capacity_name "Кеш у пам&apos;яті (Кб)">
 <!ENTITY browser_cache_memory_enable_description "Використовувати кеш у пам&apos;яті до вказаної межі.">
 <!ENTITY browser_cache_memory_enable_name "Використовувати кеш у пам&apos;яті">
+<!ENTITY browser_bookmarks_max_backups_name "Архіви закладок">
 <!ENTITY browser_chrome_favicons_description "Виначати, показувати Favicons чи ні">
 <!ENTITY browser_chrome_favicons_name "Показувати Favicons">
-<!ENTITY browser_bookmarks_max_backups_name "Архіви закладок">
