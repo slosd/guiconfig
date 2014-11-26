@@ -1,14 +1,14 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "近接方面">
 <!-- MOUSE BEHAVIOUR -->
+<!ENTITY input "Input">
 <!ENTITY mousebehaviour "滑鼠操作">
 <!ENTITY mousescrollvertical "滑鼠垂直捲動">
-<!ENTITY mousescrollnone "不附加任何鍵">
-<!ENTITY mousescrollshift "附加 SHIFT 鍵">
-<!ENTITY mousescrollstrg "附加 CTRL 鍵">
-<!ENTITY mousescrollalt "附加 ALT 鍵">
-<!ENTITY mousewheel_action_name "滾輪對應動作">
 <!ENTITY mousewheel_action_description "選擇搭配此按鍵進行捲動時的回應動作">
+<!ENTITY mousewheel_default_action_name "Action with no key">
+<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
+<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
+<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
 <!ENTITY mousewheel_action_o1 "捲動頁面內行列">
 <!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
 <!ENTITY mousewheel_action_o3 "切換瀏覽紀錄之前頁後頁">
@@ -68,6 +68,7 @@
 <!ENTITY accessibility_typeaheadfind_label "隨打即找">
 <!ENTITY accessibility_typeaheadfind_timeout_description "打字時隨即尋找">
 <!ENTITY accessibility_typeaheadfind_timeout_name "逾時(毫秒/千分秒)">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
 <!ENTITY signon_prefillForms_description "自動填妥各種&quot;登入&quot;表格欄中的使用者名稱以及密碼。">
 <!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
 <!ENTITY accessibility_tabfocus_description "此選項決定哪些元件可以用按Tab鍵來聚焦">
@@ -97,6 +98,16 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "顯示於「歷史」「最近關閉分頁」選單中的最大分頁數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
 <!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
+<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "FF當掉後還原頁組">
 <!ENTITY browser_sessionstore_resume_from_crash_description "決定FF當掉後是否要還原諸視窗及其頁組">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "最大當掉次數">
@@ -110,41 +121,29 @@
 <!ENTITY misc "雜項">
 <!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
 <!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
-<!ENTITY browser_popups_showPopupBlocker_description "決定是否在狀態列顯示有無阻擋彈跳視窗的圖示">
-<!ENTITY browser_popups_showPopupBlocker_name "在狀態列顯示圖示">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
 <!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
 <!ENTITY browser_preferences_instantApply_name "立刻生效">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "每次按下(F7)鍵，都顯示對話視窗提醒使用者將要進入鍵盤按鍵瀏覽模式">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "進入鍵盤按鍵瀏覽模式時顯示對話視窗">
 <!ENTITY accessibility_accesskeycausesactivation_description "對元件使用近接鍵，其作用方式與啟動該元件相同。元件如果是鏈結，就開啟該鏈結；元件如果是按鈕，就點選該按鈕。">
 <!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
 <!-- BROWSER -->
 <!ENTITY browser "瀏覽器">
 <!-- WEBSITES -->
+<!ENTITY browser_zoom "Browser zoom">
+<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
+<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
+<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
+<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
-<!ENTITY gfx_3d_video_enabled_name "啟用3D影音">
-<!ENTITY gfx_3d_video_enabled_description "對3D影音啟用立體視覺效果">
-<!ENTITY mozilla_widget_render_mode_name "啟用 Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "對頁面加工啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
 <!-- ALERTS -->
-<!ENTITY alerts "警示視窗">
-<!ENTITY update_showSlidingNotification_description "有更新檔時，在瀏覽器顯示一份通知。">
-<!ENTITY update_showSlidingNotification_name "顯示更新通知">
-<!ENTITY alerts_slideIncrementTime_description "控制各警示視窗滑出/入或淡出/入動作期間毫秒數。">
-<!ENTITY alerts_slideIncrementTime_name "移動為時(毫秒)">
-<!ENTITY alerts_slideIncrement_description "此設定控制出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的速度。特別是以每一增距移動多少像素來控制。">
-<!ENTITY alerts_slideIncrement_name "每一增距移動多少像素(以像素為單位)">
-<!ENTITY alerts_totalOpenTime_description "此設定控制以毫秒為單位、出現在右下角、樣式如&quot;下載完成&quot;之類警示視窗的時間長度。">
-<!ENTITY alerts_totalOpenTime_name "警示週期(毫秒)">
-<!ENTITY browser_download_manager_showAlertInterval_description "下載完成後經過多少千分之一秒再顯示&quot;完成&quot;警示。">
-<!ENTITY browser_download_manager_showAlertInterval_name "警示延時 (毫秒)">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "下載完所有項目後，在螢幕右下角顯示彈跳視窗。">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "下載完成後以彈跳視窗警示">
 <!-- CACHE -->
 <!ENTITY cache "瀏覽器的快取記憶區">
 <!ENTITY cache_disk "硬碟快取記憶區">
@@ -169,6 +168,8 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近瀏覽過的網頁係儲存在記憶體中，這樣在用到「前一頁」「後一頁」時，可以顯示得快些。若設為-1，則頁數為自動決定；若設0就完全不予保留。">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "附加元件">
+<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!ENTITY installation "Installation">
 <!ENTITY getaddons "&quot;取得元件&quot;側頁">
 <!ENTITY extensions_alwaysUnpack_name "附加元件一律予以解壓縮">
 <!ENTITY extensions_alwaysUnpack_description "啟用時, 附加元件安裝過程中一律予以解壓縮到 profile資料夾.">
@@ -178,48 +179,59 @@
 <!ENTITY extensions_getAddons_maxResults_name "最大搜尋結果數目">
 <!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
 <!ENTITY extensions_getAddons_showPane_name "顯示側頁">
+<!-- NEW TAB PAGE -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- LIBRARY -->
+<!ENTITY library "Library">
+<!-- BOOKMARK -->
+<!ENTITY bookmarks "書籤">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
+<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
+<!ENTITY browser_bookmarks_max_backups_name "書籤備份">
+<!-- HISTORY -->
+<!ENTITY history "History">
+<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
+<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "下載管理員">
-<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
-<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Animate download icon">
+<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "當使用者要從下載管理員開啟的項目是執行檔時，予以警示">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
-<!ENTITY browser_download_manager_focusWhenStarting_description "開始一項下載時，將下載管理員視窗設為啟動">
-<!ENTITY browser_download_manager_focusWhenStarting_name "開始下載時啟動下載管理員視窗">
 <!-- SECURITY -->
 <!ENTITY security_privacy "安全性及隱私">
+<!ENTITY plugins "Plugins">
 <!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
-<!ENTITY master_pass "主控密碼">
-<!ENTITY security_ask_for_password_description "此設定決定隔多久會要求您輸入主控密碼。">
-<!ENTITY security_ask_for_password_o1 "需要密碼處，每次都要求輸入">
-<!ENTITY security_ask_for_password_o2 "需要密碼處，只有第一次要求輸入">
-<!ENTITY security_ask_for_password_o3 "需要密碼處，每隔一段時間就要求輸入">
-<!ENTITY security_password_lifetime_name "密碼效期(分鐘)">
-<!ENTITY security_password_lifetime_description "設定分鐘數，過期則提示你要求輸入主控密碼">
 <!ENTITY dom_ipc_plugins_enabled_name "以各別行程執行各外掛程式">
 <!ENTITY dom_ipc_plugins_enabled_description "若外掛程式(例如 Flash)當掉時，不會使FF一起跟著掛掉。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "外掛程式停止回應時限(秒)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "決定外掛程式行程經過多久沒回應就砍掉它。">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "外掛程式啟動逾時(秒)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "決定若經過多久，外掛程式仍未能完成啟動，則判定為失敗。">
+<!-- CONTENT -->
+<!ENTITY content "Content">
 <!-- STYLE -->
 <!-- BROWSER -->
 <!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
 <!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
-<!ENTITY browser_identity_ssl_domain_display_name "SSL網域強調顯示">
-<!ENTITY browser_identity_ssl_domain_display_description "當網站使用SSL對其通訊加密時，使用者可以在UI中選擇對其URL的一部份予以強調顯示。此選項設定地址欄內是否不要顯示網域、顯示次階網域(例如: mozilla.org)或顯示完全網域(例如: bugzilla.mozilla.org)">
-<!ENTITY browser_identity_ssl_domain_display_o1 "不要顯示網域">
-<!ENTITY browser_identity_ssl_domain_display_o2 "顯示次階網域">
-<!ENTITY browser_identity_ssl_domain_display_o3 "顯示完全網域">
+<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
+<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_chrome_favicons_description "決定是否顯示小圖示">
 <!ENTITY browser_chrome_favicons_name "顯示小圖示">
 <!ENTITY browser_chrome_toolbar_tips_description "決定是否對chrome元件顯示用法提示">
@@ -233,15 +245,9 @@
 <!ENTITY nglayout_initialpaint_delay_name "顯示頁面延時(毫秒;千分之一秒)">
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
 <!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
-<!ENTITY browser_blink_allowed_description "允許使用閃爍標籤或 CSS 的文字裝飾來使元件呈現閃爍的效果。">
-<!ENTITY browser_blink_allowed_name "啟用文字閃爍">
-<!ENTITY browser_frames_enabled_description "顯示 HTML 頁框">
-<!ENTITY browser_frames_enabled_name "允許使用頁框">
-<!ENTITY layout_frames_force_resizability_description "強制頁框大小變成可調整">
-<!ENTITY layout_frames_force_resizability_name "強制成可調整大小">
+<!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
-<!ENTITY html5_enable_name "啟用 HTML5剖析常式">
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
 <!ENTITY images "圖片">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
@@ -251,6 +257,11 @@
 <!ENTITY gfx_color_management_mode_o1 "無圖片">
 <!ENTITY gfx_color_management_mode_o2 "所有圖片">
 <!ENTITY gfx_color_management_mode_o3 "僅限有ICC標籤的圖片">
+<!ENTITY image_animation_mode_name "Animated images">
+<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
+<!ENTITY image_animation_mode_o1 "Loop indefinitely">
+<!ENTITY image_animation_mode_o2 "Run animation once">
+<!ENTITY image_animation_mode_o3 "Never run the animation">
 <!ENTITY gfx_downloadable_fonts_enabled_name "下載網頁內嵌的字型">
 <!ENTITY gfx_downloadable_fonts_enabled_description "啟用以@font-face內嵌的CSS3字型下載。需要重新啟動FF才能生效。">
 <!-- TEXT SELECT -->
@@ -279,8 +290,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
 <!-- TAB PREVIEW -->
 <!ENTITY tab_preview "分頁預覽">
-<!ENTITY browser_allTabs_preview_name "啟用「分頁預覽」">
-<!ENTITY browser_allTabs_preview_description "此項於頁籤欄右端新增一按鈕，點按後會顯示一分頁預覽。">
 <!ENTITY browser_ctrlTab_preview_name "切換分頁時，啟用分頁預覽">
 <!ENTITY browser_ctrlTab_preview_description "當使用 [CTRL]+[Tab] 切換分頁時，顯示分頁預覽">
 <!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
@@ -290,6 +299,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "外部應用程式中的鏈結">
 <!ENTITY browser_tabs_loadInBackground_name "網頁中的鏈結">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
 <!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "緊貼當前分頁開新分頁">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "決定新分頁開啟於頁籤欄末端或是目前所選分頁旁邊。">
@@ -297,26 +307,13 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "關閉一分頁時，切回當初開啟它的分頁。若無親分頁，則切換到右鄰或左鄰分頁。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">
-<!-- BOOKMARK -->
-<!ENTITY bookmarks "書籤">
-<!-- MICROSUMMARIES -->
-<!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "各次檢查即時書籤的間隔秒數，60以下的值一律視同60;">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "更新時距(秒)">
-<!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
-<!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!-- NETWORK -->
 <!ENTITY network "網路">
 <!-- CONNECTIONS -->
 <!ENTITY connections "連線">
-<!ENTITY network_http_max-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大連線總數。其值須介於 1 與 225之間。">
-<!ENTITY network_http_max-connections-per-server_name "每一伺服主機最大HTTP連線數">
 <!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">
 <!ENTITY network_http_max-connections_name "最大HTTP連線數">
 <!-- KEEP ALIVE -->
-<!ENTITY keep-alive_connections "不下線連線">
-<!ENTITY network_http_keep-alive_description "HTTP的不下線連線可以重覆使用於多重請求而增進其效能。">
-<!ENTITY network_http_keep-alive_name "使用不下線連線">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "此選項指定Firefox對單一代理伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "每一代理伺服主機最大不下線連線數">
 <!ENTITY network_http_max-persistent-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
@@ -340,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "對視窗本身和對話視窗的變更設定不需重新啟動 Firefox。(此選項對於以 JAR 方式封裝的檔案無效)。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
-<!ENTITY devtools_inspector_enabled_description "Enables the Inspector in the &quot;Web Developer&quot; menu. (Requires restart)">
-<!ENTITY devtools_inspector_enabled_name "Enable Inspector">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "啟用以 dump() 指令來印出到標準主控台。">
 <!ENTITY browser_dom_window_dump_enabled_name "啟用 dump()">
 <!ENTITY javascript_options_showInConsole_description "決定是否要在 JavaScript 主控台記錄 chrome 的各項錯誤和警告。">

@@ -1,14 +1,14 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "辅助功能">
 <!-- MOUSE BEHAVIOUR -->
+<!ENTITY input "Input">
 <!ENTITY mousebehaviour "鼠标动作">
 <!ENTITY mousescrollvertical "上下滚动鼠标">
-<!ENTITY mousescrollnone "但不按任何键">
-<!ENTITY mousescrollshift "并按下 SHIFT 键">
-<!ENTITY mousescrollstrg "并按下CTRL 键">
-<!ENTITY mousescrollalt "并按下 ALT 键">
-<!ENTITY mousewheel_action_name "动作">
 <!ENTITY mousewheel_action_description "选择按键并滚动鼠标时执行的动作">
+<!ENTITY mousewheel_default_action_name "Action with no key">
+<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
+<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
+<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
 <!ENTITY mousewheel_action_o1 "以行数为单位滚动">
 <!ENTITY mousewheel_action_o2 "滚动页面">
 <!ENTITY mousewheel_action_o3 "在历史记录页面中前进/回退">
@@ -68,6 +68,7 @@
 <!ENTITY accessibility_typeaheadfind_label "输入时搜索">
 <!ENTITY accessibility_typeaheadfind_timeout_description "定义当多久没有键盘输入时，搜索栏隐藏。">
 <!ENTITY accessibility_typeaheadfind_timeout_name "超时（毫秒）">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
 <!ENTITY signon_prefillForms_description "自动填充用户名和密码。">
 <!ENTITY signon_prefillForms_name "自动填充登录表元素">
 <!ENTITY accessibility_tabfocus_description "该项用于指定按 Tab 键时所要定位到的元素。">
@@ -97,6 +98,16 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
 <!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
+<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "崩溃后恢复浏览会话">
 <!ENTITY browser_sessionstore_resume_from_crash_description "指定浏览器崩溃后是否恢复之前打开的标签页和窗口。">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "可发生的最大崩溃数">
@@ -110,41 +121,29 @@
 <!ENTITY misc "其他">
 <!ENTITY browser_search_openintab_description "在搜索栏进行搜索时，搜索结果显示在新标签页中。">
 <!ENTITY browser_search_openintab_name "在新标签页中打开搜索结果">
-<!ENTITY browser_popups_showPopupBlocker_description "是否在拦截弹出窗口时在状态栏显示图标。">
-<!ENTITY browser_popups_showPopupBlocker_name "在状态栏显示图标">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
 <!ENTITY browser_preferences_instantApply_description "设定更改时立即生效。与常见选项窗口同时显示“确定”和“取消”按钮不同的是，此时只显示一个“关闭”按钮。">
 <!ENTITY browser_preferences_instantApply_name "立即生效">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "每次按下 F7 时显示是否进入光标浏览模式的对话框。">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "在进入光标浏览模式时弹出对话框">
 <!ENTITY accessibility_accesskeycausesactivation_description "使用快捷键激活元素，例如点击链接和按钮。">
 <!ENTITY accessibility_accesskeycausesactivation_name "通过快捷键激活元素">
 <!-- BROWSER -->
 <!ENTITY browser "浏览器">
 <!-- WEBSITES -->
+<!ENTITY browser_zoom "Browser zoom">
+<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
+<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
+<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
+<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
 <!ENTITY dom_max_script_run_time_description "指定在多少秒之后 Firefox 提示您当前某个脚本运行时间太长。">
 <!ENTITY dom_max_script_run_time_name "脚本可执行的最长时间（秒）">
-<!ENTITY gfx_3d_video_enabled_name "启用 3D 视频">
-<!ENTITY gfx_3d_video_enabled_description "启用 3D 视频的立体渲染功能。">
-<!ENTITY mozilla_widget_render_mode_name "启用 Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "启用硬件加速渲染网页。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "启用 DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "启用硬件加速显示文本。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">
 <!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">
 <!-- ALERTS -->
-<!ENTITY alerts "提示">
-<!ENTITY update_showSlidingNotification_description "当有可用的更新时显示更新通知。">
-<!ENTITY update_showSlidingNotification_name "显示更新通知">
-<!ENTITY alerts_slideIncrementTime_description "控制提示窗口滑动或淡入淡出显示的时间长短（单位：毫秒）。">
-<!ENTITY alerts_slideIncrementTime_name "移动持续期间（毫秒）">
-<!ENTITY alerts_slideIncrement_description "该选项用于控制浏览器右下角“下载完成”之类的提示窗口弹出的速度（以每次上升所移动的像素值表示）。">
-<!ENTITY alerts_slideIncrement_name "每次上升所移动的像素值(px)">
-<!ENTITY alerts_totalOpenTime_description "控制在右下角弹出的“下载完成”之类的提示窗口的时间长短（单位：毫秒）。">
-<!ENTITY alerts_totalOpenTime_name "提示时间（毫秒）">
-<!ENTITY browser_download_manager_showAlertInterval_description "下载完成后，显示完成的间隔时间（毫秒）。">
-<!ENTITY browser_download_manager_showAlertInterval_name "提示延迟（毫秒）">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "所有下载完成后在右下角显示弹出窗口。">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "下载后弹出提示窗口">
 <!-- CACHE -->
 <!ENTITY cache "浏览器缓存">
 <!ENTITY cache_disk "磁盘缓存">
@@ -169,6 +168,8 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近访问过的页面可以保存在内存中并在点击前进/后退按钮时加快显示。如果该值设为 -1 则使用自动设定的页面数，如果设置为 0 则页面不保存到内存中。">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "扩展">
+<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!ENTITY installation "Installation">
 <!ENTITY getaddons "“获取附加组件”面板">
 <!ENTITY extensions_alwaysUnpack_name "总是解压缩显示扩展">
 <!ENTITY extensions_alwaysUnpack_description "如果启用该项，则扩展在安装时将解压缩到您的配置文件夹。">
@@ -178,48 +179,59 @@
 <!ENTITY extensions_getAddons_maxResults_name "最大查找结果">
 <!ENTITY extensions_getAddons_showPane_description "决定是否在“扩充软件管理”窗口中显示“获得扩充软件”面板">
 <!ENTITY extensions_getAddons_showPane_name "显示面板">
+<!-- NEW TAB PAGE -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- LIBRARY -->
+<!ENTITY library "Library">
+<!-- BOOKMARK -->
+<!ENTITY bookmarks "书签">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
+<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
+<!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
+<!-- HISTORY -->
+<!ENTITY history "History">
+<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
+<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "下载管理器">
-<!ENTITY browser_download_manager_quitBehavior_description "指定 Firefox 退出时对于正在下载项目的处理方式。">
-<!ENTITY browser_download_manager_quitBehavior_name "执行方式">
-<!ENTITY browser_download_manager_quitBehavior_o1 "暂停下载并在下次下载时自动恢复">
-<!ENTITY browser_download_manager_quitBehavior_o2 "暂停正在下载的项目">
-<!ENTITY browser_download_manager_quitBehavior_o3 "取消正在下载的项目">
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Animate download icon">
+<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
 <!ENTITY browser_download_manager_addToRecentDocs_description "指定是否添加下载的文件到开始菜单的&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_manager_addToRecentDocs_name "添加下载的文件到&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
 <!ENTITY browser_download_lastDir_name "上一次保存目录">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "用户试图从下载管理器打开可执行文件时弹出警告。">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "打开可执行文件时警告">
-<!ENTITY browser_download_manager_focusWhenStarting_description "下载开始时显示下载窗口。">
-<!ENTITY browser_download_manager_focusWhenStarting_name "下载开始时显示下载窗口">
 <!-- SECURITY -->
 <!ENTITY security_privacy "安全和隐私">
+<!ENTITY plugins "Plugins">
 <!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
-<!ENTITY master_pass "主密码">
-<!ENTITY security_ask_for_password_description "该选项指定何时要求您输入主密码。">
-<!ENTITY security_ask_for_password_o1 "每次需要的时候提示输入">
-<!ENTITY security_ask_for_password_o2 "首次需要的时候提示输入">
-<!ENTITY security_ask_for_password_o3 "特定一段时间后提示输入">
-<!ENTITY security_password_lifetime_name "时间长度（分钟）">
-<!ENTITY security_password_lifetime_description "多少分钟后提示输入主密码。">
 <!ENTITY dom_ipc_plugins_enabled_name "以独立进程运行每个插件">
 <!ENTITY dom_ipc_plugins_enabled_description "若诸如 Flash 等插件崩溃将不会导致 Firefox 同时崩溃。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "插件无响应时长（秒）">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "指定插件无响应时长超过规定时限后自动结束其进程。">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "插件启动的超时时间（秒）">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "指定插件崩溃后允许插件重新启动的时间段。">
+<!-- CONTENT -->
+<!ENTITY content "Content">
 <!-- STYLE -->
 <!-- BROWSER -->
 <!ENTITY browser_style "浏览器样式">
 <!ENTITY browser_urlbar_formatting_enabled_name "启用域名格式化">
 <!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
-<!ENTITY browser_identity_ssl_domain_display_name "高亮使用SSL的域名">
-<!ENTITY browser_identity_ssl_domain_display_description "这个选项可以控制当访问用SSL加密的网站时，如何高亮调域名。例如访问bugzilla.mozilla.org时：二级高亮显示mozilla.org；完全高亮显示bugzilla.mozilla.org">
-<!ENTITY browser_identity_ssl_domain_display_o1 "不高亮">
-<!ENTITY browser_identity_ssl_domain_display_o2 "二级高亮">
-<!ENTITY browser_identity_ssl_domain_display_o3 "完全高亮">
+<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
+<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_chrome_favicons_description "是否显示网站小图标。">
 <!ENTITY browser_chrome_favicons_name "显示网站小图标">
 <!ENTITY browser_chrome_toolbar_tips_description "是否显示 chrome 元素的工具提示。">
@@ -233,15 +245,9 @@
 <!ENTITY nglayout_initialpaint_delay_name "显示一页后延迟(毫秒 ms )">
 <!ENTITY content_notify_interval_description "Firefox定期渲染从特定网站收到的全部数据，这个值决定了每次渲染的最小时间片，较低的数值会在观感上加快渲染速度，但是会拖慢整体渲染速度。（微秒 µs 10e-6）">
 <!ENTITY content_notify_interval_name "重画页面前等待（微秒 µs）">
-<!ENTITY browser_blink_allowed_description "允许使用blink 标签或者 CSS 的 text-decoration: blink 来使文字闪烁。">
-<!ENTITY browser_blink_allowed_name "允许文字闪烁">
-<!ENTITY browser_frames_enabled_description "显示 HTML 框架。">
-<!ENTITY browser_frames_enabled_name "允许框架">
-<!ENTITY layout_frames_force_resizability_description "强制网页框架可改变大小。">
-<!ENTITY layout_frames_force_resizability_name "强制可改变大小">
+<!ENTITY layout_frames_force_resizability_name "强制网页框架可改变大小">
 <!ENTITY browser_display_show_image_placeholders_description "图片载入时显示占位符。">
 <!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
-<!ENTITY html5_enable_name "启用 HTML5 解析器">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
 <!ENTITY images "图片">
 <!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">
@@ -251,6 +257,11 @@
 <!ENTITY gfx_color_management_mode_o1 "任何图片都不">
 <!ENTITY gfx_color_management_mode_o2 "全部图片">
 <!ENTITY gfx_color_management_mode_o3 "带有 ICC标签的图片">
+<!ENTITY image_animation_mode_name "Animated images">
+<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
+<!ENTITY image_animation_mode_o1 "Loop indefinitely">
+<!ENTITY image_animation_mode_o2 "Run animation once">
+<!ENTITY image_animation_mode_o3 "Never run the animation">
 <!ENTITY gfx_downloadable_fonts_enabled_name "下载网站内嵌的字体">
 <!ENTITY gfx_downloadable_fonts_enabled_description "允许下载使用 @font-face 属性内嵌到网站的 CSS3 字体。启用该功能需要重启浏览器。">
 <!-- TEXT SELECT -->
@@ -279,8 +290,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "指定可以显示关闭按钮的最小标签页宽度。">
 <!-- TAB PREVIEW -->
 <!ENTITY tab_preview "标签页预览">
-<!ENTITY browser_allTabs_preview_name "启用标签页预览">
-<!ENTITY browser_allTabs_preview_description "在标签栏右侧添加一个按钮，点击该按钮将显示标签页预览图。">
 <!ENTITY browser_ctrlTab_preview_name "启用标签页切换预览">
 <!ENTITY browser_ctrlTab_preview_description "当使用 [CTRL]+[Tab] 键切换标签页时显示预览图。">
 <!ENTITY browser_taskbar_previews_enable_name "启用 Windows 7 任务栏预览">
@@ -290,6 +299,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "外部应用程序中的链接">
 <!ENTITY browser_tabs_loadInBackground_name "网站的链接">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
 <!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "在紧邻当前标签页打开新标签页">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "指定是在标签栏最右侧还是在当前标签页旁打开新标签页。">
@@ -297,26 +307,13 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "当关闭一个标签页时，自动切换到打开这个标签页的标签页。否则切换到其邻近的左侧或右侧的标签页。">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "关闭最后一个标签同时关闭浏览器">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "如果选中，关闭最后一个关闭最后一个标签同时关闭浏览器。">
-<!-- BOOKMARK -->
-<!ENTITY bookmarks "书签">
-<!-- MICROSUMMARIES -->
-<!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "实时书签的刷新时间，最小值为60。">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "刷新间隔（秒）：">
-<!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
-<!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
 <!-- NETWORK -->
 <!ENTITY network "网络">
 <!-- CONNECTIONS -->
 <!ENTITY connections "连接">
-<!ENTITY network_http_max-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大HTTP连接数。值域在1和255之间。">
-<!ENTITY network_http_max-connections-per-server_name "每个服务器的最大连接数。">
 <!ENTITY network_http_max-connections_description "这个选项定义了Firefox可以同时打开的最大HTTP连接数。值域在1和65535之间。">
 <!ENTITY network_http_max-connections_name "最大HTTP连接数">
 <!-- KEEP ALIVE -->
-<!ENTITY keep-alive_connections "保持活跃连接（Keep-alive）">
-<!ENTITY network_http_keep-alive_description "HTTP保持活跃连接可以进行多请求重用同一连接，可以增加Firefox的性能。">
-<!ENTITY network_http_keep-alive_name "使用保持活跃连接">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "这个选项定义了Firefox针对特定代理服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "针对特定代理服务器的最大保持活跃连接数">
 <!ENTITY network_http_max-persistent-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">

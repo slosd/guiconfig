@@ -1,14 +1,14 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Accessibilité">
 <!-- MOUSE BEHAVIOUR -->
+<!ENTITY input "Input">
 <!ENTITY mousebehaviour "Mouse behaviour">
 <!ENTITY mousescrollvertical "Défilement vertical de la souris">
-<!ENTITY mousescrollnone "sans touche">
-<!ENTITY mousescrollshift "avec la touche Maj">
-<!ENTITY mousescrollstrg "avec la touche Ctrl">
-<!ENTITY mousescrollalt "avec la touche Alt">
-<!ENTITY mousewheel_action_name "Action">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with this key">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_default_action_name "Action with no key">
+<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
+<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
+<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
 <!ENTITY mousewheel_action_o1 "Scroll lines">
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
@@ -68,6 +68,7 @@
 <!ENTITY accessibility_typeaheadfind_label "Recherche ce que vous tapez">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Précise après quelle durée de non-utilisation du clavier la barre de recherche disparaîtra">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Durée (ms)">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
 <!ENTITY signon_prefillForms_description "Remplit automatiquement les champs (identifiants et mots de passe) des formulaires d&apos;identification">
 <!ENTITY signon_prefillForms_name "Remplir les champs d&apos;identification">
 <!ENTITY accessibility_tabfocus_description "Cette préférence permet de choisir quels éléments peuvent être sélectionnés en appuyant sur Tab">
@@ -97,6 +98,16 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Nb. maximal de fenêtres restaurables">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Nombre maximal de fenêtres affichées dans le menu « Historique » &gt; « Fenêtres récemment fermées ».">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
+<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "Restore session after crash">
 <!ENTITY browser_sessionstore_resume_from_crash_description "Determines whether the tabs and windows should be restored after a crash.">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. crashes">
@@ -110,41 +121,29 @@
 <!ENTITY misc "Divers">
 <!ENTITY browser_search_openintab_description "Lorsqu&apos;une requête est lancée depuis la barre de recherche, ouvrir la page de résultat dans un nouvel onglet.">
 <!ENTITY browser_search_openintab_name "Ouvrir les résultats de la recherche dans un nouvel onglet">
-<!ENTITY browser_popups_showPopupBlocker_description "Détermine si une icône doit être affichée dans la barre d&apos;état quand un popup a été bloqué">
-<!ENTITY browser_popups_showPopupBlocker_name "Voir l&apos;icône dans la barre d&apos;état">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
 <!ENTITY browser_preferences_instantApply_description "Les modifications des préférences sont aussitôt actives. Leur fenêtre n&apos;est plus modale : à la place des boutons « OK » et « Annuler » il n&apos;y a que le bouton « Fermer »">
 <!ENTITY browser_preferences_instantApply_name "Appliquer dès maintenant">
-<!ENTITY accessibility_warn_on_browsewithcaret_description "À chaque appui sur F7 une boîte de dialogue apparaît, prévenant l&apos;utilisateur qu&apos;il passe en mode de navigation au curseur.">
-<!ENTITY accessibility_warn_on_browsewithcaret_name "Voir la boîte de dialogue lors de la navigation au curseur">
 <!ENTITY accessibility_accesskeycausesactivation_description "L&apos;utilisation d&apos;un raccourci clavier pour un élément a le même effet que d&apos;activer l&apos;élément. Selon le cas, cela revient à suivre un lien ou à cliquer sur un bouton.">
 <!ENTITY accessibility_accesskeycausesactivation_name "La touche d&apos;accès active l&apos;élément">
 <!-- BROWSER -->
 <!ENTITY browser "Navigateur">
 <!-- WEBSITES -->
+<!ENTITY browser_zoom "Browser zoom">
+<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
+<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
+<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
+<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
-<!ENTITY gfx_3d_video_enabled_name "Enable 3D video">
-<!ENTITY gfx_3d_video_enabled_description "Enables stereoscopic rendering for 3D videos. ">
-<!ENTITY mozilla_widget_render_mode_name "Enable Direct2D">
-<!ENTITY mozilla_widget_render_mode_description "Enables hardware acceleration for rendering. (requires Windows 7 or Windows Vista with Vista Platform update)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
 <!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. ">
 <!-- ALERTS -->
-<!ENTITY alerts "Alertes">
-<!ENTITY update_showSlidingNotification_description "Affiche une notification dans le navigateur quand des mises à jour sont disponibles.">
-<!ENTITY update_showSlidingNotification_name "Voir la notification de mise à jour">
-<!ENTITY alerts_slideIncrementTime_description "Contrôle le nombre de millisecondes entre les gestes de défilement dans les cas où l&apos;alerte se déplace, et le nombre de millisecondes entre les changements de couleur lorsque l&apos;alerte disparaît / réapparaît.">
-<!ENTITY alerts_slideIncrementTime_name "Durée du mouvement (en ms)">
-<!ENTITY alerts_slideIncrement_description "Cette préférence contrôle la vitesse de l&apos;alerte de type « Téléchargements terminés » apparaissant en bas à droite. Plus précisément, cela gère l&apos;incrémentation (nombre de pixels à déplacer).">
-<!ENTITY alerts_slideIncrement_name "Nombre de pixels à déplacer par pas d&apos;incrémentation (px)">
-<!ENTITY alerts_totalOpenTime_description "Détermine la durée d&apos;attente en millisecondes avant l&apos;affichage de l&apos;alerte de type « Téléchargements terminés » apparaissant en bas à droite.">
-<!ENTITY alerts_totalOpenTime_name "Durée d&apos;alerte (ms)">
-<!ENTITY browser_download_manager_showAlertInterval_description "Nombre de millisecondes une fois les téléchargements terminés avant d&apos;afficher le popup d&apos;alerte.">
-<!ENTITY browser_download_manager_showAlertInterval_name "Délai d&apos;alerte (ms)">
-<!ENTITY browser_download_manager_showAlertOnComplete_description "Affiche un popup en bas à droite de l&apos;écran une fois que les téléchargements sont terminés">
-<!ENTITY browser_download_manager_showAlertOnComplete_name "Alerte popup après le téléchargement">
 <!-- CACHE -->
 <!ENTITY cache "Cache du navigateur">
 <!ENTITY cache_disk "Cache sur disque">
@@ -169,6 +168,8 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Recently visited pages are stored in memory and can be displayed faster when using Back and Forward. If set to -1 the number of pages is automatically determined. If set to 0 no pages are stored in memory. ">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Extensions">
+<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!ENTITY installation "Installation">
 <!ENTITY getaddons "Panneau de catalogue des extensions">
 <!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
 <!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
@@ -178,48 +179,59 @@
 <!ENTITY extensions_getAddons_maxResults_name "Nombre maximal de résultats">
 <!ENTITY extensions_getAddons_showPane_description "Précise si l&apos;onglet « Catalogue » doit être affiché dans la fenêtre des modules complémentaires.">
 <!ENTITY extensions_getAddons_showPane_name "Afficher le panneau">
+<!-- NEW TAB PAGE -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- LIBRARY -->
+<!ENTITY library "Library">
+<!-- BOOKMARK -->
+<!ENTITY bookmarks "Marque-pages">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
+<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_max_backups_description "Détermine le nombre de sauvegardes à effectuer. La valeur 0 les désactivera.">
+<!ENTITY browser_bookmarks_max_backups_name "Sauvegarde des marque-pages">
+<!-- HISTORY -->
+<!ENTITY history "History">
+<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
+<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Gestionnaire des téléchargements">
-<!ENTITY browser_download_manager_quitBehavior_description "Determines what to do with active downloads when Firefox is quit. ">
-<!ENTITY browser_download_manager_quitBehavior_name "Quit behaviour">
-<!ENTITY browser_download_manager_quitBehavior_o1 "Pause and auto-resume at next start active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o2 "Pause active downloads">
-<!ENTITY browser_download_manager_quitBehavior_o3 "Cancel active downloads">
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Animate download icon">
+<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
 <!ENTITY browser_download_lastDir_description "Chemin du dernier répertoire utilisé pour un téléchargement avec « Enregistrer sous… ».">
 <!ENTITY browser_download_lastDir_name "Dernier dossier de téléchargement">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avertir l&apos;utilisateur lors de la demande d&apos;ouverture d&apos;un exécutable depuis le gestionnaire de téléchargements">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Avertissement d&apos;exécutable">
-<!ENTITY browser_download_manager_focusWhenStarting_description "Rend active la fenêtre du « Gestionnaire de téléchargements » dès que l&apos;un d&apos;eux débute">
-<!ENTITY browser_download_manager_focusWhenStarting_name "Rendre active la fenêtre du « Gestionnaire de téléchargements » dès que l&apos;un d&apos;eux débute">
 <!-- SECURITY -->
 <!ENTITY security_privacy "Sécurité et confidentialité">
+<!ENTITY plugins "Plugins">
 <!ENTITY security_dialog_enable_delay_description "Cette configuration précise le délai (en millisecondes) avant que le bouton « Installer » puisse être cliqué, lors de l&apos;installation d&apos;une extension. Entrer la valeur zéro pour désactiver ce délai.">
 <!ENTITY security_dialog_enable_delay_name "Délai d&apos;installation d&apos;extension (ms)">
-<!ENTITY master_pass "Master password">
-<!ENTITY security_ask_for_password_description "This preference determines how often you are required to enter the master password. ">
-<!ENTITY security_ask_for_password_o1 "Demander un mot de passe chaque fois que nécessaire">
-<!ENTITY security_ask_for_password_o2 "Demander un mot de passe la première fois que nécessaire">
-<!ENTITY security_ask_for_password_o3 "Demander un mot de passe après une durée particulière">
-<!ENTITY security_password_lifetime_name "Durée (min)">
-<!ENTITY security_password_lifetime_description "Minutes after which you are prompted for the master password. ">
 <!ENTITY dom_ipc_plugins_enabled_name "Exécuter chaque plugin dans un processus différent">
 <!ENTITY dom_ipc_plugins_enabled_description "If plugins (like Flash) crash they won't cause Firefox to crash as well.">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "Timeout for non-responding plugins (sec)">
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+<!-- CONTENT -->
+<!ENTITY content "Content">
 <!-- STYLE -->
 <!-- BROWSER -->
 <!ENTITY browser_style "Navigateur">
 <!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
 <!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
-<!ENTITY browser_identity_ssl_domain_display_name "Importance du domaine lors de l&apos;utilisation de SSL">
-<!ENTITY browser_identity_ssl_domain_display_description "Lorsqu&apos;un site utilise le protocole SSL pour crypter les échanges, l&apos;utilisateur peut choisir d&apos;avoir une partie de l&apos;URL du site soulignée dans l&apos;interface. Cette préférence précise s&apos;il faudra afficher dans la barre d&apos;adresse le domaine de deuxième niveau (par exemple « mozilla.org »), le domaine complet (par exemple : « bugzilla.mozilla.org ») ou bien aucun nom de domaine.">
-<!ENTITY browser_identity_ssl_domain_display_o1 "Ne pas afficher le domaine">
-<!ENTITY browser_identity_ssl_domain_display_o2 "Afficher le domaine de deuxième niveau">
-<!ENTITY browser_identity_ssl_domain_display_o3 "Afficher le domaine complet">
+<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
+<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_chrome_favicons_description "Choisir si l&apos;on veut ou non voir les favicônes">
 <!ENTITY browser_chrome_favicons_name "Voir les favicônes">
 <!ENTITY browser_chrome_toolbar_tips_description "Détermine le comportement des infobulles pour les éléments chrome.">
@@ -233,15 +245,9 @@
 <!ENTITY nglayout_initialpaint_delay_name "Durée avant l&apos;affichage de la page (en ms)">
 <!ENTITY content_notify_interval_description "Firefox utilise périodiquement toutes les données reçues depuis un site Web. Cette préférence précise la durée minimale d&apos;attente avant d&apos;afficher la page à nouveau, en microsecondes. Les plus petites valeurs vont réduire le temps de chargement perçu, mais cela augmentera la durée totale de chargement.">
 <!ENTITY content_notify_interval_name "Durée avant le ré-affichage de la page (en µs)">
-<!ENTITY browser_blink_allowed_description "Utilisation des balises de clignotement ou du CSS de décoration de texte : le commande pourra rendre clignotants des éléments.">
-<!ENTITY browser_blink_allowed_name "Autoriser le texte clignotant">
-<!ENTITY browser_frames_enabled_description "Afficher les cadres HTML">
-<!ENTITY browser_frames_enabled_name "Autoriser les cadres">
-<!ENTITY layout_frames_force_resizability_description "Force frames to be resizeable. ">
-<!ENTITY layout_frames_force_resizability_name "force resizeable">
+<!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
 <!ENTITY browser_display_show_image_placeholders_description "Voir les cadres d&apos;emplacement des images avant qu&apos;elles ne soient complètement chargées">
 <!ENTITY browser_display_show_image_placeholders_name "Voir les emplacements d&apos;images">
-<!ENTITY html5_enable_name "Enable the HTML5 parser">
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY images "Images">
 <!ENTITY browser_enable_automatic_image_resizing_description "Lors du chargement d&apos;une image seule, hors d&apos;une page Web, si elle est trop grande elle sera alors redimensionnée afin de s&apos;adapter à la largeur de la fenêtre du navigateur">
@@ -251,6 +257,11 @@
 <!ENTITY gfx_color_management_mode_o1 "aucune image">
 <!ENTITY gfx_color_management_mode_o2 "toutes les images">
 <!ENTITY gfx_color_management_mode_o3 "images with ICC tags">
+<!ENTITY image_animation_mode_name "Animated images">
+<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
+<!ENTITY image_animation_mode_o1 "Loop indefinitely">
+<!ENTITY image_animation_mode_o2 "Run animation once">
+<!ENTITY image_animation_mode_o3 "Never run the animation">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Télécharger les polices de caractères intégrées au site Web">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Enables downloading of CSS3 fonts which are embedded using @font-face. Restart required.">
 <!-- TEXT SELECT -->
@@ -279,8 +290,6 @@
 <!ENTITY browser_tabs_tabClipWidth_description "Determines the minimum tab width necessary to display the close button. ">
 <!-- TAB PREVIEW -->
 <!ENTITY tab_preview "Tab preview">
-<!ENTITY browser_allTabs_preview_name "Enable tab preview">
-<!ENTITY browser_allTabs_preview_description "This adds a button on the right of the tabbar which shows a tab preview when clicked. ">
 <!ENTITY browser_ctrlTab_preview_name "Enable tab preview when switching tabs">
 <!ENTITY browser_ctrlTab_preview_description "When using [CTRL]+[Tab] to switch tabs a tab preview is shown. ">
 <!ENTITY browser_taskbar_previews_enable_name "Enable previews in the Windows 7 taskbar">
@@ -290,6 +299,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in external applications">
 <!ENTITY browser_tabs_loadInBackground_name "Links in websites">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
 <!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Open new tab next to current">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determines whether to open a new tab at the end of the tab bar or after the currently selected tab. ">
@@ -297,26 +307,13 @@
 <!ENTITY browser_tabs_selectOwnerOnClose_description "When closing a tab, switch to the tab that opened it. Otherwise switch to the adjacent right tab or the adjacent left tab. ">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Fermer la fenêtre en même temps que le dernier onglet">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "Si la case est cochée, la fenêtre en cours sera fermée lorsque vous fermerez le dernier onglet de cette fenêtre.">
-<!-- BOOKMARK -->
-<!ENTITY bookmarks "Marque-pages">
-<!-- MICROSUMMARIES -->
-<!-- MISC -->
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_description "Nombre de secondes entre chaque actualisation des marque-pages dynamiques. Les valeurs inférieures à 60 sont considérées comme étant 60.">
-<!ENTITY browser_bookmarks_livemark_refresh_seconds_name "Intervalle d&apos;actualisation (s)">
-<!ENTITY browser_bookmarks_max_backups_description "Détermine le nombre de sauvegardes à effectuer. La valeur 0 les désactivera.">
-<!ENTITY browser_bookmarks_max_backups_name "Sauvegarde des marque-pages">
 <!-- NETWORK -->
 <!ENTITY network "Réseau">
 <!-- CONNECTIONS -->
 <!ENTITY connections "Connexions">
-<!ENTITY network_http_max-connections-per-server_description "Cette préférence fixe le nombre total de connexions que Firefox peut lancer simultanément avec un même serveur. Cette valeur doit être entre 1 et 255.">
-<!ENTITY network_http_max-connections-per-server_name "Nb. maximal de connexions HTTP par serveur">
 <!ENTITY network_http_max-connections_description "Cette préférence fixe nombre total de connexions que Firefox peut lancer simultanément. Cette valeur doit être entre 1 et 65 535.">
 <!ENTITY network_http_max-connections_name "Nb. maximal de connexions HTTP">
 <!-- KEEP ALIVE -->
-<!ENTITY keep-alive_connections "Connexions de « maintien en vie »">
-<!ENTITY network_http_keep-alive_description "Les connexions HTTP de « maintien en vie » peuvent être réutilisées pour des requêtes multiples et améliorations de performance.">
-<!ENTITY network_http_keep-alive_name "Utiliser des connexions de « maintien en vie »">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur proxy. Cette valeur doit être entre 1 et 255.">
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Nb. maximal de connexions de « maintien en vie » par serveur proxy">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur. Cette valeur doit être entre 1 et 255.">
@@ -340,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Les modifications concernant fenêtres et boîtes de dialogue ne nécessitent pas un redémarrage. Cela ne fonctionne pas avec les fichiers étant dans un paquetage JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Désactiver le cache XUL">
-<!ENTITY devtools_inspector_enabled_description "Enables the Inspector in the &quot;Web Developer&quot; menu. (Requires restart)">
-<!ENTITY devtools_inspector_enabled_name "Enable Inspector">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Activer l&apos;utilisation de l&apos;instruction dump() pour publier dans la console standard.">
 <!ENTITY browser_dom_window_dump_enabled_name "Activer dump()">
 <!ENTITY javascript_options_showInConsole_description "Précise s&apos;il faut lister les erreurs et avertissements chrome dans la console JavaScript.">
