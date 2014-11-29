@@ -9,6 +9,10 @@ var guiconfig = (function(guiconfig) {
         var elem = document.getElementById(key);
         return elem.nodeName == 'preference' ? elem : null;
       },
+      isPreferenceSupported: function(minVersion, maxVersion, platform) {
+        return guiconfig.core.isApplicationVersionBetween(minVersion, maxVersion) &&
+            guiconfig.core.isApplicationPlatform(platform);
+      },
       registerSelectFileButton: function(key, types) {
         var view = document.getElementById(key + '-view');
         if (!view) return;
