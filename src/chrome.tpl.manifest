@@ -3,7 +3,7 @@ content guiconfig content/
 skin guiconfig classic/1.0 skin/
 
 style chrome://global/content/customizeToolbar.xul chrome://guiconfig/skin/style/button.css
-style chrome://guiconfig/content/ui/button.xul chrome://guiconfig/skin/style/button.css
+style chrome://guiconfig/content/ui/button.xul     chrome://guiconfig/skin/style/button.css
 
 # adds the menu items to the normal menu as well as to the app menu
 overlay chrome://browser/content/browser.xul chrome://guiconfig/content/ui/browser_menu_default.xul
@@ -20,3 +20,4 @@ overlay chrome://browser/content/browser.xul chrome://guiconfig/content/ui/butto
 # if this is not Firefox 7 or higher use the usual preference dialog
 override chrome://guiconfig/content/ui/inlinepref.xul chrome://guiconfig/content/ui/pref.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion<=6.*
 
+%LOCALES%

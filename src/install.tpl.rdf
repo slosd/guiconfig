@@ -16,7 +16,7 @@
       </Description>
     </em:targetApplication>
 
-    <em:name>%NAME%</em:name>
+    <em:name>gui:config</em:name>
     <em:version>%VERSION%</em:version>
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
