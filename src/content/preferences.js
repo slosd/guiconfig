@@ -141,7 +141,7 @@ var guiconfig = (function(guiconfig) {
     resetPreference: function(key) {
       var pref = document.getElementById(key);
       if (pref) {
-        pref.value = pref.defaultValue;
+        pref.reset();
       }
     },
 
