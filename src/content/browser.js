@@ -2,6 +2,26 @@ Components.utils.import("resource://gre/modules/Services.jsm");
 
 var EXPORTED_SYMBOLS = [ "browser" ];
 
+const GC_PREF_FIRST_START = "extensions.guiconfig.firststart";
+
+var CUSTOMIZABLE_UI;
+try {
+  Components.utils.import("resource:///modules/CustomizableUI.jsm");
+  CUSTOMIZABLE_UI = true;
+} catch(e) {
+  CUSTOMIZABLE_UI = false;
+}
+
+var FIRST_START;
+try {
+  FIRST_START = Services.prefs.getBoolPref(GC_PREF_FIRST_START);
+} catch(e) {
+  FIRST_START = true;
+}
+if (FIRST_START) {
+  Services.prefs.setBoolPref(GC_PREF_FIRST_START, false);
+}
+
 const PREFERENCES_DIALOG_URI = 'chrome://guiconfig/content/ui/preferences.xul';
 const BUTTON_ID = 'guiconfig-open-preferences';
 
@@ -20,6 +40,9 @@ function registerUI(node) {
 }
 
 function removeUI(window) {
+  if (CUSTOMIZABLE_UI) {
+    CustomizableUI.destroyWidget(BUTTON_ID);
+  }
   if (!nodes.has(window))
     return;
   for (var node of nodes.get(window)) {
@@ -67,23 +90,46 @@ function createMenuItem(window, id) {
   return menuitem;
 }
 
-function addToolbarButton(window) {
-  var document = window.document;
-  var toolbox = document.getElementById('navigator-toolbox');
-  toolbox.palette.appendChild(registerUI(createToolbarButton(window)));
+var addToolbarButton;
+if (CUSTOMIZABLE_UI) {
+  /**
+   * Since the module CustomizableUI is available we can simply use that to
+   * add the toolbar button.
+   */
+  addToolbarButton = function _addToolbarButton_customizableUI(window) {
+    CustomizableUI.createWidget({
+      id: BUTTON_ID,
+      defaultArea: CustomizableUI.AREA_NAVBAR,
+      label: strings.GetStringFromName('browser.item.label'),
+      tooltiptext: strings.GetStringFromName('browser.item.label'),
+      onCommand: function() {
+        showPreferencesDialog(window);
+      }
+    });
+    if (FIRST_START) {
+      CustomizableUI.addWidgetToArea(BUTTON_ID, CustomizableUI.AREA_NAVBAR);
+    }
+  };
+} else {
+  /**
+   * Manually add and restore the toolbar button.
+   */
+  addToolbarButton = function _addToolbarButton_legacy(window) {
+    var document = window.document;
+    var toolbox = document.getElementById('navigator-toolbox');
+    toolbox.palette.appendChild(registerUI(createToolbarButton(window)));
 
-  var toolbarInfo = findToolbar(window);
-  if (toolbarInfo) {
-    var toolbar = document.getElementById(toolbarInfo.id);
-    var beforeNode = null;
-    var beforeIndex = toolbarInfo.buttonIndex + 1;
-    while (beforeIndex < toolbarInfo.set.length &&
-        !(beforeNode = document.getElementById(toolbarInfo.set[beforeIndex])))
-      beforeIndex += 1;
-    toolbar.insertItem(BUTTON_ID, beforeNode);
-  }
-  // toolbar.setAttribute('currentset', toolbar.currentset);
-  // document.persist(toolbar.id, 'currentset');
+    var toolbarInfo = FIRST_START ? { id: 'nav-bar', currentset: [], buttonIndex: -1 } : findToolbar(window);
+    if (toolbarInfo) {
+      var toolbar = document.getElementById(toolbarInfo.id);
+      var beforeNode = null;
+      var beforeIndex = toolbarInfo.buttonIndex + 1;
+      while (toolbarInfo.buttonIndex !== -1 && beforeIndex < toolbarInfo.set.length &&
+          !(beforeNode = document.getElementById(toolbarInfo.set[beforeIndex])))
+        beforeIndex += 1;
+      toolbar.insertItem(BUTTON_ID, beforeNode);
+    }
+  };
 }
 
 function addMenuItem(window) {
