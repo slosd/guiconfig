@@ -15,7 +15,9 @@
         <xsl:apply-templates select=".//p:pref[@key and @type]" mode="preferences" />
       </preferences>
 
-      <xsl:apply-templates />
+      <vbox flex="1" style="overflow: auto">
+        <xsl:apply-templates />
+      </vbox>
     </prefpane>
   </xsl:template>
 
@@ -28,7 +30,7 @@
   </xsl:template>
 
   <xsl:template match="p:concern" mode="panes">
-    <tabpanel orient="vertical">
+    <tabpanel orient="vertical" style="overflow: auto">
       <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
       <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
       <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>

@@ -154,6 +154,7 @@ var guiconfig = (function(guiconfig) {
       while (node) {
         switch (node.nodeName) {
           case 'hbox':
+            node.scrollIntoView();
             node.classList.remove('highlight');
             setTimeout((function(node) {
               return function() {
