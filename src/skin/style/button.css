@@ -1,20 +1,20 @@
-#gcButtonPref {
+#guiconfig-open-preferences {
   list-style-image: url("chrome://guiconfig/skin/icons/icon.16.png");
 }
 
-#gcButtonPref[cui-areatype="menu-panel"],
-toolbarpaletteitem[place="palette"] > #gcButtonPref {
+#guiconfig-open-preferences[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"] > #guiconfig-open-preferences {
   list-style-image: url("chrome://guiconfig/skin/icons/icon.32.png");
 }
 
 @media (min-resolution: 2dppx) {
 
-#gcButtonPref {
+#guiconfig-open-preferences {
   list-style-image: url("chrome://guiconfig/skin/icons/icon.32.png");
 }
 
-#gcButtonPref[cui-areatype="menu-panel"],
-toolbarpaletteitem[place="palette"] > #gcButtonPref {
+#guiconfig-open-preferences[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"] > #guiconfig-open-preferences {
   list-style-image: url("chrome://guiconfig/skin/icons/icon.64.png");
 }
 
