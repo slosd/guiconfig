@@ -2,11 +2,9 @@
 <!ENTITY browser.item.access "d">
 <!ENTITY config.search "搜尋">
 <!ENTITY config.descr.standard "將游標移到選項之上便可看到詳細說明">
-<!ENTITY config.save.label "存檔">
 <!ENTITY config.standard.label "預設">
 <!ENTITY config.todefault "還原到預設值">
 <!ENTITY config.header.title "進階設定(gui:config)">
-<!ENTITY config.header.description "進階設定 (共計 $n 項)">
 <!ENTITY config.choosefile "選一個既有檔案">
 <!ENTITY config.browse "瀏覽...">
 <!ENTITY config.searchresults "Search results">

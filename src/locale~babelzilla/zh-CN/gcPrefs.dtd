@@ -1,5 +1,2 @@
-<!ENTITY prefs.label "选项">
 <!ENTITY prefs.todefault.ask.title "恢复前提示">
 <!ENTITY prefs.todefault.ask "恢复默认值前提示">
-<!ENTITY prefs.sticktopreferences.title "添加菜单项">
-<!ENTITY prefs.sticktopreferences "将 gui:config 菜单项添加到“选项...”下方">

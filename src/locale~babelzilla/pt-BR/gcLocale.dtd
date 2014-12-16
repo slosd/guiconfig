@@ -2,10 +2,8 @@
 <!ENTITY browser.item.access "v">
 <!ENTITY config.search "Filtrar">
 <!ENTITY config.descr.standard "Passe o cursor do mouse sobre uma opção para ler sua explicação.">
-<!ENTITY config.save.label "Salvar">
 <!ENTITY config.standard.label "Restaurar tudo">
 <!ENTITY config.todefault "Restaurar opção ao padrão">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Opções avançadas ($n disponíveis)">
 <!ENTITY config.choosefile "Escolher arquivo">
 <!ENTITY config.browse "Procurar...">

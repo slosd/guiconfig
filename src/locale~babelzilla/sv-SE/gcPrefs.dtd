@@ -1,5 +1,2 @@
-<!ENTITY prefs.label "Inställningar">
 <!ENTITY prefs.todefault.ask.title "Bekräfta återställning">
 <!ENTITY prefs.todefault.ask "Fråga innan standardvärden återställs">
-<!ENTITY prefs.sticktopreferences.title "Placering av meny">
-<!ENTITY prefs.sticktopreferences "Placera gui:config-menyn efter objektet &quot;Inställningar&quot;">

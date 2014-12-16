@@ -1,3 +1,1 @@
-<!ENTITY prefs.label "Opzioni">
 <!ENTITY prefs.todefault.ask "Chiedi conferma prima di ripristinare i valori predefiniti">
-<!ENTITY prefs.sticktopreferences "Mostra la voce &apos;Impostazioni di gui:config&apos; subito dopo la voce &apos;Opzioni&apos; (o &apos;Preferenze&apos; su Linux e MacOs)">

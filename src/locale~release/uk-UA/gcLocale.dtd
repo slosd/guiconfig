@@ -2,11 +2,9 @@
 <!ENTITY browser.item.access "d">
 <!ENTITY config.search "Пошук">
 <!ENTITY config.descr.standard "Наведіть курсор на опцію для перегляду детального опису">
-<!ENTITY config.save.label "Зберегти">
 <!ENTITY config.standard.label "Скинути все">
 <!ENTITY config.todefault "Встановити значення за умовчанням">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Поглиблені налаштування (доступно $n)">
 <!ENTITY config.choosefile "Обрати файл">
 <!ENTITY config.browse "Перегляд...">
 <!ENTITY config.searchresults "Search results">

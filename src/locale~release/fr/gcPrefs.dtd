@@ -1,5 +1,2 @@
-<!ENTITY prefs.label "Options">
 <!ENTITY prefs.todefault.ask.title "Ask before restoring">
 <!ENTITY prefs.todefault.ask "Demander avant la restauration des valeurs par défaut">
-<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
-<!ENTITY prefs.sticktopreferences "Mettre le menu de gui:config après celui des préférences">

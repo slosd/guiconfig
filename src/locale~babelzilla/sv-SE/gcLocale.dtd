@@ -1,12 +1,10 @@
-<!ENTITY browser.item.label "Avancerade inställningar…">
+<!ENTITY browser.item.label "Avancerade inställningar">
 <!ENTITY browser.item.access "v">
 <!ENTITY config.search "Sök">
 <!ENTITY config.descr.standard "För muspekaren över ett alternativ för en detaljerad beskrivning">
-<!ENTITY config.save.label "Spara">
 <!ENTITY config.standard.label "Återställ alla">
 <!ENTITY config.todefault "Använd standardvärdet">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Avancerade inställningar ($n tillgängliga)">
 <!ENTITY config.choosefile " Välj fil">
 <!ENTITY config.browse " Bläddra…">
 <!ENTITY config.searchresults "Sökresultat">

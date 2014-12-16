@@ -2,10 +2,8 @@
 <!ENTITY browser.item.access "п">
 <!ENTITY config.search "Поиск">
 <!ENTITY config.descr.standard "Чтобы увидеть подробное описание поместите курсор над настройкой">
-<!ENTITY config.save.label "Сохранить">
 <!ENTITY config.standard.label "Сбросить все">
 <!ENTITY config.todefault "Установить значения по умолчанию">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Дополнительные настройки (доступно $n)">
 <!ENTITY config.choosefile "Выберите файл редактора">
 <!ENTITY config.browse "Обзор…">

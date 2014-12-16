@@ -1,5 +1,2 @@
-<!ENTITY prefs.label "Beállítások">
 <!ENTITY prefs.todefault.ask.title "Ask before restoring">
 <!ENTITY prefs.todefault.ask "Kérdezzen meg mielőtt az alapértelmezett beállításokat visszaállítja">
-<!ENTITY prefs.sticktopreferences.title "Attach menu entry">
-<!ENTITY prefs.sticktopreferences "Helyezze a gui:config menüpontot a &quot;Beállítások&quot; menüpont alá">

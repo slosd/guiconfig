@@ -2,11 +2,9 @@
 <!ENTITY browser.item.access "p">
 <!ENTITY config.search "Hledat">
 <!ENTITY config.descr.standard "Přesunutím kurzoru nad možnost se zobrazí její podrobný popis">
-<!ENTITY config.save.label "Uložit">
 <!ENTITY config.standard.label "Obnovit vše výchozí">
 <!ENTITY config.todefault "Změnit na výchozí hodnotu">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.header.description "Pokročilé nastavení ($n dostupných)">
 <!ENTITY config.choosefile "Vybrat soubor">
 <!ENTITY config.browse "Procházet...">
 <!ENTITY config.searchresults "Výsledky vyhledávání">
