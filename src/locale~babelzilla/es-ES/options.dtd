@@ -159,7 +159,7 @@
 <!-- TEXT SELECT -->
 <!ENTITY downloadmanager "Administrador de descargas">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determina si añadir los archivos descargados a los &quot;Documentos recientes&quot; del menú inicio.">
-<!ENTITY browser_download_manager_addToRecentDocs_name "Añadir las descargas a los &guot;Documentos recientes&quot;">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Añadir las descargas a los &quot;Documentos recientes&quot;">
 <!ENTITY browser_download_lastDir_description "Ruta a la última carpeta usada para descargar usando &apos;Guardar como&apos;.">
 <!ENTITY browser_download_lastDir_name "Carpeta de la última descarga">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avisar al usuario si intenta abrir un ejecutable desde el administrador de descargas.">
