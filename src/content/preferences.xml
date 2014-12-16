@@ -63,7 +63,7 @@
               label="&browser_urlbar_restrict_typed_name;"
               description="&browser_urlbar_restrict_typed_description;"
               type="bool"
-              minVersion="36" />
+              minVersion="36a" />
         <pref key="browser.urlbar.matchBehavior"
               label="&browser_urlbar_matchBehavior_name;"
               description="&browser_urlbar_matchBehavior_description;"
