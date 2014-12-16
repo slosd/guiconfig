@@ -16,6 +16,103 @@
       </Description>
     </em:targetApplication>
 
+    <em:localized>
+      <Description>
+        <em:locale>cs</em:locale>
+        <em:description>Tento doplněk zpřístupňuje pokročilá nastavení</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>de</em:locale>
+        <em:description>Diese Erweiterung stellt Ihnen erweiterte Einstellungen zur Verfügung</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-ES</em:locale>
+        <em:description>Esta extensión proporciona opciones avanzadas</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:description>Extension permettant d'effectuer un paramétrage plus pointu</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hu-HU</em:locale>
+        <em:description>Ez a kiegészítő haladó szintű beállításokat is elérhetővé tesz</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>it</em:locale>
+        <em:description>Fornisce opzioni avanzate per personalizzare Firefox</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>nb-NO</em:locale>
+        <em:description>Denne utvidelsen tilbyr avanserte innstillinger</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>nl</em:locale>
+        <em:description>Deze uitbreiding biedt geavanceerde instellingen</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pl</em:locale>
+        <em:description>To rozszerzenie dodaje do Firefoksa okno pozwalające na zmianę zaawansowanych ustawień przeglądarki</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+      <em:locale>pt-BR</em:locale>
+      <em:description>Esta extensão dá acesso a configurações avançadas</em:description>
+    </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ru</em:locale>
+        <em:description>Это расширение предоставляет дополнительные параметры настройки</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sv-SE</em:locale>
+        <em:description>Ger åtkomst till avancerade inställningar</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>tr</em:locale>
+        <em:description>Bu uzatma gelişmiş ayarlar sağlar</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>uk-UA</em:locale>
+        <em:description>Це розширення надає поглиблені налаштування</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:description>本扩展提供了火狐的高级设定</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-TW</em:locale>
+        <em:description>本附加元件提供進階的設定</em:description>
+      </Description>
+    </em:localized>
+
     <em:name>gui:config</em:name>
     <em:version>%VERSION%</em:version>
     <em:description>This extension provides advanced settings</em:description>
