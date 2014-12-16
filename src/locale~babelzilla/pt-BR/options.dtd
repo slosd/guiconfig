@@ -3,7 +3,6 @@
 <!-- MOUSE CLICK -->
 <!ENTITY mousebehaviour "Mouse">
 <!ENTITY mousescrollvertical "Rolagem vertical">
-<!ENTITY mousewheel_action_description "Especifica o que deve ocorrer quando a roda do mouse for usada enquanto a tecla especificada é pressionada.">
 <!ENTITY mousewheel_action_o1 "rolar linhas">
 <!ENTITY mousewheel_action_o2 "rolas páginas">
 <!ENTITY mousewheel_action_o3 "navegar pelo histórico">
@@ -280,8 +279,6 @@
 <!ENTITY view_source_editor_path_name "Local do programa:">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Exibe as alterações nos arquivos XUL (janelas e caixas de diálogo de extensões) sem reiniciar o navegador. Não funciona com arquivos compactados em JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Desabilitar cache de XUL">
-<!ENTITY devtools_inspector_enabled_description "Acrescenta o item &quot;Inspecionar&quot; no menu &quot;Desenvolvedor web&quot; (necessário reiniciar o navegador).">
-<!ENTITY devtools_inspector_enabled_name "Ativar a função &quot;Inspecionar&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Em códigos JavaScript, permite usar a função dump() para exibir dados na janela de console do Firefox.">
 <!ENTITY browser_dom_window_dump_enabled_name "Ativar função dump()">
 <!ENTITY javascript_options_showInConsole_description "Exibe mensagens no Console de erros sobre falhas de chrome (erros ocorridos em complementos e no navegador).">

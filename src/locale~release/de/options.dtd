@@ -1,14 +1,14 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Bedienung">
 <!-- MOUSE BEHAVIOUR -->
-<!ENTITY input "Input">
+<!ENTITY input "Eingabe">
 <!ENTITY mousebehaviour "Mausverhalten">
 <!ENTITY mousescrollvertical "Vertikales Scrollen">
 <!ENTITY mousewheel_action_description "Wählen Sie was beim Scrollen in Kombination mit dieser Taste geschehen soll.">
-<!ENTITY mousewheel_default_action_name "Action with no key">
-<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
-<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
-<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
+<!ENTITY mousewheel_default_action_name "Aktion ohne Taste">
+<!ENTITY mousewheel_with_shift_action_name "Aktion mit Umschalttaste">
+<!ENTITY mousewheel_with_control_action_name "Aktion mit STRG-Taste">
+<!ENTITY mousewheel_with_alt_action_name "Aktion mit ALT-Taste">
 <!ENTITY mousewheel_action_o1 "Zeile scrollen">
 <!ENTITY mousewheel_action_o2 "Seite scrollen">
 <!ENTITY mousewheel_action_o3 "Vor- und rückwärts in der Chronik gehen">
@@ -68,7 +68,7 @@
 <!ENTITY accessibility_typeaheadfind_label "Suche in Webseiten">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Legt fest, nach welcher Zeitspanne die Suchleiste bei Inaktivität wieder ausgeblendet wird.">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (ms):">
-<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Suchfeld mit ausgewähltem Text füllen">
 <!ENTITY signon_prefillForms_description "Wenn vorhanden, werden gespeicherte Logindaten (Benutzername und Passwort) in die dazugehörigen Textfelder automatisch eingetragen.">
 <!ENTITY signon_prefillForms_name "Loginfelder automatisch ausfüllen">
 <!ENTITY accessibility_tabfocus_description "Definiert, welche Elemente einer Website mit der TAB-Taste (bzw. Shift+TAB) angewählt werden können.">
@@ -98,16 +98,16 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximale Anzahl von Tabs, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Maximale Anzahl von Fenstern, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
-<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
-<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
-<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
-<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
-<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
-<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
-<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
-<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
-<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
-<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Tabs bei Bedarf wiederherstellen">
+<!ENTITY browser_sessionstore_restore_on_demand_description "Ist diese Option aktiviert, werden Tabs erst wiederhergestellt wenn sie ausgewählt werden.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Versteckte Tabs wiederherstellen">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Bestimmt ob Tabs in anderen Tabgruppen wiederhergestellt werden sollen oder nicht.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Angeheftete Tabs bei Bedarf wiederherstellen">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Angeheftete Tabs werden immer automatisch wiederhergestellt. Ist diese Option aktiviert, werden sie wie normale Tabs bei Bedarf wiederhergestellt.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. Anzahl von Schritten zurück in der Chronik">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximale Anzahl von Schritten zurück in der Chronik, die wiederhergestellt werden.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. Anzahl von Schritten vorwärts in der Chronik">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximale Anzahl von Schritten vorwärts in der Chronik, die wiederhergestellt werden.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "Sitzung nach Absturz wiederherstellen">
 <!ENTITY browser_sessionstore_resume_from_crash_description "Legt fest ob die Tabs und Fenster nach einem Absturz wiederhergestellt werden sollen.">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. Anzahl Abstürze">
@@ -121,8 +121,8 @@
 <!ENTITY misc "Verschiedenes">
 <!ENTITY browser_search_openintab_description "Wenn die Suchleiste verwendet wird, werden die Ergebnisse in einem neuen Tab geöffnet, anstatt im aktuellen.">
 <!ENTITY browser_search_openintab_name "Suchergebnisse in neuem Tab öffnen">
-<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
-<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_inContent_name "Einstellungen in Tab öffnen">
+<!ENTITY browser_preferences_inContent_description "Ist diese Option aktiviert, werden die Einstellungen in einem Tab anstatt einem neuen Fenster geöffnet.">
 <!ENTITY browser_preferences_instantApply_description "Änderungen im &quot;Einstellungen&quot;-Dialog werden sofort übernommen. Die Schaltflächen &quot;OK&quot; und &quot;Abbrechen&quot; werden durch eine &quot;Schließen&quot;-Schaltfläche ersetzt.">
 <!ENTITY browser_preferences_instantApply_name "Einstellungen sofort übernehmen">
 <!ENTITY accessibility_accesskeycausesactivation_description "Bei Benutzung einer Schnelltaste (unterstrichener Buchstabe oder Tastenkombination) für ein Element wird dieses angewählt. Falls es sich dabei um einen Link oder eine Schaltfläche handelt wird diese angeklickt.">
@@ -130,13 +130,13 @@
 <!-- BROWSER -->
 <!ENTITY browser "Browser">
 <!-- WEBSITES -->
-<!ENTITY browser_zoom "Browser zoom">
-<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
-<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
-<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
-<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
-<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
-<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+<!ENTITY browser_zoom "Zoomfunktion">
+<!ENTITY browser_zoom_full_name "Gesamte Webseite zoomen">
+<!ENTITY browser_zoom_full_description "Ist diese Option aktiviert, verändert die Zoomfunktion alle Elemente einer Webseite anstatt nur die Textgröße.">
+<!ENTITY browser_zoom_siteSpecific_name "Zoomeinstellung merken">
+<!ENTITY browser_zoom_siteSpecific_description "Ist diese Option aktiviert, wird die Zoomeinstellung jeder Webseite gespeichert und wiederhergestellt. Ansonsten wird die Zoomeinstellung beim nächsten Besuch zurückgesetzt.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Tabs im Hintergrund verändern">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Tabs mit der gleichen Webseite auf die aktuelle Zoomeinstellung aktualisieren.">
 <!ENTITY dom_max_script_run_time_description "Legt fest nach welcher Dauer Firefox eine Warnung für ein lange dauerndes Skript zeigt.">
 <!ENTITY dom_max_script_run_time_name "Max. Skriptlaufzeit (Sek)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktiviere DirectWrite">
@@ -168,7 +168,7 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Kürzlich besuchte Webseiten werden im Hauptspeicher gespeichert und können dadurch schneller angezeigt werden wenn Sie Zurück und Vorwärts verwenden. Bei einem Wert von -1 wird die Seitenzahl automatisch festgelegt. Mit dem Wert 0 werden keine Seiten im Hauptspeicher gespeichert.">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Add-ons">
-<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!ENTITY extensions_plugins "Erweiterungen &amp; Plugins">
 <!ENTITY installation "Installation">
 <!ENTITY getaddons "&quot;Add-ons herunterladen&quot; Schaltfläche">
 <!ENTITY extensions_alwaysUnpack_name "Erweiterungen immer entpacken">
@@ -180,32 +180,32 @@
 <!ENTITY extensions_getAddons_showPane_description "Zeigt die &quot;Add-ons herunterladen&quot; Schaltfläche im Firefox Add-on-Manager(&quot;Extras&quot; &gt; &quot;Add-ons&quot;) an.">
 <!ENTITY extensions_getAddons_showPane_name "Reiter anzeigen">
 <!-- NEW TAB PAGE -->
-<!ENTITY new_tab_page "New tab page">
-<!ENTITY browser_newtabpage_rows_name "Number of rows">
-<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
-<!ENTITY browser_newtabpage_columns_name "Number of columns">
-<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
-<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
-<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
-<!ENTITY browser_newtab_url_name "URL for new tabs">
-<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!ENTITY new_tab_page "&quot;Neuer Tab&quot; Seite">
+<!ENTITY browser_newtabpage_rows_name "Zeilenanzahl">
+<!ENTITY browser_newtabpage_rows_description "Anzahl von Zeilen in der Ansicht häufig besuchter Webseiten.">
+<!ENTITY browser_newtabpage_columns_name "Spaltenanzahl">
+<!ENTITY browser_newtabpage_columns_description "Anzahl von Spalten in der Ansicht häufig besuchter Webseiten.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Screenshots von besuchten Webseiten speichern">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Ist die Option aktiviert, speichert Firefox Screenshots, die in der Ansicht häufig besuchter Webseiten in einem neuen Tab angezeigt werden.">
+<!ENTITY browser_newtab_url_name "Adresse (URL) für neue Tabs">
+<!ENTITY browser_newtab_url_description "Legt die Adresse (URL) für neu geöffnete Tabs fest. Diese Adresse ersetzt die Ansicht mit häufig besuchten Webseiten.">
 <!-- LIBRARY -->
-<!ENTITY library "Library">
+<!ENTITY library "Bibliothek">
 <!-- BOOKMARK -->
 <!ENTITY bookmarks "Lesezeichen">
-<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
-<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Lesenzeichen beim Beenden exportieren">
+<!ENTITY browser_bookmarks_autoExportHTML_description "Exportiere Lesezeichen in die Datei &quot;bookmarks.html&quot; im Profilordner wenn der Browser beendet wird.">
 <!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
 <!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!-- HISTORY -->
-<!ENTITY history "History">
-<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
-<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
+<!ENTITY history "Chronik">
+<!ENTITY places_history_expiration_max_pages_name "Max. Anzahl an Chronikeinträgen">
+<!ENTITY places_history_expiration_max_pages_description "Max. Anzahl von Einträgen, die in der Chronik gehalten werden. Überschüssige Einträge werden entfernt. Ist der Wert -1, wird die Anzahl der Einträge automatisch berechnet.">
 <!-- DOWNLOAD MANAGER -->
 <!ENTITY downloadmanager "Download-Manager">
 <!ENTITY downloads "Downloads">
-<!ENTITY browser_download_animateNotifications_name "Animate download icon">
-<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
+<!ENTITY browser_download_animateNotifications_name "Animiere Downloadsymbol">
+<!ENTITY browser_download_animateNotifications_description "Animiere das Downloadsymbol in der Symbolleiste wenn ein Download startet oder abgeschlossen ist.">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Legt fest ob heruntergeladene Dateien in die Liste der zuletzt benutzten Dateien im Startmenü eingetragen werden.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Zu &quot;Verwendete Dateien&quot; hinzufügen">
 <!ENTITY browser_download_lastDir_description "Das Zielverzeichnis des letzten Downloads.">
@@ -224,14 +224,14 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Zeitbeschränkung für Pluginstart (sek)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Die Zeitdauer, nach der der Start eines Plugins als fehlgeschlagen angesehen wird.">
 <!-- CONTENT -->
-<!ENTITY content "Content">
+<!ENTITY content "Inhalt">
 <!-- STYLE -->
 <!-- BROWSER -->
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_urlbar_formatting_enabled_name "Domainformatierung aktivieren">
 <!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
-<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
-<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
+<!ENTITY browser_urlbar_trimURLs_name "Webadressen (URLs) kürzen">
+<!ENTITY browser_urlbar_trimURLs_description "Kürzt das Protokoll (http) und abschließende Schrägstriche in Webadressen (URLs).">
 <!ENTITY browser_chrome_favicons_description "Zeigt das Favicon in der Adressleiste an. (Favicon = Lesezeichen-Symbol für Webseiten.)">
 <!ENTITY browser_chrome_favicons_name "Favicons anzeigen">
 <!ENTITY browser_chrome_toolbar_tips_description "Zeigt Tooltips über Schaltflächen in der Symbolleiste, über Lesezeichen und über Elementen einer Webseite an.">
@@ -257,11 +257,11 @@
 <!ENTITY gfx_color_management_mode_o1 "keine Bilder">
 <!ENTITY gfx_color_management_mode_o2 "alle Bilder">
 <!ENTITY gfx_color_management_mode_o3 "Bilder mit ICC Tags">
-<!ENTITY image_animation_mode_name "Animated images">
-<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
-<!ENTITY image_animation_mode_o1 "Loop indefinitely">
-<!ENTITY image_animation_mode_o2 "Run animation once">
-<!ENTITY image_animation_mode_o3 "Never run the animation">
+<!ENTITY image_animation_mode_name "Bildanimationen">
+<!ENTITY image_animation_mode_description "Bestimmt wie animierte Bilder (GIFs) dargestellt werden: Animation wiederholen, Einmalige Animation oder Animation deaktiviert.">
+<!ENTITY image_animation_mode_o1 "Animation wiederholen">
+<!ENTITY image_animation_mode_o2 "Einmalige Animation">
+<!ENTITY image_animation_mode_o3 "Animation deaktiviert">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Eingebundene Schriftarten herunterladen">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Aktiviert das Herunterladen von CSS3 Schriftarten die mittels @font-face eingebunden wurden. Benötigt einen Neustart.">
 <!-- TEXT SELECT -->
@@ -299,7 +299,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in ext. Anwendung öffnen">
 <!ENTITY browser_tabs_loadInBackground_name "Links in Webseiten">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Lesezeichen im Hintergrund öffnen">
-<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!ENTITY browser_search_context_loadInBackground_name "Suche im Rechtsklick-Menü">
 <!-- MISC -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Neuen Tab direkt neben dem aktuellen öffnen">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Legt fest, ob neue Tabs nach dem aktuellen Tab oder am Ende der Tableiste eingefügt werden sollen.">

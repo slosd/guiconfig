@@ -3,7 +3,6 @@
 <!-- MOUSE BEHAVIOUR -->
 <!ENTITY mousebehaviour "Поведение мыши">
 <!ENTITY mousescrollvertical "Вертикальная прокрутка мышью">
-<!ENTITY mousewheel_action_description "Выберите, что должно произойти при прокрутке с этой клавишей модификатором">
 <!ENTITY mousewheel_action_o1 "прокрутить строки">
 <!ENTITY mousewheel_action_o2 "прокрутить страницы">
 <!ENTITY mousewheel_action_o3 "вперёд/назад по истории">
@@ -276,8 +275,6 @@
 <!ENTITY view_source_editor_path_name "Путь к редактору">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Изменения в окнах и диалогах не требуют перезапуска. Не работает с файлами упакованными в JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Отключить XUL кэш">
-<!ENTITY devtools_inspector_enabled_description "Добавляет пункт «Инспектор» в меню «Веб разработка»">
-<!ENTITY devtools_inspector_enabled_name "Включить инспектора">
 <!ENTITY browser_dom_window_dump_enabled_description "Разрешает использовать оператор dump() для печати в стандартной консоли.">
 <!ENTITY browser_dom_window_dump_enabled_name "Разрешить dump()">
 <!ENTITY javascript_options_showInConsole_description "Определяет будут ли записываться в журнал консоли ошибок ошибки и предупреждения chrome.">

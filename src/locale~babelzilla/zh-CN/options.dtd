@@ -1,7 +1,11 @@
 <!ENTITY accessibility "辅助功能">
+<!ENTITY input "输入">
 <!ENTITY mousebehaviour "鼠标动作">
 <!ENTITY mousescrollvertical "上下滚动鼠标">
-<!ENTITY mousewheel_action_description "选择按键并滚动鼠标时执行的动作">
+<!ENTITY mousewheel_default_action_name "不按键时的操作">
+<!ENTITY mousewheel_with_shift_action_name "按 SHIFT 键时的操作">
+<!ENTITY mousewheel_with_control_action_name "按 CTRL 键时的操作">
+<!ENTITY mousewheel_with_alt_action_name "按 ALT 键时的操作">
 <!ENTITY mousewheel_action_o1 "以行数为单位滚动">
 <!ENTITY mousewheel_action_o2 "滚动页面">
 <!ENTITY mousewheel_action_o3 "在历史记录页面中前进/回退">
@@ -58,6 +62,7 @@
 <!ENTITY accessibility_typeaheadfind_label "输入时搜索">
 <!ENTITY accessibility_typeaheadfind_timeout_description "定义当多久没有键盘输入时，搜索栏隐藏。">
 <!ENTITY accessibility_typeaheadfind_timeout_name "超时（毫秒）">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "将所选文本填入搜索框">
 <!ENTITY signon_prefillForms_description "自动填充用户名和密码。">
 <!ENTITY signon_prefillForms_name "自动填充登录表元素">
 <!ENTITY accessibility_tabfocus_description "该项用于指定按 Tab 键时所要定位到的元素。">
@@ -86,6 +91,16 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
 <!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
+<!ENTITY browser_sessionstore_restore_on_demand_name "按需恢复标签页">
+<!ENTITY browser_sessionstore_restore_on_demand_description "该选项启用后，标签页只在选中时才恢复载入。">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "恢复隐藏标签页">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "指定是否恢复来自其他标签页组的标签页。">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "按需恢复固定的标签页">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "始终自动恢复所有固定的标签页。启用该项后，固定标签页也和普通标签页一样按需恢复。">
+<!ENTITY browser_sessionstore_max_serialize_back_name "后退按钮最大可恢复的历史条目">
+<!ENTITY browser_sessionstore_max_serialize_back_description "后退按钮的历史记录中允许恢复的最大条目数量。设置为 -1 表示不限制恢复数量。">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "前进按钮最大可恢复的历史条目">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "前进按钮的历史记录中允许恢复的最大条目数量。设置为 -1 表示不限制恢复数量。">
 <!ENTITY browser_sessionstore_resume_from_crash_name "崩溃后恢复浏览会话">
 <!ENTITY browser_sessionstore_resume_from_crash_description "指定浏览器崩溃后是否恢复之前打开的标签页和窗口。">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "可发生的最大崩溃数">
@@ -98,11 +113,20 @@
 <!ENTITY misc "其他">
 <!ENTITY browser_search_openintab_description "在搜索栏进行搜索时，搜索结果显示在新标签页中。">
 <!ENTITY browser_search_openintab_name "在新标签页中打开搜索结果">
+<!ENTITY browser_preferences_inContent_name "在标签页中打开首选项">
+<!ENTITY browser_preferences_inContent_description "启用该项后，首选项界面会在标签页中打开，取代之前的弹出窗口。">
 <!ENTITY browser_preferences_instantApply_description "设定更改时立即生效。与常见选项窗口同时显示“确定”和“取消”按钮不同的是，此时只显示一个“关闭”按钮。">
 <!ENTITY browser_preferences_instantApply_name "立即生效">
 <!ENTITY accessibility_accesskeycausesactivation_description "使用快捷键激活元素，例如点击链接和按钮。">
 <!ENTITY accessibility_accesskeycausesactivation_name "通过快捷键激活元素">
 <!ENTITY browser "浏览器">
+<!ENTITY browser_zoom "浏览器缩放">
+<!ENTITY browser_zoom_full_name "使用完整缩放来取代文本缩放">
+<!ENTITY browser_zoom_full_description "文本缩放仅仅是增大网站的文字大小，而完整缩放还会调整其他网页元素，比如图片。">
+<!ENTITY browser_zoom_siteSpecific_name "记住缩放级别">
+<!ENTITY browser_zoom_siteSpecific_description "启用该项后，所有网站都将保存并恢复各自的缩放级别，不启用则下次访问时自动重置为默认缩放级别。">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "更新后台标签页">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "更新其他显示相同网页的标签页为当前使用的缩放级别。">
 <!ENTITY dom_max_script_run_time_description "指定在多少秒之后 Firefox 提示您当前某个脚本运行时间太长。">
 <!ENTITY dom_max_script_run_time_name "脚本可执行的最长时间（秒）">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "启用 DirectWrite">
@@ -131,6 +155,8 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_name "内存中可保存的最大页面数">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近访问过的页面可以保存在内存中并在点击前进/后退按钮时加快显示。如果该值设为 -1 则使用自动设定的页面数，如果设置为 0 则页面不保存到内存中。">
 <!ENTITY extensions "扩展">
+<!ENTITY extensions_plugins "扩展和插件">
+<!ENTITY installation "安装">
 <!ENTITY getaddons "“获取附加组件”面板">
 <!ENTITY extensions_alwaysUnpack_name "总是解压缩显示扩展">
 <!ENTITY extensions_alwaysUnpack_description "如果启用该项，则扩展在安装时将解压缩到您的配置文件夹。">
@@ -140,10 +166,28 @@
 <!ENTITY extensions_getAddons_maxResults_name "最大查找结果">
 <!ENTITY extensions_getAddons_showPane_description "决定是否在“扩充软件管理”窗口中显示“获得扩充软件”面板">
 <!ENTITY extensions_getAddons_showPane_name "显示面板">
+<!ENTITY new_tab_page "新标签页面">
+<!ENTITY browser_newtabpage_rows_name "行数">
+<!ENTITY browser_newtabpage_rows_description "设置常用网站磁贴的行数">
+<!ENTITY browser_newtabpage_columns_name "列数">
+<!ENTITY browser_newtabpage_columns_description "设置常用网站磁贴的列数">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "创建常用网页的截图">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "启用该项后，Firefox 会自动创建常用网页的截图并显示在新标签页面的磁贴里。">
+<!ENTITY browser_newtab_url_name "新标签页的 URL">
+<!ENTITY browser_newtab_url_description "设置新建标签页时打开的 URL，它会替换常用网站的磁贴。">
+<!ENTITY library "我的足迹">
 <!ENTITY bookmarks "书签">
+<!ENTITY browser_bookmarks_autoExportHTML_name "关闭时导出书签到文件">
+<!ENTITY browser_bookmarks_autoExportHTML_description "启用该项后，浏览器关闭时会导出书签到 bookmarks.html 文件并保存到配置文件夹。">
 <!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
 <!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
+<!ENTITY history "历史">
+<!ENTITY places_history_expiration_max_pages_name "允许保存的最大历史记录条目">
+<!ENTITY places_history_expiration_max_pages_description "在其他条目过期以前允许保存的最大历史记录条目数量。设置为 -1 表示由浏览器自动计算数量。">
 <!ENTITY downloadmanager "下载管理器">
+<!ENTITY downloads "下载">
+<!ENTITY browser_download_animateNotifications_name "动画显示下载图标">
+<!ENTITY browser_download_animateNotifications_description "下载开始或完成时在工具栏动画显示下载管理器图标。">
 <!ENTITY browser_download_manager_addToRecentDocs_description "指定是否添加下载的文件到开始菜单的&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_manager_addToRecentDocs_name "添加下载的文件到&quot;最近使用的文件&quot;中。">
 <!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
@@ -151,6 +195,7 @@
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "用户试图从下载管理器打开可执行文件时弹出警告。">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "打开可执行文件时警告">
 <!ENTITY security_privacy "安全和隐私">
+<!ENTITY plugins "插件">
 <!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
 <!ENTITY dom_ipc_plugins_enabled_name "以独立进程运行每个插件">
@@ -159,9 +204,12 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "指定插件无响应时长超过规定时限后自动结束其进程。">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "插件启动的超时时间（秒）">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "指定插件崩溃后允许插件重新启动的时间段。">
+<!ENTITY content "内容">
 <!ENTITY browser_style "浏览器样式">
 <!ENTITY browser_urlbar_formatting_enabled_name "启用域名格式化">
 <!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
+<!ENTITY browser_urlbar_trimURLs_name "精简 URL">
+<!ENTITY browser_urlbar_trimURLs_description "启用该项后，地址栏会自动隐藏 http:// 这样的协议名。">
 <!ENTITY browser_chrome_favicons_description "是否显示网站小图标。">
 <!ENTITY browser_chrome_favicons_name "显示网站小图标">
 <!ENTITY browser_chrome_toolbar_tips_description "是否显示 chrome 元素的工具提示。">
@@ -186,6 +234,11 @@
 <!ENTITY gfx_color_management_mode_o1 "任何图片都不">
 <!ENTITY gfx_color_management_mode_o2 "全部图片">
 <!ENTITY gfx_color_management_mode_o3 "带有 ICC标签的图片">
+<!ENTITY image_animation_mode_name "动态图片">
+<!ENTITY image_animation_mode_description "阻止动态图片（即 GIF）无线循环播放或按图片设定的播放次数，只允许播放一次或禁止播放。">
+<!ENTITY image_animation_mode_o1 "无限次循环播放">
+<!ENTITY image_animation_mode_o2 "仅播放一次">
+<!ENTITY image_animation_mode_o3 "禁止播放">
 <!ENTITY gfx_downloadable_fonts_enabled_name "下载网站内嵌的字体">
 <!ENTITY gfx_downloadable_fonts_enabled_description "允许下载使用 @font-face 属性内嵌到网站的 CSS3 字体。启用该功能需要重启浏览器。">
 <!ENTITY text_select "选中的文字">
@@ -218,6 +271,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "外部应用程序中的链接">
 <!ENTITY browser_tabs_loadInBackground_name "网站的链接">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
+<!ENTITY browser_search_context_loadInBackground_name "上下文菜单搜索">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "在紧邻当前标签页打开新标签页">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "指定是在标签栏最右侧还是在当前标签页旁打开新标签页。">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "关闭标签页时切换到其父标签页">
@@ -247,8 +301,6 @@
 <!ENTITY view_source_editor_path_name "编辑器路径：">
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
-<!ENTITY devtools_inspector_enabled_description "启用 &quot;Web 开发人员&quot;菜单下的 Inspector。（需要重启）">
-<!ENTITY devtools_inspector_enabled_name "启用 Inspector">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
 <!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
 <!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">

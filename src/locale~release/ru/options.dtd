@@ -4,7 +4,7 @@
 <!ENTITY input "Input">
 <!ENTITY mousebehaviour "Поведение мыши">
 <!ENTITY mousescrollvertical "Вертикальная прокрутка мышью">
-<!ENTITY mousewheel_action_description "Выберите, что должно произойти при прокрутке с этой клавишей модификатором">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
 <!ENTITY mousewheel_default_action_name "Action with no key">
 <!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
 <!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
@@ -337,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Изменения в окнах и диалогах не требуют перезапуска. Не работает с файлами упакованными в JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Отключить XUL кэш">
-<!ENTITY devtools_inspector_enabled_description "Добавляет пункт «Инспектор» в меню «Веб разработка»">
-<!ENTITY devtools_inspector_enabled_name "Включить инспектора">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Разрешает использовать оператор dump() для печати в стандартной консоли.">
 <!ENTITY browser_dom_window_dump_enabled_name "Разрешить dump()">
 <!ENTITY javascript_options_showInConsole_description "Определяет будут ли записываться в журнал консоли ошибок ошибки и предупреждения chrome.">

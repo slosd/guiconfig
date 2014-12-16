@@ -1,14 +1,14 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Tillgänglighet">
 <!-- MOUSE BEHAVIOUR -->
-<!ENTITY input "Input">
+<!ENTITY input "Indata">
 <!ENTITY mousebehaviour "Egenskaper för mus">
 <!ENTITY mousescrollvertical "Vertikal musrullning">
-<!ENTITY mousewheel_action_description "Välj vad som skall hända när musrullning kombineras med den här tangenten">
-<!ENTITY mousewheel_default_action_name "Action with no key">
-<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
-<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
-<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_default_action_name "Åtgärd utan låstangent">
+<!ENTITY mousewheel_with_shift_action_name "Åtgärd med Skift">
+<!ENTITY mousewheel_with_control_action_name "Åtgärd med Ctrl">
+<!ENTITY mousewheel_with_alt_action_name "Åtgärd med Alt">
 <!ENTITY mousewheel_action_o1 "Rulla rader">
 <!ENTITY mousewheel_action_o2 "Bläddra sidor">
 <!ENTITY mousewheel_action_o3 "Gå bakåt/framåt i historiken">
@@ -49,18 +49,18 @@
 <!ENTITY browser_urlbar_match_title_name "Sök i titel">
 <!ENTITY browser_urlbar_match_url_description "Avgör om resultaten i det smarta adressfältet matchar endast genom att jämföra URL:erna.">
 <!ENTITY browser_urlbar_match_url_name "Sök i URL">
-<!ENTITY browser_urlbar_matchBehavior_description "Den här inställningen styr hur ordgränser skall användas när du söker efter objekt i adressfältet.">
+<!ENTITY browser_urlbar_matchBehavior_description "Den här inställningen styr hur ordgränser ska användas när du söker efter objekt i adressfältet.">
 <!ENTITY browser_urlbar_matchBehavior_name "Matchningsbeteende">
 <!ENTITY browser_urlbar_matchBehavior_o1 "Matcha varsomhelst">
 <!ENTITY browser_urlbar_matchBehavior_o2 "Visa objekt som matchar ordgränser först">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Visa endast objekt som matchar ordgränser">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Matcha i början av URL eller titel">
-<!ENTITY browser_urlbar_maxRichResults_description "Bestämmer det maximala antalet resultat som skall visas i adressfältet vid sökning.">
+<!ENTITY browser_urlbar_maxRichResults_description "Bestämmer det maximala antalet resultat som ska visas i adressfältet vid sökning.">
 <!ENTITY browser_urlbar_maxRichResults_name "Antal sökresultat">
 <!-- WEBSITES -->
-<!ENTITY prompts_tab_modal_enabled_description "Avgör om aviseringar skall visas i de nya modala meddelandeflikarna eller i de gamla modala meddelandefönstren.">
+<!ENTITY prompts_tab_modal_enabled_description "Avgör om aviseringar ska visas i de nya modala meddelandeflikarna eller i de gamla modala meddelandefönstren.">
 <!ENTITY prompts_tab_modal_enabled_name "Aktivera modala meddelandeflikar (varningar)">
-<!ENTITY accessibility_typeaheadfind_casesensitive_description "Avgör hur skiftlägeskänslighet skall hanteras. I läget &quot;Bestäm automatiskt&quot; är sökningen skiftlägeskänslig om söksträngen innehåller versaler, men inte endast består av versaler.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Avgör hur skiftlägeskänslighet ska hanteras. I läget &quot;Bestäm automatiskt&quot; är sökningen skiftlägeskänslig om söksträngen innehåller versaler, men inte endast består av versaler.">
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Skiftlägeskänslig">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Bestäm automatiskt">
 <!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Inte skiftlägeskänslig">
@@ -68,11 +68,11 @@
 <!ENTITY accessibility_typeaheadfind_label "Söklisten (Sök medan du skriver)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Bestämmer hur lång tid som får gå utan ytterligare tangentnedslag, innan söklisten försvinner.">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Tidsgräns (ms)">
-<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fyll i sökrutan med markerad text">
 <!ENTITY signon_prefillForms_description "Fyll automatiskt i formulärfält med användarnamn och lösenord.">
 <!ENTITY signon_prefillForms_name "Fyll automatiskt i formulärfält för inloggning">
-<!ENTITY accessibility_tabfocus_description "Den här inställningen avgör vilka element som kan fokuseras genom att trycka på TAB-tangenten.">
-<!ENTITY accessibility_tabfocus_name "TAB-fokuserade element">
+<!ENTITY accessibility_tabfocus_description "Den här inställningen avgör vilka element som kan fokuseras genom att trycka på tabbtangenten.">
+<!ENTITY accessibility_tabfocus_name "Tabulatorfokuserade element">
 <!ENTITY accessibility_tabfocus_o1 "Fokuserar endast på textfält">
 <!ENTITY accessibility_tabfocus_o2 "Fokuserar på alla formulärelement utom textfält">
 <!ENTITY accessibility_tabfocus_o3 "Fokuserar på alla formulärelement">
@@ -84,7 +84,7 @@
 <!ENTITY browser_backspace_action_o1 "Går bakåt i historiken">
 <!ENTITY browser_backspace_action_o2 "Fungerar som Page Up">
 <!ENTITY browser_backspace_action_o3 "Gör ingenting">
-<!ENTITY layout_spellcheckDefault_description "Avgör var stavningskontroll skall användas.">
+<!ENTITY layout_spellcheckDefault_description "Avgör var stavningskontroll ska användas.">
 <!ENTITY layout_spellcheckDefault_name "Stavningskontroll">
 <!ENTITY layout_spellcheckDefault_o1 "Inaktivera">
 <!ENTITY layout_spellcheckDefault_o2 "Aktivera för flerradstextfält">
@@ -98,22 +98,22 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Det maximala antalet flikar som visas i menyn &quot;Historik&quot; &gt; &quot;Nyligen stängda flikar&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Antal återställbara fönster">
 <!ENTITY browser_sessionstore_max_windows_undo_description "Det maximala antalet fönster som visas i menyn &quot;Historik&quot; &gt; &quot;Nyligen stängda fönster&quot;.">
-<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
-<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
-<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
-<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
-<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
-<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
-<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
-<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
-<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
-<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Återställ flikar på begäran">
+<!ENTITY browser_sessionstore_restore_on_demand_description "Om alternativet aktiveras återställs inte flikar förrän de fokuseras.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Återställ dolda flikar">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Avgör om flikar i andra flikgrupper ska återställas eller inte.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Återställ fastnålade flikar på begäran">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Fastnålade flikar återställs alltid automatiskt. Om detta alternativ aktiveras återställs fastnålade flikar istället på begäran, precis som vanliga flikar.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Högsta antal återställda bakåtposter">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Högsta antal historikposter för bakåtknappen som får återställas. Ange till -1 för oändligt många poster.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Högsta antal återställda framåtposter">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Högsta antal historikposter för framåtknappen som får återställas. Ange till -1 för oändligt många poster.">
 <!ENTITY browser_sessionstore_resume_from_crash_name "Återställ session efter krasch">
-<!ENTITY browser_sessionstore_resume_from_crash_description "Avgör om flikar och fönster skall återställas efter en krasch.">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Avgör om flikar och fönster ska återställas efter en krasch.">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "Antal krascher">
 <!ENTITY browser_sessionstore_max_resumed_crashes_description "Det maximala antalet krascher som kan inträffa innan du blir tillfrågad om vilka sidor du vill återställa.">
 <!ENTITY browser_sessionstore_privacy_level_name "Lagra extra sessionsdata">
-<!ENTITY browser_sessionstore_privacy_level_description "Bestämmer när extra sessionsdata (formulärinnehåll, data som sänts med formulär, rullningslistpositioner och kakor) skall sparas. Använd det första alternativet med försiktighet.">
+<!ENTITY browser_sessionstore_privacy_level_description "Bestämmer när extra sessionsdata (formulärinnehåll, data som sänts med formulär, rullningslistpositioner och kakor) ska sparas. Använd det första alternativet med försiktighet.">
 <!ENTITY browser_sessionstore_privacy_level_o1 "för alla webbplatser">
 <!ENTITY browser_sessionstore_privacy_level_o2 "för okrypterade webbplatser (icke-HTTPS)">
 <!ENTITY browser_sessionstore_privacy_level_o3 "inte för någon webbplats">
@@ -121,8 +121,8 @@
 <!ENTITY misc "Övrigt">
 <!ENTITY browser_search_openintab_description "När en sökning utförs i sökfältet öppnas resultatsidan i en ny flik.">
 <!ENTITY browser_search_openintab_name "Öppna sökresultat i en ny flik">
-<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
-<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_inContent_name "Öppna inställningarna i en flik">
+<!ENTITY browser_preferences_inContent_description "Om alternativet aktiveras öppnas inställningarna i en flik istället för i ett nytt fönster.">
 <!ENTITY browser_preferences_instantApply_description "Ändringar i inställningar verkställs direkt. Inställningar-fönstret är inte längre modalt, så istället för knapparna &quot;OK&quot; och &quot;Avbryt&quot; finns där bara en &quot;Stäng&quot;-knapp.">
 <!ENTITY browser_preferences_instantApply_name "Verkställ automatiskt">
 <!ENTITY accessibility_accesskeycausesactivation_description "Att använda en snabbtangent för ett element blir samma sak som att aktivera elementet. Om elementet är en länk, följs länken. Om elementet är en knapp, klickas knappen.">
@@ -130,17 +130,17 @@
 <!-- BROWSER -->
 <!ENTITY browser "Webbläsare">
 <!-- WEBSITES -->
-<!ENTITY browser_zoom "Browser zoom">
-<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
-<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
-<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
-<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
-<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
-<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+<!ENTITY browser_zoom "Webbläsarzoomning">
+<!ENTITY browser_zoom_full_name "Använd helsideszoomning istället för textzoomning">
+<!ENTITY browser_zoom_full_description "Textzoomning påverkar endast textstorleken på en webbsida, medan helsideszoomning även påverkar andra element, såsom bilder.">
+<!ENTITY browser_zoom_siteSpecific_name "Kom ihåg zoomningsnivåer">
+<!ENTITY browser_zoom_siteSpecific_description "Om alternativet aktiveras sparas zoomningsnivåerna för varje enskild webbplats. I annat fall återställs zoomningsnivån till standard vid nästa besök.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Uppdatera bakgrundsflikar">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Uppdaterar alla flikar som visar samma webbplats till denna aktuella zoomningsnivån.">
 <!ENTITY dom_max_script_run_time_description "Bestämmer det antal sekunder efter vilka Firefox meddelar dig att ett skript tar för lång tid på sig att köras.">
 <!ENTITY dom_max_script_run_time_name "Maxkörtid för skript (s)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktivera DirectWrite">
-<!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiverar hårdvaruacceleration för textvisning. (Kräver Windows 7 eller Windows Vista med Vista Platform-uppdatering)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiverar maskinvaruacceleration för textvisning. (Kräver Windows 7 eller Windows Vista med Vista Platform-uppdatering)">
 <!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
 <!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet.">
 <!-- ALERTS -->
@@ -148,7 +148,7 @@
 <!ENTITY cache "Cache">
 <!ENTITY cache_disk "Diskcache">
 <!ENTITY cache_memory "Cacheminne">
-<!ENTITY browser_cache_check_doc_frequency_description "Hur ofta en fjärrsida skall kontrolleras för en nyare version än den som kanske finns i cachen.">
+<!ENTITY browser_cache_check_doc_frequency_description "Hur ofta en fjärrsida ska kontrolleras för en nyare version än den som kanske finns i cachen.">
 <!ENTITY browser_cache_check_doc_frequency_name "Kontrollera webbläsarens cache">
 <!ENTITY browser_cache_check_doc_frequency_o1 "Kontrollera en gång per webbläsarsession">
 <!ENTITY browser_cache_check_doc_frequency_o2 "Kontrollera varje gång en sida visas">
@@ -168,7 +168,7 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Nyligen besökta webbsidor lagras i minnet och kan visas snabbare när Bakåt- och Framåt-knapparna används. Om värdet sätts till -1 kommer antalet lagrade webbsidor att bestämmas automatiskt. Om det sätts till 0 kommer inga sidor att lagras i minnet.">
 <!-- EXTENSIONS -->
 <!ENTITY extensions "Tillägg">
-<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!ENTITY extensions_plugins "Tillägg &amp; insticksmoduler">
 <!ENTITY installation "Installation">
 <!ENTITY getaddons "&quot;Hämta tillägg&quot;-panelen">
 <!ENTITY extensions_alwaysUnpack_name "Packa alltid upp tillägg">
@@ -177,44 +177,44 @@
 <!ENTITY extensions_checkCompatibility_name "Aktivera kompatibilitetskontroll av tillägg">
 <!ENTITY extensions_getAddons_maxResults_description "Bestämmer det maximala antalet resultat som visas i panelen när du gör en sökning.">
 <!ENTITY extensions_getAddons_maxResults_name "Antal sökresultat">
-<!ENTITY extensions_getAddons_showPane_description "Bestämmer om &quot;Hämta tillägg&quot;-panelen i fönstret &quot;Tilläggshanteraren&quot; skall visas eller inte.">
+<!ENTITY extensions_getAddons_showPane_description "Bestämmer om &quot;Hämta tillägg&quot;-panelen i fönstret &quot;Tilläggshanteraren&quot; ska visas eller inte.">
 <!ENTITY extensions_getAddons_showPane_name "Visa panelen">
 <!-- DOWNLOAD MANAGER -->
-<!ENTITY new_tab_page "New tab page">
-<!ENTITY browser_newtabpage_rows_name "Number of rows">
-<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
-<!ENTITY browser_newtabpage_columns_name "Number of columns">
-<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
-<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
-<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
-<!ENTITY browser_newtab_url_name "URL for new tabs">
-<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!ENTITY new_tab_page "Sidan Ny flik">
+<!ENTITY browser_newtabpage_rows_name "Antal rader">
+<!ENTITY browser_newtabpage_rows_description "Det här anger antalet rader i rutnätet över ofta använda webbplatser.">
+<!ENTITY browser_newtabpage_columns_name "Antal kolumner">
+<!ENTITY browser_newtabpage_columns_description "Det här anger antalet kolumner i rutnätet över ofta använda webbplatser.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Skapa skärmbilder av besökta webbplatser">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Om alternativet aktiveras skapar Firefox skärmbilder som används i rutnätet på sidan &quot;Ny flik&quot;.">
+<!ENTITY browser_newtab_url_name "URL för nya flikar">
+<!ENTITY browser_newtab_url_description "Anger en URL som ska användas för nyöppnade flikar. Det här ersätter rutnätet över ofta använda webbplatser.">
 <!-- SECURITY -->
-<!ENTITY library "Library">
+<!ENTITY library "Biblioteket">
 <!-- STYLE -->
 <!ENTITY bookmarks "Bokmärken">
-<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
-<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
-<!ENTITY browser_bookmarks_max_backups_description "Anger hur många säkerhetskopior som sparas. Att ange värdet 0 inaktiverar säkerhetskopieringsfunktionen.">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Exportera bokmärken till fil vid programavslut">
+<!ENTITY browser_bookmarks_autoExportHTML_description "Om alternativet aktiveras exporteras bokmärken till filen &quot;bookmarks.html&quot; i din profilmapp när webbläsaren avslutas.">
+<!ENTITY browser_bookmarks_max_backups_description "Anger hur många säkerhetskopior som sparas. Ange värdet 0 för att inaktivera säkerhetskopieringsfunktionen.">
 <!ENTITY browser_bookmarks_max_backups_name "Säkerhetskopior av bokmärken">
 <!-- BROWSER -->
-<!ENTITY history "History">
-<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
-<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
+<!ENTITY history "Historik">
+<!ENTITY places_history_expiration_max_pages_name "Högsta antal historikposter att komma ihåg">
+<!ENTITY places_history_expiration_max_pages_description "Högsta antal historikposter som kan sparas i minnet innan andra poster förfaller. Ange till -1 om du vill att antalet ska beräknas automatiskt.">
 <!-- WEBSITES -->
 <!ENTITY downloadmanager "Filhämtaren">
-<!ENTITY downloads "Downloads">
-<!ENTITY browser_download_animateNotifications_name "Animate download icon">
-<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
-<!ENTITY browser_download_manager_addToRecentDocs_description "Bestämmer huruvida hämtade filer skall läggas till i listan &quot;Nyligen använda dokument&amp;quot i Start-menyn.">
+<!ENTITY downloads "Filhämtningar">
+<!ENTITY browser_download_animateNotifications_name "Animera filhämtningsikonen">
+<!ENTITY browser_download_animateNotifications_description "Animera ikonen för Filhämtaren i verktygsfältet när en filhämtning startas eller slutförs.">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Bestämmer huruvida hämtade filer ska läggas till i listan &quot;Nyligen använda dokument&amp;quot i Start-menyn.">
 <!ENTITY browser_download_manager_addToRecentDocs_name "Lägg till hämtade filer i listan &quot;Nyligen använda dokument&amp;quot">
 <!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för hämtning via &quot;Spara (bild/länk/sida) som…&quot;.">
 <!ENTITY browser_download_lastDir_name "Senaste hämtningsmapp">
-<!ENTITY browser_download_manager_alertOnEXEOpen_description "Varna användare som försöker öppna en exekverbar fil i Filhämtaren.">
-<!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för exekverbar fil">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Varna användare som försöker öppna en körbar fil i Filhämtaren.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för körbar fil">
 <!-- TEXT SELECT -->
 <!ENTITY security_privacy "Säkerhet och integritet">
-<!ENTITY plugins "Plugins">
+<!ENTITY plugins "Insticksmoduler">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">
 <!ENTITY security_dialog_enable_delay_name "Fördröjning vid tilläggsinstallation (ms)">
 <!ENTITY dom_ipc_plugins_enabled_name "Kör varje insticksmodul i en egen process">
@@ -224,20 +224,20 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tidsgräns för insticksmodulstart (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Anger en tidsgräns när en insticksmodul startas, efter vilken starten anses ha misslyckats.">
 <!-- TABS -->
-<!ENTITY content "Content">
+<!ENTITY content "Innehåll">
 <!-- APPEARANCE -->
 <!-- TAB PREVIEW -->
 <!ENTITY browser_style "Webbläsare">
 <!ENTITY browser_urlbar_formatting_enabled_name "Aktivera domänformatering">
-<!ENTITY browser_urlbar_formatting_enabled_description "Avgör huruvida domänen i adressfältet skall formateras eller inte.">
-<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
-<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
-<!ENTITY browser_chrome_favicons_description "Bestämmer huruvida sajtikoner skall visas.">
+<!ENTITY browser_urlbar_formatting_enabled_description "Avgör huruvida domänen i adressfältet ska formateras eller inte.">
+<!ENTITY browser_urlbar_trimURLs_name "Putsa URL:er">
+<!ENTITY browser_urlbar_trimURLs_description "Om alternativet aktiveras döljs protokollet (http) och avslutande snedstreck i adressen i adressfältet.">
+<!ENTITY browser_chrome_favicons_description "Bestämmer huruvida sajtikoner ska visas.">
 <!ENTITY browser_chrome_favicons_name "Visa sajtikoner">
-<!ENTITY browser_chrome_toolbar_tips_description "Styr beteendet hos verktygstips för chrome-element.">
+<!ENTITY browser_chrome_toolbar_tips_description "Styr beteendet hos verktygstips för chromeelement.">
 <!ENTITY browser_chrome_toolbar_tips_name "Visa verktygstips">
-<!ENTITY browser_preferences_animateFadeIn_description "Ändrar höjden på fönstret och tonar in den nya panelen under ungefär en sekund när du byter panel i inställningar-dialogrutor.">
-<!ENTITY browser_preferences_animateFadeIn_name "Animera byte av inställningar-paneler">
+<!ENTITY browser_preferences_animateFadeIn_description "Ändrar höjden på fönstret och tonar in den nya panelen under ungefär en sekund när du byter panel i inställningsdialogrutor.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animera byte av inställningspaneler">
 <!-- OPEN IN BACKGROUND -->
 <!ENTITY websites "Webbplatser">
 <!ENTITY rendering "Rendering">
@@ -257,11 +257,11 @@
 <!ENTITY gfx_color_management_mode_o1 "inte för några bilder">
 <!ENTITY gfx_color_management_mode_o2 "för alla bilder">
 <!ENTITY gfx_color_management_mode_o3 "för bilder med ICC-taggar">
-<!ENTITY image_animation_mode_name "Animated images">
-<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
-<!ENTITY image_animation_mode_o1 "Loop indefinitely">
-<!ENTITY image_animation_mode_o2 "Run animation once">
-<!ENTITY image_animation_mode_o3 "Never run the animation">
+<!ENTITY image_animation_mode_name "Animerade bilder">
+<!ENTITY image_animation_mode_description "Hindrar animerade bilder (*.gif) att spelas upp i en oändlig slinga (eller så ofta som anges av bilden). De körs istället en enda gång eller inte alls.">
+<!ENTITY image_animation_mode_o1 "Oändlig slinga">
+<!ENTITY image_animation_mode_o2 "Spela upp animeringar en gång">
+<!ENTITY image_animation_mode_o3 "Spela aldrig upp animeringar">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Hämta fonter inbäddade i webbplatser">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Medger hämtning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
 <!-- MISC -->
@@ -279,34 +279,34 @@
 <!ENTITY browser_panorama_animate_zoom_name "Animera panoramazoomning">
 <!ENTITY browser_panorama_animate_zoom_description "Aktivera animationer när du öppnar/stänger Panoramavyn för dina flikar (vid Ctrl+E).">
 <!ENTITY browser_tabs_animate_name "Animera flikar">
-<!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om ovh när en flik tas bort.">
-<!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar skall visas.">
+<!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om och när en flik tas bort.">
+<!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar ska visas.">
 <!ENTITY browser_tabs_closeButtons_name "Stängknappar för flikar visas">
 <!ENTITY browser_tabs_closeButtons_o1 "endast på den aktiva fliken">
 <!ENTITY browser_tabs_closeButtons_o2 "på varje flik">
 <!ENTITY browser_tabs_closeButtons_o3 "aldrig">
 <!ENTITY browser_tabs_closeButtons_o4 "i slutet av flikfältet">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. flikbredd för stängknappar">
-<!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar skall visas.">
+<!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar ska visas.">
 <!-- MISC -->
 <!ENTITY tab_preview "Förhandsvisning av flik">
 <!ENTITY browser_ctrlTab_preview_name "Aktivera förhandsvisning vid byte av flik">
-<!ENTITY browser_ctrlTab_preview_description "När [CTRL]+[TAB] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
-<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet i Windows 7">
-<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (endast Windows 7).">
+<!ENTITY browser_ctrlTab_preview_description "När [Ctrl]+[Tabulator] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
+<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet">
+<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (Windows 7+).">
 <!-- NETWORK -->
 <!ENTITY open_in_background "Öppna en ny flik i bakgrunden från">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Länkar i externa program">
 <!ENTITY browser_tabs_loadInBackground_name "Länkar på webbplatser">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Bokmärken">
-<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!ENTITY browser_search_context_loadInBackground_name "Sökning via snabbmenyn">
 <!-- CONNECTIONS -->
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Öppna ny flik bredvid aktuell flik">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bestämmer om en ny flik öppnas i slutet av flikfältet eller precis efter den för närvarande aktiva fliken.">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "När en flik stängs, växla till fliken som öppnade den">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "När en flik stängs, byt fokus till fliken som öppnade den. I annat fall, växla till den angränsande fliken till höger eller den angränsande fliken till vänster. ">
 <!ENTITY browser_tabs_closeWindowWithLastTab_name "Stäng fönstret när sista fliken stängs">
-<!ENTITY browser_tabs_closeWindowWithLastTab_description "Om ikryssad kommer det aktuella fönstret att stängas när du stänger den sista fliken i fönstret. Du kan stänga den sista fliken med ett mittenklick eller genom att trycka ner [CTRL]+[W].">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Om alternativet aktiveras kommer det aktuella fönstret att stängas när du stänger den sista fliken i fönstret. Du kan stänga den sista fliken med ett mittenklick eller genom att trycka ner [Ctrl]+[W].">
 <!-- KEEP ALIVE -->
 <!ENTITY network "Nätverk">
 <!-- PIPELINING -->
@@ -319,13 +319,13 @@
 <!ENTITY network_http_max-persistent-connections-per-server_description "Den här inställningen bestämmer det högsta antalet samtidiga beständiga anslutningar, som Firefox kan ha öppna mot en enskild server. Värdet måste vara mellan 1 och 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Antal beständiga anslutningar per server">
 <!-- VIEW SOURCE -->
-<!ENTITY pipelining "Pipelining">
-<!ENTITY network_http_pipelining_description "Pipelining minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer pipelining.">
-<!ENTITY network_http_pipelining_maxrequests_description "Den här inställningen bestämmer det högsta antalet samtidiga förfrågningar som kan pipas när pipelining är aktiverat.  ">
+<!ENTITY pipelining "Direktförbindelse">
+<!ENTITY network_http_pipelining_description "Direktförbindelse minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer direktförbindelse.">
+<!ENTITY network_http_pipelining_maxrequests_description "Den här inställningen bestämmer det högsta antalet samtidiga förfrågningar som kan pipas när direktförbindelse är aktiverat.  ">
 <!ENTITY network_http_pipelining_maxrequests_name "Antal förfrågningar att pipa">
-<!ENTITY network_http_pipelining_name "Använd pipelining">
-<!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida pipelining skall användas mot en proxyserver. Pipelining minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer pipelining.">
-<!ENTITY network_http_proxy_pipelining_name "Använd pipelining mot en proxyserver">
+<!ENTITY network_http_pipelining_name "Använd direktförbindelse">
+<!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida direktförbindelse ska användas mot en proxyserver. Direktförbindelse minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer direktförbindelse.">
+<!ENTITY network_http_proxy_pipelining_name "Använd direktförbindelse mot en proxyserver">
 <!-- MISC -->
 <!ENTITY developing "Utveckling">
 <!-- VIEW SOURCE -->
@@ -333,15 +333,15 @@
 <!ENTITY view_source_editor_external_description "Använd en egen, extern redigerare för att visa källkoden när du väljer &quot;Visa källkod&quot; i webbsidans snabbmeny.">
 <!ENTITY view_source_editor_external_name "Använd egen redigerare">
 <!ENTITY view_source_editor_path_description "Sökvägen till den egna redigeraren. ">
-<!ENTITY view_source_editor_path_name "Redigerarens sökväg">
+<!ENTITY view_source_editor_path_name "Sökväg till redigerare">
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Ändringar i fönster och dialoger kräver inte omstart. Fungerar inte med filer förpackade i en JAR-fil.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Inaktivera XUL-cache">
-<!ENTITY devtools_inspector_enabled_description "Aktiverar Granskaren i menyn &quot;Webbutvecklare&quot;. (Kräver omstart)">
-<!ENTITY devtools_inspector_enabled_name "Aktivera Granskaren">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Tillåter användning av programsatsen dump() för att skriva till standardkonsolen.">
 <!ENTITY browser_dom_window_dump_enabled_name "Tillåt dump()">
-<!ENTITY javascript_options_showInConsole_description "Bestämmer om chrome-fel och varningar skall loggas till JavaScript-konsolen.">
+<!ENTITY javascript_options_showInConsole_description "Bestämmer om chrome-fel och varningar ska loggas till JavaScript-konsolen.">
 <!ENTITY javascript_options_showInConsole_name "Visa chrome-fel och varningar i konsolen">
 <!ENTITY javascript_options_strict_description "Tillåter strikta JavaScript-varningar i Felkonsolen.">
 <!ENTITY javascript_options_strict_name "Strikta JavaScript-varningar">

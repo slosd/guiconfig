@@ -1,7 +1,6 @@
 <!ENTITY accessibility "近接方面">
 <!ENTITY mousebehaviour "滑鼠操作">
 <!ENTITY mousescrollvertical "滑鼠垂直捲動">
-<!ENTITY mousewheel_action_description "選擇搭配此按鍵進行捲動時的回應動作">
 <!ENTITY mousewheel_action_o1 "捲動頁面內行列">
 <!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
 <!ENTITY mousewheel_action_o3 "切換瀏覽紀錄之前頁後頁">

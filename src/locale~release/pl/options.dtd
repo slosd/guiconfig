@@ -4,7 +4,7 @@
 <!ENTITY input "Input">
 <!ENTITY mousebehaviour "Zachowanie myszy">
 <!ENTITY mousescrollvertical "Przewijanie w pionie">
-<!ENTITY mousewheel_action_description "Wybierz, co się stanie, jeśli przewiniesz kółkiem myszy, trzymając wciśnięty ten klawisz">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
 <!ENTITY mousewheel_default_action_name "Action with no key">
 <!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
 <!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
@@ -337,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
-<!ENTITY devtools_inspector_enabled_description "Włącza inspektora w menu &quot;Programista WWW&quot; (wymaga ponownego uruchomienia Firefoksa).">
-<!ENTITY devtools_inspector_enabled_name "Włącz inspektora">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
 <!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
 <!ENTITY javascript_options_showInConsole_description "Określa, czy błędy i ostrzeżenia od chrome'a mają być wyświetlane w konsoli JavaScriptu.">

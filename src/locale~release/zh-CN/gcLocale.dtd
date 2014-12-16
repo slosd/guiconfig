@@ -9,4 +9,4 @@
 <!ENTITY config.header.description "高级设定($n 个条目可用)">
 <!ENTITY config.choosefile "选择文件">
 <!ENTITY config.browse "浏览……">
-<!ENTITY config.searchresults "Search results">
+<!ENTITY config.searchresults "搜索结果">

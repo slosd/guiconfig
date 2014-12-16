@@ -4,7 +4,7 @@
 <!ENTITY input "Input">
 <!ENTITY mousebehaviour "Comportamiento del ratón">
 <!ENTITY mousescrollvertical "Desplazamiento vertical">
-<!ENTITY mousewheel_action_description "Elija qué hacer al desplazarse en combinación con esta tecla">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
 <!ENTITY mousewheel_default_action_name "Action with no key">
 <!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
 <!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
@@ -337,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "No será necesario reiniciar para aplicar los cambios en ventanas y cuadros de diálogo. No funciona con archivos empaquetados en un JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deshabilitar la caché XUL">
-<!ENTITY devtools_inspector_enabled_description "Habilita el inspector en el menú &quot;Desarrollo web&quot; (requiere reiniciar)">
-<!ENTITY devtools_inspector_enabled_name "Habilitar inspector">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Habilita el uso de mensajes de depuración en la consola de errores.">
 <!ENTITY browser_dom_window_dump_enabled_name "Habilitar depuración">
 <!ENTITY javascript_options_showInConsole_description "Determina si registrar los errores y avisos chrome en la consola Javascript.">

@@ -4,7 +4,7 @@
 <!ENTITY input "Input">
 <!ENTITY mousebehaviour "滑鼠操作">
 <!ENTITY mousescrollvertical "滑鼠垂直捲動">
-<!ENTITY mousewheel_action_description "選擇搭配此按鍵進行捲動時的回應動作">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
 <!ENTITY mousewheel_default_action_name "Action with no key">
 <!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
 <!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
