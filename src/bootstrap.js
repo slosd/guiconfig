@@ -2,6 +2,8 @@ const { classes: Cc, interfaces: Ci, utils: Cu } = Components;
 
 Cu.import('resource://gre/modules/Services.jsm');
 
+const GC_MODULE_BROWSER = 'chrome://guiconfig/content/browser.js';
+
 var stylesheets = [ 'chrome://guiconfig/skin/style/button.css' ];
 
 var WindowListener = {
@@ -47,6 +49,8 @@ function shutdown(data, reason) {
       stylesheetService.unregisterSheet(stylesheetURI, stylesheetService.AUTHOR_SHEET);
     }
   }
+
+  Cu.unload(GC_MODULE_BROWSER);
 }
 
 function forEachWindow(action) {
@@ -56,11 +60,11 @@ function forEachWindow(action) {
 }
 
 function loadIntoWindow(window) {
-  Cu.import('chrome://guiconfig/content/browser.js');
+  Cu.import(GC_MODULE_BROWSER);
   browser.load(window);
 }
 
 function unloadFromWindow(window) {
-  Cu.import('chrome://guiconfig/content/browser.js');
+  Cu.import(GC_MODULE_BROWSER);
   browser.unload(window);
 }
