@@ -4,7 +4,7 @@
 <!ENTITY input "Indata">
 <!ENTITY mousebehaviour "Egenskaper för mus">
 <!ENTITY mousescrollvertical "Vertikal musrullning">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_action_description "Välj vad som ska hända under rullning i kombination med olika tangenter">
 <!ENTITY mousewheel_default_action_name "Åtgärd utan låstangent">
 <!ENTITY mousewheel_with_shift_action_name "Åtgärd med Skift">
 <!ENTITY mousewheel_with_control_action_name "Åtgärd med Ctrl">
@@ -337,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "Ändringar i fönster och dialoger kräver inte omstart. Fungerar inte med filer förpackade i en JAR-fil.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Inaktivera XUL-cache">
-<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
-<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
+<!ENTITY devtools_inspector_enabled_description "Aktiverar webbplatssnabbmenyalternativet &quot;Inspektera element&quot;, som öppnar webbgranskaren vid det valda elementet.">
+<!ENTITY devtools_inspector_enabled_name "Aktivera &quot;Inspektera element&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "Tillåter användning av programsatsen dump() för att skriva till standardkonsolen.">
 <!ENTITY browser_dom_window_dump_enabled_name "Tillåt dump()">
 <!ENTITY javascript_options_showInConsole_description "Bestämmer om chrome-fel och varningar ska loggas till JavaScript-konsolen.">

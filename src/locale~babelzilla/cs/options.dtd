@@ -4,6 +4,7 @@
 <!ENTITY input "Vstup">
 <!ENTITY mousebehaviour "Chování myši">
 <!ENTITY mousescrollvertical "Svislý posun">
+<!ENTITY mousewheel_action_description "Zvolte, co se má stát při posouvání kombinovaném s různými klávesami">
 <!ENTITY mousewheel_default_action_name "Akce bez klávesy">
 <!ENTITY mousewheel_with_shift_action_name "Akce s klávesou SHIFT">
 <!ENTITY mousewheel_with_control_action_name "Akce s klávesou CTRL">
@@ -334,6 +335,8 @@
 <!ENTITY view_source_editor_path_name "Cesta k editoru">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory formátu JAR.">
 <!ENTITY nglayout_debug_disable_xul_cache_name "Vypnout vyrovnávací paměť XUL">
+<!ENTITY devtools_inspector_enabled_description "Povolí v místních nabídkách webových stránek akci „Prozkoumat prvek“, která otevře průzkumník na místě vybraného prvku HTML.">
+<!ENTITY devtools_inspector_enabled_name "Povolit „Prozkoumat prvek“">
 <!ENTITY browser_dom_window_dump_enabled_description "Povolí použití příkazu dump() vypisující do standardního výstupu.">
 <!ENTITY browser_dom_window_dump_enabled_name "Povolit dump()">
 <!ENTITY javascript_options_showInConsole_description "Určuje, zda se budou zaznamenávat chyby a varování chrome do konzole JavaScriptu.">
