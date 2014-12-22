@@ -243,8 +243,8 @@
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_description "Legt die Zeit fest, in der Firefox auf Daten wartet, bevor mit dem Rendern der Webseite begonnen wird.">
 <!ENTITY nglayout_initialpaint_delay_name "Anzeigeverzögerung (ms)">
-<!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelemente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
-<!ENTITY content_notify_interval_name "Wartezeit, bevor die Seite aktualisiert wird (Mikrosekunden)">
+<!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelemente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen in Mikrosekunden. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
+<!ENTITY content_notify_interval_name "Wartezeit bis Aktualisierung (µs)">
 <!ENTITY layout_frames_force_resizability_name "Frames immer größenveränderlich">
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
