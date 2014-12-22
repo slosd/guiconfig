@@ -137,7 +137,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
-<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">

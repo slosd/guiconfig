@@ -1,47 +1,103 @@
 <!ENTITY accessibility "Toegankelijkheid">
+<!ENTITY input "Invoer">
+<!ENTITY mousebehaviour "Muisgedrag">
+<!ENTITY mousescrollvertical "Verticaal muisscrollen">
+<!ENTITY mousewheel_action_description "Kies wat moet gebeuren bij scrollen in combinatie met verschillende toetsen">
+<!ENTITY mousewheel_default_action_name "Actie zonder toets">
+<!ENTITY mousewheel_with_shift_action_name "Actie met Shifttoets">
+<!ENTITY mousewheel_with_control_action_name "Actie met Ctrl-toets">
+<!ENTITY mousewheel_with_alt_action_name "Actie met Alt-toets">
+<!ENTITY mousewheel_action_o1 "Regels scrollen">
+<!ENTITY mousewheel_action_o2 "Pagina’s scrollen">
+<!ENTITY mousewheel_action_o3 "Vooruit/terug in geschiedenis">
+<!ENTITY mousewheel_action_o4 "Pagina zoomen">
 <!ENTITY mouseclick "Muisklik">
-<!ENTITY middleclick "Klik van de middelste muisknop">
-<!ENTITY middlemouse_contentLoadURL_description "Laad de inhoud van het klembord als URL bij een klik van de middelste muisknop.">
-<!ENTITY middlemouse_contentLoadURL_name "Laad klembord als URL">
-<!ENTITY middlemouse_paste_description "Plak de inhoud van het klembord in een tekstveld bij een klik van de middelste muisknop.">
-<!ENTITY middlemouse_paste_name "Plakken tekst van het klembord">
-<!ENTITY browser_urlbar_clickSelectsAll_description "Selecteer de inhoud van de adresbalk wanneer het wordt geklikt.">
-<!ENTITY browser_urlbar_clickSelectsAll_name "Selecteer inhoud op muisklik">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Selecteer de inhoud van de adresbalk wanneer het dubbel wordt geklikt.">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Selecteer inhoud van dubbelklik">
-<!ENTITY urlbar "URLBar">
-<!ENTITY browser_urlbar_autoFill_description "Maakt inline autocomplete.">
+<!ENTITY middleclick "Middelklik">
+<!ENTITY middlemouse_contentLoadURL_description "De inhoud van het klembord als URL laden bij middelklik.">
+<!ENTITY middlemouse_contentLoadURL_name "Klembord als URL laden">
+<!ENTITY middlemouse_paste_description "De inhoud van het klembord in een tekstveld plakken bij middelklik.">
+<!ENTITY middlemouse_paste_name "Tekst van het klembord plakken">
+<!ENTITY browser_urlbar_clickSelectsAll_description "De inhoud van de adresbalk bij aanklikken selecteren.">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Inhoud selecteren bij klikken">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "De inhoud van de adresbalk selecteren bij dubbelklik.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Inhoud selecteren bij dubbelklik">
+<!ENTITY urlbar "Adresbalk">
+<!ENTITY browser_urlbar_autoFill_description "Inline automatisch aanvullen inschakelen.">
 <!ENTITY browser_urlbar_autoFill_name "Inline AutoAanvullen">
-<!ENTITY browser_fixup_alternate_enabled_description "Als een adres niet gevonden kan worden de volgende karakters worden toegevoegd aan het adres.">
-<!ENTITY browser_fixup_alternate_enabled_name "Gebruik alternatieve adressen">
-<!ENTITY browser_fixup_alternate_prefix_description "Characters te voegen aan het begin van het adres.">
+<!ENTITY browser_fixup_alternate_enabled_description "Als een adres onbekend is worden de volgende tekens toegevoegd aan het adres.">
+<!ENTITY browser_fixup_alternate_enabled_name "Alternatieve adressen gebruiken">
+<!ENTITY browser_fixup_alternate_prefix_description "Aan het begin van het adres toe te voegen tekens.">
 <!ENTITY browser_fixup_alternate_prefix_name "Invoegen aan het begin">
-<!ENTITY browser_fixup_alternate_suffix_description "Characters te voegen aan het einde van het adres.">
-<!ENTITY browser_fixup_alternate_suffix_name "Steek aan het eind">
+<!ENTITY browser_fixup_alternate_suffix_description "Aan het einde van het adres toe te voegen tekens.">
+<!ENTITY browser_fixup_alternate_suffix_name "Aan het einde toevoegen">
 <!ENTITY awesomebar "Awesomebar">
-<!ENTITY browser_urlbar_restrict_bookmark_description "Resultaten in de Smart Location Bar zijn beperkt tot bladwijzers.">
-<!ENTITY browser_urlbar_restrict_bookmark_name "Beperken aan favorieten">
-<!ENTITY browser_urlbar_restrict_history_description "Resultaten in de Smart Location Bar zijn beperkt tot websites die u bezocht.">
-<!ENTITY browser_urlbar_restrict_history_name "Beperken van de geschiedenis">
-<!ENTITY browser_urlbar_restrict_tag_description "Resultaten in de Smart Location Bar zijn beperkt tot tags.">
-<!ENTITY browser_urlbar_restrict_tag_name "Beperken van tags">
-<!ENTITY browser_urlbar_match_title_description "Bepaalt of Smart Location Bar resultaten gevonden die alleen in de pagina titel.">
+<!ENTITY urlbar_restrict_name "Resultaten beperken">
+<!ENTITY urlbar_match_name "Resultaten matchen">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Resultaten in de slimme locatiebalk zijn beperkt tot bladwijzers.">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Beperken tot bladwijzers">
+<!ENTITY browser_urlbar_restrict_history_description "Resultaten in de slimme locatiebalk zijn beperkt tot bezochte websites.">
+<!ENTITY browser_urlbar_restrict_history_name "Beperken tot geschiedenis">
+<!ENTITY browser_urlbar_restrict_tag_description "Resultaten in de slimme locatiebalk zijn beperkt tot labels.">
+<!ENTITY browser_urlbar_restrict_tag_name "Beperken tot labels">
+<!ENTITY browser_urlbar_restrict_typed_description "Resultaten in de slimme locatiebalk zijn beperkt tot de in de adresbalk ingetypte adressen.">
+<!ENTITY browser_urlbar_restrict_typed_name "Beperken tot getypte adressen">
+<!ENTITY browser_urlbar_match_title_description "Bepaalt of resultaten in de slimme locatiebalk alleen met de paginatitel matchen.">
 <!ENTITY browser_urlbar_match_title_name "Zoeken in titel">
-<!ENTITY browser_urlbar_match_url_description "Bepaalt of Smart Location Bar resultaten gevonden die alleen in de URL.">
+<!ENTITY browser_urlbar_match_url_description "Bepaalt of resultaten in de slimme locatiebalk alleen met de URL matchen.">
 <!ENTITY browser_urlbar_match_url_name "Zoeken in URL">
-<!ENTITY browser_urlbar_maxRichResults_description "Bepaalt hoeveel items moeten verschijnen (bij de meeste) in het dropdown in de adresbalk.">
-<!ENTITY browser_urlbar_maxRichResults_name "De inschrijving in de keuzelijst">
-<!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt welke elementen kunnen worden gericht door op Tab.">
-<!ENTITY accessibility_tabfocus_name "Tab focus elementen">
-<!ENTITY accessibility_tabfocus_o1 "focus geven aan tekstvelden alleen">
-<!ENTITY accessibility_tabfocus_o2 "Geef aandacht aan alle vormen elementen behalve tekstvelden">
-<!ENTITY accessibility_tabfocus_o3 "Alle elementen vormen">
-<!ENTITY accessibility_tabfocus_o4 "Geef focus naar links (en gekoppelde afbeeldingen) alleen.">
-<!ENTITY accessibility_tabfocus_o5 "Geef focus naar links en vorm elementen">
+<!ENTITY browser_urlbar_matchBehavior_description "Deze voorkeur bepaalt hoe woordgrenzen moeten worden gebruikt bij zoeken naar items in de locatiebalk.">
+<!ENTITY browser_urlbar_matchBehavior_name "Gedrag matchen">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Overal matchen">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Items die matchen met woordgrenzen eerst weergeven">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Alleen items die matchen met woordgrenzen weergeven">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Matchen aan begin van URL of titel">
+<!ENTITY browser_urlbar_maxRichResults_description "Bepaalt hoeveel resultaten (ten hoogste) moeten verschijnen in de locatiebalk.">
+<!ENTITY browser_urlbar_maxRichResults_name "Maximaal aantal resultaten">
+<!ENTITY prompts_tab_modal_enabled_description "Bepaalt of de nieuwe tabbladschermen of de oude vensterschermen moeten worden gebruikt.">
+<!ENTITY prompts_tab_modal_enabled_name "Tabbladschermen inschakelen (waarschuwingen)">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Bepaalt omgang met hoofdlettergevoeligheid. Indien ‘Automatisch bepaald’ is de zoekopdracht hoofdlettergevoelig als deze hoofd- en kleine letters bevat.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automatisch bepaald">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Niet hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_label "Zoeken tijdens typen">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Bepaalt na hoeveel tijd zonder toetsenbordinvoer de zoekbalk verdwijnt.">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Time-out (milliseconden)">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Zoekveld met geselecteerde tekst vullen">
+<!ENTITY signon_prefillForms_description "Formuliervelden automatisch vullen met gebruikersnamen en wachtwoorden.">
+<!ENTITY signon_prefillForms_name "Aanmeldformuliervelden automatisch invullen">
+<!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt op welke elementen kunnen worden gefocust door op Tab te drukken.">
+<!ENTITY accessibility_tabfocus_name "Tabfocuselementen">
+<!ENTITY accessibility_tabfocus_o1 "Alleen aan tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o2 "Aan alle formulierelementen behalve tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o3 "Aan alle formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o4 "Alleen aan koppelingen (en gekoppelde afbeeldingen) focus geven">
+<!ENTITY accessibility_tabfocus_o5 "Aan koppelingen en formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o6 "Aan koppelingen en formulierelementen behalve tekstvelden focus geven">
 <!ENTITY browser_backspace_action_description "Bepaalt het gedrag van de backspace-toets.">
 <!ENTITY browser_backspace_action_name "Backspace">
-<!ENTITY browser_backspace_action_o1 "Goes terug in de geschiedenis">
-<!ENTITY browser_backspace_action_o2 "Handelingen als Page Up">
+<!ENTITY browser_backspace_action_o1 "Gaat terug in de geschiedenis">
+<!ENTITY browser_backspace_action_o2 "Gedraagt zich als Page Up">
+<!ENTITY browser_backspace_action_o3 "Doet niets">
+<!ENTITY layout_spellcheckDefault_description "Bepaalt waar spellingscontrole ingeschakeld wordt.">
+<!ENTITY layout_spellcheckDefault_name "Spellingscontrole">
+<!ENTITY layout_spellcheckDefault_o1 "Uitschakelen">
+<!ENTITY layout_spellcheckDefault_o2 "Inschakelen voor meerregelige tekstvelden">
+<!ENTITY layout_spellcheckDefault_o3 "Inschakelen voor meerregelige en enkelregelige tekstvelden">
+<!ENTITY session_restore "Sessieherstel">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sessieherstel inschakelen">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Maximaal aantal gelijktijdige tabbladen">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Het aantal tabbladen dat gelijktijdig kan worden hersteld. Indien ingesteld op 0 wordt alleen het geselecteerde tabblad geladen in elk venster. Indien ingesteld op minder dan 0 worden alle tabbladen tegelijk hersteld.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Maximaal aantal te herstellen tabbladen">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum aantal tabbladen dat wordt weergegeven in het menu ‘Geschiedenis’ &gt; ‘Onlangs gesloten tabbladen’.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Maximaal aantal te herstellen vensters">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum aantal vensters dat wordt weergegeven in het menu ‘Geschiedenis’ &gt; ‘Onlangs gesloten vensters’.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Tabbladen op verzoek herstellen">
+<!ENTITY browser_sessionstore_restore_on_demand_description "Indien ingeschakeld worden tabbladen niet hersteld totdat ze worden geselecteerd.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Verborgen tabbladen herstellen">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Bepaalt of tabbladen in andere tabbladgroepen moeten worden hersteld of niet.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Vastgezette tabbladen op verzoek herstellen">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Vastgezette tabbladen worden altijd automatisch hersteld. Indien deze optie is ingeschakeld worden vastgezette tabbladen op verzoek hersteld, net als gewone tabbladen.">
 <!ENTITY misc "Diversen">
 <!ENTITY browser_search_openintab_description "Bij het uitvoeren van een zoekopdracht van de Search Bar, opent u de resultaten in een nieuw tabblad.">
 <!ENTITY browser_search_openintab_name "Open de zoekresultaten in een nieuw tabblad">

@@ -4,7 +4,7 @@
 <!ENTITY input "输入">
 <!ENTITY mousebehaviour "鼠标动作">
 <!ENTITY mousescrollvertical "上下滚动鼠标">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_action_description "选择鼠标滚动时按不同键所执行的操作">
 <!ENTITY mousewheel_default_action_name "不按键时的操作">
 <!ENTITY mousewheel_with_shift_action_name "按 SHIFT 键时的操作">
 <!ENTITY mousewheel_with_control_action_name "按 CTRL 键时的操作">
@@ -337,8 +337,8 @@
 <!-- MISC -->
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
-<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
-<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
+<!ENTITY devtools_inspector_enabled_description "在网站上下文菜单启用&quot;查看元素&quot;，这会对所选 HTML 元素打开查看器。">
+<!ENTITY devtools_inspector_enabled_name "启用&quot;查看元素&quot;">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
 <!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
 <!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">

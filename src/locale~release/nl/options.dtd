@@ -1,109 +1,109 @@
 <!-- ACCESSIBILITY -->
 <!ENTITY accessibility "Toegankelijkheid">
 <!-- MOUSE BEHAVIOUR -->
-<!ENTITY input "Input">
-<!ENTITY mousebehaviour "Mouse behaviour">
-<!ENTITY mousescrollvertical "Vertical mouse scrolling">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
-<!ENTITY mousewheel_default_action_name "Action with no key">
-<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
-<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
-<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
-<!ENTITY mousewheel_action_o1 "Scroll lines">
-<!ENTITY mousewheel_action_o2 "Scroll pages">
-<!ENTITY mousewheel_action_o3 "Go back/forward in the history">
-<!ENTITY mousewheel_action_o4 "Zoom page">
+<!ENTITY input "Invoer">
+<!ENTITY mousebehaviour "Muisgedrag">
+<!ENTITY mousescrollvertical "Verticaal muisscrollen">
+<!ENTITY mousewheel_action_description "Kies wat moet gebeuren bij scrollen in combinatie met verschillende toetsen">
+<!ENTITY mousewheel_default_action_name "Actie zonder toets">
+<!ENTITY mousewheel_with_shift_action_name "Actie met Shifttoets">
+<!ENTITY mousewheel_with_control_action_name "Actie met Ctrl-toets">
+<!ENTITY mousewheel_with_alt_action_name "Actie met Alt-toets">
+<!ENTITY mousewheel_action_o1 "Regels scrollen">
+<!ENTITY mousewheel_action_o2 "Pagina’s scrollen">
+<!ENTITY mousewheel_action_o3 "Vooruit/terug in geschiedenis">
+<!ENTITY mousewheel_action_o4 "Pagina zoomen">
 <!ENTITY mouseclick "Muisklik">
-<!ENTITY middleclick "Klik van de middelste muisknop">
-<!ENTITY middlemouse_contentLoadURL_description "Laad de inhoud van het klembord als URL bij een klik van de middelste muisknop.">
-<!ENTITY middlemouse_contentLoadURL_name "Laad klembord als URL">
-<!ENTITY middlemouse_paste_description "Plak de inhoud van het klembord in een tekstveld bij een klik van de middelste muisknop.">
-<!ENTITY middlemouse_paste_name "Plakken tekst van het klembord">
-<!ENTITY browser_urlbar_clickSelectsAll_description "Selecteer de inhoud van de adresbalk wanneer het wordt geklikt.">
-<!ENTITY browser_urlbar_clickSelectsAll_name "Selecteer inhoud op muisklik">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Selecteer de inhoud van de adresbalk wanneer het dubbel wordt geklikt.">
-<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Selecteer inhoud van dubbelklik">
+<!ENTITY middleclick "Middelklik">
+<!ENTITY middlemouse_contentLoadURL_description "De inhoud van het klembord als URL laden bij middelklik.">
+<!ENTITY middlemouse_contentLoadURL_name "Klembord als URL laden">
+<!ENTITY middlemouse_paste_description "De inhoud van het klembord in een tekstveld plakken bij middelklik.">
+<!ENTITY middlemouse_paste_name "Tekst van het klembord plakken">
+<!ENTITY browser_urlbar_clickSelectsAll_description "De inhoud van de adresbalk bij aanklikken selecteren.">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Inhoud selecteren bij klikken">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "De inhoud van de adresbalk selecteren bij dubbelklik.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Inhoud selecteren bij dubbelklik">
 <!-- URLBAR -->
-<!ENTITY urlbar "URLBar">
-<!ENTITY browser_urlbar_autoFill_description "Maakt inline autocomplete.">
+<!ENTITY urlbar "Adresbalk">
+<!ENTITY browser_urlbar_autoFill_description "Inline automatisch aanvullen inschakelen.">
 <!ENTITY browser_urlbar_autoFill_name "Inline AutoAanvullen">
-<!ENTITY browser_fixup_alternate_enabled_description "Als een adres niet gevonden kan worden de volgende karakters worden toegevoegd aan het adres.">
-<!ENTITY browser_fixup_alternate_enabled_name "Gebruik alternatieve adressen">
-<!ENTITY browser_fixup_alternate_prefix_description "Characters te voegen aan het begin van het adres.">
+<!ENTITY browser_fixup_alternate_enabled_description "Als een adres onbekend is worden de volgende tekens toegevoegd aan het adres.">
+<!ENTITY browser_fixup_alternate_enabled_name "Alternatieve adressen gebruiken">
+<!ENTITY browser_fixup_alternate_prefix_description "Aan het begin van het adres toe te voegen tekens.">
 <!ENTITY browser_fixup_alternate_prefix_name "Invoegen aan het begin">
-<!ENTITY browser_fixup_alternate_suffix_description "Characters te voegen aan het einde van het adres.">
-<!ENTITY browser_fixup_alternate_suffix_name "Steek aan het eind">
+<!ENTITY browser_fixup_alternate_suffix_description "Aan het einde van het adres toe te voegen tekens.">
+<!ENTITY browser_fixup_alternate_suffix_name "Aan het einde toevoegen">
 <!-- AWESOMEBAR -->
 <!ENTITY awesomebar "Awesomebar">
-<!ENTITY urlbar_restrict_name "Restrict results">
-<!ENTITY urlbar_match_name "Match results">
-<!ENTITY browser_urlbar_restrict_bookmark_description "Resultaten in de Smart Location Bar zijn beperkt tot bladwijzers.">
-<!ENTITY browser_urlbar_restrict_bookmark_name "Beperken aan favorieten">
-<!ENTITY browser_urlbar_restrict_history_description "Resultaten in de Smart Location Bar zijn beperkt tot websites die u bezocht.">
-<!ENTITY browser_urlbar_restrict_history_name "Beperken van de geschiedenis">
-<!ENTITY browser_urlbar_restrict_tag_description "Resultaten in de Smart Location Bar zijn beperkt tot tags.">
-<!ENTITY browser_urlbar_restrict_tag_name "Beperken van tags">
-<!ENTITY browser_urlbar_restrict_typed_description "Results in the Smart Location Bar are restricted to addresses you typed in the addressbar.">
-<!ENTITY browser_urlbar_restrict_typed_name "Restrict to typed addresses">
-<!ENTITY browser_urlbar_match_title_description "Bepaalt of Smart Location Bar resultaten gevonden die alleen in de pagina titel.">
+<!ENTITY urlbar_restrict_name "Resultaten beperken">
+<!ENTITY urlbar_match_name "Resultaten matchen">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Resultaten in de slimme locatiebalk zijn beperkt tot bladwijzers.">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Beperken tot bladwijzers">
+<!ENTITY browser_urlbar_restrict_history_description "Resultaten in de slimme locatiebalk zijn beperkt tot bezochte websites.">
+<!ENTITY browser_urlbar_restrict_history_name "Beperken tot geschiedenis">
+<!ENTITY browser_urlbar_restrict_tag_description "Resultaten in de slimme locatiebalk zijn beperkt tot labels.">
+<!ENTITY browser_urlbar_restrict_tag_name "Beperken tot labels">
+<!ENTITY browser_urlbar_restrict_typed_description "Resultaten in de slimme locatiebalk zijn beperkt tot de in de adresbalk ingetypte adressen.">
+<!ENTITY browser_urlbar_restrict_typed_name "Beperken tot getypte adressen">
+<!ENTITY browser_urlbar_match_title_description "Bepaalt of resultaten in de slimme locatiebalk alleen met de paginatitel matchen.">
 <!ENTITY browser_urlbar_match_title_name "Zoeken in titel">
-<!ENTITY browser_urlbar_match_url_description "Bepaalt of Smart Location Bar resultaten gevonden die alleen in de URL.">
+<!ENTITY browser_urlbar_match_url_description "Bepaalt of resultaten in de slimme locatiebalk alleen met de URL matchen.">
 <!ENTITY browser_urlbar_match_url_name "Zoeken in URL">
-<!ENTITY browser_urlbar_matchBehavior_description "This preference determines how to use word boundaries when searching for items in the Location Bar.">
-<!ENTITY browser_urlbar_matchBehavior_name "Match behavior">
-<!ENTITY browser_urlbar_matchBehavior_o1 "Match anywhere">
-<!ENTITY browser_urlbar_matchBehavior_o2 "Show items matching word boundaries first">
-<!ENTITY browser_urlbar_matchBehavior_o3 "Show only items matching word boundaries">
-<!ENTITY browser_urlbar_matchBehavior_o4 "Match at the beginning of the url or title">
-<!ENTITY browser_urlbar_maxRichResults_description "Bepaalt hoeveel items moeten verschijnen (bij de meeste) in het dropdown in de adresbalk.">
-<!ENTITY browser_urlbar_maxRichResults_name "De inschrijving in de keuzelijst">
+<!ENTITY browser_urlbar_matchBehavior_description "Deze voorkeur bepaalt hoe woordgrenzen moeten worden gebruikt bij zoeken naar items in de locatiebalk.">
+<!ENTITY browser_urlbar_matchBehavior_name "Gedrag matchen">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Overal matchen">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Items die matchen met woordgrenzen eerst weergeven">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Alleen items die matchen met woordgrenzen weergeven">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Matchen aan begin van URL of titel">
+<!ENTITY browser_urlbar_maxRichResults_description "Bepaalt hoeveel resultaten (ten hoogste) moeten verschijnen in de locatiebalk.">
+<!ENTITY browser_urlbar_maxRichResults_name "Maximaal aantal resultaten">
 <!-- WEBSITES -->
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
-<!ENTITY accessibility_typeaheadfind_casesensitive_description "Determines how case-sensitivity is handled. When &quot;Automatically determined&quot; the search is case-sensitive if the search string contains upper-case characters but isn't all-caps. ">
-<!ENTITY accessibility_typeaheadfind_casesensitive_name "Case Sensitive">
-<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automatically determined">
-<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Not case-sensitive">
-<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Case-sensitive">
-<!ENTITY accessibility_typeaheadfind_label "Find as you type">
-<!ENTITY accessibility_typeaheadfind_timeout_description "Determines after what amout of time with no further keyboard input the Find Bar disappears. ">
-<!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (millisec)">
-<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
-<!ENTITY signon_prefillForms_description "Automatically fill form fields with usernames and passwords.">
-<!ENTITY signon_prefillForms_name "Auto-fill login form fields">
-<!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt welke elementen kunnen worden gericht door op Tab.">
-<!ENTITY accessibility_tabfocus_name "Tab focus elementen">
-<!ENTITY accessibility_tabfocus_o1 "focus geven aan tekstvelden alleen">
-<!ENTITY accessibility_tabfocus_o2 "Geef aandacht aan alle vormen elementen behalve tekstvelden">
-<!ENTITY accessibility_tabfocus_o3 "Alle elementen vormen">
-<!ENTITY accessibility_tabfocus_o4 "Geef focus naar links (en gekoppelde afbeeldingen) alleen.">
-<!ENTITY accessibility_tabfocus_o5 "Geef focus naar links en vorm elementen">
-<!ENTITY accessibility_tabfocus_o6 "Give focus to links and form elements except text fields">
+<!ENTITY prompts_tab_modal_enabled_description "Bepaalt of de nieuwe tabbladschermen of de oude vensterschermen moeten worden gebruikt.">
+<!ENTITY prompts_tab_modal_enabled_name "Tabbladschermen inschakelen (waarschuwingen)">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Bepaalt omgang met hoofdlettergevoeligheid. Indien ‘Automatisch bepaald’ is de zoekopdracht hoofdlettergevoelig als deze hoofd- en kleine letters bevat.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automatisch bepaald">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Niet hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_label "Zoeken tijdens typen">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Bepaalt na hoeveel tijd zonder toetsenbordinvoer de zoekbalk verdwijnt.">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Time-out (milliseconden)">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Zoekveld met geselecteerde tekst vullen">
+<!ENTITY signon_prefillForms_description "Formuliervelden automatisch vullen met gebruikersnamen en wachtwoorden.">
+<!ENTITY signon_prefillForms_name "Aanmeldformuliervelden automatisch invullen">
+<!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt op welke elementen kunnen worden gefocust door op Tab te drukken.">
+<!ENTITY accessibility_tabfocus_name "Tabfocuselementen">
+<!ENTITY accessibility_tabfocus_o1 "Alleen aan tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o2 "Aan alle formulierelementen behalve tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o3 "Aan alle formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o4 "Alleen aan koppelingen (en gekoppelde afbeeldingen) focus geven">
+<!ENTITY accessibility_tabfocus_o5 "Aan koppelingen en formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o6 "Aan koppelingen en formulierelementen behalve tekstvelden focus geven">
 <!ENTITY browser_backspace_action_description "Bepaalt het gedrag van de backspace-toets.">
 <!ENTITY browser_backspace_action_name "Backspace">
-<!ENTITY browser_backspace_action_o1 "Goes terug in de geschiedenis">
-<!ENTITY browser_backspace_action_o2 "Handelingen als Page Up">
-<!ENTITY browser_backspace_action_o3 "Does nothing">
-<!ENTITY layout_spellcheckDefault_description "Determines where to enable spell checking. ">
-<!ENTITY layout_spellcheckDefault_name "Spell checking">
-<!ENTITY layout_spellcheckDefault_o1 "Disable">
-<!ENTITY layout_spellcheckDefault_o2 "Enable for multi-line textboxes">
-<!ENTITY layout_spellcheckDefault_o3 "Enable for multi-line and single-line textboxes">
+<!ENTITY browser_backspace_action_o1 "Gaat terug in de geschiedenis">
+<!ENTITY browser_backspace_action_o2 "Gedraagt zich als Page Up">
+<!ENTITY browser_backspace_action_o3 "Doet niets">
+<!ENTITY layout_spellcheckDefault_description "Bepaalt waar spellingscontrole ingeschakeld wordt.">
+<!ENTITY layout_spellcheckDefault_name "Spellingscontrole">
+<!ENTITY layout_spellcheckDefault_o1 "Uitschakelen">
+<!ENTITY layout_spellcheckDefault_o2 "Inschakelen voor meerregelige tekstvelden">
+<!ENTITY layout_spellcheckDefault_o3 "Inschakelen voor meerregelige en enkelregelige tekstvelden">
 <!-- SESSION RESTORE -->
-<!ENTITY session_restore "Session restore">
-<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
-<!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
-<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu.">
-<!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
-<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Windows&quot; menu.">
-<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
-<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
-<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
-<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
-<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
-<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY session_restore "Sessieherstel">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sessieherstel inschakelen">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Maximaal aantal gelijktijdige tabbladen">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Het aantal tabbladen dat gelijktijdig kan worden hersteld. Indien ingesteld op 0 wordt alleen het geselecteerde tabblad geladen in elk venster. Indien ingesteld op minder dan 0 worden alle tabbladen tegelijk hersteld.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Maximaal aantal te herstellen tabbladen">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum aantal tabbladen dat wordt weergegeven in het menu ‘Geschiedenis’ &gt; ‘Onlangs gesloten tabbladen’.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Maximaal aantal te herstellen vensters">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum aantal vensters dat wordt weergegeven in het menu ‘Geschiedenis’ &gt; ‘Onlangs gesloten vensters’.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Tabbladen op verzoek herstellen">
+<!ENTITY browser_sessionstore_restore_on_demand_description "Indien ingeschakeld worden tabbladen niet hersteld totdat ze worden geselecteerd.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Verborgen tabbladen herstellen">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Bepaalt of tabbladen in andere tabbladgroepen moeten worden hersteld of niet.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Vastgezette tabbladen op verzoek herstellen">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Vastgezette tabbladen worden altijd automatisch hersteld. Indien deze optie is ingeschakeld worden vastgezette tabbladen op verzoek hersteld, net als gewone tabbladen.">
 <!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
 <!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
 <!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
@@ -137,12 +137,12 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
-<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
-<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text (requires Windows 7 or Windows Vista with Vista Platform update).">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
-<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. ">
+<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely.">
 <!-- ALERTS -->
 <!-- CACHE -->
 <!ENTITY cache "Browser cache">

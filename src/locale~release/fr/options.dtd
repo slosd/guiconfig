@@ -137,12 +137,12 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
-<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute. ">
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
-<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text. (requires Windows 7 or Windows Vista with Vista Platform update)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text (requires Windows 7 or Windows Vista with Vista Platform update).">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
-<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely. ">
+<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely.">
 <!-- ALERTS -->
 <!-- CACHE -->
 <!ENTITY cache "Cache du navigateur">
