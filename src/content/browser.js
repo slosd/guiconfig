@@ -120,15 +120,18 @@ if (CUSTOMIZABLE_UI) {
     toolbox.palette.appendChild(registerUI(createToolbarButton(window)));
 
     var toolbarInfo = FIRST_START ? { id: 'nav-bar', currentset: [], buttonIndex: -1 } : findToolbar(window);
-    if (toolbarInfo) {
-      var toolbar = document.getElementById(toolbarInfo.id);
-      var beforeNode = null;
-      var beforeIndex = toolbarInfo.buttonIndex + 1;
-      while (toolbarInfo.buttonIndex !== -1 && beforeIndex < toolbarInfo.set.length &&
-          !(beforeNode = document.getElementById(toolbarInfo.set[beforeIndex])))
-        beforeIndex += 1;
-      toolbar.insertItem(BUTTON_ID, beforeNode);
-    }
+    if (!toolbarInfo)
+      return;
+
+    var toolbar = document.getElementById(toolbarInfo.id);
+    var beforeNode = null;
+    var beforeIndex = toolbarInfo.buttonIndex + 1;
+    while (toolbarInfo.buttonIndex !== -1 && beforeIndex < toolbarInfo.set.length &&
+        !(beforeNode = document.getElementById(toolbarInfo.set[beforeIndex])))
+      beforeIndex += 1;
+    toolbar.insertItem(BUTTON_ID, beforeNode);
+    toolbar.setAttribute('currentset', toolbar.currentSet);
+    document.persist(toolbarInfo.id, 'currentset');
   };
 }
 
