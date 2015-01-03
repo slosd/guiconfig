@@ -1,10 +1,10 @@
 <!ENTITY browser.item.label "Geavanceerde Instellingen">
 <!ENTITY browser.item.access "d">
-<!ENTITY config.search "Search">
+<!ENTITY config.search "Zoeken">
 <!ENTITY config.descr.standard "Beweeg de cursor over een optie om een gedetailleerde beschrijving te zien">
 <!ENTITY config.standard.label "Alles resetten">
 <!ENTITY config.todefault "Instellen op de standaard waarde">
 <!ENTITY config.header.title "gui:config">
-<!ENTITY config.choosefile "Choose File">
-<!ENTITY config.browse "Browse...">
-<!ENTITY config.searchresults "Search results">
+<!ENTITY config.choosefile "Kies bestand">
+<!ENTITY config.browse "Bladeren…">
+<!ENTITY config.searchresults "Zoekresultaten">
