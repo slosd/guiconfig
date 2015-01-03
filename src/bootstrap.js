@@ -22,7 +22,12 @@ var WindowListener = {
 };
 
 function install(data, reason) { }
-function uninstall(data, reason) { }
+
+function uninstall(data, reason) {
+  if (reason === ADDON_UNINSTALL) {
+    Services.prefs.clearUserPref('extensions.guiconfig.firststart');
+  }
+}
 
 function startup(data, reason) {
   forEachWindow(loadIntoWindow);
