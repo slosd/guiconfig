@@ -22,7 +22,7 @@ if (FIRST_START) {
   Services.prefs.setBoolPref(GC_PREF_FIRST_START, false);
 }
 
-const PREFERENCES_DIALOG_URI = 'chrome://guiconfig/content/ui/preferences.xul';
+const PREFERENCES_DIALOG_URI = 'chrome://guiconfig/content/preferences.xul';
 const BUTTON_ID = 'guiconfig-open-preferences';
 
 var dialog = null;

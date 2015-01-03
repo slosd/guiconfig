@@ -118,8 +118,6 @@
     <em:description>This extension provides advanced settings</em:description>
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://guiconfig.freedig.org</em:homepageURL>
-    <em:optionsURL>chrome://guiconfig/content/ui/inlinepref.xul</em:optionsURL>
-    <em:optionsType>2</em:optionsType>
     <em:bootstrap>true</em:bootstrap>
 
     <em:translator>Stanislav Horáček (cs)</em:translator>
