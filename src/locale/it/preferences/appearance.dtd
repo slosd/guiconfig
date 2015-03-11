@@ -1,0 +1,22 @@
+
+<!-- Browser -->
+<!ENTITY browser_style "Browser">
+<!ENTITY browser_chrome_favicons_name "Mostra favicon">
+<!ENTITY browser_chrome_favicons_description "Stabilisce se visualizzare o meno le favicon.">
+<!ENTITY browser_chrome_toolbar_tips_name "Mostra suggerimenti">
+<!ENTITY browser_chrome_toolbar_tips_description "Specifica il comportamento dei suggerimenti per gli elementi di tipo chrome">
+<!ENTITY browser_preferences_animateFadeIn_name "Dissolvenza in apertura all&apos;interno della finestra Opzioni">
+<!ENTITY browser_preferences_animateFadeIn_description "Cambia l&apos;altezza della finestra e genera un effetto dissolvenza per circa un secondo quando si passa da un pannello all&apos;altro nella finestra delle Opzioni.">
+<!ENTITY browser_preferences_instantApply_name "Applica subito">
+<!ENTITY browser_preferences_instantApply_description "Le modifiche nella finestra Opzioni sono immediatamente attive. La finestra delle Opzioni non è modale. Al posto dei pulsanti &apos;OK&apos; e &apos;Annulla&apos; è presente solo il tasto &apos;Chiudi&apos;.">
+
+<!-- New tab page -->
+
+<!-- Selected text -->
+<!ENTITY text_select "Selezione del testo">
+<!ENTITY ui_textSelectBackgroundAttention_name "Colore di sfondo del testo evidenziato">
+<!ENTITY ui_textSelectBackgroundAttention_description "Indica il colore di sfondo utilizzato per la funzione di ricerca durante la digitazione utilizzando un codice esadecimale o il nome di un colore.">
+<!ENTITY ui_textSelectBackground_name "Colore di sfondo">
+<!ENTITY ui_textSelectBackground_description "Indica il colore di sfondo per la selezione del testo utilizzando un codice esadecimale o il nome di un colore. Se la preferenza non è impostata viene utilizzato il valore fornito dal sistema operativo.">
+<!ENTITY ui_textSelectForeground_name "Colore del testo">
+<!ENTITY ui_textSelectForeground_description "Indica il colore del testo selezionato, utilizzando un codice esadecimale o il nome di un colore. Se la preferenza non è impostata viene utilizzato il valore fornito dal sistema operativo.">

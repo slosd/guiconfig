@@ -1,0 +1,22 @@
+
+<!-- Browser -->
+<!ENTITY browser_style "Browser">
+<!ENTITY browser_chrome_favicons_name "Toon Favicons">
+<!ENTITY browser_chrome_favicons_description "Bepaalt of om aan te tonen favicons of niet.">
+<!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
+<!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltip gedrag voor chromen elementen.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
+<!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
+<!ENTITY browser_preferences_instantApply_name "Instant toepassing">
+<!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn actief onmiddellijk. De voorkeuren venster is niet modaal. In plaats van &quot;OK&quot; en &quot;Annuleren&quot; knoppen, is er slechts een &quot;Sluiten&quot;.&quot;&gt;">
+
+<!-- New tab page -->
+
+<!-- Selected text -->
+<!ENTITY text_select "Geselecteerde tekst">
+<!ENTITY ui_textSelectBackgroundAttention_name "&quot;Find As You Type&quot; achtergrondkleur&quot;&gt;">
+<!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Find As You Type als een hexadecimale code of benoemde kleur.">
+<!ENTITY ui_textSelectBackground_name "Achtergrondkleur">
+<!ENTITY ui_textSelectBackground_description "Bepaalt de achtergrondkleur te gebruiken voor tekst selecties als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van de OS's gebruikt.">
+<!ENTITY ui_textSelectForeground_name "Tekstkleur">
+<!ENTITY ui_textSelectForeground_description "Bepaalt de tekstkleur te gebruiken voor tekst selecties als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van de OS's gebruikt.">

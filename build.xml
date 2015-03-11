@@ -5,13 +5,11 @@
 
   <property name="src.dir" value="${basedir}/src" />
   <property name="build.dir" value="${basedir}/build" />
+  <property name="tasks.dir" value="${basedir}/tasks" />
   <property name="xpi.dir" value="${basedir}/releases" />
-  <property name="locales.release.name" value="locale~release" />
-  <property name="locales.babelzilla.name" value="locale~babelzilla" />
-  <property name="locales.release.dir" value="${src.dir}/${locales.release.name}" />
-  <property name="locales.babelzilla.dir" value="${src.dir}/${locales.babelzilla.name}" />
+  <property name="xpi.file" value="${xpi.dir}/guiconfig-${version}.xpi" />
 
-  <target name="build" depends="prepare-build,release-locales">
+  <target name="build" depends="prepare-build,locales,complete-locales">
     <copy file="${src.dir}/install.tpl.rdf" tofile="${build.dir}/install.rdf" overwrite="true">
       <filterchain>
         <replacetokens begintoken="%" endtoken="%">
@@ -22,141 +20,50 @@
       </filterchain>
     </copy>
 
-    <copy file="${src.dir}/chrome.tpl.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true">
-      <filterchain>
-        <replacetokens begintoken="%" endtoken="%">
-          <token key="LOCALES" value="${locales.manifest}" />
-        </replacetokens>
-      </filterchain>
-    </copy>
-
-    <copy todir="${build.dir}/locale" overwrite="true">
-      <fileset dir="${locales.release.dir}" includes="${locales.dir}" />
-    </copy>
-
-    <antcall target="validate-preferences" />
-
-    <antcall target="createXPI">
-      <param name="file" value="guiconfig-${version}.xpi" />
-    </antcall>
-  </target>
-
-  <target name="build-babelzilla" depends="prepare-build,babelzilla-locales">
-    <copy file="${src.dir}/install.tpl.rdf" tofile="${build.dir}/install.rdf" overwrite="true">
-      <filterchain>
-        <replacetokens begintoken="%" endtoken="%">
-          <token key="VERSION" value="${version}-babelzilla" />
-          <token key="FFMINVERSION" value="${firefox.minversion}" />
-          <token key="FFMAXVERSION" value="${firefox.maxversion}" />
-        </replacetokens>
-      </filterchain>
-    </copy>
-
-    <copy file="${src.dir}/chrome.tpl.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true">
-      <filterchain>
-        <replacetokens begintoken="%" endtoken="%">
-          <token key="LOCALES" value="${locales.manifest}" />
-        </replacetokens>
-      </filterchain>
-    </copy>
-
-    <copy todir="${build.dir}/locale" overwrite="true">
-      <fileset dir="${locales.babelzilla.dir}" includes="${locales.dir}" />
-    </copy>
-
-    <antcall target="validate-preferences" />
-
-    <antcall target="createXPI">
-      <param name="file" value="guiconfig-${version}-babelzilla.xpi" />
-    </antcall>
-  </target>
-
-  <target name="clear-locales">
-    <exec executable="egrep" outputproperty="entities">
-      <arg value="-o"/>
-      <arg value="&amp;(\S+);"/>
-      <arg file="${src.dir}/content/preferences.xml"/>
-    </exec>
-    <script language="javascript">
-    <![CDATA[
-      var entities = project.getProperty("entities");
-      var pattern = "(^<!--|<!ENTITY " + entities.replaceAll("(&|;)", "").replaceAll("\n", " |<!ENTITY ") + " )";
-      project.setProperty("pattern", pattern);
-    ]]>
-    </script>
-    <apply executable="egrep" parallel="false">
-      <arg value="${pattern}"/>
-      <fileset dir="${locales.babelzilla.dir}" includes="*/options.dtd"/>
-      <redirector>
-        <outputmapper type="glob" from="*.dtd" to="${locales.babelzilla.dir}/*.clear.dtd"/>
-      </redirector>
-    </apply>
-    <move todir="${locales.babelzilla.dir}">
-      <fileset dir="${locales.babelzilla.dir}" includes="*/options.clear.dtd"/>
-      <mapper type="glob" from="*.clear.dtd" to="*.dtd"/>
-    </move>
-  </target>
-
-  <target name="validate-preferences">
-    <property name="validate.locale" value="en-US" />
-
-    <copy file="${src.dir}/content/preferences.xml" tofile="${src.dir}/content/preferences.local.xml" overwrite="true" />
-    <replace file="${src.dir}/content/preferences.local.xml">
-      <replacefilter token="chrome://guiconfig/locale/" value="${locales.release.dir}/${validate.locale}/"/>
-      <replacefilter token="chrome://guiconfig/content/" value="."/>
-    </replace>
-
-    <schemavalidate file="${src.dir}/content/preferences.local.xml">
-      <property name="http://java.sun.com/xml/jaxp/properties/schemaLanguage" value="http://www.w3.org/2001/XMLSchema"/>
-    </schemavalidate>
-    <delete file="${src.dir}/content/preferences.local.xml"/>
-  </target>
-
-  <target name="release-locales">
-    <loadresource property="locales.manifest">
-      <propertyresource name="locales.release" />
+    <dirset id="build.locales.dirset" dir="${build.dir}/locale" includes="*" />
+    <property name="build.locales.dirs" refid="build.locales.dirset" />
+    <loadresource property="build.locales.manifest">
+      <propertyresource name="build.locales.dirs" />
       <filterchain>
         <tokenfilter>
-          <stringtokenizer suppressdelims="true" />
+          <stringtokenizer delims=";" suppressdelims="true" />
           <replaceregex pattern="(.*)" replace="locale guiconfig \1 locale/\1/${line.separator}" />
         </tokenfilter>
       </filterchain>
     </loadresource>
 
-    <loadresource property="locales.dir">
-      <propertyresource name="locales.release" />
+    <copy file="${src.dir}/chrome.tpl.manifest" tofile="${build.dir}/chrome.manifest" overwrite="true">
+      <filterchain>
+        <replacetokens begintoken="%" endtoken="%">
+          <token key="LOCALES" value="${build.locales.manifest}" />
+        </replacetokens>
+      </filterchain>
+    </copy>
+
+    <zip destfile="${xpi.file}" basedir="${build.dir}" update="false" />
+    <chmod file="${xpi.file}" perm="ugo-w" />
+  </target>
+
+  <target name="locales">
+    <loadresource property="locales.released.dirs">
+      <propertyresource name="locales.released" />
       <filterchain>
         <tokenfilter>
           <stringtokenizer />
-          <replaceregex pattern="(.*)" replace="\1/" />
+          <replaceregex pattern="(.*)" replace="\1/**" />
         </tokenfilter>
       </filterchain>
     </loadresource>
+
+    <copy todir="${build.dir}/locale" overwrite="true">
+      <fileset dir="${src.dir}/locale" includes="${locales.released.dirs}">
+        <include name="**" if="${locales.for_babelzilla}" />
+      </fileset>
+    </copy>
   </target>
 
-  <target name="babelzilla-locales">
-    <dirset id="locales.dirset" dir="${locales.babelzilla.dir}" includes="*" />
-    <property name="locales.babelzilla.list" refid="locales.dirset" />
-
-    <loadresource property="locales.manifest">
-      <propertyresource name="locales.babelzilla.list" />
-      <filterchain>
-        <tokenfilter>
-          <stringtokenizer delims=";" suppressdelims="true" />
-          <replaceregex pattern="(.*)" replace="locale guiconfig \1 locale/\1/${line.separator}" />
-        </tokenfilter>
-      </filterchain>
-    </loadresource>
-
-    <loadresource property="locales.dir">
-      <propertyresource name="locales.babelzilla.list" />
-      <filterchain>
-        <tokenfilter>
-          <stringtokenizer delims=";" suppressdelims="true" />
-          <replaceregex pattern="(.*)" replace="\1/ " />
-        </tokenfilter>
-      </filterchain>
-    </loadresource>
+  <target name="complete-locales" unless="${locales.for_babelzilla}" depends="tasks,locales">
+    <localebuilder sourcedir="${build.dir}/locale" targetdir="${build.dir}/locale" baselocale="en-US" />
   </target>
 
   <target name="prepare-build">
@@ -183,8 +90,29 @@
     </copy>
   </target>
 
-  <target name="createXPI">
-    <zip destfile="${xpi.dir}/${file}" basedir="${build.dir}" update="false" />
-    <chmod file="${xpi.dir}/${file}" perm="ugo-w" />
+  <target name="validate-preferences">
+    <property name="validate.locale" value="en-US" />
+
+    <copy file="${src.dir}/content/preferences.xml" tofile="${src.dir}/content/preferences.${validate.locale}.xml" overwrite="true">
+      <filterchain>
+        <replacestring from="chrome://guiconfig/locale/" to="${src.dir}/locale/${validate.locale}/"/>
+        <replacestring from="chrome://guiconfig/content/" to="${src.dir}/"/>
+      </filterchain>
+    </copy>
+
+    <schemavalidate file="${src.dir}/content/preferences.${validate.locale}.xml">
+      <property name="http://java.sun.com/xml/jaxp/properties/schemaLanguage" value="http://www.w3.org/2001/XMLSchema"/>
+    </schemavalidate>
+    <delete file="${src.dir}/content/preferences.${validate.locale}.xml"/>
+  </target>
+
+  <target name="tasks" depends="build-tasks">
+    <taskdef name="localebuilder" classname="net.slosd.LocaleBuilder" classpath="${tasks.dir}" />
+  </target>
+
+  <target name="build-tasks">
+    <javac sourcepath="" srcdir="${tasks.dir}" destdir="${tasks.dir}">
+      <include name="*.java" />
+    </javac>
   </target>
 </project>

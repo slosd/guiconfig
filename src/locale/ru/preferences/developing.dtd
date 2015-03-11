@@ -1,0 +1,18 @@
+<!ENTITY developing "Разработка">
+
+<!-- View Source -->
+<!ENTITY viewsource "Просмотр исходного кода">
+<!ENTITY view_source_editor_external_name "Использовать указанный пользователем редактор">
+<!ENTITY view_source_editor_external_description "Использовать для просмотра исходного кода указанный пользователем редактор.">
+<!ENTITY view_source_editor_path_name "Путь к редактору">
+<!ENTITY view_source_editor_path_description "Путь для указываемого пользователем редактора.">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Отключить XUL кэш">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Изменения в окнах и диалогах не требуют перезапуска. Не работает с файлами упакованными в JAR.">
+<!ENTITY browser_dom_window_dump_enabled_name "Разрешить dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Разрешает использовать оператор dump() для печати в стандартной консоли.">
+<!ENTITY javascript_options_showInConsole_name "Показывать chrome ошибки в консоли">
+<!ENTITY javascript_options_showInConsole_description "Определяет будут ли записываться в журнал консоли ошибок ошибки и предупреждения chrome.">
+<!ENTITY javascript_options_strict_name "Строгие Javascript предупреждения">
+<!ENTITY javascript_options_strict_description "Включает более строгую проверку Javascript, увеличивая количество предупреждений в консоли ошибок.">

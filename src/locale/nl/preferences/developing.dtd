@@ -1,0 +1,16 @@
+<!ENTITY developing "Ontwikkeling">
+
+<!-- View Source -->
+<!ENTITY viewsource "Bekijk Bron">
+<!ENTITY view_source_editor_external_name "Gebruik aangepaste editor">
+<!ENTITY view_source_editor_external_description "Gebruik een aangepaste editor voor View Source.">
+<!ENTITY view_source_editor_path_name "Editor pad">
+<!ENTITY view_source_editor_path_description "Pad naar de aangepaste editor.">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Schakel XUL cache">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Wijzigingen aan vensters en dialoogvensters vereisen geen herstart. Werkt niet met bestanden verpakt in een JAR.">
+<!ENTITY browser_dom_window_dump_enabled_name "Schakel dump ()">
+<!ENTITY browser_dom_window_dump_enabled_description "Maakt het gebruik van de dump () verklaring af te drukken op de standaard console.">
+<!ENTITY javascript_options_strict_name "Strict Javascript waarschuwingen">
+<!ENTITY javascript_options_strict_description "Maakt strikte JavaScript waarschuwingen in de Error Console.">

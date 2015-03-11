@@ -1,0 +1,16 @@
+
+
+<!-- Tab preview -->
+
+<!-- Open in background -->
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
+
+<!-- Misc -->
+<!ENTITY browser_tabs_closeButtons_name "Sluiten knoppen voor tabbladen worden weergegeven">
+<!ENTITY browser_tabs_closeButtons_description "bepaalt waar te sluiten elkaar knoppen.">
+<!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">
+<!ENTITY browser_tabs_closeButtons_o2 "op elk tabblad">
+<!ENTITY browser_tabs_closeButtons_o3 "nooit">
+<!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
+<!ENTITY browser_search_openintab_name "Open de zoekresultaten in een nieuw tabblad">
+<!ENTITY browser_search_openintab_description "Bij het uitvoeren van een zoekopdracht van de Search Bar, opent u de resultaten in een nieuw tabblad.">

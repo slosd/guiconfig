@@ -1,0 +1,36 @@
+
+<!-- Websites -->
+
+<!-- Images -->
+<!ENTITY browser_display_show_image_placeholders_name "Mostra segnaposto">
+<!ENTITY browser_display_show_image_placeholders_description "Visualizza i segnaposto durante il periodo di caricamento delle immagini.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Ridimensiona le immagini">
+<!ENTITY browser_enable_automatic_image_resizing_description "Quando si visualizza un&apos;immagine che non è contenuta in una pagina web, l&apos;immagine, se troppo grande, verrà ridimensionata per adattarsi alle dimensioni della finestra del browser.">
+
+<!-- Rendering -->
+<!ENTITY rendering "Rendering">
+<!ENTITY nglayout_initialpaint_delay_name "Ritardo nella visualizzazione delle pagine (millisecondi)">
+<!ENTITY nglayout_initialpaint_delay_description "Questa preferenza permette di specificare l&apos;attesa, in millisecondi, prima che sia effettuato il rendering di una pagina. Valori più bassi faranno in modo che le pagine siano visualizzate più velocemente ma sarà necessario più tempo per il rendering. Valori più alti avranno l&apos;effetto contrario.">
+<!ENTITY content_notify_interval_name "Ritardo prima del redrawing della pagina (microsecondi)">
+<!ENTITY content_notify_interval_description "Il rendering dei dati ricevuti da un sito web è effettuato periodicamente. Questa preferenza indica, in microsecondi, l&apos;intervallo minimo di attesa tra i redrawing della pagina. Valori più bassi diminuiranno il tempo di caricamento percepito ma incrementeranno il tempo di caricamento totale.">
+
+<!-- Misc -->
+
+<!-- Accessibility -->
+<!ENTITY accessibility "Accessibilità">
+
+<!-- Find as you type -->
+
+<!-- Browser zoom -->
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Completa automaticamente i campi per l&apos;accesso ai siti web">
+<!ENTITY signon_prefillForms_description "I campi dei moduli di accesso ai siti web vengono completati automaticamente con nome utente e password salvati.">
+<!ENTITY accessibility_tabfocus_name "Il tasto Tab seleziona:">
+<!ENTITY accessibility_tabfocus_description "Questa impostazione specifica quali elementi vengono selezionati premendo il tasto Tab.">
+<!ENTITY accessibility_tabfocus_o1 "solo i campi di testo">
+<!ENTITY accessibility_tabfocus_o2 "tutti gli elementi dei moduli eccetto i campi di testo">
+<!ENTITY accessibility_tabfocus_o3 "tutti gli elementi dei moduli">
+<!ENTITY accessibility_tabfocus_o4 "solo i collegamenti (e le immagini con collegamento)">
+<!ENTITY accessibility_tabfocus_o5 "sia i collegamenti che gli elementi dei moduli">
+<!ENTITY accessibility_tabfocus_o6 "sia i collegamenti che gli elementi dei moduli, ad eccezione dei campi di testo">

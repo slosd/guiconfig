@@ -1,0 +1,20 @@
+<!ENTITY developing "开发">
+
+<!-- View Source -->
+<!ENTITY viewsource "查看源代码">
+<!ENTITY view_source_editor_external_name "使用自定义编辑器">
+<!ENTITY view_source_editor_external_description "使用自定义的编辑器查看源代码。">
+<!ENTITY view_source_editor_path_name "编辑器路径：">
+<!ENTITY view_source_editor_path_description "自定义编辑器所在的路径。">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
+<!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">
+<!ENTITY devtools_inspector_enabled_name "启用&quot;查看元素&quot;">
+<!ENTITY devtools_inspector_enabled_description "在网站上下文菜单启用&quot;查看元素&quot;，这会对所选 HTML 元素打开查看器。">
+<!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
+<!ENTITY javascript_options_showInConsole_name "在控制台中显示 chrome 错误">
+<!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">
+<!ENTITY javascript_options_strict_name "严格的 Javascript 警告">
+<!ENTITY javascript_options_strict_description "在错误控制台中显示严格的 Javascript 警告。">

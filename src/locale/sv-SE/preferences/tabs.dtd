@@ -1,0 +1,38 @@
+<!ENTITY tabs "Flikar">
+
+<!ENTITY browser_tabs_tabClipWidth_name "Min. flikbredd för stängknappar">
+<!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar ska visas.">
+
+<!-- Tab preview -->
+<!ENTITY tab_preview "Förhandsvisning av flik">
+<!ENTITY browser_ctrlTab_preview_name "Aktivera förhandsvisning vid byte av flik">
+<!ENTITY browser_ctrlTab_preview_description "När [Ctrl]+[Tabulator] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
+<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet">
+<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (Windows 7+).">
+
+<!-- Open in background -->
+<!ENTITY open_in_background "Öppna en ny flik i bakgrunden från">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Länkar i externa program">
+<!ENTITY browser_tabs_loadInBackground_name "Länkar på webbplatser">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Bokmärken">
+<!ENTITY browser_search_context_loadInBackground_name "Sökning via snabbmenyn">
+
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Animera flikar">
+<!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om och när en flik tas bort.">
+<!ENTITY browser_panorama_animate_zoom_name "Animera panoramazoomning">
+<!ENTITY browser_panorama_animate_zoom_description "Aktivera animationer när du öppnar/stänger Panoramavyn för dina flikar (vid Ctrl+E).">
+<!ENTITY browser_tabs_closeButtons_name "Stängknappar för flikar visas">
+<!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar ska visas.">
+<!ENTITY browser_tabs_closeButtons_o1 "endast på den aktiva fliken">
+<!ENTITY browser_tabs_closeButtons_o2 "på varje flik">
+<!ENTITY browser_tabs_closeButtons_o3 "aldrig">
+<!ENTITY browser_tabs_closeButtons_o4 "i slutet av flikfältet">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Öppna ny flik bredvid aktuell flik">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bestämmer om en ny flik öppnas i slutet av flikfältet eller precis efter den för närvarande aktiva fliken.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "När en flik stängs, växla till fliken som öppnade den">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "När en flik stängs, byt fokus till fliken som öppnade den. I annat fall, växla till den angränsande fliken till höger eller den angränsande fliken till vänster. ">
+<!ENTITY browser_search_openintab_name "Öppna sökresultat i en ny flik">
+<!ENTITY browser_search_openintab_description "När en sökning utförs i sökfältet öppnas resultatsidan i en ny flik.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Stäng fönstret när sista fliken stängs">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Om alternativet aktiveras kommer det aktuella fönstret att stängas när du stänger den sista fliken i fönstret. Du kan stänga den sista fliken med ett mittenklick eller genom att trycka ner [Ctrl]+[W].">

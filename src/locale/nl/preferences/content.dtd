@@ -1,0 +1,47 @@
+
+<!-- Websites -->
+
+<!-- Images -->
+<!ENTITY browser_display_show_image_placeholders_name "Toon afbeelding plaatshouders">
+<!ENTITY browser_display_show_image_placeholders_description "Shows plaatshouders terwijl afbeelding wordt geladen.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Resize images">
+<!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding niet in een webpagina, wordt de afbeelding worden aangepast om te passen in het browservenster als het te groot is voor het browservenster.">
+
+<!-- Rendering -->
+
+<!-- Misc -->
+<!ENTITY prompts_tab_modal_enabled_name "Tabbladschermen inschakelen (waarschuwingen)">
+<!ENTITY prompts_tab_modal_enabled_description "Bepaalt of de nieuwe tabbladschermen of de oude vensterschermen moeten worden gebruikt.">
+
+<!-- Accessibility -->
+<!ENTITY accessibility "Toegankelijkheid">
+
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Bepaalt omgang met hoofdlettergevoeligheid. Indien ‘Automatisch bepaald’ is de zoekopdracht hoofdlettergevoelig als deze hoofd- en kleine letters bevat.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automatisch bepaald">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Niet hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_label "Zoeken tijdens typen">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Time-out (milliseconden)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Bepaalt na hoeveel tijd zonder toetsenbordinvoer de zoekbalk verdwijnt.">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Zoekveld met geselecteerde tekst vullen">
+
+<!-- Browser zoom -->
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Aanmeldformuliervelden automatisch invullen">
+<!ENTITY signon_prefillForms_description "Formuliervelden automatisch vullen met gebruikersnamen en wachtwoorden.">
+<!ENTITY accessibility_tabfocus_name "Tabfocuselementen">
+<!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt op welke elementen kunnen worden gefocust door op Tab te drukken.">
+<!ENTITY accessibility_tabfocus_o1 "Alleen aan tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o2 "Aan alle formulierelementen behalve tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o3 "Aan alle formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o4 "Alleen aan koppelingen (en gekoppelde afbeeldingen) focus geven">
+<!ENTITY accessibility_tabfocus_o5 "Aan koppelingen en formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o6 "Aan koppelingen en formulierelementen behalve tekstvelden focus geven">
+<!ENTITY layout_spellcheckDefault_name "Spellingscontrole">
+<!ENTITY layout_spellcheckDefault_description "Bepaalt waar spellingscontrole ingeschakeld wordt.">
+<!ENTITY layout_spellcheckDefault_o1 "Uitschakelen">
+<!ENTITY layout_spellcheckDefault_o2 "Inschakelen voor meerregelige tekstvelden">
+<!ENTITY layout_spellcheckDefault_o3 "Inschakelen voor meerregelige en enkelregelige tekstvelden">

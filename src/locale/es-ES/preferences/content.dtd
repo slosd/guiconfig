@@ -1,0 +1,66 @@
+
+<!-- Websites -->
+<!ENTITY websites "Páginas web">
+
+<!-- Images -->
+<!ENTITY images "Imágenes">
+<!ENTITY gfx_color_management_mode_name "Usar gestión de colores para">
+<!ENTITY gfx_color_management_mode_description "Requiere reiniciar.">
+<!ENTITY gfx_color_management_mode_o1 "ninguna imagen">
+<!ENTITY gfx_color_management_mode_o2 "todas las imágenes">
+<!ENTITY gfx_color_management_mode_o3 "imágenes con etiquetas ICC">
+<!ENTITY browser_display_show_image_placeholders_name "Mostrar los marcadores de posición para las imágenes">
+<!ENTITY browser_display_show_image_placeholders_description "Muestra los marcadores de posición mientras se están cargando las imágenes">
+<!ENTITY browser_enable_automatic_image_resizing_name "Redimensionar imágenes">
+<!ENTITY browser_enable_automatic_image_resizing_description "Al ver una página web, la imagen se redimensionará para encajarla en la ventana del navegador si es demasiado grande.">
+
+<!-- Rendering -->
+<!ENTITY rendering "Dibujado">
+<!ENTITY nglayout_initialpaint_delay_name "Retraso antes de mostrar una página (milisegundos)">
+<!ENTITY nglayout_initialpaint_delay_description "Esta opción especifica el número de milisegundos a esperar antes del primer dibujado de una página. Un valor bajo hará que la página se muestre más rápida, pero hará más lento el dibujado. Un valor alto tendrá el efecto contrario.">
+<!ENTITY content_notify_interval_name "Retraso antes de redibujar una página (microseg)">
+<!ENTITY content_notify_interval_description "Firefox dibuja periodicamente todos los datos recibidos de una página web. Esta opción especifica el tiempo mínimo a esperar entre el redibujado de una página en microsegundos. Un valor bajo bajará el tiempo de carga aparente, pero aumentará el total.">
+
+<!-- Misc -->
+<!ENTITY geo_enabled_name "Habilitar navegación independiente de la ubicación">
+<!ENTITY geo_enabled_description "Cuando se habilita, Firefox le preguntará si quiere decirle a la página que está visitando actualmente donde estás ubicado. Si lo deshabilita se desactivará totalmente.">
+<!ENTITY webgl_enabled_for_all_sites_name "Habilitar WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Descargar las fuentes embebidas en las páginas web">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Habilita la descarga de fuentes CSS3 que están incluidas usando @font-face.Requiere reiniciar.">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Habilitar DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Habilita la aceleración hardware para mostrar texto. (requiere Windows 7 o Windows Vista con la actualización de la plataforma Vista)">
+<!ENTITY layout_frames_force_resizability_name "Forzar los marcos a ser redimensionables">
+<!ENTITY dom_max_script_run_time_name "Tiempo máximo de scripts (seg)">
+<!ENTITY dom_max_script_run_time_description "Determina el número de segundos tras los cuales Firefox alerta de que un script está tardando mucho en ejecutarse.">
+
+<!-- Accessibility -->
+<!ENTITY accessibility "Accesibilidad">
+
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Distinguir mayúsculas">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Determina si se distinguen las mayúsculas. Si usa &quot;Determinar automáticamente&quot; la búsqueda distingue mayúsculas si la cadena contiene mayúsculas, pero no todos los caracteres.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Determinar automáticamente">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "No distinguir mayúsculas">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Distinguir mayúsculas">
+<!ENTITY accessibility_typeaheadfind_label "Buscar mientras escribe">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Tiempo de espera (milisegundos)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Determina tras cuanto tiempo sin escribir desaparece la barra de búsqueda.">
+
+<!-- Browser zoom -->
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Auto completar los campos de formulario de nombres de usuario">
+<!ENTITY signon_prefillForms_description "Complementar automáticamente los formularios con nombres de usuario y contraseñas.">
+<!ENTITY accessibility_tabfocus_name "Foco con el tabulador">
+<!ENTITY accessibility_tabfocus_description "Esta opción determina qué elementos pueden obtener el foco al pulsar el tabulador.">
+<!ENTITY accessibility_tabfocus_o1 "Dar el foco sólo a los cuadros de texto">
+<!ENTITY accessibility_tabfocus_o2 "Dar el foco a todos los elementos de formularios, excepto a los campos de texto">
+<!ENTITY accessibility_tabfocus_o3 "Todos los elementos de formularios">
+<!ENTITY accessibility_tabfocus_o4 "Dar el foco sólo a los enlaces (e imágenes enlazadas).">
+<!ENTITY accessibility_tabfocus_o5 "Dar el foco a los enlaces y elementos de formularios">
+<!ENTITY accessibility_tabfocus_o6 "Dar el foco a los enlaces y elementos de formularios excepto los campos de texto">
+<!ENTITY layout_spellcheckDefault_name "Corrección ortográfica">
+<!ENTITY layout_spellcheckDefault_description "Determinar cuando se habilita la corrección ortográfica.">
+<!ENTITY layout_spellcheckDefault_o1 "Deshabilitar">
+<!ENTITY layout_spellcheckDefault_o2 "Habilitar para cuadros de texto multi-línea">
+<!ENTITY layout_spellcheckDefault_o3 "Habilitar para cuadros de texto multi-línea y simples">

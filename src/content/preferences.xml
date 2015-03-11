@@ -1,5 +1,13 @@
 <?xml version="1.0" ?>
-<!DOCTYPE preferences SYSTEM "chrome://guiconfig/locale/options.dtd">
+<!DOCTYPE preferences [
+  <!ENTITY % browser SYSTEM "chrome://guiconfig/locale/preferences/browser.dtd"> %browser;
+  <!ENTITY % content SYSTEM "chrome://guiconfig/locale/preferences/content.dtd"> %content;
+  <!ENTITY % input SYSTEM "chrome://guiconfig/locale/preferences/input.dtd"> %input;
+  <!ENTITY % appearance SYSTEM "chrome://guiconfig/locale/preferences/appearance.dtd"> %appearance;
+  <!ENTITY % tabs SYSTEM "chrome://guiconfig/locale/preferences/tabs.dtd"> %tabs;
+  <!ENTITY % network SYSTEM "chrome://guiconfig/locale/preferences/network.dtd"> %network;
+  <!ENTITY % developing SYSTEM "chrome://guiconfig/locale/preferences/developing.dtd"> %developing;
+]>
 <preferences xmlns="http://guiconfig.freedig.org/preferences"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://guiconfig.freedig.org/preferences preferences.xsd">

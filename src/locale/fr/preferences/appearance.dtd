@@ -1,0 +1,22 @@
+
+<!-- Browser -->
+<!ENTITY browser_style "Navigateur">
+<!ENTITY browser_chrome_favicons_name "Voir les favicônes">
+<!ENTITY browser_chrome_favicons_description "Choisir si l&apos;on veut ou non voir les favicônes">
+<!ENTITY browser_chrome_toolbar_tips_name "Afficher les infobulles">
+<!ENTITY browser_chrome_toolbar_tips_description "Détermine le comportement des infobulles pour les éléments chrome.">
+<!ENTITY browser_preferences_animateFadeIn_name "Changement animé des panneaux de préférences">
+<!ENTITY browser_preferences_animateFadeIn_description "Modifie la hauteur de la fenêtre et fond avec le nouveau panneau en à peu près une seconde, lors du changement de panneau des préférences.">
+<!ENTITY browser_preferences_instantApply_name "Appliquer dès maintenant">
+<!ENTITY browser_preferences_instantApply_description "Les modifications des préférences sont aussitôt actives. Leur fenêtre n&apos;est plus modale : à la place des boutons « OK » et « Annuler » il n&apos;y a que le bouton « Fermer »">
+
+<!-- New tab page -->
+
+<!-- Selected text -->
+<!ENTITY text_select "Texte sélectionné">
+<!ENTITY ui_textSelectBackgroundAttention_name "Couleur de fond du « Trouvez ce que vous tapez »">
+<!ENTITY ui_textSelectBackgroundAttention_description "Précise la couleur de fond utilisée pour le « Trouvez ce que vous tapez » (code hexadécimal ou nom de la couleur).">
+<!ENTITY ui_textSelectBackground_name "Couleur d&apos;arrière-plan">
+<!ENTITY ui_textSelectBackground_description "Précise la couleur de fond à utiliser lors des sélections de texte (code hexadécimal ou nom de la couleur). Si la préférence n&apos;est pas fournie, la valeur du système d&apos;exploitation est utilisée.">
+<!ENTITY ui_textSelectForeground_name "Couleur du texte">
+<!ENTITY ui_textSelectForeground_description "Précise la couleur de texte à utiliser lors des sélections de texte (code hexadécimal ou nom de la couleur). Si la préférence n&apos;est pas fournie, la valeur du système d&apos;exploitation est utilisée.">

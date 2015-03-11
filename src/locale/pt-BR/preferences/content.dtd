@@ -1,0 +1,68 @@
+
+<!-- Websites -->
+<!ENTITY websites "Páginas">
+
+<!-- Images -->
+<!ENTITY images "Imagens">
+<!ENTITY gfx_color_management_mode_name "Usar gerenciamento de cores para:">
+<!ENTITY gfx_color_management_mode_description "Alterações a essa opção somente entrarão em vigor após o navegador ser reiniciado.">
+<!ENTITY gfx_color_management_mode_o1 "nenhuma imagem">
+<!ENTITY gfx_color_management_mode_o2 "todas as imagens">
+<!ENTITY gfx_color_management_mode_o3 "imagens que tenham informações ICC">
+<!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
+<!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas. (Costuma evitar algumas mudanças bruscas no aspecto da página durante o seu carregamento.)">
+<!ENTITY browser_enable_automatic_image_resizing_name "Reduzir imagens para exibi-las por completo">
+<!ENTITY browser_enable_automatic_image_resizing_description "Reduz o tamanho de uma imagem avulsa (fora de uma página) maior que a janela do navegador para que ela seja exibida por completo no espaço disponível.">
+
+<!-- Rendering -->
+<!ENTITY rendering "Exibição">
+<!ENTITY nglayout_initialpaint_delay_name "Atraso de exibição (ms):">
+<!ENTITY nglayout_initialpaint_delay_description "Especifica o tempo, em milissegundos, antes da primeira exibição de uma página sendo carregada. Valores menores fazem as páginas serem exibidas mais rapidamente porém demorarem mais para terminar de carregar. Valores maiores têm o efeito oposto.">
+<!ENTITY content_notify_interval_name "Intervalo mínimo entre reexibições (µs):">
+<!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as reexibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
+
+<!-- Misc -->
+<!ENTITY geo_enabled_name "Ativar localização">
+<!ENTITY geo_enabled_description "Permite que o Firefox pergunte a você se deseja informar a sua localização atual aos sites que a requisitarem. Desmarque essa opção para desativar a geolocalização no Firefox.">
+<!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Baixar fontes usadas nos sites">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Permite que o navegador baixe, se for preciso, fontes definidas nas páginas pelo comando CSS3 &quot;@font-face&quot;.">
+<!ENTITY prompts_tab_modal_enabled_name "Ativar mensagens dos sites dentro da aba">
+<!ENTITY prompts_tab_modal_enabled_description "Determina se as mensagens dos sites devem ser exibidas dentro da própria aba (novo) ou em uma janela separada (modo antigo).">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Ativar DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Ativa aceleração por hardware para exibição de texto (necessário Windows 7 ou Windows Vista com Platform Update).">
+<!ENTITY layout_frames_force_resizability_name "Forçar que sejam redimensionáveis">
+<!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
+<!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
+
+<!-- Accessibility -->
+<!ENTITY accessibility "Acessibilidade">
+
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Diferenciar maiúsculas de minúsculas:">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Especifica se a pesquisa de texto iniciada automaticamente ao se começar a digitar deve diferenciar maiúsculas de minúsculas. &quot;Automático&quot; não diferencia se o texto digitado for todo em minúsculas ou em maiúsculas, mas diferencia se nele houver ambas.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "automático">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "não">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "sim">
+<!ENTITY accessibility_typeaheadfind_label "Localizar texto ao começar a digitar">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Esconder após (ms):">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Especifica, em milissegundos, o tempo de ociosidade após o qual a barra de pesquisa é removida da tela.">
+
+<!-- Browser zoom -->
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Preencher automaticamente nomes de usuário e senhas">
+<!ENTITY signon_prefillForms_description "Preenche automaticamente o nome de usuário e a senha em sites para os quais o Firefox tenha só uma credencial memorizada. Desmarque para que mesmo nesses sites a senha seja preenchida somente após o nome de usuário correspondente ter sido digitado.">
+<!ENTITY accessibility_tabfocus_name "Tab focaliza:">
+<!ENTITY accessibility_tabfocus_description "Especifica entre quais itens da página o foco é alternado ao se pressionar a tecla Tab. Os demais itens somente poderão receber foco via clique ou com a função de cursor de teclado.">
+<!ENTITY accessibility_tabfocus_o1 "somente campos de texto">
+<!ENTITY accessibility_tabfocus_o2 "todos os itens de formulário exceto campos de texto">
+<!ENTITY accessibility_tabfocus_o3 "todos os itens de formulário">
+<!ENTITY accessibility_tabfocus_o4 "somente links (inclusive imagens com links)">
+<!ENTITY accessibility_tabfocus_o5 "todos os links e itens de formulário">
+<!ENTITY accessibility_tabfocus_o6 "todos os links e itens de formulário exceto campos de texto">
+<!ENTITY layout_spellcheckDefault_name "Corretor ortográfico:">
+<!ENTITY layout_spellcheckDefault_description "Especifica onde ativar por padrão o corretor ortográfico do Firefox.">
+<!ENTITY layout_spellcheckDefault_o1 "desligado">
+<!ENTITY layout_spellcheckDefault_o2 "apenas em campos de texto de várias linhas">
+<!ENTITY layout_spellcheckDefault_o3 "em todos os campos de texto">

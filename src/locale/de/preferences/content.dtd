@@ -1,0 +1,82 @@
+<!ENTITY content "Inhalt">
+
+<!-- Websites -->
+<!ENTITY websites "Webseiten">
+
+<!-- Images -->
+<!ENTITY images "Bilder">
+<!ENTITY gfx_color_management_mode_name "Color management benutzen für">
+<!ENTITY gfx_color_management_mode_description "Neustart notwendig.">
+<!ENTITY gfx_color_management_mode_o1 "keine Bilder">
+<!ENTITY gfx_color_management_mode_o2 "alle Bilder">
+<!ENTITY gfx_color_management_mode_o3 "Bilder mit ICC Tags">
+<!ENTITY image_animation_mode_name "Bildanimationen">
+<!ENTITY image_animation_mode_description "Bestimmt wie animierte Bilder (GIFs) dargestellt werden: Animation wiederholen, Einmalige Animation oder Animation deaktiviert.">
+<!ENTITY image_animation_mode_o1 "Animation wiederholen">
+<!ENTITY image_animation_mode_o2 "Einmalige Animation">
+<!ENTITY image_animation_mode_o3 "Animation deaktiviert">
+<!ENTITY browser_display_show_image_placeholders_name "Platzhalter für Bilder anzeigen">
+<!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Bilder anpassen">
+<!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
+
+<!-- Rendering -->
+<!ENTITY rendering "Rendering">
+<!ENTITY nglayout_initialpaint_delay_name "Anzeigeverzögerung (ms)">
+<!ENTITY nglayout_initialpaint_delay_description "Legt die Zeit fest, in der Firefox auf Daten wartet, bevor mit dem Rendern der Webseite begonnen wird.">
+<!ENTITY content_notify_interval_name "Wartezeit bis Aktualisierung (µs)">
+<!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelemente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen in Mikrosekunden. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
+
+<!-- Misc -->
+<!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
+<!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
+<!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Eingebundene Schriftarten herunterladen">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Aktiviert das Herunterladen von CSS3 Schriftarten die mittels @font-face eingebunden wurden. Neustart notwendig.">
+<!ENTITY prompts_tab_modal_enabled_name "Tab-modale Eingabeaufforderungen (Alert-Fenster) aktivieren">
+<!ENTITY prompts_tab_modal_enabled_description "Legt fest, ob die neuen Tab-modalen Eingabeaufforderungen oder die alten Fenster-modalen Eingabeaufforderungen verwendet werden sollen.">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktiviere DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiviert Hardwarebeschleunigung für die Textdarstellung (benötigt Windows 7 oder Windows Vista mit Vista Platform Update).">
+<!ENTITY layout_frames_force_resizability_name "Frames immer größenveränderlich">
+<!ENTITY dom_max_script_run_time_name "Max. Skriptlaufzeit (Sek)">
+<!ENTITY dom_max_script_run_time_description "Legt fest nach welcher Dauer Firefox eine Warnung für ein lange dauerndes Skript zeigt.">
+
+<!-- Accessibility -->
+<!ENTITY accessibility "Bedienung">
+
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Groß- u. Kleinschreibung">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Legt fest, ob bei der Suche zwischen Groß- u. Kleinschreibung unterschieden wird. Bei &quot;automatisch bestimmen&quot; wird nur zwischen Groß- u. Kleinbuchstaben unterschieden, wenn der Suchtext Großbuchstaben enthält, ansonsten wird nicht zwischen Groß- u. Kleinschreibung unterschieden.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "automatisch bestimmen">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "ignorieren">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "beachten">
+<!ENTITY accessibility_typeaheadfind_label "Suche in Webseiten">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (ms)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Legt fest, nach welcher Zeitspanne die Suchleiste bei Inaktivität wieder ausgeblendet wird.">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Suchfeld mit ausgewähltem Text füllen">
+
+<!-- Browser zoom -->
+<!ENTITY browser_zoom "Zoomfunktion">
+<!ENTITY browser_zoom_full_name "Gesamte Webseite zoomen">
+<!ENTITY browser_zoom_full_description "Ist diese Option aktiviert, verändert die Zoomfunktion alle Elemente einer Webseite anstatt nur die Textgröße.">
+<!ENTITY browser_zoom_siteSpecific_name "Zoomeinstellung merken">
+<!ENTITY browser_zoom_siteSpecific_description "Ist diese Option aktiviert, wird die Zoomeinstellung jeder Webseite gespeichert und wiederhergestellt. Ansonsten wird die Zoomeinstellung beim nächsten Besuch zurückgesetzt.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Tabs im Hintergrund verändern">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Tabs mit der gleichen Webseite auf die aktuelle Zoomeinstellung aktualisieren.">
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Loginfelder automatisch ausfüllen">
+<!ENTITY signon_prefillForms_description "Wenn vorhanden, werden gespeicherte Logindaten (Benutzername und Passwort) in die dazugehörigen Textfelder automatisch eingetragen.">
+<!ENTITY accessibility_tabfocus_name "Elemente mit TAB-Fokus">
+<!ENTITY accessibility_tabfocus_description "Definiert, welche Elemente einer Website mit der TAB-Taste (bzw. Shift+TAB) angewählt werden können.">
+<!ENTITY accessibility_tabfocus_o1 "Nur Textfelder">
+<!ENTITY accessibility_tabfocus_o2 "Alle Formularelemente, ausgenommen Textfelder">
+<!ENTITY accessibility_tabfocus_o3 "Alle Formularelemente">
+<!ENTITY accessibility_tabfocus_o4 "Hyperlinks">
+<!ENTITY accessibility_tabfocus_o5 "Hyperlinks und Formularelemente">
+<!ENTITY accessibility_tabfocus_o6 "Hyperlinks und Formularelemente, ausgenommen Textfelder">
+<!ENTITY layout_spellcheckDefault_name "Rechtschreibprüfung">
+<!ENTITY layout_spellcheckDefault_description "Aktiviert die Rechtschreibprüfung.">
+<!ENTITY layout_spellcheckDefault_o1 "Deaktivieren">
+<!ENTITY layout_spellcheckDefault_o2 "Nur für mehrzeilige Textfelder aktivieren">
+<!ENTITY layout_spellcheckDefault_o3 "Für ein- und mehrzeilige Textfelder aktivieren">
