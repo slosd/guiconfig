@@ -96,20 +96,28 @@ if (CUSTOMIZABLE_UI) {
    * Since the module CustomizableUI is available we can simply use that to
    * add the toolbar button.
    */
-  addToolbarButton = function _addToolbarButton_customizableUI(window) {
-    CustomizableUI.createWidget({
-      id: BUTTON_ID,
-      defaultArea: CustomizableUI.AREA_NAVBAR,
-      label: strings.GetStringFromName('browser.item.label'),
-      tooltiptext: strings.GetStringFromName('browser.item.label'),
-      onCommand: function() {
-        showPreferencesDialog(window);
+  addToolbarButton = function() {
+    var added = false;
+    return function _addToolbarButton_customizableUI(window) {
+      if (added) {
+        return;
       }
-    });
-    if (FIRST_START) {
-      CustomizableUI.addWidgetToArea(BUTTON_ID, CustomizableUI.AREA_NAVBAR);
-    }
-  };
+      CustomizableUI.createWidget({
+        id: BUTTON_ID,
+        defaultArea: CustomizableUI.AREA_NAVBAR,
+        label: strings.GetStringFromName('browser.item.label'),
+        tooltiptext: strings.GetStringFromName('browser.item.label'),
+        onCommand: function(event) {
+          var eventWindow = event.target.ownerDocument.defaultView;
+          showPreferencesDialog(eventWindow);
+        }
+      });
+      if (FIRST_START) {
+        CustomizableUI.addWidgetToArea(BUTTON_ID, CustomizableUI.AREA_NAVBAR);
+      }
+      added = true;
+    };
+  }();
 } else {
   /**
    * Manually add and restore the toolbar button.
