@@ -100,16 +100,16 @@
   <target name="validate-preferences">
     <property name="validate.locale" value="en-US" />
 
-    <copy file="${src.dir}/content/preferences.xml" tofile="${src.dir}/content/preferences.local.xml" overwrite="true" />
-    <replace file="${src.dir}/content/preferences.local.xml">
-      <replacefilter token="chrome://guiconfig/locale/" value="${locales.release.dir}/${validate.locale}/"/>
+    <copy file="${build.dir}/content/preferences.xml" tofile="${build.dir}/content/preferences.local.xml" overwrite="true" />
+    <replace file="${build.dir}/content/preferences.local.xml">
+      <replacefilter token="chrome://guiconfig/locale/" value="${build.dir}/locale/${validate.locale}/"/>
       <replacefilter token="chrome://guiconfig/content/" value="."/>
     </replace>
 
-    <schemavalidate file="${src.dir}/content/preferences.local.xml">
+    <schemavalidate file="${build.dir}/content/preferences.local.xml">
       <property name="http://java.sun.com/xml/jaxp/properties/schemaLanguage" value="http://www.w3.org/2001/XMLSchema"/>
     </schemavalidate>
-    <delete file="${src.dir}/content/preferences.local.xml"/>
+    <delete file="${build.dir}/content/preferences.local.xml"/>
   </target>
 
   <target name="release-locales">
