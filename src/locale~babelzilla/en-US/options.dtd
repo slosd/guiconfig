@@ -49,6 +49,8 @@
 <!ENTITY browser_urlbar_match_title_name "Search in title">
 <!ENTITY browser_urlbar_match_url_description "Determines whether Smart Location Bar results match only in the URL.">
 <!ENTITY browser_urlbar_match_url_name "Search in URL">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
 <!ENTITY browser_urlbar_matchBehavior_description "This preference determines how to use word boundaries when searching for items in the Location Bar.">
 <!ENTITY browser_urlbar_matchBehavior_name "Match behavior">
 <!ENTITY browser_urlbar_matchBehavior_o1 "Match anywhere">

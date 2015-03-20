@@ -91,6 +91,11 @@
               label="&browser_urlbar_trimURLs_name;"
               description="&browser_urlbar_trimURLs_description;"
               type="bool" />
+        <pref key="browser.fixup.dns_first_for_single_words"
+              label="&browser_fixup_dns_first_for_single_words_name;"
+              description="&browser_fixup_dns_first_for_single_words_description;"
+              type="bool"
+              minVersion="36a" />
         <pref key="browser.fixup.alternate.enabled"
               label="&browser_fixup_alternate_enabled_name;"
               description="&browser_fixup_alternate_enabled_description;"
