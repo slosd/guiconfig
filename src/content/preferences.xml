@@ -509,6 +509,40 @@
                 minValue="0" />
         </group>
       </concern>
+      <concern label="&javascript;">
+        <pref key="javascript.enabled"
+              label="&javascript_enabled_name;"
+              description="&javascript_enabled_description;"
+              type="bool" />
+        <group label="&permissions;">
+          <pref key="dom.disable_window_move_resize"
+                label="&dom_disable_window_move_resize_name;"
+                description="&dom_disable_window_move_resize_description;"
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_flip"
+                label="&dom_disable_window_flip_name;"
+                description="&dom_disable_window_flip_description;"
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.event.contextmenu.enabled"
+                label="&dom_event_contextmenu_enabled_name;"
+                description="&dom_event_contextmenu_enabled_description;"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.event.clipboardevents.enabled"
+                label="&dom_event_clipboardevents_enabled_name;"
+                description="&dom_event_clipboardevents_enabled_description;"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+        </group>
+      </concern>
     </concerns>
   </category>
   <category label="&input;" icon="input">

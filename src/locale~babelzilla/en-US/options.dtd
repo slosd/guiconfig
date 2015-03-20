@@ -264,6 +264,18 @@
 <!ENTITY image_animation_mode_o3 "Never run the animation">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Download fonts embedded in the website">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Enables downloading of CSS3 fonts which are embedded using @font-face. Restart required.">
+<!ENTITY javascript "Javascript">
+<!ENTITY permissions "Permissions">
+<!ENTITY javascript_enabled_name "Enable Javascript">
+<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
+<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
+<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
+<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
+<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
+<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
+<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
+<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
 <!-- TEXT SELECT -->
 <!ENTITY text_select "Selected text">
 <!ENTITY ui_textSelectBackgroundAttention_description "Determines the background color used for Find As You Type as a hex code or named color. ">
