@@ -1,12 +1,5 @@
-description {
-  background: #fff;
-  border: 1px solid #999999;
-  padding: 5px !important;
-  font-size: 1em;
-  min-height: 6em;
-  max-height: 6em;
-  margin: 0px 8px 8px;
-  overflow: hidden;
+.info-box description {
+  width: 300px;
 }
 
 #guiconfig-preference-search textbox {

@@ -145,8 +145,24 @@ var guiconfig = (function(guiconfig) {
       }
     },
 
-    setDescription: function(text) {
-      pref_window.descriptionText = text;
+    setInfo: function(anchor, text, key) {
+      if (!text && !key) {
+        if (!this.infoBoxTimeout) {
+          this.infoBoxTimeout = setTimeout(function() {
+            this.infoBoxTimeout = null;
+            pref_window.hideInfoBox();
+          }, 500);
+        }
+      } else {
+        if (this.infoBoxTimeout) {
+          clearTimeout(this.infoBoxTimeout);
+          this.infoBoxTimeout = null;
+        }
+        pref_window.hideInfoBox();
+        pref_window.descriptionText = text || '—';
+        pref_window.keyText = key || '—';
+        pref_window.showInfoBox(anchor);
+      }
     },
 
     showPreference: function(key) {

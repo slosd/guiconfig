@@ -19,6 +19,15 @@
              closebuttonlabel="&preferencesCloseButton.label;"
              closebuttonaccesskey="&preferencesCloseButton.accesskey;"
              dlgbuttons="accept,cancel" persist="lastSelected screenX screenY" role="dialog">
+      <xul:popupset>
+        <xul:panel anonid="info-box" class="info-box" orient="vertical" type="arrow" level="top" ignorekeys="true" noautohide="true" noautofocus="true" norestorefocus="true">
+          <xul:label class="header" value="&config.description;" />
+          <xul:description anonid="description"></xul:description>
+          <xul:label class="header" value="&config.preference_key;" />
+          <xul:description anonid="key"></xul:description>
+        </xul:panel>
+      </xul:popupset>
+
       <xul:windowdragbox orient="vertical">
         <xul:radiogroup anonid="selector" orient="horizontal" class="paneSelector chromeclass-toolbar" role="listbox"/>
       </xul:windowdragbox>
@@ -28,14 +37,10 @@
         <xul:textbox type="search" timeout="500" emptytext="&config.search;" xbl:inherits="oncommand=onsearch"/>
       </xul:hbox>
 
-      <xul:hbox flex="1" class="paneDeckContainer">
+      <xul:hbox anonid="body" flex="1" class="paneDeckContainer">
         <xul:deck anonid="paneDeck" flex="1">
           <children includes="prefpane"/>
         </xul:deck>
-      </xul:hbox>
-
-      <xul:hbox>
-        <xul:description anonid="description" flex="1">&config.descr.standard;</xul:description>
       </xul:hbox>
 
       <xul:hbox anonid="dlg-buttons" class="prefWindow-dlgbuttons">
@@ -52,8 +57,34 @@
     </content>
 
     <implementation>
+      <method name="showInfoBox">
+        <parameter name="anchor"/>
+        <body>
+        <![CDATA[
+          if (anchor) {
+            var height = anchor.clientHeight;
+            this._infoBox.openPopup(anchor, "end_before", 0, height / 2, false, false);
+          } else {
+            this._infoBox.openPopup(this._body, "end_before", 0, 0, false, false);
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="hideInfoBox">
+        <body>
+        <![CDATA[
+          this._infoBox.hidePopup();
+        ]]>
+        </body>
+      </method>
+
       <property name="descriptionText" onget="return this._description.textContent;" onset="return this._description.textContent = val;"/>
+      <property name="keyText" onget="return this._key.textContent;" onset="return this._key.textContent = val;"/>
+
+      <property name="_body" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'body');"/>
+      <property name="_infoBox" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'info-box');"/>
       <property name="_description" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'description');"/>
+      <property name="_key" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'key');"/>
     </implementation>
   </binding>
 </bindings>

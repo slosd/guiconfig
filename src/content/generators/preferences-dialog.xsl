@@ -70,15 +70,7 @@
 
   <xsl:template match="p:checkbox">
     <hbox>
-      <xsl:if test="@description">
-        <xsl:attribute name="data-description"><xsl:value-of select="@description" /></xsl:attribute>
-        <xsl:attribute name="onmouseover">guiconfig.preferences.setDescription(this.getAttribute('data-description'))</xsl:attribute>
-        <xsl:attribute name="onmouseout">guiconfig.preferences.setDescription('')</xsl:attribute>
-      </xsl:if>
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
-
+      <xsl:apply-templates select="." mode="standard-attributes" />
       <checkbox label="{@label}" value="{@value}" />
     </hbox>
   </xsl:template>
@@ -100,17 +92,7 @@
   <xsl:template match="p:pref">
     <hbox class="prefrow" align="center" context="_child">
       <xsl:attribute name="id"><xsl:value-of select="@key" />-view</xsl:attribute>
-      <xsl:if test="@description">
-        <xsl:attribute name="data-description"><xsl:value-of select="@description" /></xsl:attribute>
-        <xsl:attribute name="onmouseover">guiconfig.preferences.setDescription(this.getAttribute('data-description'))</xsl:attribute>
-        <xsl:attribute name="onmouseout">guiconfig.preferences.setDescription('')</xsl:attribute>
-      </xsl:if>
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
-      <xsl:if test="@indent">
-        <xsl:attribute name="class">prefrow indent</xsl:attribute>
-      </xsl:if>
+      <xsl:apply-templates select="." mode="standard-attributes" />
       <xsl:apply-templates select="." mode="element" />
       <menupopup>
         <menuitem label="&config.todefault;" class="menuitem-iconic" image="/skin/icons/actions/reset.png" oncommand="guiconfig.preferences.resetPreference('{@key}')" />
@@ -190,6 +172,26 @@
         </textbox>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="p:*" mode="standard-attributes">
+    <xsl:variable name="key" select="ancestor-or-self::*[@key and not(starts-with(@key, 'guiconfig.'))][1]/@key" />
+    <xsl:if test="$key">
+      <xsl:attribute name="data-key"><xsl:value-of select="$key" /></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="@description">
+      <xsl:attribute name="data-description"><xsl:value-of select="@description" /></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="$key or @description">
+      <xsl:attribute name="onmouseenter">guiconfig.preferences.setInfo(this, this.getAttribute('data-description'), this.getAttribute('data-key'))</xsl:attribute>
+      <xsl:attribute name="onmouseleave">guiconfig.preferences.setInfo()</xsl:attribute>
+    </xsl:if>
+    <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
+    <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
+    <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
+    <xsl:if test="@indent">
+      <xsl:attribute name="class">prefrow indent</xsl:attribute>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="*" />

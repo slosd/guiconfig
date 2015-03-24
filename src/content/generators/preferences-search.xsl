@@ -16,9 +16,16 @@
   <xsl:include href="chars.xsl" />
 
   <xsl:template match="p:pref">
+    <xsl:variable name="key" select="ancestor-or-self::*[@key and not(starts-with(@key, 'guiconfig.'))][1]/@key" />
+    <xsl:if test="$key">
+      <xsl:attribute name="data-key"><xsl:value-of select="$key" /></xsl:attribute>
+    </xsl:if>
     <xsl:if test="@description">
-      <xsl:attribute name="onmouseover">guiconfig.preferences.setDescription('<xsl:value-of select="@description" />')</xsl:attribute>
-      <xsl:attribute name="onmouseout">guiconfig.preferences.setDescription('')</xsl:attribute>
+      <xsl:attribute name="data-description"><xsl:value-of select="@description" /></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="$key or @description">
+      <xsl:attribute name="onmouseenter">guiconfig.preferences.setInfo(this, this.getAttribute('data-description'), this.getAttribute('data-key'))</xsl:attribute>
+      <xsl:attribute name="onmouseleave">guiconfig.preferences.setInfo()</xsl:attribute>
     </xsl:if>
     <xsl:attribute name="data-minVersion"><xsl:value-of select="ancestor-or-self::*[@minVersion][1]/@minVersion" /></xsl:attribute>
     <xsl:attribute name="data-maxVersion"><xsl:value-of select="ancestor-or-self::*[@maxVersion][1]/@maxVersion" /></xsl:attribute>
