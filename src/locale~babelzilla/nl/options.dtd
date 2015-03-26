@@ -98,73 +98,215 @@
 <!ENTITY browser_sessionstore_restore_hidden_tabs_description "Bepaalt of tabbladen in andere tabbladgroepen moeten worden hersteld of niet.">
 <!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Vastgezette tabbladen op verzoek herstellen">
 <!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Vastgezette tabbladen worden altijd automatisch hersteld. Indien deze optie is ingeschakeld worden vastgezette tabbladen op verzoek hersteld, net als gewone tabbladen.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. herstel geschiedenis knop Terug">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximaal aantal herstelde geschiedenisitems van de knop Terug. Stel in op -1 voor onbeperkt.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. herstel geschiedenis knop Vooruit">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximaal aantal herstelde geschiedenisitems van de knop Vooruit. Stel in op -1 voor onbeperkt.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Sessie na crash herstellen">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Bepaalt of de tabbladen en vensters na een crash hersteld moeten worden.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. aantal crashes">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Maximaal aantal crashes dat mag optreden voordat u wordt gevraagd welke pagina’s u wilt herstellen.">
+<!ENTITY browser_sessionstore_privacy_level_name "Extra sessiegegevens opslaan">
+<!ENTITY browser_sessionstore_privacy_level_description "Bepaalt wanneer extra sessiegegevens (formulierinhoud, met formulieren verzonden gegevens, scrollbalkposities en cookies) moeten worden opgeslagen. Gebruik de eerste optie voorzichtig.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "voor elke website">
+<!ENTITY browser_sessionstore_privacy_level_o2 "voor niet-versleutelde (niet-HTTPS-) websites">
+<!ENTITY browser_sessionstore_privacy_level_o3 "voor geen enkele website">
 <!ENTITY misc "Diversen">
-<!ENTITY browser_search_openintab_description "Bij het uitvoeren van een zoekopdracht van de Search Bar, opent u de resultaten in een nieuw tabblad.">
-<!ENTITY browser_search_openintab_name "Open de zoekresultaten in een nieuw tabblad">
-<!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn actief onmiddellijk. De voorkeuren venster is niet modaal. In plaats van &quot;OK&quot; en &quot;Annuleren&quot; knoppen, is er slechts een &quot;Sluiten&quot;.&quot;&gt;">
-<!ENTITY browser_preferences_instantApply_name "Instant toepassing">
-<!ENTITY accessibility_accesskeycausesactivation_description "Met behulp van een sneltoets voor een element is hetzelfde als het activeren van het element. Indien het element is een link, volg de link. Indien het element is een knop, &quot;klik&quot; op de knop.&quot;&gt;">
-<!ENTITY accessibility_accesskeycausesactivation_name "Toegang toets activeert het element">
+<!ENTITY browser_search_openintab_description "Opent bij het uitvoeren van een zoekopdracht vanuit de zoekbalk de resultaten in een nieuw tabblad.">
+<!ENTITY browser_search_openintab_name "Zoekresultaten in een nieuw tabblad openen">
+<!ENTITY browser_preferences_inContent_name "Voorkeuren in tabblad openen">
+<!ENTITY browser_preferences_inContent_description "Indien ingeschakeld worden de voorkeuren geopend in een tabblad in plaats van in een pop-upvenster.">
+<!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn onmiddellijk actief. Het voorkeursvenster is niet modaal. In plaats van de knoppen “OK” en “Annuleren” is er slechts een knop “Sluiten”.">
+<!ENTITY browser_preferences_instantApply_name "Direct toepassen">
+<!ENTITY accessibility_accesskeycausesactivation_description "Een sneltoets voor een element gebruiken is hetzelfde als het activeren van het element. Als het element een koppeling is, deze volgen. Als het element een knop is, klikken.">
+<!ENTITY accessibility_accesskeycausesactivation_name "Sneltoets activeert het element">
 <!ENTITY browser "Browser">
-<!ENTITY cache "Browser cache">
-<!ENTITY browser_cache_check_doc_frequency_description "Hoe vaak controleren de afstandsbediening pagina voor een nieuwere versie dan wat zou kunnen worden in de cache.">
-<!ENTITY browser_cache_check_doc_frequency_name "Check browser cache">
-<!ENTITY browser_cache_check_doc_frequency_o1 "eenmaal per browser Check sessie">
+<!ENTITY browser_zoom "Browser inzoomen">
+<!ENTITY browser_zoom_full_name "Volledige zoom gebruiken in plaats van tekst zoomen.">
+<!ENTITY browser_zoom_full_description "Tekst zoomen vergroot alleen de tekst van een website, terwijl volledige zoom ook andere elementen zoals afbeeldingen betreft.">
+<!ENTITY browser_zoom_siteSpecific_name "Zoomniveau’s onthouden">
+<!ENTITY browser_zoom_siteSpecific_description "Indien ingeschakeld worden zoomniveau’s opgeslagen en voor elke website teruggehaald. Anders wordt het zoomniveau gereset bij het volgende bezoek.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Achtergrondtabbladen bijwerken">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Andere tabbladen bijwerken naar het zoomniveau van het huidige tabblad.">
+<!ENTITY dom_max_script_run_time_description "Bepaalt het aantal seconden dat Firefox wacht voordat een waarschuwing wordt weergegeven dat een script te lang doet over uitvoering.">
+<!ENTITY dom_max_script_run_time_name "Max. runtime scripts (sec)">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "DirectWrite inschakelen">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Schakelt hardwareversnelling in voor weergave van tekst (vereist Windows 7 of Windows Vista met Vista Platform Update).">
+<!ENTITY geo_enabled_name "Locatiebewust navigeren inschakelen">
+<!ENTITY geo_enabled_description "Indien ingeschakeld kan Firefox u vragen of u de bezochte website wilt vertellen waar u bent. Uitschakelen van deze optie schakelt deze functie geheel uit.">
+<!ENTITY cache "Browserbuffer">
+<!ENTITY cache_disk "Schijfbuffer">
+<!ENTITY cache_memory "Geheugenbuffer">
+<!ENTITY browser_cache_check_doc_frequency_description "Hoe vaak dient de pagina op afstand te worden gecontroleerd op een nieuwere versie dan die in de buffer.">
+<!ENTITY browser_cache_check_doc_frequency_name "Browserbuffer controleren">
+<!ENTITY browser_cache_check_doc_frequency_o1 "Eénmaal per browsersessie controleren">
 <!ENTITY browser_cache_check_doc_frequency_o2 "Controleer elke keer als ik de pagina">
-<!ENTITY browser_cache_check_doc_frequency_o3 "Nooit te controleren (gebruik altijd cached pagina)">
-<!ENTITY browser_cache_check_doc_frequency_o4 "Controleer wanneer de pagina is verouderd (automatisch bepaald)">
-<!ENTITY browser_cache_disk_cache_ssl_description "Cache inhoud ontvangen via SSL (beveiliging risico!).">
-<!ENTITY browser_cache_disk_cache_ssl_name "winkel HTTPS / SSL-inhoud in de cache">
-<!ENTITY browser_cache_disk_capacity_description "hoeveelheid schijfruimte toegestaan voor cache van de browser (in KB).">
-<!ENTITY browser_cache_disk_capacity_name "Disk cache (KB)">
-<!ENTITY browser_cache_disk_enable_description "Gebruik disk cache, tot bepaalde capaciteit.">
-<!ENTITY browser_cache_disk_enable_name "Gebruik schijfcache">
-<!ENTITY browser_cache_memory_capacity_description "Stel de maximale RAM-geheugen wordt gebruikt voor cache (in KB).">
-<!ENTITY browser_cache_memory_capacity_name "Memory cache (KB)">
-<!ENTITY browser_cache_memory_enable_description "Gebruik geheugen cache, tot bepaalde capaciteit.">
-<!ENTITY browser_cache_memory_enable_name "Gebruik geheugen cache">
+<!ENTITY browser_cache_check_doc_frequency_o3 "Nooit controleren (altijd gebufferde pagina gebruiken)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "Controleren wanneer de pagina is verouderd (automatisch bepaald)">
+<!ENTITY browser_cache_disk_cache_ssl_description "Bufferinhoud ontvangen via SSL (beveiligingsrisico!).">
+<!ENTITY browser_cache_disk_cache_ssl_name "HTTPS-/SSL-inhoud in buffer opslaan">
+<!ENTITY browser_cache_disk_capacity_description "Hoeveelheid schijfruimte voor browserbuffer (in KB).">
+<!ENTITY browser_cache_disk_capacity_name "Schijfbuffer (KB)">
+<!ENTITY browser_cache_disk_enable_description "Schijfbuffer gebruiken tot opgegeven capaciteit.">
+<!ENTITY browser_cache_disk_enable_name "Schijfbuffer gebruiken">
+<!ENTITY browser_cache_memory_capacity_description "Stel het maximale RAM-geheugen dat wordt gebruikt voor de geheugenbuffer in (in KB).">
+<!ENTITY browser_cache_memory_capacity_name "Geheugenbuffer (KB)">
+<!ENTITY browser_cache_memory_enable_description "Geheugenbuffer gebruiken tot opgegeven capaciteit.">
+<!ENTITY browser_cache_memory_enable_name "Geheugenbuffer gebruiken">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Max. aantal pagina’s in geheugen">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Onlangs bezochte pagina’s worden opgeslagen in het geheugen en kunnen sneller worden weergeven bij gebruik van Terug en Vooruit. Indien ingesteld op -1 wordt het aantal pagina’s automatisch bepaald. Indien ingesteld op 0 worden er geen pagina’s in het geheugen opgeslagen.">
+<!ENTITY extensions "Extensies">
+<!ENTITY extensions_plugins "Extensies en plug-ins">
+<!ENTITY installation "Installatie">
+<!ENTITY getaddons "Paneel “Add-ons verkrijgen”">
+<!ENTITY extensions_alwaysUnpack_name "Extensies altijd uitpakken">
+<!ENTITY extensions_alwaysUnpack_description "Indien ingeschakeld worden extensie in uw profielfolder uitgepakt tijdens de installatie.">
+<!ENTITY extensions_checkCompatibility_description "Deze voorkeur maakt uitschakelen van compatibiliteitscontrole van extensies mogelijk.">
+<!ENTITY extensions_checkCompatibility_name "Compatibiliteitscontrole van extensies inschakelen">
+<!ENTITY extensions_getAddons_maxResults_description "Bepaalt het maximaal aantal weer te geven resultaten in het paneel bij uitvoeren van een zoekopdracht.">
+<!ENTITY extensions_getAddons_maxResults_name "Max. aantal zoekresultaten">
+<!ENTITY extensions_getAddons_showPane_description "Bepaalt of het paneel “Add-ons verkrijgen” wordt weergegeven in het venster “Add-onbeheerder”.">
+<!ENTITY extensions_getAddons_showPane_name "Paneel weergeven">
+<!ENTITY new_tab_page "Pagina Nieuw tabblad">
+<!ENTITY browser_newtabpage_rows_name "Aantal rijen">
+<!ENTITY browser_newtabpage_rows_description "Stelt het aantal rijen in het raster met vaak bezochte websites in.">
+<!ENTITY browser_newtabpage_columns_name "Aantal kolommen">
+<!ENTITY browser_newtabpage_columns_description "Stelt het aantal kolommen in het raster met vaak bezochte websites in.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Schermafdrukken van bezochte webpagina’s maken">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Indien ingeschakeld maakt Firefox schermafdrukken die in het raster van de pagina “Nieuw tabblad” worden gebruikt.">
+<!ENTITY browser_newtab_url_name "URL voor nieuwe tabbladen">
+<!ENTITY browser_newtab_url_description "Stelt de te gebruiken URL in voor nieuw geopende tabbladen. Dit vervangt het raster met vaak bezochte websites.">
+<!ENTITY library "Bibliotheek">
 <!ENTITY bookmarks "Bladwijzers">
-<!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal back-ups bewaard. Instellen op 0 schakelt backups.">
-<!ENTITY browser_bookmarks_max_backups_name "back-ups">
-<!ENTITY downloadmanager "downloadmanager">
-<!ENTITY browser_download_lastDir_description "Pad naar de laatste directory voor een download gebruikt via 'Opslaan als..">
-<!ENTITY browser_download_lastDir_name "Last download directory">
-<!ENTITY browser_download_manager_alertOnEXEOpen_description "Waarschuw de gebruiker probeert te openen een uitvoerbaar van de Download Manager.">
-<!ENTITY browser_download_manager_alertOnEXEOpen_name "Waarschuwen van uitvoerbare">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Bladwijzers naar bestand exporteren bij afsluiten">
+<!ENTITY browser_bookmarks_autoExportHTML_description "Indien ingeschakeld worden bladwijzers naar het bestand “bookmarks.html” in uw profielmap geëxporteerd als de browser wordt afgesloten.">
+<!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal bewaarde back-ups. Instellen op 0 schakelt back-ups uit.">
+<!ENTITY browser_bookmarks_max_backups_name "Back-ups van bladwijzers">
+<!ENTITY history "Geschiedenis">
+<!ENTITY places_history_expiration_max_pages_name "Maximaal aantal geschiedenisitems">
+<!ENTITY places_history_expiration_max_pages_description "Maximaal aantal te onthouden geschiedenisitems voordat deze verlopen. Stel in op -1 om dit automatisch te laten bepalen.">
+<!ENTITY downloadmanager "Downloadbeheerder">
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Downloadpictogram animeren">
+<!ENTITY browser_download_animateNotifications_description "Het pictogram van de downloadbeheerder in de werkbalk animeren als een downloadt start of wordt afgerond.">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Bepaalt of gedownloade bestanden moeten worden toegevoegd aan “Recente documenten” in het startmenu.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Downloads toevoegen aan “Recente documenten”">
+<!ENTITY browser_download_lastDir_description "Pad naar de laatste map voor een download gebruikt via ‘Opslaan als…’.">
+<!ENTITY browser_download_lastDir_name "Laatste downloadmap">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "De gebruiker waarschuwen als deze een uitvoerbaar bestand probeert te openen vanuit de downloadbeheerder.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Waarschuwen voor uitvoerbare bestanden">
+<!ENTITY security_privacy "Beveiliging en privacy">
+<!ENTITY plugins "Plug-ins">
+<!ENTITY security_dialog_enable_delay_description "Deze voorkeur bepaalt de vertraging (in milliseconden) voordat de knop “Installeren” kan worden aangeklikt bij het installeren van een add-on. Stel dit in op 0 om de vertraging uit te schakelen.">
+<!ENTITY security_dialog_enable_delay_name "Vertraging add-on-installatie (msec)">
+<!ENTITY dom_ipc_plugins_enabled_name "Elke plug-in in een eigen proces uitvoeren">
+<!ENTITY dom_ipc_plugins_enabled_description "Als plug-ins (zoals Flash) crashen zorgen ze er niet voor dat Firefox ook crasht.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Time-out voor niet reagerende plug-ins (sec)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Bepaalt de tijdsduur waarna het proces van een niet reagerende plug-in wordt gestopt.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Time-out voor starten plug-in (sec)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Bepaalt de tijdsduur na starten van een plug-in waarna dit als mislukt wordt beschouwd.">
+<!ENTITY content "Inhoud">
 <!ENTITY browser_style "Browser">
-<!ENTITY browser_chrome_favicons_description "Bepaalt of om aan te tonen favicons of niet.">
-<!ENTITY browser_chrome_favicons_name "Toon Favicons">
-<!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltip gedrag voor chromen elementen.">
-<!ENTITY browser_chrome_toolbar_tips_name "Toon tooltips">
-<!ENTITY browser_preferences_animateFadeIn_description "Verandert de hoogte van het raam en verdwijnt de nieuwe paneel in meer dan ongeveer een seconde bij het schakelen prefs panelen.">
-<!ENTITY browser_preferences_animateFadeIn_name "Animate schakelen pref panelen">
-<!ENTITY browser_display_show_image_placeholders_description "Shows plaatshouders terwijl afbeelding wordt geladen.">
-<!ENTITY browser_display_show_image_placeholders_name "Toon afbeelding plaatshouders">
-<!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding niet in een webpagina, wordt de afbeelding worden aangepast om te passen in het browservenster als het te groot is voor het browservenster.">
-<!ENTITY browser_enable_automatic_image_resizing_name "Resize images">
+<!ENTITY browser_urlbar_formatting_enabled_name "Domeinopmaak inschakelen">
+<!ENTITY browser_urlbar_formatting_enabled_description "Bepaalt of het domein in de adresbalk moet worden opgemaakt.">
+<!ENTITY browser_urlbar_trimURLs_name "URL’s inkorten">
+<!ENTITY browser_urlbar_trimURLs_description "Indien ingeschakeld worden het protocol (http) en aanvangsslashes in de adresbalk verborgen.">
+<!ENTITY browser_chrome_favicons_description "Bepaalt of favicons wel of niet worden weergegeven.">
+<!ENTITY browser_chrome_favicons_name "Favicons weergeven">
+<!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltipgedrag voor chrome-elementen.">
+<!ENTITY browser_chrome_toolbar_tips_name "Tooltips weergeven">
+<!ENTITY browser_preferences_animateFadeIn_description "Wijzigt de vensterhoogte en laat het nieuwe paneel in iets meer dan een seconde verschijnen bij het wisselen van voorkeurspanelen.">
+<!ENTITY browser_preferences_animateFadeIn_name "Voorkeurspanelen wisselen animeren">
+<!ENTITY websites "Websites">
+<!ENTITY rendering "Verwerking">
+<!ENTITY nglayout_initialpaint_delay_description "Deze voorkeur bepaalt het aantal te wachten milliseconden voordat een pagina wordt verwerkt. Lagere waarden laten een pagina sneller zien, maar zorgen dat het langer duurt voordat de verwerking van de pagina klaar is. Hogere waarden hebben het omgekeerde effect.">
+<!ENTITY nglayout_initialpaint_delay_name "Vertraging voor weergave van een pagina (msec)">
+<!ENTITY content_notify_interval_description "Firefox verwerkt periodiek alle ontvangen gegevens van een website. Deze voorkeur geeft de minimale wachttijd voor opnieuw opmaken van de pagina in microseconden. Lagere waarden verlagen de ervaren laadtijd maar verhogen de totale laadtijd.">
+<!ENTITY content_notify_interval_name "Vertraging voor opnieuw opmaken pagina (microsec)">
+<!ENTITY layout_frames_force_resizability_name "Aanpasbare frames afdwingen">
+<!ENTITY browser_display_show_image_placeholders_description "Laat plaatshouders zien terwijl de afbeelding wordt geladen.">
+<!ENTITY browser_display_show_image_placeholders_name "Afbeeldingsplaatshouders weergeven">
+<!ENTITY webgl_enabled_for_all_sites_name "WebGL inschakelen">
+<!ENTITY images "Afbeeldingen">
+<!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding buiten een webpagina wordt de afbeelding aangepast om te passen in het browservenster als het daar te groot voor is.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Afbeeldingen aanpassen">
+<!ENTITY gfx_color_management_mode_name "Kleurenbeheer gebruiken voor">
+<!ENTITY gfx_color_management_mode_description "Herstart vereist.">
+<!ENTITY gfx_color_management_mode_o1 "geen afbeeldingen">
+<!ENTITY gfx_color_management_mode_o2 "alle afbeeldingen">
+<!ENTITY gfx_color_management_mode_o3 "afbeeldingen met ICC-labels">
+<!ENTITY image_animation_mode_name "Geanimeerde afbeeldingen">
+<!ENTITY image_animation_mode_description "Beperkt oneindig (of zo vaak als de afbeelding opgeeft) lussen van geanimeerde afbeeldingen (GIF’s) tot eenmalig of helemaal niet.">
+<!ENTITY image_animation_mode_o1 "Oneindig lussen">
+<!ENTITY image_animation_mode_o2 "Animatie éénmalig afspelen">
+<!ENTITY image_animation_mode_o3 "Animatie nooit afspelen">
+<!ENTITY gfx_downloadable_fonts_enabled_name "In de website ingebouwde lettertypen downloaden">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Schakelt downloaden van CSS3-lettertypen die zijn ingebed met @font-face in. Herstart nodig.">
 <!ENTITY text_select "Geselecteerde tekst">
-<!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Find As You Type als een hexadecimale code of benoemde kleur.">
-<!ENTITY ui_textSelectBackgroundAttention_name "&quot;Find As You Type&quot; achtergrondkleur&quot;&gt;">
-<!ENTITY ui_textSelectBackground_description "Bepaalt de achtergrondkleur te gebruiken voor tekst selecties als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van de OS's gebruikt.">
+<!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Zoeken tijdens typen als een hexadecimale code of benoemde kleur.">
+<!ENTITY ui_textSelectBackgroundAttention_name "Achtergrondkleur Zoeken tijdens typen">
+<!ENTITY ui_textSelectBackground_description "Bepaalt de voor tekstselecties te gebruiken achtergrondkleur als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van het besturingssysteem gebruikt.">
 <!ENTITY ui_textSelectBackground_name "Achtergrondkleur">
-<!ENTITY ui_textSelectForeground_description "Bepaalt de tekstkleur te gebruiken voor tekst selecties als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van de OS's gebruikt.">
+<!ENTITY ui_textSelectForeground_description "Bepaalt de voor tekstselecties te gebruiken tekstkleur als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van het besturingssysteem gebruikt.">
 <!ENTITY ui_textSelectForeground_name "Tekstkleur">
-<!ENTITY browser_tabs_closeButtons_description "bepaalt waar te sluiten elkaar knoppen.">
-<!ENTITY browser_tabs_closeButtons_name "Sluiten knoppen voor tabbladen worden weergegeven">
+<!ENTITY tabs "Tabbladen">
+<!ENTITY appearance "Weergave">
+<!ENTITY browser_panorama_animate_zoom_name "Panorama-zoom animeren">
+<!ENTITY browser_panorama_animate_zoom_description "Animaties bij openen/sluiten van panoramabeeld voor uw tabbladen (bij Ctrl+E) inschakelen.">
+<!ENTITY browser_tabs_animate_name "Tabbladen animeren">
+<!ENTITY browser_tabs_animate_description "Animaties bij openen nieuwe tabbladen, tijdens herschikken tabbladen en bij loskoppelen tabblad inschakelen.">
+<!ENTITY browser_tabs_closeButtons_description "Bepaalt waar sluitknoppen worden weergegeven.">
+<!ENTITY browser_tabs_closeButtons_name "Sluitknoppen voor tabbladen worden weergegeven">
 <!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">
 <!ENTITY browser_tabs_closeButtons_o2 "op elk tabblad">
 <!ENTITY browser_tabs_closeButtons_o3 "nooit">
 <!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Laad bladwijzers in de achtergrond">
+<!ENTITY browser_tabs_tabClipWidth_name "Min. tabbladbreedte voor sluitknoppen">
+<!ENTITY browser_tabs_tabClipWidth_description "Bepaalt de minimaal benodigde tabbladbreedte voor weergave van de knop Sluiten.">
+<!ENTITY tab_preview "Tabbladvoorbeeld">
+<!ENTITY browser_ctrlTab_preview_name "Tabbladvoorbeeld bij wisselen tabbladen inschakelen">
+<!ENTITY browser_ctrlTab_preview_description "Bij gebruik van Ctrl+Tab om van tabblad te wisselen wordt een voorbeeld weergegeven.">
+<!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
+<!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">
+<!ENTITY open_in_background "Een nieuw tabblad in de achtergrond openen vanaf">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Koppelingen in externe toepassingen">
+<!ENTITY browser_tabs_loadInBackground_name "Koppelingen in websites">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Bladwijzers">
+<!ENTITY browser_search_context_loadInBackground_name "Zoeken via het contextmenu">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Nieuw tabblad naast het huidige openen">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bepaalt of een nieuw tabblad aan het einde van de tabbalk of naast het momenteel geselecteerde tabblad wordt geopend.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Wisselen naar tabblad dat voor openen heeft gezorgd na sluiten van tabblad">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Omschakelen naar het eerdere tabblad bij het sluiten van een tabblad. Anders wisselen naar het naastliggende tabblad rechts of links.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Venster met laatste tabblad sluiten">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Indien aangevinkt zal het huidige venster worden gesloten wanneer u het laatste tabblad in dat venster sluit. U kunt het laatste tabblad sluiten met een middelklik op met Ctrl+W.">
+<!ENTITY network "Netwerk">
+<!ENTITY connections "Verbindingen">
+<!ENTITY network_http_max-connections_description "Dee voorkeur geeft het aantal verbindingen dat Firefox tegelijk open kan hebben aan. Deze waarde dient tussen 1 en 65535 te liggen.">
+<!ENTITY network_http_max-connections_name "Max. aantal HTTP-verbindingen">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Deze voorkeur geeft het totaal aantal in stand te houden verbindingen dat Firefox tegelijkertijd bij één proxyserver open mag hebben aan. Deze waarde dient tussen 1 en 255 te liggen.">
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Max. aantal in stand te houden verbindingen per proxyserver">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Deze voorkeur geeft het totaal aantal in stand te houden verbindingen dat Firefox tegelijkertijd bij één server open mag hebben aan. Deze waarde dient tussen 1 en 255 te liggen.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Max. aantal in stand te houden verbindingen per server">
+<!ENTITY pipelining "Pipelining">
+<!ENTITY network_http_pipelining_description "Pipelining reduceert de netwerkbelasting en kan de laadtijden van pagina’s verkorten, maar het kan ook problemen veroorzaken bij het laden van pagina’s van servers die het niet ondersteunen.">
+<!ENTITY network_http_pipelining_maxrequests_description "Deze voorkeur specificeert het maximale aantal gelijktijdige aanvragen in de pipeline wanneer dit is ingeschakeld.">
+<!ENTITY network_http_pipelining_maxrequests_name "Max. aantal aanvragen in pipeline">
+<!ENTITY network_http_pipelining_name "Pipelining toepassen">
+<!ENTITY network_http_proxy_pipelining_description "Deze voorkeur geeft op of pipelining met een proxyserver moet worden gebruikt. Pipelining reduceert de netwerkbelasting en kan de laadtijden van pagina’s verkorten, maar het kan ook problemen veroorzaken bij het laden van pagina’s van servers die het niet ondersteunen.">
+<!ENTITY network_http_proxy_pipelining_name "Pipelining met een proxyserver gebruiken">
 <!ENTITY developing "Ontwikkeling">
-<!ENTITY viewsource "Bekijk Bron">
-<!ENTITY view_source_editor_external_description "Gebruik een aangepaste editor voor View Source.">
-<!ENTITY view_source_editor_external_name "Gebruik aangepaste editor">
-<!ENTITY view_source_editor_path_description "Pad naar de aangepaste editor.">
-<!ENTITY view_source_editor_path_name "Editor pad">
+<!ENTITY viewsource "Bron bekijken">
+<!ENTITY view_source_editor_external_description "Een aangepast bewerkingsprogramma gebruiken om de bron te bekijken.">
+<!ENTITY view_source_editor_external_name "Aangepast bewerkingsprogramma gebruiken">
+<!ENTITY view_source_editor_path_description "Pad naar het aangepaste bewerkingsprogramma">
+<!ENTITY view_source_editor_path_name "Pad bewerkingsprogramma">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Wijzigingen aan vensters en dialoogvensters vereisen geen herstart. Werkt niet met bestanden verpakt in een JAR.">
-<!ENTITY nglayout_debug_disable_xul_cache_name "Schakel XUL cache">
-<!ENTITY browser_dom_window_dump_enabled_description "Maakt het gebruik van de dump () verklaring af te drukken op de standaard console.">
-<!ENTITY browser_dom_window_dump_enabled_name "Schakel dump ()">
-<!ENTITY javascript_options_strict_description "Maakt strikte JavaScript waarschuwingen in de Error Console.">
-<!ENTITY javascript_options_strict_name "Strict Javascript waarschuwingen">
+<!ENTITY nglayout_debug_disable_xul_cache_name "XUL-buffer uitschakelen">
+<!ENTITY devtools_inspector_enabled_description "Schakelt de actie “Element inspecteren” voor contextmenu’s van websites in, dat de Inspector opent bij het geselecteerde HTML-element.">
+<!ENTITY devtools_inspector_enabled_name "“Element inspecteren” inschakelen">
+<!ENTITY browser_dom_window_dump_enabled_description "Schakelt het gebruik van de verklaring dump() om naar de standaardconsole af te drukken in.">
+<!ENTITY browser_dom_window_dump_enabled_name "dump() inschakelen">
+<!ENTITY javascript_options_showInConsole_description "Bepaalt of chromefouten en -waarschuwingen naar de JavaScript-console moeten worden gelogd.">
+<!ENTITY javascript_options_showInConsole_name "Chromefouten in de console weergeven">
+<!ENTITY javascript_options_strict_description "Schakelt strikte JavaScript-waarschuwingen in de foutconsole in.">
+<!ENTITY javascript_options_strict_name "Strikte Javascript-waarschuwingen">
