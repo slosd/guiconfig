@@ -475,6 +475,10 @@
                 type="bool" />
         </group>
         <group label="&misc;">
+          <pref key="media.autoplay.enabled"
+                label="&media_autoplay_enabled_name;"
+                description=""
+                type="bool" />
           <pref key="geo.enabled"
                 label="&geo_enabled_name;"
                 description="&geo_enabled_description;"

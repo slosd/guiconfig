@@ -143,6 +143,7 @@
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text (requires Windows 7 or Windows Vista with Vista Platform update).">
+<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
 <!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely.">
 <!-- ALERTS -->
