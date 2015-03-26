@@ -1,0 +1,21 @@
+<!ENTITY network "Nätverk">
+
+<!-- Connections -->
+<!ENTITY connections "Anslutningar">
+<!ENTITY network_http_max-connections_name "Antal HTTP-anslutningar">
+<!ENTITY network_http_max-connections_description "Den här inställningen bestämmer det totala antalet samtidiga anslutningar, som Firefox kan ha öppna. Värdet måste vara mellan 1 och 65535.">
+
+<!-- Keep-alive -->
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Antal beständiga anslutningar per proxyserver">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Den här inställningen bestämmer det högsta antalet samtidiga beständiga anslutningar, som Firefox kan ha öppna mot en enskild proxyserver. Värdet måste vara mellan 1 och 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Antal beständiga anslutningar per server">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Den här inställningen bestämmer det högsta antalet samtidiga beständiga anslutningar, som Firefox kan ha öppna mot en enskild server. Värdet måste vara mellan 1 och 255.">
+
+<!-- Pipelining -->
+<!ENTITY pipelining "Direktförbindelse">
+<!ENTITY network_http_pipelining_name "Använd direktförbindelse">
+<!ENTITY network_http_pipelining_description "Direktförbindelse minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer direktförbindelse.">
+<!ENTITY network_http_pipelining_maxrequests_name "Antal förfrågningar att pipa">
+<!ENTITY network_http_pipelining_maxrequests_description "Den här inställningen bestämmer det högsta antalet samtidiga förfrågningar som kan pipas när direktförbindelse är aktiverat.  ">
+<!ENTITY network_http_proxy_pipelining_name "Använd direktförbindelse mot en proxyserver">
+<!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida direktförbindelse ska användas mot en proxyserver. Direktförbindelse minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer direktförbindelse.">

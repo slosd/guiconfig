@@ -1,0 +1,18 @@
+<!ENTITY network "Síť">
+<!-- Connections -->
+<!ENTITY connections "Spojení">
+<!ENTITY network_http_max-connections_name "Max. HTTP spojení">
+<!ENTITY network_http_max-connections_description "Tato předvolba stanovuje celkový počet spojení, které může Firefox najednou mít. Tato hodnota musí být mezi 1 a 65535.">
+<!-- Keep-alive -->
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Max. udržujících spojení na proxy server">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Tato předvolba stanovuje celkové množství udržujících spojení, které může Firfox najednou otevřít s jedním proxy serverem. Tato hodnota musí být mezi 1 a 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Max. udržujících spojení na server">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Tato předvolba stanovuje celkové množství udržujících spojení, které může Firefox najednou otevřít s jedním serverem. Tato hodnota musí být mezi 1 a 255.">
+<!-- Pipelining -->
+<!ENTITY pipelining "Proudové zpracování">
+<!ENTITY network_http_pipelining_name "Použít proudové zpracování">
+<!ENTITY network_http_pipelining_description "Proudové zpracování snižuje zátěž sítě a může zkrátit dobu načítání stránky, ale mohou se objevit problémy se servery, které proudové zpracování nepodporují.">
+<!ENTITY network_http_pipelining_maxrequests_name "Max. požadavků k proudovému zpracování">
+<!ENTITY network_http_pipelining_maxrequests_description "Pokud je proudové zpracování povoleno, tato předvolba stanovuje maximální počet požadavků, které budou najednou zpracovány.">
+<!ENTITY network_http_proxy_pipelining_name "Použít proudové zpracování s proxy servery">
+<!ENTITY network_http_proxy_pipelining_description "Tato předvolba stanovuje, zda se bude proudové zpracování používat s proxy servery. Proudové zpracování snižuje zátěž sítě a může zkrátit dobu načítání stránky, ale mohou se objevit problémy se servery, které proudové zpracování nepodporují.">

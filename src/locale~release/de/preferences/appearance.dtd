@@ -1,0 +1,31 @@
+<!ENTITY appearance "Anzeige">
+<!-- Browser -->
+<!ENTITY browser_style "Browser">
+<!ENTITY browser_chrome_favicons_name "Favicons anzeigen">
+<!ENTITY browser_chrome_favicons_description "Bestimmt, ob Favicons von Webseiten angezeigt werden.">
+<!ENTITY browser_chrome_toolbar_tips_name "Tooltips anzeigen">
+<!ENTITY browser_chrome_toolbar_tips_description "Zeigt Tooltips über Schaltflächen in der Symbolleiste, über Lesezeichen und über Elementen einer Webseite an.">
+<!ENTITY browser_preferences_animateFadeIn_name "Wechseln der &quot;Einstellungen&quot;-Kategorien animieren">
+<!ENTITY browser_preferences_animateFadeIn_description "Ist die Option aktiviert, wird im &quot;Einstellungen&quot;-Dialog das Wechseln der Kategorien animiert.">
+<!ENTITY browser_preferences_inContent_name "Einstellungen in Tab öffnen">
+<!ENTITY browser_preferences_inContent_description "Ist diese Option aktiviert, werden die Einstellungen in einem Tab anstatt einem neuen Fenster geöffnet.">
+<!ENTITY browser_preferences_instantApply_name "Einstellungen sofort übernehmen">
+<!ENTITY browser_preferences_instantApply_description "Änderungen im &quot;Einstellungen&quot;-Dialog werden sofort übernommen. Die Schaltflächen &quot;OK&quot; und &quot;Abbrechen&quot; werden durch eine &quot;Schließen&quot;-Schaltfläche ersetzt.">
+<!-- New tab page -->
+<!ENTITY new_tab_page "&quot;Neuer Tab&quot; Seite">
+<!ENTITY browser_newtabpage_rows_name "Zeilenanzahl">
+<!ENTITY browser_newtabpage_rows_description "Anzahl von Zeilen in der Ansicht häufig besuchter Webseiten.">
+<!ENTITY browser_newtabpage_columns_name "Spaltenanzahl">
+<!ENTITY browser_newtabpage_columns_description "Anzahl von Spalten in der Ansicht häufig besuchter Webseiten.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Screenshots von besuchten Webseiten speichern">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Ist die Option aktiviert, speichert Firefox Screenshots, die in der Ansicht häufig besuchter Webseiten in einem neuen Tab angezeigt werden.">
+<!ENTITY browser_newtab_url_name "Adresse (URL) für neue Tabs">
+<!ENTITY browser_newtab_url_description "Legt die Adresse (URL) für neu geöffnete Tabs fest. Diese Adresse ersetzt die Ansicht mit häufig besuchten Webseiten.">
+<!-- Selected text -->
+<!ENTITY text_select "Markierter Text">
+<!ENTITY ui_textSelectBackgroundAttention_name "Suchtext-Hintergrundfarbe">
+<!ENTITY ui_textSelectBackgroundAttention_description "Bestimmt die Hintergrundfarbe von Text, der von der Suchfunktion gefundenen und farbig unterlegt wurde.">
+<!ENTITY ui_textSelectBackground_name "Hintergrundfarbe">
+<!ENTITY ui_textSelectBackground_description "Bestimmt die Hintergrundfarbe von markiertem Text als Hexadezimal Code oder Farbname.Ist diese Option nicht gesetzt, wird der Betriebssystemstandard verwendet.">
+<!ENTITY ui_textSelectForeground_name "Textfarbe">
+<!ENTITY ui_textSelectForeground_description "Bestimmt die Textfarbe von markiertem Text als Hexadezimal Code oder Farbname. Ist diese Option nicht gesetzt, wird der Betriebssystemstandard verwendet.">

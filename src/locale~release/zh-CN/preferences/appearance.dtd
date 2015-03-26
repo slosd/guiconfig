@@ -1,0 +1,31 @@
+<!ENTITY appearance "外观">
+<!-- Browser -->
+<!ENTITY browser_style "浏览器样式">
+<!ENTITY browser_chrome_favicons_name "显示网站小图标">
+<!ENTITY browser_chrome_favicons_description "是否显示网站小图标。">
+<!ENTITY browser_chrome_toolbar_tips_name "显示工具提示">
+<!ENTITY browser_chrome_toolbar_tips_description "是否显示 chrome 元素的工具提示。">
+<!ENTITY browser_preferences_animateFadeIn_name "切换首选项面板时动态显示">
+<!ENTITY browser_preferences_animateFadeIn_description "切换首选项面板时改变窗口高度并淡入显示一秒。">
+<!ENTITY browser_preferences_inContent_name "在标签页中打开首选项">
+<!ENTITY browser_preferences_inContent_description "启用该项后，首选项界面会在标签页中打开，取代之前的弹出窗口。">
+<!ENTITY browser_preferences_instantApply_name "立即生效">
+<!ENTITY browser_preferences_instantApply_description "设定更改时立即生效。与常见选项窗口同时显示“确定”和“取消”按钮不同的是，此时只显示一个“关闭”按钮。">
+<!-- New tab page -->
+<!ENTITY new_tab_page "新标签页面">
+<!ENTITY browser_newtabpage_rows_name "行数">
+<!ENTITY browser_newtabpage_rows_description "设置常用网站磁贴的行数">
+<!ENTITY browser_newtabpage_columns_name "列数">
+<!ENTITY browser_newtabpage_columns_description "设置常用网站磁贴的列数">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "创建常用网页的截图">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "启用该项后，Firefox 会自动创建常用网页的截图并显示在新标签页面的磁贴里。">
+<!ENTITY browser_newtab_url_name "新标签页的 URL">
+<!ENTITY browser_newtab_url_description "设置新建标签页时打开的 URL，它会替换常用网站的磁贴。">
+<!-- Selected text -->
+<!ENTITY text_select "选中的文字">
+<!ENTITY ui_textSelectBackgroundAttention_name "高亮文字的背景色">
+<!ENTITY ui_textSelectBackgroundAttention_description "指定“快速查找”时高亮文字的背景色（十六进制值或颜色名）。">
+<!ENTITY ui_textSelectBackground_name "背景色">
+<!ENTITY ui_textSelectBackground_description "指定所选中文字的背景色（十六进制值或颜色名）。如果未指定该值，则使用操作系统默认背景色。">
+<!ENTITY ui_textSelectForeground_name "文字颜色">
+<!ENTITY ui_textSelectForeground_description "指定文字背景色（十六进制值或颜色名）。如果未指定该值，则使用操作系统默认背景色。">

@@ -1,0 +1,157 @@
+<!ENTITY browser "浏览器">
+
+<!-- Urlbar -->
+<!ENTITY urlbar "地址栏">
+
+<!-- Restrict results -->
+<!ENTITY urlbar_restrict_name "约束结果">
+<!ENTITY browser_urlbar_restrict_bookmark_name "仅显示书签中的条目">
+<!ENTITY browser_urlbar_restrict_bookmark_description "智能地址栏仅列出书签中的搜索结果。">
+<!ENTITY browser_urlbar_restrict_history_name "仅显示历史记录中的条目">
+<!ENTITY browser_urlbar_restrict_history_description "智能地址栏仅从访问过的网址中列出搜索结果。">
+<!ENTITY browser_urlbar_restrict_tag_name "仅显示带标签的条目">
+<!ENTITY browser_urlbar_restrict_tag_description "智能地址栏仅列出带标签的搜索结果。">
+<!ENTITY browser_urlbar_restrict_typed_name "仅包含输入过的地址">
+<!ENTITY browser_urlbar_restrict_typed_description "智能地址栏搜索结果仅包含输入过的地址。">
+
+<!-- Match results -->
+<!ENTITY urlbar_match_name "匹配结果">
+<!ENTITY browser_urlbar_match_title_name "搜索结果仅匹配网页标题">
+<!ENTITY browser_urlbar_match_title_description "指定智能地址栏搜索结果是否仅匹配网页标题。">
+<!ENTITY browser_urlbar_match_url_name "搜索结果仅匹配 URL">
+<!ENTITY browser_urlbar_match_url_description "指定智能地址栏搜索结果是否仅匹配 URL。">
+<!ENTITY browser_urlbar_matchBehavior_name "匹配行为">
+<!ENTITY browser_urlbar_matchBehavior_description "这个选项决定在地址栏中如何使用“单词头尾（word boundaries）”进行搜索（译著：西文单词，中文意义不大）">
+<!ENTITY browser_urlbar_matchBehavior_o1 "忽略“单词头尾”">
+<!ENTITY browser_urlbar_matchBehavior_o2 "优先给出匹配“单词头尾”结果">
+<!ENTITY browser_urlbar_matchBehavior_o3 "只对输入的文字启用“单词头尾”">
+<!ENTITY browser_urlbar_matchBehavior_o4 "只匹配地址或者标题头">
+
+<!ENTITY browser_urlbar_maxRichResults_name "下拉列表中的条目数">
+<!ENTITY browser_urlbar_maxRichResults_description "指定智能地址栏下拉列表最多显示的条目数。">
+<!ENTITY browser_urlbar_autoFill_name "地址栏自动完成">
+<!ENTITY browser_urlbar_autoFill_description "启用地址栏自动完成功能。">
+<!ENTITY browser_fixup_alternate_enabled_name "地址自动替代">
+<!ENTITY browser_fixup_alternate_enabled_description "找不到地址时自动添加自定义的字符。">
+<!ENTITY browser_fixup_alternate_prefix_name "在地址前插入">
+<!ENTITY browser_fixup_alternate_prefix_description "插入到地址之前的字符。">
+<!ENTITY browser_fixup_alternate_suffix_name "在地址末插入">
+<!ENTITY browser_fixup_alternate_suffix_description "插入到地址之后的字符。">
+<!ENTITY browser_urlbar_formatting_enabled_name "启用域名格式化">
+<!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
+<!ENTITY browser_urlbar_trimURLs_name "精简 URL">
+<!ENTITY browser_urlbar_trimURLs_description "启用该项后，地址栏会自动隐藏 http:// 这样的协议名。">
+
+<!-- Session restore -->
+<!ENTITY session_restore "浏览会话恢复">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "启用浏览会话恢复">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "最大可同时恢复的标签页数">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "可同时恢复打开的最大标签页数量。如果设置为 0 则仅允许每个窗口恢复显示一个所选标签页。如果设置为 0 以下的数值则同时恢复显示所有标签页。">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "最大可恢复的标签页数">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
+<!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">
+<!ENTITY browser_sessionstore_max_windows_undo_description "在历史菜单中保存的已经关闭窗口的最大数量。">
+<!ENTITY browser_sessionstore_restore_on_demand_name "按需恢复标签页">
+<!ENTITY browser_sessionstore_restore_on_demand_description "该选项启用后，标签页只在选中时才恢复载入。">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "恢复隐藏标签页">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "指定是否恢复来自其他标签页组的标签页。">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "按需恢复固定的标签页">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "始终自动恢复所有固定的标签页。启用该项后，固定标签页也和普通标签页一样按需恢复。">
+<!ENTITY browser_sessionstore_max_serialize_back_name "后退按钮最大可恢复的历史条目">
+<!ENTITY browser_sessionstore_max_serialize_back_description "后退按钮的历史记录中允许恢复的最大条目数量。设置为 -1 表示不限制恢复数量。">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "前进按钮最大可恢复的历史条目">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "前进按钮的历史记录中允许恢复的最大条目数量。设置为 -1 表示不限制恢复数量。">
+<!ENTITY browser_sessionstore_resume_from_crash_name "崩溃后恢复浏览会话">
+<!ENTITY browser_sessionstore_resume_from_crash_description "指定浏览器崩溃后是否恢复之前打开的标签页和窗口。">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "可发生的最大崩溃数">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "指定在出现页面恢复对话框之前允许发生崩溃的最大次数。">
+<!ENTITY browser_sessionstore_privacy_level_name "保存额外的浏览会话数据">
+<!ENTITY browser_sessionstore_privacy_level_description "指定额外的浏览会话数据（表单内容、表单中发送的数据、滚动条位置以及 cookies）保存的时间。选择第一个选项时请注意安全性。">
+<!ENTITY browser_sessionstore_privacy_level_o1 "应用于全部站点">
+<!ENTITY browser_sessionstore_privacy_level_o2 "应用于未加密(非 HTTPS)站点">
+<!ENTITY browser_sessionstore_privacy_level_o3 "不保存">
+
+<!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "扩展和插件">
+
+<!-- Extensions -->
+<!ENTITY extensions "扩展">
+<!ENTITY getaddons "“获取附加组件”面板">
+<!ENTITY extensions_alwaysUnpack_name "总是解压缩显示扩展">
+<!ENTITY extensions_alwaysUnpack_description "如果启用该项，则扩展在安装时将解压缩到您的配置文件夹。">
+<!ENTITY extensions_checkCompatibility_name "打开扩展兼容性检查">
+<!ENTITY extensions_checkCompatibility_description "这个选项允许打开或者关闭扩展兼容性检查">
+<!ENTITY extensions_getAddons_maxResults_name "最大查找结果">
+<!ENTITY extensions_getAddons_maxResults_description "决定“获得扩充软件”中的最大查找结果">
+<!ENTITY extensions_getAddons_showPane_name "显示面板">
+<!ENTITY extensions_getAddons_showPane_description "决定是否在“扩充软件管理”窗口中显示“获得扩充软件”面板">
+
+<!-- Installation -->
+<!ENTITY installation "安装">
+<!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
+<!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
+
+<!-- Plugins -->
+<!ENTITY plugins "插件">
+<!ENTITY dom_ipc_plugins_enabled_name "以独立进程运行每个插件">
+<!ENTITY dom_ipc_plugins_enabled_description "若诸如 Flash 等插件崩溃将不会导致 Firefox 同时崩溃。">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "插件无响应时长（秒）">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "指定插件无响应时长超过规定时限后自动结束其进程。">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "插件启动的超时时间（秒）">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "指定插件崩溃后允许插件重新启动的时间段。">
+
+<!-- Library -->
+<!ENTITY library "我的足迹">
+
+<!-- Bookmarks -->
+<!ENTITY bookmarks "书签">
+<!ENTITY browser_bookmarks_autoExportHTML_name "关闭时导出书签到文件">
+<!ENTITY browser_bookmarks_autoExportHTML_description "启用该项后，浏览器关闭时会导出书签到 bookmarks.html 文件并保存到配置文件夹。">
+<!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
+<!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
+
+<!-- History -->
+<!ENTITY history "历史">
+<!ENTITY places_history_expiration_max_pages_name "允许保存的最大历史记录条目">
+<!ENTITY places_history_expiration_max_pages_description "在其他条目过期以前允许保存的最大历史记录条目数量。设置为 -1 表示由浏览器自动计算数量。">
+
+<!-- Downloads -->
+<!ENTITY downloads "下载">
+<!ENTITY browser_download_animateNotifications_name "动画显示下载图标">
+<!ENTITY browser_download_animateNotifications_description "下载开始或完成时在工具栏动画显示下载管理器图标。">
+<!ENTITY browser_download_manager_addToRecentDocs_name "添加下载的文件到&quot;最近使用的文件&quot;中。">
+<!ENTITY browser_download_manager_addToRecentDocs_description "指定是否添加下载的文件到开始菜单的&quot;最近使用的文件&quot;中。">
+<!ENTITY browser_download_lastDir_name "上一次保存目录">
+<!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "打开可执行文件时警告">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "用户试图从下载管理器打开可执行文件时弹出警告。">
+
+<!-- Browser cache -->
+<!ENTITY cache "浏览器缓存">
+
+<!-- Disk cache -->
+<!ENTITY cache_disk "磁盘缓存">
+<!ENTITY browser_cache_check_doc_frequency_name "检查浏览器缓存">
+<!ENTITY browser_cache_check_doc_frequency_description "检查缓存中的网页是否更新的频率">
+<!ENTITY browser_cache_check_doc_frequency_o1 "每个浏览器进程检查一次">
+<!ENTITY browser_cache_check_doc_frequency_o2 "每次浏览网页时检查">
+<!ENTITY browser_cache_check_doc_frequency_o3 "从不检查（始终使用缓存中的页面）">
+<!ENTITY browser_cache_check_doc_frequency_o4 "缓存中的页面过期时检查（自动决定）">
+<!ENTITY browser_cache_disk_cache_ssl_name "在缓存中保存 HTTPS/SSL 内容">
+<!ENTITY browser_cache_disk_cache_ssl_description "在缓存中保存 SSL 内容（安全风险！）。">
+<!ENTITY browser_cache_disk_capacity_name "磁盘缓存大小(KB)">
+<!ENTITY browser_cache_disk_capacity_description "浏览器磁盘缓存最大占用（单位： KB）。">
+<!ENTITY browser_cache_disk_enable_name "使用磁盘缓存">
+<!ENTITY browser_cache_disk_enable_description "使用指定大小的磁盘缓存。">
+
+<!-- Memory cache -->
+<!ENTITY cache_memory "内存缓存">
+<!ENTITY browser_cache_memory_enable_name "使用内存缓冲">
+<!ENTITY browser_cache_memory_enable_description "使用指定大小的内存缓冲。">
+<!ENTITY browser_cache_memory_capacity_name "内存缓冲(KB)">
+<!ENTITY browser_cache_memory_capacity_description "设置内存缓冲的最大内存占用（单位：KB）。">
+
+<!-- Misc -->
+<!ENTITY misc "其他">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "内存中可保存的最大页面数">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "最近访问过的页面可以保存在内存中并在点击前进/后退按钮时加快显示。如果该值设为 -1 则使用自动设定的页面数，如果设置为 0 则页面不保存到内存中。">

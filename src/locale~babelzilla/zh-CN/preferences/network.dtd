@@ -1,0 +1,21 @@
+<!ENTITY network "网络">
+
+<!-- Connections -->
+<!ENTITY connections "连接">
+<!ENTITY network_http_max-connections_name "最大HTTP连接数">
+<!ENTITY network_http_max-connections_description "这个选项定义了Firefox可以同时打开的最大HTTP连接数。值域在1和65535之间。">
+
+<!-- Keep-alive -->
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "针对特定代理服务器的最大保持活跃连接数">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "这个选项定义了Firefox针对特定代理服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">
+<!ENTITY network_http_max-persistent-connections-per-server_name "针对特定服务器的最大保持活跃连接数">
+<!ENTITY network_http_max-persistent-connections-per-server_description "这个选项定义了Firefox针对特定服务器可以同时打开的最大保持活跃连接数。值域在1和255之间。">
+
+<!-- Pipelining -->
+<!ENTITY pipelining "流水线（pipelining）">
+<!ENTITY network_http_pipelining_name "使用流水线">
+<!ENTITY network_http_pipelining_description "流水线可以减少网页读取时间并且简少网络流量，但是当服务器不支持流水线时可能会出错。">
+<!ENTITY network_http_pipelining_maxrequests_name "流水线最大请求数">
+<!ENTITY network_http_pipelining_maxrequests_description "这个选项决定流水线的最大请求数。">
+<!ENTITY network_http_proxy_pipelining_name "对代理服务器使用流水线">
+<!ENTITY network_http_proxy_pipelining_description "这个选项决定是否对代理服务器使用流水线。流水线可以减少网页读取时间并且简少网络流量，但是当服务器不支持流水线时可能会出错。">

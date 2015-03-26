@@ -1,0 +1,34 @@
+<!ENTITY tabs "Abas">
+<!ENTITY browser_tabs_tabClipWidth_name "Largura mínima das abas para exibir o botão Fechar:">
+<!ENTITY browser_tabs_tabClipWidth_description "Especifica a largura mínima das abas inativas antes que o botão Fechar seja nelas suprimido.">
+<!-- Tab preview -->
+<!ENTITY tab_preview "Pré-visualização de abas">
+<!ENTITY browser_ctrlTab_preview_name "Exibir pré-visualização ao trocar abas">
+<!ENTITY browser_ctrlTab_preview_description "Exibe a pré-visualização das abas ao pressionar Ctrl+Tab.">
+<!ENTITY browser_taskbar_previews_enable_name "Exibir pré-visualizações na barra de tarefas do Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Faz o Firefox exibir na barra de tarefas do Windows 7 miniaturas de cada aba aberta.">
+<!-- Open in background -->
+<!ENTITY open_in_background "Abas que são abertas em segundo plano">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Links em outros aplicativos no computador">
+<!ENTITY browser_tabs_loadInBackground_name "Links em páginas">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Favoritos">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Animar abas">
+<!ENTITY browser_tabs_animate_description "Anima as abas quando elas são abertas, reorganizadas e removidas.">
+<!ENTITY browser_panorama_animate_zoom_name "Animação no agrupamento de abas (Panorama)">
+<!ENTITY browser_panorama_animate_zoom_description "Ativa a animação ao abrir e fechar o modo de visualização de grupo de abas (Ctrl+Shift+E).">
+<!ENTITY browser_tabs_closeButtons_name "Mostrar botão Fechar aba:">
+<!ENTITY browser_tabs_closeButtons_description "Especifica onde exibir botões para fechar abas.">
+<!ENTITY browser_tabs_closeButtons_o1 "apenas na aba atual">
+<!ENTITY browser_tabs_closeButtons_o2 "em cada aba">
+<!ENTITY browser_tabs_closeButtons_o3 "nunca">
+<!ENTITY browser_tabs_closeButtons_o4 "na extremidade da barra de abas">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Abrir novas abas junto à atual">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Especifica se cada nova aba aberta deve ser colocada junto à aba atual ou no final da barra de abas.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Ao fechar uma aba, retornar à aba de origem.">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Especifica que, ao se fechar uma aba, a próxima aba a ser exibida seja aquela na qual havia o link que abriu a aba recém-fechada. Do contrário, uma aba adjacente à fechada será exibida.">
+<!ENTITY browser_search_openintab_name "Abrir resultados de pesquisa em nova aba">
+<!ENTITY browser_search_openintab_description "Abre os resultados das pesquisas realizadas no campo de pesquisa em uma nova aba.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Fechar janela ao fechar a última aba">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Fecha a janela atual ao se fechar a sua última aba.">

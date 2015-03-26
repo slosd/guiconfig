@@ -1,0 +1,18 @@
+<!ENTITY network "Rete">
+<!-- Connections -->
+<!ENTITY connections "Connessioni">
+<!ENTITY network_http_max-connections_name "Numero massimo di connessioni HTTP">
+<!ENTITY network_http_max-connections_description "Questa preferenza specifica il numero di connessioni totali che possono essere aperte da Firefox nello stesso momento. Il valore deve essere un intero tra 1 e 65535.">
+<!-- Keep-alive -->
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Numero massimo di connessioni tenute aperte per ogni server proxy">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Questa preferenza specifica il numero di connessioni totali che possono essere tenute aperte da Firefox per ogni server proxy. Il valore deve essere un intero tra 1 e 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Numero massimo di connessioni tenute aperte per ogni server">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Questa preferenza specifica il numero di connessioni totali che possono essere tenute aperte da Firefox per ogni server. Il valore deve essere un intero tra 1 e 255.">
+<!-- Pipelining -->
+<!ENTITY pipelining "Pipelining">
+<!ENTITY network_http_pipelining_name "Attiva pipelining">
+<!ENTITY network_http_pipelining_description "Il pipelining riduce il carico sulla rete e può ridurre anche il tempo di caricamento delle pagine ma potrebbe causare problemi nel caricamento di pagine provenienti da server che non supportano tale metodo.">
+<!ENTITY network_http_pipelining_maxrequests_name "Numero massimo di richieste alla pipeline">
+<!ENTITY network_http_pipelining_maxrequests_description "Questa preferenza determina il numero massimo di richieste che possono essere effettuate simultaneamente ad una pipeline, quando il pipelining è attivato.">
+<!ENTITY network_http_proxy_pipelining_name "Attiva pipelining con server proxy">
+<!ENTITY network_http_proxy_pipelining_description "Questa preferenza determina se utilizzare il pipelining con un server proxy. Il pipelining riduce il carico sulla rete e può ridurre anche il tempo di caricamento delle pagine ma potrebbe causare problemi nel caricamento di pagine provenienti da server che non supportano tale metodo.">

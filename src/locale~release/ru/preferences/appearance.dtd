@@ -1,0 +1,31 @@
+<!ENTITY appearance "Внешний вид">
+<!-- Browser -->
+<!ENTITY browser_style "Браузер">
+<!ENTITY browser_chrome_favicons_name "Показывать значки сайтов">
+<!ENTITY browser_chrome_favicons_description "Определяет, будут ли отображаться значки сайтов или нет.">
+<!ENTITY browser_chrome_toolbar_tips_name "Показывать всплывающие подсказки">
+<!ENTITY browser_chrome_toolbar_tips_description "Определяет поведение всплывающих подсказок для элементов chrome интерфейса.">
+<!ENTITY browser_preferences_animateFadeIn_name "Анимировать переключение панелей настроек">
+<!ENTITY browser_preferences_animateFadeIn_description "При переключении между панелями настроек изменяет высоту окна и плавно выводит новую панель примерно через секунду.">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_instantApply_name "Применять немедленно">
+<!ENTITY browser_preferences_instantApply_description "Изменения параметров настроек используются немедленно. Окно настроек становится не модальным. Вместо кнопок «OK» и «Отмена» будет только кнопка «Закрыть».">
+<!-- New tab page -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- Selected text -->
+<!ENTITY text_select "Выделенный текст">
+<!ENTITY ui_textSelectBackgroundAttention_name "Цвет фона помеченного текста">
+<!ENTITY ui_textSelectBackgroundAttention_description "Определяет цвет фона (в виде названия или #кода, используемого при поиске по мере набора.">
+<!ENTITY ui_textSelectBackground_name "Цвет фона">
+<!ENTITY ui_textSelectBackground_description "Определяет цвет фона (в виде названия или #кода), используемого при выделении текста. Если не указан, то используется значение из настроек ОС.">
+<!ENTITY ui_textSelectForeground_name "Цвет текста">
+<!ENTITY ui_textSelectForeground_description "Определяет цвет текста (в виде названия или #кода), используемого при выделении. Если не указан, то используется значение из настроек ОС.">

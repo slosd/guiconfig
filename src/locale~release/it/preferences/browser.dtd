@@ -1,0 +1,142 @@
+<!ENTITY browser "Browser">
+<!-- Urlbar -->
+<!ENTITY urlbar "Barra degli indirizzi">
+<!-- Restrict results -->
+<!ENTITY urlbar_restrict_name "Limita risultati">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Limita ai segnalibri">
+<!ENTITY browser_urlbar_restrict_bookmark_description "I risultati nella Barra di ricerca sono limitati ai segnalibri.">
+<!ENTITY browser_urlbar_restrict_history_name "Limita alla cronologia">
+<!ENTITY browser_urlbar_restrict_history_description "I risultati nella Barra di ricerca sono limitati ai siti web visitati.">
+<!ENTITY browser_urlbar_restrict_tag_name "Limita alle etichette">
+<!ENTITY browser_urlbar_restrict_tag_description "I risultati nella Barra di ricerca sono limitati alle etichette.">
+<!ENTITY browser_urlbar_restrict_typed_name "Restrict to typed addresses">
+<!ENTITY browser_urlbar_restrict_typed_description "Results in the Smart Location Bar are restricted to addresses you typed in the addressbar.">
+<!-- Match results -->
+<!ENTITY urlbar_match_name "Risultati della ricerca">
+<!ENTITY browser_urlbar_match_title_name "Cerca nel titolo">
+<!ENTITY browser_urlbar_match_title_description "Determina se i risultati della Barra di ricerca devono contenere nel titolo l&apos;espressione cercata.">
+<!ENTITY browser_urlbar_match_url_name "Cerca nell&apos;URL">
+<!ENTITY browser_urlbar_match_url_description "Determina se i risultati della Barra di ricerca devono contenere nell&apos;URL l&apos;espressione cercata.">
+<!ENTITY browser_urlbar_matchBehavior_name "Comportamento del completamento automatico">
+<!ENTITY browser_urlbar_matchBehavior_description "Questa preferenza specifica la gestione delle estremità delle parole digitate quando si effettua una ricerca nella barra degli indirizzi.">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Ignora le estremità delle parole digitate">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Mostra prima gli elementi che corrispondono alle estremità delle parole digitate">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Utilizza le estremità solo per il testo digitato">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Mostra solo URL o titoli che iniziano con il termine di ricerca">
+<!ENTITY browser_urlbar_maxRichResults_name "Voci nel menu a discesa">
+<!ENTITY browser_urlbar_maxRichResults_description "Determina il numero massimo di elementi da mostrare nel menu a discesa della Barra di ricerca.">
+<!ENTITY browser_urlbar_autoFill_name "Completamento automatico">
+<!ENTITY browser_urlbar_autoFill_description "Attiva il completamento automatico per la Barra degli indirizzi.">
+<!ENTITY browser_fixup_alternate_enabled_name "Utilizza un indirizzo alternativo">
+<!ENTITY browser_fixup_alternate_enabled_description "Qualora un indirizzo inserito nella Barra degli indirizzi non produca nessun risultato verranno aggiunti i seguenti caratteri.">
+<!ENTITY browser_fixup_alternate_prefix_name "Prefisso">
+<!ENTITY browser_fixup_alternate_prefix_description "I caratteri da inserire all&apos;inizio dell&apos;indirizzo.">
+<!ENTITY browser_fixup_alternate_suffix_name "Suffisso">
+<!ENTITY browser_fixup_alternate_suffix_description "I caratteri da inserire alla fine dell&apos;indirizzo.">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
+<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
+<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!-- Session restore -->
+<!ENTITY session_restore "Session restore">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximum number of windows that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Windows&quot; menu.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
+<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Restore session after crash">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Determines whether the tabs and windows should be restored after a crash.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. crashes">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Maximum number of crashs that can occur before you are asked what pages you want to restore.">
+<!ENTITY browser_sessionstore_privacy_level_name "Store extra session data">
+<!ENTITY browser_sessionstore_privacy_level_description "Determines when extra session data (contents of forms, data sent with forms, scrollbar positions and cookies) should be saved. Use the first option with caution.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "for any site">
+<!ENTITY browser_sessionstore_privacy_level_o2 "for unencrypted (non-HTTPS) sites">
+<!ENTITY browser_sessionstore_privacy_level_o3 "for no site">
+<!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!-- Extensions -->
+<!ENTITY extensions "Estensioni">
+<!ENTITY getaddons "Pannello Esplora">
+<!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
+<!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
+<!ENTITY extensions_checkCompatibility_name "Attiva il controllo di compatibilità per le estensioni">
+<!ENTITY extensions_checkCompatibility_description "Questa preferenza permette di attivare o disattivare il controllo di compatibilità per le estensioni.">
+<!ENTITY extensions_getAddons_maxResults_name "Numero di risultati">
+<!ENTITY extensions_getAddons_maxResults_description "Specifica il numero massimo di risultati che possono essere mostrati quando si effettua una ricerca nel pannello Esplora.">
+<!ENTITY extensions_getAddons_showPane_name "Mostra pannello">
+<!ENTITY extensions_getAddons_showPane_description "Specifica se mostrare o meno il pannello Esplora nella finestra Componenti aggiuntivi">
+<!-- Installation -->
+<!ENTITY installation "Installation">
+<!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
+<!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
+<!-- Plugins -->
+<!ENTITY plugins "Plugins">
+<!ENTITY dom_ipc_plugins_enabled_name "Execute each plugin in an own process">
+<!ENTITY dom_ipc_plugins_enabled_description "If plugins (like Flash) crash they won't cause Firefox to crash as well.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Timeout for non-responding plugins (sec)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+<!-- Library -->
+<!ENTITY library "Library">
+<!-- Bookmarks -->
+<!ENTITY bookmarks "Segnalibri">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
+<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_max_backups_name "Backup dei segnalibri">
+<!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">
+<!-- History -->
+<!ENTITY history "History">
+<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
+<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
+<!-- Downloads -->
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Animate download icon">
+<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Add downloads to &quot;Recent Documents&quot;">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Determines whether to add downloaded files to the &quot;Recent Documents&quot; in the Start Menu. ">
+<!ENTITY browser_download_lastDir_name "Ultima cartella di download">
+<!ENTITY browser_download_lastDir_description "Indica il percorso dell&apos;ultima cartella utilizzata per un download tramite &apos;Salva destinazione con nome..&apos;">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Avviso file eseguibili">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Avvisa l&apos;utente di ogni tentativo di aprire un file eseguibile dalla Gestione download">
+<!-- Browser cache -->
+<!ENTITY cache "Cache del browser">
+<!-- Disk cache -->
+<!ENTITY cache_disk "Cache su disco">
+<!ENTITY browser_cache_check_doc_frequency_name "Controlla la cache del browser">
+<!ENTITY browser_cache_check_doc_frequency_description "Indica con quale frequenza controllare le pagine remote per una versione più recente di quella presente nella cache.">
+<!ENTITY browser_cache_check_doc_frequency_o1 "una sola volta per ogni sessione di navigazione">
+<!ENTITY browser_cache_check_doc_frequency_o2 "ogni volta che viene visualizzata la pagina">
+<!ENTITY browser_cache_check_doc_frequency_o3 "mai (usa sempre la pagina presente nella cache)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "solo se la pagina è scaduta (determinato automaticamente)">
+<!ENTITY browser_cache_disk_cache_ssl_name "Memorizza il contenuto HTTPS/SSL nella cache">
+<!ENTITY browser_cache_disk_cache_ssl_description "Memorizza il contenuto della cache ricevuto via SSL (questo può rappresentare un rischio per la sicurezza).">
+<!ENTITY browser_cache_disk_capacity_name "Cache su disco (in KB):">
+<!ENTITY browser_cache_disk_capacity_description "Indica la quantità di spazio su disco allocato per la cache del browser (in KB).">
+<!ENTITY browser_cache_disk_enable_name "Utilizza la cache su disco">
+<!ENTITY browser_cache_disk_enable_description "Utilizza la cache su disco fino alla quantità definita.">
+<!-- Memory cache -->
+<!ENTITY cache_memory "Cache in memoria">
+<!ENTITY browser_cache_memory_enable_name "Utilizza la cache in memoria">
+<!ENTITY browser_cache_memory_enable_description "Utilizza la cache in memoria fino alla quantità definita.">
+<!ENTITY browser_cache_memory_capacity_name "Cache in memoria (in KB):">
+<!ENTITY browser_cache_memory_capacity_description "Imposta il massimo consumo di RAM per la cache in memoria (in KB).">
+<!-- Misc -->
+<!ENTITY misc "Varie">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Max. number of pages in memory">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Recently visited pages are stored in memory and can be displayed faster when using Back and Forward. If set to -1 the number of pages is automatically determined. If set to 0 no pages are stored in memory. ">

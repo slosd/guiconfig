@@ -1,0 +1,18 @@
+<!ENTITY developing "Sviluppo">
+<!-- View Source -->
+<!ENTITY viewsource "Visualizza sorgente pagina">
+<!ENTITY view_source_editor_external_name "Utilizza un editor personalizzato">
+<!ENTITY view_source_editor_external_description "Attivando il comando Visualizza sorgente pagina viene eseguito un editor personalizzato.">
+<!ENTITY view_source_editor_path_name "Percorso dell&apos;editor">
+<!ENTITY view_source_editor_path_description "Indica il percorso all&apos;editor personalizzato.">
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Disattiva cache XUL">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Le modifiche alle finestre non richiedono il riavvio. Non funziona con file compressi in un archivio JAR.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY browser_dom_window_dump_enabled_name "Attiva dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Attiva l&apos;utilizzo dell&apos;istruzione dump() per stampare nella console standard.">
+<!ENTITY javascript_options_showInConsole_name "Mostra errori chrome nella console">
+<!ENTITY javascript_options_showInConsole_description "Specifica se mostrare gli errori e gli avvisi relativi al chrome nella Console degli errori">
+<!ENTITY javascript_options_strict_name "Avvisi Javascript strict">
+<!ENTITY javascript_options_strict_description "Attiva gli avvisi Javascript strict nella Console degli errori.">

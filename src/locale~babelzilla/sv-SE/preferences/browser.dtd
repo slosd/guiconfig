@@ -1,0 +1,157 @@
+<!ENTITY browser "Webbläsare">
+
+<!-- Urlbar -->
+<!ENTITY urlbar "Adressfält">
+
+<!-- Restrict results -->
+<!ENTITY urlbar_restrict_name "Begränsa resultat">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Begränsa till bokmärken">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Resultaten i det smarta adressfältet begränsas till bokmärken.">
+<!ENTITY browser_urlbar_restrict_history_name "Begränsa till historik">
+<!ENTITY browser_urlbar_restrict_history_description "Resultaten i det smarta adressfältet begränsas till besökta webbplatser.">
+<!ENTITY browser_urlbar_restrict_tag_name "Begränsa till taggar">
+<!ENTITY browser_urlbar_restrict_tag_description "Resultaten i det smarta adressfältet begränsas till taggar.">
+<!ENTITY browser_urlbar_restrict_typed_name "Begränsa till skrivna adresser">
+<!ENTITY browser_urlbar_restrict_typed_description "Resultaten i det smarta adressfältet begränsas till adresser du skrivit i adressfältet.">
+
+<!-- Match results -->
+<!ENTITY urlbar_match_name "Matcha resultat">
+<!ENTITY browser_urlbar_match_title_name "Sök i titel">
+<!ENTITY browser_urlbar_match_title_description "Avgör om resultaten i det smarta adressfältet matchar endast genom att jämföra sidtitlarna.">
+<!ENTITY browser_urlbar_match_url_name "Sök i URL">
+<!ENTITY browser_urlbar_match_url_description "Avgör om resultaten i det smarta adressfältet matchar endast genom att jämföra URL:erna.">
+<!ENTITY browser_urlbar_matchBehavior_name "Matchningsbeteende">
+<!ENTITY browser_urlbar_matchBehavior_description "Den här inställningen styr hur ordgränser ska användas när du söker efter objekt i adressfältet.">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Matcha varsomhelst">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Visa objekt som matchar ordgränser först">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Visa endast objekt som matchar ordgränser">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Matcha i början av URL eller titel">
+
+<!ENTITY browser_urlbar_maxRichResults_name "Antal sökresultat">
+<!ENTITY browser_urlbar_maxRichResults_description "Bestämmer det maximala antalet resultat som ska visas i adressfältet vid sökning.">
+<!ENTITY browser_urlbar_autoFill_name "Komplettera automatiskt">
+<!ENTITY browser_urlbar_autoFill_description "Aktiverar funktionen Komplettera automatiskt.">
+<!ENTITY browser_fixup_alternate_enabled_name "Använd alternativa adresser">
+<!ENTITY browser_fixup_alternate_enabled_description "Om en adress inte kan hittas kommer följande tecken att bifogas adressen. ">
+<!ENTITY browser_fixup_alternate_prefix_name "Infoga i början">
+<!ENTITY browser_fixup_alternate_prefix_description "Tecken som infogas i början av adressen. ">
+<!ENTITY browser_fixup_alternate_suffix_name "Infoga i slutet">
+<!ENTITY browser_fixup_alternate_suffix_description "Tecken som infogas i slutet av adressen. ">
+<!ENTITY browser_urlbar_formatting_enabled_name "Aktivera domänformatering">
+<!ENTITY browser_urlbar_formatting_enabled_description "Avgör huruvida domänen i adressfältet ska formateras eller inte.">
+<!ENTITY browser_urlbar_trimURLs_name "Putsa URL:er">
+<!ENTITY browser_urlbar_trimURLs_description "Om alternativet aktiveras döljs protokollet (http) och avslutande snedstreck i adressen i adressfältet.">
+
+<!-- Session restore -->
+<!ENTITY session_restore "Återställ session">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Aktivera sessionsåterställning">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Högsta antal samtidiga flikar">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Antalet flikar som kan återställas samtidigt. Vid värdet 0 kommer endast den markerade fliken i varje fönster att läsas in. Vid ett värde lägre än 0 återställs samtliga flikar på en och samma gång.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Antal återställbara flikar">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Det maximala antalet flikar som visas i menyn &quot;Historik&quot; &gt; &quot;Nyligen stängda flikar&quot;.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Antal återställbara fönster">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Det maximala antalet fönster som visas i menyn &quot;Historik&quot; &gt; &quot;Nyligen stängda fönster&quot;.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Återställ flikar på begäran">
+<!ENTITY browser_sessionstore_restore_on_demand_description "Om alternativet aktiveras återställs inte flikar förrän de fokuseras.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Återställ dolda flikar">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Avgör om flikar i andra flikgrupper ska återställas eller inte.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Återställ fastnålade flikar på begäran">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Fastnålade flikar återställs alltid automatiskt. Om detta alternativ aktiveras återställs fastnålade flikar istället på begäran, precis som vanliga flikar.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Högsta antal återställda bakåtposter">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Högsta antal historikposter för bakåtknappen som får återställas. Ange till -1 för oändligt många poster.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Högsta antal återställda framåtposter">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Högsta antal historikposter för framåtknappen som får återställas. Ange till -1 för oändligt många poster.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Återställ session efter krasch">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Avgör om flikar och fönster ska återställas efter en krasch.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Antal krascher">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Det maximala antalet krascher som kan inträffa innan du blir tillfrågad om vilka sidor du vill återställa.">
+<!ENTITY browser_sessionstore_privacy_level_name "Lagra extra sessionsdata">
+<!ENTITY browser_sessionstore_privacy_level_description "Bestämmer när extra sessionsdata (formulärinnehåll, data som sänts med formulär, rullningslistpositioner och kakor) ska sparas. Använd det första alternativet med försiktighet.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "för alla webbplatser">
+<!ENTITY browser_sessionstore_privacy_level_o2 "för okrypterade webbplatser (icke-HTTPS)">
+<!ENTITY browser_sessionstore_privacy_level_o3 "inte för någon webbplats">
+
+<!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "Tillägg &amp; insticksmoduler">
+
+<!-- Extensions -->
+<!ENTITY extensions "Tillägg">
+<!ENTITY getaddons "&quot;Hämta tillägg&quot;-panelen">
+<!ENTITY extensions_alwaysUnpack_name "Packa alltid upp tillägg">
+<!ENTITY extensions_alwaysUnpack_description "Om det här alternativet är aktiverat packas tillägg upp till din profilmapp under installationen.">
+<!ENTITY extensions_checkCompatibility_name "Aktivera kompatibilitetskontroll av tillägg">
+<!ENTITY extensions_checkCompatibility_description "Den här inställningen tillåter att kompatibilitetskontrollen av tillägg inaktiveras.">
+<!ENTITY extensions_getAddons_maxResults_name "Antal sökresultat">
+<!ENTITY extensions_getAddons_maxResults_description "Bestämmer det maximala antalet resultat som visas i panelen när du gör en sökning.">
+<!ENTITY extensions_getAddons_showPane_name "Visa panelen">
+<!ENTITY extensions_getAddons_showPane_description "Bestämmer om &quot;Hämta tillägg&quot;-panelen i fönstret &quot;Tilläggshanteraren&quot; ska visas eller inte.">
+
+<!-- Installation -->
+<!ENTITY installation "Installation">
+<!ENTITY security_dialog_enable_delay_name "Fördröjning vid tilläggsinstallation (ms)">
+<!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">
+
+<!-- Plugins -->
+<!ENTITY plugins "Insticksmoduler">
+<!ENTITY dom_ipc_plugins_enabled_name "Kör varje insticksmodul i en egen process">
+<!ENTITY dom_ipc_plugins_enabled_description "Om insticksmoduler (som Flash och Java) kraschar kommer de inte förorsaka att även Firefox gör det.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Tidsgräns för insticksmoduler som inte svarar (s)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Anger en tidsgräns efter vilken processen för den insticksmodul som inte svarar avslutas.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tidsgräns för insticksmodulstart (s)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Anger en tidsgräns när en insticksmodul startas, efter vilken starten anses ha misslyckats.">
+
+<!-- Library -->
+<!ENTITY library "Biblioteket">
+
+<!-- Bookmarks -->
+<!ENTITY bookmarks "Bokmärken">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Exportera bokmärken till fil vid programavslut">
+<!ENTITY browser_bookmarks_autoExportHTML_description "Om alternativet aktiveras exporteras bokmärken till filen &quot;bookmarks.html&quot; i din profilmapp när webbläsaren avslutas.">
+<!ENTITY browser_bookmarks_max_backups_name "Säkerhetskopior av bokmärken">
+<!ENTITY browser_bookmarks_max_backups_description "Anger hur många säkerhetskopior som sparas. Ange värdet 0 för att inaktivera säkerhetskopieringsfunktionen.">
+
+<!-- History -->
+<!ENTITY history "Historik">
+<!ENTITY places_history_expiration_max_pages_name "Högsta antal historikposter att komma ihåg">
+<!ENTITY places_history_expiration_max_pages_description "Högsta antal historikposter som kan sparas i minnet innan andra poster förfaller. Ange till -1 om du vill att antalet ska beräknas automatiskt.">
+
+<!-- Downloads -->
+<!ENTITY downloads "Filhämtningar">
+<!ENTITY browser_download_animateNotifications_name "Animera filhämtningsikonen">
+<!ENTITY browser_download_animateNotifications_description "Animera ikonen för Filhämtaren i verktygsfältet när en filhämtning startas eller slutförs.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Lägg till hämtade filer i listan &quot;Nyligen använda dokument&amp;quot">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Bestämmer huruvida hämtade filer ska läggas till i listan &quot;Nyligen använda dokument&amp;quot i Start-menyn.">
+<!ENTITY browser_download_lastDir_name "Senaste hämtningsmapp">
+<!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för hämtning via &quot;Spara (bild/länk/sida) som…&quot;.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för körbar fil">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Varna användare som försöker öppna en körbar fil i Filhämtaren.">
+
+<!-- Browser cache -->
+<!ENTITY cache "Cache">
+
+<!-- Disk cache -->
+<!ENTITY cache_disk "Diskcache">
+<!ENTITY browser_cache_check_doc_frequency_name "Kontrollera webbläsarens cache">
+<!ENTITY browser_cache_check_doc_frequency_description "Hur ofta en fjärrsida ska kontrolleras för en nyare version än den som kanske finns i cachen.">
+<!ENTITY browser_cache_check_doc_frequency_o1 "Kontrollera en gång per webbläsarsession">
+<!ENTITY browser_cache_check_doc_frequency_o2 "Kontrollera varje gång en sida visas">
+<!ENTITY browser_cache_check_doc_frequency_o3 "Kontrollera aldrig (använd alltid cachad sida)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "Kontrollera när sidan är utdaterad (bestäms automatiskt)">
+<!ENTITY browser_cache_disk_cache_ssl_name "Lagra HTTPS/SSL-innehåll i cachen">
+<!ENTITY browser_cache_disk_cache_ssl_description "Cacheinnehåll som tagits emot via SSL (OBS: Säkerhetsrisk!).">
+<!ENTITY browser_cache_disk_capacity_name "Diskcache (kB)">
+<!ENTITY browser_cache_disk_capacity_description "Det diskutrymme (i kB) som webbläsarens cache tillåts ta upp.">
+<!ENTITY browser_cache_disk_enable_name "Använd diskcache">
+<!ENTITY browser_cache_disk_enable_description "Använd diskcache, upp till den specificerade kapacitetsnivån.">
+
+<!-- Memory cache -->
+<!ENTITY cache_memory "Cacheminne">
+<!ENTITY browser_cache_memory_enable_name "Använd cacheminne">
+<!ENTITY browser_cache_memory_enable_description "Använd cacheminne, upp till den specificerade kapacitetsnivån.">
+<!ENTITY browser_cache_memory_capacity_name "Cacheminne (kB)">
+<!ENTITY browser_cache_memory_capacity_description "Ange hur mycket RAM-minne (i kB) som tillåts användas som minnescache.">
+
+<!-- Misc -->
+<!ENTITY misc "Övrigt">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Antal lagrade webbsidor i minnet">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Nyligen besökta webbsidor lagras i minnet och kan visas snabbare när Bakåt- och Framåt-knapparna används. Om värdet sätts till -1 kommer antalet lagrade webbsidor att bestämmas automatiskt. Om det sätts till 0 kommer inga sidor att lagras i minnet.">

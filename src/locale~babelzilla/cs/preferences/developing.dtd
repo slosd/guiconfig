@@ -1,0 +1,20 @@
+<!ENTITY developing "Vývoj">
+
+<!-- View Source -->
+<!ENTITY viewsource "Zobrazení zdrojového kódu">
+<!ENTITY view_source_editor_external_name "Použít vlastní editor">
+<!ENTITY view_source_editor_external_description "Pro zobrazení zdrojového kódu se použije vlastní editor.">
+<!ENTITY view_source_editor_path_name "Cesta k editoru">
+<!ENTITY view_source_editor_path_description "Cesta k vlastnímu editoru.">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Vypnout vyrovnávací paměť XUL">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory formátu JAR.">
+<!ENTITY devtools_inspector_enabled_name "Povolit „Prozkoumat prvek“">
+<!ENTITY devtools_inspector_enabled_description "Povolí v místních nabídkách webových stránek akci „Prozkoumat prvek“, která otevře průzkumník na místě vybraného prvku HTML.">
+<!ENTITY browser_dom_window_dump_enabled_name "Povolit dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Povolí použití příkazu dump() vypisující do standardního výstupu.">
+<!ENTITY javascript_options_showInConsole_name "Zobrazit v konzoli chyby chrome">
+<!ENTITY javascript_options_showInConsole_description "Určuje, zda se budou zaznamenávat chyby a varování chrome do konzole JavaScriptu.">
+<!ENTITY javascript_options_strict_name "Striktní varování JavaScriptu">
+<!ENTITY javascript_options_strict_description "Povolí v chybové konzoli striktní varování JavaScriptu.">

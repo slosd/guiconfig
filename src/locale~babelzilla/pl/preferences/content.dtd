@@ -1,0 +1,66 @@
+
+<!-- Websites -->
+<!ENTITY websites "Witryny">
+
+<!-- Images -->
+<!ENTITY images "Obrazki">
+<!ENTITY gfx_color_management_mode_name "Używaj zarządzania kolorami na">
+<!ENTITY gfx_color_management_mode_description "Wymaga ponownego uruchomienia przeglądarki.">
+<!ENTITY gfx_color_management_mode_o1 "żadnych obrazkach">
+<!ENTITY gfx_color_management_mode_o2 "wszystkich obrazkach">
+<!ENTITY gfx_color_management_mode_o3 "obrazkach z tagami ICC">
+<!ENTITY browser_display_show_image_placeholders_name "Pokazuj odciski obrazków">
+<!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Zmieniaj rozmiar obrazków">
+<!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
+
+<!-- Rendering -->
+<!ENTITY rendering "Renderowanie">
+<!ENTITY nglayout_initialpaint_delay_name "Czas przed wyświetleniem strony (w milisekundach)">
+<!ENTITY nglayout_initialpaint_delay_description "To ustawienie określa liczbę milisekund, które przeglądarka ma odczekać przed pierwszym renderowaniem strony. Niższe wartości spowodują szybsze wyświetlanie strony, ale sprawią, że renderowanie będzie dłużej trwało. Odwrotnie przy wartościach większych.">
+<!ENTITY content_notify_interval_name "Czas przed ponownym renderowaniem strony (w mikrosekundach)">
+<!ENTITY content_notify_interval_description "Firefox okresowo renderuje dane strony. To ustawienie określa minimalny okres czasu, który musi upłynąć, zanim Firefox ponownie będzie renderował stronę (w mikrosekundach). Niższe wartości spowodują pozorne powolniejsze wczytywanie strony, ale zwiększą całkowity jego czas.">
+
+<!-- Misc -->
+<!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
+<!ENTITY geo_enabled_description "Kiedy ta funkcja jest włączona, Firefox może pytać Cię, czy chcesz poinformować obecnie odwiedzaną witrynę o swoim położeniu geograficzym. Odznaczenie tego pola całkowicie wyłącza tę funkcję.">
+<!ENTITY webgl_enabled_for_all_sites_name "Włącz WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Pobieraj czcionki załączone do witryn">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Włącza pobieranie czcionek CSS3, które są załączane do witryn przy pomocy dyrektywy @font-face. Wymaga ponownego uruchomienia przeglądarki.">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Włącz DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Włącza sprzętowe przyspieszanie wyświetlania tekstu (wymaga Windowsa 7 lub Windowsa Visty z aktualizacją &quot;Vista Platform&quot;).">
+<!ENTITY layout_frames_force_resizability_name "Wymuś możliwość zmiany rozmiaru ramek">
+<!ENTITY dom_max_script_run_time_name "Maks. czas działania skryptów (w sek.)">
+<!ENTITY dom_max_script_run_time_description "Określa liczbę sekund, po których Firefox informuje, ze skrypt wykonywany jest zbyt długo.">
+
+<!-- Accessibility -->
+<!ENTITY accessibility "Dostępność">
+
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozróżnianie wielkości znaków">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Określa sposób obsługi rozróżniania znaków. Kiedy wybrana jest opcja &quot;Wykryj automatycznie&quot;, w kryterium wyszukiwania rozróżniana jest wielkosć znaków, jeśli zawiera ono wielkie litery, ale nie składa się wyłącznie z nich.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Wykryj automatycznie">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Nie rozróżniaj">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Rozróżniaj">
+<!ENTITY accessibility_typeaheadfind_label "Wyszukiwanie podczas wpisywania tekstu">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Czas oczekiwania (w milisekundach)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Określa po jakim okresie czasu bez wprowadzania pasek wyszukiwania znika.">
+
+<!-- Browser zoom -->
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Automatycznie wypełniaj pola formularzy logowania się">
+<!ENTITY signon_prefillForms_description "Automatycznie wypełnia pola formularzy nazwami użytkownika i hasłami.">
+<!ENTITY accessibility_tabfocus_name "Elementy, na których zatrzymuje się Tab">
+<!ENTITY accessibility_tabfocus_description "To ustawienie określa na jakich typach elementów ma skupiać się przeglądarka po wciśnięciu klawisza Tab.">
+<!ENTITY accessibility_tabfocus_o1 "tylko pola tekstowe">
+<!ENTITY accessibility_tabfocus_o2 "wszystkie elementy formularzy oprócz pól tekstowych">
+<!ENTITY accessibility_tabfocus_o3 "wszystkie elementy formularzy">
+<!ENTITY accessibility_tabfocus_o4 "tylko odnośniki (włączając obrazki nimi będące)">
+<!ENTITY accessibility_tabfocus_o5 "odnośniki i elementy formularzy">
+<!ENTITY accessibility_tabfocus_o6 "odnośniki i elementy formularzy inne niż pola tekstowe">
+<!ENTITY layout_spellcheckDefault_name "Sprawdzanie pisowni">
+<!ENTITY layout_spellcheckDefault_description "Określa gdzie włączone ma być sprawdzanie pisowni.">
+<!ENTITY layout_spellcheckDefault_o1 "Wyłącz">
+<!ENTITY layout_spellcheckDefault_o2 "Włącz dla wieloliniowych pól tekstowych">
+<!ENTITY layout_spellcheckDefault_o3 "Włącz dla wieloliniowych i jednoliniowych pól tekstowych">

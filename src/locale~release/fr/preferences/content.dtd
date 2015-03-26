@@ -1,0 +1,89 @@
+<!ENTITY content "Content">
+<!-- Websites -->
+<!ENTITY websites "Sites Web">
+<!-- Images -->
+<!ENTITY images "Images">
+<!ENTITY gfx_color_management_mode_name "Use color management for">
+<!ENTITY gfx_color_management_mode_description "Restart required.">
+<!ENTITY gfx_color_management_mode_o1 "aucune image">
+<!ENTITY gfx_color_management_mode_o2 "toutes les images">
+<!ENTITY gfx_color_management_mode_o3 "images with ICC tags">
+<!ENTITY image_animation_mode_name "Animated images">
+<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
+<!ENTITY image_animation_mode_o1 "Loop indefinitely">
+<!ENTITY image_animation_mode_o2 "Run animation once">
+<!ENTITY image_animation_mode_o3 "Never run the animation">
+<!ENTITY browser_display_show_image_placeholders_name "Voir les emplacements d&apos;images">
+<!ENTITY browser_display_show_image_placeholders_description "Voir les cadres d&apos;emplacement des images avant qu&apos;elles ne soient complètement chargées">
+<!ENTITY browser_enable_automatic_image_resizing_name "Redimensionner les images">
+<!ENTITY browser_enable_automatic_image_resizing_description "Lors du chargement d&apos;une image seule, hors d&apos;une page Web, si elle est trop grande elle sera alors redimensionnée afin de s&apos;adapter à la largeur de la fenêtre du navigateur">
+<!-- Rendering -->
+<!ENTITY rendering "Rendu">
+<!ENTITY nglayout_initialpaint_delay_name "Durée avant l&apos;affichage de la page (en ms)">
+<!ENTITY nglayout_initialpaint_delay_description "Cette préférence précise le nombre de millisecondes d&apos;attente avant le rendu de la page. Les petites valeurs feront que la page s&apos;affichera plus vite, mais lui demandera plus de temps pour que le rendu se termine. Les grandes valeurs auront l&apos;effet inverse.">
+<!ENTITY content_notify_interval_name "Durée avant le ré-affichage de la page (en µs)">
+<!ENTITY content_notify_interval_description "Firefox utilise périodiquement toutes les données reçues depuis un site Web. Cette préférence précise la durée minimale d&apos;attente avant d&apos;afficher la page à nouveau, en microsecondes. Les plus petites valeurs vont réduire le temps de chargement perçu, mais cela augmentera la durée totale de chargement.">
+<!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
+<!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely.">
+<!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Télécharger les polices de caractères intégrées au site Web">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Enables downloading of CSS3 fonts which are embedded using @font-face. Restart required.">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text (requires Windows 7 or Windows Vista with Vista Platform update).">
+<!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
+<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
+<!-- Accessibility -->
+<!ENTITY accessibility "Accessibilité">
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Sensible à la casse">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Précise comment la sensibilité de casse est réglée. Quand « Déterminé automatiquement » est choisi, la recherche est sensible à la casse si le texte recherché contient des capitales, mais pas totalement.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Déterminé automatiquement">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Non sensible à la casse">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Sensible à la casse">
+<!ENTITY accessibility_typeaheadfind_label "Recherche ce que vous tapez">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Durée (ms)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Précise après quelle durée de non-utilisation du clavier la barre de recherche disparaîtra">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+<!-- Browser zoom -->
+<!ENTITY browser_zoom "Browser zoom">
+<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
+<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
+<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
+<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Remplir les champs d&apos;identification">
+<!ENTITY signon_prefillForms_description "Remplit automatiquement les champs (identifiants et mots de passe) des formulaires d&apos;identification">
+<!ENTITY accessibility_tabfocus_name "Éléments de focus d&apos;onglets">
+<!ENTITY accessibility_tabfocus_description "Cette préférence permet de choisir quels éléments peuvent être sélectionnés en appuyant sur Tab">
+<!ENTITY accessibility_tabfocus_o1 "Permettre uniquement la sélection des champs textuels">
+<!ENTITY accessibility_tabfocus_o2 "Permettre la sélection de tout type d&apos;élément, sauf le champ textuel">
+<!ENTITY accessibility_tabfocus_o3 "Tout élément">
+<!ENTITY accessibility_tabfocus_o4 "Permettre uniquement la sélection de liens (texte ou image)">
+<!ENTITY accessibility_tabfocus_o5 "Permettre uniquement la sélection de liens et de champs de formulaires">
+<!ENTITY accessibility_tabfocus_o6 "Donner le focus aux liens et éléments de formulaire, sauf les champs de texte">
+<!ENTITY layout_spellcheckDefault_name "Vérification de l&apos;orthographe">
+<!ENTITY layout_spellcheckDefault_description "Précise où activer la vérification de l&apos;orthographe.">
+<!ENTITY layout_spellcheckDefault_o1 "Désactiver">
+<!ENTITY layout_spellcheckDefault_o2 "Activer pour les champs de texte de plusieurs lignes">
+<!ENTITY layout_spellcheckDefault_o3 "Activer pour les champs de texte d&apos;une ou plusieurs lignes">
+<!-- Javascript -->
+<!ENTITY javascript "Javascript">
+<!-- Permissions -->
+<!ENTITY permissions "Permissions">
+<!ENTITY javascript_enabled_name "Enable Javascript">
+<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
+<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
+<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
+<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
+<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
+<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
+<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
+<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">

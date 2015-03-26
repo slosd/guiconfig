@@ -2,6 +2,8 @@
 <!ENTITY browser.item.access "m">
 <!ENTITY config.search "Trova">
 <!ENTITY config.descr.standard "Muovere il cursore sopra un&apos;opzione per visualizzarne una descrizione dettagliata">
+<!ENTITY config.description "Description:">
+<!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "Ripristina predefiniti">
 <!ENTITY config.todefault "Ripristina valore predefinito">
 <!ENTITY config.header.title "gui:config">

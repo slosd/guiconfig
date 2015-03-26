@@ -1,0 +1,33 @@
+<!ENTITY input "Input">
+<!ENTITY mousebehaviour "Mouse behaviour">
+<!-- Middle click -->
+<!ENTITY middleclick "Clic centrale">
+<!ENTITY middlemouse_contentLoadURL_name "Carica appunti come URL">
+<!ENTITY middlemouse_contentLoadURL_description "Al clic del tasto centrale carica il contenuto degli appunti come fosse un URL.">
+<!ENTITY middlemouse_paste_name "Incolla testo dagli appunti">
+<!ENTITY middlemouse_paste_description "Al clic del tasto centrale incolla il contenuto degli appunti in un campo di testo.">
+<!-- Mouse click -->
+<!ENTITY mouseclick "Clic del mouse">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Seleziona il contenuto al clic del mouse">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Seleziona il contenuto della Barra degli indirizzi quando viene fatto clic su di essa.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Seleziona il contenuto al doppio clic">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Seleziona il contenuto della Barra degli indirizzi quando viene fatto doppio clic su di essa.">
+<!-- Vertical mouse scrolling -->
+<!ENTITY mousescrollvertical "Vertical mouse scrolling">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_default_action_name "Action with no key">
+<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
+<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
+<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
+<!ENTITY mousewheel_action_o1 "Scroll lines">
+<!ENTITY mousewheel_action_o2 "Scroll pages">
+<!ENTITY mousewheel_action_o3 "Go back/forward in the history">
+<!ENTITY mousewheel_action_o4 "Zoom page">
+<!-- Misc -->
+<!ENTITY browser_backspace_action_name "Il tasto Backspace:">
+<!ENTITY browser_backspace_action_description "Definisce il comportamento del tasto Backspace.">
+<!ENTITY browser_backspace_action_o1 "torna indietro nella cronologia">
+<!ENTITY browser_backspace_action_o2 "agisce come Pag. Su">
+<!ENTITY browser_backspace_action_o3 "non esegue nessuna azione">
+<!ENTITY accessibility_accesskeycausesactivation_name "Attivazione degli elementi tramite accesskey">
+<!ENTITY accessibility_accesskeycausesactivation_description "Questa opzione rende l&apos;utilizzo dell&apos;accesskey di un elemento equivalente all&apos;azione compiuta sull&apos;elemento stesso. Se è un collegamento verrà attivato, se è un pulsante verrà premuto.">

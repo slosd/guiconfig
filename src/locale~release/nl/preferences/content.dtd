@@ -1,0 +1,89 @@
+<!ENTITY content "Inhoud">
+<!-- Websites -->
+<!ENTITY websites "Websites">
+<!-- Images -->
+<!ENTITY images "Afbeeldingen">
+<!ENTITY gfx_color_management_mode_name "Kleurenbeheer gebruiken voor">
+<!ENTITY gfx_color_management_mode_description "Herstart vereist.">
+<!ENTITY gfx_color_management_mode_o1 "geen afbeeldingen">
+<!ENTITY gfx_color_management_mode_o2 "alle afbeeldingen">
+<!ENTITY gfx_color_management_mode_o3 "afbeeldingen met ICC-labels">
+<!ENTITY image_animation_mode_name "Geanimeerde afbeeldingen">
+<!ENTITY image_animation_mode_description "Beperkt oneindig (of zo vaak als de afbeelding opgeeft) lussen van geanimeerde afbeeldingen (GIF’s) tot eenmalig of helemaal niet.">
+<!ENTITY image_animation_mode_o1 "Oneindig lussen">
+<!ENTITY image_animation_mode_o2 "Animatie éénmalig afspelen">
+<!ENTITY image_animation_mode_o3 "Animatie nooit afspelen">
+<!ENTITY browser_display_show_image_placeholders_name "Afbeeldingsplaatshouders weergeven">
+<!ENTITY browser_display_show_image_placeholders_description "Laat plaatshouders zien terwijl de afbeelding wordt geladen.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Afbeeldingen aanpassen">
+<!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding buiten een webpagina wordt de afbeelding aangepast om te passen in het browservenster als het daar te groot voor is.">
+<!-- Rendering -->
+<!ENTITY rendering "Verwerking">
+<!ENTITY nglayout_initialpaint_delay_name "Vertraging voor weergave van een pagina (msec)">
+<!ENTITY nglayout_initialpaint_delay_description "Deze voorkeur bepaalt het aantal te wachten milliseconden voordat een pagina wordt verwerkt. Lagere waarden laten een pagina sneller zien, maar zorgen dat het langer duurt voordat de verwerking van de pagina klaar is. Hogere waarden hebben het omgekeerde effect.">
+<!ENTITY content_notify_interval_name "Vertraging voor opnieuw opmaken pagina (microsec)">
+<!ENTITY content_notify_interval_description "Firefox verwerkt periodiek alle ontvangen gegevens van een website. Deze voorkeur geeft de minimale wachttijd voor opnieuw opmaken van de pagina in microseconden. Lagere waarden verlagen de ervaren laadtijd maar verhogen de totale laadtijd.">
+<!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY geo_enabled_name "Locatiebewust navigeren inschakelen">
+<!ENTITY geo_enabled_description "Indien ingeschakeld kan Firefox u vragen of u de bezochte website wilt vertellen waar u bent. Uitschakelen van deze optie schakelt deze functie geheel uit.">
+<!ENTITY webgl_enabled_for_all_sites_name "WebGL inschakelen">
+<!ENTITY gfx_downloadable_fonts_enabled_name "In de website ingebouwde lettertypen downloaden">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Schakelt downloaden van CSS3-lettertypen die zijn ingebed met @font-face in. Herstart nodig.">
+<!ENTITY prompts_tab_modal_enabled_name "Tabbladschermen inschakelen (waarschuwingen)">
+<!ENTITY prompts_tab_modal_enabled_description "Bepaalt of de nieuwe tabbladschermen of de oude vensterschermen moeten worden gebruikt.">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "DirectWrite inschakelen">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Schakelt hardwareversnelling in voor weergave van tekst (vereist Windows 7 of Windows Vista met Vista Platform Update).">
+<!ENTITY layout_frames_force_resizability_name "Aanpasbare frames afdwingen">
+<!ENTITY dom_max_script_run_time_name "Max. runtime scripts (sec)">
+<!ENTITY dom_max_script_run_time_description "Bepaalt het aantal seconden dat Firefox wacht voordat een waarschuwing wordt weergegeven dat een script te lang doet over uitvoering.">
+<!-- Accessibility -->
+<!ENTITY accessibility "Toegankelijkheid">
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Bepaalt omgang met hoofdlettergevoeligheid. Indien ‘Automatisch bepaald’ is de zoekopdracht hoofdlettergevoelig als deze hoofd- en kleine letters bevat.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Automatisch bepaald">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Niet hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Hoofdlettergevoelig">
+<!ENTITY accessibility_typeaheadfind_label "Zoeken tijdens typen">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Time-out (milliseconden)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Bepaalt na hoeveel tijd zonder toetsenbordinvoer de zoekbalk verdwijnt.">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Zoekveld met geselecteerde tekst vullen">
+<!-- Browser zoom -->
+<!ENTITY browser_zoom "Browser inzoomen">
+<!ENTITY browser_zoom_full_name "Volledige zoom gebruiken in plaats van tekst zoomen.">
+<!ENTITY browser_zoom_full_description "Tekst zoomen vergroot alleen de tekst van een website, terwijl volledige zoom ook andere elementen zoals afbeeldingen betreft.">
+<!ENTITY browser_zoom_siteSpecific_name "Zoomniveau’s onthouden">
+<!ENTITY browser_zoom_siteSpecific_description "Indien ingeschakeld worden zoomniveau’s opgeslagen en voor elke website teruggehaald. Anders wordt het zoomniveau gereset bij het volgende bezoek.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Achtergrondtabbladen bijwerken">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Andere tabbladen bijwerken naar het zoomniveau van het huidige tabblad.">
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Aanmeldformuliervelden automatisch invullen">
+<!ENTITY signon_prefillForms_description "Formuliervelden automatisch vullen met gebruikersnamen en wachtwoorden.">
+<!ENTITY accessibility_tabfocus_name "Tabfocuselementen">
+<!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt op welke elementen kunnen worden gefocust door op Tab te drukken.">
+<!ENTITY accessibility_tabfocus_o1 "Alleen aan tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o2 "Aan alle formulierelementen behalve tekstvelden focus geven">
+<!ENTITY accessibility_tabfocus_o3 "Aan alle formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o4 "Alleen aan koppelingen (en gekoppelde afbeeldingen) focus geven">
+<!ENTITY accessibility_tabfocus_o5 "Aan koppelingen en formulierelementen focus geven">
+<!ENTITY accessibility_tabfocus_o6 "Aan koppelingen en formulierelementen behalve tekstvelden focus geven">
+<!ENTITY layout_spellcheckDefault_name "Spellingscontrole">
+<!ENTITY layout_spellcheckDefault_description "Bepaalt waar spellingscontrole ingeschakeld wordt.">
+<!ENTITY layout_spellcheckDefault_o1 "Uitschakelen">
+<!ENTITY layout_spellcheckDefault_o2 "Inschakelen voor meerregelige tekstvelden">
+<!ENTITY layout_spellcheckDefault_o3 "Inschakelen voor meerregelige en enkelregelige tekstvelden">
+<!-- Javascript -->
+<!ENTITY javascript "Javascript">
+<!-- Permissions -->
+<!ENTITY permissions "Permissions">
+<!ENTITY javascript_enabled_name "Enable Javascript">
+<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
+<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
+<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
+<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
+<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
+<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
+<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
+<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">

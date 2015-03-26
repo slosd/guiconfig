@@ -1,0 +1,89 @@
+<!ENTITY content "Innehåll">
+<!-- Websites -->
+<!ENTITY websites "Webbplatser">
+<!-- Images -->
+<!ENTITY images "Bilder">
+<!ENTITY gfx_color_management_mode_name "Använd färghantering">
+<!ENTITY gfx_color_management_mode_description "Omstart krävs.">
+<!ENTITY gfx_color_management_mode_o1 "inte för några bilder">
+<!ENTITY gfx_color_management_mode_o2 "för alla bilder">
+<!ENTITY gfx_color_management_mode_o3 "för bilder med ICC-taggar">
+<!ENTITY image_animation_mode_name "Animerade bilder">
+<!ENTITY image_animation_mode_description "Hindrar animerade bilder (*.gif) att spelas upp i en oändlig slinga (eller så ofta som anges av bilden). De körs istället en enda gång eller inte alls.">
+<!ENTITY image_animation_mode_o1 "Oändlig slinga">
+<!ENTITY image_animation_mode_o2 "Spela upp animeringar en gång">
+<!ENTITY image_animation_mode_o3 "Spela aldrig upp animeringar">
+<!ENTITY browser_display_show_image_placeholders_name "Visa bildplatshållare">
+<!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild läses in.">
+<!ENTITY browser_enable_automatic_image_resizing_name "Ändra storlek på bilder">
+<!ENTITY browser_enable_automatic_image_resizing_description "När en bild visas ensam och inte som en del av en webbsida, kommer dess storlek att anpassas till webbläsarfönstret om den är för stor för att få plats i det.">
+<!-- Rendering -->
+<!ENTITY rendering "Rendering">
+<!ENTITY nglayout_initialpaint_delay_name "Tidsfördröjning innan en sida visas (ms)">
+<!ENTITY nglayout_initialpaint_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan första renderingen av en sida. Låga värden gör att sidan kommer att visas snabbare, men gör samtidigt att det tar längre tid innan renderingen slutförs. Höga värden ger motsatt effekt.">
+<!ENTITY content_notify_interval_name "Tidsfördröjning innan en sida ritas om (µs)">
+<!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda inläsningstiden, men ökar den totala inläsningstiden.">
+<!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
+<!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet.">
+<!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "Hämta fonter inbäddade i webbplatser">
+<!ENTITY gfx_downloadable_fonts_enabled_description "Medger hämtning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
+<!ENTITY prompts_tab_modal_enabled_name "Aktivera modala meddelandeflikar (varningar)">
+<!ENTITY prompts_tab_modal_enabled_description "Avgör om aviseringar ska visas i de nya modala meddelandeflikarna eller i de gamla modala meddelandefönstren.">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktivera DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiverar maskinvaruacceleration för textvisning. (Kräver Windows 7 eller Windows Vista med Vista Platform-uppdatering)">
+<!ENTITY layout_frames_force_resizability_name "Tvinga HTML-ramar att vara justerbara">
+<!ENTITY dom_max_script_run_time_name "Maxkörtid för skript (s)">
+<!ENTITY dom_max_script_run_time_description "Bestämmer det antal sekunder efter vilka Firefox meddelar dig att ett skript tar för lång tid på sig att köras.">
+<!-- Accessibility -->
+<!ENTITY accessibility "Tillgänglighet">
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "Skiftlägeskänslig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "Avgör hur skiftlägeskänslighet ska hanteras. I läget &quot;Bestäm automatiskt&quot; är sökningen skiftlägeskänslig om söksträngen innehåller versaler, men inte endast består av versaler.">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "Bestäm automatiskt">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "Inte skiftlägeskänslig">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "Skiftlägeskänslig">
+<!ENTITY accessibility_typeaheadfind_label "Söklisten (Sök medan du skriver)">
+<!ENTITY accessibility_typeaheadfind_timeout_name "Tidsgräns (ms)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "Bestämmer hur lång tid som får gå utan ytterligare tangentnedslag, innan söklisten försvinner.">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fyll i sökrutan med markerad text">
+<!-- Browser zoom -->
+<!ENTITY browser_zoom "Webbläsarzoomning">
+<!ENTITY browser_zoom_full_name "Använd helsideszoomning istället för textzoomning">
+<!ENTITY browser_zoom_full_description "Textzoomning påverkar endast textstorleken på en webbsida, medan helsideszoomning även påverkar andra element, såsom bilder.">
+<!ENTITY browser_zoom_siteSpecific_name "Kom ihåg zoomningsnivåer">
+<!ENTITY browser_zoom_siteSpecific_description "Om alternativet aktiveras sparas zoomningsnivåerna för varje enskild webbplats. I annat fall återställs zoomningsnivån till standard vid nästa besök.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Uppdatera bakgrundsflikar">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Uppdaterar alla flikar som visar samma webbplats till denna aktuella zoomningsnivån.">
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "Fyll automatiskt i formulärfält för inloggning">
+<!ENTITY signon_prefillForms_description "Fyll automatiskt i formulärfält med användarnamn och lösenord.">
+<!ENTITY accessibility_tabfocus_name "Tabulatorfokuserade element">
+<!ENTITY accessibility_tabfocus_description "Den här inställningen avgör vilka element som kan fokuseras genom att trycka på tabbtangenten.">
+<!ENTITY accessibility_tabfocus_o1 "Fokuserar endast på textfält">
+<!ENTITY accessibility_tabfocus_o2 "Fokuserar på alla formulärelement utom textfält">
+<!ENTITY accessibility_tabfocus_o3 "Fokuserar på alla formulärelement">
+<!ENTITY accessibility_tabfocus_o4 "Fokuserar endast på länkar (och länkade bilder)">
+<!ENTITY accessibility_tabfocus_o5 "Fokuserar på länkar och formulärelement">
+<!ENTITY accessibility_tabfocus_o6 "Fokuserar på länkar och formulärelement utom textfält">
+<!ENTITY layout_spellcheckDefault_name "Stavningskontroll">
+<!ENTITY layout_spellcheckDefault_description "Avgör var stavningskontroll ska användas.">
+<!ENTITY layout_spellcheckDefault_o1 "Inaktivera">
+<!ENTITY layout_spellcheckDefault_o2 "Aktivera för flerradstextfält">
+<!ENTITY layout_spellcheckDefault_o3 "Aktivera för flerrads- och singelradstextfält">
+<!-- Javascript -->
+<!ENTITY javascript "Javascript">
+<!-- Permissions -->
+<!ENTITY permissions "Permissions">
+<!ENTITY javascript_enabled_name "Enable Javascript">
+<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
+<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
+<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
+<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
+<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
+<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
+<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
+<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">

@@ -1,0 +1,34 @@
+<!ENTITY appearance "Utseende">
+
+<!-- Browser -->
+<!ENTITY browser_style "Webbläsare">
+<!ENTITY browser_chrome_favicons_name "Visa sajtikoner">
+<!ENTITY browser_chrome_favicons_description "Bestämmer huruvida sajtikoner ska visas.">
+<!ENTITY browser_chrome_toolbar_tips_name "Visa verktygstips">
+<!ENTITY browser_chrome_toolbar_tips_description "Styr beteendet hos verktygstips för chromeelement.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animera byte av inställningspaneler">
+<!ENTITY browser_preferences_animateFadeIn_description "Ändrar höjden på fönstret och tonar in den nya panelen under ungefär en sekund när du byter panel i inställningsdialogrutor.">
+<!ENTITY browser_preferences_inContent_name "Öppna inställningarna i en flik">
+<!ENTITY browser_preferences_inContent_description "Om alternativet aktiveras öppnas inställningarna i en flik istället för i ett nytt fönster.">
+<!ENTITY browser_preferences_instantApply_name "Verkställ automatiskt">
+<!ENTITY browser_preferences_instantApply_description "Ändringar i inställningar verkställs direkt. Inställningar-fönstret är inte längre modalt, så istället för knapparna &quot;OK&quot; och &quot;Avbryt&quot; finns där bara en &quot;Stäng&quot;-knapp.">
+
+<!-- New tab page -->
+<!ENTITY new_tab_page "Sidan Ny flik">
+<!ENTITY browser_newtabpage_rows_name "Antal rader">
+<!ENTITY browser_newtabpage_rows_description "Det här anger antalet rader i rutnätet över ofta använda webbplatser.">
+<!ENTITY browser_newtabpage_columns_name "Antal kolumner">
+<!ENTITY browser_newtabpage_columns_description "Det här anger antalet kolumner i rutnätet över ofta använda webbplatser.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Skapa skärmbilder av besökta webbplatser">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Om alternativet aktiveras skapar Firefox skärmbilder som används i rutnätet på sidan &quot;Ny flik&quot;.">
+<!ENTITY browser_newtab_url_name "URL för nya flikar">
+<!ENTITY browser_newtab_url_description "Anger en URL som ska användas för nyöppnade flikar. Det här ersätter rutnätet över ofta använda webbplatser.">
+
+<!-- Selected text -->
+<!ENTITY text_select "Markerad text">
+<!ENTITY ui_textSelectBackgroundAttention_name "Söklistens bakgrundsfärg">
+<!ENTITY ui_textSelectBackgroundAttention_description "Ändra bakgrundsfärgen som används för söklisten genom att välja en hexkod eller en namngiven färg.">
+<!ENTITY ui_textSelectBackground_name "Bakgrundsfärg">
+<!ENTITY ui_textSelectBackground_description "Ändra bakgrundsfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">
+<!ENTITY ui_textSelectForeground_name "Textfärg">
+<!ENTITY ui_textSelectForeground_description "Ändra textfärgen som används för textmarkeringar genom att välja en hexkod eller en namngiven färg. Om ingen egen inställning görs, används OS:ets värde.">

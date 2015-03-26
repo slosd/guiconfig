@@ -1,0 +1,89 @@
+<!ENTITY content "Content">
+<!-- Websites -->
+<!ENTITY websites "網站">
+<!-- Images -->
+<!ENTITY images "圖片">
+<!ENTITY gfx_color_management_mode_name "使用顏色管理於">
+<!ENTITY gfx_color_management_mode_description "需要重新啟動FF才能生效。">
+<!ENTITY gfx_color_management_mode_o1 "無圖片">
+<!ENTITY gfx_color_management_mode_o2 "所有圖片">
+<!ENTITY gfx_color_management_mode_o3 "僅限有ICC標籤的圖片">
+<!ENTITY image_animation_mode_name "Animated images">
+<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
+<!ENTITY image_animation_mode_o1 "Loop indefinitely">
+<!ENTITY image_animation_mode_o2 "Run animation once">
+<!ENTITY image_animation_mode_o3 "Never run the animation">
+<!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
+<!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
+<!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
+<!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
+<!-- Rendering -->
+<!ENTITY rendering "呈現">
+<!ENTITY nglayout_initialpaint_delay_name "顯示頁面延時(毫秒;千分之一秒)">
+<!ENTITY nglayout_initialpaint_delay_description "此選項指定首次呈現一頁面之前須等待的毫秒數。較小的數值可使頁面快些顯示但會需要較長的時間來完成呈現。較大的數值其效應恰與此相反。">
+<!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
+<!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
+<!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
+<!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
+<!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "下載網頁內嵌的字型">
+<!ENTITY gfx_downloadable_fonts_enabled_description "啟用以@font-face內嵌的CSS3字型下載。需要重新啟動FF才能生效。">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
+<!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
+<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
+<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
+<!-- Accessibility -->
+<!ENTITY accessibility "近接方面">
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "辨識大小寫">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "決定是否辨識大小寫。勾選&quot;自動判斷&quot;時，則在搜尋中，僅對含有大寫字母但非全部大寫的搜尋字串，視為須分別大小寫。">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自動判斷">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "不分大小寫">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "分別大小寫">
+<!ENTITY accessibility_typeaheadfind_label "隨打即找">
+<!ENTITY accessibility_typeaheadfind_timeout_name "逾時(毫秒/千分秒)">
+<!ENTITY accessibility_typeaheadfind_timeout_description "打字時隨即尋找">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+<!-- Browser zoom -->
+<!ENTITY browser_zoom "Browser zoom">
+<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
+<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
+<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
+<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
+<!ENTITY signon_prefillForms_description "自動填妥各種&quot;登入&quot;表格欄中的使用者名稱以及密碼。">
+<!ENTITY accessibility_tabfocus_name "可用Tab鍵聚焦(游標會停駐)的元件">
+<!ENTITY accessibility_tabfocus_description "此選項決定哪些元件可以用按Tab鍵來聚焦">
+<!ENTITY accessibility_tabfocus_o1 "只有文字鍵入區">
+<!ENTITY accessibility_tabfocus_o2 "除文字鍵入區以外的所有表格元件">
+<!ENTITY accessibility_tabfocus_o3 "所有表格元件">
+<!ENTITY accessibility_tabfocus_o4 "只有鏈結(以及代表鏈結的圖片)">
+<!ENTITY accessibility_tabfocus_o5 "鏈結和表格元件">
+<!ENTITY accessibility_tabfocus_o6 "除文字鍵入區以外的鏈結和表格元件">
+<!ENTITY layout_spellcheckDefault_name "拼字檢查">
+<!ENTITY layout_spellcheckDefault_description "決定是否啟用拼字檢查。">
+<!ENTITY layout_spellcheckDefault_o1 "停用">
+<!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
+<!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
+<!-- Javascript -->
+<!ENTITY javascript "Javascript">
+<!-- Permissions -->
+<!ENTITY permissions "Permissions">
+<!ENTITY javascript_enabled_name "Enable Javascript">
+<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
+<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
+<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
+<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
+<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
+<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
+<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
+<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">

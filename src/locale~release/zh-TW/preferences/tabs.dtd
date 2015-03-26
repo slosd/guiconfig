@@ -1,0 +1,34 @@
+<!ENTITY tabs "分頁">
+<!ENTITY browser_tabs_tabClipWidth_name "含關閉鈕時的最小頁籤寬度">
+<!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
+<!-- Tab preview -->
+<!ENTITY tab_preview "分頁預覽">
+<!ENTITY browser_ctrlTab_preview_name "切換分頁時，啟用分頁預覽">
+<!ENTITY browser_ctrlTab_preview_description "當使用 [CTRL]+[Tab] 切換分頁時，顯示分頁預覽">
+<!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
+<!ENTITY browser_taskbar_previews_enable_description "啟用後，FF 會 在Windows 7 工具列顯示對各分頁的預覽。">
+<!-- Open in background -->
+<!ENTITY open_in_background "背景中以新分頁開啟">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "外部應用程式中的鏈結">
+<!ENTITY browser_tabs_loadInBackground_name "網頁中的鏈結">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "分頁動畫效果">
+<!ENTITY browser_tabs_animate_description "於開新分頁、重組分頁或關閉分頁時，啟用動畫效果。">
+<!ENTITY browser_panorama_animate_zoom_name "全景縮放過程採動畫效果">
+<!ENTITY browser_panorama_animate_zoom_description "對分頁開啟/關閉全景檢視(按 CTRL-E)時, 啟用動畫效果.">
+<!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
+<!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
+<!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">
+<!ENTITY browser_tabs_closeButtons_o2 "顯示於每一分頁">
+<!ENTITY browser_tabs_closeButtons_o3 "都不顯示">
+<!ENTITY browser_tabs_closeButtons_o4 "顯示於分頁頁籤欄末">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "緊貼當前分頁開新分頁">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "決定新分頁開啟於頁籤欄末端或是目前所選分頁旁邊。">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "關閉分頁時，切回其親分頁">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "關閉一分頁時，切回當初開啟它的分頁。若無親分頁，則切換到右鄰或左鄰分頁。">
+<!ENTITY browser_search_openintab_name "以新分頁顯示搜尋結果">
+<!ENTITY browser_search_openintab_description "當從搜尋欄進行某項搜尋時，將其結果顯示於新的分頁">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "關閉最後分頁時亦關閉視窗">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "此項若勾選，當您關閉當前視窗中最後一頁分頁時會順便將視窗關閉。">

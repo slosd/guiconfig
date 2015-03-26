@@ -1,0 +1,18 @@
+<!ENTITY developing "Developing">
+<!-- View Source -->
+<!ENTITY viewsource "kaynağı görüntüle">
+<!ENTITY view_source_editor_external_name "Use custom editor">
+<!ENTITY view_source_editor_external_description "Use a custom editor for View Source.">
+<!ENTITY view_source_editor_path_name "Editör yolu">
+<!ENTITY view_source_editor_path_description "Path to the custom editor. ">
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Disable XUL cache">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Changes to windows and dialogs do not require a restart. Doesn't work with files packaged in a JAR.">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY browser_dom_window_dump_enabled_name "Enable dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Enables the use of the dump() statement to print to the standard console.">
+<!ENTITY javascript_options_showInConsole_name "Show chrome errors in the console">
+<!ENTITY javascript_options_showInConsole_description "Determines whether to log chrome errors and warnings to the JavaScript Console.">
+<!ENTITY javascript_options_strict_name "Strict Javascript warnings">
+<!ENTITY javascript_options_strict_description "Enables strict JavaScript warnings in the Error Console.">

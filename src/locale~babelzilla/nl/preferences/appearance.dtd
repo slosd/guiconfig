@@ -1,0 +1,34 @@
+<!ENTITY appearance "Weergave">
+
+<!-- Browser -->
+<!ENTITY browser_style "Browser">
+<!ENTITY browser_chrome_favicons_name "Favicons weergeven">
+<!ENTITY browser_chrome_favicons_description "Bepaalt of favicons wel of niet worden weergegeven.">
+<!ENTITY browser_chrome_toolbar_tips_name "Tooltips weergeven">
+<!ENTITY browser_chrome_toolbar_tips_description "Bepaalt tooltipgedrag voor chrome-elementen.">
+<!ENTITY browser_preferences_animateFadeIn_name "Voorkeurspanelen wisselen animeren">
+<!ENTITY browser_preferences_animateFadeIn_description "Wijzigt de vensterhoogte en laat het nieuwe paneel in iets meer dan een seconde verschijnen bij het wisselen van voorkeurspanelen.">
+<!ENTITY browser_preferences_inContent_name "Voorkeuren in tabblad openen">
+<!ENTITY browser_preferences_inContent_description "Indien ingeschakeld worden de voorkeuren geopend in een tabblad in plaats van in een pop-upvenster.">
+<!ENTITY browser_preferences_instantApply_name "Direct toepassen">
+<!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn onmiddellijk actief. Het voorkeursvenster is niet modaal. In plaats van de knoppen “OK” en “Annuleren” is er slechts een knop “Sluiten”.">
+
+<!-- New tab page -->
+<!ENTITY new_tab_page "Pagina Nieuw tabblad">
+<!ENTITY browser_newtabpage_rows_name "Aantal rijen">
+<!ENTITY browser_newtabpage_rows_description "Stelt het aantal rijen in het raster met vaak bezochte websites in.">
+<!ENTITY browser_newtabpage_columns_name "Aantal kolommen">
+<!ENTITY browser_newtabpage_columns_description "Stelt het aantal kolommen in het raster met vaak bezochte websites in.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Schermafdrukken van bezochte webpagina’s maken">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Indien ingeschakeld maakt Firefox schermafdrukken die in het raster van de pagina “Nieuw tabblad” worden gebruikt.">
+<!ENTITY browser_newtab_url_name "URL voor nieuwe tabbladen">
+<!ENTITY browser_newtab_url_description "Stelt de te gebruiken URL in voor nieuw geopende tabbladen. Dit vervangt het raster met vaak bezochte websites.">
+
+<!-- Selected text -->
+<!ENTITY text_select "Geselecteerde tekst">
+<!ENTITY ui_textSelectBackgroundAttention_name "Achtergrondkleur Zoeken tijdens typen">
+<!ENTITY ui_textSelectBackgroundAttention_description "Bepaalt de achtergrondkleur gebruikt voor Zoeken tijdens typen als een hexadecimale code of benoemde kleur.">
+<!ENTITY ui_textSelectBackground_name "Achtergrondkleur">
+<!ENTITY ui_textSelectBackground_description "Bepaalt de voor tekstselecties te gebruiken achtergrondkleur als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van het besturingssysteem gebruikt.">
+<!ENTITY ui_textSelectForeground_name "Tekstkleur">
+<!ENTITY ui_textSelectForeground_description "Bepaalt de voor tekstselecties te gebruiken tekstkleur als een hexadecimale code of benoemde kleur. Indien deze voorkeur niet is ingesteld, wordt de waarde van het besturingssysteem gebruikt.">

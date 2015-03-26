@@ -1,0 +1,142 @@
+<!ENTITY browser "Browser">
+<!-- Urlbar -->
+<!ENTITY urlbar "Adressleiste">
+<!-- Restrict results -->
+<!ENTITY urlbar_restrict_name "Vorschläge einschränken">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Auf Lesezeichen beschränken">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, die Sie als Lesezeichen gespeichert haben.">
+<!ENTITY browser_urlbar_restrict_history_name "Auf Chronik beschränken">
+<!ENTITY browser_urlbar_restrict_history_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, die Sie bereits besucht haben.">
+<!ENTITY browser_urlbar_restrict_tag_name "Auf Schlagwörter (Tags) beschränken">
+<!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, denen Sie Schlagwörter (Tags) zugewiesen haben.">
+<!ENTITY browser_urlbar_restrict_typed_name "Auf selbst eingegebene Adressen beschränken">
+<!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Adressen beschränkt, die Sie selbst eingegeben haben.">
+<!-- Match results -->
+<!ENTITY urlbar_match_name "Suche einschränken">
+<!ENTITY browser_urlbar_match_title_name "Im Titel suchen">
+<!ENTITY browser_urlbar_match_title_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, deren Titel den eingegebenen Begriff enthalten.">
+<!ENTITY browser_urlbar_match_url_name "In der Adresse (URL) suchen">
+<!ENTITY browser_urlbar_match_url_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, deren Adresse den eingegebenen Begriff enthalten.">
+<!ENTITY browser_urlbar_matchBehavior_name "Suchverhalten">
+<!ENTITY browser_urlbar_matchBehavior_description "Das Suchverhalten definiert, ob bei der Suche auf Wortgrenzen geachtet wird, wenn nach Einträgen für die &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) gesucht wird.">
+<!ENTITY browser_urlbar_matchBehavior_o1 "Überall suchen">
+<!ENTITY browser_urlbar_matchBehavior_o2 "Ergebnisse, die mit Wortgrenzen übereinstimmen, zuerst zeigen">
+<!ENTITY browser_urlbar_matchBehavior_o3 "Nur Ergebnisse, die mit Wortgrenzen übereinstimmen, zeigen">
+<!ENTITY browser_urlbar_matchBehavior_o4 "Nur am Anfang der Adresse oder des Webseitentitels suchen">
+<!ENTITY browser_urlbar_maxRichResults_name "Max. Einträge in der &quot;Dropdown&quot;-Liste">
+<!ENTITY browser_urlbar_maxRichResults_description "Gibt an, wie viele Einträge maximal in der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) erscheinen.">
+<!ENTITY browser_urlbar_autoFill_name "Adresse beim Tippen automatisch vervollständigen">
+<!ENTITY browser_urlbar_autoFill_description "Wenn diese Funktion aktiviert ist, wird die URL während der Eingabe in der Adressleiste vervollständigt.">
+<!ENTITY browser_fixup_alternate_enabled_name "Alternative Adresse suchen">
+<!ENTITY browser_fixup_alternate_enabled_description "Wenn eine Adresse nicht gefunden werden kann, wird sie um die hier anzugebenden Zeichen ergänzt.">
+<!ENTITY browser_fixup_alternate_prefix_name "Vor der Adresse einfügen">
+<!ENTITY browser_fixup_alternate_prefix_description "Dieser Text wird vor der eingegebenen Adresse eingefügt (Beispiel: www.).">
+<!ENTITY browser_fixup_alternate_suffix_name "Nach der Adresse einfügen">
+<!ENTITY browser_fixup_alternate_suffix_description "Dieser Text wird nach der eingegebenen Adresse angefügt (Beispiele: .de oder .at oder .ch oder .com).">
+<!ENTITY browser_urlbar_formatting_enabled_name "Domainformatierung aktivieren">
+<!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
+<!ENTITY browser_urlbar_trimURLs_name "Webadressen (URLs) kürzen">
+<!ENTITY browser_urlbar_trimURLs_description "Kürzt das Protokoll (http) und abschließende Schrägstriche in Webadressen (URLs).">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!-- Session restore -->
+<!ENTITY session_restore "Sitzung wiederherstellen">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. Zahl simultaner Tabs">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Die Anzahl der gleichzeitig zu ladenden Tabs. Bei 0 wird in jedem Fenster nur der gerade ausgewählte Tab geladen. Bei einem Wert unter 0, werden alle Tabs gleichzeitig geladen.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Max. wiederherstellbare Tabs">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Maximale Anzahl von Tabs, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Maximale Anzahl von Fenstern, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Tabs bei Bedarf wiederherstellen">
+<!ENTITY browser_sessionstore_restore_on_demand_description "Ist diese Option aktiviert, werden Tabs erst wiederhergestellt wenn sie ausgewählt werden.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Versteckte Tabs wiederherstellen">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Bestimmt ob Tabs in anderen Tabgruppen wiederhergestellt werden sollen oder nicht.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Angeheftete Tabs bei Bedarf wiederherstellen">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Angeheftete Tabs werden immer automatisch wiederhergestellt. Ist diese Option aktiviert, werden sie wie normale Tabs bei Bedarf wiederhergestellt.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. Anzahl von Schritten zurück in der Chronik">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximale Anzahl von Schritten zurück in der Chronik, die wiederhergestellt werden.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. Anzahl von Schritten vorwärts in der Chronik">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximale Anzahl von Schritten vorwärts in der Chronik, die wiederhergestellt werden.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Sitzung nach Absturz wiederherstellen">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Legt fest ob die Tabs und Fenster nach einem Absturz wiederhergestellt werden sollen.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Max. Anzahl Abstürze">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Maximale Anzahl von Abstürzen bevor Sie auswählen können welche Webseiten Sie wiederherstellen möchten.">
+<!ENTITY browser_sessionstore_privacy_level_name "Extra Sitzungsdaten speichern">
+<!ENTITY browser_sessionstore_privacy_level_description "Legt fest ob extra Situngsdaten (Inhalte von Formularen, gesendete Formulare, Position der Bildlaufleiste und Cookies) gespeichert werden sollen. Die erste Option mit Vorsicht benutzen.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "für jede Webseite">
+<!ENTITY browser_sessionstore_privacy_level_o2 "für unverschlüsselte (nicht HTTPS) Webseiten">
+<!ENTITY browser_sessionstore_privacy_level_o3 "für keine Webseite">
+<!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "Erweiterungen &amp; Plugins">
+<!-- Extensions -->
+<!ENTITY extensions "Add-ons">
+<!ENTITY getaddons "&quot;Add-ons herunterladen&quot; Schaltfläche">
+<!ENTITY extensions_alwaysUnpack_name "Erweiterungen immer entpacken">
+<!ENTITY extensions_alwaysUnpack_description "Wenn aktiviert, werden Erweiterungen während der Installation in Ihrem Profilordner entpackt.">
+<!ENTITY extensions_checkCompatibility_name "Kompatibilitätsprüfung von Add-ons aktivieren">
+<!ENTITY extensions_checkCompatibility_description "Wenn die Kompatibilitätsprüfung für Add-ons deaktiviert wird, können z.B. Testversionen von Add-ons installieren werden.">
+<!ENTITY extensions_getAddons_maxResults_name "Anzahl maximaler Suchergebnisse">
+<!ENTITY extensions_getAddons_maxResults_description "Legt die Anzahl der maximal anzuzeigenden Suchergebnisse fest.">
+<!ENTITY extensions_getAddons_showPane_name "Reiter anzeigen">
+<!ENTITY extensions_getAddons_showPane_description "Zeigt die &quot;Add-ons suchen&quot; Schaltfläche im Firefox Add-on-Manager an.">
+<!-- Installation -->
+<!ENTITY installation "Installation">
+<!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms)">
+<!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, die gewartet werden muss, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
+<!-- Plugins -->
+<!ENTITY plugins "Plugins">
+<!ENTITY dom_ipc_plugins_enabled_name "Jedes Plugin in einem eigenen Prozess ausführen">
+<!ENTITY dom_ipc_plugins_enabled_description "Wenn Plugins (wie z.B. Flash) abstürzen kann Firefox unabhängig davon weiter ausgeführt werden.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Grenzwert für beschäftigte Plugins (sek)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Legt die Zeit fest, nach der der Prozess eines Plugins, welches nicht mehr reagiert, beendet wird.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Zeitbeschränkung für Pluginstart (sek)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Die Zeitdauer, nach der der Start eines Plugins als fehlgeschlagen angesehen wird.">
+<!-- Library -->
+<!ENTITY library "Bibliothek">
+<!-- Bookmarks -->
+<!ENTITY bookmarks "Lesezeichen">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Lesenzeichen beim Beenden exportieren">
+<!ENTITY browser_bookmarks_autoExportHTML_description "Exportiere Lesezeichen in die Datei &quot;bookmarks.html&quot; im Profilordner wenn der Browser beendet wird.">
+<!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
+<!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
+<!-- History -->
+<!ENTITY history "Chronik">
+<!ENTITY places_history_expiration_max_pages_name "Max. Anzahl an Chronikeinträgen">
+<!ENTITY places_history_expiration_max_pages_description "Max. Anzahl von Einträgen, die in der Chronik gehalten werden. Überschüssige Einträge werden entfernt. Ist der Wert -1, wird die Anzahl der Einträge automatisch berechnet.">
+<!-- Downloads -->
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Animiere Downloadsymbol">
+<!ENTITY browser_download_animateNotifications_description "Animiere das Downloadsymbol in der Symbolleiste wenn ein Download startet oder abgeschlossen ist.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Zu &quot;Verwendete Dateien&quot; hinzufügen">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Legt fest ob heruntergeladene Dateien in die Liste der zuletzt benutzten Dateien im Startmenü eingetragen werden.">
+<!ENTITY browser_download_lastDir_name "Letztes Download-Verzeichnis">
+<!ENTITY browser_download_lastDir_description "Das Zielverzeichnis des letzten Downloads.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Vor ausführbaren Dateien warnen">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Firefox warnt Sie, bevor Sie eine ausführbare Datei aus dem Download-Manager öffnen.">
+<!-- Browser cache -->
+<!ENTITY cache "Browsercache">
+<!-- Disk cache -->
+<!ENTITY cache_disk "Festplattencache">
+<!ENTITY browser_cache_check_doc_frequency_name "Browsercache kontrollieren">
+<!ENTITY browser_cache_check_doc_frequency_description "Legt fest wie oft die Dateien im Cache überprüft werden, ob diese noch mit der Webseite übereinstimmen oder zwischenzeitlich in einer neuen Fassung vorliegen.">
+<!ENTITY browser_cache_check_doc_frequency_o1 "Jede Sitzung einmal">
+<!ENTITY browser_cache_check_doc_frequency_o2 "Jedes mal wenn die Webseite geladen wird">
+<!ENTITY browser_cache_check_doc_frequency_o3 "Nie (Datei immer aus dem Cache laden)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "Automatisch">
+<!ENTITY browser_cache_disk_cache_ssl_name "Auch Daten von HTTPS/SSL-Verbindungen im Cache speichern (Sicherheitsrisiko!).">
+<!ENTITY browser_cache_disk_cache_ssl_description "Speichert auch Daten, die über eine verschlüsselte Verbindung (HTTPS oder SSL) gesendet werden, im Cache zwischen. Warnung: Dies stellt ein Sicherheitsrisiko dar und sollte deswegen nicht aktiviert werden.">
+<!ENTITY browser_cache_disk_capacity_name "Festplattencache (KB)">
+<!ENTITY browser_cache_disk_capacity_description "Bestimt die max. Größe des Festplattencaches in Kilobyte.">
+<!ENTITY browser_cache_disk_enable_name "Benutze Festplattencache">
+<!ENTITY browser_cache_disk_enable_description "Verwende den Festplattencache.">
+<!-- Memory cache -->
+<!ENTITY cache_memory "Memorycache">
+<!ENTITY browser_cache_memory_enable_name "Benutze Memorycache">
+<!ENTITY browser_cache_memory_enable_description "Verwende den Memorycache.">
+<!ENTITY browser_cache_memory_capacity_name "Memorycache (KB)">
+<!ENTITY browser_cache_memory_capacity_description "Bestimmt die max. Größe des Memorycaches in Kilobyte.">
+<!-- Misc -->
+<!ENTITY misc "Verschiedenes">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Maximale Seitenzahl in Hauptspeicher">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Kürzlich besuchte Webseiten werden im Hauptspeicher gespeichert und können dadurch schneller angezeigt werden wenn Sie Zurück und Vorwärts verwenden. Bei einem Wert von -1 wird die Seitenzahl automatisch festgelegt. Mit dem Wert 0 werden keine Seiten im Hauptspeicher gespeichert.">

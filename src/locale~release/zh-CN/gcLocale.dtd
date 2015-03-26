@@ -2,6 +2,8 @@
 <!ENTITY browser.item.access "d">
 <!ENTITY config.search "搜索">
 <!ENTITY config.descr.standard "将鼠标移至某个选项可以显示其详细描述">
+<!ENTITY config.description "Description:">
+<!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "全部重置">
 <!ENTITY config.todefault "恢复默认值">
 <!ENTITY config.header.title "gui:config">

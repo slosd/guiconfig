@@ -2,6 +2,8 @@
 <!ENTITY browser.item.access "c">
 <!ENTITY config.search "Szukaj">
 <!ENTITY config.descr.standard "Najedź kursorem na element, aby zobaczyć jego szczegółowy opis.">
+<!ENTITY config.description "Description:">
+<!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "Domyślne">
 <!ENTITY config.todefault "Przywróć domyślną wartość">
 <!ENTITY config.header.title "gui:config">

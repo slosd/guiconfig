@@ -1,0 +1,34 @@
+<!ENTITY tabs "Panely">
+<!ENTITY browser_tabs_tabClipWidth_name "Min. šířka panelu pro tlačítko pro zavření">
+<!ENTITY browser_tabs_tabClipWidth_description "Určuje minimální šířku panelu nezbytnou pro zobrazení tlačítka pro zavření.">
+<!-- Tab preview -->
+<!ENTITY tab_preview "Náhledy panelů">
+<!ENTITY browser_ctrlTab_preview_name "Povolit náhledy panelů při přepínání panelů">
+<!ENTITY browser_ctrlTab_preview_description "Náhledy panelů se budou zobrazovat při jejich přepínání pomocí [CTRL]+[Tab].">
+<!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
+<!-- Open in background -->
+<!ENTITY open_in_background "Otevřít nový panel na pozadí">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Odkazy na externí aplikace">
+<!ENTITY browser_tabs_loadInBackground_name "Odkazy na stránky">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Záložky">
+<!ENTITY browser_search_context_loadInBackground_name "Vyhledávání pomocí místní nabídky">
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Animovat panely">
+<!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
+<!ENTITY browser_panorama_animate_zoom_name "Animovat přiblížení Panorama">
+<!ENTITY browser_panorama_animate_zoom_description "Povolí animace při otevírání/zavírání zobrazení panelů zvaného Panorama (při CTRL-E).">
+<!ENTITY browser_tabs_closeButtons_name "Tlačítka pro zavření panelů jsou zobrazena">
+<!ENTITY browser_tabs_closeButtons_description "Určuje, zda zobrazovat tlačítka pro zavření.">
+<!ENTITY browser_tabs_closeButtons_o1 "jen na aktivním panelu">
+<!ENTITY browser_tabs_closeButtons_o2 "na každém panelu">
+<!ENTITY browser_tabs_closeButtons_o3 "nikde">
+<!ENTITY browser_tabs_closeButtons_o4 "na konci lišty panelů">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Otevřít nový panel vedle stávajícího">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Určuje, zda se bude nový panel otevírat na konci lišty panelů, nebo vedle aktuálního panelu.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Při zavření panelu přepnout na panel, který ho otevřel">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Pokus se panel zavírá, přepne na panel, který ho otevřel. Jinak přepne na přilehlý pravý nebo levý panel.">
+<!ENTITY browser_search_openintab_name "Otevřít výsledky vyhledávání v novém panelu">
+<!ENTITY browser_search_openintab_description "Pokud se vyhledává pomocí lišty hledání, výsledky jsou otevřeny v novém panelu.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "S posledním panelem zavřít okno">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Je-li zaškrtnuto, při zavření posledního panelu v okně bude zavřeno celé okno. Poslední panel lze zavřít klepnutím prostředním tlačítkem nebo stisknutím [CTRL]+[W].">

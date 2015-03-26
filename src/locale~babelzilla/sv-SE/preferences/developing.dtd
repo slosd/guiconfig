@@ -1,0 +1,20 @@
+<!ENTITY developing "Utveckling">
+
+<!-- View Source -->
+<!ENTITY viewsource "Visa källkod">
+<!ENTITY view_source_editor_external_name "Använd egen redigerare">
+<!ENTITY view_source_editor_external_description "Använd en egen, extern redigerare för att visa källkoden när du väljer &quot;Visa källkod&quot; i webbsidans snabbmeny.">
+<!ENTITY view_source_editor_path_name "Sökväg till redigerare">
+<!ENTITY view_source_editor_path_description "Sökvägen till den egna redigeraren. ">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Inaktivera XUL-cache">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Ändringar i fönster och dialoger kräver inte omstart. Fungerar inte med filer förpackade i en JAR-fil.">
+<!ENTITY devtools_inspector_enabled_name "Aktivera &quot;Inspektera element&quot;">
+<!ENTITY devtools_inspector_enabled_description "Aktiverar webbplatssnabbmenyalternativet &quot;Inspektera element&quot;, som öppnar webbgranskaren vid det valda elementet.">
+<!ENTITY browser_dom_window_dump_enabled_name "Tillåt dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Tillåter användning av programsatsen dump() för att skriva till standardkonsolen.">
+<!ENTITY javascript_options_showInConsole_name "Visa chrome-fel och varningar i konsolen">
+<!ENTITY javascript_options_showInConsole_description "Bestämmer om chrome-fel och varningar ska loggas till JavaScript-konsolen.">
+<!ENTITY javascript_options_strict_name "Strikta JavaScript-varningar">
+<!ENTITY javascript_options_strict_description "Tillåter strikta JavaScript-varningar i Felkonsolen.">

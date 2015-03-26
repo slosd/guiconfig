@@ -1,0 +1,34 @@
+<!ENTITY tabs "Вкладки">
+<!ENTITY browser_tabs_tabClipWidth_name "Минимальная ширина вкладки для кнопки закрытия">
+<!ENTITY browser_tabs_tabClipWidth_description "Определяет минимальную ширину вкладки, необходимую для отображения кнопки закрытия.">
+<!-- Tab preview -->
+<!ENTITY tab_preview "Просмотр вкладок">
+<!ENTITY browser_ctrlTab_preview_name "Включить просмотр при переключении вкладок">
+<!ENTITY browser_ctrlTab_preview_description "Отображает просмотр вкладок при использовании для переключения между вкладками комбинации клавиш Ctrl+Tab.">
+<!ENTITY browser_taskbar_previews_enable_name "Включить просмотр в панели задач Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Если включено, Firefox будет показывать просмотр для каждой вкладки в панели задач Windows 7.">
+<!-- Open in background -->
+<!ENTITY open_in_background "Открывать новую фоновую вкладку для ссылок">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "из внешних приложений">
+<!ENTITY browser_tabs_loadInBackground_name "с веб-сайтов">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Загружать закладки в фоне">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Анимировать вкладки">
+<!ENTITY browser_tabs_animate_description "Включает анимацию при открытии новой вкладки, во время перетаскивания и отрывания вкладки.">
+<!ENTITY browser_panorama_animate_zoom_name "Анимировать масштабирование панорам">
+<!ENTITY browser_panorama_animate_zoom_description "Включает анимацию при открытии/закрытии панорамного просмотра вкладок (по Ctrl+E).">
+<!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
+<!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
+<!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">
+<!ENTITY browser_tabs_closeButtons_o2 "на каждой вкладке">
+<!ENTITY browser_tabs_closeButtons_o3 "нигде">
+<!ENTITY browser_tabs_closeButtons_o4 "в конце панели вкладок">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Открывать новую вкладку следом за текущей">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Определяет местоположение вновь открываемой вкладки в конце панели вкладок или рядом с выбранной сейчас вкладкой.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "При закрытии вкладки переключаться на вкладку с которой она была открыта">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "При закрытии вкладки возвращает фокус вкладке с которой та была открыта. Иначе переключается на соседнюю вкладку справа или слева.">
+<!ENTITY browser_search_openintab_name "Открывать результаты поиска в новой вкладке">
+<!ENTITY browser_search_openintab_description "При выполнении поиска через строку поиска открывает результаты в новой вкладке.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрывать окно по последней вкладке">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Если этот флажок установлен, текущее окно будет закрыто при закрытии в нём последней вкладки.">

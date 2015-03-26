@@ -1,0 +1,31 @@
+<!ENTITY appearance "Apariencia">
+<!-- Browser -->
+<!ENTITY browser_style "Navegador">
+<!ENTITY browser_chrome_favicons_name "Mostrar favicons">
+<!ENTITY browser_chrome_favicons_description "Determina si se muestran o no los favicons.">
+<!ENTITY browser_chrome_toolbar_tips_name "Mostrar títulos emergentes">
+<!ENTITY browser_chrome_toolbar_tips_description "Determina el comportamiento de los títulos emergentes para los elementos chrome.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animar el cambio en el panel de opciones">
+<!ENTITY browser_preferences_animateFadeIn_description "Cambia el alto de la ventana y anima el nuevo panel aproximadamente en un segundo al cambiar el panel de opciones.">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_instantApply_name "Aplicar instantáneamente">
+<!ENTITY browser_preferences_instantApply_description "Los cambios en las opciones se aplican inmediatamente. La ventana de opciones no es modal. En lugar de los botones &quot;OK&quot; y &quot;Cancelar&quot;, sólo hay un botón de &quot;Cerrar&quot;.">
+<!-- New tab page -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- Selected text -->
+<!ENTITY text_select "Texto seleccionado">
+<!ENTITY ui_textSelectBackgroundAttention_name "Color de fondo para el texto resaltado.">
+<!ENTITY ui_textSelectBackgroundAttention_description "Determina el color de fondo usado para resaltar el texto buscado mientras escribe, como un código hexadecimal o el nombre de un color.">
+<!ENTITY ui_textSelectBackground_name "Color de fondo">
+<!ENTITY ui_textSelectBackground_description "Determina el color de fondo a usar para el texto seleccionado, como un código hexadecimal o el nombre de un color. Si no establece esta opción, se usará el valor del sistema operativo.">
+<!ENTITY ui_textSelectForeground_name "Color del texto">
+<!ENTITY ui_textSelectForeground_description "Determina el color de texto a usar para el texto seleccionado, como un código hexadecimal o el nombre de un color. Si no establece esta opción, se usará el valor del sistema operativo.">

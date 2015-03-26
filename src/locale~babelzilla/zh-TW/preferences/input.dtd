@@ -1,0 +1,31 @@
+<!ENTITY mousebehaviour "滑鼠操作">
+
+<!-- Middle click -->
+<!ENTITY middleclick "滑鼠中鍵">
+<!ENTITY middlemouse_contentLoadURL_name "剪貼簿載入成鏈結">
+<!ENTITY middlemouse_contentLoadURL_description "按滑鼠中鍵時，將剪貼簿內容載入成鏈結。">
+<!ENTITY middlemouse_paste_name "從剪貼簿貼上文字">
+<!ENTITY middlemouse_paste_description "按滑鼠中鍵時，將剪貼簿內容貼上文字區內。">
+
+<!-- Mouse click -->
+<!ENTITY mouseclick "滑鼠點按">
+<!ENTITY browser_urlbar_clickSelectsAll_name "滑鼠點按時標選內容">
+<!ENTITY browser_urlbar_clickSelectsAll_description "以滑鼠點按地址欄時標選全部內容">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "滑鼠連點時標選內容">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "以滑鼠連點地址欄時標選全部內容">
+
+<!-- Vertical mouse scrolling -->
+<!ENTITY mousescrollvertical "滑鼠垂直捲動">
+<!ENTITY mousewheel_action_o1 "捲動頁面內行列">
+<!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
+<!ENTITY mousewheel_action_o3 "切換瀏覽紀錄之前頁後頁">
+<!ENTITY mousewheel_action_o4 "切換頁面圖文之縮放">
+
+<!-- Misc -->
+<!ENTITY browser_backspace_action_name "Backspace鍵">
+<!ENTITY browser_backspace_action_description "決定Backspace鍵的作用">
+<!ENTITY browser_backspace_action_o1 "回到&quot;前一頁&quot;">
+<!ENTITY browser_backspace_action_o2 "捲動&quot;上一頁&quot;">
+<!ENTITY browser_backspace_action_o3 "什麼都不做">
+<!ENTITY accessibility_accesskeycausesactivation_name "用近接鍵來啟動元件">
+<!ENTITY accessibility_accesskeycausesactivation_description "對元件使用近接鍵，其作用方式與啟動該元件相同。元件如果是鏈結，就開啟該鏈結；元件如果是按鈕，就點選該按鈕。">

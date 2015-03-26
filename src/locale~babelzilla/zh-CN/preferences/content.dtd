@@ -1,0 +1,82 @@
+<!ENTITY content "内容">
+
+<!-- Websites -->
+<!ENTITY websites "网站">
+
+<!-- Images -->
+<!ENTITY images "图片">
+<!ENTITY gfx_color_management_mode_name "配色管理应用于">
+<!ENTITY gfx_color_management_mode_description "需要重启浏览器。">
+<!ENTITY gfx_color_management_mode_o1 "任何图片都不">
+<!ENTITY gfx_color_management_mode_o2 "全部图片">
+<!ENTITY gfx_color_management_mode_o3 "带有 ICC标签的图片">
+<!ENTITY image_animation_mode_name "动态图片">
+<!ENTITY image_animation_mode_description "阻止动态图片（即 GIF）无线循环播放或按图片设定的播放次数，只允许播放一次或禁止播放。">
+<!ENTITY image_animation_mode_o1 "无限次循环播放">
+<!ENTITY image_animation_mode_o2 "仅播放一次">
+<!ENTITY image_animation_mode_o3 "禁止播放">
+<!ENTITY browser_display_show_image_placeholders_name "显示图片占位符">
+<!ENTITY browser_display_show_image_placeholders_description "图片载入时显示占位符。">
+<!ENTITY browser_enable_automatic_image_resizing_name "图片尺寸自适应">
+<!ENTITY browser_enable_automatic_image_resizing_description "在浏览不属于该网页的图片时，使图片自动适应于窗口大小。">
+
+<!-- Rendering -->
+<!ENTITY rendering "渲染">
+<!ENTITY nglayout_initialpaint_delay_name "显示一页后延迟(毫秒 ms )">
+<!ENTITY nglayout_initialpaint_delay_description "这个选项定义了显示一页后的延迟时间。这个值越低画面上屏越快，但是这个画面需要正常的时间来完成渲染；反之亦然。(毫秒 ms 10e-3 )">
+<!ENTITY content_notify_interval_name "重画页面前等待（微秒 µs）">
+<!ENTITY content_notify_interval_description "Firefox定期渲染从特定网站收到的全部数据，这个值决定了每次渲染的最小时间片，较低的数值会在观感上加快渲染速度，但是会拖慢整体渲染速度。（微秒 µs 10e-6）">
+
+<!-- Misc -->
+<!ENTITY geo_enabled_name "启用地理位置定位浏览">
+<!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">
+<!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
+<!ENTITY gfx_downloadable_fonts_enabled_name "下载网站内嵌的字体">
+<!ENTITY gfx_downloadable_fonts_enabled_description "允许下载使用 @font-face 属性内嵌到网站的 CSS3 字体。启用该功能需要重启浏览器。">
+<!ENTITY prompts_tab_modal_enabled_name "启用标签式模态提示对话框">
+<!ENTITY prompts_tab_modal_enabled_description "指定使用新的标签式模提示对话框还是旧的窗口式对话框">
+<!ENTITY gfx_font_rendering_directwrite_enabled_name "启用 DirectWrite">
+<!ENTITY gfx_font_rendering_directwrite_enabled_description "启用硬件加速显示文本。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
+<!ENTITY layout_frames_force_resizability_name "强制网页框架可改变大小">
+<!ENTITY dom_max_script_run_time_name "脚本可执行的最长时间（秒）">
+<!ENTITY dom_max_script_run_time_description "指定在多少秒之后 Firefox 提示您当前某个脚本运行时间太长。">
+
+<!-- Accessibility -->
+<!ENTITY accessibility "辅助功能">
+
+<!-- Find as you type -->
+<!ENTITY accessibility_typeaheadfind_casesensitive_name "区分大小写">
+<!ENTITY accessibility_typeaheadfind_casesensitive_description "定义如区分大小写。当设定为自动决定时，如果搜索字符串中含有大写字符，则区分大小写。">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o1 "自动决定">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o2 "不区分大小写">
+<!ENTITY accessibility_typeaheadfind_casesensitive_o3 "区分大小写">
+<!ENTITY accessibility_typeaheadfind_label "输入时搜索">
+<!ENTITY accessibility_typeaheadfind_timeout_name "超时（毫秒）">
+<!ENTITY accessibility_typeaheadfind_timeout_description "定义当多久没有键盘输入时，搜索栏隐藏。">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "将所选文本填入搜索框">
+
+<!-- Browser zoom -->
+<!ENTITY browser_zoom "浏览器缩放">
+<!ENTITY browser_zoom_full_name "使用完整缩放来取代文本缩放">
+<!ENTITY browser_zoom_full_description "文本缩放仅仅是增大网站的文字大小，而完整缩放还会调整其他网页元素，比如图片。">
+<!ENTITY browser_zoom_siteSpecific_name "记住缩放级别">
+<!ENTITY browser_zoom_siteSpecific_description "启用该项后，所有网站都将保存并恢复各自的缩放级别，不启用则下次访问时自动重置为默认缩放级别。">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "更新后台标签页">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "更新其他显示相同网页的标签页为当前使用的缩放级别。">
+
+<!-- Misc -->
+<!ENTITY signon_prefillForms_name "自动填充登录表元素">
+<!ENTITY signon_prefillForms_description "自动填充用户名和密码。">
+<!ENTITY accessibility_tabfocus_name "按 Tab 键时定位到：">
+<!ENTITY accessibility_tabfocus_description "该项用于指定按 Tab 键时所要定位到的元素。">
+<!ENTITY accessibility_tabfocus_o1 "仅文本框">
+<!ENTITY accessibility_tabfocus_o2 "文本框以外的表单元素">
+<!ENTITY accessibility_tabfocus_o3 "所有表单元素">
+<!ENTITY accessibility_tabfocus_o4 "仅链接（包括有链接的图片）">
+<!ENTITY accessibility_tabfocus_o5 "链接和表单元素">
+<!ENTITY accessibility_tabfocus_o6 "将焦点置于除文本域之外的链接以及表单元素">
+<!ENTITY layout_spellcheckDefault_name "拼写检查">
+<!ENTITY layout_spellcheckDefault_description "决定是否打开拼写检查(现在还没有针对中文的拼写检查)">
+<!ENTITY layout_spellcheckDefault_o1 "禁止">
+<!ENTITY layout_spellcheckDefault_o2 "允许在多行文本框中拼写检查">
+<!ENTITY layout_spellcheckDefault_o3 "允许在单行文本框中拼写检查">

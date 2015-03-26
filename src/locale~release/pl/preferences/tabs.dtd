@@ -1,0 +1,34 @@
+<!ENTITY tabs "Karty">
+<!ENTITY browser_tabs_tabClipWidth_name "Minimalna szerokość karty dla przycisku zamknięcia">
+<!ENTITY browser_tabs_tabClipWidth_description "Określa najmniejszą szerokość karty przy której wyświetlany będzie przycisk zamknięcia karty.">
+<!-- Tab preview -->
+<!ENTITY tab_preview "Podgląd kart">
+<!ENTITY browser_ctrlTab_preview_name "Włącz wyświetlanie podglądów kart podczas ich wyboru">
+<!ENTITY browser_ctrlTab_preview_description "Wyświetla podgląd kart przy zmianie ich przy pomocy skrótu [CTRL]+[Tab].">
+<!ENTITY browser_taskbar_previews_enable_name "Włącz podglądy w pasku zadań Windowsa 7">
+<!ENTITY browser_taskbar_previews_enable_description "Włączenie tej opcji sprawi, że Firefox będzie wyświetlał podgląd każdej karty na pasku zadań Windowsa 7.">
+<!-- Open in background -->
+<!ENTITY open_in_background "Otwiera nową kartę w tle z">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Odnośńiki w innych aplikacjach">
+<!ENTITY browser_tabs_loadInBackground_name "Odnośniki na stronach internetowych">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
+<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Animuj karty">
+<!ENTITY browser_tabs_animate_description "Włącza animacje odtwarzane podczas otwierania kart, zmiany ich kolejności i usuwania ich.">
+<!ENTITY browser_panorama_animate_zoom_name "Animuj przechodzenie do trybu panoramicznego">
+<!ENTITY browser_panorama_animate_zoom_description "Wyświetlaj animacje podczas otwierania/zamykania panoramicznego widoku kart (skrót: CTRL-E).">
+<!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
+<!ENTITY browser_tabs_closeButtons_description "Określa gdzie wyświetlać przyciski zamykające.">
+<!ENTITY browser_tabs_closeButtons_o1 "tylko na aktywnej karcie">
+<!ENTITY browser_tabs_closeButtons_o2 "na każdej karcie">
+<!ENTITY browser_tabs_closeButtons_o3 "nigdzie">
+<!ENTITY browser_tabs_closeButtons_o4 "na końcu paska kart">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Otwieraj nowe karty obok aktywnej">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Określa, czy nowe karty mają być otwierane obok aktywnej czy na końcu paska kart.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Przy zamykaniu przełączaj do karty źródłowej">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Przy zamykaniu karty przełącza do karty, z której zamykana zostala otwarta. Jeśli opcja ta nie zostanie włączona, włączona zostanie karta znajdująca się po prawej lub po lewej od aktywnej.">
+<!ENTITY browser_search_openintab_name "Otwieraj wyniki wyszukiwania w nowej karcie">
+<!ENTITY browser_search_openintab_description "Po wciśnięciu przycisku wyszukiwania jego wyniki zostaną otwarte w nowej karcie.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Zamknij okno po zamknięciu ostatniej karty">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Jeśli zaznaczone, otwarte okno zostanie zamknięte, gdy zamkniesz ostatnią kartę w tym oknie.">

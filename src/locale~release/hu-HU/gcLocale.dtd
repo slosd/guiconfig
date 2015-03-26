@@ -2,6 +2,8 @@
 <!ENTITY browser.item.access "d">
 <!ENTITY config.search "Keresés">
 <!ENTITY config.descr.standard "Ha egy opcióról többet szeretne megtudni, vigye az egeret az opció fölé, és várjon amíg megjelenik a részletes leírás">
+<!ENTITY config.description "Description:">
+<!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "Reset all">
 <!ENTITY config.todefault "Visszaállítás az alapértelmezett állapotra">
 <!ENTITY config.header.title "gui:config">

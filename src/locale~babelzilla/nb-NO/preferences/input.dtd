@@ -1,0 +1,15 @@
+
+<!-- Middle click -->
+
+<!-- Mouse click -->
+
+<!-- Vertical mouse scrolling -->
+
+<!-- Misc -->
+<!ENTITY browser_backspace_action_name "Rettetast">
+<!ENTITY browser_backspace_action_description "Avgjør hva som skjer når du bruker rettetasten">
+<!ENTITY browser_backspace_action_o1 "Gå tilbake i historikk">
+<!ENTITY browser_backspace_action_o2 "Som Page Up">
+<!ENTITY browser_backspace_action_o3 "Gjør ingenting">
+<!ENTITY accessibility_accesskeycausesactivation_name "Hurtigtasten aktiverer elementet">
+<!ENTITY accessibility_accesskeycausesactivation_description "Å benytte en hurtigtast for dette elementet er det samme som å aktivere det. Dersom elementet er en lenke, åpnes lenken. Er elementet er en knapp, blir knappen trykket.">

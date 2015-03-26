@@ -1,0 +1,37 @@
+<!ENTITY input "Invoer">
+<!ENTITY mousebehaviour "Muisgedrag">
+
+<!-- Middle click -->
+<!ENTITY middleclick "Middelklik">
+<!ENTITY middlemouse_contentLoadURL_name "Klembord als URL laden">
+<!ENTITY middlemouse_contentLoadURL_description "De inhoud van het klembord als URL laden bij middelklik.">
+<!ENTITY middlemouse_paste_name "Tekst van het klembord plakken">
+<!ENTITY middlemouse_paste_description "De inhoud van het klembord in een tekstveld plakken bij middelklik.">
+
+<!-- Mouse click -->
+<!ENTITY mouseclick "Muisklik">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Inhoud selecteren bij klikken">
+<!ENTITY browser_urlbar_clickSelectsAll_description "De inhoud van de adresbalk bij aanklikken selecteren.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Inhoud selecteren bij dubbelklik">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "De inhoud van de adresbalk selecteren bij dubbelklik.">
+
+<!-- Vertical mouse scrolling -->
+<!ENTITY mousescrollvertical "Verticaal muisscrollen">
+<!ENTITY mousewheel_action_description "Kies wat moet gebeuren bij scrollen in combinatie met verschillende toetsen">
+<!ENTITY mousewheel_default_action_name "Actie zonder toets">
+<!ENTITY mousewheel_with_shift_action_name "Actie met Shifttoets">
+<!ENTITY mousewheel_with_control_action_name "Actie met Ctrl-toets">
+<!ENTITY mousewheel_with_alt_action_name "Actie met Alt-toets">
+<!ENTITY mousewheel_action_o1 "Regels scrollen">
+<!ENTITY mousewheel_action_o2 "Pagina’s scrollen">
+<!ENTITY mousewheel_action_o3 "Vooruit/terug in geschiedenis">
+<!ENTITY mousewheel_action_o4 "Pagina zoomen">
+
+<!-- Misc -->
+<!ENTITY browser_backspace_action_name "Backspace">
+<!ENTITY browser_backspace_action_description "Bepaalt het gedrag van de backspace-toets.">
+<!ENTITY browser_backspace_action_o1 "Gaat terug in de geschiedenis">
+<!ENTITY browser_backspace_action_o2 "Gedraagt zich als Page Up">
+<!ENTITY browser_backspace_action_o3 "Doet niets">
+<!ENTITY accessibility_accesskeycausesactivation_name "Sneltoets activeert het element">
+<!ENTITY accessibility_accesskeycausesactivation_description "Een sneltoets voor een element gebruiken is hetzelfde als het activeren van het element. Als het element een koppeling is, deze volgen. Als het element een knop is, klikken.">

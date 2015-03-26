@@ -1,0 +1,142 @@
+<!ENTITY browser "Браузер">
+<!-- Urlbar -->
+<!ENTITY urlbar "Строка адреса">
+<!-- Restrict results -->
+<!ENTITY urlbar_restrict_name "Ограничение полученных результатов">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Сузить до закладок">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Результаты в умной адресной строке ограничиваются закладками.">
+<!ENTITY browser_urlbar_restrict_history_name "Сузить до истории">
+<!ENTITY browser_urlbar_restrict_history_description "Результаты в умной адресной строке ограничиваются посещёнными веб-сайтами.">
+<!ENTITY browser_urlbar_restrict_tag_name "Сузить до тегов">
+<!ENTITY browser_urlbar_restrict_tag_description "Результаты в умной адресной строке ограничиваются тегами.">
+<!ENTITY browser_urlbar_restrict_typed_name "Сузить до набранных адресов">
+<!ENTITY browser_urlbar_restrict_typed_description "Результаты в умной адресной строке ограничиваются ранее набранными в ней адресами.">
+<!-- Match results -->
+<!ENTITY urlbar_match_name "Полученные результаты подбираются">
+<!ENTITY browser_urlbar_match_title_name "Поиском среди заголовков">
+<!ENTITY browser_urlbar_match_title_description "Определяет, будут ли результаты умной адресной строки совпадать только с заголовком.">
+<!ENTITY browser_urlbar_match_url_name "Поиском среди адресов">
+<!ENTITY browser_urlbar_match_url_description "Определяет, будут ли результаты умной адресной строки совпадать только с адресом.">
+<!ENTITY browser_urlbar_matchBehavior_name "Поведение совпадений">
+<!ENTITY browser_urlbar_matchBehavior_description "Эта настройка определяет обращение с границами слов при поиске элементов в адресной строке.">
+<!ENTITY browser_urlbar_matchBehavior_o1 "игнорировать границы слова">
+<!ENTITY browser_urlbar_matchBehavior_o2 "сначала показывать элементы соответствующие границам">
+<!ENTITY browser_urlbar_matchBehavior_o3 "использовать границы только для набранного текста">
+<!ENTITY browser_urlbar_matchBehavior_o4 "только совпадающие с началом адреса или заголовка">
+<!ENTITY browser_urlbar_maxRichResults_name "Записей в выпадающем списке">
+<!ENTITY browser_urlbar_maxRichResults_description "Определяет, сколько (максимум) записей должно появляться в выпадающем списке адресной строки.">
+<!ENTITY browser_urlbar_autoFill_name "Встроенное автодополнение">
+<!ENTITY browser_urlbar_autoFill_description "Включает встроенное автодополнение адресов.">
+<!ENTITY browser_fixup_alternate_enabled_name "Использовать альтернативные адреса">
+<!ENTITY browser_fixup_alternate_enabled_description "Если адрес не найден, то добавить к адресу следующие символы.">
+<!ENTITY browser_fixup_alternate_prefix_name "Вставить в начало">
+<!ENTITY browser_fixup_alternate_prefix_description "Символы добавляемые в начале адреса.">
+<!ENTITY browser_fixup_alternate_suffix_name "Вставить в конце">
+<!ENTITY browser_fixup_alternate_suffix_description "Символы добавляемые в конце адреса.">
+<!ENTITY browser_urlbar_formatting_enabled_name "Enable domain formatting">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determines whether to format the domain in the URL bar or not. ">
+<!ENTITY browser_urlbar_trimURLs_name "Trim URLs">
+<!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!-- Session restore -->
+<!ENTITY session_restore "Восстановление сессии">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Одновременно восстанавливаемых вкладок">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Количество одновременно восстанавливаемых вкладок. Если задано 0, в каждом окне загрузится только выбранная вкладка. Если задано меньше 0 — все вкладки будут восстанавлены одновременно.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Восстанавливаемых вкладок">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Максимальное количество вкладок, отображаемых в меню «Журнал|Недавно закрытые вкладки».">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Максимальное количество окон отображаемых в меню «Журнал|Недавно закрытые окна».">
+<!ENTITY browser_sessionstore_restore_on_demand_name "Restore tabs on demand">
+<!ENTITY browser_sessionstore_restore_on_demand_description "If enabled, tabs are not restored until they are selected.">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "Restore hidden tabs">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "Determines whether to restore tabs in other tab groups or not.">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "Restore pinned tabs on demand">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "Pinned tabs are always automatically restored. If this option is enabled, pinned tabs are restored on demand like normal tabs.">
+<!ENTITY browser_sessionstore_max_serialize_back_name "Max. restored back button history">
+<!ENTITY browser_sessionstore_max_serialize_back_description "Maximum number of back button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "Max. restored forward button history">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "Maximum number of forward button history entries which are restored. Set to -1 for unlimited entries.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Восстановлении сессии после сбоя">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Определяет, нужно ли восстанавливать после сбоя вкладки и окна.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Количество сбоев">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Максимальное количество сбоев, которое должно произойти перед появлением запроса какие страницы вы хотите восстановить.">
+<!ENTITY browser_sessionstore_privacy_level_name "Сохранять дополнительные данные сессии">
+<!ENTITY browser_sessionstore_privacy_level_description "Определяет, какие именно дополнительные данные сессии (содержимое форм, данные, отправляемые через формы, позиции полосы прокрутки и cookies) должны быть сохранены. Используйте первый пункт с осторожностью.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "для любого сайта">
+<!ENTITY browser_sessionstore_privacy_level_o2 "для не шифрованных (не https) сайтов">
+<!ENTITY browser_sessionstore_privacy_level_o3 "ни для каких сайтов">
+<!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "Extensions &amp; Plugins">
+<!-- Extensions -->
+<!ENTITY extensions "Расширения">
+<!ENTITY getaddons "Панель «Поиск дополнений»">
+<!ENTITY extensions_alwaysUnpack_name "Всегда распаковывать расширения">
+<!ENTITY extensions_alwaysUnpack_description "Если включено, во время установки расширения будут распаковаться в папку вашего профиля.">
+<!ENTITY extensions_checkCompatibility_name "Включить проверку расширений на совместимость">
+<!ENTITY extensions_checkCompatibility_description "Эта настройка позволяет отключить проверку расширений на совместимость.">
+<!ENTITY extensions_getAddons_maxResults_name "Число поисковых результатов">
+<!ENTITY extensions_getAddons_maxResults_description "Определяет максимальное число результатов, отображаемых в панели при выполнении поиска.">
+<!ENTITY extensions_getAddons_showPane_name "Показать панель">
+<!ENTITY extensions_getAddons_showPane_description "Определяет будет ли отображаться панель «Поиск дополнений» в окне менеджера дополнений.">
+<!-- Installation -->
+<!ENTITY installation "Installation">
+<!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
+<!ENTITY security_dialog_enable_delay_description "Эта настройка задаёт задержку (в миллисекундах) активации кнопки «Установить» при установке дополнения. Установите в 0, чтобы отключить задержку.">
+<!-- Plugins -->
+<!ENTITY plugins "Plugins">
+<!ENTITY dom_ipc_plugins_enabled_name "Выполнять каждый подключаемый модуль в виде отдельного процесса">
+<!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Время ожидания для не отвечающих подключаемых модулей (сек)">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Определяет отрезок времени, спустя который будет завершён процесс не отвечающего подключаемого модуля.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Время ожидания запуска подключаемого модуля (сек)">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Определяет отрезок времени прошедшего с момента запуска подключаемого модуля, спустя который он считается потерявшим работоспособность.">
+<!-- Library -->
+<!ENTITY library "Library">
+<!-- Bookmarks -->
+<!ENTITY bookmarks "Закладки">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
+<!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
+<!ENTITY browser_bookmarks_max_backups_name "Резервные копии">
+<!ENTITY browser_bookmarks_max_backups_description "Определяет число сохраняемых резервных копий закладок. Установка в 0 отключит резервирование.">
+<!-- History -->
+<!ENTITY history "History">
+<!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
+<!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
+<!-- Downloads -->
+<!ENTITY downloads "Downloads">
+<!ENTITY browser_download_animateNotifications_name "Animate download icon">
+<!ENTITY browser_download_animateNotifications_description "Animate the icon of the download manager in the toolbar when a download starts or completes.">
+<!ENTITY browser_download_manager_addToRecentDocs_name "Добавлять загруженные файлы в историю документов">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Определяет, будут ли загруженные файлы добавляться в меню «Документы» кнопки «Пуск».">
+<!ENTITY browser_download_lastDir_name "Последний каталог загрузки">
+<!ENTITY browser_download_lastDir_description "Путь к каталогу последним использовавшемуся для загрузки через «Сохранить как…».">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Предупреждать о выполнимых">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Предупреждает пользователя, пытающегося открыть выполнимую программу из менеджера загрузок.">
+<!-- Browser cache -->
+<!ENTITY cache "Кэш браузера">
+<!-- Disk cache -->
+<!ENTITY cache_disk "Кэш на диске">
+<!ENTITY browser_cache_check_doc_frequency_name "Проверять кэш браузера">
+<!ENTITY browser_cache_check_doc_frequency_description "Как часто браузер будет проверять страницы на наличие более новой версии чем та, что, возможно, находится в кэше.">
+<!ENTITY browser_cache_check_doc_frequency_o1 "однажды за сессию браузера">
+<!ENTITY browser_cache_check_doc_frequency_o2 "каждый раз при просмотре страницы">
+<!ENTITY browser_cache_check_doc_frequency_o3 "никогда (всегда использовать кэшированную страницу)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "когда страница устарела (определяется автоматически)">
+<!ENTITY browser_cache_disk_cache_ssl_name "Сохранять в кэше HTTPS/SSL данные">
+<!ENTITY browser_cache_disk_cache_ssl_description "Позволяет кэшировать данные получаемые через SSL (рискованно в плане безопасности!).">
+<!ENTITY browser_cache_disk_capacity_name "Кэш на диске (КБ)">
+<!ENTITY browser_cache_disk_capacity_description "Количество дискового пространства используемого под кэш браузера (в килобайтах).">
+<!ENTITY browser_cache_disk_enable_name "Использовать кэш на диске">
+<!ENTITY browser_cache_disk_enable_description "Разрешает использовать дисковый кэш с заданным размером.">
+<!-- Memory cache -->
+<!ENTITY cache_memory "Кэш в памяти">
+<!ENTITY browser_cache_memory_enable_name "Использовать кэш в памяти">
+<!ENTITY browser_cache_memory_enable_description "Разрешает использовать кэш в памяти с заданным размером.">
+<!ENTITY browser_cache_memory_capacity_name "Кэш в памяти (КБ)">
+<!ENTITY browser_cache_memory_capacity_description "Устанавливает максимальный размер ОЗУ, используемого под кэш (в килобайтах).">
+<!-- Misc -->
+<!ENTITY misc "Разное">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Количество страниц в памяти">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Недавно посещённые страницы будут сохраняться в памяти и, при использовании кнопок «Назад» и «Вперёд», могут отображаться быстрее. Если установлено в -1, количество сохраняемых страниц определяется автоматически. Если установлено в 0, страницы в памяти не сохраняются.">

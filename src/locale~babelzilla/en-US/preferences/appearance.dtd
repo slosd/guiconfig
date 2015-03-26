@@ -1,0 +1,34 @@
+<!ENTITY appearance "Appearance">
+
+<!-- Browser -->
+<!ENTITY browser_style "Browser">
+<!ENTITY browser_chrome_favicons_name "Show Favicons">
+<!ENTITY browser_chrome_favicons_description "Determines whether to show Favicons or not.">
+<!ENTITY browser_chrome_toolbar_tips_name "Show tooltips">
+<!ENTITY browser_chrome_toolbar_tips_description "Determines tooltip behavior for chrome elements.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animate switching pref panels">
+<!ENTITY browser_preferences_animateFadeIn_description "Changes the height of the window and fades the new panel in over about a second when switching prefs panels.">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_instantApply_name "Instant apply">
+<!ENTITY browser_preferences_instantApply_description "Changes to preferences are active immediately. The preferences window is not modal. Instead of &quot;OK&quot; and &quot;Cancel&quot; buttons, there is only a &quot;Close&quot; button.">
+
+<!-- New tab page -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+
+<!-- Selected text -->
+<!ENTITY text_select "Selected text">
+<!ENTITY ui_textSelectBackgroundAttention_name "&quot;Find As You Type&quot; background color">
+<!ENTITY ui_textSelectBackgroundAttention_description "Determines the background color used for Find As You Type as a hex code or named color. ">
+<!ENTITY ui_textSelectBackground_name "Background color">
+<!ENTITY ui_textSelectBackground_description "Determines the background color to use for text selections as a hex code or named color. If this preference is not set, the OS's value is used. ">
+<!ENTITY ui_textSelectForeground_name "Text color">
+<!ENTITY ui_textSelectForeground_description "Determines the text color to use for text selections as a hex code or named color. If this preference is not set, the OS's value is used.">

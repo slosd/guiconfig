@@ -1,0 +1,18 @@
+<!ENTITY network "Sieć">
+<!-- Connections -->
+<!ENTITY connections "Połączenia">
+<!ENTITY network_http_max-connections_name "Maksymalna liczba połączeń HTTP">
+<!ENTITY network_http_max-connections_description "To ustawienie określa maksymalną liczbę jednoczesnych połączeń, które Firefox może utworzyć. Ta wartość musi być z zakresu od 1 do 65535.">
+<!-- Keep-alive -->
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Maksymalna liczba połączeń keep-alive na serwer proxy">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "To ustawienie określa maksymalną liczbę połączeń keep-alive, które Firefox może jednocześnie otworzyć na serwerze proxy. Wartość ta musi być z przedziału od 1 do 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Maksymalna liczba połączeń keep-alive na serwer">
+<!ENTITY network_http_max-persistent-connections-per-server_description "To ustawienie określa maksymalną liczbę połączeń keep-alive, którą Firefox może jednocześnie otworzyć z jednym serwerem. Wartość ta musi być z przedziału od 1 do 255.">
+<!-- Pipelining -->
+<!ENTITY pipelining "Przetwarzanie potokowe">
+<!ENTITY network_http_pipelining_name "Użyj przetwarzania potokowego">
+<!ENTITY network_http_pipelining_description "Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">
+<!ENTITY network_http_pipelining_maxrequests_name "Maksymalna liczba przetwarzanych potokowo zapytań">
+<!ENTITY network_http_pipelining_maxrequests_description "To ustawienie określa maksymalną liczbę jednocześnie przetwarzanych potokowo zapytań, gdy przetwarzanie to jest włączone.">
+<!ENTITY network_http_proxy_pipelining_name "Używaj przetwarzania potokowego z serwerem proxy">
+<!ENTITY network_http_proxy_pipelining_description "To ustawienie określa, czy przetwarzanie potokowe ma być używane na serwerze proxy. Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">

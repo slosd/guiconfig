@@ -1,0 +1,18 @@
+<!ENTITY developing "Développement">
+
+<!-- View Source -->
+<!ENTITY viewsource "Code source de la page">
+<!ENTITY view_source_editor_external_name "Utiliser un éditeur personnalisé">
+<!ENTITY view_source_editor_external_description "Utiliser un éditeur personnalisé pour voir le code source.">
+<!ENTITY view_source_editor_path_name "Répertoire de l&apos;éditeur">
+<!ENTITY view_source_editor_path_description "Répertoire de l&apos;éditeur personnalisé.">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Désactiver le cache XUL">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Les modifications concernant fenêtres et boîtes de dialogue ne nécessitent pas un redémarrage. Cela ne fonctionne pas avec les fichiers étant dans un paquetage JAR.">
+<!ENTITY browser_dom_window_dump_enabled_name "Activer dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Activer l&apos;utilisation de l&apos;instruction dump() pour publier dans la console standard.">
+<!ENTITY javascript_options_showInConsole_name "Afficher les erreurs chrome dans la console">
+<!ENTITY javascript_options_showInConsole_description "Précise s&apos;il faut lister les erreurs et avertissements chrome dans la console JavaScript.">
+<!ENTITY javascript_options_strict_name "Avertissements JavaScript stricts">
+<!ENTITY javascript_options_strict_description "Activer les avertissements JavaScript stricts dans la console d&apos;erreurs.">

@@ -1,0 +1,133 @@
+<!ENTITY browser "Navegador">
+
+<!-- Urlbar -->
+<!ENTITY urlbar "Endereços">
+
+<!-- Restrict results -->
+<!ENTITY urlbar_restrict_name "Filtragem de sugestões">
+<!ENTITY browser_urlbar_restrict_bookmark_name "Somente favoritos">
+<!ENTITY browser_urlbar_restrict_bookmark_description "Restringe as sugestões de endereços às páginas listadas nos favoritos.">
+<!ENTITY browser_urlbar_restrict_history_name "Somente histórico">
+<!ENTITY browser_urlbar_restrict_history_description "Restringe as sugestões de endereços às páginas que você visitou.">
+<!ENTITY browser_urlbar_restrict_tag_name "Somente marcadores nos favoritos">
+<!ENTITY browser_urlbar_restrict_tag_description "Restringe as sugestões de endereços aos favoritos associados ao marcador cujo nome for digitado no campo de endereço.">
+<!ENTITY browser_urlbar_restrict_typed_name "Somente endereços digitados">
+<!ENTITY browser_urlbar_restrict_typed_description "Restringe as sugestões de endereços àqueles já digitados no campo de endereço.">
+
+<!-- Match results -->
+<!ENTITY urlbar_match_name "Onde pesquisar">
+<!ENTITY browser_urlbar_match_title_name "Pesquisar nos títulos de páginas">
+<!ENTITY browser_urlbar_match_title_description "Faz o texto digitado no campo de endereço ser pesquisado nos títulos das páginas a serem sugeridas.">
+<!ENTITY browser_urlbar_match_url_name "Pesquisar nos endereços">
+<!ENTITY browser_urlbar_match_url_description "Faz o texto digitado no campo de endereço ser pesquisado nos endereços das páginas a serem sugeridas.">
+<!ENTITY browser_urlbar_matchBehavior_name "Modo de pesquisa:">
+<!ENTITY browser_urlbar_matchBehavior_description "Especifica como o Firefox deve pesquisar o que for digitado no campo de endereço para oferecer sugestões.">
+<!ENTITY browser_urlbar_matchBehavior_o1 "indistinto">
+<!ENTITY browser_urlbar_matchBehavior_o2 "privilegiar ocorrências no início de palavras">
+<!ENTITY browser_urlbar_matchBehavior_o3 "somente ocorrências no início de palavras">
+<!ENTITY browser_urlbar_matchBehavior_o4 "somente ocorrências no início do endereço ou título">
+
+<!ENTITY browser_urlbar_maxRichResults_name "Máximo de sugestões:">
+<!ENTITY browser_urlbar_maxRichResults_description "Especifica a quantidade máxima de sugestões oferecidas enquanto se digita no campo de endereço.">
+<!ENTITY browser_urlbar_autoFill_name "Completar endereços automaticamente ao digitar">
+<!ENTITY browser_urlbar_autoFill_description "Completa automaticamente o endereço que você começar a digitar, em vez de apenas exibir uma lista de sugestões.">
+<!ENTITY browser_fixup_alternate_enabled_name "Tentar endereço alternativo">
+<!ENTITY browser_fixup_alternate_enabled_description "No caso do endereço digitado não ser encontrado (ex.: quando digitar um nome de site sem terminar em &quot;.com&quot; ou similar), faz com que o Firefox adicione o prefixo e o sufixo indicados e tente carregar o novo endereço.">
+<!ENTITY browser_fixup_alternate_prefix_name "Prefixo:">
+<!ENTITY browser_fixup_alternate_prefix_description "Caracteres a inserir no início do endereço que falhou.">
+<!ENTITY browser_fixup_alternate_suffix_name "Sufixo:">
+<!ENTITY browser_fixup_alternate_suffix_description "Caracteres a inserir no final do endereço que falhou.">
+<!ENTITY browser_urlbar_formatting_enabled_name "Ativar formatação de domínio">
+<!ENTITY browser_urlbar_formatting_enabled_description "Determina se o domínio deve ser formatado no campo de endereço.">
+
+<!-- Session restore -->
+<!ENTITY session_restore "Restauração de sessão">
+<!ENTITY guiconfig_pseudo_sessionstore_enable_name "Ativar restauração de sessão">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Quantidade máxima de abas simultâneas:">
+<!ENTITY browser_sessionstore_max_concurrent_tabs_description "A quantidade de abas que podem ser restauradas simultaneamente. Se a quantidade for 0, apenas será carregada a aba selecionada em cada janela. Se a quantidade for menor que 0, todas as abas serão restauradas ao mesmo tempo.">
+<!ENTITY browser_sessionstore_max_tabs_undo_name "Abas fechadas a lembrar:">
+<!ENTITY browser_sessionstore_max_tabs_undo_description "Máximo de abas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir aba&quot;.">
+<!ENTITY browser_sessionstore_max_windows_undo_name "Janelas fechadas a lembrar:">
+<!ENTITY browser_sessionstore_max_windows_undo_description "Máximo de janelas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir janela&quot;.">
+<!ENTITY browser_sessionstore_resume_from_crash_name "Restaurar sessão após travamento">
+<!ENTITY browser_sessionstore_resume_from_crash_description "Especifica se as abas e janelas abertas quando o navegador travar devem ser reabertas automaticamente na próxima vez em que ele for iniciado.">
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Máximo de travamentos:">
+<!ENTITY browser_sessionstore_max_resumed_crashes_description "Número de travamentos consecutivos antes que o navegador pare de restaurar sessões automaticamente e pergunte quais abas e janelas devam ser restauradas. Quando isso ocorre, é possível que umas das páginas em questão seja a causadora do problema.">
+<!ENTITY browser_sessionstore_privacy_level_name "Salvar dados extras de sessão:">
+<!ENTITY browser_sessionstore_privacy_level_description "Especifica quando informações extras (como conteúdo de campos de formulário, posição das barras de rolagem, cookies e outros) devem ser salvas junto com a sessão. Use a opção &quot;para qualquer site&quot; com cuidado.">
+<!ENTITY browser_sessionstore_privacy_level_o1 "para qualquer site">
+<!ENTITY browser_sessionstore_privacy_level_o2 "apenas para sites não criptografados (não HTTPS)">
+<!ENTITY browser_sessionstore_privacy_level_o3 "para nenhum site">
+
+<!-- Extensions and plugins -->
+
+<!-- Extensions -->
+<!ENTITY extensions "Complementos">
+<!ENTITY getaddons "Painel &quot;Adicionar&quot;">
+<!ENTITY extensions_alwaysUnpack_name "Sempre descompactar extensões">
+<!ENTITY extensions_alwaysUnpack_description "Marque esta opção para que as extensões sejam descompactadas na sua pasta de perfil durante a instalação delas.">
+<!ENTITY extensions_checkCompatibility_name "Verificar compatibilidade das extensões">
+<!ENTITY extensions_checkCompatibility_description "Desmarque essa opção para evitar a verificação de compatibilidade ao instalar extensões ou atualizações.">
+<!ENTITY extensions_getAddons_maxResults_name "Máximo de resultados de pesquisa:">
+<!ENTITY extensions_getAddons_maxResults_description "Especifica quantos complementos no máximo devem ser listados ao se pesquisar na aba &quot;Adicionar&quot;.">
+<!ENTITY extensions_getAddons_showPane_name "Mostrar painel &quot;Adicionar&quot;">
+<!ENTITY extensions_getAddons_showPane_description "Especifica se o painel &quot;Adicionar&quot; deve ser exibido na janela &quot;Complementos&quot;.">
+
+<!-- Installation -->
+<!ENTITY security_dialog_enable_delay_name "Atraso para instalar complementos (ms):">
+<!ENTITY security_dialog_enable_delay_description "Especifica o tempo, em milissegundos, antes que o botão &quot;Instalar&quot; possa ser clicado na janela de instalação de complementos, para forçar o usuário a lê-la. Digite 0 para desativar esse recurso.">
+
+<!-- Plugins -->
+<!ENTITY dom_ipc_plugins_enabled_name "Executar cada plugin em um processo separado">
+<!ENTITY dom_ipc_plugins_enabled_description "Essa opção permite que o Firefox não trave também quando um plugin (como Flash) travar.">
+<!ENTITY dom_ipc_plugins_timeoutSecs_name "Tempo a esperar por plugins que não respondem (s):">
+<!ENTITY dom_ipc_plugins_timeoutSecs_description "Especifica quanto tempo esperar, em segundos, antes que um plugin que não estiver respondendo seja encerrado.">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tempo limite para carregar plugins (s):">
+<!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Especifica, em segundos, quanto tempo aguardar para o carregamento de um plugin antes de o considerar travado.">
+
+<!-- Library -->
+
+<!-- Bookmarks -->
+<!ENTITY bookmarks "Favoritos">
+<!ENTITY browser_bookmarks_max_backups_name "Nº de cópias do arquivo de favoritos:">
+<!ENTITY browser_bookmarks_max_backups_description "Especifica quantas cópias de segurança da lista de favoritos serão mantidas pelo navegador. Digite 0 para não manter cópias do arquivo de favoritos.">
+
+<!-- History -->
+
+<!-- Downloads -->
+<!ENTITY browser_download_manager_addToRecentDocs_name "Adicionar downloads aos &quot;Itens Recentes&quot;">
+<!ENTITY browser_download_manager_addToRecentDocs_description "Determina se os arquivos baixados devem ser adicionados aos &quot;Itens Recentes&quot; no menu do Windows.">
+<!ENTITY browser_download_lastDir_name "Última pasta onde algo foi salvo:">
+<!ENTITY browser_download_lastDir_description "Especifica o caminho para a última pasta na qual foi salvo um arquivo com o Firefox. Essa pasta será automaticamente indicada na janela &quot;Salvar como&quot; na próxima vez.">
+<!ENTITY browser_download_manager_alertOnEXEOpen_name "Alertar ao abrir arquivo executável">
+<!ENTITY browser_download_manager_alertOnEXEOpen_description "Exibe um aviso quando um arquivo executável salvo da internet está prestes a ser aberto (executado) a partir da janela de downloads.">
+
+<!-- Browser cache -->
+<!ENTITY cache "Cache">
+
+<!-- Disk cache -->
+<!ENTITY cache_disk "Cache de disco">
+<!ENTITY browser_cache_check_doc_frequency_name "Verificar alterações:">
+<!ENTITY browser_cache_check_doc_frequency_description "Especifica quando verificar se a versão online de uma página (ou outro arquivo) copiada para o cache foi modificada.">
+<!ENTITY browser_cache_check_doc_frequency_o1 "uma vez por sessão">
+<!ENTITY browser_cache_check_doc_frequency_o2 "sempre que visitar a página">
+<!ENTITY browser_cache_check_doc_frequency_o3 "nunca (carregar páginas sempre do cache)">
+<!ENTITY browser_cache_check_doc_frequency_o4 "quando o arquivo em cache vencer (automático)">
+<!ENTITY browser_cache_disk_cache_ssl_name "Armazenar em cache páginas recebidas por conexões seguras">
+<!ENTITY browser_cache_disk_cache_ssl_description "Armazena no cache do navegador páginas (e outros arquivos) recebidas por conexões seguras (HTTPS/SSL). Acionar essa opção traz risco de segurança, pois o cache não é criptografado!">
+<!ENTITY browser_cache_disk_capacity_name "Limite do cache de disco (KB):">
+<!ENTITY browser_cache_disk_capacity_description "Especifica, em quilobytes, a quantidade máxima de espaço em disco usada pelo cache de disco.">
+<!ENTITY browser_cache_disk_enable_name "Usar cache de disco">
+<!ENTITY browser_cache_disk_enable_description "Ativa o cache de disco, salvando no disco rígido páginas e conteúdos visitados até o limite especificado, para carregamento mais rápido nas visitas subsequentes.">
+
+<!-- Memory cache -->
+<!ENTITY cache_memory "Cache de memória">
+<!ENTITY browser_cache_memory_enable_name "Usar cache de memória">
+<!ENTITY browser_cache_memory_enable_description "Ativa o cache de memória, mantendo na RAM páginas e conteúdos visitados até o limite especificado, para carregamento ainda mais rápido que do cache de disco nas visitas subsequentes até o Firefox ser fechado.">
+<!ENTITY browser_cache_memory_capacity_name "Limite do cache de memória (KB):">
+<!ENTITY browser_cache_memory_capacity_description "Especifica, em quilobytes, a quantidade máxima de RAM usada pelo cache de memória.">
+
+<!-- Misc -->
+<!ENTITY misc "Diversos">
+<!ENTITY browser_sessionhistory_max_total_viewers_name "Máximo de páginas na memória:">
+<!ENTITY browser_sessionhistory_max_total_viewers_description "Páginas visitadas recentemente são mantidas na memória para agilizar as funções &quot;Página anterior&quot; e &quot;Próxima página&quot;. Insira -1 para gerenciamento automático. Insira 0 para não manter páginas além da atual na memória.">

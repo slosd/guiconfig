@@ -1,0 +1,37 @@
+<!ENTITY tabs "Pestañas">
+
+<!ENTITY browser_tabs_tabClipWidth_name "Ancho min de pestaña para el botón cerrar">
+<!ENTITY browser_tabs_tabClipWidth_description "Determina el ancho mínimo necesario para mostrar el botón cerrar.">
+
+<!-- Tab preview -->
+<!ENTITY tab_preview "Vista previa de pestañas">
+<!ENTITY browser_ctrlTab_preview_name "Habilitar la vista previa al cambiar entre pestañas">
+<!ENTITY browser_ctrlTab_preview_description "Al pulsar [Ctrl]+[Tab] para cambiar entre pestañas, se muestra una vista previa.">
+<!ENTITY browser_taskbar_previews_enable_name "Habilitar vista previa en la barra de tareas de Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Si está habilitado, Firefox mostrará una vista previa de cada pestaña en la barra de tareas de Windows 7.">
+
+<!-- Open in background -->
+<!ENTITY open_in_background "Abrir una nueva pestaña en segundo plano desde">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Enlaces en aplicaciones externas">
+<!ENTITY browser_tabs_loadInBackground_name "Enlaces en páginas web">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Cargar los marcadores en segundo plano">
+
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Pestañas animadas">
+<!ENTITY browser_tabs_animate_description "Habilita las pestañas animadas al abrir una nueva pestaña o al colocar las pestañas.">
+<!ENTITY browser_panorama_animate_zoom_name "Animación en el zoom panorámico">
+<!ENTITY browser_panorama_animate_zoom_description "Habilita las animaciones al abrir/cerrar la vista panorámica para todas las pestañas (CTRL-E).">
+<!ENTITY browser_tabs_closeButtons_name "Mostrar el botón de cerrar para las pestañas">
+<!ENTITY browser_tabs_closeButtons_description "Determina si se muestran los botones de cerrar.">
+<!ENTITY browser_tabs_closeButtons_o1 "sólo en la pestaña activa">
+<!ENTITY browser_tabs_closeButtons_o2 "en cada pestaña">
+<!ENTITY browser_tabs_closeButtons_o3 "nunca">
+<!ENTITY browser_tabs_closeButtons_o4 "al final de la barra de pestañas">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Abrir la nueva pestaña junto a la actual">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determina si abrir una nueva pestaña al final de la barra de pestañas o tras la actual.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Cambiar a la pestaña que la abrió al cerrarla">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Al cerrar una pestaña, cambiar a la pestaña que la abrió. En otro caso cambia a la pestaña de la derecha o de la izquierda.">
+<!ENTITY browser_search_openintab_name "Abrir los resultados de la búsqueda en una pestaña nueva">
+<!ENTITY browser_search_openintab_description "Al realizar una búsqueda en la barra de búsqueda, abrir los resultados en una pestaña nueva.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Cerrar ventana con la última pestaña">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Si lo activa, la ventana actual se cerrará cuando cierre la última pestaña de la ventana.">

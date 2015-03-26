@@ -1,0 +1,33 @@
+<!ENTITY input "Vstup">
+<!ENTITY mousebehaviour "Chování myši">
+<!-- Middle click -->
+<!ENTITY middleclick "Klepnutí prostředním tlačítkem">
+<!ENTITY middlemouse_contentLoadURL_name "Načíst schránku jako URL">
+<!ENTITY middlemouse_contentLoadURL_description "Při klepnutí prostředním tlačítkem načte obsah schránky jako URL.">
+<!ENTITY middlemouse_paste_name "Vložit text ze schránky">
+<!ENTITY middlemouse_paste_description "Při klepnutí prostředním tlačítkem vloží obsah schránky do textového pole.">
+<!-- Mouse click -->
+<!ENTITY mouseclick "Klepnutí myší">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Vybrat obsah při klepnutí myší">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Klepnutí do adresního řádku vybere jeho obsah.">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Vybrat obsah při dvojitém klepnutí">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Dvojité klepnutí do adresního řádku vybere jeho obsah.">
+<!-- Vertical mouse scrolling -->
+<!ENTITY mousescrollvertical "Svislý posun">
+<!ENTITY mousewheel_action_description "Zvolte, co se má stát při posouvání kombinovaném s různými klávesami">
+<!ENTITY mousewheel_default_action_name "Akce bez klávesy">
+<!ENTITY mousewheel_with_shift_action_name "Akce s klávesou SHIFT">
+<!ENTITY mousewheel_with_control_action_name "Akce s klávesou CTRL">
+<!ENTITY mousewheel_with_alt_action_name "Akce s klávesou ALT">
+<!ENTITY mousewheel_action_o1 "Posunout o řádky">
+<!ENTITY mousewheel_action_o2 "Posunout o stránku">
+<!ENTITY mousewheel_action_o3 "Jít zpět/vpřed v historii">
+<!ENTITY mousewheel_action_o4 "Přiblížit/oddálit stránku">
+<!-- Misc -->
+<!ENTITY browser_backspace_action_name "Backspace">
+<!ENTITY browser_backspace_action_description "Určuje chování klávesy backspace.">
+<!ENTITY browser_backspace_action_o1 "Jít zpět v historii">
+<!ENTITY browser_backspace_action_o2 "Jako Page Up">
+<!ENTITY browser_backspace_action_o3 "Nedělat nic">
+<!ENTITY accessibility_accesskeycausesactivation_name "Horká klávesa aktivuje prvek">
+<!ENTITY accessibility_accesskeycausesactivation_description "Použití horké klávesy pro prvek bude stejné jako jeho aktivace. Pokud je prvek odkazem, bude tento odkaz zobrazen. Pokud je prvek tlačítko, bude stisknuto.">

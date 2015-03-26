@@ -1,0 +1,18 @@
+<!ENTITY network "Netzwerk">
+<!-- Connections -->
+<!ENTITY connections "Verbindungen">
+<!ENTITY network_http_max-connections_name "Max. Anzahl von HTTP-Verbindungen">
+<!ENTITY network_http_max-connections_description "Beschränkt die Anzahl der gleichzeitig von Firefox offen gehaltenen Verbindungen. Mögliche Werte: 1 bis 65535.">
+<!-- Keep-alive -->
+<!ENTITY network_http_max-persistent-connections-per-proxy_name "Max. Anzahl von keep-alive Verbindungen pro Proxy-Server">
+<!ENTITY network_http_max-persistent-connections-per-proxy_description "Maximale Anzahl von Verbindungen, die Firefox pro Proxy-Server aufrecht erhalten soll. Mögliche Werte: 1 bis 255.">
+<!ENTITY network_http_max-persistent-connections-per-server_name "Max. Anzahl von keep-alive Verbindungen pro Server">
+<!ENTITY network_http_max-persistent-connections-per-server_description "Maximale Anzahl von Verbindungen, die Firefox pro Server aufrecht erhalten soll. Mögliche Werte: 1 bis 255.">
+<!-- Pipelining -->
+<!ENTITY pipelining "Pipelining">
+<!ENTITY network_http_pipelining_name "Pipelining verwenden">
+<!ENTITY network_http_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung. Muss aber vom Server unterstützt werden.">
+<!ENTITY network_http_pipelining_maxrequests_name "Max. Anzahl von Anfragen pro Pipeline">
+<!ENTITY network_http_pipelining_maxrequests_description "Beschränkt die Anzahl maximal möglicher Anfragen (Requests) pro Pipeline.">
+<!ENTITY network_http_proxy_pipelining_name "Pipelining bei einem Proxy-Server verwenden">
+<!ENTITY network_http_proxy_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung.Muss aber vom Server unterstützt werden.">

@@ -1,0 +1,33 @@
+<!ENTITY input "Input">
+<!ENTITY mousebehaviour "Comportamiento del ratón">
+<!-- Middle click -->
+<!ENTITY middleclick "Botón central">
+<!ENTITY middlemouse_contentLoadURL_name "Cargar el portapapeles como una dirección">
+<!ENTITY middlemouse_contentLoadURL_description "Cargar el contenido del portapapeles como una dirección al pulsar el botón central">
+<!ENTITY middlemouse_paste_name "Pegar texto del portapapeles">
+<!ENTITY middlemouse_paste_description "Pegar el contenido del portapapeles en un cuadro de texto al pulsar el botón central">
+<!-- Mouse click -->
+<!ENTITY mouseclick "Pulsaciones de ratón">
+<!ENTITY browser_urlbar_clickSelectsAll_name "Seleccionar el contenido al pulsar con el ratón">
+<!ENTITY browser_urlbar_clickSelectsAll_description "Selecciona el contenido de la barra de direcciones al pulsarla">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_name "Seleccionar el contenido al hacer doble clic">
+<!ENTITY browser_urlbar_doubleClickSelectsAll_description "Selecciona el contenido de la barra de direcciones al hacer doble clic">
+<!-- Vertical mouse scrolling -->
+<!ENTITY mousescrollvertical "Desplazamiento vertical">
+<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
+<!ENTITY mousewheel_default_action_name "Action with no key">
+<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
+<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
+<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
+<!ENTITY mousewheel_action_o1 "Desplazar líneas">
+<!ENTITY mousewheel_action_o2 "Desplazar páginas">
+<!ENTITY mousewheel_action_o3 "Ir atrás/adelante en el historial">
+<!ENTITY mousewheel_action_o4 "Hacer zoom">
+<!-- Misc -->
+<!ENTITY browser_backspace_action_name "Retroceso">
+<!ENTITY browser_backspace_action_description "Determina el comportamiento de la tecla de retroceso.">
+<!ENTITY browser_backspace_action_o1 "Ir atrás en el historial">
+<!ENTITY browser_backspace_action_o2 "Funcionar como Avanzar Página">
+<!ENTITY browser_backspace_action_o3 "No hacer nada">
+<!ENTITY accessibility_accesskeycausesactivation_name "Activar los elementos usando los atajos">
+<!ENTITY accessibility_accesskeycausesactivation_description "Activar los elementos usando atajos de teclado. Si el elemento es un enlace, se seguirá, si es un botón se pulsará.">

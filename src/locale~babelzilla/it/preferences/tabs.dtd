@@ -1,0 +1,16 @@
+
+
+<!-- Tab preview -->
+
+<!-- Open in background -->
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
+
+<!-- Misc -->
+<!ENTITY browser_tabs_closeButtons_name "Mostra i pulsanti di chiusura delle schede">
+<!ENTITY browser_tabs_closeButtons_description "Specifica dove visualizzare i pulsanti di chiusura.">
+<!ENTITY browser_tabs_closeButtons_o1 "solo sulle schede attive">
+<!ENTITY browser_tabs_closeButtons_o2 "su ogni scheda">
+<!ENTITY browser_tabs_closeButtons_o3 "mai">
+<!ENTITY browser_tabs_closeButtons_o4 "alla fine della barra delle schede">
+<!ENTITY browser_search_openintab_name "Apri i risultati della ricerca in una nuova scheda">
+<!ENTITY browser_search_openintab_description "Quando si effettua una ricerca con la Barra di ricerca, apre i risultati in una nuova scheda.">

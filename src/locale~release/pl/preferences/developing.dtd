@@ -1,0 +1,18 @@
+<!ENTITY developing "Programowanie">
+<!-- View Source -->
+<!ENTITY viewsource "Pokaz źródło strony">
+<!ENTITY view_source_editor_external_name "Używaj własnego edytora">
+<!ENTITY view_source_editor_external_description "Używaj własnego edytora do wyświetlania źródła stron.">
+<!ENTITY view_source_editor_path_name "Ścieżka do edytora">
+<!ENTITY view_source_editor_path_description "Ścieżka do własnego edytora.">
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">
+<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
+<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY browser_dom_window_dump_enabled_name "Włącz dump()">
+<!ENTITY browser_dom_window_dump_enabled_description "Pozwala na użycie wyrażenia dump() przekazującego tekst do konsoli.">
+<!ENTITY javascript_options_showInConsole_name "Wyświetlaj błędy chrome'a w konsoli">
+<!ENTITY javascript_options_showInConsole_description "Określa, czy błędy i ostrzeżenia od chrome'a mają być wyświetlane w konsoli JavaScriptu.">
+<!ENTITY javascript_options_strict_name "Ścisła kontrola JavaScriptu">
+<!ENTITY javascript_options_strict_description "Włącza ścisłe sprawdzanie poprawności skryptów JavaScript i zgłaszanie ostrzeżeń w konsoli błędów.">

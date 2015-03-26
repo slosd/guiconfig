@@ -1,0 +1,31 @@
+<!ENTITY appearance "Aparência">
+<!-- Browser -->
+<!ENTITY browser_style "Navegador">
+<!ENTITY browser_chrome_favicons_name "Mostrar ícones de sites e páginas">
+<!ENTITY browser_chrome_favicons_description "Exibe os ícones especificados por sites e páginas (favicons) para melhor identificá-los.">
+<!ENTITY browser_chrome_toolbar_tips_name "Mostrar dicas de tela para ferramentas">
+<!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre eles.">
+<!ENTITY browser_preferences_animateFadeIn_name "Animar mudanças de painel na janela de opções">
+<!ENTITY browser_preferences_animateFadeIn_description "Muda suavemente o conteúdo e ajusta a altura da janela de opções do Firefox a cada mudança de painel.">
+<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
+<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_instantApply_name "Aplicar opções instantaneamente">
+<!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
+<!-- New tab page -->
+<!ENTITY new_tab_page "New tab page">
+<!ENTITY browser_newtabpage_rows_name "Number of rows">
+<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
+<!ENTITY browser_newtabpage_columns_name "Number of columns">
+<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
+<!ENTITY browser_newtab_url_name "URL for new tabs">
+<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!-- Selected text -->
+<!ENTITY text_select "Texto selecionado">
+<!ENTITY ui_textSelectBackgroundAttention_name "Cor do realce de pesquisa">
+<!ENTITY ui_textSelectBackgroundAttention_description "Especifica, em código hexadecimal ou nome HTML, a cor de realce dos trechos de texto encontrados com a função Localizar.">
+<!ENTITY ui_textSelectBackground_name "Cor de seleção">
+<!ENTITY ui_textSelectBackground_description "Especifica, em código hexadecimal ou nome HTML, a cor de realce dos trechos de texto selecionados. Se deixada em branco, será usada a cor definida pelo sistema operacional.">
+<!ENTITY ui_textSelectForeground_name "Cor do texto selecionado">
+<!ENTITY ui_textSelectForeground_description "Especifica, em código hexadecimal ou nome HTML, a cor dos caracteres nos trechos de texto selecionados. Se deixada em branco, será usada a cor definida pelo sistema operacional.">

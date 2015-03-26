@@ -1,0 +1,38 @@
+<!ENTITY tabs "Tabbladen">
+
+<!ENTITY browser_tabs_tabClipWidth_name "Min. tabbladbreedte voor sluitknoppen">
+<!ENTITY browser_tabs_tabClipWidth_description "Bepaalt de minimaal benodigde tabbladbreedte voor weergave van de knop Sluiten.">
+
+<!-- Tab preview -->
+<!ENTITY tab_preview "Tabbladvoorbeeld">
+<!ENTITY browser_ctrlTab_preview_name "Tabbladvoorbeeld bij wisselen tabbladen inschakelen">
+<!ENTITY browser_ctrlTab_preview_description "Bij gebruik van Ctrl+Tab om van tabblad te wisselen wordt een voorbeeld weergegeven.">
+<!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
+<!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">
+
+<!-- Open in background -->
+<!ENTITY open_in_background "Een nieuw tabblad in de achtergrond openen vanaf">
+<!ENTITY browser_tabs_loadDivertedInBackground_name "Koppelingen in externe toepassingen">
+<!ENTITY browser_tabs_loadInBackground_name "Koppelingen in websites">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Bladwijzers">
+<!ENTITY browser_search_context_loadInBackground_name "Zoeken via het contextmenu">
+
+<!-- Misc -->
+<!ENTITY browser_tabs_animate_name "Tabbladen animeren">
+<!ENTITY browser_tabs_animate_description "Animaties bij openen nieuwe tabbladen, tijdens herschikken tabbladen en bij loskoppelen tabblad inschakelen.">
+<!ENTITY browser_panorama_animate_zoom_name "Panorama-zoom animeren">
+<!ENTITY browser_panorama_animate_zoom_description "Animaties bij openen/sluiten van panoramabeeld voor uw tabbladen (bij Ctrl+E) inschakelen.">
+<!ENTITY browser_tabs_closeButtons_name "Sluitknoppen voor tabbladen worden weergegeven">
+<!ENTITY browser_tabs_closeButtons_description "Bepaalt waar sluitknoppen worden weergegeven.">
+<!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">
+<!ENTITY browser_tabs_closeButtons_o2 "op elk tabblad">
+<!ENTITY browser_tabs_closeButtons_o3 "nooit">
+<!ENTITY browser_tabs_closeButtons_o4 "aan het einde van de tabbalk">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Nieuw tabblad naast het huidige openen">
+<!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Bepaalt of een nieuw tabblad aan het einde van de tabbalk of naast het momenteel geselecteerde tabblad wordt geopend.">
+<!ENTITY browser_tabs_selectOwnerOnClose_name "Wisselen naar tabblad dat voor openen heeft gezorgd na sluiten van tabblad">
+<!ENTITY browser_tabs_selectOwnerOnClose_description "Omschakelen naar het eerdere tabblad bij het sluiten van een tabblad. Anders wisselen naar het naastliggende tabblad rechts of links.">
+<!ENTITY browser_search_openintab_name "Zoekresultaten in een nieuw tabblad openen">
+<!ENTITY browser_search_openintab_description "Opent bij het uitvoeren van een zoekopdracht vanuit de zoekbalk de resultaten in een nieuw tabblad.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Venster met laatste tabblad sluiten">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Indien aangevinkt zal het huidige venster worden gesloten wanneer u het laatste tabblad in dat venster sluit. U kunt het laatste tabblad sluiten met een middelklik op met Ctrl+W.">

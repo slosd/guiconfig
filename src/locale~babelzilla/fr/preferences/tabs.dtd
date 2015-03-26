@@ -1,0 +1,18 @@
+
+
+<!-- Tab preview -->
+
+<!-- Open in background -->
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
+
+<!-- Misc -->
+<!ENTITY browser_tabs_closeButtons_name "Les boutons de fermeture sont affichés">
+<!ENTITY browser_tabs_closeButtons_description "Précise où afficher les boutons de clôture d&apos;onglets.">
+<!ENTITY browser_tabs_closeButtons_o1 "juste sur l&apos;onglet en cours">
+<!ENTITY browser_tabs_closeButtons_o2 "sur chaque onglet">
+<!ENTITY browser_tabs_closeButtons_o3 "sur aucun onglet">
+<!ENTITY browser_tabs_closeButtons_o4 "à la fin de la barre d&apos;onglets">
+<!ENTITY browser_search_openintab_name "Ouvrir les résultats de la recherche dans un nouvel onglet">
+<!ENTITY browser_search_openintab_description "Lorsqu&apos;une requête est lancée depuis la barre de recherche, ouvrir la page de résultat dans un nouvel onglet.">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Fermer la fenêtre en même temps que le dernier onglet">
+<!ENTITY browser_tabs_closeWindowWithLastTab_description "Si la case est cochée, la fenêtre en cours sera fermée lorsque vous fermerez le dernier onglet de cette fenêtre.">

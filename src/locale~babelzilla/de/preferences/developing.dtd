@@ -1,0 +1,20 @@
+<!ENTITY developing "Entwicklung">
+
+<!-- View Source -->
+<!ENTITY viewsource "Quelltextanzeige">
+<!ENTITY view_source_editor_external_name "Benutzerdefinierten Editor verwenden">
+<!ENTITY view_source_editor_external_description "Statt des Standard-Editors einen eigenen Editor für die Quelltextansicht verwenden.">
+<!ENTITY view_source_editor_path_name "Pfad zum Editor">
+<!ENTITY view_source_editor_path_description "Pfad zum eigenen Editor.">
+
+<!-- Misc -->
+<!ENTITY nglayout_debug_disable_xul_cache_name "Deaktiviert XUL-Cache">
+<!ENTITY nglayout_debug_disable_xul_cache_description "Veränderungen an Fenstern und Dialogen benötigen keinen Neustart.Funktioniert nicht mit JAR-gepackten Dateien.">
+<!ENTITY devtools_inspector_enabled_name "&quot;Element untersuchen&quot; aktivieren">
+<!ENTITY devtools_inspector_enabled_description "Aktiviert &quot;Element untersuchen&quot; im Rechtklick-Menü. Der Einträg öffnet den &quot;Inspektor&quot; für das ausgewählte HTML-Element.">
+<!ENTITY browser_dom_window_dump_enabled_name "dump() aktivieren">
+<!ENTITY browser_dom_window_dump_enabled_description "Aktiviert die Funktion dump(), mit der Daten auf die Standardkonsole ausgegeben werden können.">
+<!ENTITY javascript_options_showInConsole_name "Chrome-Fehler in der Konsole anzeigen">
+<!ENTITY javascript_options_showInConsole_description "Zeigt Chrome-Fehler und Warnungen in der JavaScript-Konsole.">
+<!ENTITY javascript_options_strict_name "Javascript-Warnungen anzeigen">
+<!ENTITY javascript_options_strict_description "Javascript-Warnungen werden in der Fehlerkonsole angezeigt.">
