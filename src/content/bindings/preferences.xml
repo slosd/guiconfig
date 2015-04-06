@@ -29,6 +29,7 @@
         </xul:panel>
         <xul:menupopup id="guiconfig-preference-context">
           <xul:menuitem class="menuitem-iconic" label="&config.todefault;" image="/skin/icons/actions/reset.png" oncommand="document.getBindingParent(this).resetPreference()" />
+          <xul:menuitem class="menuitem-iconic" label="&config.copykey;" image="/skin/icons/actions/copy.png" oncommand="document.getBindingParent(this).copyPreferenceKey()" />
         </xul:menupopup>
       </xul:popupset>
 
@@ -170,6 +171,18 @@
           if (pref) {
             pref.reset();
           }
+        ]]>
+        </body>
+      </method>
+      <method name="copyPreferenceKey">
+        <body>
+        <![CDATA[
+          if (!this.contextPreference) return;
+
+          var key = this.contextPreference.getAttribute('data-key');
+          var clipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"]
+                                    .getService(Components.interfaces.nsIClipboardHelper);
+          clipboardHelper.copyString(key);
         ]]>
         </body>
       </method>
