@@ -15,6 +15,7 @@
     <resources>
       <stylesheet src="chrome://guiconfig/skin/style/gcprefwindow.css"/>
     </resources>
+
     <content title="&browser.item.label;"
              closebuttonlabel="&preferencesCloseButton.label;"
              closebuttonaccesskey="&preferencesCloseButton.accesskey;"
@@ -26,6 +27,9 @@
           <xul:label class="header" value="&config.preference_key;" />
           <xul:description anonid="key"></xul:description>
         </xul:panel>
+        <xul:menupopup id="guiconfig-preference-context">
+          <xul:menuitem class="menuitem-iconic" label="&config.todefault;" image="/skin/icons/actions/reset.png" oncommand="document.getBindingParent(this).resetPreference()" />
+        </xul:menupopup>
       </xul:popupset>
 
       <xul:windowdragbox orient="vertical">
@@ -34,7 +38,7 @@
 
       <xul:hbox id="guiconfig-preference-search">
         <xul:spacer flex="1"/>
-        <xul:textbox type="search" timeout="500" emptytext="&config.search;" xbl:inherits="oncommand=onsearch"/>
+        <xul:textbox type="search" timeout="500" emptytext="&config.search;" oncommand="document.getBindingParent(this).search(this.value)"/>
       </xul:hbox>
 
       <xul:hbox anonid="body" flex="1" class="paneDeckContainer">
@@ -57,34 +61,298 @@
     </content>
 
     <implementation>
-      <method name="showInfoBox">
+      <constructor>
+      <![CDATA[
+        Components.utils.import('chrome://guiconfig/content/guiconfig.js');
+
+        this._body = document.getAnonymousElementByAttribute(this, 'anonid', 'body');
+        this._infoBox = document.getAnonymousElementByAttribute(this, 'anonid', 'info-box');
+        this._description = document.getAnonymousElementByAttribute(this, 'anonid', 'description');
+        this._key = document.getAnonymousElementByAttribute(this, 'anonid', 'key');
+
+        var self = this;
+        var prefScript;
+        var prefPanesLoaded = false;
+        var preferenceSource = this.getAttribute('source');
+        guiconfig.buildPreferencePanes(document, preferenceSource, function(result) {
+          for (var pane of result.querySelectorAll('prefpane')) {
+            self.addPane(pane);
+          }
+          var lastSelectedPane = self.lastSelected ? document.getElementById(self.lastSelected) : null;
+          self.showPane(lastSelectedPane && lastSelectedPane != self.searchPane ? lastSelectedPane : self.preferencePanes[0]);
+          prefPanesLoaded = true;
+          if (prefScript) {
+            guiconfig.runPreferenceScript(document, prefScript);
+          }
+        });
+        guiconfig.buildPreferenceScript(document, preferenceSource, function(result) {
+          prefScript = result.querySelector('script').textContent;
+          if (prefPanesLoaded) {
+            guiconfig.runPreferenceScript(document, prefScript);
+          }
+        });
+      ]]>
+      </constructor>
+      <method name="setInfo">
         <parameter name="anchor"/>
+        <parameter name="text"/>
+        <parameter name="key"/>
         <body>
         <![CDATA[
-          if (anchor) {
-            var height = anchor.clientHeight;
-            this._infoBox.openPopup(anchor, "end_before", 0, height / 2, false, false);
+          var infoBox = this._infoBox;
+
+          function showInfoBox(anchor) {
+            if (anchor) {
+              var height = anchor.clientHeight;
+              infoBox.openPopup(anchor, "end_before", 0, height / 2, false, false);
+            } else {
+              infoBox.openPopup(this._body, "end_before", 0, 0, false, false);
+            }
+          }
+
+          function hideInfoBox() {
+            infoBox.hidePopup();
+          }
+
+          if (!text && !key) {
+            if (!this._infoBoxTimeout) {
+              var self = this;
+              this._infoBoxTimeout = setTimeout(function() {
+                self._infoBoxTimeout = null;
+                hideInfoBox();
+              }, 500);
+            }
           } else {
-            this._infoBox.openPopup(this._body, "end_before", 0, 0, false, false);
+            if (this._infoBoxTimeout) {
+              clearTimeout(this._infoBoxTimeout);
+              this._infoBoxTimeout = null;
+            }
+            hideInfoBox();
+            this.descriptionText = text || '—';
+            this.keyText = key || '—';
+            showInfoBox(anchor);
           }
         ]]>
         </body>
       </method>
-      <method name="hideInfoBox">
+      <method name="showPreference">
+        <parameter name="key"/>
         <body>
         <![CDATA[
-          this._infoBox.hidePopup();
+          var node = document.getElementById(key + '-view');
+          while (node) {
+            switch (node.nodeName) {
+              case 'box':
+                node.scrollIntoView();
+                if (node.highlight) {
+                  node.highlight();
+                }
+                break;
+              case 'tabpanel':
+                node.parentNode.parentNode.selectedIndex = Array.prototype.indexOf.call(node.parentNode.children, node);
+                break;
+              case 'prefpane':
+                this.showPane(node);
+                break;
+            }
+            node = node.parentNode;
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="resetPreference">
+        <body>
+        <![CDATA[
+          if (!this.contextPreference) return;
+
+          var key = this.contextPreference.getAttribute('data-key');
+          var pref = document.getElementById(key);
+          if (pref) {
+            pref.reset();
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="search">
+        <parameter name="query"/>
+        <body>
+        <![CDATA[
+          Components.utils.import('chrome://guiconfig/content/guiconfig.js');
+
+          var self = this;
+          var preferenceSource = this.getAttribute('source');
+
+          if (query) {
+            guiconfig.buildPreferenceSearchResult(document, preferenceSource, query, function(result) {
+              for (var child of self.searchPane.children) {
+                self.searchPane.removeChild(child);
+              }
+              for (var child of result.firstChild.children) {
+                self.searchPane.appendChild(child);
+              }
+              if (!self.classList.contains('search-active')) {
+                self.lastSelectedBeforeSearch = self.currentPane;
+                self.classList.add('search-active');
+              }
+              self.showPane(self.searchPane);
+            });
+          } else {
+            if (self.currentPane === self.searchPane) {
+              self.showPane(self.lastSelectedBeforeSearch);
+            }
+            self.classList.remove('search-active');
+          }
         ]]>
         </body>
       </method>
 
+      <field name="contextPreference"/>
+      <field name="lastSelectedBeforeSearch"/>
       <property name="descriptionText" onget="return this._description.textContent;" onset="return this._description.textContent = val;"/>
       <property name="keyText" onget="return this._key.textContent;" onset="return this._key.textContent = val;"/>
+      <property name="searchPane" onget="return this.preferencePanes[this.preferencePanes.length - 1]"/>
+    </implementation>
+  </binding>
 
-      <property name="_body" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'body');"/>
-      <property name="_infoBox" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'info-box');"/>
-      <property name="_description" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'description');"/>
-      <property name="_key" onget="return document.getAnonymousElementByAttribute(this, 'anonid', 'key');"/>
+  <binding id="base-gcpreference">
+    <implementation>
+      <constructor>
+      <![CDATA[
+        this._prefWindow = document.documentElement;
+      ]]>
+      </constructor>
+    </implementation>
+
+    <handlers>
+      <handler event="mouseover">
+      <![CDATA[
+        var target = event.target;
+        if (target.hasAttribute('data-key')) {
+          this._prefWindow.setInfo(target, target.getAttribute('data-description'),
+              target.getAttribute('data-key'));
+        }
+      ]]>
+      </handler>
+      <handler event="mouseleave">
+      <![CDATA[
+        this._prefWindow.setInfo();
+      ]]>
+      </handler>
+    </handlers>
+  </binding>
+
+  <binding id="gcpreference" extends="chrome://guiconfig/content/bindings/preferences.xml#base-gcpreference">
+    <content orient="horizontal" align="center" context="guiconfig-preference-context">
+      <children/>
+    </content>
+
+    <implementation>
+      <constructor>
+      <![CDATA[
+        if (this.hasAttribute('data-indent')) {
+          this.classList.add('indent');
+        }
+      ]]>
+      </constructor>
+      <method name="highlight">
+        <body>
+        <![CDATA[
+          this.classList.remove('highlight');
+          var self = this;
+          setTimeout(function() {
+            self.classList.add('highlight');
+          }, 0);
+        ]]>
+        </body>
+      </method>
+    </implementation>
+
+    <handlers>
+      <handler event="contextmenu">
+      <![CDATA[
+        this._prefWindow.contextPreference = this;
+      ]]>
+      </handler>
+    </handlers>
+  </binding>
+
+  <binding id="gcsearchresult" extends="chrome://guiconfig/content/bindings/preferences.xml#base-gcpreference">
+    <content orient="vertical">
+      <xul:label style="font-size: smaller" xbl:inherits="value=breadcrumbs"/>
+      <xul:hbox>
+        <xul:label class="text-link header" xbl:inherits="value=label" onclick="document.getBindingParent(this).showPreference()"/>
+      </xul:hbox>
+      <children/>
+    </content>
+
+    <implementation>
+      <method name="showPreference">
+        <body>
+        <![CDATA[
+          this._prefWindow.showPreference(this.getAttribute('data-key'));
+        ]]>
+        </body>
+      </method>
+    </implementation>
+  </binding>
+
+  <binding id="filepicker">
+    <content orient="horizontal" align="center" flex="1">
+      <xul:label anonid="label" xbl:inherits="value=label"/>
+      <children includes="textbox"/>
+      <xul:button anonid="button" label="&config.browse;" title="&config.choosefile;" icon="open" oncommand="document.getBindingParent(this).openDialog()"/>
+    </content>
+
+    <implementation>
+      <constructor>
+      <![CDATA[
+        this._text = this.querySelector('textbox');
+        this._label = document.getAnonymousElementByAttribute(this, 'anonid', 'label');
+        this._button = document.getAnonymousElementByAttribute(this, 'anonid', 'button');
+      ]]>
+      </constructor>
+      <method name="openDialog">
+        <body>
+        <![CDATA[
+          var Cc = Components.classes;
+          var Ci = Components.interfaces;
+
+          var filePicker = Cc['@mozilla.org/filepicker;1'].createInstance(Ci.nsIFilePicker);
+          filePicker.init(window, this.getAttribute('title'), Ci.nsIFilePicker.modeOpen);
+
+          var filters = this.getAttribute('filters');
+          if (filters) {
+            var filterTypes = filters.split(',');
+            for (var type of filterTypes) {
+              var name = 'filter' + type;
+              if (name in Ci.nsIFilePicker) {
+                filePicker.appendFilters(Ci.nsIFilePicker[name]);
+              }
+            }
+          }
+
+          var status = filePicker.show();
+          if (status === Ci.nsIFilePicker.returnOK &&
+              this._text.value !== filePicker.file.path) {
+            this._text.value = filePicker.file.path;
+          }
+        ]]>
+        </body>
+      </method>
+
+      <property name="disabled">
+        <setter>
+        <![CDATA[
+          this._label.disabled = val;
+          this._button.disabled = val;
+        ]]>
+        </setter>
+        <getter>
+        <![CDATA[
+          return this._label.disabled && this._button.disabled;
+        ]]>
+        </getter>
+      </property>
     </implementation>
   </binding>
 </bindings>

@@ -23,28 +23,20 @@
 
   <xsl:template match="p:concern" mode="tabs">
     <tab label="{@label}">
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
+      <xsl:apply-templates select="." mode="filter-attributes" />
     </tab>
   </xsl:template>
 
   <xsl:template match="p:concern" mode="panes">
     <tabpanel orient="vertical">
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
-
+      <xsl:apply-templates select="." mode="filter-attributes" />
       <xsl:apply-templates />
     </tabpanel>
   </xsl:template>
 
   <xsl:template match="p:concerns">
     <tabbox flex="1">
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
-
+      <xsl:apply-templates select="." mode="filter-attributes" />
       <tabs orient="horizontal">
         <xsl:apply-templates mode="tabs" />
       </tabs>
@@ -56,10 +48,7 @@
 
   <xsl:template match="p:group">
     <groupbox>
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
-
+      <xsl:apply-templates select="." mode="filter-attributes" />
       <caption label="{@label}" />
       <xsl:if test="@description">
         <description><xsl:value-of select="@description" /></description>
@@ -70,7 +59,7 @@
 
   <xsl:template match="p:checkbox">
     <hbox>
-      <xsl:apply-templates select="." mode="standard-attributes" />
+      <xsl:apply-templates select="." mode="basic-attributes" />
       <checkbox label="{@label}" value="{@value}" />
     </hbox>
   </xsl:template>
@@ -83,98 +72,89 @@
       <xsl:if test="@inverted">
         <xsl:attribute name="inverted">true</xsl:attribute>
       </xsl:if>
-      <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-      <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
+      <xsl:apply-templates select="." mode="filter-attributes" />
     </preference>
   </xsl:template>
 
   <xsl:template match="p:pref">
-    <hbox class="prefrow" align="center" context="_child">
-      <xsl:attribute name="id"><xsl:value-of select="@key" />-view</xsl:attribute>
-      <xsl:apply-templates select="." mode="standard-attributes" />
+    <box id="{@key}-view" class="gcpreference">
+      <xsl:apply-templates select="." mode="basic-attributes" />
+      <xsl:apply-templates select="." mode="filter-attributes" />
       <xsl:apply-templates select="." mode="element" />
-      <menupopup>
-        <menuitem label="&config.todefault;" class="menuitem-iconic" image="/skin/icons/actions/reset.png" oncommand="guiconfig.preferences.resetPreference('{@key}')" />
-      </menupopup>
-    </hbox>
+    </box>
   </xsl:template>
 
   <xsl:template match="p:pref[@type='bool']" mode="element">
     <checkbox label="{@label}" preference="{@key}" />
   </xsl:template>
 
-  <xsl:template match="p:pref" mode="element">
-    <!-- find mode in which to display the preference -->
-    <xsl:variable name="mode">
-      <xsl:choose>
-        <xsl:when test="p:mode/@name">
-          <xsl:value-of select="p:mode/@name" />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:value-of select="@mode" />
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-
-    <xsl:choose>
-      <xsl:when test="$mode = 'select'">
-        <label value="{@label}" />
-        <menulist preference="{@key}">
-          <menupopup>
-            <xsl:for-each select="p:option">
-              <menuitem label="{@label}" crop="end" value="{text()}" />
-            </xsl:for-each>
-          </menupopup>
-        </menulist>
-      </xsl:when>
-      <xsl:when test="$mode = 'radio'">
-        <radiogroup preference="{@key}">
-          <xsl:for-each select="p:option">
-            <radio label="{@label}" value="{text()}" />
-          </xsl:for-each>
-        </radiogroup>
-      </xsl:when>
-      <xsl:when test="$mode = 'color'">
-        <label value="{@label}" />
-        <colorpicker preference="{@key}" type="button" />
-      </xsl:when>
-      <xsl:when test="$mode = 'file'">
-        <label value="{@label}" />
-        <textbox preference="{@key}" flex="1" />
-        <button class="select-file" label="&config.browse;" title="&config.choosefile;" icon="open" />
-      </xsl:when>
-      <xsl:when test="p:view">
-        <vbox flex="1">
-          <xsl:apply-templates select="p:view/*" />
-        </vbox>
-      </xsl:when>
-      <xsl:otherwise>
-        <label value="{@label}" />
-        <xsl:if test="@type = 'int'">
-          <spacer flex="1" />
-        </xsl:if>
-        <textbox preference="{@key}">
-          <xsl:choose>
-            <xsl:when test="@type = 'int'">
-              <xsl:attribute name="type">number</xsl:attribute>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:attribute name="flex">1</xsl:attribute>
-            </xsl:otherwise>
-          </xsl:choose>
-          <xsl:if test="@minValue">
-            <xsl:attribute name="min"><xsl:value-of select="@minValue" /></xsl:attribute>
-          </xsl:if>
-          <xsl:if test="@maxValue">
-            <xsl:attribute name="max"><xsl:value-of select="@maxValue" /></xsl:attribute>
-          </xsl:if>
-        </textbox>
-      </xsl:otherwise>
-    </xsl:choose>
+  <xsl:template match="p:pref[p:view]" mode="element">
+    <vbox flex="1">
+      <xsl:apply-templates select="p:view/*" />
+    </vbox>
   </xsl:template>
 
-  <xsl:template match="p:*" mode="standard-attributes">
+  <xsl:template match="p:pref[@mode='select']" mode="element">
+    <label value="{@label}" />
+    <menulist preference="{@key}">
+      <menupopup>
+        <xsl:for-each select="p:option">
+          <menuitem label="{@label}" crop="end" value="{text()}" />
+        </xsl:for-each>
+      </menupopup>
+    </menulist>
+  </xsl:template>
+
+  <xsl:template match="p:pref[@mode='radio']" mode="element">
+    <radiogroup preference="{@key}">
+      <xsl:for-each select="p:option">
+        <radio label="{@label}" value="{text()}" />
+      </xsl:for-each>
+    </radiogroup>
+  </xsl:template>
+
+  <xsl:template match="p:pref[@mode='color']" mode="element">
+    <label value="{@label}" />
+    <colorpicker preference="{@key}" type="button" />
+  </xsl:template>
+
+  <xsl:template match="p:pref[@mode='file' or p:mode/@name='file']" mode="element">
+    <xsl:variable name="filters">
+      <xsl:for-each select="p:mode/p:filterType/@value">
+        <xsl:value-of select="." />
+        <xsl:if test="position() != last()">,</xsl:if>
+      </xsl:for-each>
+    </xsl:variable>
+
+    <box class="filepicker" label="{@label}" title="&config.choosefile;" filters="{$filters}">
+      <textbox flex="1" preference="{@key}" />
+    </box>
+  </xsl:template>
+
+  <xsl:template match="p:pref" mode="element">
+    <label value="{@label}" />
+    <xsl:if test="@type = 'int'">
+      <spacer flex="1" />
+    </xsl:if>
+    <textbox preference="{@key}">
+      <xsl:choose>
+        <xsl:when test="@type = 'int'">
+          <xsl:attribute name="type">number</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="flex">1</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:if test="@minValue">
+        <xsl:attribute name="min"><xsl:value-of select="@minValue" /></xsl:attribute>
+      </xsl:if>
+      <xsl:if test="@maxValue">
+        <xsl:attribute name="max"><xsl:value-of select="@maxValue" /></xsl:attribute>
+      </xsl:if>
+    </textbox>
+  </xsl:template>
+
+  <xsl:template match="p:*" mode="basic-attributes">
     <xsl:variable name="key" select="ancestor-or-self::*[@key and not(starts-with(@key, 'guiconfig.'))][1]/@key" />
     <xsl:if test="$key">
       <xsl:attribute name="data-key"><xsl:value-of select="$key" /></xsl:attribute>
@@ -182,15 +162,18 @@
     <xsl:if test="@description">
       <xsl:attribute name="data-description"><xsl:value-of select="@description" /></xsl:attribute>
     </xsl:if>
-    <xsl:if test="$key or @description">
-      <xsl:attribute name="onmouseenter">guiconfig.preferences.setInfo(this, this.getAttribute('data-description'), this.getAttribute('data-key'))</xsl:attribute>
-      <xsl:attribute name="onmouseleave">guiconfig.preferences.setInfo()</xsl:attribute>
+    <xsl:if test="@indent"><xsl:attribute name="data-indent" /></xsl:if>
+  </xsl:template>
+
+  <xsl:template match="p:*" mode="filter-attributes">
+    <xsl:if test="@minVersion">
+      <xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute>
     </xsl:if>
-    <xsl:if test="@minVersion"><xsl:attribute name="data-minVersion"><xsl:value-of select="@minVersion" /></xsl:attribute></xsl:if>
-    <xsl:if test="@maxVersion"><xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute></xsl:if>
-    <xsl:if test="@platform"><xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute></xsl:if>
-    <xsl:if test="@indent">
-      <xsl:attribute name="class">prefrow indent</xsl:attribute>
+    <xsl:if test="@maxVersion">
+      <xsl:attribute name="data-maxVersion"><xsl:value-of select="@maxVersion" /></xsl:attribute>
+    </xsl:if>
+    <xsl:if test="@platform">
+      <xsl:attribute name="data-platform"><xsl:value-of select="@platform" /></xsl:attribute>
     </xsl:if>
   </xsl:template>
 
@@ -198,7 +181,6 @@
 
   <xsl:template match="/p:preferences">
     <xsl:apply-templates />
-
     <prefpane id="guiconfig-search-results" label="&config.searchresults;" image="chrome://guiconfig/skin/icons/categories/search.png" flex="1"></prefpane>
   </xsl:template>
 

@@ -30,14 +30,6 @@
     });
   </xsl:template>
 
-  <xsl:template match="p:pref" mode="script_init_button_select_file">
-    <xsl:apply-templates select="." mode="script_filter" />
-    registerSelectFileButton('<xsl:value-of select="@key" />',
-        [<xsl:for-each select="p:mode/p:filterType">
-           '<xsl:value-of select="@value" />'<xsl:if test="position() != last()">,</xsl:if>
-         </xsl:for-each>]);
-  </xsl:template>
-
   <xsl:template match="p:dependency" mode="json">
     {
       <xsl:if test="@equals">'equals': <xsl:value-of select="@equals" />,</xsl:if>
@@ -53,7 +45,6 @@
       (function() {
         <xsl:apply-templates select="//p:pref[p:dependency]" mode="script_init_dependency" />
         <xsl:apply-templates select="//p:pref[p:behavior/p:override]" mode="script_init_behavior" />
-        <xsl:apply-templates select="//p:pref[@mode = 'file' or p:mode/@name = 'file']" mode="script_init_button_select_file" />
       })();
     </script>
   </xsl:template>

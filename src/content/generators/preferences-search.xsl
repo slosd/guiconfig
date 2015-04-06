@@ -23,33 +23,22 @@
     <xsl:if test="@description">
       <xsl:attribute name="data-description"><xsl:value-of select="@description" /></xsl:attribute>
     </xsl:if>
-    <xsl:if test="$key or @description">
-      <xsl:attribute name="onmouseenter">guiconfig.preferences.setInfo(this, this.getAttribute('data-description'), this.getAttribute('data-key'))</xsl:attribute>
-      <xsl:attribute name="onmouseleave">guiconfig.preferences.setInfo()</xsl:attribute>
-    </xsl:if>
     <xsl:attribute name="data-minVersion"><xsl:value-of select="ancestor-or-self::*[@minVersion][1]/@minVersion" /></xsl:attribute>
     <xsl:attribute name="data-maxVersion"><xsl:value-of select="ancestor-or-self::*[@maxVersion][1]/@maxVersion" /></xsl:attribute>
     <xsl:attribute name="data-platform"><xsl:value-of select="ancestor-or-self::*[@platform][1]/@platform" /></xsl:attribute>
-    <label style="font-size: smaller">
-      <xsl:attribute name="value">
-        <xsl:for-each select="ancestor::*[@label]">
-          <xsl:value-of select="@label" />
-          <xsl:if test="position() != last()"> » </xsl:if>
-        </xsl:for-each>
-      </xsl:attribute>
-    </label>
-    <hbox>
-      <label class="text-link header">
-        <xsl:attribute name="value">
-          <xsl:choose>
-            <xsl:when test="@label"><xsl:value-of select="@label" /></xsl:when>
-            <xsl:when test="p:view"><xsl:value-of select="p:view/*[1]/@label" /></xsl:when>
-            <xsl:otherwise><xsl:value-of select="ancestor::*[@label][1]/@label" /></xsl:otherwise>
-          </xsl:choose>
-        </xsl:attribute>
-        <xsl:attribute name="onclick">guiconfig.preferences.showPreference('<xsl:value-of select="@key" />')</xsl:attribute>
-      </label>
-    </hbox>
+    <xsl:attribute name="breadcrumbs">
+      <xsl:for-each select="ancestor::*[@label]">
+        <xsl:value-of select="@label" />
+        <xsl:if test="position() != last()"> » </xsl:if>
+      </xsl:for-each>
+    </xsl:attribute>
+    <xsl:attribute name="label">
+      <xsl:choose>
+        <xsl:when test="@label"><xsl:value-of select="@label" /></xsl:when>
+        <xsl:when test="p:view"><xsl:value-of select="p:view/*[1]/@label" /></xsl:when>
+        <xsl:otherwise><xsl:value-of select="ancestor::*[@label][1]/@label" /></xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
   </xsl:template>
 
   <xsl:template match="*" />
@@ -70,9 +59,9 @@
           <xsl:variable name="match_set" select="$query_set[contains($terms, .)]" />
 
           <xsl:if test="count($match_set) >= count($query_set)">
-            <vbox>
+            <box class="gcsearchresult">
               <xsl:apply-templates select="." />
-            </vbox>
+            </box>
           </xsl:if>
         </xsl:for-each>
       </vbox>

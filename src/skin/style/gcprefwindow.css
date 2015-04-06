@@ -5,3 +5,13 @@
 #guiconfig-preference-search textbox {
   margin: 8px 8px 0 8px;
 }
+
+#guiconfig-search-results,
+radio[pane=guiconfig-search-results] {
+  display: none;
+}
+
+.search-active #guiconfig-search-results,
+.search-active radio[pane=guiconfig-search-results] {
+  display: -moz-box;
+}

@@ -1,18 +1,20 @@
-#gcPreferencesDialog {
+prefwindow.gcprefwindow {
 	-moz-binding: url('chrome://guiconfig/content/bindings/preferences.xml#gcprefwindow');
 }
 
-#guiconfig-search-results,
-radio[pane=guiconfig-search-results] {
-  display: none;
+box.gcpreference {
+  -moz-binding: url('chrome://guiconfig/content/bindings/preferences.xml#gcpreference');
 }
 
-.search-active #guiconfig-search-results,
-.search-active radio[pane=guiconfig-search-results] {
-  display: -moz-box;
+box.gcsearchresult {
+  -moz-binding: url('chrome://guiconfig/content/bindings/preferences.xml#gcsearchresult');
 }
 
-.prefrow.highlight {
+box.filepicker {
+  -moz-binding: url('chrome://guiconfig/content/bindings/preferences.xml#filepicker');
+}
+
+.highlight {
   animation: highlight 1s;
 }
 
