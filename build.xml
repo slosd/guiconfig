@@ -35,6 +35,7 @@
     </copy>
 
     <antcall target="validate-preferences" />
+    <antcall target="transform-preferences" />
 
     <antcall target="createXPI">
       <param name="file" value="guiconfig-${version}.xpi" />
@@ -65,6 +66,7 @@
     </copy>
 
     <antcall target="validate-preferences" />
+    <antcall target="transform-preferences" />
 
     <antcall target="createXPI">
       <param name="file" value="guiconfig-${version}-babelzilla.xpi" />
@@ -110,6 +112,24 @@
       <property name="http://java.sun.com/xml/jaxp/properties/schemaLanguage" value="http://www.w3.org/2001/XMLSchema"/>
     </schemavalidate>
     <delete file="${build.dir}/content/preferences.local.xml"/>
+  </target>
+
+  <target name="transform-preferences">
+    <property name="validate.locale" value="en-US" />
+
+    <copy file="${build.dir}/content/preferences.xml" tofile="${build.dir}/content/preferences.local.xml" overwrite="true" />
+    <replace file="${build.dir}/content/preferences.local.xml">
+      <replacefilter token="chrome://guiconfig/locale/" value="${build.dir}/locale/${validate.locale}/"/>
+      <replacefilter token="chrome://guiconfig/content/" value="."/>
+    </replace>
+    <copy file="${build.dir}/content/generators/preferences-dialog.xsl" tofile="${build.dir}/content/generators/preferences-dialog.local.xsl" overwrite="true" />
+    <replace file="${build.dir}/content/generators/preferences-dialog.local.xsl">
+      <replacefilter token="chrome://guiconfig/locale/" value="${build.dir}/locale/${validate.locale}/"/>
+      <replacefilter token="chrome://guiconfig/content/" value="."/>
+    </replace>
+    <xslt in="${build.dir}/content/preferences.local.xml" out="${build.dir}/../build-preferences.xul" style="${build.dir}/content/generators/preferences-dialog.local.xsl"/>
+    <delete file="${build.dir}/content/preferences.local.xml"/>
+    <delete file="${build.dir}/content/generators/preferences-dialog.local.xsl"/>
   </target>
 
   <target name="release-locales">
