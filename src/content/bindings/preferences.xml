@@ -65,6 +65,7 @@
       <![CDATA[
         Components.utils.import('chrome://guiconfig/content/guiconfig.js');
 
+        this._selector = document.getAnonymousElementByAttribute(this, 'anonid', 'selector');
         this._body = document.getAnonymousElementByAttribute(this, 'anonid', 'body');
         this._infoBox = document.getAnonymousElementByAttribute(this, 'anonid', 'info-box');
         this._description = document.getAnonymousElementByAttribute(this, 'anonid', 'description');
@@ -78,6 +79,13 @@
           for (var pane of result.querySelectorAll('prefpane')) {
             self.addPane(pane);
           }
+
+          // Disable the search radio element so it cannot be selected
+          // when the user navigates with a keyboard.
+          var searchSelector = self._selector.querySelector('radio[pane="guiconfig-search-results"]');
+          searchSelector.disabled = true;
+          searchSelector.style.visibility = 'hidden';
+
           var lastSelectedPane = self.lastSelected ? document.getElementById(self.lastSelected) : null;
           self.showPane(lastSelectedPane && lastSelectedPane != self.searchPane ? lastSelectedPane : self.preferencePanes[0]);
           prefPanesLoaded = true;
@@ -181,6 +189,10 @@
 
           var self = this;
           var preferenceSource = this.getAttribute('source');
+
+          var searchSelector = this._selector.querySelector('radio[pane="guiconfig-search-results"]');
+          searchSelector.disabled = !query;
+          searchSelector.style.visibility = query ? 'visible' : 'hidden';
 
           if (query) {
             guiconfig.buildPreferenceSearchResult(document, preferenceSource, query, function(result) {
