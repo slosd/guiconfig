@@ -72,25 +72,14 @@
         this._key = document.getAnonymousElementByAttribute(this, 'anonid', 'key');
 
         var self = this;
-        var prefScript;
-        var prefPanesLoaded = false;
         var preferenceSource = this.getAttribute('source');
-        guiconfig.buildPreferencePanes(document, preferenceSource, function(result) {
-          for (var pane of result.querySelectorAll('prefpane')) {
+        guiconfig.buildDialog(document, preferenceSource, function(panes, script) {
+          for (var pane of panes) {
             self.addPane(pane);
           }
           var lastSelectedPane = self.lastSelected ? document.getElementById(self.lastSelected) : null;
           self.showPane(lastSelectedPane && lastSelectedPane != self.searchPane ? lastSelectedPane : self.preferencePanes[0]);
-          prefPanesLoaded = true;
-          if (prefScript) {
-            guiconfig.runPreferenceScript(document, prefScript);
-          }
-        });
-        guiconfig.buildPreferenceScript(document, preferenceSource, function(result) {
-          prefScript = result.querySelector('script').textContent;
-          if (prefPanesLoaded) {
-            guiconfig.runPreferenceScript(document, prefScript);
-          }
+          guiconfig.runPreferenceScript(document, script);
         });
       ]]>
       </constructor>
@@ -105,9 +94,9 @@
           function showInfoBox(anchor) {
             if (anchor) {
               var height = anchor.clientHeight;
-              infoBox.openPopup(anchor, "end_before", 0, height / 2, false, false);
+              infoBox.openPopup(anchor, 'end_before', 0, height / 2, false, false);
             } else {
-              infoBox.openPopup(this._body, "end_before", 0, 0, false, false);
+              infoBox.openPopup(this._body, 'end_before', 0, 0, false, false);
             }
           }
 
@@ -180,7 +169,7 @@
           if (!this.contextPreference) return;
 
           var key = this.contextPreference.getAttribute('data-key');
-          var clipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"]
+          var clipboardHelper = Components.classes['@mozilla.org/widget/clipboardhelper;1']
                                     .getService(Components.interfaces.nsIClipboardHelper);
           clipboardHelper.copyString(key);
         ]]>

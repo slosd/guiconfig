@@ -1,12 +1,12 @@
-Components.utils.import("resource://gre/modules/Services.jsm");
+Components.utils.import('resource://gre/modules/Services.jsm');
 
-var EXPORTED_SYMBOLS = [ "browser" ];
+var EXPORTED_SYMBOLS = [ 'browser' ];
 
-const GC_PREF_FIRST_START = "extensions.guiconfig.firststart";
+const GC_PREF_FIRST_START = 'extensions.guiconfig.firststart';
 
 var CUSTOMIZABLE_UI;
 try {
-  Components.utils.import("resource:///modules/CustomizableUI.jsm");
+  Components.utils.import('resource:///modules/CustomizableUI.jsm');
   CUSTOMIZABLE_UI = true;
 } catch(e) {
   CUSTOMIZABLE_UI = false;
@@ -31,10 +31,10 @@ var strings = Services.strings.createBundle('chrome://guiconfig/locale/gcLocale.
 
 function registerUI(node) {
   var window = node.ownerDocument.defaultView;
-  if (!window)
-    return;
-  if (!nodes.has(window))
+  if (!window) return;
+  if (!nodes.has(window)) {
     nodes.set(window, []);
+  }
   nodes.get(window).push(node);
   return node;
 }
@@ -43,8 +43,7 @@ function removeUI(window) {
   if (CUSTOMIZABLE_UI) {
     CustomizableUI.destroyWidget(BUTTON_ID);
   }
-  if (!nodes.has(window))
-    return;
+  if (!nodes.has(window)) return;
   for (var node of nodes.get(window)) {
     if (node && node.parentNode) {
       node.parentNode.removeChild(node);

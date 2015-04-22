@@ -1,20 +1,24 @@
-var EXPORTED_SYMBOLS = [ "guiconfig" ];
+var EXPORTED_SYMBOLS = [ 'guiconfig' ];
+
+const preferencesDialogXSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
+const preferencesScriptXSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
+const preferencesSearchXSLT = 'chrome://guiconfig/content/generators/preferences-search.xsl';
 
 var Cc = Components.classes;
 var Ci = Components.interfaces;
 
-var runtimeInfo = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULRuntime);
-var applicationInfo = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
-var versionComparator = Cc['@mozilla.org/xpcom/version-comparator;1'].getService(Ci.nsIVersionComparator);
-var XMLHttpRequest = Components.Constructor("@mozilla.org/xmlextras/xmlhttprequest;1", "nsIXMLHttpRequest");
+var RuntimeInfo = Cc['@mozilla.org/xre/app-info;1'].getService(Ci.nsIXULRuntime);
+var ApplicationInfo = Cc['@mozilla.org/xre/app-info;1'].getService(Ci.nsIXULAppInfo);
+var VersionComparator = Cc['@mozilla.org/xpcom/version-comparator;1'].getService(Ci.nsIVersionComparator);
+var XMLHttpRequest = Components.Constructor('@mozilla.org/xmlextras/xmlhttprequest;1', 'nsIXMLHttpRequest');
 
 function isApplicationVersionBetween(minVersion, maxVersion) {
-  return !(minVersion && versionComparator.compare(applicationInfo.version, minVersion) == -1 ||
-         maxVersion && versionComparator.compare(applicationInfo.version, maxVersion) == 1);
+  return !(minVersion && VersionComparator.compare(ApplicationInfo.version, minVersion) == -1 ||
+         maxVersion && VersionComparator.compare(ApplicationInfo.version, maxVersion) == 1);
 }
 
 function isApplicationPlatform(platform) {
-  return !platform || runtimeInfo.OS === platform;
+  return !platform || RuntimeInfo.OS === platform;
 }
 
 function isPreferenceSupported(node) {
@@ -29,7 +33,7 @@ function preferencesNodeFilter(node) {
 }
 
 function transformXML(xml, xsl, doc, params) {
-  var xsltProcessor = Cc["@mozilla.org/document-transformer;1?type=xslt"].createInstance(Ci.nsIXSLTProcessor);
+  var xsltProcessor = Cc['@mozilla.org/document-transformer;1?type=xslt'].createInstance(Ci.nsIXSLTProcessor);
   for (var name in params) {
     xsltProcessor.setParameter(null, name, params[name]);
   }
@@ -43,8 +47,9 @@ function applyXSLT(xsl_uri, xml_uri, doc, onTransformed, params) {
   var requestXsl = new XMLHttpRequest();
   requestXsl.onload = function() {
     xsl = requestXsl.responseXML;
-    if (xml)
+    if (xml) {
       onTransformed(transformXML(xml, xsl, doc, params));
+    }
   };
   requestXsl.open('GET', xsl_uri);
   requestXsl.send(null);
@@ -52,8 +57,9 @@ function applyXSLT(xsl_uri, xml_uri, doc, onTransformed, params) {
   var requestXml = new XMLHttpRequest();
   requestXml.onload = function() {
     xml = requestXml.responseXML;
-    if (xsl)
+    if (xsl) {
       onTransformed(transformXML(xml, xsl, doc, params));
+    }
   };
   requestXml.open('GET', xml_uri);
   requestXml.send(null);
@@ -146,34 +152,35 @@ function runScriptSandboxed(document, script) {
   try {
     Components.utils.evalInSandbox(script, sandbox);
   } catch(e) {
-    dump(e + "\n");
+    Components.utils.reportError(e);
   }
 }
 
 var guiconfig = {
-  buildPreferencePanes: function(document, preference_source, onFinished) {
-    applyXSLT(
-        'chrome://guiconfig/content/generators/preferences-dialog.xsl',
-        preference_source, document,
+  buildDialog: function(document, preference_source, onFinished) {
+    var prefPanes, prefScript;
+    applyXSLT(preferencesDialogXSLT, preference_source, document,
         function(result) {
-          onFinished(cloneXUL(result, document, document.createDocumentFragment()));
+          var copy = cloneXUL(result, document, document.createDocumentFragment());
+          prefPanes = copy.querySelectorAll('prefpane');
+          if (prefScript) {
+            onFinished(prefPanes, prefScript);
+          }
+        });
+    applyXSLT(preferencesScriptXSLT, preference_source, document,
+        function(result) {
+          prefScript = result.querySelector('script').textContent;
+          if (prefPanes) {
+            onFinished(prefPanes, prefScript);
+          }
         });
   },
 
-  buildPreferenceScript: function(document, preference_source, onFinished) {
-    applyXSLT(
-        'chrome://guiconfig/content/generators/preferences-script.xsl',
-        preference_source, document, onFinished);
-  },
-
   buildPreferenceSearchResult: function(document, preference_source, query, onFinished) {
-    applyXSLT(
-        'chrome://guiconfig/content/generators/preferences-search.xsl',
-        preference_source, document,
+    applyXSLT(preferencesSearchXSLT, preference_source, document,
         function(result) {
           onFinished(cloneXUL(result, document, document.createDocumentFragment()));
-        },
-        { 'query': query });
+        }, { 'query': query });
   },
 
   runPreferenceScript: function(document, script) {
