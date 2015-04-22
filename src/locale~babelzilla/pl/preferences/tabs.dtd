@@ -1,21 +1,17 @@
 <!ENTITY tabs "Karty">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Minimalna szerokość karty dla przycisku zamknięcia">
 <!ENTITY browser_tabs_tabClipWidth_description "Określa najmniejszą szerokość karty przy której wyświetlany będzie przycisk zamknięcia karty.">
-
 <!-- Tab preview -->
 <!ENTITY tab_preview "Podgląd kart">
 <!ENTITY browser_ctrlTab_preview_name "Włącz wyświetlanie podglądów kart podczas ich wyboru">
 <!ENTITY browser_ctrlTab_preview_description "Wyświetla podgląd kart przy zmianie ich przy pomocy skrótu [CTRL]+[Tab].">
 <!ENTITY browser_taskbar_previews_enable_name "Włącz podglądy w pasku zadań Windowsa 7">
 <!ENTITY browser_taskbar_previews_enable_description "Włączenie tej opcji sprawi, że Firefox będzie wyświetlał podgląd każdej karty na pasku zadań Windowsa 7.">
-
 <!-- Open in background -->
 <!ENTITY open_in_background "Otwiera nową kartę w tle z">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Odnośńiki w innych aplikacjach">
 <!ENTITY browser_tabs_loadInBackground_name "Odnośniki na stronach internetowych">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Otwieraj zakładki w tle">
-
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Animuj karty">
 <!ENTITY browser_tabs_animate_description "Włącza animacje odtwarzane podczas otwierania kart, zmiany ich kolejności i usuwania ich.">

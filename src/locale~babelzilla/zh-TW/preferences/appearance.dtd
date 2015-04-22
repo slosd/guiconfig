@@ -1,5 +1,4 @@
 <!ENTITY appearance "外觀">
-
 <!-- Browser -->
 <!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_chrome_favicons_name "顯示小圖示">
@@ -10,9 +9,7 @@
 <!ENTITY browser_preferences_animateFadeIn_description "當切換設定控制頁時，在大約超過一秒的時間內改變視窗高度並淡入新的控制頁。">
 <!ENTITY browser_preferences_instantApply_name "立刻生效">
 <!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
-
 <!-- New tab page -->
-
 <!-- Selected text -->
 <!ENTITY text_select "文字標選">
 <!ENTITY ui_textSelectBackgroundAttention_name "符合搜尋的文字背景顏色">

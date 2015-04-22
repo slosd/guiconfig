@@ -1,26 +1,22 @@
 <!ENTITY mousebehaviour "Поведение мыши">
-
 <!-- Middle click -->
 <!ENTITY middleclick "Щелчок средней кнопкой">
 <!ENTITY middlemouse_contentLoadURL_name "Загрузить адрес из буфера обмена">
 <!ENTITY middlemouse_contentLoadURL_description "Щелчок средней кнопкой загружает содержимое буфера обмена как адрес.">
 <!ENTITY middlemouse_paste_name "Вставить текст из буфера обмена">
 <!ENTITY middlemouse_paste_description "Щелчок средней кнопкой вставляет содержимое буфера обмена в текстовое поле.">
-
 <!-- Mouse click -->
 <!ENTITY mouseclick "Щелчки мышью">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Выделять содержимое щелчком мыши">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Щелчок по адресной строке выделяет её содержимое.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Выделять содержимое двойным щелчком">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Двойной щелчок по адресной строке выделяет её содержимое.">
-
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Вертикальная прокрутка мышью">
 <!ENTITY mousewheel_action_o1 "прокрутить строки">
 <!ENTITY mousewheel_action_o2 "прокрутить страницы">
 <!ENTITY mousewheel_action_o3 "вперёд/назад по истории">
 <!ENTITY mousewheel_action_o4 "масштабировать страницу">
-
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Клавиша Backspace">
 <!ENTITY browser_backspace_action_description "Определяет поведение клавиши «Забой».">

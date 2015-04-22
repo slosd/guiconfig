@@ -1,5 +1,4 @@
 <!ENTITY appearance "Utseende">
-
 <!-- Browser -->
 <!ENTITY browser_style "Webbläsare">
 <!ENTITY browser_chrome_favicons_name "Visa sajtikoner">
@@ -12,7 +11,6 @@
 <!ENTITY browser_preferences_inContent_description "Om alternativet aktiveras öppnas inställningarna i en flik istället för i ett nytt fönster.">
 <!ENTITY browser_preferences_instantApply_name "Verkställ automatiskt">
 <!ENTITY browser_preferences_instantApply_description "Ändringar i inställningar verkställs direkt. Inställningar-fönstret är inte längre modalt, så istället för knapparna &quot;OK&quot; och &quot;Avbryt&quot; finns där bara en &quot;Stäng&quot;-knapp.">
-
 <!-- New tab page -->
 <!ENTITY new_tab_page "Sidan Ny flik">
 <!ENTITY browser_newtabpage_rows_name "Antal rader">
@@ -23,7 +21,6 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "Om alternativet aktiveras skapar Firefox skärmbilder som används i rutnätet på sidan &quot;Ny flik&quot;.">
 <!ENTITY browser_newtab_url_name "URL för nya flikar">
 <!ENTITY browser_newtab_url_description "Anger en URL som ska användas för nyöppnade flikar. Det här ersätter rutnätet över ofta använda webbplatser.">
-
 <!-- Selected text -->
 <!ENTITY text_select "Markerad text">
 <!ENTITY ui_textSelectBackgroundAttention_name "Söklistens bakgrundsfärg">

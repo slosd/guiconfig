@@ -1,12 +1,10 @@
 <!ENTITY developing "Ontwikkeling">
-
 <!-- View Source -->
 <!ENTITY viewsource "Bron bekijken">
 <!ENTITY view_source_editor_external_name "Aangepast bewerkingsprogramma gebruiken">
 <!ENTITY view_source_editor_external_description "Een aangepast bewerkingsprogramma gebruiken om de bron te bekijken.">
 <!ENTITY view_source_editor_path_name "Pad bewerkingsprogramma">
 <!ENTITY view_source_editor_path_description "Pad naar het aangepaste bewerkingsprogramma">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "XUL-buffer uitschakelen">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Wijzigingen aan vensters en dialoogvensters vereisen geen herstart. Werkt niet met bestanden verpakt in een JAR.">

@@ -1,8 +1,6 @@
 <!ENTITY content "Inhoud">
-
 <!-- Websites -->
 <!ENTITY websites "Websites">
-
 <!-- Images -->
 <!ENTITY images "Afbeeldingen">
 <!ENTITY gfx_color_management_mode_name "Kleurenbeheer gebruiken voor">
@@ -19,15 +17,14 @@
 <!ENTITY browser_display_show_image_placeholders_description "Laat plaatshouders zien terwijl de afbeelding wordt geladen.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Afbeeldingen aanpassen">
 <!ENTITY browser_enable_automatic_image_resizing_description "Bij het bekijken van een afbeelding buiten een webpagina wordt de afbeelding aangepast om te passen in het browservenster als het daar te groot voor is.">
-
 <!-- Rendering -->
 <!ENTITY rendering "Verwerking">
 <!ENTITY nglayout_initialpaint_delay_name "Vertraging voor weergave van een pagina (msec)">
 <!ENTITY nglayout_initialpaint_delay_description "Deze voorkeur bepaalt het aantal te wachten milliseconden voordat een pagina wordt verwerkt. Lagere waarden laten een pagina sneller zien, maar zorgen dat het langer duurt voordat de verwerking van de pagina klaar is. Hogere waarden hebben het omgekeerde effect.">
 <!ENTITY content_notify_interval_name "Vertraging voor opnieuw opmaken pagina (microsec)">
 <!ENTITY content_notify_interval_description "Firefox verwerkt periodiek alle ontvangen gegevens van een website. Deze voorkeur geeft de minimale wachttijd voor opnieuw opmaken van de pagina in microseconden. Lagere waarden verlagen de ervaren laadtijd maar verhogen de totale laadtijd.">
-
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Automatisch afspelen van media inschakelen">
 <!ENTITY geo_enabled_name "Locatiebewust navigeren inschakelen">
 <!ENTITY geo_enabled_description "Indien ingeschakeld kan Firefox u vragen of u de bezochte website wilt vertellen waar u bent. Uitschakelen van deze optie schakelt deze functie geheel uit.">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL inschakelen">
@@ -40,10 +37,8 @@
 <!ENTITY layout_frames_force_resizability_name "Aanpasbare frames afdwingen">
 <!ENTITY dom_max_script_run_time_name "Max. runtime scripts (sec)">
 <!ENTITY dom_max_script_run_time_description "Bepaalt het aantal seconden dat Firefox wacht voordat een waarschuwing wordt weergegeven dat een script te lang doet over uitvoering.">
-
 <!-- Accessibility -->
 <!ENTITY accessibility "Toegankelijkheid">
-
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Hoofdlettergevoelig">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Bepaalt omgang met hoofdlettergevoeligheid. Indien ‘Automatisch bepaald’ is de zoekopdracht hoofdlettergevoelig als deze hoofd- en kleine letters bevat.">
@@ -54,7 +49,6 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Time-out (milliseconden)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Bepaalt na hoeveel tijd zonder toetsenbordinvoer de zoekbalk verdwijnt.">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Zoekveld met geselecteerde tekst vullen">
-
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Browser inzoomen">
 <!ENTITY browser_zoom_full_name "Volledige zoom gebruiken in plaats van tekst zoomen.">
@@ -63,7 +57,6 @@
 <!ENTITY browser_zoom_siteSpecific_description "Indien ingeschakeld worden zoomniveau’s opgeslagen en voor elke website teruggehaald. Anders wordt het zoomniveau gereset bij het volgende bezoek.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Achtergrondtabbladen bijwerken">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Andere tabbladen bijwerken naar het zoomniveau van het huidige tabblad.">
-
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Aanmeldformuliervelden automatisch invullen">
 <!ENTITY signon_prefillForms_description "Formuliervelden automatisch vullen met gebruikersnamen en wachtwoorden.">
@@ -80,3 +73,15 @@
 <!ENTITY layout_spellcheckDefault_o1 "Uitschakelen">
 <!ENTITY layout_spellcheckDefault_o2 "Inschakelen voor meerregelige tekstvelden">
 <!ENTITY layout_spellcheckDefault_o3 "Inschakelen voor meerregelige en enkelregelige tekstvelden">
+<!ENTITY javascript "Javascript">
+<!ENTITY permissions "Rechten">
+<!ENTITY javascript_enabled_name "Javascript inschakelen">
+<!ENTITY javascript_enabled_description "Schakelt Javascript in of uit voor alle websites.">
+<!ENTITY dom_disable_window_move_resize_name "Vensters verplaatsen en aanpassen">
+<!ENTITY dom_disable_window_move_resize_description "Scripts toestaan om browservensters te verplaatsen en/of aan te passen.">
+<!ENTITY dom_disable_window_flip_name "Vensters omhoog en omlaag verplaatsen">
+<!ENTITY dom_disable_window_flip_description "Scripts toestaan om browservensters omhoog en/of omlaag te verplaatsen.">
+<!ENTITY dom_event_contextmenu_enabled_name "Het contextmenu verwijderen en vervangen">
+<!ENTITY dom_event_contextmenu_enabled_description "Scripts toestaan contextmenu’s op websites te verwijderen en/of te vervangen.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interactie met het klembord">
+<!ENTITY dom_event_clipboardevents_enabled_description "Scripts toestaan een bericht te krijgen wanneer de gebruiker het klembord gebruikt om inhoud van de website te kopiëren, knippen en plakken.">

@@ -1,12 +1,10 @@
 <!ENTITY developing "Développement">
-
 <!-- View Source -->
 <!ENTITY viewsource "Code source de la page">
 <!ENTITY view_source_editor_external_name "Utiliser un éditeur personnalisé">
 <!ENTITY view_source_editor_external_description "Utiliser un éditeur personnalisé pour voir le code source.">
 <!ENTITY view_source_editor_path_name "Répertoire de l&apos;éditeur">
 <!ENTITY view_source_editor_path_description "Répertoire de l&apos;éditeur personnalisé.">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Désactiver le cache XUL">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Les modifications concernant fenêtres et boîtes de dialogue ne nécessitent pas un redémarrage. Cela ne fonctionne pas avec les fichiers étant dans un paquetage JAR.">

@@ -37,8 +37,8 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
 <!ENTITY browser_urlbar_trimURLs_name "Webadressen (URLs) kürzen">
 <!ENTITY browser_urlbar_trimURLs_description "Kürzt das Protokoll (http) und abschließende Schrägstriche in Webadressen (URLs).">
-<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
-<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Einzelnes Wort als Domain behandeln">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Anstatt ein einzelnes Wort mit der Standardsuchmaschine zu suchen, wird versucht das Wort in der URL-Leiste über DNS aufzulösen. Erleichtert den Zugriff auf Hosts im lokalen Netzwerk.">
 <!-- Session restore -->
 <!ENTITY session_restore "Sitzung wiederherstellen">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">

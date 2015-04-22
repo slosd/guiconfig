@@ -1,4 +1,3 @@
-
 <!-- Browser -->
 <!ENTITY browser_style "Navigateur">
 <!ENTITY browser_chrome_favicons_name "Voir les favicônes">
@@ -9,9 +8,7 @@
 <!ENTITY browser_preferences_animateFadeIn_description "Modifie la hauteur de la fenêtre et fond avec le nouveau panneau en à peu près une seconde, lors du changement de panneau des préférences.">
 <!ENTITY browser_preferences_instantApply_name "Appliquer dès maintenant">
 <!ENTITY browser_preferences_instantApply_description "Les modifications des préférences sont aussitôt actives. Leur fenêtre n&apos;est plus modale : à la place des boutons « OK » et « Annuler » il n&apos;y a que le bouton « Fermer »">
-
 <!-- New tab page -->
-
 <!-- Selected text -->
 <!ENTITY text_select "Texte sélectionné">
 <!ENTITY ui_textSelectBackgroundAttention_name "Couleur de fond du « Trouvez ce que vous tapez »">

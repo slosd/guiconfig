@@ -1,10 +1,6 @@
-
-
 <!-- Tab preview -->
-
 <!-- Open in background -->
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Charger les marque-pages en arrière-plan">
-
 <!-- Misc -->
 <!ENTITY browser_tabs_closeButtons_name "Les boutons de fermeture sont affichés">
 <!ENTITY browser_tabs_closeButtons_description "Précise où afficher les boutons de clôture d&apos;onglets.">

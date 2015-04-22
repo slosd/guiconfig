@@ -1,5 +1,4 @@
 <!ENTITY appearance "Anzeige">
-
 <!-- Browser -->
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_name "Favicons anzeigen">
@@ -12,7 +11,6 @@
 <!ENTITY browser_preferences_inContent_description "Ist diese Option aktiviert, werden die Einstellungen in einem Tab anstatt einem neuen Fenster geöffnet.">
 <!ENTITY browser_preferences_instantApply_name "Einstellungen sofort übernehmen">
 <!ENTITY browser_preferences_instantApply_description "Änderungen im &quot;Einstellungen&quot;-Dialog werden sofort übernommen. Die Schaltflächen &quot;OK&quot; und &quot;Abbrechen&quot; werden durch eine &quot;Schließen&quot;-Schaltfläche ersetzt.">
-
 <!-- New tab page -->
 <!ENTITY new_tab_page "&quot;Neuer Tab&quot; Seite">
 <!ENTITY browser_newtabpage_rows_name "Zeilenanzahl">
@@ -23,7 +21,6 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "Ist die Option aktiviert, speichert Firefox Screenshots, die in der Ansicht häufig besuchter Webseiten in einem neuen Tab angezeigt werden.">
 <!ENTITY browser_newtab_url_name "Adresse (URL) für neue Tabs">
 <!ENTITY browser_newtab_url_description "Legt die Adresse (URL) für neu geöffnete Tabs fest. Diese Adresse ersetzt die Ansicht mit häufig besuchten Webseiten.">
-
 <!-- Selected text -->
 <!ENTITY text_select "Markierter Text">
 <!ENTITY ui_textSelectBackgroundAttention_name "Suchtext-Hintergrundfarbe">

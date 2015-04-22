@@ -1,5 +1,4 @@
 <!ENTITY appearance "Внешний вид">
-
 <!-- Browser -->
 <!ENTITY browser_style "Браузер">
 <!ENTITY browser_chrome_favicons_name "Показывать значки сайтов">
@@ -10,9 +9,7 @@
 <!ENTITY browser_preferences_animateFadeIn_description "При переключении между панелями настроек изменяет высоту окна и плавно выводит новую панель примерно через секунду.">
 <!ENTITY browser_preferences_instantApply_name "Применять немедленно">
 <!ENTITY browser_preferences_instantApply_description "Изменения параметров настроек используются немедленно. Окно настроек становится не модальным. Вместо кнопок «OK» и «Отмена» будет только кнопка «Закрыть».">
-
 <!-- New tab page -->
-
 <!-- Selected text -->
 <!ENTITY text_select "Выделенный текст">
 <!ENTITY ui_textSelectBackgroundAttention_name "Цвет фона помеченного текста">

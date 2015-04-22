@@ -1,5 +1,4 @@
 <!ENTITY appearance "Weergave">
-
 <!-- Browser -->
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_name "Favicons weergeven">
@@ -12,7 +11,6 @@
 <!ENTITY browser_preferences_inContent_description "Indien ingeschakeld worden de voorkeuren geopend in een tabblad in plaats van in een pop-upvenster.">
 <!ENTITY browser_preferences_instantApply_name "Direct toepassen">
 <!ENTITY browser_preferences_instantApply_description "Wijzigingen voorkeuren zijn onmiddellijk actief. Het voorkeursvenster is niet modaal. In plaats van de knoppen “OK” en “Annuleren” is er slechts een knop “Sluiten”.">
-
 <!-- New tab page -->
 <!ENTITY new_tab_page "Pagina Nieuw tabblad">
 <!ENTITY browser_newtabpage_rows_name "Aantal rijen">
@@ -23,7 +21,6 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "Indien ingeschakeld maakt Firefox schermafdrukken die in het raster van de pagina “Nieuw tabblad” worden gebruikt.">
 <!ENTITY browser_newtab_url_name "URL voor nieuwe tabbladen">
 <!ENTITY browser_newtab_url_description "Stelt de te gebruiken URL in voor nieuw geopende tabbladen. Dit vervangt het raster met vaak bezochte websites.">
-
 <!-- Selected text -->
 <!ENTITY text_select "Geselecteerde tekst">
 <!ENTITY ui_textSelectBackgroundAttention_name "Achtergrondkleur Zoeken tijdens typen">

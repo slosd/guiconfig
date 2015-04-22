@@ -1,8 +1,6 @@
 <!ENTITY content "Innehåll">
-
 <!-- Websites -->
 <!ENTITY websites "Webbplatser">
-
 <!-- Images -->
 <!ENTITY images "Bilder">
 <!ENTITY gfx_color_management_mode_name "Använd färghantering">
@@ -19,15 +17,14 @@
 <!ENTITY browser_display_show_image_placeholders_description "Visa bildplatshållare medan en bild läses in.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Ändra storlek på bilder">
 <!ENTITY browser_enable_automatic_image_resizing_description "När en bild visas ensam och inte som en del av en webbsida, kommer dess storlek att anpassas till webbläsarfönstret om den är för stor för att få plats i det.">
-
 <!-- Rendering -->
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_name "Tidsfördröjning innan en sida visas (ms)">
 <!ENTITY nglayout_initialpaint_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan första renderingen av en sida. Låga värden gör att sidan kommer att visas snabbare, men gör samtidigt att det tar längre tid innan renderingen slutförs. Höga värden ger motsatt effekt.">
 <!ENTITY content_notify_interval_name "Tidsfördröjning innan en sida ritas om (µs)">
 <!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda inläsningstiden, men ökar den totala inläsningstiden.">
-
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Aktivera automatisk uppspelning av media">
 <!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
 <!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet.">
 <!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">
@@ -40,10 +37,8 @@
 <!ENTITY layout_frames_force_resizability_name "Tvinga HTML-ramar att vara justerbara">
 <!ENTITY dom_max_script_run_time_name "Maxkörtid för skript (s)">
 <!ENTITY dom_max_script_run_time_description "Bestämmer det antal sekunder efter vilka Firefox meddelar dig att ett skript tar för lång tid på sig att köras.">
-
 <!-- Accessibility -->
 <!ENTITY accessibility "Tillgänglighet">
-
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Skiftlägeskänslig">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Avgör hur skiftlägeskänslighet ska hanteras. I läget &quot;Bestäm automatiskt&quot; är sökningen skiftlägeskänslig om söksträngen innehåller versaler, men inte endast består av versaler.">
@@ -54,7 +49,6 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Tidsgräns (ms)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Bestämmer hur lång tid som får gå utan ytterligare tangentnedslag, innan söklisten försvinner.">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fyll i sökrutan med markerad text">
-
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Webbläsarzoomning">
 <!ENTITY browser_zoom_full_name "Använd helsideszoomning istället för textzoomning">
@@ -63,7 +57,6 @@
 <!ENTITY browser_zoom_siteSpecific_description "Om alternativet aktiveras sparas zoomningsnivåerna för varje enskild webbplats. I annat fall återställs zoomningsnivån till standard vid nästa besök.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Uppdatera bakgrundsflikar">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Uppdaterar alla flikar som visar samma webbplats till denna aktuella zoomningsnivån.">
-
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Fyll automatiskt i formulärfält för inloggning">
 <!ENTITY signon_prefillForms_description "Fyll automatiskt i formulärfält med användarnamn och lösenord.">
@@ -80,3 +73,15 @@
 <!ENTITY layout_spellcheckDefault_o1 "Inaktivera">
 <!ENTITY layout_spellcheckDefault_o2 "Aktivera för flerradstextfält">
 <!ENTITY layout_spellcheckDefault_o3 "Aktivera för flerrads- och singelradstextfält">
+<!ENTITY javascript "JavaScript">
+<!ENTITY permissions "Behörigheter">
+<!ENTITY javascript_enabled_name "Aktivera JavaScript">
+<!ENTITY javascript_enabled_description "Aktiverar eller inaktiverar JavaScript för alla webbplatser.">
+<!ENTITY dom_disable_window_move_resize_name "Flytta och storleksändra fönster">
+<!ENTITY dom_disable_window_move_resize_description "Tillåter skript att flytta och/eller ändra storlek på webbläsarfönster.">
+<!ENTITY dom_disable_window_flip_name "Höja och sänka fönster">
+<!ENTITY dom_disable_window_flip_description "Tillåter skript att höja och/eller sänka webbläsarfönster.">
+<!ENTITY dom_event_contextmenu_enabled_name "Ta bort och ersätta snabbmenyn">
+<!ENTITY dom_event_contextmenu_enabled_description "Tillåter skript att ta bort och/eller ersätta snabbmenyn på webbplatser.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interagera med Urklipp">
+<!ENTITY dom_event_clipboardevents_enabled_description "Tillåter att skript meddelas när användaren använder Urklipp för att kopiera, klippa ut och klistra in webbsideinnehåll.">

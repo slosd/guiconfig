@@ -1,10 +1,6 @@
-
 <!-- Middle click -->
-
 <!-- Mouse click -->
-
 <!-- Vertical mouse scrolling -->
-
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Rettetast">
 <!ENTITY browser_backspace_action_description "Avgjør hva som skjer når du bruker rettetasten">

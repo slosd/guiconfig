@@ -1,7 +1,5 @@
-
 <!-- Websites -->
 <!ENTITY websites "網站">
-
 <!-- Images -->
 <!ENTITY images "圖片">
 <!ENTITY gfx_color_management_mode_name "使用顏色管理於">
@@ -13,14 +11,12 @@
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
 <!ENTITY browser_enable_automatic_image_resizing_description "當檢視一張不是位於網頁內的圖片時，圖片尺寸若太大，會被重訂到適合瀏覽器視窗大小。">
-
 <!-- Rendering -->
 <!ENTITY rendering "呈現">
 <!ENTITY nglayout_initialpaint_delay_name "顯示頁面延時(毫秒;千分之一秒)">
 <!ENTITY nglayout_initialpaint_delay_description "此選項指定首次呈現一頁面之前須等待的毫秒數。較小的數值可使頁面快些顯示但會需要較長的時間來完成呈現。較大的數值其效應恰與此相反。">
 <!ENTITY content_notify_interval_name "顯示重繪延時(微秒;百萬分之一秒)">
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
-
 <!-- Misc -->
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
@@ -30,10 +26,8 @@
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
 <!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
-
 <!-- Accessibility -->
 <!ENTITY accessibility "近接方面">
-
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "辨識大小寫">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "決定是否辨識大小寫。勾選&quot;自動判斷&quot;時，則在搜尋中，僅對含有大寫字母但非全部大寫的搜尋字串，視為須分別大小寫。">
@@ -43,9 +37,7 @@
 <!ENTITY accessibility_typeaheadfind_label "隨打即找">
 <!ENTITY accessibility_typeaheadfind_timeout_name "逾時(毫秒/千分秒)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "打字時隨即尋找">
-
 <!-- Browser zoom -->
-
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
 <!ENTITY signon_prefillForms_description "自動填妥各種&quot;登入&quot;表格欄中的使用者名稱以及密碼。">

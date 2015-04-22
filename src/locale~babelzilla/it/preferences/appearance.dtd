@@ -1,4 +1,3 @@
-
 <!-- Browser -->
 <!ENTITY browser_style "Browser">
 <!ENTITY browser_chrome_favicons_name "Mostra favicon">
@@ -9,9 +8,7 @@
 <!ENTITY browser_preferences_animateFadeIn_description "Cambia l&apos;altezza della finestra e genera un effetto dissolvenza per circa un secondo quando si passa da un pannello all&apos;altro nella finestra delle Opzioni.">
 <!ENTITY browser_preferences_instantApply_name "Applica subito">
 <!ENTITY browser_preferences_instantApply_description "Le modifiche nella finestra Opzioni sono immediatamente attive. La finestra delle Opzioni non è modale. Al posto dei pulsanti &apos;OK&apos; e &apos;Annulla&apos; è presente solo il tasto &apos;Chiudi&apos;.">
-
 <!-- New tab page -->
-
 <!-- Selected text -->
 <!ENTITY text_select "Selezione del testo">
 <!ENTITY ui_textSelectBackgroundAttention_name "Colore di sfondo del testo evidenziato">

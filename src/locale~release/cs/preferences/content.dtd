@@ -24,7 +24,7 @@
 <!ENTITY content_notify_interval_name "Prodleva před překreslením stránky (mikrosekund)">
 <!ENTITY content_notify_interval_description "Firefox pravidelně vykresluje všechna data, která pro stránku obdrží. Tato předvolba stanovuje minimální dobu v mikrosekundách, kterou bude čekat mezi překreslováním stránky. Nižší hodnoty způsobí, že se načítání stránky bude zdát rychlejší, ale celkový čas načítání se zvýší.">
 <!-- Misc -->
-<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY media_autoplay_enabled_name "Povolit automatické přehrávání multimédií">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">
 <!ENTITY geo_enabled_description "Pokud je povoleno, Firefox se smí zeptat, zda oznámit navštěvované stránce místo, kde se nacházíte. Zakázání této možnosti tuto vlastnost zcela vypne.">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
@@ -76,14 +76,14 @@
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
 <!-- Permissions -->
-<!ENTITY permissions "Permissions">
-<!ENTITY javascript_enabled_name "Enable Javascript">
-<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
-<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
-<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
-<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
-<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
-<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
-<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
-<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
-<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
+<!ENTITY permissions "Oprávnění">
+<!ENTITY javascript_enabled_name "Povolit Javascript">
+<!ENTITY javascript_enabled_description "Povolí nebo zakáže Javascript pro všechny webové stránky.">
+<!ENTITY dom_disable_window_move_resize_name "Posouvat a měnit velikost oken">
+<!ENTITY dom_disable_window_move_resize_description "Umožní skriptům posouvat a měnit velikost oken prohlížeče.">
+<!ENTITY dom_disable_window_flip_name "Přenášet okna do popředí a odsouvat na pozadí">
+<!ENTITY dom_disable_window_flip_description "Umožní skriptům okna prohlížeče přenášet do popředí a odsouvat na pozadí.">
+<!ENTITY dom_event_contextmenu_enabled_name "Odstraňovat a nahrazovat místní nabídku">
+<!ENTITY dom_event_contextmenu_enabled_description "Umožní skriptům na webových stránkách odstraňovat a nahrazovat místní nabídku.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interakce se schránkou">
+<!ENTITY dom_event_clipboardevents_enabled_description "Umožní skriptům získávat informace o tom, že uživatel použil schránku ke zkopírování, vyjmutí či vložení obsahu webových stránek.">

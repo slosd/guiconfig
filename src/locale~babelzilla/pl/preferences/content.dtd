@@ -1,7 +1,5 @@
-
 <!-- Websites -->
 <!ENTITY websites "Witryny">
-
 <!-- Images -->
 <!ENTITY images "Obrazki">
 <!ENTITY gfx_color_management_mode_name "Używaj zarządzania kolorami na">
@@ -13,14 +11,12 @@
 <!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Zmieniaj rozmiar obrazków">
 <!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
-
 <!-- Rendering -->
 <!ENTITY rendering "Renderowanie">
 <!ENTITY nglayout_initialpaint_delay_name "Czas przed wyświetleniem strony (w milisekundach)">
 <!ENTITY nglayout_initialpaint_delay_description "To ustawienie określa liczbę milisekund, które przeglądarka ma odczekać przed pierwszym renderowaniem strony. Niższe wartości spowodują szybsze wyświetlanie strony, ale sprawią, że renderowanie będzie dłużej trwało. Odwrotnie przy wartościach większych.">
 <!ENTITY content_notify_interval_name "Czas przed ponownym renderowaniem strony (w mikrosekundach)">
 <!ENTITY content_notify_interval_description "Firefox okresowo renderuje dane strony. To ustawienie określa minimalny okres czasu, który musi upłynąć, zanim Firefox ponownie będzie renderował stronę (w mikrosekundach). Niższe wartości spowodują pozorne powolniejsze wczytywanie strony, ale zwiększą całkowity jego czas.">
-
 <!-- Misc -->
 <!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
 <!ENTITY geo_enabled_description "Kiedy ta funkcja jest włączona, Firefox może pytać Cię, czy chcesz poinformować obecnie odwiedzaną witrynę o swoim położeniu geograficzym. Odznaczenie tego pola całkowicie wyłącza tę funkcję.">
@@ -32,10 +28,8 @@
 <!ENTITY layout_frames_force_resizability_name "Wymuś możliwość zmiany rozmiaru ramek">
 <!ENTITY dom_max_script_run_time_name "Maks. czas działania skryptów (w sek.)">
 <!ENTITY dom_max_script_run_time_description "Określa liczbę sekund, po których Firefox informuje, ze skrypt wykonywany jest zbyt długo.">
-
 <!-- Accessibility -->
 <!ENTITY accessibility "Dostępność">
-
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozróżnianie wielkości znaków">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Określa sposób obsługi rozróżniania znaków. Kiedy wybrana jest opcja &quot;Wykryj automatycznie&quot;, w kryterium wyszukiwania rozróżniana jest wielkosć znaków, jeśli zawiera ono wielkie litery, ale nie składa się wyłącznie z nich.">
@@ -45,9 +39,7 @@
 <!ENTITY accessibility_typeaheadfind_label "Wyszukiwanie podczas wpisywania tekstu">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Czas oczekiwania (w milisekundach)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Określa po jakim okresie czasu bez wprowadzania pasek wyszukiwania znika.">
-
 <!-- Browser zoom -->
-
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Automatycznie wypełniaj pola formularzy logowania się">
 <!ENTITY signon_prefillForms_description "Automatycznie wypełnia pola formularzy nazwami użytkownika i hasłami.">

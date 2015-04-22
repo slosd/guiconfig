@@ -1,8 +1,6 @@
 <!ENTITY browser "Navegador">
-
 <!-- Urlbar -->
 <!ENTITY urlbar "Barra de direcciones">
-
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Restringir resultados">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Restringir a marcadores">
@@ -13,7 +11,6 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Restringir los resultados de la barra increíble a las etiquetas.">
 <!ENTITY browser_urlbar_restrict_typed_name "Restringir a las direcciones escritas">
 <!ENTITY browser_urlbar_restrict_typed_description "Los resultados de la barra alucinante están restringidos a las direcciones que ha escrito en ella.">
-
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Correspondencia de resultados">
 <!ENTITY browser_urlbar_match_title_name "Buscar en el título">
@@ -26,7 +23,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Mostrar los primeros elementos que se correspondan con el límite">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Usar las palabras sólo para el texto escrito">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Usar sólo el inicio de la dirección o el título">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Entradas en la lista desplegable">
 <!ENTITY browser_urlbar_maxRichResults_description "Determina cuantas entradas deben aparecer (como máximo) en la lista desplegable de la barra de direcciones.">
 <!ENTITY browser_urlbar_autoFill_name "Autocompletado en línea">
@@ -37,7 +33,6 @@
 <!ENTITY browser_fixup_alternate_prefix_description "Caracteres a insertar al comienzo de las direcciones.">
 <!ENTITY browser_fixup_alternate_suffix_name "Insertar al final">
 <!ENTITY browser_fixup_alternate_suffix_description "Caracteres a insertar al final de las direcciones.">
-
 <!-- Session restore -->
 <!ENTITY session_restore "Restauración de sesiones">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Habilitar la restauración de sesiones">
@@ -56,9 +51,7 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "para cualquier sitio">
 <!ENTITY browser_sessionstore_privacy_level_o2 "para sitios no cifrados (no HTTPS)">
 <!ENTITY browser_sessionstore_privacy_level_o3 "para ningún sitio">
-
 <!-- Extensions and plugins -->
-
 <!-- Extensions -->
 <!ENTITY extensions "Extensiones">
 <!ENTITY getaddons "Panel &quot;Obtener complementos&quot;">
@@ -70,11 +63,9 @@
 <!ENTITY extensions_getAddons_maxResults_description "Determina el máximo número de resultados a mostrar en el panel al realizar una búsqueda.">
 <!ENTITY extensions_getAddons_showPane_name "Mostrar panel">
 <!ENTITY extensions_getAddons_showPane_description "Determina si se muestra el panel &quot;Obtener complementos&quot; en la ventana &quot;Administrador de complementos&quot;.">
-
 <!-- Installation -->
 <!ENTITY security_dialog_enable_delay_name "Retraso en la instalación de complementos (mseg)">
 <!ENTITY security_dialog_enable_delay_description "Esta opción determina el retraso (en milisegundos) antes de que el botón &quot;Instalar&quot; puede ser pulsado al instalar un complemento. Establezca a 0 para deshabilitar el retraso.">
-
 <!-- Plugins -->
 <!ENTITY dom_ipc_plugins_enabled_name "Ejecutar cada plugin en un proceso">
 <!ENTITY dom_ipc_plugins_enabled_description "Si un plugin (como Flash) falla, no causará que Firefox también falle.">
@@ -82,16 +73,12 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determina la duración tras la que un proceso no responde se cierra.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tiempo de espera para el plugin (seg)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determina el tiempo para el inicio del plugin para que se considere fallo.">
-
 <!-- Library -->
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Marcadores">
 <!ENTITY browser_bookmarks_max_backups_name "Copias de seguridad de los marcadores">
 <!ENTITY browser_bookmarks_max_backups_description "Determina el número de copias de seguridad que se mantienen. Un valor de 0 deshabilita las copias.">
-
 <!-- History -->
-
 <!-- Downloads -->
 <!ENTITY browser_download_manager_addToRecentDocs_name "Añadir las descargas a los &quot;Documentos recientes&quot;">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Determina si añadir los archivos descargados a los &quot;Documentos recientes&quot; del menú inicio.">
@@ -99,10 +86,8 @@
 <!ENTITY browser_download_lastDir_description "Ruta a la última carpeta usada para descargar usando &apos;Guardar como&apos;.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Aviso en ejecutables">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avisar al usuario si intenta abrir un ejecutable desde el administrador de descargas.">
-
 <!-- Browser cache -->
 <!ENTITY cache "Caché del navegador">
-
 <!-- Disk cache -->
 <!ENTITY cache_disk "Caché de disco">
 <!ENTITY browser_cache_check_doc_frequency_name "Comprobar la caché del navegador">
@@ -117,14 +102,12 @@
 <!ENTITY browser_cache_disk_capacity_description "Cantidad de espacio de disco permitido para la caché del navegador (en KB).">
 <!ENTITY browser_cache_disk_enable_name "Usar la caché de disco">
 <!ENTITY browser_cache_disk_enable_description "Usar la caché de disco, hasta la capacidad especificada.">
-
 <!-- Memory cache -->
 <!ENTITY cache_memory "Caché de memoria">
 <!ENTITY browser_cache_memory_enable_name "Usar memoria caché">
 <!ENTITY browser_cache_memory_enable_description "Usar la memoria caché, hasta la capacidad especificada.">
 <!ENTITY browser_cache_memory_capacity_name "Memoria caché (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Establece la cantidad máxima de memoria RAM usada para la caché (en KB).">
-
 <!-- Misc -->
 <!ENTITY misc "Varios">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Número máximo de páginas en memoria">

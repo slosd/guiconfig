@@ -1,13 +1,9 @@
 <!ENTITY mousebehaviour "Поведінка миші">
-
 <!-- Middle click -->
 <!ENTITY middleclick "Середня клавіша">
 <!ENTITY middlemouse_paste_name "Вставити текст з буферу обміну">
-
 <!-- Mouse click -->
 <!ENTITY mouseclick "Клацання мишкою">
-
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
-
 <!-- Misc -->

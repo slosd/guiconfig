@@ -1,12 +1,10 @@
 <!ENTITY developing "Utveckling">
-
 <!-- View Source -->
 <!ENTITY viewsource "Visa källkod">
 <!ENTITY view_source_editor_external_name "Använd egen redigerare">
 <!ENTITY view_source_editor_external_description "Använd en egen, extern redigerare för att visa källkoden när du väljer &quot;Visa källkod&quot; i webbsidans snabbmeny.">
 <!ENTITY view_source_editor_path_name "Sökväg till redigerare">
 <!ENTITY view_source_editor_path_description "Sökvägen till den egna redigeraren. ">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Inaktivera XUL-cache">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Ändringar i fönster och dialoger kräver inte omstart. Fungerar inte med filer förpackade i en JAR-fil.">

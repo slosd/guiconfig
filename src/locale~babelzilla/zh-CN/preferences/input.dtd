@@ -1,20 +1,17 @@
 <!ENTITY input "输入">
 <!ENTITY mousebehaviour "鼠标动作">
-
 <!-- Middle click -->
 <!ENTITY middleclick "中键点击">
 <!ENTITY middlemouse_contentLoadURL_name "打开剪贴板中的网址">
 <!ENTITY middlemouse_contentLoadURL_description "点击中键打开剪贴板中的网址。">
 <!ENTITY middlemouse_paste_name "粘贴剪贴板中的文本">
 <!ENTITY middlemouse_paste_description "点击中键将剪贴板的内容粘贴到文本框。">
-
 <!-- Mouse click -->
 <!ENTITY mouseclick "鼠标点击">
 <!ENTITY browser_urlbar_clickSelectsAll_name "鼠标点击选择内容">
 <!ENTITY browser_urlbar_clickSelectsAll_description "单击时选中地址栏内容">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "双击时选中地址栏内容">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "双击时选中地址栏内容">
-
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "上下滚动鼠标">
 <!ENTITY mousewheel_action_description "选择鼠标滚动时按不同键所执行的操作">
@@ -26,7 +23,6 @@
 <!ENTITY mousewheel_action_o2 "滚动页面">
 <!ENTITY mousewheel_action_o3 "在历史记录页面中前进/回退">
 <!ENTITY mousewheel_action_o4 "缩放页面">
-
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "点击 Backspace 键时">
 <!ENTITY browser_backspace_action_description "用于决定按 Backspace 键时所执行的操作。">

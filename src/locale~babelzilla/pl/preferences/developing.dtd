@@ -1,12 +1,10 @@
 <!ENTITY developing "Programowanie">
-
 <!-- View Source -->
 <!ENTITY viewsource "Pokaz źródło strony">
 <!ENTITY view_source_editor_external_name "Używaj własnego edytora">
 <!ENTITY view_source_editor_external_description "Używaj własnego edytora do wyświetlania źródła stron.">
 <!ENTITY view_source_editor_path_name "Ścieżka do edytora">
 <!ENTITY view_source_editor_path_description "Ścieżka do własnego edytora.">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Wyłącz pamięć podręczną XUL">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Zmiany wprowadzane w oknach nie wymagają ponownego uruchomienia przeglądarki (opcja ta nie działa z plikami spakowanymi w formacie JAR).">

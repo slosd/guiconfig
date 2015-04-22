@@ -2,11 +2,11 @@
 <!ENTITY browser.item.access "v">
 <!ENTITY config.search "Filtrar">
 <!ENTITY config.descr.standard "Passe o cursor do mouse sobre uma opção para ler sua explicação.">
-<!ENTITY config.description "Description:">
-<!ENTITY config.preference_key "Preference key:">
+<!ENTITY config.description "Descrição:">
+<!ENTITY config.preference_key "Tecla de preferência:">
 <!ENTITY config.standard.label "Restaurar tudo">
 <!ENTITY config.todefault "Restaurar opção ao padrão">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Escolher arquivo">
 <!ENTITY config.browse "Procurar...">
-<!ENTITY config.searchresults "Search results">
+<!ENTITY config.searchresults "Resultados da pesquisa">

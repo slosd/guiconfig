@@ -1,21 +1,17 @@
-
 <!-- Middle click -->
 <!ENTITY middleclick "Clics centraux">
 <!ENTITY middlemouse_contentLoadURL_name "Charger le presse-papiers en tant qu'URL">
 <!ENTITY middlemouse_contentLoadURL_description "Charge le contenu du presse-papiers en tant qu'URL, par un clic central.">
 <!ENTITY middlemouse_paste_name "Coller le texte depuis le presse-papiers">
 <!ENTITY middlemouse_paste_description "Colle le contenu du presse-papiers dans un champ de saisie, par un clic central.">
-
 <!-- Mouse click -->
 <!ENTITY mouseclick "Clic de la souris">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Sélectionner le contenu par simple clic">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Sélectionner le contenu de la barre d'adresse dès qu'un clic y a été fait.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Sélectionner le contenu par double clic">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Sélectionner le contenu de la barre d'adresse dès qu'un double clic y a été fait.">
-
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Défilement vertical de la souris">
-
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Retour arrière">
 <!ENTITY browser_backspace_action_description "Détermine quelle est l&apos;action de la touche Retour arrière (« Backspace »)">

@@ -1,10 +1,6 @@
-
-
 <!-- Tab preview -->
-
 <!-- Open in background -->
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
-
 <!-- Misc -->
 <!ENTITY browser_tabs_closeButtons_name "Mostra i pulsanti di chiusura delle schede">
 <!ENTITY browser_tabs_closeButtons_description "Specifica dove visualizzare i pulsanti di chiusura.">

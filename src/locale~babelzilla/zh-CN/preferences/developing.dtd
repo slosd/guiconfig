@@ -1,12 +1,10 @@
 <!ENTITY developing "开发">
-
 <!-- View Source -->
 <!ENTITY viewsource "查看源代码">
 <!ENTITY view_source_editor_external_name "使用自定义编辑器">
 <!ENTITY view_source_editor_external_description "使用自定义的编辑器查看源代码。">
 <!ENTITY view_source_editor_path_name "编辑器路径：">
 <!ENTITY view_source_editor_path_description "自定义编辑器所在的路径。">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "关闭 XUL 缓存">
 <!ENTITY nglayout_debug_disable_xul_cache_description "改变窗口和对话框而不需要重新启动（不适用于压缩为 JAR 格式的文件）。">

@@ -1,26 +1,28 @@
+<!ENTITY input "Entrada">
 <!ENTITY mousebehaviour "Mouse">
-
 <!-- Middle click -->
 <!ENTITY middleclick "Clique na roda (ou botão do meio)">
 <!ENTITY middlemouse_contentLoadURL_name "No campo de endereço, cola endereço e o carrega">
 <!ENTITY middlemouse_contentLoadURL_description "Cola e carrega um endereço previamente copiado ao clicar a roda (ou botão do meio) do mouse no campo de endereço.">
 <!ENTITY middlemouse_paste_name "Em campos de texto, tem função de colar">
 <!ENTITY middlemouse_paste_description "Cola o conteúdo da área de transferência nos campos de texto onde forem dados cliques com a roda (ou botão do meio) do mouse.">
-
 <!-- Mouse click -->
 <!ENTITY mouseclick "Cliques">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Selecionar conteúdo ao clicar">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Seleciona todo o conteúdo do campo de endereço ao clicar nele.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Selecionar conteúdo ao dar um duplo clique">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Seleciona todo o conteúdo do campo de endereço ao dar um duplo clique nele.">
-
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Rolagem vertical">
+<!ENTITY mousewheel_action_description "Escolha o que deve acontecer quando a rolagem for combinada com teclas diferentes">
+<!ENTITY mousewheel_default_action_name "Ação sem tecla">
+<!ENTITY mousewheel_with_shift_action_name "Ação com a tecla SHIFT">
+<!ENTITY mousewheel_with_control_action_name "Ação com a tecla CTRL">
+<!ENTITY mousewheel_with_alt_action_name "Ação com a tecla ALT">
 <!ENTITY mousewheel_action_o1 "rolar linhas">
 <!ENTITY mousewheel_action_o2 "rolas páginas">
 <!ENTITY mousewheel_action_o3 "navegar pelo histórico">
 <!ENTITY mousewheel_action_o4 "dar zoom na página">
-
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Backspace:">
 <!ENTITY browser_backspace_action_description "Especifica o que fazer ao se pressionar a tecla Backspace.">

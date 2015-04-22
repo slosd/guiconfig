@@ -1,7 +1,6 @@
-
+<!ENTITY content "Conteúdo">
 <!-- Websites -->
-<!ENTITY websites "Páginas">
-
+<!ENTITY websites "Sites">
 <!-- Images -->
 <!ENTITY images "Imagens">
 <!ENTITY gfx_color_management_mode_name "Usar gerenciamento de cores para:">
@@ -9,19 +8,23 @@
 <!ENTITY gfx_color_management_mode_o1 "nenhuma imagem">
 <!ENTITY gfx_color_management_mode_o2 "todas as imagens">
 <!ENTITY gfx_color_management_mode_o3 "imagens que tenham informações ICC">
+<!ENTITY image_animation_mode_name "Imagens animadas">
+<!ENTITY image_animation_mode_description "Restringe que imagens animadas (GIFs) rodem indefinidamente (ou quantas vezes a imagem especificar), rodem uma vez ou não rodem.">
+<!ENTITY image_animation_mode_o1 "Repetir indefinidamente">
+<!ENTITY image_animation_mode_o2 "Executar a animação uma vez">
+<!ENTITY image_animation_mode_o3 "Nunca execute a animação">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
 <!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas. (Costuma evitar algumas mudanças bruscas no aspecto da página durante o seu carregamento.)">
 <!ENTITY browser_enable_automatic_image_resizing_name "Reduzir imagens para exibi-las por completo">
 <!ENTITY browser_enable_automatic_image_resizing_description "Reduz o tamanho de uma imagem avulsa (fora de uma página) maior que a janela do navegador para que ela seja exibida por completo no espaço disponível.">
-
 <!-- Rendering -->
 <!ENTITY rendering "Exibição">
 <!ENTITY nglayout_initialpaint_delay_name "Atraso de exibição (ms):">
 <!ENTITY nglayout_initialpaint_delay_description "Especifica o tempo, em milissegundos, antes da primeira exibição de uma página sendo carregada. Valores menores fazem as páginas serem exibidas mais rapidamente porém demorarem mais para terminar de carregar. Valores maiores têm o efeito oposto.">
 <!ENTITY content_notify_interval_name "Intervalo mínimo entre reexibições (µs):">
 <!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as reexibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
-
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Ativar reprodução automática">
 <!ENTITY geo_enabled_name "Ativar localização">
 <!ENTITY geo_enabled_description "Permite que o Firefox pergunte a você se deseja informar a sua localização atual aos sites que a requisitarem. Desmarque essa opção para desativar a geolocalização no Firefox.">
 <!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
@@ -34,10 +37,8 @@
 <!ENTITY layout_frames_force_resizability_name "Forçar que sejam redimensionáveis">
 <!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
 <!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
-
 <!-- Accessibility -->
 <!ENTITY accessibility "Acessibilidade">
-
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Diferenciar maiúsculas de minúsculas:">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Especifica se a pesquisa de texto iniciada automaticamente ao se começar a digitar deve diferenciar maiúsculas de minúsculas. &quot;Automático&quot; não diferencia se o texto digitado for todo em minúsculas ou em maiúsculas, mas diferencia se nele houver ambas.">
@@ -47,9 +48,7 @@
 <!ENTITY accessibility_typeaheadfind_label "Localizar texto ao começar a digitar">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Esconder após (ms):">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Especifica, em milissegundos, o tempo de ociosidade após o qual a barra de pesquisa é removida da tela.">
-
 <!-- Browser zoom -->
-
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Preencher automaticamente nomes de usuário e senhas">
 <!ENTITY signon_prefillForms_description "Preenche automaticamente o nome de usuário e a senha em sites para os quais o Firefox tenha só uma credencial memorizada. Desmarque para que mesmo nesses sites a senha seja preenchida somente após o nome de usuário correspondente ter sido digitado.">

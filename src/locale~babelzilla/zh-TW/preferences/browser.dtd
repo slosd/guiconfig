@@ -1,8 +1,6 @@
 <!ENTITY browser "瀏覽器">
-
 <!-- Urlbar -->
 <!ENTITY urlbar "地址欄">
-
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "限定的搜尋結果">
 <!ENTITY browser_urlbar_restrict_bookmark_name "智慧選址限依書籤">
@@ -13,7 +11,6 @@
 <!ENTITY browser_urlbar_restrict_tag_description "地址欄智慧選址限定依標簽列出符合的選項">
 <!ENTITY browser_urlbar_restrict_typed_name "智慧選址限依鍵入地址">
 <!ENTITY browser_urlbar_restrict_typed_description "地址欄智慧選址限定依地址欄中鍵入過的地址列出符合的選項。">
-
 <!-- Match results -->
 <!ENTITY urlbar_match_name "符合搜尋條件的結果">
 <!ENTITY browser_urlbar_match_title_name "搜尋比對網頁標題">
@@ -26,7 +23,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "優先顯示符合字詞分界的項目">
 <!ENTITY browser_urlbar_matchBehavior_o3 "僅對手動輸入的文字使用字詞分界">
 <!ENTITY browser_urlbar_matchBehavior_o4 "僅需符合URL或標題的開頭">
-
 <!ENTITY browser_urlbar_maxRichResults_name "下拉式選單項目數">
 <!ENTITY browser_urlbar_maxRichResults_description "指定地址欄的下拉式選單最多顯示多少個項目">
 <!ENTITY browser_urlbar_autoFill_name "行內自動補足">
@@ -37,7 +33,6 @@
 <!ENTITY browser_fixup_alternate_prefix_description "添加於行首的字元">
 <!ENTITY browser_fixup_alternate_suffix_name "行末添加">
 <!ENTITY browser_fixup_alternate_suffix_description "添加於行末的字元">
-
 <!-- Session restore -->
 <!ENTITY session_restore "瀏覽頁組還原">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "啟用「瀏覽頁組還原」">
@@ -56,9 +51,7 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "對所有網站">
 <!ENTITY browser_sessionstore_privacy_level_o2 "僅限非加密(HTTPS以外)的網站">
 <!ENTITY browser_sessionstore_privacy_level_o3 "所有網站都不">
-
 <!-- Extensions and plugins -->
-
 <!-- Extensions -->
 <!ENTITY extensions "附加元件">
 <!ENTITY getaddons "&quot;取得元件&quot;側頁">
@@ -70,11 +63,9 @@
 <!ENTITY extensions_getAddons_maxResults_description "決定您進行一項搜尋時要顯示於側頁內的最大搜尋結果數目">
 <!ENTITY extensions_getAddons_showPane_name "顯示側頁">
 <!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
-
 <!-- Installation -->
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
 <!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
-
 <!-- Plugins -->
 <!ENTITY dom_ipc_plugins_enabled_name "以各別行程執行各外掛程式">
 <!ENTITY dom_ipc_plugins_enabled_description "若外掛程式(例如 Flash)當掉時，不會使FF一起跟著掛掉。">
@@ -82,25 +73,19 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "決定外掛程式行程經過多久沒回應就砍掉它。">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "外掛程式啟動逾時(秒)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "決定若經過多久，外掛程式仍未能完成啟動，則判定為失敗。">
-
 <!-- Library -->
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "書籤">
 <!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
-
 <!-- History -->
-
 <!-- Downloads -->
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
 <!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "當使用者要從下載管理員開啟的項目是執行檔時，予以警示">
-
 <!-- Browser cache -->
 <!ENTITY cache "瀏覽器的快取記憶區">
-
 <!-- Disk cache -->
 <!ENTITY cache_disk "硬碟快取記憶區">
 <!ENTITY browser_cache_check_doc_frequency_name "檢查瀏覽器的快取記憶區">
@@ -115,14 +100,12 @@
 <!ENTITY browser_cache_disk_capacity_description "允許瀏覽器當做快取記憶區的硬碟空間(以KB為單位)">
 <!ENTITY browser_cache_disk_enable_name "使用硬碟快取記憶區">
 <!ENTITY browser_cache_disk_enable_description "以指定的最大空間來使用硬碟快取記憶區">
-
 <!-- Memory cache -->
 <!ENTITY cache_memory "RAM 快取記憶區">
 <!ENTITY browser_cache_memory_enable_name "使用 RAM 快取記憶區">
 <!ENTITY browser_cache_memory_enable_description "以指定的最大空間來使用 RAM 快取記憶區">
 <!ENTITY browser_cache_memory_capacity_name "RAM 快取記憶區(KB)">
 <!ENTITY browser_cache_memory_capacity_description "設定用做快取記憶區的 RAM 大小(以KB為單位)">
-
 <!-- Misc -->
 <!ENTITY misc "雜項">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "最大記憶頁數">

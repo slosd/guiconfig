@@ -1,21 +1,17 @@
 <!ENTITY tabs "分頁">
-
 <!ENTITY browser_tabs_tabClipWidth_name "含關閉鈕時的最小頁籤寬度">
 <!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
-
 <!-- Tab preview -->
 <!ENTITY tab_preview "分頁預覽">
 <!ENTITY browser_ctrlTab_preview_name "切換分頁時，啟用分頁預覽">
 <!ENTITY browser_ctrlTab_preview_description "當使用 [CTRL]+[Tab] 切換分頁時，顯示分頁預覽">
 <!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
 <!ENTITY browser_taskbar_previews_enable_description "啟用後，FF 會 在Windows 7 工具列顯示對各分頁的預覽。">
-
 <!-- Open in background -->
 <!ENTITY open_in_background "背景中以新分頁開啟">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "外部應用程式中的鏈結">
 <!ENTITY browser_tabs_loadInBackground_name "網頁中的鏈結">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
-
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "分頁動畫效果">
 <!ENTITY browser_tabs_animate_description "於開新分頁、重組分頁或關閉分頁時，啟用動畫效果。">

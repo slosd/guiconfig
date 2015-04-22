@@ -1,22 +1,18 @@
 <!ENTITY tabs "Panely">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Min. šířka panelu pro tlačítko pro zavření">
 <!ENTITY browser_tabs_tabClipWidth_description "Určuje minimální šířku panelu nezbytnou pro zobrazení tlačítka pro zavření.">
-
 <!-- Tab preview -->
 <!ENTITY tab_preview "Náhledy panelů">
 <!ENTITY browser_ctrlTab_preview_name "Povolit náhledy panelů při přepínání panelů">
 <!ENTITY browser_ctrlTab_preview_description "Náhledy panelů se budou zobrazovat při jejich přepínání pomocí [CTRL]+[Tab].">
 <!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
-
 <!-- Open in background -->
 <!ENTITY open_in_background "Otevřít nový panel na pozadí">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Odkazy na externí aplikace">
 <!ENTITY browser_tabs_loadInBackground_name "Odkazy na stránky">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Záložky">
 <!ENTITY browser_search_context_loadInBackground_name "Vyhledávání pomocí místní nabídky">
-
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Animovat panely">
 <!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">

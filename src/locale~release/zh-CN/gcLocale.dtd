@@ -1,12 +1,12 @@
-<!ENTITY browser.item.label "高级设定">
+<!ENTITY browser.item.label "高级设置">
 <!ENTITY browser.item.access "d">
 <!ENTITY config.search "搜索">
 <!ENTITY config.descr.standard "将鼠标移至某个选项可以显示其详细描述">
-<!ENTITY config.description "Description:">
-<!ENTITY config.preference_key "Preference key:">
+<!ENTITY config.description "描述：">
+<!ENTITY config.preference_key "首选项键：">
 <!ENTITY config.standard.label "全部重置">
 <!ENTITY config.todefault "恢复默认值">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "选择文件">
-<!ENTITY config.browse "浏览……">
+<!ENTITY config.browse "浏览…">
 <!ENTITY config.searchresults "搜索结果">

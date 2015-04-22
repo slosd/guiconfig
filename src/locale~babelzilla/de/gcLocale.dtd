@@ -2,6 +2,8 @@
 <!ENTITY browser.item.access "w">
 <!ENTITY config.search "Suche">
 <!ENTITY config.descr.standard "Bewegen Sie den Cursor über eine Option, um hier eine genaue Beschreibung zu sehen">
+<!ENTITY config.description "Beschreibung:">
+<!ENTITY config.preference_key "Einstellungsname:">
 <!ENTITY config.standard.label "Alles zurücksetzen">
 <!ENTITY config.todefault "Auf Standardwert zurücksetzen">
 <!ENTITY config.header.title "gui:config">

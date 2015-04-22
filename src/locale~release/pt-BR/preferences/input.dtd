@@ -1,4 +1,4 @@
-<!ENTITY input "Input">
+<!ENTITY input "Entrada">
 <!ENTITY mousebehaviour "Mouse">
 <!-- Middle click -->
 <!ENTITY middleclick "Clique na roda (ou botão do meio)">
@@ -14,11 +14,11 @@
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Seleciona todo o conteúdo do campo de endereço ao dar um duplo clique nele.">
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Rolagem vertical">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
-<!ENTITY mousewheel_default_action_name "Action with no key">
-<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
-<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
-<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
+<!ENTITY mousewheel_action_description "Escolha o que deve acontecer quando a rolagem for combinada com teclas diferentes">
+<!ENTITY mousewheel_default_action_name "Ação sem tecla">
+<!ENTITY mousewheel_with_shift_action_name "Ação com a tecla SHIFT">
+<!ENTITY mousewheel_with_control_action_name "Ação com a tecla CTRL">
+<!ENTITY mousewheel_with_alt_action_name "Ação com a tecla ALT">
 <!ENTITY mousewheel_action_o1 "rolar linhas">
 <!ENTITY mousewheel_action_o2 "rolas páginas">
 <!ENTITY mousewheel_action_o3 "navegar pelo histórico">

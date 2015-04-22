@@ -1,4 +1,3 @@
-
 <!-- Browser -->
 <!ENTITY browser_style "Nettleser">
 <!ENTITY browser_chrome_favicons_name "Vis Favicon-er">
@@ -9,7 +8,5 @@
 <!ENTITY browser_preferences_animateFadeIn_description "Endrer høyden på vinduet, og toner inn det nye panelet ved bytting av paneler.">
 <!ENTITY browser_preferences_instantApply_name "Lagre øyeblikkelig">
 <!ENTITY browser_preferences_instantApply_description "Endring av innstillinger trer i kraft øyeblikkelig. Innstillingsvinduet er ikke modalt, så i stedet for «Ok» eller «Avbryt», finnes kun «Lukk».">
-
 <!-- New tab page -->
-
 <!-- Selected text -->

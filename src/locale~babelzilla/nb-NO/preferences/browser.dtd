@@ -1,40 +1,25 @@
 <!ENTITY browser "Nettleser">
-
 <!-- Urlbar -->
-
 <!-- Restrict results -->
-
 <!-- Match results -->
-
 <!ENTITY browser_urlbar_autoFill_name "Integrert autoutfylling">
 <!ENTITY browser_urlbar_autoFill_description "Slår på integrert autoutfylling.">
-
 <!-- Session restore -->
-
 <!-- Extensions and plugins -->
-
 <!-- Extensions -->
-
 <!-- Installation -->
-
 <!-- Plugins -->
-
 <!-- Library -->
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Bokmerker">
 <!ENTITY browser_bookmarks_max_backups_name "Sikkerhetskopi av bokmerker">
 <!ENTITY browser_bookmarks_max_backups_description "Angir antall sikkerhetskopier. Er denne satt til 0 vil sikkerhetskopier skrus av">
-
 <!-- History -->
-
 <!-- Downloads -->
 <!ENTITY browser_download_lastDir_name "Sist brukte nedlastingsmappe">
 <!ENTITY browser_download_lastDir_description "Stien til mappen som sist ble brukt ved nedlasting via «Lagre som»">
-
 <!-- Browser cache -->
 <!ENTITY cache "Mellomlager">
-
 <!-- Disk cache -->
 <!ENTITY browser_cache_check_doc_frequency_name "Kontroller nettleserens mellomlager">
 <!ENTITY browser_cache_check_doc_frequency_description "Hvor ofte nettleseren skal kontrollere nettsidene for nyere versjoner som kan finnes i mellomlageret">
@@ -48,12 +33,10 @@
 <!ENTITY browser_cache_disk_capacity_description "Hvor stor lagringsplass som er tillatt i nettleserens mellomlager på disk (i KB)">
 <!ENTITY browser_cache_disk_enable_name "Bruk mellomlager på disk">
 <!ENTITY browser_cache_disk_enable_description "Bruk mellomlager på disk opp til den spesifiserte grensen">
-
 <!-- Memory cache -->
 <!ENTITY browser_cache_memory_enable_name "Bruk mellomlager i minne">
 <!ENTITY browser_cache_memory_enable_description "Bruk mellomlager i minne opp til den spesifiserte grensen">
 <!ENTITY browser_cache_memory_capacity_name "Mellomlager i minne (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Sett hvor mye minne som maksimalt kan brukes til mellomlager (i KB)">
-
 <!-- Misc -->
 <!ENTITY misc "Diverse">

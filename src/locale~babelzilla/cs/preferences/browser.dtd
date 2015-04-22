@@ -1,8 +1,6 @@
 <!ENTITY browser "Prohlížeč">
-
 <!-- Urlbar -->
 <!ENTITY urlbar "Adresní řádek">
-
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Omezit výsledky">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Omezit na záložky">
@@ -13,7 +11,6 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Výsledky v chytrém adresním řádku budou omezeny na štítky.">
 <!ENTITY browser_urlbar_restrict_typed_name "Omezit na zadané adresy">
 <!ENTITY browser_urlbar_restrict_typed_description "Výsledky v chytrém adresním řádku budou omezeny na adresy, které byly do adresního řádku zadány dříve.">
-
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Najít výsledky">
 <!ENTITY browser_urlbar_match_title_name "Hledat v názvu">
@@ -26,7 +23,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Zobrazit nejprve položky nalezené na okrajích slov">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Zobrazit jen položky nalezené na okrajích slov">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Najít na začátku URL nebo názvu">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Max. počet výsledků">
 <!ENTITY browser_urlbar_maxRichResults_description "Určuje, kolik výsledků by se nejvýš mělo objevit v adresním řádku.">
 <!ENTITY browser_urlbar_autoFill_name "Automatické dokončování">
@@ -41,7 +37,8 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Určuje, zda se bude bude formátovat doména v adresním řádku.">
 <!ENTITY browser_urlbar_trimURLs_name "Zkracovat URL">
 <!ENTITY browser_urlbar_trimURLs_description "Pokud je povoleno, v adresním řádku se nebude vypisovat protokol (http) a ǘvodní lomítka.">
-
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Považovat jediné slovo za název domény">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Místo toho, aby se jediné slovo zadané do adresního řádku hledalo pomocí vyhledávače, se toto slovo nejprve zkusí vyhledat v DNS. To je užitečné při přístupu na servery v místní síti.">
 <!-- Session restore -->
 <!ENTITY session_restore "Obnova relace">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Povolit obnovu relace">
@@ -70,10 +67,8 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "pro jakoukoliv stránku">
 <!ENTITY browser_sessionstore_privacy_level_o2 "pro nezašifrované stránky (bez HTTPS)">
 <!ENTITY browser_sessionstore_privacy_level_o3 "pro žádnou stránku">
-
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "Rozšíření a zásuvné moduly">
-
 <!-- Extensions -->
 <!ENTITY extensions "Rozšíření">
 <!ENTITY getaddons "Panel „Získat nové doplňky“">
@@ -85,12 +80,10 @@
 <!ENTITY extensions_getAddons_maxResults_description "Určuje maximální počet výsledků, který se bude zobrazovat v panelu při vyhledávání.">
 <!ENTITY extensions_getAddons_showPane_name "Zobrazit panel">
 <!ENTITY extensions_getAddons_showPane_description "Určuje, zda zobrazovat v okně „Správce doplňků“ panel „Získat nová rozšíření“.">
-
 <!-- Installation -->
 <!ENTITY installation "Instalace">
 <!ENTITY security_dialog_enable_delay_name "Zdržení při instalaci doplňku (ms)">
 <!ENTITY security_dialog_enable_delay_description "Tato předvolba určuje dobu zdržení (v milisekundách) před tím, než bude možno při instalaci doplňku klepnout na tlačítko „Instalovat“. Pro vypnutí zdržení zadejte 0.">
-
 <!-- Plugins -->
 <!ENTITY plugins "Zásuvné moduly">
 <!ENTITY dom_ipc_plugins_enabled_name "Spouštět každý zásuvný modul ve vlastním procesu">
@@ -99,22 +92,18 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Určuje dobu, po které bude proces s neodpovídajícím zásuvným modulem ukončen.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Časový limit pro spuštění zásuvného modulu (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Určuje dobu, po které se bude spuštění zásuvného modulu považovat za neúspěšné.">
-
 <!-- Library -->
 <!ENTITY library "Knihovna">
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Záložky">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Exportovat při uzavření záložky">
 <!ENTITY browser_bookmarks_autoExportHTML_description "Pokud je povoleno, budou při uzavření prohlížeče exportovány záložky do souboru „bookmarks.html“, vytvořeného v adresáři profilu.">
 <!ENTITY browser_bookmarks_max_backups_name "Zálohy záložek">
 <!ENTITY browser_bookmarks_max_backups_description "Určuje počet uchovávaných záloh. Nastavení na 0 zálohy vypne.">
-
 <!-- History -->
 <!ENTITY history "Historie">
 <!ENTITY places_history_expiration_max_pages_name "Max. počet položek historie">
 <!ENTITY places_history_expiration_max_pages_description "Maximální počet položek historie, které budou uchovány, dokud jiné položky nevyprší. Nastavíte-li hodnotu -1, stanoví se tento počet automaticky.">
-
 <!-- Downloads -->
 <!ENTITY downloads "Stahování">
 <!ENTITY browser_download_animateNotifications_name "Animovat ikonu stahování">
@@ -125,10 +114,8 @@
 <!ENTITY browser_download_lastDir_description "Cesta k poslednímu adresáři použitému pro stahování pomocí „Uložit jako“.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varovat při spustitelných">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Varuje uživatele při pokusu o otevření spustitelného souboru ze Správce stahování.">
-
 <!-- Browser cache -->
 <!ENTITY cache "Vyrovnávací paměť">
-
 <!-- Disk cache -->
 <!ENTITY cache_disk "Vyrovnávací paměť na disku">
 <!ENTITY browser_cache_check_doc_frequency_name "Kontrolovat vyrovnávací paměť">
@@ -143,14 +130,12 @@
 <!ENTITY browser_cache_disk_capacity_description "Velikost místa na disku povoleného pro vyrovnávací paměť prohlížeče (v kB).">
 <!ENTITY browser_cache_disk_enable_name "Použít vyrovnávací paměť na disku">
 <!ENTITY browser_cache_disk_enable_description "Použije vyrovnávací paměť na disku, a to až do stanovené kapacity">
-
 <!-- Memory cache -->
 <!ENTITY cache_memory "Vyrovnávací paměť v paměti">
 <!ENTITY browser_cache_memory_enable_name "Použít vyrovnávací paměť v paměti">
 <!ENTITY browser_cache_memory_enable_description "Použije vyrovnávací paměť v paměti, a to až do stanovené kapacity.">
 <!ENTITY browser_cache_memory_capacity_name "Vyrovnávací paměť v paměti (kB)">
 <!ENTITY browser_cache_memory_capacity_description "Nastaví maximum RAM použitelné pro vyrovnávací paměť (v kB).">
-
 <!-- Misc -->
 <!ENTITY misc "Různé">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. počet stránek v paměti">

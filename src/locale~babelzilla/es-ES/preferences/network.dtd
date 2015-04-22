@@ -1,16 +1,13 @@
 <!ENTITY network "Red">
-
 <!-- Connections -->
 <!ENTITY connections "Conexiones">
 <!ENTITY network_http_max-connections_name "Máximo de conexiones HTTP">
 <!ENTITY network_http_max-connections_description "Esta opción especifica el número total de conexiones que Firefox puede abrir de una vez. Este valor debe estar entre 1 y 65535.">
-
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Máximas conexiones activas por servidor proxy">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Esta opción especifica el número total de conexiones activas que Firefox puede tener abiertas de una vez con un servidor proxy. Este valor debe estar entre 1 y 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Máximas conexiones activas por servidor">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Esta opción especifica el número total de conexiones activas que Firefox puede tener abiertas de una vez con un servidor. Este valor debe estar entre 1 y 255.">
-
 <!-- Pipelining -->
 <!ENTITY pipelining "Pipeline">
 <!ENTITY network_http_pipelining_name "Usar el pipeline">

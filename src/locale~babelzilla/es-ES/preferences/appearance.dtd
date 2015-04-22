@@ -1,5 +1,4 @@
 <!ENTITY appearance "Apariencia">
-
 <!-- Browser -->
 <!ENTITY browser_style "Navegador">
 <!ENTITY browser_chrome_favicons_name "Mostrar favicons">
@@ -10,9 +9,7 @@
 <!ENTITY browser_preferences_animateFadeIn_description "Cambia el alto de la ventana y anima el nuevo panel aproximadamente en un segundo al cambiar el panel de opciones.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar instantáneamente">
 <!ENTITY browser_preferences_instantApply_description "Los cambios en las opciones se aplican inmediatamente. La ventana de opciones no es modal. En lugar de los botones &quot;OK&quot; y &quot;Cancelar&quot;, sólo hay un botón de &quot;Cerrar&quot;.">
-
 <!-- New tab page -->
-
 <!-- Selected text -->
 <!ENTITY text_select "Texto seleccionado">
 <!ENTITY ui_textSelectBackgroundAttention_name "Color de fondo para el texto resaltado.">

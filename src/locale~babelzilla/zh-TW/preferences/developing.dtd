@@ -1,12 +1,10 @@
 <!ENTITY developing "研發">
-
 <!-- View Source -->
 <!ENTITY viewsource "檢視原始檔">
 <!ENTITY view_source_editor_external_name "使用自訂編輯程式">
 <!ENTITY view_source_editor_external_description "使用自訂編輯程式來檢視原始檔">
 <!ENTITY view_source_editor_path_name "編輯程式路徑">
 <!ENTITY view_source_editor_path_description "自訂編輯程式的路徑">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
 <!ENTITY nglayout_debug_disable_xul_cache_description "對視窗本身和對話視窗的變更設定不需重新啟動 Firefox。(此選項對於以 JAR 方式封裝的檔案無效)。">

@@ -12,7 +12,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links em outros aplicativos no computador">
 <!ENTITY browser_tabs_loadInBackground_name "Links em páginas">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Favoritos">
-<!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+<!ENTITY browser_search_context_loadInBackground_name "menu contextual de pesquisa">
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Animar abas">
 <!ENTITY browser_tabs_animate_description "Anima as abas quando elas são abertas, reorganizadas e removidas.">

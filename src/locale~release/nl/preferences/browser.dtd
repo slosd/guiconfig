@@ -37,8 +37,8 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Bepaalt of het domein in de adresbalk moet worden opgemaakt.">
 <!ENTITY browser_urlbar_trimURLs_name "URL’s inkorten">
 <!ENTITY browser_urlbar_trimURLs_description "Indien ingeschakeld worden het protocol (http) en aanvangsslashes in de adresbalk verborgen.">
-<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
-<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Losse woorden als domeinnaam behandelen">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "In plaats van losse woorden op te zoeken via de standaard zoekmachine eerst proberen het woord in de adresbalk via DNS op te zoeken. Nuttig om hosts op het lokale netwerk te benaderen.">
 <!-- Session restore -->
 <!ENTITY session_restore "Sessieherstel">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sessieherstel inschakelen">

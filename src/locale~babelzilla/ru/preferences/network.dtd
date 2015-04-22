@@ -1,16 +1,13 @@
 <!ENTITY network "Сеть">
-
 <!-- Connections -->
 <!ENTITY connections "Подключения">
 <!ENTITY network_http_max-connections_name "Максимальное число HTTP подключений">
 <!ENTITY network_http_max-connections_description "Эта настройка задаёт общее количество подключений, которое Firefox может использовать одновременно. [1-65535]">
-
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Максимальное число поддерживаемых подключений на прокси-сервер">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Эта настройка задаёт общее количество поддерживаемых подключений, которое Firefox может одновременно использовать для одного прокси-сервера. [1-255]">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Максимальное число поддерживаемых подключений на сервер">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Эта настройка задаёт общее количество поддерживаемых подключений, которое Firefox может одновременно использовать для одного сервера. [1-255]">
-
 <!-- Pipelining -->
 <!ENTITY pipelining "Конвейеризация">
 <!ENTITY network_http_pipelining_name "Использовать конвейерную обработку">

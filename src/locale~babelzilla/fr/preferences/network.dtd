@@ -1,16 +1,13 @@
 <!ENTITY network "Réseau">
-
 <!-- Connections -->
 <!ENTITY connections "Connexions">
 <!ENTITY network_http_max-connections_name "Nb. maximal de connexions HTTP">
 <!ENTITY network_http_max-connections_description "Cette préférence fixe nombre total de connexions que Firefox peut lancer simultanément. Cette valeur doit être entre 1 et 65 535.">
-
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Nb. maximal de connexions de « maintien en vie » par serveur proxy">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur proxy. Cette valeur doit être entre 1 et 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Nb. maximal de connexions de « maintien en vie » par serveur">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur. Cette valeur doit être entre 1 et 255.">
-
 <!-- Pipelining -->
 <!ENTITY pipelining "Pipelining">
 <!ENTITY network_http_pipelining_name "Utiliser du pipelining">

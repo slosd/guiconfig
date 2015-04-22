@@ -1,16 +1,13 @@
 <!ENTITY network "網路">
-
 <!-- Connections -->
 <!ENTITY connections "連線">
 <!ENTITY network_http_max-connections_name "最大HTTP連線數">
 <!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">
-
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "每一代理伺服主機最大不下線連線數">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "此選項指定Firefox對單一代理伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
 <!ENTITY network_http_max-persistent-connections-per-server_name "每一伺服主機最大不下線連線數">
 <!ENTITY network_http_max-persistent-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
-
 <!-- Pipelining -->
 <!ENTITY pipelining "複請求批送機制">
 <!ENTITY network_http_pipelining_name "使用「複請求批送」(pipelining)">

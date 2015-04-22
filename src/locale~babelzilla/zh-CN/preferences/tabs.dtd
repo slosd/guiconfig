@@ -1,22 +1,18 @@
 <!ENTITY tabs "标签页">
-
 <!ENTITY browser_tabs_tabClipWidth_name "可显示关闭按钮的最小标签页宽度">
 <!ENTITY browser_tabs_tabClipWidth_description "指定可以显示关闭按钮的最小标签页宽度。">
-
 <!-- Tab preview -->
 <!ENTITY tab_preview "标签页预览">
 <!ENTITY browser_ctrlTab_preview_name "启用标签页切换预览">
 <!ENTITY browser_ctrlTab_preview_description "当使用 [CTRL]+[Tab] 键切换标签页时显示预览图。">
 <!ENTITY browser_taskbar_previews_enable_name "启用 Windows 7 任务栏预览">
 <!ENTITY browser_taskbar_previews_enable_description "启用该选项 Firefox 将在 Windows 7 任务栏中显示每个标签页的预览图。">
-
 <!-- Open in background -->
 <!ENTITY open_in_background "在后台打开标签页，来自：">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "外部应用程序中的链接">
 <!ENTITY browser_tabs_loadInBackground_name "网站的链接">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "在后台打开书签">
 <!ENTITY browser_search_context_loadInBackground_name "上下文菜单搜索">
-
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "标签页动态效果">
 <!ENTITY browser_tabs_animate_description "在标签页重新整理和拖拽时显示打开新标签页的动态效果。">

@@ -1,7 +1,5 @@
-
 <!-- Websites -->
 <!ENTITY websites "Веб-сайты">
-
 <!-- Images -->
 <!ENTITY images "Изображения">
 <!ENTITY gfx_color_management_mode_name "Использовать управление цветом">
@@ -13,14 +11,12 @@
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_enable_automatic_image_resizing_name "Изменять размер изображений">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
-
 <!-- Rendering -->
 <!ENTITY rendering "Визуализация">
 <!ENTITY nglayout_initialpaint_delay_name "Задержка перед отображением страницы (мс)">
 <!ENTITY nglayout_initialpaint_delay_description "Эта настройка задаёт задержку в миллисекундах перед началом визуализации страницы. Меньшее значение приведёт к более быстрому первоначальному отображению страницы, но окончательный результат займёт больше времени. Большее значение имеет противоположный эффект.">
 <!ENTITY content_notify_interval_name "Задержка перед перерисовкой страницы (мкс)">
 <!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
-
 <!-- Misc -->
 <!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">
 <!ENTITY geo_enabled_description "Если включено, Firefox будет спрашивать вас хотите ли вы сообщить веб-сайту, посещаемому в настоящий момент, место вашего расположения. Отключение этой настройки выключает эту функцию полностью.">
@@ -32,10 +28,8 @@
 <!ENTITY layout_frames_force_resizability_name "Принудительно задать фреймам возможность изменять размер">
 <!ENTITY dom_max_script_run_time_name "Время выполнения сценария (сек)">
 <!ENTITY dom_max_script_run_time_description "Определяет количество секунд, спустя которое Firefox будет предупреждать вас, что выполнение сценария занимает много времени.">
-
 <!-- Accessibility -->
 <!ENTITY accessibility "Удобства">
-
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Чувствительность к регистру">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Определяет как обрабатывать чувствительность к регистру. Если выбрана настройка «Определять автоматически», то поиск будет регистрозависимым только в том случае, когда поисковая строка содержит и прописные и строчные символы.">
@@ -45,9 +39,7 @@
 <!ENTITY accessibility_typeaheadfind_label "Поиск по мере набора">
 <!ENTITY accessibility_typeaheadfind_timeout_name "Задержка (мсек)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Задаёт промежуток отсутствия ввода символов с клавиатуры после которого исчезает панель поиска.">
-
 <!-- Browser zoom -->
-
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Автозаполнение полей регистрационных форм">
 <!ENTITY signon_prefillForms_description "Автоматически заполняет поля форм с именем пользователя и паролем.">

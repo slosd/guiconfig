@@ -1,21 +1,18 @@
 <!ENTITY tabs "Abas">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Largura mínima das abas para exibir o botão Fechar:">
 <!ENTITY browser_tabs_tabClipWidth_description "Especifica a largura mínima das abas inativas antes que o botão Fechar seja nelas suprimido.">
-
 <!-- Tab preview -->
 <!ENTITY tab_preview "Pré-visualização de abas">
 <!ENTITY browser_ctrlTab_preview_name "Exibir pré-visualização ao trocar abas">
 <!ENTITY browser_ctrlTab_preview_description "Exibe a pré-visualização das abas ao pressionar Ctrl+Tab.">
 <!ENTITY browser_taskbar_previews_enable_name "Exibir pré-visualizações na barra de tarefas do Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "Faz o Firefox exibir na barra de tarefas do Windows 7 miniaturas de cada aba aberta.">
-
 <!-- Open in background -->
 <!ENTITY open_in_background "Abas que são abertas em segundo plano">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links em outros aplicativos no computador">
 <!ENTITY browser_tabs_loadInBackground_name "Links em páginas">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Favoritos">
-
+<!ENTITY browser_search_context_loadInBackground_name "menu contextual de pesquisa">
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Animar abas">
 <!ENTITY browser_tabs_animate_description "Anima as abas quando elas são abertas, reorganizadas e removidas.">

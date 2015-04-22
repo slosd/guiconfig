@@ -1,8 +1,6 @@
 <!ENTITY browser "Browser">
-
 <!-- Urlbar -->
 <!ENTITY urlbar "Adressleiste">
-
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Vorschläge einschränken">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Auf Lesezeichen beschränken">
@@ -13,7 +11,6 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Webseiten beschränkt, denen Sie Schlagwörter (Tags) zugewiesen haben.">
 <!ENTITY browser_urlbar_restrict_typed_name "Auf selbst eingegebene Adressen beschränken">
 <!ENTITY browser_urlbar_restrict_typed_description "Vorschläge der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) werden auf Adressen beschränkt, die Sie selbst eingegeben haben.">
-
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Suche einschränken">
 <!ENTITY browser_urlbar_match_title_name "Im Titel suchen">
@@ -26,7 +23,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Ergebnisse, die mit Wortgrenzen übereinstimmen, zuerst zeigen">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Nur Ergebnisse, die mit Wortgrenzen übereinstimmen, zeigen">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Nur am Anfang der Adresse oder des Webseitentitels suchen">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Max. Einträge in der &quot;Dropdown&quot;-Liste">
 <!ENTITY browser_urlbar_maxRichResults_description "Gibt an, wie viele Einträge maximal in der &quot;Dropdown&quot;-Liste der intelligenten Adressleiste (AwesomeBar) erscheinen.">
 <!ENTITY browser_urlbar_autoFill_name "Adresse beim Tippen automatisch vervollständigen">
@@ -41,7 +37,8 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Legt fest, ob die Domain in der Adressleiste hervorgehoben werden soll.">
 <!ENTITY browser_urlbar_trimURLs_name "Webadressen (URLs) kürzen">
 <!ENTITY browser_urlbar_trimURLs_description "Kürzt das Protokoll (http) und abschließende Schrägstriche in Webadressen (URLs).">
-
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Einzelnes Wort als Domain behandeln">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Anstatt ein einzelnes Wort mit der Standardsuchmaschine zu suchen, wird versucht das Wort in der URL-Leiste über DNS aufzulösen. Erleichtert den Zugriff auf Hosts im lokalen Netzwerk.">
 <!-- Session restore -->
 <!ENTITY session_restore "Sitzung wiederherstellen">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
@@ -70,10 +67,8 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "für jede Webseite">
 <!ENTITY browser_sessionstore_privacy_level_o2 "für unverschlüsselte (nicht HTTPS) Webseiten">
 <!ENTITY browser_sessionstore_privacy_level_o3 "für keine Webseite">
-
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "Erweiterungen &amp; Plugins">
-
 <!-- Extensions -->
 <!ENTITY extensions "Add-ons">
 <!ENTITY getaddons "&quot;Add-ons herunterladen&quot; Schaltfläche">
@@ -85,12 +80,10 @@
 <!ENTITY extensions_getAddons_maxResults_description "Legt die Anzahl der maximal anzuzeigenden Suchergebnisse fest.">
 <!ENTITY extensions_getAddons_showPane_name "Reiter anzeigen">
 <!ENTITY extensions_getAddons_showPane_description "Zeigt die &quot;Add-ons suchen&quot; Schaltfläche im Firefox Add-on-Manager an.">
-
 <!-- Installation -->
 <!ENTITY installation "Installation">
 <!ENTITY security_dialog_enable_delay_name "Add-on Installationsverzögerung (ms)">
 <!ENTITY security_dialog_enable_delay_description "Legt die Wartezeit (in Millisekunden) fest, die gewartet werden muss, bevor ein Add-on durch Drücken der &quot;Installieren&quot; Schaltfläche installiert werden kann. 0 deaktiviert diese Sicherheitsmaßnahme.">
-
 <!-- Plugins -->
 <!ENTITY plugins "Plugins">
 <!ENTITY dom_ipc_plugins_enabled_name "Jedes Plugin in einem eigenen Prozess ausführen">
@@ -99,22 +92,18 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Legt die Zeit fest, nach der der Prozess eines Plugins, welches nicht mehr reagiert, beendet wird.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Zeitbeschränkung für Pluginstart (sek)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Die Zeitdauer, nach der der Start eines Plugins als fehlgeschlagen angesehen wird.">
-
 <!-- Library -->
 <!ENTITY library "Bibliothek">
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Lesezeichen">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Lesenzeichen beim Beenden exportieren">
 <!ENTITY browser_bookmarks_autoExportHTML_description "Exportiere Lesezeichen in die Datei &quot;bookmarks.html&quot; im Profilordner wenn der Browser beendet wird.">
 <!ENTITY browser_bookmarks_max_backups_name "Lesezeichen-Backups">
 <!ENTITY browser_bookmarks_max_backups_description "Maximale Anzahl von Lesezeichen-Backups (0 deaktiviert die Backupfunktion).">
-
 <!-- History -->
 <!ENTITY history "Chronik">
 <!ENTITY places_history_expiration_max_pages_name "Max. Anzahl an Chronikeinträgen">
 <!ENTITY places_history_expiration_max_pages_description "Max. Anzahl von Einträgen, die in der Chronik gehalten werden. Überschüssige Einträge werden entfernt. Ist der Wert -1, wird die Anzahl der Einträge automatisch berechnet.">
-
 <!-- Downloads -->
 <!ENTITY downloads "Downloads">
 <!ENTITY browser_download_animateNotifications_name "Animiere Downloadsymbol">
@@ -125,10 +114,8 @@
 <!ENTITY browser_download_lastDir_description "Das Zielverzeichnis des letzten Downloads.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Vor ausführbaren Dateien warnen">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Firefox warnt Sie, bevor Sie eine ausführbare Datei aus dem Download-Manager öffnen.">
-
 <!-- Browser cache -->
 <!ENTITY cache "Browsercache">
-
 <!-- Disk cache -->
 <!ENTITY cache_disk "Festplattencache">
 <!ENTITY browser_cache_check_doc_frequency_name "Browsercache kontrollieren">
@@ -143,14 +130,12 @@
 <!ENTITY browser_cache_disk_capacity_description "Bestimt die max. Größe des Festplattencaches in Kilobyte.">
 <!ENTITY browser_cache_disk_enable_name "Benutze Festplattencache">
 <!ENTITY browser_cache_disk_enable_description "Verwende den Festplattencache.">
-
 <!-- Memory cache -->
 <!ENTITY cache_memory "Memorycache">
 <!ENTITY browser_cache_memory_enable_name "Benutze Memorycache">
 <!ENTITY browser_cache_memory_enable_description "Verwende den Memorycache.">
 <!ENTITY browser_cache_memory_capacity_name "Memorycache (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Bestimmt die max. Größe des Memorycaches in Kilobyte.">
-
 <!-- Misc -->
 <!ENTITY misc "Verschiedenes">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Maximale Seitenzahl in Hauptspeicher">

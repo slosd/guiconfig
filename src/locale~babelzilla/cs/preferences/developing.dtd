@@ -1,12 +1,10 @@
 <!ENTITY developing "Vývoj">
-
 <!-- View Source -->
 <!ENTITY viewsource "Zobrazení zdrojového kódu">
 <!ENTITY view_source_editor_external_name "Použít vlastní editor">
 <!ENTITY view_source_editor_external_description "Pro zobrazení zdrojového kódu se použije vlastní editor.">
 <!ENTITY view_source_editor_path_name "Cesta k editoru">
 <!ENTITY view_source_editor_path_description "Cesta k vlastnímu editoru.">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Vypnout vyrovnávací paměť XUL">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Změny oken a dialogových oken nebudou vyžadovat restart. Nefunguje pro soubory formátu JAR.">

@@ -1,12 +1,10 @@
 <!ENTITY developing "Entwicklung">
-
 <!-- View Source -->
 <!ENTITY viewsource "Quelltextanzeige">
 <!ENTITY view_source_editor_external_name "Benutzerdefinierten Editor verwenden">
 <!ENTITY view_source_editor_external_description "Statt des Standard-Editors einen eigenen Editor für die Quelltextansicht verwenden.">
 <!ENTITY view_source_editor_path_name "Pfad zum Editor">
 <!ENTITY view_source_editor_path_description "Pfad zum eigenen Editor.">
-
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deaktiviert XUL-Cache">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Veränderungen an Fenstern und Dialogen benötigen keinen Neustart.Funktioniert nicht mit JAR-gepackten Dateien.">

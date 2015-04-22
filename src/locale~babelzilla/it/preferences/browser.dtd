@@ -1,8 +1,6 @@
 <!ENTITY browser "Browser">
-
 <!-- Urlbar -->
 <!ENTITY urlbar "Barra degli indirizzi">
-
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Limita risultati">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Limita ai segnalibri">
@@ -11,7 +9,6 @@
 <!ENTITY browser_urlbar_restrict_history_description "I risultati nella Barra di ricerca sono limitati ai siti web visitati.">
 <!ENTITY browser_urlbar_restrict_tag_name "Limita alle etichette">
 <!ENTITY browser_urlbar_restrict_tag_description "I risultati nella Barra di ricerca sono limitati alle etichette.">
-
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Risultati della ricerca">
 <!ENTITY browser_urlbar_match_title_name "Cerca nel titolo">
@@ -24,7 +21,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Mostra prima gli elementi che corrispondono alle estremità delle parole digitate">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Utilizza le estremità solo per il testo digitato">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Mostra solo URL o titoli che iniziano con il termine di ricerca">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Voci nel menu a discesa">
 <!ENTITY browser_urlbar_maxRichResults_description "Determina il numero massimo di elementi da mostrare nel menu a discesa della Barra di ricerca.">
 <!ENTITY browser_urlbar_autoFill_name "Completamento automatico">
@@ -35,11 +31,8 @@
 <!ENTITY browser_fixup_alternate_prefix_description "I caratteri da inserire all&apos;inizio dell&apos;indirizzo.">
 <!ENTITY browser_fixup_alternate_suffix_name "Suffisso">
 <!ENTITY browser_fixup_alternate_suffix_description "I caratteri da inserire alla fine dell&apos;indirizzo.">
-
 <!-- Session restore -->
-
 <!-- Extensions and plugins -->
-
 <!-- Extensions -->
 <!ENTITY extensions "Estensioni">
 <!ENTITY getaddons "Pannello Esplora">
@@ -49,29 +42,21 @@
 <!ENTITY extensions_getAddons_maxResults_description "Specifica il numero massimo di risultati che possono essere mostrati quando si effettua una ricerca nel pannello Esplora.">
 <!ENTITY extensions_getAddons_showPane_name "Mostra pannello">
 <!ENTITY extensions_getAddons_showPane_description "Specifica se mostrare o meno il pannello Esplora nella finestra Componenti aggiuntivi">
-
 <!-- Installation -->
-
 <!-- Plugins -->
-
 <!-- Library -->
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Segnalibri">
 <!ENTITY browser_bookmarks_max_backups_name "Backup dei segnalibri">
 <!ENTITY browser_bookmarks_max_backups_description "Specifica il numero di backup da tenere. Un valore pari a zero disattiverà il backup.">
-
 <!-- History -->
-
 <!-- Downloads -->
 <!ENTITY browser_download_lastDir_name "Ultima cartella di download">
 <!ENTITY browser_download_lastDir_description "Indica il percorso dell&apos;ultima cartella utilizzata per un download tramite &apos;Salva destinazione con nome..&apos;">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Avviso file eseguibili">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Avvisa l&apos;utente di ogni tentativo di aprire un file eseguibile dalla Gestione download">
-
 <!-- Browser cache -->
 <!ENTITY cache "Cache del browser">
-
 <!-- Disk cache -->
 <!ENTITY cache_disk "Cache su disco">
 <!ENTITY browser_cache_check_doc_frequency_name "Controlla la cache del browser">
@@ -86,13 +71,11 @@
 <!ENTITY browser_cache_disk_capacity_description "Indica la quantità di spazio su disco allocato per la cache del browser (in KB).">
 <!ENTITY browser_cache_disk_enable_name "Utilizza la cache su disco">
 <!ENTITY browser_cache_disk_enable_description "Utilizza la cache su disco fino alla quantità definita.">
-
 <!-- Memory cache -->
 <!ENTITY cache_memory "Cache in memoria">
 <!ENTITY browser_cache_memory_enable_name "Utilizza la cache in memoria">
 <!ENTITY browser_cache_memory_enable_description "Utilizza la cache in memoria fino alla quantità definita.">
 <!ENTITY browser_cache_memory_capacity_name "Cache in memoria (in KB):">
 <!ENTITY browser_cache_memory_capacity_description "Imposta il massimo consumo di RAM per la cache in memoria (in KB).">
-
 <!-- Misc -->
 <!ENTITY misc "Varie">

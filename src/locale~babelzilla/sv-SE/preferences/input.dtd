@@ -1,20 +1,17 @@
 <!ENTITY input "Indata">
 <!ENTITY mousebehaviour "Egenskaper för mus">
-
 <!-- Middle click -->
 <!ENTITY middleclick "Mittenklick">
 <!ENTITY middlemouse_contentLoadURL_name "Läs in Urklipp som URL">
 <!ENTITY middlemouse_contentLoadURL_description "Läs in innehållet i Urklipp som en URL vid mittenklick.">
 <!ENTITY middlemouse_paste_name "Klistra in text från Urklipp">
 <!ENTITY middlemouse_paste_description "Klistra in innehållet i Urklipp i ett textfält vid mittenklick.">
-
 <!-- Mouse click -->
 <!ENTITY mouseclick "Musklick">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Markera innehåll vid musklick">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Markera innehållet i adressfältet när det klickas.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Markera innehåll vid dubbelklick">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Markera innehållet i adressfältet när det dubbelklickas. ">
-
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Vertikal musrullning">
 <!ENTITY mousewheel_action_description "Välj vad som ska hända under rullning i kombination med olika tangenter">
@@ -26,7 +23,6 @@
 <!ENTITY mousewheel_action_o2 "Bläddra sidor">
 <!ENTITY mousewheel_action_o3 "Gå bakåt/framåt i historiken">
 <!ENTITY mousewheel_action_o4 "Zoomning av sidan">
-
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Backsteg">
 <!ENTITY browser_backspace_action_description "Bestämmer beteendet för backstegstangenten.">

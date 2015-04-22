@@ -1,5 +1,4 @@
 <!ENTITY appearance "Aparência">
-
 <!-- Browser -->
 <!ENTITY browser_style "Navegador">
 <!ENTITY browser_chrome_favicons_name "Mostrar ícones de sites e páginas">
@@ -10,9 +9,9 @@
 <!ENTITY browser_preferences_animateFadeIn_description "Muda suavemente o conteúdo e ajusta a altura da janela de opções do Firefox a cada mudança de painel.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar opções instantaneamente">
 <!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
-
 <!-- New tab page -->
-
+<!ENTITY browser_newtabpage_columns_name "Número de colunas">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Criar screenshots de páginas da web visitadas">
 <!-- Selected text -->
 <!ENTITY text_select "Texto selecionado">
 <!ENTITY ui_textSelectBackgroundAttention_name "Cor do realce de pesquisa">

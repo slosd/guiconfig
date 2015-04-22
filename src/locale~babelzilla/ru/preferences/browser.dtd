@@ -1,8 +1,6 @@
 <!ENTITY browser "Браузер">
-
 <!-- Urlbar -->
 <!ENTITY urlbar "Строка адреса">
-
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Ограничение полученных результатов">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Сузить до закладок">
@@ -13,7 +11,6 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Результаты в умной адресной строке ограничиваются тегами.">
 <!ENTITY browser_urlbar_restrict_typed_name "Сузить до набранных адресов">
 <!ENTITY browser_urlbar_restrict_typed_description "Результаты в умной адресной строке ограничиваются ранее набранными в ней адресами.">
-
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Полученные результаты подбираются">
 <!ENTITY browser_urlbar_match_title_name "Поиском среди заголовков">
@@ -26,7 +23,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "сначала показывать элементы соответствующие границам">
 <!ENTITY browser_urlbar_matchBehavior_o3 "использовать границы только для набранного текста">
 <!ENTITY browser_urlbar_matchBehavior_o4 "только совпадающие с началом адреса или заголовка">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Записей в выпадающем списке">
 <!ENTITY browser_urlbar_maxRichResults_description "Определяет, сколько (максимум) записей должно появляться в выпадающем списке адресной строки.">
 <!ENTITY browser_urlbar_autoFill_name "Встроенное автодополнение">
@@ -37,7 +33,6 @@
 <!ENTITY browser_fixup_alternate_prefix_description "Символы добавляемые в начале адреса.">
 <!ENTITY browser_fixup_alternate_suffix_name "Вставить в конце">
 <!ENTITY browser_fixup_alternate_suffix_description "Символы добавляемые в конце адреса.">
-
 <!-- Session restore -->
 <!ENTITY session_restore "Восстановление сессии">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
@@ -56,9 +51,7 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "для любого сайта">
 <!ENTITY browser_sessionstore_privacy_level_o2 "для не шифрованных (не https) сайтов">
 <!ENTITY browser_sessionstore_privacy_level_o3 "ни для каких сайтов">
-
 <!-- Extensions and plugins -->
-
 <!-- Extensions -->
 <!ENTITY extensions "Расширения">
 <!ENTITY getaddons "Панель «Поиск дополнений»">
@@ -70,11 +63,9 @@
 <!ENTITY extensions_getAddons_maxResults_description "Определяет максимальное число результатов, отображаемых в панели при выполнении поиска.">
 <!ENTITY extensions_getAddons_showPane_name "Показать панель">
 <!ENTITY extensions_getAddons_showPane_description "Определяет будет ли отображаться панель «Поиск дополнений» в окне менеджера дополнений.">
-
 <!-- Installation -->
 <!ENTITY security_dialog_enable_delay_name "Задержка при установке дополнения (мсек)">
 <!ENTITY security_dialog_enable_delay_description "Эта настройка задаёт задержку (в миллисекундах) активации кнопки «Установить» при установке дополнения. Установите в 0, чтобы отключить задержку.">
-
 <!-- Plugins -->
 <!ENTITY dom_ipc_plugins_enabled_name "Выполнять каждый подключаемый модуль в виде отдельного процесса">
 <!ENTITY dom_ipc_plugins_enabled_description "Если подключаемый модуль(например, Flash) засбоит, то это не вызовет сбой всего Firefox.">
@@ -82,16 +73,12 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Определяет отрезок времени, спустя который будет завершён процесс не отвечающего подключаемого модуля.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Время ожидания запуска подключаемого модуля (сек)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Определяет отрезок времени прошедшего с момента запуска подключаемого модуля, спустя который он считается потерявшим работоспособность.">
-
 <!-- Library -->
-
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Закладки">
 <!ENTITY browser_bookmarks_max_backups_name "Резервные копии">
 <!ENTITY browser_bookmarks_max_backups_description "Определяет число сохраняемых резервных копий закладок. Установка в 0 отключит резервирование.">
-
 <!-- History -->
-
 <!-- Downloads -->
 <!ENTITY browser_download_manager_addToRecentDocs_name "Добавлять загруженные файлы в историю документов">
 <!ENTITY browser_download_manager_addToRecentDocs_description "Определяет, будут ли загруженные файлы добавляться в меню «Документы» кнопки «Пуск».">
@@ -99,10 +86,8 @@
 <!ENTITY browser_download_lastDir_description "Путь к каталогу последним использовавшемуся для загрузки через «Сохранить как…».">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Предупреждать о выполнимых">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Предупреждает пользователя, пытающегося открыть выполнимую программу из менеджера загрузок.">
-
 <!-- Browser cache -->
 <!ENTITY cache "Кэш браузера">
-
 <!-- Disk cache -->
 <!ENTITY cache_disk "Кэш на диске">
 <!ENTITY browser_cache_check_doc_frequency_name "Проверять кэш браузера">
@@ -117,14 +102,12 @@
 <!ENTITY browser_cache_disk_capacity_description "Количество дискового пространства используемого под кэш браузера (в килобайтах).">
 <!ENTITY browser_cache_disk_enable_name "Использовать кэш на диске">
 <!ENTITY browser_cache_disk_enable_description "Разрешает использовать дисковый кэш с заданным размером.">
-
 <!-- Memory cache -->
 <!ENTITY cache_memory "Кэш в памяти">
 <!ENTITY browser_cache_memory_enable_name "Использовать кэш в памяти">
 <!ENTITY browser_cache_memory_enable_description "Разрешает использовать кэш в памяти с заданным размером.">
 <!ENTITY browser_cache_memory_capacity_name "Кэш в памяти (КБ)">
 <!ENTITY browser_cache_memory_capacity_description "Устанавливает максимальный размер ОЗУ, используемого под кэш (в килобайтах).">
-
 <!-- Misc -->
 <!ENTITY misc "Разное">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Количество страниц в памяти">
