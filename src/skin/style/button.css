@@ -1,21 +1,29 @@
 #guiconfig-open-preferences {
-  list-style-image: url("chrome://guiconfig/skin/icons/icon.16.png");
+  list-style-image: url("chrome://guiconfig/skin/icons/guiconfig-monochrome-16.png");
+}
+
+toolbar[brighttext] #guiconfig-open-preferences {
+  list-style-image: url("chrome://guiconfig/skin/icons/guiconfig-monochrome-inverted-16.png");
 }
 
 #guiconfig-open-preferences[cui-areatype="menu-panel"],
 toolbarpaletteitem[place="palette"] > #guiconfig-open-preferences {
-  list-style-image: url("chrome://guiconfig/skin/icons/icon.32.png");
+  list-style-image: url("chrome://guiconfig/skin/icons/guiconfig-monochrome-32.png");
 }
 
 @media (min-resolution: 2dppx) {
 
 #guiconfig-open-preferences {
-  list-style-image: url("chrome://guiconfig/skin/icons/icon.32.png");
+  list-style-image: url("chrome://guiconfig/skin/icons/guiconfig-monochrome-32.png");
+}
+
+toolbar[brighttext] #guiconfig-open-preferences {
+  list-style-image: url("chrome://guiconfig/skin/icons/guiconfig-monochrome-inverted-32.png");
 }
 
 #guiconfig-open-preferences[cui-areatype="menu-panel"],
 toolbarpaletteitem[place="palette"] > #guiconfig-open-preferences {
-  list-style-image: url("chrome://guiconfig/skin/icons/icon.64.png");
+  list-style-image: url("chrome://guiconfig/skin/icons/guiconfig-monochrome-64.png");
 }
 
 }
