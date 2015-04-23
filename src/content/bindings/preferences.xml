@@ -228,26 +228,28 @@
       <constructor>
       <![CDATA[
         this._prefWindow = document.documentElement;
+
+        var self = this;
+        function attachPopup(elem) {
+          elem.addEventListener('mouseenter', function(event) {
+            var target = event.target;
+            self._prefWindow.setInfo(target, target.getAttribute('data-description'),
+                target.getAttribute('data-key'));
+          });
+          elem.addEventListener('mouseleave', function(event) {
+            self._prefWindow.setInfo();
+          });
+        }
+
+        if (this.hasAttribute('data-key')) {
+          attachPopup(this);
+        }
+        for (var child of this.querySelectorAll('*[data-key]')) {
+          attachPopup(child);
+        }
       ]]>
       </constructor>
     </implementation>
-
-    <handlers>
-      <handler event="mouseover">
-      <![CDATA[
-        var target = event.target;
-        if (target.hasAttribute('data-key')) {
-          this._prefWindow.setInfo(target, target.getAttribute('data-description'),
-              target.getAttribute('data-key'));
-        }
-      ]]>
-      </handler>
-      <handler event="mouseleave">
-      <![CDATA[
-        this._prefWindow.setInfo();
-      ]]>
-      </handler>
-    </handlers>
   </binding>
 
   <binding id="gcpreference" extends="chrome://guiconfig/content/bindings/preferences.xml#base-gcpreference">
