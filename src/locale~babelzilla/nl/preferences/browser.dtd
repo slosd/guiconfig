@@ -155,3 +155,7 @@
 <!ENTITY misc "Diversen">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. aantal pagina’s in geheugen">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Onlangs bezochte pagina’s worden opgeslagen in het geheugen en kunnen sneller worden weergeven bij gebruik van Terug en Vooruit. Indien ingesteld op -1 wordt het aantal pagina’s automatisch bepaald. Indien ingesteld op 0 worden er geen pagina’s in het geheugen opgeslagen.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
+<!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">

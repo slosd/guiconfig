@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Förhandsvisning av flik">
 <!ENTITY browser_ctrlTab_preview_name "Aktivera förhandsvisning vid byte av flik">
 <!ENTITY browser_ctrlTab_preview_description "När [Ctrl]+[Tabulator] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
-<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet">
-<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (Windows 7+).">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Öppna en ny flik i bakgrunden från">

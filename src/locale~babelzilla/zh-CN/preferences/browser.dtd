@@ -155,3 +155,7 @@
 <!ENTITY misc "其他">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "内存中可保存的最大页面数">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近访问过的页面可以保存在内存中并在点击前进/后退按钮时加快显示。如果该值设为 -1 则使用自动设定的页面数，如果设置为 0 则页面不保存到内存中。">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "启用 Windows 7 任务栏预览">
+<!ENTITY browser_taskbar_previews_enable_description "启用该选项 Firefox 将在 Windows 7 任务栏中显示每个标签页的预览图。">

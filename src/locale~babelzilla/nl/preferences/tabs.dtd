@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Tabbladvoorbeeld">
 <!ENTITY browser_ctrlTab_preview_name "Tabbladvoorbeeld bij wisselen tabbladen inschakelen">
 <!ENTITY browser_ctrlTab_preview_description "Bij gebruik van Ctrl+Tab om van tabblad te wisselen wordt een voorbeeld weergegeven.">
-<!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
-<!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Een nieuw tabblad in de achtergrond openen vanaf">

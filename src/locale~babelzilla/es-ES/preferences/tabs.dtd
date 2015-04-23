@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Vista previa de pestañas">
 <!ENTITY browser_ctrlTab_preview_name "Habilitar la vista previa al cambiar entre pestañas">
 <!ENTITY browser_ctrlTab_preview_description "Al pulsar [Ctrl]+[Tab] para cambiar entre pestañas, se muestra una vista previa.">
-<!ENTITY browser_taskbar_previews_enable_name "Habilitar vista previa en la barra de tareas de Windows 7">
-<!ENTITY browser_taskbar_previews_enable_description "Si está habilitado, Firefox mostrará una vista previa de cada pestaña en la barra de tareas de Windows 7.">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Abrir una nueva pestaña en segundo plano desde">

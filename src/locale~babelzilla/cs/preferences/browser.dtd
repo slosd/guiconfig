@@ -155,3 +155,7 @@
 <!ENTITY misc "Různé">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. počet stránek v paměti">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Navštěvované stránky jsou ukládány do paměti, a mohou být proto rychleji zobrazeny při použití příkazů Zpět a Vpřed. Při zadaném čísle -1 bude počet ukládaných stránek určován automaticky. Je-li číslo 0, nebudou stránky do paměti ukládány.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">

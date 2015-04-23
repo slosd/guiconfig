@@ -131,3 +131,7 @@
 <!ENTITY misc "Diversos">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Máximo de páginas na memória:">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Páginas visitadas recentemente são mantidas na memória para agilizar as funções &quot;Página anterior&quot; e &quot;Próxima página&quot;. Insira -1 para gerenciamento automático. Insira 0 para não manter páginas além da atual na memória.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Exibir pré-visualizações na barra de tarefas do Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Faz o Firefox exibir na barra de tarefas do Windows 7 miniaturas de cada aba aberta.">

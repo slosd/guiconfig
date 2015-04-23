@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Tab preview">
 <!ENTITY browser_ctrlTab_preview_name "Enable tab preview when switching tabs">
 <!ENTITY browser_ctrlTab_preview_description "When using [CTRL]+[Tab] to switch tabs a tab preview is shown. ">
-<!ENTITY browser_taskbar_previews_enable_name "Enable previews in the Windows 7 taskbar">
-<!ENTITY browser_taskbar_previews_enable_description "When enabled Firefox will show a preview for each tab in the Windows 7 taskbar.">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Open a new tab in the background from">

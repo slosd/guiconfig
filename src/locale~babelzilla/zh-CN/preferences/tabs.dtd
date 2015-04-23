@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "标签页预览">
 <!ENTITY browser_ctrlTab_preview_name "启用标签页切换预览">
 <!ENTITY browser_ctrlTab_preview_description "当使用 [CTRL]+[Tab] 键切换标签页时显示预览图。">
-<!ENTITY browser_taskbar_previews_enable_name "启用 Windows 7 任务栏预览">
-<!ENTITY browser_taskbar_previews_enable_description "启用该选项 Firefox 将在 Windows 7 任务栏中显示每个标签页的预览图。">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "在后台打开标签页，来自：">

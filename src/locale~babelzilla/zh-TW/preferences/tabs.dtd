@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "分頁預覽">
 <!ENTITY browser_ctrlTab_preview_name "切換分頁時，啟用分頁預覽">
 <!ENTITY browser_ctrlTab_preview_description "當使用 [CTRL]+[Tab] 切換分頁時，顯示分頁預覽">
-<!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
-<!ENTITY browser_taskbar_previews_enable_description "啟用後，FF 會 在Windows 7 工具列顯示對各分頁的預覽。">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "背景中以新分頁開啟">

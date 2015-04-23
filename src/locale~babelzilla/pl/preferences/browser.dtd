@@ -129,3 +129,7 @@
 <!ENTITY misc "Rozmaite">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Maksymalna liczba stron przechowywanych w pamięci">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Ostatnio odwiedzone strony są przechowywane w pamięci, dzięki czemu mogą zostać wyświetlone szybciej po użyciu przycisków &quot;Wstecz&quot; oraz &quot;Do przodu&quot;. Gdy ustawienie to ma wartość -1, liczba stron przechowywanych w pamięci jest określana automatycznie. Nadanie mu wartości 0 powoduje, że żadne strony nie są przechowywane w pamięci.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Włącz podglądy w pasku zadań Windowsa 7">
+<!ENTITY browser_taskbar_previews_enable_description "Włączenie tej opcji sprawi, że Firefox będzie wyświetlał podgląd każdej karty na pasku zadań Windowsa 7.">

@@ -129,3 +129,7 @@
 <!ENTITY misc "Varios">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Número máximo de páginas en memoria">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Las páginas visitadas recientemente se guardan en la memoria y pueden verse más rápidamente usando los botones Atrás y adelante. Si se establece a -1, el número de páginas se determinará automáticamente. Si se establece a 0, no se guardará ninguna página en memoria.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Habilitar vista previa en la barra de tareas de Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Si está habilitado, Firefox mostrará una vista previa de cada pestaña en la barra de tareas de Windows 7.">

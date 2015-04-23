@@ -155,3 +155,7 @@
 <!ENTITY misc "Verschiedenes">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Maximale Seitenzahl in Hauptspeicher">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Kürzlich besuchte Webseiten werden im Hauptspeicher gespeichert und können dadurch schneller angezeigt werden wenn Sie Zurück und Vorwärts verwenden. Bei einem Wert von -1 wird die Seitenzahl automatisch festgelegt. Mit dem Wert 0 werden keine Seiten im Hauptspeicher gespeichert.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Vorschauen in der Windows 7 Taskleiste anzeigen">
+<!ENTITY browser_taskbar_previews_enable_description "Zeigt unter Windows 7 für jeden geöffneten Tab eine Vorschau in der Taskleiste an.">

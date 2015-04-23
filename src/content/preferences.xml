@@ -370,6 +370,71 @@
                 minValue="-1" />
         </group>
       </concern>
+      <concern label="&taskbar;" platform="WINNT">
+        <pref key="browser.taskbar.previews.enable"
+              label="&browser_taskbar_previews_enable_name;"
+              description="&browser_taskbar_previews_enable_description;"
+              type="bool"
+              platform="WINNT" />
+        <pref key="browser.taskbar.previews.max"
+              label="&browser_taskbar_previews_max_name;"
+              description="&browser_taskbar_previews_max_description;"
+              type="int"
+              platform="WINNT"
+              indent="indent">
+          <dependency key="browser.taskbar.previews.enable" equals="true" />
+        </pref>
+        <pref key="browser.taskbar.previews.cachetime"
+              label="&browser_taskbar_previews_cachetime_name;"
+              description="&browser_taskbar_previews_cachetime_description;"
+              type="int"
+              minValue="0"
+              platform="WINNT"
+              indent="indent">
+          <dependency key="browser.taskbar.previews.enable" equals="true" />
+        </pref>
+        <pref key="browser.taskbar.lists.enabled"
+              label="&browser_taskbar_lists_enabled_name;"
+              description="&browser_taskbar_lists_enabled_description;"
+              type="bool" />
+        <pref key="browser.taskbar.lists.tasks.enabled"
+              label="&browser_taskbar_lists_tasks_enabled_name;"
+              description="&browser_taskbar_lists_tasks_enabled_description;"
+              type="bool"
+              indent="indent">
+          <dependency key="browser.taskbar.lists.enabled" equals="true" />
+        </pref>
+        <pref key="browser.taskbar.lists.frequent.enabled"
+              label="&browser_taskbar_lists_frequent_enabled_name;"
+              description="&browser_taskbar_lists_frequent_enabled_description;"
+              type="bool"
+              indent="indent">
+          <dependency key="browser.taskbar.lists.enabled" equals="true" />
+        </pref>
+        <pref key="browser.taskbar.lists.recent.enabled"
+              label="&browser_taskbar_lists_recent_enabled_name;"
+              description="&browser_taskbar_lists_recent_enabled_description;"
+              type="bool"
+              indent="indent">
+          <dependency key="browser.taskbar.lists.enabled" equals="true" />
+        </pref>
+        <pref key="browser.taskbar.lists.maxListItemCount"
+              label="&browser_taskbar_lists_maxListItemCount_name;"
+              description="&browser_taskbar_lists_maxListItemCount_description;"
+              type="int"
+              minValue="0"
+              indent="indent">
+          <dependency key="browser.taskbar.lists.enabled" equals="true" />
+        </pref>
+        <pref key="browser.taskbar.lists.refreshInSeconds"
+              label="&browser_taskbar_lists_refreshInSeconds_name;"
+              description="&browser_taskbar_lists_refreshInSeconds_description;"
+              type="int"
+              minValue="0"
+              indent="indent">
+          <dependency key="browser.taskbar.lists.enabled" equals="true" />
+        </pref>
+      </concern>
     </concerns>
   </category>
   <category label="&content;" icon="content">
@@ -705,16 +770,11 @@
     </group>
   </category>
   <category label="&tabs;" icon="tabs">
-    <group label="&tab_preview;" minVersion="3.6">
+    <group label="&tab_preview;">
       <pref key="browser.ctrlTab.previews"
             label="&browser_ctrlTab_preview_name;"
             description="&browser_ctrlTab_preview_description;"
             type="bool" />
-      <pref key="browser.taskbar.previews.enable"
-            label="&browser_taskbar_previews_enable_name;"
-            description="&browser_taskbar_previews_enable_description;"
-            type="bool"
-            platform="WINNT" />
     </group>
     <group label="&open_in_background;">
       <pref key="browser.tabs.loadInBackground"

@@ -129,3 +129,7 @@
 <!ENTITY misc "Разное">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Количество страниц в памяти">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Недавно посещённые страницы будут сохраняться в памяти и, при использовании кнопок «Назад» и «Вперёд», могут отображаться быстрее. Если установлено в -1, количество сохраняемых страниц определяется автоматически. Если установлено в 0, страницы в памяти не сохраняются.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Включить просмотр в панели задач Windows 7">
+<!ENTITY browser_taskbar_previews_enable_description "Если включено, Firefox будет показывать просмотр для каждой вкладки в панели задач Windows 7.">

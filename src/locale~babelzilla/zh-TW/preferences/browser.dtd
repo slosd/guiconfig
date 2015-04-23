@@ -127,3 +127,7 @@
 <!ENTITY misc "雜項">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "最大記憶頁數">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近瀏覽過的網頁係儲存在記憶體中，這樣在用到「前一頁」「後一頁」時，可以顯示得快些。若設為-1，則頁數為自動決定；若設0就完全不予保留。">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
+<!ENTITY browser_taskbar_previews_enable_description "啟用後，FF 會 在Windows 7 工具列顯示對各分頁的預覽。">

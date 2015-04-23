@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Pré-visualização de abas">
 <!ENTITY browser_ctrlTab_preview_name "Exibir pré-visualização ao trocar abas">
 <!ENTITY browser_ctrlTab_preview_description "Exibe a pré-visualização das abas ao pressionar Ctrl+Tab.">
-<!ENTITY browser_taskbar_previews_enable_name "Exibir pré-visualizações na barra de tarefas do Windows 7">
-<!ENTITY browser_taskbar_previews_enable_description "Faz o Firefox exibir na barra de tarefas do Windows 7 miniaturas de cada aba aberta.">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Abas que são abertas em segundo plano">

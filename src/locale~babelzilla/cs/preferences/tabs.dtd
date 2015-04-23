@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Náhledy panelů">
 <!ENTITY browser_ctrlTab_preview_name "Povolit náhledy panelů při přepínání panelů">
 <!ENTITY browser_ctrlTab_preview_description "Náhledy panelů se budou zobrazovat při jejich přepínání pomocí [CTRL]+[Tab].">
-<!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
-<!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Otevřít nový panel na pozadí">

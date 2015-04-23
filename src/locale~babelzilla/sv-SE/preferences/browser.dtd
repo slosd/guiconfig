@@ -155,3 +155,7 @@
 <!ENTITY misc "Övrigt">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Antal lagrade webbsidor i minnet">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Nyligen besökta webbsidor lagras i minnet och kan visas snabbare när Bakåt- och Framåt-knapparna används. Om värdet sätts till -1 kommer antalet lagrade webbsidor att bestämmas automatiskt. Om det sätts till 0 kommer inga sidor att lagras i minnet.">
+
+<!-- Taskbar -->
+<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet">
+<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (Windows 7+).">

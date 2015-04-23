@@ -7,8 +7,6 @@
 <!ENTITY tab_preview "Просмотр вкладок">
 <!ENTITY browser_ctrlTab_preview_name "Включить просмотр при переключении вкладок">
 <!ENTITY browser_ctrlTab_preview_description "Отображает просмотр вкладок при использовании для переключения между вкладками комбинации клавиш Ctrl+Tab.">
-<!ENTITY browser_taskbar_previews_enable_name "Включить просмотр в панели задач Windows 7">
-<!ENTITY browser_taskbar_previews_enable_description "Если включено, Firefox будет показывать просмотр для каждой вкладки в панели задач Windows 7.">
 
 <!-- Open in background -->
 <!ENTITY open_in_background "Открывать новую фоновую вкладку для ссылок">
