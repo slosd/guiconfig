@@ -19,3 +19,9 @@
 <!ENTITY network_http_pipelining_maxrequests_description "This preference specifies the maximum number of requests to pipeline at once when pipelining is enabled.  ">
 <!ENTITY network_http_proxy_pipelining_name "Use pipelining with a proxy server">
 <!ENTITY network_http_proxy_pipelining_description "This preference specifies whether to use pipelining with a proxy server. Pipelining reduces network load and can reduce page loading times, but it may cause problems loading pages from servers which don't support pipelining.">
+
+<!-- Prediction -->
+<!ENTITY prediction "Prediction">
+<!ENTITY network_predictor_enabled_name "Enable prediction">
+<!ENTITY network_predictor_enabled_description "Enables the prediction service, which pre-connects to websites (DNS pre-fetch and TCP/TLS handshake) when the user hovers over a link in order to improve page load time. This does not send any actual data to the website.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Enable pre-connects for HTTPS addresses">

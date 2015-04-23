@@ -821,6 +821,19 @@
             description="&network_http_pipelining_maxrequests_description;"
             type="int" />
     </group>
+    <group label="&prediction;">
+      <pref key="network.predictor.enabled"
+            label="&network_predictor_enabled_name;"
+            description="&network_predictor_enabled_description;"
+            type="bool" />
+      <pref key="network.predictor.enable-hover-on-ssl"
+            label="&network_predictor_enable-hover-on-ssl_name;"
+            description=""
+            type="bool"
+            indent="indent">
+        <dependency key="network.predictor.enabled" equals="true" />
+      </pref>
+    </group>
   </category>
   <category label="&developing;" icon="developing">
     <group label="&viewsource;">
