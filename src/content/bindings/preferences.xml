@@ -175,8 +175,15 @@
 
           var key = this.contextPreference.getAttribute('data-key');
           var pref = document.getElementById(key);
-          if (pref) {
+          if (!pref) return;
+
+          var defaultValue = pref.defaultValue;
+          // If there is a default value reset it manually, because reset()
+          // always sets the value to undefined, which messes up dependencies.
+          if (defaultValue === null) {
             pref.reset();
+          } else {
+            pref.value = defaultValue;
           }
         ]]>
         </body>
