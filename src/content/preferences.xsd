@@ -112,6 +112,7 @@
     <enumeration value="radio" />
     <enumeration value="select" />
     <enumeration value="color" />
+    <enumeration value="file" />
   </restriction>
 </simpleType>
 
