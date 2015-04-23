@@ -14,6 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
 <!ENTITY browser_dom_window_dump_enabled_name "Enable dump()">
 <!ENTITY browser_dom_window_dump_enabled_description "Enables the use of the dump() statement to print to the standard console.">
+<!ENTITY browser_dom_window_dump_file_name "Redirect to file">
+<!ENTITY browser_dom_window_dump_file_description "Path to a file to redirect the output of dump() to. The file is created if it does not exist. Requires a restart.">
 <!ENTITY javascript_options_showInConsole_name "Show chrome errors in the console">
 <!ENTITY javascript_options_showInConsole_description "Determines whether to log chrome errors and warnings to the JavaScript Console.">
 <!ENTITY javascript_options_strict_name "Strict Javascript warnings">
