@@ -64,3 +64,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "отключить">
 <!ENTITY layout_spellcheckDefault_o2 "разрешить в многострочных текстовых полях">
 <!ENTITY layout_spellcheckDefault_o3 "разрешить в много- и однострочных текстовых полях">
+
+<!-- Javascript -->
+
+<!-- Permissions -->

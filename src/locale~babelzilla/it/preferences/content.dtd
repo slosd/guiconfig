@@ -34,3 +34,7 @@
 <!ENTITY accessibility_tabfocus_o4 "solo i collegamenti (e le immagini con collegamento)">
 <!ENTITY accessibility_tabfocus_o5 "sia i collegamenti che gli elementi dei moduli">
 <!ENTITY accessibility_tabfocus_o6 "sia i collegamenti che gli elementi dei moduli, ad eccezione dei campi di testo">
+
+<!-- Javascript -->
+
+<!-- Permissions -->

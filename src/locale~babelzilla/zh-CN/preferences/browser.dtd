@@ -41,6 +41,8 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
 <!ENTITY browser_urlbar_trimURLs_name "精简 URL">
 <!ENTITY browser_urlbar_trimURLs_description "启用该项后，地址栏会自动隐藏 http:// 这样的协议名。">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "将单个词视为域名">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "而不是使用默认搜索引擎搜索单个词。首先尝试使用 DNS 解析网址栏中的单个词。常用于访问本地网络上的主机。">
 
 <!-- Session restore -->
 <!ENTITY session_restore "浏览会话恢复">

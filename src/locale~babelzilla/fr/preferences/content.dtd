@@ -52,3 +52,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "Désactiver">
 <!ENTITY layout_spellcheckDefault_o2 "Activer pour les champs de texte de plusieurs lignes">
 <!ENTITY layout_spellcheckDefault_o3 "Activer pour les champs de texte d&apos;une ou plusieurs lignes">
+
+<!-- Javascript -->
+
+<!-- Permissions -->

@@ -2,6 +2,8 @@
 <!ENTITY browser.item.access "v">
 <!ENTITY config.search "Sök">
 <!ENTITY config.descr.standard "För muspekaren över ett alternativ för en detaljerad beskrivning">
+<!ENTITY config.description "Beskrivning:">
+<!ENTITY config.preference_key "Inställningsnyckel:">
 <!ENTITY config.standard.label "Återställ alla">
 <!ENTITY config.todefault "Använd standardvärdet">
 <!ENTITY config.header.title "gui:config">

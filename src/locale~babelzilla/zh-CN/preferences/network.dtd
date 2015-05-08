@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "这个选项决定流水线的最大请求数。">
 <!ENTITY network_http_proxy_pipelining_name "对代理服务器使用流水线">
 <!ENTITY network_http_proxy_pipelining_description "这个选项决定是否对代理服务器使用流水线。流水线可以减少网页读取时间并且简少网络流量，但是当服务器不支持流水线时可能会出错。">
+
+<!-- Prediction -->

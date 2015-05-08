@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Den här inställningen bestämmer det högsta antalet samtidiga förfrågningar som kan pipas när direktförbindelse är aktiverat.  ">
 <!ENTITY network_http_proxy_pipelining_name "Använd direktförbindelse mot en proxyserver">
 <!ENTITY network_http_proxy_pipelining_description "Den här inställningen bestämmer huruvida direktförbindelse ska användas mot en proxyserver. Direktförbindelse minskar belastningen på nätverket och kan minska tiden det tar att läsa in webbsidor, men det kan samtidigt orsaka problem med att läsa in sidor från servrar som inte stödjer direktförbindelse.">
+
+<!-- Prediction -->

@@ -64,3 +64,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "Wyłącz">
 <!ENTITY layout_spellcheckDefault_o2 "Włącz dla wieloliniowych pól tekstowych">
 <!ENTITY layout_spellcheckDefault_o3 "Włącz dla wieloliniowych i jednoliniowych pól tekstowych">
+
+<!-- Javascript -->
+
+<!-- Permissions -->

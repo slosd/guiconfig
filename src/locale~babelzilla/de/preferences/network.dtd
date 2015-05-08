@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Beschränkt die Anzahl maximal möglicher Anfragen (Requests) pro Pipeline.">
 <!ENTITY network_http_proxy_pipelining_name "Pipelining bei einem Proxy-Server verwenden">
 <!ENTITY network_http_proxy_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung.Muss aber vom Server unterstützt werden.">
+
+<!-- Prediction -->

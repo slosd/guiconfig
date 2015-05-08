@@ -12,6 +12,8 @@
 <!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
 
 <!-- New tab page -->
+<!ENTITY browser_newtabpage_columns_name "Número de colunas">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "Criar screenshots de páginas da web visitadas">
 
 <!-- Selected text -->
 <!ENTITY text_select "Texto selecionado">

@@ -41,6 +41,8 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Určuje, zda se bude bude formátovat doména v adresním řádku.">
 <!ENTITY browser_urlbar_trimURLs_name "Zkracovat URL">
 <!ENTITY browser_urlbar_trimURLs_description "Pokud je povoleno, v adresním řádku se nebude vypisovat protokol (http) a ǘvodní lomítka.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Považovat jediné slovo za název domény">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Místo toho, aby se jediné slovo zadané do adresního řádku hledalo pomocí vyhledávače, se toto slovo nejprve zkusí vyhledat v DNS. To je užitečné při přístupu na servery v místní síti.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Obnova relace">

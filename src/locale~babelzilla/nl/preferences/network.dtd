@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Deze voorkeur specificeert het maximale aantal gelijktijdige aanvragen in de pipeline wanneer dit is ingeschakeld.">
 <!ENTITY network_http_proxy_pipelining_name "Pipelining met een proxyserver gebruiken">
 <!ENTITY network_http_proxy_pipelining_description "Deze voorkeur geeft op of pipelining met een proxyserver moet worden gebruikt. Pipelining reduceert de netwerkbelasting en kan de laadtijden van pagina’s verkorten, maar het kan ook problemen veroorzaken bij het laden van pagina’s van servers die het niet ondersteunen.">
+
+<!-- Prediction -->

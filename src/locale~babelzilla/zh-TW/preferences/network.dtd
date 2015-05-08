@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "此選項指定啟用「複請求批送」時，同一時間內可要求批送的最大請求數。">
 <!ENTITY network_http_proxy_pipelining_name "對代理伺服主機使用「複請求批送」(Pipelining)">
 <!ENTITY network_http_proxy_pipelining_description "此選項指定是否對代理伺服主機使用「複請求批送」。HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
+
+<!-- Prediction -->

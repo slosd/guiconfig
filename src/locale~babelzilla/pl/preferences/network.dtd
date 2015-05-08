@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "To ustawienie określa maksymalną liczbę jednocześnie przetwarzanych potokowo zapytań, gdy przetwarzanie to jest włączone.">
 <!ENTITY network_http_proxy_pipelining_name "Używaj przetwarzania potokowego z serwerem proxy">
 <!ENTITY network_http_proxy_pipelining_description "To ustawienie określa, czy przetwarzanie potokowe ma być używane na serwerze proxy. Przetwarzanie potokowe zmniejsza obciążenie sieci i może skrócić czas wczytywania stron, ale może także spowodować problemy przy wczytywaniu stron z serwerów, które nie obsługują takiego rodzaju przetwarzania.">
+
+<!-- Prediction -->

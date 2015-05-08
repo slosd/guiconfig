@@ -1,6 +1,7 @@
+<!ENTITY content "Conteúdo">
 
 <!-- Websites -->
-<!ENTITY websites "Páginas">
+<!ENTITY websites "Sites">
 
 <!-- Images -->
 <!ENTITY images "Imagens">
@@ -9,6 +10,11 @@
 <!ENTITY gfx_color_management_mode_o1 "nenhuma imagem">
 <!ENTITY gfx_color_management_mode_o2 "todas as imagens">
 <!ENTITY gfx_color_management_mode_o3 "imagens que tenham informações ICC">
+<!ENTITY image_animation_mode_name "Imagens animadas">
+<!ENTITY image_animation_mode_description "Restringe que imagens animadas (GIFs) rodem indefinidamente (ou quantas vezes a imagem especificar), rodem uma vez ou não rodem.">
+<!ENTITY image_animation_mode_o1 "Repetir indefinidamente">
+<!ENTITY image_animation_mode_o2 "Executar a animação uma vez">
+<!ENTITY image_animation_mode_o3 "Nunca execute a animação">
 <!ENTITY browser_display_show_image_placeholders_name "Mostrar espaços reservados para imagens">
 <!ENTITY browser_display_show_image_placeholders_description "Exibe na página os espaços reservados para imagens enquanto elas ainda não são carregadas. (Costuma evitar algumas mudanças bruscas no aspecto da página durante o seu carregamento.)">
 <!ENTITY browser_enable_automatic_image_resizing_name "Reduzir imagens para exibi-las por completo">
@@ -22,6 +28,7 @@
 <!ENTITY content_notify_interval_description "Especifica o tempo mínimo, em microssegundos, entre as reexibições de uma página em carregamento. Valores menores fazem a página parecer ser carregada mais rapidamente, porém aumentam o tempo total de carregamento.">
 
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Ativar reprodução automática">
 <!ENTITY geo_enabled_name "Ativar localização">
 <!ENTITY geo_enabled_description "Permite que o Firefox pergunte a você se deseja informar a sua localização atual aos sites que a requisitarem. Desmarque essa opção para desativar a geolocalização no Firefox.">
 <!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
@@ -66,3 +73,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "desligado">
 <!ENTITY layout_spellcheckDefault_o2 "apenas em campos de texto de várias linhas">
 <!ENTITY layout_spellcheckDefault_o3 "em todos os campos de texto">
+
+<!-- Javascript -->
+
+<!-- Permissions -->

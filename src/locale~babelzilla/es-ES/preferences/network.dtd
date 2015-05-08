@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Esta opción especifica el número máximo de peticiones con pipeline si está activo.">
 <!ENTITY network_http_proxy_pipelining_name "Usar pipeline con un servidor proxy">
 <!ENTITY network_http_proxy_pipelining_description "Esta opción especifica si se usa la técnica de pipeline con un servidor proxy. Esta técnica reduce la carga de la red y puede reducir el tiempo de carga de las páginas, pero puede causar problemas si el servidor no lo admite.">
+
+<!-- Prediction -->

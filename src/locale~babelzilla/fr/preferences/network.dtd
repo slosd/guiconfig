@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Cette préférence fixe le nombre maximal de requêtes simultanées par pipelining lorsque celui-ci est activé.">
 <!ENTITY network_http_proxy_pipelining_name "Utiliser du pipelining avec un serveur proxy">
 <!ENTITY network_http_proxy_pipelining_description "Cette préférence fixe s&apos;il faut utiliser le pipelining avec un serveur proxy. Le pipelining réduit le chargement du réseau et peut aussi réduire les durées de chargement des pages, mais cela peut aussi causer des problèmes au cas où les serveurs ne supportent pas cette méthode de requêtes.">
+
+<!-- Prediction -->

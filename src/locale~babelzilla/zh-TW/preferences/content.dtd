@@ -62,3 +62,7 @@
 <!ENTITY layout_spellcheckDefault_o1 "停用">
 <!ENTITY layout_spellcheckDefault_o2 "啟用多行文字輸入方塊">
 <!ENTITY layout_spellcheckDefault_o3 "啟用多行及單行文字輸入方塊">
+
+<!-- Javascript -->
+
+<!-- Permissions -->

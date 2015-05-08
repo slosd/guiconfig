@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Pokud je proudové zpracování povoleno, tato předvolba stanovuje maximální počet požadavků, které budou najednou zpracovány.">
 <!ENTITY network_http_proxy_pipelining_name "Použít proudové zpracování s proxy servery">
 <!ENTITY network_http_proxy_pipelining_description "Tato předvolba stanovuje, zda se bude proudové zpracování používat s proxy servery. Proudové zpracování snižuje zátěž sítě a může zkrátit dobu načítání stránky, ale mohou se objevit problémy se servery, které proudové zpracování nepodporují.">
+
+<!-- Prediction -->

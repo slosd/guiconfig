@@ -28,6 +28,7 @@
 <!ENTITY content_notify_interval_description "Firefox定期渲染从特定网站收到的全部数据，这个值决定了每次渲染的最小时间片，较低的数值会在观感上加快渲染速度，但是会拖慢整体渲染速度。（微秒 µs 10e-6）">
 
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "启用自动播放媒体">
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">
 <!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
@@ -80,3 +81,19 @@
 <!ENTITY layout_spellcheckDefault_o1 "禁止">
 <!ENTITY layout_spellcheckDefault_o2 "允许在多行文本框中拼写检查">
 <!ENTITY layout_spellcheckDefault_o3 "允许在单行文本框中拼写检查">
+
+<!-- Javascript -->
+<!ENTITY javascript "JavaScript">
+
+<!-- Permissions -->
+<!ENTITY permissions "允许">
+<!ENTITY javascript_enabled_name "启用 JavaScript">
+<!ENTITY javascript_enabled_description "启用或禁用 JavaScript 对所有网站。">
+<!ENTITY dom_disable_window_move_resize_name "移动和调整窗口大小">
+<!ENTITY dom_disable_window_move_resize_description "允许脚本移动和调整浏览器窗口的大小。">
+<!ENTITY dom_disable_window_flip_name "提升和降低窗口">
+<!ENTITY dom_disable_window_flip_description "允许脚本提升和降低浏览器窗口。">
+<!ENTITY dom_event_contextmenu_enabled_name "移除和替换右键菜单">
+<!ENTITY dom_event_contextmenu_enabled_description "允许脚本移除和替换网站上的右键菜单。">
+<!ENTITY dom_event_clipboardevents_enabled_name "与剪贴板互动">
+<!ENTITY dom_event_clipboardevents_enabled_description "允许脚本在用户使用剪贴板复制、剪切和粘贴网站内容时获得通知。">

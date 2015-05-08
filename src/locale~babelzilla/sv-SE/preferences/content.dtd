@@ -28,6 +28,7 @@
 <!ENTITY content_notify_interval_description "Firefox renderar regelbundet all mottagen data från en webbplats. Den här inställningen anger den kortaste tillåtna tiden (i mikrosekunder) som webbläsaren måste vänta innan sidan ritas om. Låga värden förkortar den upplevda inläsningstiden, men ökar den totala inläsningstiden.">
 
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Aktivera automatisk uppspelning av media">
 <!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
 <!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet.">
 <!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">
@@ -80,3 +81,19 @@
 <!ENTITY layout_spellcheckDefault_o1 "Inaktivera">
 <!ENTITY layout_spellcheckDefault_o2 "Aktivera för flerradstextfält">
 <!ENTITY layout_spellcheckDefault_o3 "Aktivera för flerrads- och singelradstextfält">
+
+<!-- Javascript -->
+<!ENTITY javascript "JavaScript">
+
+<!-- Permissions -->
+<!ENTITY permissions "Behörigheter">
+<!ENTITY javascript_enabled_name "Aktivera JavaScript">
+<!ENTITY javascript_enabled_description "Aktiverar eller inaktiverar JavaScript för alla webbplatser.">
+<!ENTITY dom_disable_window_move_resize_name "Flytta och storleksändra fönster">
+<!ENTITY dom_disable_window_move_resize_description "Tillåter skript att flytta och/eller ändra storlek på webbläsarfönster.">
+<!ENTITY dom_disable_window_flip_name "Höja och sänka fönster">
+<!ENTITY dom_disable_window_flip_description "Tillåter skript att höja och/eller sänka webbläsarfönster.">
+<!ENTITY dom_event_contextmenu_enabled_name "Ta bort och ersätta snabbmenyn">
+<!ENTITY dom_event_contextmenu_enabled_description "Tillåter skript att ta bort och/eller ersätta snabbmenyn på webbplatser.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interagera med Urklipp">
+<!ENTITY dom_event_clipboardevents_enabled_description "Tillåter att skript meddelas när användaren använder Urklipp för att kopiera, klippa ut och klistra in webbsideinnehåll.">

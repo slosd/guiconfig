@@ -28,6 +28,7 @@
 <!ENTITY content_notify_interval_description "Firefox verwerkt periodiek alle ontvangen gegevens van een website. Deze voorkeur geeft de minimale wachttijd voor opnieuw opmaken van de pagina in microseconden. Lagere waarden verlagen de ervaren laadtijd maar verhogen de totale laadtijd.">
 
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Automatisch afspelen van media inschakelen">
 <!ENTITY geo_enabled_name "Locatiebewust navigeren inschakelen">
 <!ENTITY geo_enabled_description "Indien ingeschakeld kan Firefox u vragen of u de bezochte website wilt vertellen waar u bent. Uitschakelen van deze optie schakelt deze functie geheel uit.">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL inschakelen">
@@ -80,3 +81,19 @@
 <!ENTITY layout_spellcheckDefault_o1 "Uitschakelen">
 <!ENTITY layout_spellcheckDefault_o2 "Inschakelen voor meerregelige tekstvelden">
 <!ENTITY layout_spellcheckDefault_o3 "Inschakelen voor meerregelige en enkelregelige tekstvelden">
+
+<!-- Javascript -->
+<!ENTITY javascript "Javascript">
+
+<!-- Permissions -->
+<!ENTITY permissions "Rechten">
+<!ENTITY javascript_enabled_name "Javascript inschakelen">
+<!ENTITY javascript_enabled_description "Schakelt Javascript in of uit voor alle websites.">
+<!ENTITY dom_disable_window_move_resize_name "Vensters verplaatsen en aanpassen">
+<!ENTITY dom_disable_window_move_resize_description "Scripts toestaan om browservensters te verplaatsen en/of aan te passen.">
+<!ENTITY dom_disable_window_flip_name "Vensters omhoog en omlaag verplaatsen">
+<!ENTITY dom_disable_window_flip_description "Scripts toestaan om browservensters omhoog en/of omlaag te verplaatsen.">
+<!ENTITY dom_event_contextmenu_enabled_name "Het contextmenu verwijderen en vervangen">
+<!ENTITY dom_event_contextmenu_enabled_description "Scripts toestaan contextmenu’s op websites te verwijderen en/of te vervangen.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interactie met het klembord">
+<!ENTITY dom_event_clipboardevents_enabled_description "Scripts toestaan een bericht te krijgen wanneer de gebruiker het klembord gebruikt om inhoud van de website te kopiëren, knippen en plakken.">

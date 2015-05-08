@@ -19,3 +19,5 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Especifica o máximo de pedidos que podem ser enviados em cada sequência quando esse recurso estiver ativo.">
 <!ENTITY network_http_proxy_pipelining_name "Enviar pedidos sequenciais ao usar servidor proxy">
 <!ENTITY network_http_proxy_pipelining_description "Faz o Firefox enviar pedidos sequenciais quando estiver conectado à Intervet através um servidor proxy.">
+
+<!-- Prediction -->

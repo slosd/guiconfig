@@ -28,6 +28,7 @@
 <!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelemente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen in Mikrosekunden. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
 
 <!-- Misc -->
+<!ENTITY media_autoplay_enabled_name "Medien automatisch abspielen">
 <!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
 <!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
@@ -80,3 +81,19 @@
 <!ENTITY layout_spellcheckDefault_o1 "Deaktivieren">
 <!ENTITY layout_spellcheckDefault_o2 "Nur für mehrzeilige Textfelder aktivieren">
 <!ENTITY layout_spellcheckDefault_o3 "Für ein- und mehrzeilige Textfelder aktivieren">
+
+<!-- Javascript -->
+<!ENTITY javascript "Javascript">
+
+<!-- Permissions -->
+<!ENTITY permissions "Aktionen erlauben">
+<!ENTITY javascript_enabled_name "Javascript aktivieren">
+<!ENTITY javascript_enabled_description "Javascript für alle Webseiten aktivieren oder deaktivieren.">
+<!ENTITY dom_disable_window_move_resize_name "Fenster bewegen und ihre Größe verändern">
+<!ENTITY dom_disable_window_move_resize_description "Erlaubt Skripten das Bewegen von Fenstern und das Ändern ihrer Größe.">
+<!ENTITY dom_disable_window_flip_name "Fenster vor oder hinter andere Fenster legen">
+<!ENTITY dom_disable_window_flip_description "Erlaubt Skripten Fenster vor oder hinter andere Fenster zu legen.">
+<!ENTITY dom_event_contextmenu_enabled_name "Kontextmenü deaktivieren oder ersetzen">
+<!ENTITY dom_event_contextmenu_enabled_description "Erlaubt Skripten auf Webseiten das Kontextmenü zu deaktivieren oder zu ersetzen.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Ereignisse der Zwischenablage">
+<!ENTITY dom_event_clipboardevents_enabled_description "Erlaubt Skripten benachrichtigt zu werden, wenn auf einer Webseite Inhalt kopiert, ausgeschnitten oder eingefügt wird.">
