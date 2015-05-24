@@ -4,7 +4,10 @@
 <?xml-stylesheet href="chrome://guiconfig/skin/style/preferences.css" type="text/css"?>
 <!DOCTYPE prefwindow SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
 
-<prefwindow id="guiconfig-preferences" class="gcprefwindow"
+<!-- NOTE: onload attribute prevents gcprefwindow binding from calling its
+           constructor twice in some cases. This seems to happen only with
+           older profiles and can not be reproduces with new profiles. -->
+<prefwindow id="guiconfig-preferences" class="gcprefwindow" onload=""
             source="chrome://guiconfig/content/preferences.xml"
             xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 </prefwindow>
