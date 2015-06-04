@@ -26,6 +26,7 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Visa objekt som matchar ordgränser först">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Visa endast objekt som matchar ordgränser">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Matcha i början av URL eller titel">
+
 <!ENTITY browser_urlbar_maxRichResults_name "Antal sökresultat">
 <!ENTITY browser_urlbar_maxRichResults_description "Bestämmer det maximala antalet resultat som ska visas i adressfältet vid sökning.">
 <!ENTITY browser_urlbar_autoFill_name "Komplettera automatiskt">

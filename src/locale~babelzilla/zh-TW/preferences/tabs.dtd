@@ -1,4 +1,5 @@
 <!ENTITY tabs "分頁">
+
 <!ENTITY browser_tabs_tabClipWidth_name "含關閉鈕時的最小頁籤寬度">
 <!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
 

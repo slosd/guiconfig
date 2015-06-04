@@ -26,6 +26,7 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "优先给出匹配“单词头尾”结果">
 <!ENTITY browser_urlbar_matchBehavior_o3 "只对输入的文字启用“单词头尾”">
 <!ENTITY browser_urlbar_matchBehavior_o4 "只匹配地址或者标题头">
+
 <!ENTITY browser_urlbar_maxRichResults_name "下拉列表中的条目数">
 <!ENTITY browser_urlbar_maxRichResults_description "指定智能地址栏下拉列表最多显示的条目数。">
 <!ENTITY browser_urlbar_autoFill_name "地址栏自动完成">

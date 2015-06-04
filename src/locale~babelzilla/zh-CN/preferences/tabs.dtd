@@ -1,4 +1,5 @@
 <!ENTITY tabs "标签页">
+
 <!ENTITY browser_tabs_tabClipWidth_name "可显示关闭按钮的最小标签页宽度">
 <!ENTITY browser_tabs_tabClipWidth_description "指定可以显示关闭按钮的最小标签页宽度。">
 
