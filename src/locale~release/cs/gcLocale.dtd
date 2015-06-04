@@ -2,10 +2,11 @@
 <!ENTITY browser.item.access "p">
 <!ENTITY config.search "Hledat">
 <!ENTITY config.descr.standard "Přesunutím kurzoru nad možnost se zobrazí její podrobný popis">
-<!ENTITY config.description "Description:">
-<!ENTITY config.preference_key "Preference key:">
+<!ENTITY config.description "Popis:">
+<!ENTITY config.preference_key "Klávesa předvolby:">
 <!ENTITY config.standard.label "Obnovit vše výchozí">
 <!ENTITY config.todefault "Změnit na výchozí hodnotu">
+<!ENTITY config.copykey "Kopírovat označení předvolby do schránky">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Vybrat soubor">
 <!ENTITY config.browse "Procházet...">

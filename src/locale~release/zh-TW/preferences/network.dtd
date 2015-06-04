@@ -1,13 +1,16 @@
 <!ENTITY network "網路">
+
 <!-- Connections -->
 <!ENTITY connections "連線">
 <!ENTITY network_http_max-connections_name "最大HTTP連線數">
 <!ENTITY network_http_max-connections_description "此選項指定Firefox同時可開啟的最大連線總數。其值須介於 1 與 65535之間。">
+
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "每一代理伺服主機最大不下線連線數">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "此選項指定Firefox對單一代理伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
 <!ENTITY network_http_max-persistent-connections-per-server_name "每一伺服主機最大不下線連線數">
 <!ENTITY network_http_max-persistent-connections-per-server_description "此選項指定Firefox對單一伺服主機同時可開啟的最大不下線連線總數。其值須介於 1 與 225之間。">
+
 <!-- Pipelining -->
 <!ENTITY pipelining "複請求批送機制">
 <!ENTITY network_http_pipelining_name "使用「複請求批送」(pipelining)">
@@ -16,3 +19,9 @@
 <!ENTITY network_http_pipelining_maxrequests_description "此選項指定啟用「複請求批送」時，同一時間內可要求批送的最大請求數。">
 <!ENTITY network_http_proxy_pipelining_name "對代理伺服主機使用「複請求批送」(Pipelining)">
 <!ENTITY network_http_proxy_pipelining_description "此選項指定是否對代理伺服主機使用「複請求批送」。HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
+
+<!-- Prediction -->
+<!ENTITY prediction "Prediction">
+<!ENTITY network_predictor_enabled_name "Enable prediction">
+<!ENTITY network_predictor_enabled_description "Enables the prediction service, which pre-connects to websites (DNS pre-fetch and TCP/TLS handshake) when the user hovers over a link in order to improve page load time. This does not send any actual data to the website.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Enable pre-connects for HTTPS addresses">

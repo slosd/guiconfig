@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Afficher d&apos;abord les éléments correspondant aux comparaisons">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Utiliser les comparaisons uniquement pour le texte tapé">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Ne comparer qu&apos;au début de l&apos;URL ou du titre">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Entrées dans le menu déroulant">
 <!ENTITY browser_urlbar_maxRichResults_description "Précise combien d&apos;entrées (au maximum) doivent apparaître dans le menu déroulant de la barre d&apos;adresse.">
 <!ENTITY browser_urlbar_autoFill_name "Saisie semi-automatique en ligne">

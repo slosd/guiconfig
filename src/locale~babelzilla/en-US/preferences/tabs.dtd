@@ -1,5 +1,4 @@
 <!ENTITY tabs "Tabs">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Min. tab width for close buttons">
 <!ENTITY browser_tabs_tabClipWidth_description "Determines the minimum tab width necessary to display the close button. ">
 

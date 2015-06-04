@@ -1,4 +1,5 @@
 <!ENTITY appearance "外觀">
+
 <!-- Browser -->
 <!ENTITY browser_style "瀏覽器">
 <!ENTITY browser_chrome_favicons_name "顯示小圖示">
@@ -11,6 +12,7 @@
 <!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
 <!ENTITY browser_preferences_instantApply_name "立刻生效">
 <!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
+
 <!-- New tab page -->
 <!ENTITY new_tab_page "New tab page">
 <!ENTITY browser_newtabpage_rows_name "Number of rows">
@@ -21,6 +23,7 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
 <!ENTITY browser_newtab_url_name "URL for new tabs">
 <!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+
 <!-- Selected text -->
 <!ENTITY text_select "文字標選">
 <!ENTITY ui_textSelectBackgroundAttention_name "符合搜尋的文字背景顏色">

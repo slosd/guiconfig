@@ -1,5 +1,4 @@
 <!ENTITY tabs "Abas">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Largura mínima das abas para exibir o botão Fechar:">
 <!ENTITY browser_tabs_tabClipWidth_description "Especifica a largura mínima das abas inativas antes que o botão Fechar seja nelas suprimido.">
 

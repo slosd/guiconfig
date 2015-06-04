@@ -1,13 +1,16 @@
 <!ENTITY network "Rede">
+
 <!-- Connections -->
 <!ENTITY connections "Conexões">
 <!ENTITY network_http_max-connections_name "Máximo de conexões HTTP:">
 <!ENTITY network_http_max-connections_description "Especifica o limite máximo de conexões abertas simultaneamente pelo Firefox. Valores aceitos de 1 a 65535.">
+
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Máximo de conexões persistentes por servidor proxy:">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Especifica o limite máximo de conexões persistentes abertas simultaneamente com um servidor proxy. Valores aceitos de 1 a 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Máximo de conexões persistentes por servidor:">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Especifica o limite máximo de conexões persistentes abertas simultaneamente com cada servidor. Valores aceitos de 1 a 255.">
+
 <!-- Pipelining -->
 <!ENTITY pipelining "Pedidos sequenciais">
 <!ENTITY network_http_pipelining_name "Enviar pedidos sequenciais (pipelining)">
@@ -16,3 +19,9 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Especifica o máximo de pedidos que podem ser enviados em cada sequência quando esse recurso estiver ativo.">
 <!ENTITY network_http_proxy_pipelining_name "Enviar pedidos sequenciais ao usar servidor proxy">
 <!ENTITY network_http_proxy_pipelining_description "Faz o Firefox enviar pedidos sequenciais quando estiver conectado à Intervet através um servidor proxy.">
+
+<!-- Prediction -->
+<!ENTITY prediction "Prediction">
+<!ENTITY network_predictor_enabled_name "Enable prediction">
+<!ENTITY network_predictor_enabled_description "Enables the prediction service, which pre-connects to websites (DNS pre-fetch and TCP/TLS handshake) when the user hovers over a link in order to improve page load time. This does not send any actual data to the website.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Enable pre-connects for HTTPS addresses">

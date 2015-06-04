@@ -1,10 +1,12 @@
 <!ENTITY developing "Ontwikkeling">
+
 <!-- View Source -->
 <!ENTITY viewsource "Bron bekijken">
 <!ENTITY view_source_editor_external_name "Aangepast bewerkingsprogramma gebruiken">
 <!ENTITY view_source_editor_external_description "Een aangepast bewerkingsprogramma gebruiken om de bron te bekijken.">
 <!ENTITY view_source_editor_path_name "Pad bewerkingsprogramma">
 <!ENTITY view_source_editor_path_description "Pad naar het aangepaste bewerkingsprogramma">
+
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "XUL-buffer uitschakelen">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Wijzigingen aan vensters en dialoogvensters vereisen geen herstart. Werkt niet met bestanden verpakt in een JAR.">
@@ -12,6 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "Schakelt de actie “Element inspecteren” voor contextmenu’s van websites in, dat de Inspector opent bij het geselecteerde HTML-element.">
 <!ENTITY browser_dom_window_dump_enabled_name "dump() inschakelen">
 <!ENTITY browser_dom_window_dump_enabled_description "Schakelt het gebruik van de verklaring dump() om naar de standaardconsole af te drukken in.">
+<!ENTITY browser_dom_window_dump_file_name "Doorsturen naar bestand">
+<!ENTITY browser_dom_window_dump_file_description "Pad naar een bestaand waarnaar de uitvoer van dump() moet worden doorgestuurd. Het bestand wordt aangemaakt als het nog niet bestaat. Vereist een herstart.">
 <!ENTITY javascript_options_showInConsole_name "Chromefouten in de console weergeven">
 <!ENTITY javascript_options_showInConsole_description "Bepaalt of chromefouten en -waarschuwingen naar de JavaScript-console moeten worden gelogd.">
 <!ENTITY javascript_options_strict_name "Strikte Javascript-waarschuwingen">

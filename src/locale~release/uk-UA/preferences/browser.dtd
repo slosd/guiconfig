@@ -1,6 +1,8 @@
 <!ENTITY browser "Browser">
+
 <!-- Urlbar -->
 <!ENTITY urlbar "Urlbar">
+
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Restrict results">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Restrict to bookmarks">
@@ -11,6 +13,7 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Results in the Smart Location Bar are restricted to tags.">
 <!ENTITY browser_urlbar_restrict_typed_name "Restrict to typed addresses">
 <!ENTITY browser_urlbar_restrict_typed_description "Results in the Smart Location Bar are restricted to addresses you typed in the addressbar.">
+
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Match results">
 <!ENTITY browser_urlbar_match_title_name "Search in title">
@@ -39,6 +42,7 @@
 <!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+
 <!-- Session restore -->
 <!ENTITY session_restore "Session restore">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
@@ -67,8 +71,10 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "for any site">
 <!ENTITY browser_sessionstore_privacy_level_o2 "for unencrypted (non-HTTPS) sites">
 <!ENTITY browser_sessionstore_privacy_level_o3 "for no site">
+
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "Extensions &amp; Plugins">
+
 <!-- Extensions -->
 <!ENTITY extensions "Extensions">
 <!ENTITY getaddons "&quot;Get Add-ons&quot; pane">
@@ -80,10 +86,12 @@
 <!ENTITY extensions_getAddons_maxResults_description "Determines the maximum number of results to display in the pane when you perform a search.">
 <!ENTITY extensions_getAddons_showPane_name "Show pane">
 <!ENTITY extensions_getAddons_showPane_description "Determines whether to show the &quot;Get Add-ons&quot; pane in the &quot;Add-ons Manager&quot; window.">
+
 <!-- Installation -->
 <!ENTITY installation "Installation">
 <!ENTITY security_dialog_enable_delay_name "Add-on installation delay (msec)">
 <!ENTITY security_dialog_enable_delay_description "This preference determines the delay (in milliseconds) before the &quot;Install&quot; button can be clicked when installing an Add-on. Set this to 0 to disable the delay. ">
+
 <!-- Plugins -->
 <!ENTITY plugins "Plugins">
 <!ENTITY dom_ipc_plugins_enabled_name "Execute each plugin in an own process">
@@ -92,18 +100,22 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Determines the duration after which the process of a not responding plugin is killed.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Timeout for plugin launch (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Determines the duration after the launch of a plugin after which it is considered failed. ">
+
 <!-- Library -->
 <!ENTITY library "Library">
+
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Bookmarks">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
 <!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
 <!ENTITY browser_bookmarks_max_backups_name "Архіви закладок">
 <!ENTITY browser_bookmarks_max_backups_description "Determines the number of backups kept. Setting to 0 will disable backups.">
+
 <!-- History -->
 <!ENTITY history "History">
 <!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
 <!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
+
 <!-- Downloads -->
 <!ENTITY downloads "Downloads">
 <!ENTITY browser_download_animateNotifications_name "Animate download icon">
@@ -114,8 +126,10 @@
 <!ENTITY browser_download_lastDir_description "Path to the last directory used for a download via 'Save As.'.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Warn of executable">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Warn the user attempting to open an executable from the Download Manager. ">
+
 <!-- Browser cache -->
 <!ENTITY cache "Browser cache">
+
 <!-- Disk cache -->
 <!ENTITY cache_disk "Disk cache">
 <!ENTITY browser_cache_check_doc_frequency_name "Перевіряти кеш оглядача">
@@ -130,13 +144,36 @@
 <!ENTITY browser_cache_disk_capacity_description "Місце на диску під кеш оглядача (в Кб)">
 <!ENTITY browser_cache_disk_enable_name "Використовувати дисковий кеш">
 <!ENTITY browser_cache_disk_enable_description "Використовувати дисковий кеш до вказаної межі.">
+
 <!-- Memory cache -->
 <!ENTITY cache_memory "Memory cache">
 <!ENTITY browser_cache_memory_enable_name "Використовувати кеш у пам&apos;яті">
 <!ENTITY browser_cache_memory_enable_description "Використовувати кеш у пам&apos;яті до вказаної межі.">
 <!ENTITY browser_cache_memory_capacity_name "Кеш у пам&apos;яті (Кб)">
 <!ENTITY browser_cache_memory_capacity_description "Встановити максимум ОЗП для кешу в пам&apos;яті (в Кб)">
+
 <!-- Misc -->
 <!ENTITY misc "Miscellaneous">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. number of pages in memory">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Recently visited pages are stored in memory and can be displayed faster when using Back and Forward. If set to -1 the number of pages is automatically determined. If set to 0 no pages are stored in memory. ">
+
+<!-- Taskbar -->
+<!ENTITY taskbar "Taskbar">
+<!ENTITY browser_taskbar_previews_enable_name "Enable tab previews in taskbar">
+<!ENTITY browser_taskbar_previews_enable_description "If enabled, the Windows taskbar shows a preview for each open tab on mouse hover.">
+<!ENTITY browser_taskbar_previews_max_name "Max. number of tab previews">
+<!ENTITY browser_taskbar_previews_max_description "If the number of previews reaches this threshold the previews are disabled entirely.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Cache expiration time (sec)">
+<!ENTITY browser_taskbar_previews_cachetime_description "The time in seconds that tab content is cached before getting refreshed.">
+<!ENTITY browser_taskbar_lists_enabled_name "Enable jump lists">
+<!ENTITY browser_taskbar_lists_enabled_description "Enable menu items in the right-click menu of the Windows taskbar.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Show tasks">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "If enabled, the jump list includes items to open new tabs, windows and private windows.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Show frequent websites">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "If enabled, the jump list includes items to go to your most frequently visited websites.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Show recent websites">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "If enabled, the jump list includes items to go to recently visited websites.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. number of jump list items">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "The maximum number of jump list items per section (frequent and recent websites).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Update time (seconds)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "The time in seconds after which the content of the jumb list is updated.">

@@ -1,18 +1,19 @@
 <!ENTITY tabs "Flikar">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. flikbredd för stängknappar">
 <!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar ska visas.">
+
 <!-- Tab preview -->
 <!ENTITY tab_preview "Förhandsvisning av flik">
 <!ENTITY browser_ctrlTab_preview_name "Aktivera förhandsvisning vid byte av flik">
 <!ENTITY browser_ctrlTab_preview_description "När [Ctrl]+[Tabulator] används för att växla mellan flikar visas en förhandsvisning av den flik som för tillfället är markerad.">
-<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet">
-<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (Windows 7+).">
+
 <!-- Open in background -->
 <!ENTITY open_in_background "Öppna en ny flik i bakgrunden från">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Länkar i externa program">
 <!ENTITY browser_tabs_loadInBackground_name "Länkar på webbplatser">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Bokmärken">
 <!ENTITY browser_search_context_loadInBackground_name "Sökning via snabbmenyn">
+
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Animera flikar">
 <!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om och när en flik tas bort.">

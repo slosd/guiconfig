@@ -1,17 +1,21 @@
 <!ENTITY developing "Desenvolvedor">
+
 <!-- View Source -->
 <!ENTITY viewsource "Código-fonte">
 <!ENTITY view_source_editor_external_name "Usar editor externo">
 <!ENTITY view_source_editor_external_description "Faz o código-fonte da página ser mostrado em um programa específico em vez do visualizador embutido do Firefox.">
 <!ENTITY view_source_editor_path_name "Local do programa:">
 <!ENTITY view_source_editor_path_description "Caminho para o editor externo de código-fonte.">
+
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Desabilitar cache de XUL">
 <!ENTITY nglayout_debug_disable_xul_cache_description "Exibe as alterações nos arquivos XUL (janelas e caixas de diálogo de extensões) sem reiniciar o navegador. Não funciona com arquivos compactados em JAR.">
-<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
-<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "Ativar o &quot;Inspecionar elemento&quot;">
+<!ENTITY devtools_inspector_enabled_description "Ativar a função &quot;Inspecionar elemento&quot; para menus de contexto em sites, abrindo o Inspecionar no elemento HTML selecionado.">
 <!ENTITY browser_dom_window_dump_enabled_name "Ativar função dump()">
 <!ENTITY browser_dom_window_dump_enabled_description "Em códigos JavaScript, permite usar a função dump() para exibir dados na janela de console do Firefox.">
+<!ENTITY browser_dom_window_dump_file_name "Redirect to file">
+<!ENTITY browser_dom_window_dump_file_description "Path to a file to redirect the output of dump() to. The file is created if it does not exist. Requires a restart.">
 <!ENTITY javascript_options_showInConsole_name "Mostrar erros de chrome no Console de erros">
 <!ENTITY javascript_options_showInConsole_description "Exibe mensagens no Console de erros sobre falhas de chrome (erros ocorridos em complementos e no navegador).">
 <!ENTITY javascript_options_strict_name "Avisar sobre JavaScript fora dos padrões recomendados">

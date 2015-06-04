@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Zobrazit nejprve položky nalezené na okrajích slov">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Zobrazit jen položky nalezené na okrajích slov">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Najít na začátku URL nebo názvu">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Max. počet výsledků">
 <!ENTITY browser_urlbar_maxRichResults_description "Určuje, kolik výsledků by se nejvýš mělo objevit v adresním řádku.">
 <!ENTITY browser_urlbar_autoFill_name "Automatické dokončování">
@@ -159,5 +158,22 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Navštěvované stránky jsou ukládány do paměti, a mohou být proto rychleji zobrazeny při použití příkazů Zpět a Vpřed. Při zadaném čísle -1 bude počet ukládaných stránek určován automaticky. Je-li číslo 0, nebudou stránky do paměti ukládány.">
 
 <!-- Taskbar -->
+<!ENTITY taskbar "Lišta úloh">
 <!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
 <!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
+<!ENTITY browser_taskbar_previews_max_name "Max. počet náhledů panelu">
+<!ENTITY browser_taskbar_previews_max_description "Pokud počet náhledů dosáhne této hodnoty, náhledy budou úplně zakázány.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Čas vypršení mezipaměti (s)">
+<!ENTITY browser_taskbar_previews_cachetime_description "Čas v sekundách, po kterém se obnoví obsah panelu uložený v mezipaměti.">
+<!ENTITY browser_taskbar_lists_enabled_name "Povolit seznam odkazů">
+<!ENTITY browser_taskbar_lists_enabled_description "Povolí v hlavním panelu Windows položky nabídky vyvolané klepnutím pravým tlačítkem.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Zobrazit úlohy">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "Je-li povoleno, seznam odkazů bude obsahovat položky pro otevírání nových panelů, oken a anonymních oken.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Zobrazit časté webové stránky">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "Je-li povoleno, seznam odkazů bude obsahovat položky pro přechod na nejčastěji navštěvované stránky.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Zobrazit poslední webové stránky">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "Je-li povoleno, seznam odkazů bude obsahovat položky pro přechod na naposledy navštívené webové stránky.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. počet položek seznamu odkazů">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "Maximální počet položek v seznamu odkazů pro určitou sekci (časté a poslední webové stránky).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Čas aktualizace (sekundy)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "Čas v sekundách, po kterém bude obsah seznamu odkazů aktualizován.">

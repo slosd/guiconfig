@@ -1,6 +1,8 @@
 <!ENTITY browser "Webbläsare">
+
 <!-- Urlbar -->
 <!ENTITY urlbar "Adressfält">
+
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Begränsa resultat">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Begränsa till bokmärken">
@@ -11,6 +13,7 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Resultaten i det smarta adressfältet begränsas till taggar.">
 <!ENTITY browser_urlbar_restrict_typed_name "Begränsa till skrivna adresser">
 <!ENTITY browser_urlbar_restrict_typed_description "Resultaten i det smarta adressfältet begränsas till adresser du skrivit i adressfältet.">
+
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Matcha resultat">
 <!ENTITY browser_urlbar_match_title_name "Sök i titel">
@@ -37,8 +40,9 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Avgör huruvida domänen i adressfältet ska formateras eller inte.">
 <!ENTITY browser_urlbar_trimURLs_name "Putsa URL:er">
 <!ENTITY browser_urlbar_trimURLs_description "Om alternativet aktiveras döljs protokollet (http) och avslutande snedstreck i adressen i adressfältet.">
-<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
-<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Hantera enstaka ord som domännamn">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "Istället för att söka med standardsökmotorn på ett enstaka ord som skrivs in i adressfältet, försöker webbläsaren först matcha det via domännamnsystemet. Användbart till att få åtkomst till värdar på lokala nätverk.">
+
 <!-- Session restore -->
 <!ENTITY session_restore "Återställ session">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Aktivera sessionsåterställning">
@@ -67,8 +71,10 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "för alla webbplatser">
 <!ENTITY browser_sessionstore_privacy_level_o2 "för okrypterade webbplatser (icke-HTTPS)">
 <!ENTITY browser_sessionstore_privacy_level_o3 "inte för någon webbplats">
+
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "Tillägg &amp; insticksmoduler">
+
 <!-- Extensions -->
 <!ENTITY extensions "Tillägg">
 <!ENTITY getaddons "&quot;Hämta tillägg&quot;-panelen">
@@ -80,10 +86,12 @@
 <!ENTITY extensions_getAddons_maxResults_description "Bestämmer det maximala antalet resultat som visas i panelen när du gör en sökning.">
 <!ENTITY extensions_getAddons_showPane_name "Visa panelen">
 <!ENTITY extensions_getAddons_showPane_description "Bestämmer om &quot;Hämta tillägg&quot;-panelen i fönstret &quot;Tilläggshanteraren&quot; ska visas eller inte.">
+
 <!-- Installation -->
 <!ENTITY installation "Installation">
 <!ENTITY security_dialog_enable_delay_name "Fördröjning vid tilläggsinstallation (ms)">
 <!ENTITY security_dialog_enable_delay_description "Den här inställningen styr tidsfördröjningen (i millisekunder) innan &quot;Installera&quot;-knappen kan klickas när du installerar ett tillägg. Ställ in värdet till 0 för att inaktivera tidsförskjutningen.">
+
 <!-- Plugins -->
 <!ENTITY plugins "Insticksmoduler">
 <!ENTITY dom_ipc_plugins_enabled_name "Kör varje insticksmodul i en egen process">
@@ -92,18 +100,22 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Anger en tidsgräns efter vilken processen för den insticksmodul som inte svarar avslutas.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Tidsgräns för insticksmodulstart (s)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Anger en tidsgräns när en insticksmodul startas, efter vilken starten anses ha misslyckats.">
+
 <!-- Library -->
 <!ENTITY library "Biblioteket">
+
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Bokmärken">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Exportera bokmärken till fil vid programavslut">
 <!ENTITY browser_bookmarks_autoExportHTML_description "Om alternativet aktiveras exporteras bokmärken till filen &quot;bookmarks.html&quot; i din profilmapp när webbläsaren avslutas.">
 <!ENTITY browser_bookmarks_max_backups_name "Säkerhetskopior av bokmärken">
 <!ENTITY browser_bookmarks_max_backups_description "Anger hur många säkerhetskopior som sparas. Ange värdet 0 för att inaktivera säkerhetskopieringsfunktionen.">
+
 <!-- History -->
 <!ENTITY history "Historik">
 <!ENTITY places_history_expiration_max_pages_name "Högsta antal historikposter att komma ihåg">
 <!ENTITY places_history_expiration_max_pages_description "Högsta antal historikposter som kan sparas i minnet innan andra poster förfaller. Ange till -1 om du vill att antalet ska beräknas automatiskt.">
+
 <!-- Downloads -->
 <!ENTITY downloads "Filhämtningar">
 <!ENTITY browser_download_animateNotifications_name "Animera filhämtningsikonen">
@@ -114,8 +126,10 @@
 <!ENTITY browser_download_lastDir_description "Sökväg till den senaste mappen som användes för hämtning via &quot;Spara (bild/länk/sida) som…&quot;.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Varna för körbar fil">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Varna användare som försöker öppna en körbar fil i Filhämtaren.">
+
 <!-- Browser cache -->
 <!ENTITY cache "Cache">
+
 <!-- Disk cache -->
 <!ENTITY cache_disk "Diskcache">
 <!ENTITY browser_cache_check_doc_frequency_name "Kontrollera webbläsarens cache">
@@ -130,13 +144,36 @@
 <!ENTITY browser_cache_disk_capacity_description "Det diskutrymme (i kB) som webbläsarens cache tillåts ta upp.">
 <!ENTITY browser_cache_disk_enable_name "Använd diskcache">
 <!ENTITY browser_cache_disk_enable_description "Använd diskcache, upp till den specificerade kapacitetsnivån.">
+
 <!-- Memory cache -->
 <!ENTITY cache_memory "Cacheminne">
 <!ENTITY browser_cache_memory_enable_name "Använd cacheminne">
 <!ENTITY browser_cache_memory_enable_description "Använd cacheminne, upp till den specificerade kapacitetsnivån.">
 <!ENTITY browser_cache_memory_capacity_name "Cacheminne (kB)">
 <!ENTITY browser_cache_memory_capacity_description "Ange hur mycket RAM-minne (i kB) som tillåts användas som minnescache.">
+
 <!-- Misc -->
 <!ENTITY misc "Övrigt">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Antal lagrade webbsidor i minnet">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Nyligen besökta webbsidor lagras i minnet och kan visas snabbare när Bakåt- och Framåt-knapparna används. Om värdet sätts till -1 kommer antalet lagrade webbsidor att bestämmas automatiskt. Om det sätts till 0 kommer inga sidor att lagras i minnet.">
+
+<!-- Taskbar -->
+<!ENTITY taskbar "Taskbar">
+<!ENTITY browser_taskbar_previews_enable_name "Tillåt förhandsvisningar i aktivitetsfältet">
+<!ENTITY browser_taskbar_previews_enable_description "När den här funktionen är aktiverad kommer Firefox att visa en förhandsvisning för varje flik, i Windows aktivitetsfält (Windows 7+).">
+<!ENTITY browser_taskbar_previews_max_name "Max. number of tab previews">
+<!ENTITY browser_taskbar_previews_max_description "If the number of previews reaches this threshold the previews are disabled entirely.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Cache expiration time (sec)">
+<!ENTITY browser_taskbar_previews_cachetime_description "The time in seconds that tab content is cached before getting refreshed.">
+<!ENTITY browser_taskbar_lists_enabled_name "Enable jump lists">
+<!ENTITY browser_taskbar_lists_enabled_description "Enable menu items in the right-click menu of the Windows taskbar.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Show tasks">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "If enabled, the jump list includes items to open new tabs, windows and private windows.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Show frequent websites">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "If enabled, the jump list includes items to go to your most frequently visited websites.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Show recent websites">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "If enabled, the jump list includes items to go to recently visited websites.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. number of jump list items">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "The maximum number of jump list items per section (frequent and recent websites).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Update time (seconds)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "The time in seconds after which the content of the jumb list is updated.">

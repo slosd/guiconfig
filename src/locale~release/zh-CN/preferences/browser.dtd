@@ -1,6 +1,8 @@
 <!ENTITY browser "浏览器">
+
 <!-- Urlbar -->
 <!ENTITY urlbar "地址栏">
+
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "约束结果">
 <!ENTITY browser_urlbar_restrict_bookmark_name "仅显示书签中的条目">
@@ -11,6 +13,7 @@
 <!ENTITY browser_urlbar_restrict_tag_description "智能地址栏仅列出带标签的搜索结果。">
 <!ENTITY browser_urlbar_restrict_typed_name "仅包含输入过的地址">
 <!ENTITY browser_urlbar_restrict_typed_description "智能地址栏搜索结果仅包含输入过的地址。">
+
 <!-- Match results -->
 <!ENTITY urlbar_match_name "匹配结果">
 <!ENTITY browser_urlbar_match_title_name "搜索结果仅匹配网页标题">
@@ -37,8 +40,9 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "指定是否格式化显示地址栏的域名。">
 <!ENTITY browser_urlbar_trimURLs_name "精简 URL">
 <!ENTITY browser_urlbar_trimURLs_description "启用该项后，地址栏会自动隐藏 http:// 这样的协议名。">
-<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
-<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "将单个词视为域名">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "而不是使用默认搜索引擎搜索单个词。首先尝试使用 DNS 解析网址栏中的单个词。常用于访问本地网络上的主机。">
+
 <!-- Session restore -->
 <!ENTITY session_restore "浏览会话恢复">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "启用浏览会话恢复">
@@ -67,8 +71,10 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "应用于全部站点">
 <!ENTITY browser_sessionstore_privacy_level_o2 "应用于未加密(非 HTTPS)站点">
 <!ENTITY browser_sessionstore_privacy_level_o3 "不保存">
+
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "扩展和插件">
+
 <!-- Extensions -->
 <!ENTITY extensions "扩展">
 <!ENTITY getaddons "“获取附加组件”面板">
@@ -80,10 +86,12 @@
 <!ENTITY extensions_getAddons_maxResults_description "决定“获得扩充软件”中的最大查找结果">
 <!ENTITY extensions_getAddons_showPane_name "显示面板">
 <!ENTITY extensions_getAddons_showPane_description "决定是否在“扩充软件管理”窗口中显示“获得扩充软件”面板">
+
 <!-- Installation -->
 <!ENTITY installation "安装">
 <!ENTITY security_dialog_enable_delay_name "扩展安装延迟(毫秒)">
 <!ENTITY security_dialog_enable_delay_description "这个选项决定了安装扩展时需要等待的时间，也就是不能点击安装按钮的时间。如果设为0，则为无等待。(毫秒 ms 10e-3 )">
+
 <!-- Plugins -->
 <!ENTITY plugins "插件">
 <!ENTITY dom_ipc_plugins_enabled_name "以独立进程运行每个插件">
@@ -92,18 +100,22 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "指定插件无响应时长超过规定时限后自动结束其进程。">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "插件启动的超时时间（秒）">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "指定插件崩溃后允许插件重新启动的时间段。">
+
 <!-- Library -->
 <!ENTITY library "我的足迹">
+
 <!-- Bookmarks -->
 <!ENTITY bookmarks "书签">
 <!ENTITY browser_bookmarks_autoExportHTML_name "关闭时导出书签到文件">
 <!ENTITY browser_bookmarks_autoExportHTML_description "启用该项后，浏览器关闭时会导出书签到 bookmarks.html 文件并保存到配置文件夹。">
 <!ENTITY browser_bookmarks_max_backups_name "书签备份数：">
 <!ENTITY browser_bookmarks_max_backups_description "确定保存备份文件的数量，设置为 0 则禁用备份。">
+
 <!-- History -->
 <!ENTITY history "历史">
 <!ENTITY places_history_expiration_max_pages_name "允许保存的最大历史记录条目">
 <!ENTITY places_history_expiration_max_pages_description "在其他条目过期以前允许保存的最大历史记录条目数量。设置为 -1 表示由浏览器自动计算数量。">
+
 <!-- Downloads -->
 <!ENTITY downloads "下载">
 <!ENTITY browser_download_animateNotifications_name "动画显示下载图标">
@@ -114,8 +126,10 @@
 <!ENTITY browser_download_lastDir_description "另存为时的上一次保存目录">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "打开可执行文件时警告">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "用户试图从下载管理器打开可执行文件时弹出警告。">
+
 <!-- Browser cache -->
 <!ENTITY cache "浏览器缓存">
+
 <!-- Disk cache -->
 <!ENTITY cache_disk "磁盘缓存">
 <!ENTITY browser_cache_check_doc_frequency_name "检查浏览器缓存">
@@ -130,13 +144,36 @@
 <!ENTITY browser_cache_disk_capacity_description "浏览器磁盘缓存最大占用（单位： KB）。">
 <!ENTITY browser_cache_disk_enable_name "使用磁盘缓存">
 <!ENTITY browser_cache_disk_enable_description "使用指定大小的磁盘缓存。">
+
 <!-- Memory cache -->
 <!ENTITY cache_memory "内存缓存">
 <!ENTITY browser_cache_memory_enable_name "使用内存缓冲">
 <!ENTITY browser_cache_memory_enable_description "使用指定大小的内存缓冲。">
 <!ENTITY browser_cache_memory_capacity_name "内存缓冲(KB)">
 <!ENTITY browser_cache_memory_capacity_description "设置内存缓冲的最大内存占用（单位：KB）。">
+
 <!-- Misc -->
 <!ENTITY misc "其他">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "内存中可保存的最大页面数">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近访问过的页面可以保存在内存中并在点击前进/后退按钮时加快显示。如果该值设为 -1 则使用自动设定的页面数，如果设置为 0 则页面不保存到内存中。">
+
+<!-- Taskbar -->
+<!ENTITY taskbar "任务栏">
+<!ENTITY browser_taskbar_previews_enable_name "启用任务栏中预览标签页">
+<!ENTITY browser_taskbar_previews_enable_description "启用该选项后，在 Windows 任务栏中悬停时将显示每个标签页的预览图。">
+<!ENTITY browser_taskbar_previews_max_name "最多预览多少个标签页">
+<!ENTITY browser_taskbar_previews_max_description "如果预览的数量超过此门槛，预览将被完全禁用。">
+<!ENTITY browser_taskbar_previews_cachetime_name "缓存过期时间（秒）">
+<!ENTITY browser_taskbar_previews_cachetime_description "标签页内容的缓存被清除前被缓存的时间。">
+<!ENTITY browser_taskbar_lists_enabled_name "启用跳转列表">
+<!ENTITY browser_taskbar_lists_enabled_description "启用 Windows 任务栏右键菜单中的菜单项。">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "显示任务">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "如果启用，跳转列表将包括打开新标签页、窗口、隐私窗口的项目。">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "显示频繁网站">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "如果启用，跳转列表将包括前往您最常访问的网站的项目。">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "显示最近网站">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "如果启用，跳转列表将包括前往您最近访问的网站的项目。">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "跳转列表项目最多">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "跳转列表项目每个部分（频繁和最近网站）的最多数量">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "更新时间（秒）">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "跳转列表的内容每个多少秒被更新一次。">

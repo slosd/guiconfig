@@ -1,4 +1,5 @@
 <!ENTITY appearance "Apariencia">
+
 <!-- Browser -->
 <!ENTITY browser_style "Navegador">
 <!ENTITY browser_chrome_favicons_name "Mostrar favicons">
@@ -11,6 +12,7 @@
 <!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar instantáneamente">
 <!ENTITY browser_preferences_instantApply_description "Los cambios en las opciones se aplican inmediatamente. La ventana de opciones no es modal. En lugar de los botones &quot;OK&quot; y &quot;Cancelar&quot;, sólo hay un botón de &quot;Cerrar&quot;.">
+
 <!-- New tab page -->
 <!ENTITY new_tab_page "New tab page">
 <!ENTITY browser_newtabpage_rows_name "Number of rows">
@@ -21,6 +23,7 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
 <!ENTITY browser_newtab_url_name "URL for new tabs">
 <!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+
 <!-- Selected text -->
 <!ENTITY text_select "Texto seleccionado">
 <!ENTITY ui_textSelectBackgroundAttention_name "Color de fondo para el texto resaltado.">

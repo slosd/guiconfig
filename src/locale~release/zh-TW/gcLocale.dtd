@@ -6,6 +6,7 @@
 <!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "預設">
 <!ENTITY config.todefault "還原到預設值">
+<!ENTITY config.copykey "Copy preference key to clipboard">
 <!ENTITY config.header.title "進階設定(gui:config)">
 <!ENTITY config.choosefile "選一個既有檔案">
 <!ENTITY config.browse "瀏覽...">

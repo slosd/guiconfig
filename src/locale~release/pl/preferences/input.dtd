@@ -1,17 +1,20 @@
 <!ENTITY input "Input">
 <!ENTITY mousebehaviour "Zachowanie myszy">
+
 <!-- Middle click -->
 <!ENTITY middleclick "Działanie środkowego przycisku myszy">
 <!ENTITY middlemouse_contentLoadURL_name "Otwórz adres ze schowka">
 <!ENTITY middlemouse_contentLoadURL_description "Przejdź pod adres znajdujący się obecnie w schowku po kliknięciu środkowym przyciskiem myszy.">
 <!ENTITY middlemouse_paste_name "Wklej tekst ze schowka">
 <!ENTITY middlemouse_paste_description "Wklej zawartość schowka w wybranym polu tekstowym po kliknięciu nań środkowym przyciskiem myszy.">
+
 <!-- Mouse click -->
 <!ENTITY mouseclick "Mysz">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Zaznacz zawartość po kliknięciu">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Zaznacz zawartość paska adresu po kliknięciu go.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Zaznacz zawartość po podwójnym kliknięciu">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Zaznacz zawartość paska adresu po kliknięciu go podwójnie.">
+
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Przewijanie w pionie">
 <!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
@@ -23,6 +26,7 @@
 <!ENTITY mousewheel_action_o2 "Przewiń o pewną liczbę stron">
 <!ENTITY mousewheel_action_o3 "Przejdź do poprzedniej/następnej strony z historii">
 <!ENTITY mousewheel_action_o4 "Powiększ/pomniejsz stronę">
+
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Backspace">
 <!ENTITY browser_backspace_action_description "Określa zachowanie klawisza Backspace.">

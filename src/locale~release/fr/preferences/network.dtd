@@ -1,13 +1,16 @@
 <!ENTITY network "Réseau">
+
 <!-- Connections -->
 <!ENTITY connections "Connexions">
 <!ENTITY network_http_max-connections_name "Nb. maximal de connexions HTTP">
 <!ENTITY network_http_max-connections_description "Cette préférence fixe nombre total de connexions que Firefox peut lancer simultanément. Cette valeur doit être entre 1 et 65 535.">
+
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Nb. maximal de connexions de « maintien en vie » par serveur proxy">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur proxy. Cette valeur doit être entre 1 et 255.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Nb. maximal de connexions de « maintien en vie » par serveur">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Cette préférence fixe le nombre total de connexions de « maintien en vie » que Firefox peut lancer simultanément avec un même serveur. Cette valeur doit être entre 1 et 255.">
+
 <!-- Pipelining -->
 <!ENTITY pipelining "Pipelining">
 <!ENTITY network_http_pipelining_name "Utiliser du pipelining">
@@ -16,3 +19,9 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Cette préférence fixe le nombre maximal de requêtes simultanées par pipelining lorsque celui-ci est activé.">
 <!ENTITY network_http_proxy_pipelining_name "Utiliser du pipelining avec un serveur proxy">
 <!ENTITY network_http_proxy_pipelining_description "Cette préférence fixe s&apos;il faut utiliser le pipelining avec un serveur proxy. Le pipelining réduit le chargement du réseau et peut aussi réduire les durées de chargement des pages, mais cela peut aussi causer des problèmes au cas où les serveurs ne supportent pas cette méthode de requêtes.">
+
+<!-- Prediction -->
+<!ENTITY prediction "Prediction">
+<!ENTITY network_predictor_enabled_name "Enable prediction">
+<!ENTITY network_predictor_enabled_description "Enables the prediction service, which pre-connects to websites (DNS pre-fetch and TCP/TLS handshake) when the user hovers over a link in order to improve page load time. This does not send any actual data to the website.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Enable pre-connects for HTTPS addresses">

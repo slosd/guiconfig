@@ -1,6 +1,8 @@
 <!ENTITY browser "Przeglądarka">
+
 <!-- Urlbar -->
 <!ENTITY urlbar "Pasek adresu">
+
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Ogranicz wyniki do">
 <!ENTITY browser_urlbar_restrict_bookmark_name "zakładek">
@@ -11,6 +13,7 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Po wybraniu tej opcji w pasku adresu wyświetlane będą jedynie strony dodane do zakładek o etykietach zgodnych z wprowadzonym tekstem.">
 <!ENTITY browser_urlbar_restrict_typed_name "uprzednio wprowadzonych adresów">
 <!ENTITY browser_urlbar_restrict_typed_description "Wyniki wyświetlane przez inteligentny pasek adresu ograniczone są wyłącznie do adresów, które zostały do niego wprowadzone.">
+
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Przeszukiwane miejsca">
 <!ENTITY browser_urlbar_match_title_name "Szukaj w tytułach">
@@ -39,6 +42,7 @@
 <!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+
 <!-- Session restore -->
 <!ENTITY session_restore "Przywracanie sesji">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Włącz przywracanie sesji">
@@ -67,8 +71,10 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "na wszystkich stronach">
 <!ENTITY browser_sessionstore_privacy_level_o2 "na niezaszyfrowanych (nie HTTPS) stronach">
 <!ENTITY browser_sessionstore_privacy_level_o3 "na żadnych stronach">
+
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "Extensions &amp; Plugins">
+
 <!-- Extensions -->
 <!ENTITY extensions "Rozszerzenia">
 <!ENTITY getaddons "Panel &quot;Pobierz rozszerzenia&quot;">
@@ -80,10 +86,12 @@
 <!ENTITY extensions_getAddons_maxResults_description "Określa maksymalną liczbę wyników wyświetlanych w panelu podczas wyszukiwania.">
 <!ENTITY extensions_getAddons_showPane_name "Wyświetlaj panel">
 <!ENTITY extensions_getAddons_showPane_description "Określa, czy w oknie &quot;Dodatki&quot; wyświetlany ma być panel &quot;Pobierz rozszerzenia&quot;.">
+
 <!-- Installation -->
 <!ENTITY installation "Installation">
 <!ENTITY security_dialog_enable_delay_name "Czas przed instalacją rozszerzenia (w milisekundach)">
 <!ENTITY security_dialog_enable_delay_description "To ustawienie określa okres czasu (w milisekundach), który musi upłynąć, nim możliwe będzie kliknięcie przycisku &quot;Zainstaluj&quot; w oknie instalacji rozszerzenia. Ustaw na 0, aby wyłączyć konieczność czekania.">
+
 <!-- Plugins -->
 <!ENTITY plugins "Plugins">
 <!ENTITY dom_ipc_plugins_enabled_name "Uruchamiaj wszystkie wtyczki jako osobne procesy">
@@ -92,18 +100,22 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Określa okres czasu, po którym proces nieodpowiadającej wtyczki zostanie zakończony.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Czas oczekiwania na uruchomienie wtyczki (w sek.)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Określa okres czasu, po którym uruchamianie wtyczki zostanie uznane za niepomyślne.">
+
 <!-- Library -->
 <!ENTITY library "Library">
+
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Subskrypcje">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Export bookmarks to file at shutdown">
 <!ENTITY browser_bookmarks_autoExportHTML_description "If enabled, bookmarks are exported to the file &quot;bookmarks.html&quot; in your profile directory when the browser is shut down.">
 <!ENTITY browser_bookmarks_max_backups_name "Kopie zapasowe zakładek">
 <!ENTITY browser_bookmarks_max_backups_description "Określa liczbę przechowywanych kopii. Ustawienie na 0 spowoduje wyłączenie funkcji tworzenia kopii.">
+
 <!-- History -->
 <!ENTITY history "History">
 <!ENTITY places_history_expiration_max_pages_name "Max. history entries to remember">
 <!ENTITY places_history_expiration_max_pages_description "Maximum number of history entries to remember before other entries expire. Set to -1 to have this number calculated automatically.">
+
 <!-- Downloads -->
 <!ENTITY downloads "Downloads">
 <!ENTITY browser_download_animateNotifications_name "Animate download icon">
@@ -114,8 +126,10 @@
 <!ENTITY browser_download_lastDir_description "Ścieżka do ostatniego katalogu użytego jako cel pobieranego pliku przez opcję &quot;Zapisz jako&quot;.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Ostrzegaj przed otwarciem plików wykonywalnych">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "Ostrzegaj, jeżeli podjęta zostanie próba otwarcia wykonywalnego pliku w menedżerze pobierania.">
+
 <!-- Browser cache -->
 <!ENTITY cache "Bufor przeglądarki">
+
 <!-- Disk cache -->
 <!ENTITY cache_disk "Cache dysku">
 <!ENTITY browser_cache_check_doc_frequency_name "Sprawdzaj bufor przeglądarki">
@@ -130,13 +144,36 @@
 <!ENTITY browser_cache_disk_capacity_description "Ilość miejsca na dysku, które przeglądarka może wykorzystać jako bufor (w KB).">
 <!ENTITY browser_cache_disk_enable_name "Używaj bufora na dysku">
 <!ENTITY browser_cache_disk_enable_description "Używaj bufora na dysku (uwzględniając określony limit pojemności).">
+
 <!-- Memory cache -->
 <!ENTITY cache_memory "Cache pamięci">
 <!ENTITY browser_cache_memory_enable_name "Używaj bufora w RAM-ie">
 <!ENTITY browser_cache_memory_enable_description "Używaj bufora w RAM-ie (uwzględniając określony limit pojemności).">
 <!ENTITY browser_cache_memory_capacity_name "Rozmiar bufora w RAM-ie (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Określa maksymalną ilość pamięci RAM, którą przeglądarka może wykorzystać jako bufor (w KB).">
+
 <!-- Misc -->
 <!ENTITY misc "Rozmaite">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Maksymalna liczba stron przechowywanych w pamięci">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Ostatnio odwiedzone strony są przechowywane w pamięci, dzięki czemu mogą zostać wyświetlone szybciej po użyciu przycisków &quot;Wstecz&quot; oraz &quot;Do przodu&quot;. Gdy ustawienie to ma wartość -1, liczba stron przechowywanych w pamięci jest określana automatycznie. Nadanie mu wartości 0 powoduje, że żadne strony nie są przechowywane w pamięci.">
+
+<!-- Taskbar -->
+<!ENTITY taskbar "Taskbar">
+<!ENTITY browser_taskbar_previews_enable_name "Włącz podglądy w pasku zadań Windowsa 7">
+<!ENTITY browser_taskbar_previews_enable_description "Włączenie tej opcji sprawi, że Firefox będzie wyświetlał podgląd każdej karty na pasku zadań Windowsa 7.">
+<!ENTITY browser_taskbar_previews_max_name "Max. number of tab previews">
+<!ENTITY browser_taskbar_previews_max_description "If the number of previews reaches this threshold the previews are disabled entirely.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Cache expiration time (sec)">
+<!ENTITY browser_taskbar_previews_cachetime_description "The time in seconds that tab content is cached before getting refreshed.">
+<!ENTITY browser_taskbar_lists_enabled_name "Enable jump lists">
+<!ENTITY browser_taskbar_lists_enabled_description "Enable menu items in the right-click menu of the Windows taskbar.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Show tasks">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "If enabled, the jump list includes items to open new tabs, windows and private windows.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Show frequent websites">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "If enabled, the jump list includes items to go to your most frequently visited websites.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Show recent websites">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "If enabled, the jump list includes items to go to recently visited websites.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. number of jump list items">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "The maximum number of jump list items per section (frequent and recent websites).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Update time (seconds)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "The time in seconds after which the content of the jumb list is updated.">

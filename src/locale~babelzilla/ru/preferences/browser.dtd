@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "сначала показывать элементы соответствующие границам">
 <!ENTITY browser_urlbar_matchBehavior_o3 "использовать границы только для набранного текста">
 <!ENTITY browser_urlbar_matchBehavior_o4 "только совпадающие с началом адреса или заголовка">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Записей в выпадающем списке">
 <!ENTITY browser_urlbar_maxRichResults_description "Определяет, сколько (максимум) записей должно появляться в выпадающем списке адресной строки.">
 <!ENTITY browser_urlbar_autoFill_name "Встроенное автодополнение">

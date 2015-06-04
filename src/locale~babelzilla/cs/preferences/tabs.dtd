@@ -1,5 +1,4 @@
 <!ENTITY tabs "Panely">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Min. šířka panelu pro tlačítko pro zavření">
 <!ENTITY browser_tabs_tabClipWidth_description "Určuje minimální šířku panelu nezbytnou pro zobrazení tlačítka pro zavření.">
 

@@ -1,5 +1,4 @@
 <!ENTITY tabs "Karty">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Minimalna szerokość karty dla przycisku zamknięcia">
 <!ENTITY browser_tabs_tabClipWidth_description "Określa najmniejszą szerokość karty przy której wyświetlany będzie przycisk zamknięcia karty.">
 

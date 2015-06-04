@@ -1,17 +1,20 @@
 <!ENTITY input "Invoer">
 <!ENTITY mousebehaviour "Muisgedrag">
+
 <!-- Middle click -->
 <!ENTITY middleclick "Middelklik">
 <!ENTITY middlemouse_contentLoadURL_name "Klembord als URL laden">
 <!ENTITY middlemouse_contentLoadURL_description "De inhoud van het klembord als URL laden bij middelklik.">
 <!ENTITY middlemouse_paste_name "Tekst van het klembord plakken">
 <!ENTITY middlemouse_paste_description "De inhoud van het klembord in een tekstveld plakken bij middelklik.">
+
 <!-- Mouse click -->
 <!ENTITY mouseclick "Muisklik">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Inhoud selecteren bij klikken">
 <!ENTITY browser_urlbar_clickSelectsAll_description "De inhoud van de adresbalk bij aanklikken selecteren.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Inhoud selecteren bij dubbelklik">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "De inhoud van de adresbalk selecteren bij dubbelklik.">
+
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Verticaal muisscrollen">
 <!ENTITY mousewheel_action_description "Kies wat moet gebeuren bij scrollen in combinatie met verschillende toetsen">
@@ -23,6 +26,7 @@
 <!ENTITY mousewheel_action_o2 "Pagina’s scrollen">
 <!ENTITY mousewheel_action_o3 "Vooruit/terug in geschiedenis">
 <!ENTITY mousewheel_action_o4 "Pagina zoomen">
+
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Backspace">
 <!ENTITY browser_backspace_action_description "Bepaalt het gedrag van de backspace-toets.">

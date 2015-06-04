@@ -1,13 +1,16 @@
 <!ENTITY network "Сеть">
+
 <!-- Connections -->
 <!ENTITY connections "Подключения">
 <!ENTITY network_http_max-connections_name "Максимальное число HTTP подключений">
 <!ENTITY network_http_max-connections_description "Эта настройка задаёт общее количество подключений, которое Firefox может использовать одновременно. [1-65535]">
+
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Максимальное число поддерживаемых подключений на прокси-сервер">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Эта настройка задаёт общее количество поддерживаемых подключений, которое Firefox может одновременно использовать для одного прокси-сервера. [1-255]">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Максимальное число поддерживаемых подключений на сервер">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Эта настройка задаёт общее количество поддерживаемых подключений, которое Firefox может одновременно использовать для одного сервера. [1-255]">
+
 <!-- Pipelining -->
 <!ENTITY pipelining "Конвейеризация">
 <!ENTITY network_http_pipelining_name "Использовать конвейерную обработку">
@@ -16,3 +19,9 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Эта настройка задаёт максимальное количество одновременных запросов в конвейере при использовании конвейеризации.">
 <!ENTITY network_http_proxy_pipelining_name "Использовать конвейерную обработку для прокси-сервера">
 <!ENTITY network_http_proxy_pipelining_description "Эта настройка указывает будет ли использоваться конвейерная обработка для прокси-сервера. Конвейеризация уменьшает загрузку сети и может уменьшить время загрузки страницы, но при этом может вызвать проблемы при загрузке страниц c серверов, не поддерживающих конвейерную обработку.">
+
+<!-- Prediction -->
+<!ENTITY prediction "Prediction">
+<!ENTITY network_predictor_enabled_name "Enable prediction">
+<!ENTITY network_predictor_enabled_description "Enables the prediction service, which pre-connects to websites (DNS pre-fetch and TCP/TLS handshake) when the user hovers over a link in order to improve page load time. This does not send any actual data to the website.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Enable pre-connects for HTTPS addresses">

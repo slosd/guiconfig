@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Najpierw wyświetlaj wyniki pasujące do granic słów">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Wyświetlaj wyłącznie wyniki pasujące do granic słów">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Szukaj na początkach adresów URL i tytułów">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Liczba wpisów w rozwijalnym menu">
 <!ENTITY browser_urlbar_maxRichResults_description "Określa maksymalną liczbę wpisów wyświetlanych w rozwijalnym menu paska adresu.">
 <!ENTITY browser_urlbar_autoFill_name "Autouzupełnianie adresu">

@@ -1,17 +1,20 @@
 <!ENTITY input "Eingabe">
 <!ENTITY mousebehaviour "Mausverhalten">
+
 <!-- Middle click -->
 <!ENTITY middleclick "Mittelklick">
 <!ENTITY middlemouse_contentLoadURL_name "URL aus Zwischenablage laden">
 <!ENTITY middlemouse_contentLoadURL_description "Befindet sich in der Zwischenablage eine URL, wird diese bei einem Mittelklick im Browserfenster geöffnet.">
 <!ENTITY middlemouse_paste_name "Text aus Zwischenablage in ein Textfeld einfügen">
 <!ENTITY middlemouse_paste_description "Ein Mittelklick in ein Textfeld fügt den Inhalt der Zwischenablage ein.">
+
 <!-- Mouse click -->
 <!ENTITY mouseclick "Mausklick">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Einfachklick markiert Inhalt">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Der Inhalt der Adresszeile wird markiert, wenn darauf geklickt wird.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Doppelklick markiert Inhalt">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Der Inhalt der Adresszeile wird markiert, wenn darauf doppelgeklickt wird.">
+
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Vertikales Scrollen">
 <!ENTITY mousewheel_action_description "Wählen Sie was beim Scrollen in Kombination mit dieser Taste geschehen soll.">
@@ -23,6 +26,7 @@
 <!ENTITY mousewheel_action_o2 "Seite scrollen">
 <!ENTITY mousewheel_action_o3 "Vor- und rückwärts in der Chronik gehen">
 <!ENTITY mousewheel_action_o4 "Webseite zoomen">
+
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Rücktastenfunktion">
 <!ENTITY browser_backspace_action_description "Definiert, welche Funktion der Rücktaste(Backspace) zugewiesen ist.">

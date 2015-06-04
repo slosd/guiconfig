@@ -1,6 +1,8 @@
 <!ENTITY content "Content">
+
 <!-- Websites -->
 <!ENTITY websites "Websites">
+
 <!-- Images -->
 <!ENTITY images "Images">
 <!ENTITY gfx_color_management_mode_name "Use color management for">
@@ -17,12 +19,14 @@
 <!ENTITY browser_display_show_image_placeholders_description "Visualizza i segnaposto durante il periodo di caricamento delle immagini.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Ridimensiona le immagini">
 <!ENTITY browser_enable_automatic_image_resizing_description "Quando si visualizza un&apos;immagine che non è contenuta in una pagina web, l&apos;immagine, se troppo grande, verrà ridimensionata per adattarsi alle dimensioni della finestra del browser.">
+
 <!-- Rendering -->
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_name "Ritardo nella visualizzazione delle pagine (millisecondi)">
 <!ENTITY nglayout_initialpaint_delay_description "Questa preferenza permette di specificare l&apos;attesa, in millisecondi, prima che sia effettuato il rendering di una pagina. Valori più bassi faranno in modo che le pagine siano visualizzate più velocemente ma sarà necessario più tempo per il rendering. Valori più alti avranno l&apos;effetto contrario.">
 <!ENTITY content_notify_interval_name "Ritardo prima del redrawing della pagina (microsecondi)">
 <!ENTITY content_notify_interval_description "Il rendering dei dati ricevuti da un sito web è effettuato periodicamente. Questa preferenza indica, in microsecondi, l&apos;intervallo minimo di attesa tra i redrawing della pagina. Valori più bassi diminuiranno il tempo di caricamento percepito ma incrementeranno il tempo di caricamento totale.">
+
 <!-- Misc -->
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
@@ -37,8 +41,10 @@
 <!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
+
 <!-- Accessibility -->
 <!ENTITY accessibility "Accessibilità">
+
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Case Sensitive">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Determines how case-sensitivity is handled. When &quot;Automatically determined&quot; the search is case-sensitive if the search string contains upper-case characters but isn't all-caps. ">
@@ -49,6 +55,7 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (millisec)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Determines after what amout of time with no further keyboard input the Find Bar disappears. ">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Browser zoom">
 <!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
@@ -57,6 +64,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Completa automaticamente i campi per l&apos;accesso ai siti web">
 <!ENTITY signon_prefillForms_description "I campi dei moduli di accesso ai siti web vengono completati automaticamente con nome utente e password salvati.">
@@ -73,8 +81,10 @@
 <!ENTITY layout_spellcheckDefault_o1 "Disable">
 <!ENTITY layout_spellcheckDefault_o2 "Enable for multi-line textboxes">
 <!ENTITY layout_spellcheckDefault_o3 "Enable for multi-line and single-line textboxes">
+
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
+
 <!-- Permissions -->
 <!ENTITY permissions "Permissions">
 <!ENTITY javascript_enabled_name "Enable Javascript">

@@ -6,6 +6,7 @@
 <!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "Standard">
 <!ENTITY config.todefault "Sett som standard verdi">
+<!ENTITY config.copykey "Copy preference key to clipboard">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Choose File">
 <!ENTITY config.browse "Browse...">

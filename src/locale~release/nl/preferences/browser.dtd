@@ -1,6 +1,8 @@
 <!ENTITY browser "Browser">
+
 <!-- Urlbar -->
 <!ENTITY urlbar "Adresbalk">
+
 <!-- Restrict results -->
 <!ENTITY urlbar_restrict_name "Resultaten beperken">
 <!ENTITY browser_urlbar_restrict_bookmark_name "Beperken tot bladwijzers">
@@ -11,6 +13,7 @@
 <!ENTITY browser_urlbar_restrict_tag_description "Resultaten in de slimme locatiebalk zijn beperkt tot labels.">
 <!ENTITY browser_urlbar_restrict_typed_name "Beperken tot getypte adressen">
 <!ENTITY browser_urlbar_restrict_typed_description "Resultaten in de slimme locatiebalk zijn beperkt tot de in de adresbalk ingetypte adressen.">
+
 <!-- Match results -->
 <!ENTITY urlbar_match_name "Resultaten matchen">
 <!ENTITY browser_urlbar_match_title_name "Zoeken in titel">
@@ -37,8 +40,9 @@
 <!ENTITY browser_urlbar_formatting_enabled_description "Bepaalt of het domein in de adresbalk moet worden opgemaakt.">
 <!ENTITY browser_urlbar_trimURLs_name "URL’s inkorten">
 <!ENTITY browser_urlbar_trimURLs_description "Indien ingeschakeld worden het protocol (http) en aanvangsslashes in de adresbalk verborgen.">
-<!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
-<!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "Losse woorden als domeinnaam behandelen">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "In plaats van losse woorden op te zoeken via de standaard zoekmachine eerst proberen het woord in de adresbalk via DNS op te zoeken. Nuttig om hosts op het lokale netwerk te benaderen.">
+
 <!-- Session restore -->
 <!ENTITY session_restore "Sessieherstel">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sessieherstel inschakelen">
@@ -67,8 +71,10 @@
 <!ENTITY browser_sessionstore_privacy_level_o1 "voor elke website">
 <!ENTITY browser_sessionstore_privacy_level_o2 "voor niet-versleutelde (niet-HTTPS-) websites">
 <!ENTITY browser_sessionstore_privacy_level_o3 "voor geen enkele website">
+
 <!-- Extensions and plugins -->
 <!ENTITY extensions_plugins "Extensies en plug-ins">
+
 <!-- Extensions -->
 <!ENTITY extensions "Extensies">
 <!ENTITY getaddons "Paneel “Add-ons verkrijgen”">
@@ -80,10 +86,12 @@
 <!ENTITY extensions_getAddons_maxResults_description "Bepaalt het maximaal aantal weer te geven resultaten in het paneel bij uitvoeren van een zoekopdracht.">
 <!ENTITY extensions_getAddons_showPane_name "Paneel weergeven">
 <!ENTITY extensions_getAddons_showPane_description "Bepaalt of het paneel “Add-ons verkrijgen” wordt weergegeven in het venster “Add-onbeheerder”.">
+
 <!-- Installation -->
 <!ENTITY installation "Installatie">
 <!ENTITY security_dialog_enable_delay_name "Vertraging add-on-installatie (msec)">
 <!ENTITY security_dialog_enable_delay_description "Deze voorkeur bepaalt de vertraging (in milliseconden) voordat de knop “Installeren” kan worden aangeklikt bij het installeren van een add-on. Stel dit in op 0 om de vertraging uit te schakelen.">
+
 <!-- Plugins -->
 <!ENTITY plugins "Plug-ins">
 <!ENTITY dom_ipc_plugins_enabled_name "Elke plug-in in een eigen proces uitvoeren">
@@ -92,18 +100,22 @@
 <!ENTITY dom_ipc_plugins_timeoutSecs_description "Bepaalt de tijdsduur waarna het proces van een niet reagerende plug-in wordt gestopt.">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_name "Time-out voor starten plug-in (sec)">
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "Bepaalt de tijdsduur na starten van een plug-in waarna dit als mislukt wordt beschouwd.">
+
 <!-- Library -->
 <!ENTITY library "Bibliotheek">
+
 <!-- Bookmarks -->
 <!ENTITY bookmarks "Bladwijzers">
 <!ENTITY browser_bookmarks_autoExportHTML_name "Bladwijzers naar bestand exporteren bij afsluiten">
 <!ENTITY browser_bookmarks_autoExportHTML_description "Indien ingeschakeld worden bladwijzers naar het bestand “bookmarks.html” in uw profielmap geëxporteerd als de browser wordt afgesloten.">
 <!ENTITY browser_bookmarks_max_backups_name "Back-ups van bladwijzers">
 <!ENTITY browser_bookmarks_max_backups_description "Bepaalt het aantal bewaarde back-ups. Instellen op 0 schakelt back-ups uit.">
+
 <!-- History -->
 <!ENTITY history "Geschiedenis">
 <!ENTITY places_history_expiration_max_pages_name "Maximaal aantal geschiedenisitems">
 <!ENTITY places_history_expiration_max_pages_description "Maximaal aantal te onthouden geschiedenisitems voordat deze verlopen. Stel in op -1 om dit automatisch te laten bepalen.">
+
 <!-- Downloads -->
 <!ENTITY downloads "Downloads">
 <!ENTITY browser_download_animateNotifications_name "Downloadpictogram animeren">
@@ -114,8 +126,10 @@
 <!ENTITY browser_download_lastDir_description "Pad naar de laatste map voor een download gebruikt via ‘Opslaan als…’.">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "Waarschuwen voor uitvoerbare bestanden">
 <!ENTITY browser_download_manager_alertOnEXEOpen_description "De gebruiker waarschuwen als deze een uitvoerbaar bestand probeert te openen vanuit de downloadbeheerder.">
+
 <!-- Browser cache -->
 <!ENTITY cache "Browserbuffer">
+
 <!-- Disk cache -->
 <!ENTITY cache_disk "Schijfbuffer">
 <!ENTITY browser_cache_check_doc_frequency_name "Browserbuffer controleren">
@@ -130,13 +144,36 @@
 <!ENTITY browser_cache_disk_capacity_description "Hoeveelheid schijfruimte voor browserbuffer (in KB).">
 <!ENTITY browser_cache_disk_enable_name "Schijfbuffer gebruiken">
 <!ENTITY browser_cache_disk_enable_description "Schijfbuffer gebruiken tot opgegeven capaciteit.">
+
 <!-- Memory cache -->
 <!ENTITY cache_memory "Geheugenbuffer">
 <!ENTITY browser_cache_memory_enable_name "Geheugenbuffer gebruiken">
 <!ENTITY browser_cache_memory_enable_description "Geheugenbuffer gebruiken tot opgegeven capaciteit.">
 <!ENTITY browser_cache_memory_capacity_name "Geheugenbuffer (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Stel het maximale RAM-geheugen dat wordt gebruikt voor de geheugenbuffer in (in KB).">
+
 <!-- Misc -->
 <!ENTITY misc "Diversen">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. aantal pagina’s in geheugen">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Onlangs bezochte pagina’s worden opgeslagen in het geheugen en kunnen sneller worden weergeven bij gebruik van Terug en Vooruit. Indien ingesteld op -1 wordt het aantal pagina’s automatisch bepaald. Indien ingesteld op 0 worden er geen pagina’s in het geheugen opgeslagen.">
+
+<!-- Taskbar -->
+<!ENTITY taskbar "Taakbalk">
+<!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
+<!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">
+<!ENTITY browser_taskbar_previews_max_name "Max. aantal tabbladvoorbeelden">
+<!ENTITY browser_taskbar_previews_max_description "Als het aantal voorbeelden deze grens bereikt worden voorbeeldweergaven volledig uitgeschakeld.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Vervaltijd buffer (sec)">
+<!ENTITY browser_taskbar_previews_cachetime_description "De tijd in seconden dat de tabbladinhoud in de buffer wordt opgeslagen voordat deze wordt ververst.">
+<!ENTITY browser_taskbar_lists_enabled_name "Snellijsten inschakelen">
+<!ENTITY browser_taskbar_lists_enabled_description "Menu-items in het contextmenu van de Windows-taakbalk inschakelen.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Taken weergeven">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "Indien ingeschakeld bevatten de snellijsten items om nieuwe tabbladen, vensters en privévensters te openen.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Veelbezochte websites weergeven">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "Indien ingeschakeld bevat de snellijst items om naar uw meest bezochte websites te gaan.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Recente websites weergeven">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "Indien ingeschakeld bevat de snellijst items om naar uw onlangs bezochte websites te gaan.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. aantal snellijstitems">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "Het maximale aantal snellijstitems per sectie (meest en onlangs bezochte websites).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Bijwerktijd (seconden)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "De tijd in seconden waarna de inhoud van de snellijst wordt bijgewerkt.">

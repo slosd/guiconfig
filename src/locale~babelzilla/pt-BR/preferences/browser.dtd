@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "privilegiar ocorrências no início de palavras">
 <!ENTITY browser_urlbar_matchBehavior_o3 "somente ocorrências no início de palavras">
 <!ENTITY browser_urlbar_matchBehavior_o4 "somente ocorrências no início do endereço ou título">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Máximo de sugestões:">
 <!ENTITY browser_urlbar_maxRichResults_description "Especifica a quantidade máxima de sugestões oferecidas enquanto se digita no campo de endereço.">
 <!ENTITY browser_urlbar_autoFill_name "Completar endereços automaticamente ao digitar">

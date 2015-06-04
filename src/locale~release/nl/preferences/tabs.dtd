@@ -1,18 +1,19 @@
 <!ENTITY tabs "Tabbladen">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. tabbladbreedte voor sluitknoppen">
 <!ENTITY browser_tabs_tabClipWidth_description "Bepaalt de minimaal benodigde tabbladbreedte voor weergave van de knop Sluiten.">
+
 <!-- Tab preview -->
 <!ENTITY tab_preview "Tabbladvoorbeeld">
 <!ENTITY browser_ctrlTab_preview_name "Tabbladvoorbeeld bij wisselen tabbladen inschakelen">
 <!ENTITY browser_ctrlTab_preview_description "Bij gebruik van Ctrl+Tab om van tabblad te wisselen wordt een voorbeeld weergegeven.">
-<!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
-<!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">
+
 <!-- Open in background -->
 <!ENTITY open_in_background "Een nieuw tabblad in de achtergrond openen vanaf">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Koppelingen in externe toepassingen">
 <!ENTITY browser_tabs_loadInBackground_name "Koppelingen in websites">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Bladwijzers">
 <!ENTITY browser_search_context_loadInBackground_name "Zoeken via het contextmenu">
+
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Tabbladen animeren">
 <!ENTITY browser_tabs_animate_description "Animaties bij openen nieuwe tabbladen, tijdens herschikken tabbladen en bij loskoppelen tabblad inschakelen.">

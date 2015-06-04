@@ -1,5 +1,4 @@
 <!ENTITY tabs "Flikar">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Min. flikbredd för stängknappar">
 <!ENTITY browser_tabs_tabClipWidth_description "Anger den minsta flikbredden som krävs för att stängknappar ska visas.">
 

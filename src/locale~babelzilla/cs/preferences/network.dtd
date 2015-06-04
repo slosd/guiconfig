@@ -21,3 +21,7 @@
 <!ENTITY network_http_proxy_pipelining_description "Tato předvolba stanovuje, zda se bude proudové zpracování používat s proxy servery. Proudové zpracování snižuje zátěž sítě a může zkrátit dobu načítání stránky, ale mohou se objevit problémy se servery, které proudové zpracování nepodporují.">
 
 <!-- Prediction -->
+<!ENTITY prediction "Předběžné načítání">
+<!ENTITY network_predictor_enabled_name "Povolit předběžné načítání">
+<!ENTITY network_predictor_enabled_description "Povolí předběžné načítání, při kterém se prohlížeč ve snaze zkrátit dobu načítání stránky předběžně připojuje k webovému serveru (za použití DNS pre-fetch a TCP/TLS handshake), když uživatel najede na odkaz. Na webový server se při tom neposílají žádná data.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Povolit předběžné připojení pro adresy HTTPS">

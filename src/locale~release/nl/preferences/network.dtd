@@ -1,13 +1,16 @@
 <!ENTITY network "Netwerk">
+
 <!-- Connections -->
 <!ENTITY connections "Verbindingen">
 <!ENTITY network_http_max-connections_name "Max. aantal HTTP-verbindingen">
 <!ENTITY network_http_max-connections_description "Dee voorkeur geeft het aantal verbindingen dat Firefox tegelijk open kan hebben aan. Deze waarde dient tussen 1 en 65535 te liggen.">
+
 <!-- Keep-alive -->
 <!ENTITY network_http_max-persistent-connections-per-proxy_name "Max. aantal in stand te houden verbindingen per proxyserver">
 <!ENTITY network_http_max-persistent-connections-per-proxy_description "Deze voorkeur geeft het totaal aantal in stand te houden verbindingen dat Firefox tegelijkertijd bij één proxyserver open mag hebben aan. Deze waarde dient tussen 1 en 255 te liggen.">
 <!ENTITY network_http_max-persistent-connections-per-server_name "Max. aantal in stand te houden verbindingen per server">
 <!ENTITY network_http_max-persistent-connections-per-server_description "Deze voorkeur geeft het totaal aantal in stand te houden verbindingen dat Firefox tegelijkertijd bij één server open mag hebben aan. Deze waarde dient tussen 1 en 255 te liggen.">
+
 <!-- Pipelining -->
 <!ENTITY pipelining "Pipelining">
 <!ENTITY network_http_pipelining_name "Pipelining toepassen">
@@ -16,3 +19,9 @@
 <!ENTITY network_http_pipelining_maxrequests_description "Deze voorkeur specificeert het maximale aantal gelijktijdige aanvragen in de pipeline wanneer dit is ingeschakeld.">
 <!ENTITY network_http_proxy_pipelining_name "Pipelining met een proxyserver gebruiken">
 <!ENTITY network_http_proxy_pipelining_description "Deze voorkeur geeft op of pipelining met een proxyserver moet worden gebruikt. Pipelining reduceert de netwerkbelasting en kan de laadtijden van pagina’s verkorten, maar het kan ook problemen veroorzaken bij het laden van pagina’s van servers die het niet ondersteunen.">
+
+<!-- Prediction -->
+<!ENTITY prediction "Voorspelling">
+<!ENTITY network_predictor_enabled_name "Voorspelling inschakelen">
+<!ENTITY network_predictor_enabled_description "Schakelt de voorspellingsdienst in, die vooraf verbinding maakt met websites (DNS pre-fetch en TCP/TLS-handshake) wanneer de gebruiker een koppeling aanwijst om de tijd om de pagina te laden te verbeteren. Verstuurt geen daadwerkelijke gegevens naar de website.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Vooraf verbinding maken met HTTPS-adressen inschakelen">

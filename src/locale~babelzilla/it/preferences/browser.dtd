@@ -24,7 +24,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Mostra prima gli elementi che corrispondono alle estremità delle parole digitate">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Utilizza le estremità solo per il testo digitato">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Mostra solo URL o titoli che iniziano con il termine di ricerca">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Voci nel menu a discesa">
 <!ENTITY browser_urlbar_maxRichResults_description "Determina il numero massimo di elementi da mostrare nel menu a discesa della Barra di ricerca.">
 <!ENTITY browser_urlbar_autoFill_name "Completamento automatico">

@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Mostrar los primeros elementos que se correspondan con el límite">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Usar las palabras sólo para el texto escrito">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Usar sólo el inicio de la dirección o el título">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Entradas en la lista desplegable">
 <!ENTITY browser_urlbar_maxRichResults_description "Determina cuantas entradas deben aparecer (como máximo) en la lista desplegable de la barra de direcciones.">
 <!ENTITY browser_urlbar_autoFill_name "Autocompletado en línea">

@@ -21,3 +21,7 @@
 <!ENTITY network_http_proxy_pipelining_description "这个选项决定是否对代理服务器使用流水线。流水线可以减少网页读取时间并且简少网络流量，但是当服务器不支持流水线时可能会出错。">
 
 <!-- Prediction -->
+<!ENTITY prediction "预测">
+<!ENTITY network_predictor_enabled_name "启用预测">
+<!ENTITY network_predictor_enabled_description "启用预测服务，将在用户将鼠标悬停在一个链接上时预先连接到该网站（DNS 预读和 TCP/TLS 握手）以改善网页的加载时间。这不会向网站发送任何实际数据。">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "启用对 HTTPS 地址的预先连接">

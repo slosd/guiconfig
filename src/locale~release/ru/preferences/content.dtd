@@ -1,6 +1,8 @@
 <!ENTITY content "Content">
+
 <!-- Websites -->
 <!ENTITY websites "Веб-сайты">
+
 <!-- Images -->
 <!ENTITY images "Изображения">
 <!ENTITY gfx_color_management_mode_name "Использовать управление цветом">
@@ -17,12 +19,14 @@
 <!ENTITY browser_display_show_image_placeholders_description "Пока изображение загружается показывает на его месте заполнитель (placeholder).">
 <!ENTITY browser_enable_automatic_image_resizing_name "Изменять размер изображений">
 <!ENTITY browser_enable_automatic_image_resizing_description "При просмотре просто изображения его размер будет изменён, чтобы вписать изображение в окно браузера, если оно слишком велико для него.">
+
 <!-- Rendering -->
 <!ENTITY rendering "Визуализация">
 <!ENTITY nglayout_initialpaint_delay_name "Задержка перед отображением страницы (мс)">
 <!ENTITY nglayout_initialpaint_delay_description "Эта настройка задаёт задержку в миллисекундах перед началом визуализации страницы. Меньшее значение приведёт к более быстрому первоначальному отображению страницы, но окончательный результат займёт больше времени. Большее значение имеет противоположный эффект.">
 <!ENTITY content_notify_interval_name "Задержка перед перерисовкой страницы (мкс)">
 <!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
+
 <!-- Misc -->
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">
@@ -37,8 +41,10 @@
 <!ENTITY layout_frames_force_resizability_name "Принудительно задать фреймам возможность изменять размер">
 <!ENTITY dom_max_script_run_time_name "Время выполнения сценария (сек)">
 <!ENTITY dom_max_script_run_time_description "Определяет количество секунд, спустя которое Firefox будет предупреждать вас, что выполнение сценария занимает много времени.">
+
 <!-- Accessibility -->
 <!ENTITY accessibility "Удобства">
+
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Чувствительность к регистру">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Определяет как обрабатывать чувствительность к регистру. Если выбрана настройка «Определять автоматически», то поиск будет регистрозависимым только в том случае, когда поисковая строка содержит и прописные и строчные символы.">
@@ -49,6 +55,7 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Задержка (мсек)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Задаёт промежуток отсутствия ввода символов с клавиатуры после которого исчезает панель поиска.">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Browser zoom">
 <!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
@@ -57,6 +64,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Автозаполнение полей регистрационных форм">
 <!ENTITY signon_prefillForms_description "Автоматически заполняет поля форм с именем пользователя и паролем.">
@@ -73,8 +81,10 @@
 <!ENTITY layout_spellcheckDefault_o1 "отключить">
 <!ENTITY layout_spellcheckDefault_o2 "разрешить в многострочных текстовых полях">
 <!ENTITY layout_spellcheckDefault_o3 "разрешить в много- и однострочных текстовых полях">
+
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
+
 <!-- Permissions -->
 <!ENTITY permissions "Permissions">
 <!ENTITY javascript_enabled_name "Enable Javascript">

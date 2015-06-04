@@ -2,10 +2,11 @@
 <!ENTITY browser.item.access "d">
 <!ENTITY config.search "Zoeken">
 <!ENTITY config.descr.standard "Beweeg de cursor over een optie om een gedetailleerde beschrijving te zien">
-<!ENTITY config.description "Description:">
-<!ENTITY config.preference_key "Preference key:">
+<!ENTITY config.description "Beschrijving:">
+<!ENTITY config.preference_key "Voorkeurssleutel:">
 <!ENTITY config.standard.label "Alles resetten">
 <!ENTITY config.todefault "Instellen op de standaardwaarde">
+<!ENTITY config.copykey "Voorkeurssleutel naar klembord kopiëren">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Kies bestand">
 <!ENTITY config.browse "Bladeren…">

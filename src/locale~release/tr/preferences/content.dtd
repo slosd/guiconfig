@@ -1,6 +1,8 @@
 <!ENTITY content "Content">
+
 <!-- Websites -->
 <!ENTITY websites "Websites">
+
 <!-- Images -->
 <!ENTITY images "Images">
 <!ENTITY gfx_color_management_mode_name "Use color management for">
@@ -17,12 +19,14 @@
 <!ENTITY browser_display_show_image_placeholders_description "Shows placeholders while image is loading.">
 <!ENTITY browser_enable_automatic_image_resizing_name "imajları Boyutlandır">
 <!ENTITY browser_enable_automatic_image_resizing_description "When viewing an image not in a web page, the image will be resized to fit in the browser window if it is too large for the browser window.">
+
 <!-- Rendering -->
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_name "Delay before displaying a page (millisec)">
 <!ENTITY nglayout_initialpaint_delay_description "This preference specifies the number of milliseconds to wait before first rendering a page. Lower values will make a page display more quickly, but will make the page take longer to finish rendering. Higher values will have the opposite effect.">
 <!ENTITY content_notify_interval_name "Delay before redrawing a page (microsec)">
 <!ENTITY content_notify_interval_description "Firefox periodically renders all received data of a website. This preference specifies the minimum amount of time to wait between redrawing the page in microseconds. Lower values will lower the perceived loading time but increase total loading time.">
+
 <!-- Misc -->
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
@@ -37,8 +41,10 @@
 <!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
+
 <!-- Accessibility -->
 <!ENTITY accessibility "Erişilebilirlik">
+
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Case Sensitive">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Determines how case-sensitivity is handled. When &quot;Automatically determined&quot; the search is case-sensitive if the search string contains upper-case characters but isn't all-caps. ">
@@ -49,6 +55,7 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (millisec)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Determines after what amout of time with no further keyboard input the Find Bar disappears. ">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Browser zoom">
 <!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
@@ -57,6 +64,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Auto-fill login form fields">
 <!ENTITY signon_prefillForms_description "Automatically fill form fields with usernames and passwords.">
@@ -73,8 +81,10 @@
 <!ENTITY layout_spellcheckDefault_o1 "Disable">
 <!ENTITY layout_spellcheckDefault_o2 "Enable for multi-line textboxes">
 <!ENTITY layout_spellcheckDefault_o3 "Enable for multi-line and single-line textboxes">
+
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
+
 <!-- Permissions -->
 <!ENTITY permissions "Permissions">
 <!ENTITY javascript_enabled_name "Enable Javascript">

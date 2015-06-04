@@ -1,6 +1,8 @@
 <!ENTITY content "Content">
+
 <!-- Websites -->
 <!ENTITY websites "Witryny">
+
 <!-- Images -->
 <!ENTITY images "Obrazki">
 <!ENTITY gfx_color_management_mode_name "Używaj zarządzania kolorami na">
@@ -17,12 +19,14 @@
 <!ENTITY browser_display_show_image_placeholders_description "Pokazuj ramki informujące o położeniu obrazków podczas ich wczytywania.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Zmieniaj rozmiar obrazków">
 <!ENTITY browser_enable_automatic_image_resizing_description "Po wyświetleniu samego obrazka jego rozmiar zostanie zmieniony, aby ten zmieścił się w oknie przeglądarki, jeżeli jest za duży.">
+
 <!-- Rendering -->
 <!ENTITY rendering "Renderowanie">
 <!ENTITY nglayout_initialpaint_delay_name "Czas przed wyświetleniem strony (w milisekundach)">
 <!ENTITY nglayout_initialpaint_delay_description "To ustawienie określa liczbę milisekund, które przeglądarka ma odczekać przed pierwszym renderowaniem strony. Niższe wartości spowodują szybsze wyświetlanie strony, ale sprawią, że renderowanie będzie dłużej trwało. Odwrotnie przy wartościach większych.">
 <!ENTITY content_notify_interval_name "Czas przed ponownym renderowaniem strony (w mikrosekundach)">
 <!ENTITY content_notify_interval_description "Firefox okresowo renderuje dane strony. To ustawienie określa minimalny okres czasu, który musi upłynąć, zanim Firefox ponownie będzie renderował stronę (w mikrosekundach). Niższe wartości spowodują pozorne powolniejsze wczytywanie strony, ale zwiększą całkowity jego czas.">
+
 <!-- Misc -->
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
@@ -37,8 +41,10 @@
 <!ENTITY layout_frames_force_resizability_name "Wymuś możliwość zmiany rozmiaru ramek">
 <!ENTITY dom_max_script_run_time_name "Maks. czas działania skryptów (w sek.)">
 <!ENTITY dom_max_script_run_time_description "Określa liczbę sekund, po których Firefox informuje, ze skrypt wykonywany jest zbyt długo.">
+
 <!-- Accessibility -->
 <!ENTITY accessibility "Dostępność">
+
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozróżnianie wielkości znaków">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Określa sposób obsługi rozróżniania znaków. Kiedy wybrana jest opcja &quot;Wykryj automatycznie&quot;, w kryterium wyszukiwania rozróżniana jest wielkosć znaków, jeśli zawiera ono wielkie litery, ale nie składa się wyłącznie z nich.">
@@ -49,6 +55,7 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Czas oczekiwania (w milisekundach)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Określa po jakim okresie czasu bez wprowadzania pasek wyszukiwania znika.">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Browser zoom">
 <!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
@@ -57,6 +64,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Automatycznie wypełniaj pola formularzy logowania się">
 <!ENTITY signon_prefillForms_description "Automatycznie wypełnia pola formularzy nazwami użytkownika i hasłami.">
@@ -73,8 +81,10 @@
 <!ENTITY layout_spellcheckDefault_o1 "Wyłącz">
 <!ENTITY layout_spellcheckDefault_o2 "Włącz dla wieloliniowych pól tekstowych">
 <!ENTITY layout_spellcheckDefault_o3 "Włącz dla wieloliniowych i jednoliniowych pól tekstowych">
+
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
+
 <!-- Permissions -->
 <!ENTITY permissions "Permissions">
 <!ENTITY javascript_enabled_name "Enable Javascript">

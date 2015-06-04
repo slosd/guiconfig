@@ -14,6 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "在网站上下文菜单启用&quot;查看元素&quot;，这会对所选 HTML 元素打开查看器。">
 <!ENTITY browser_dom_window_dump_enabled_name "允许 dump()">
 <!ENTITY browser_dom_window_dump_enabled_description "在标准控制台中显示 dump() 信息。">
+<!ENTITY browser_dom_window_dump_file_name "重定向到文件">
+<!ENTITY browser_dom_window_dump_file_description "重定向 dump() 的输出到一个文件。如果该路径不存在，将创建一个文件。需要一次重新启动。">
 <!ENTITY javascript_options_showInConsole_name "在控制台中显示 chrome 错误">
 <!ENTITY javascript_options_showInConsole_description "是否将 chrome 错误写入日志并且在 JavaScript 控制台中报警。">
 <!ENTITY javascript_options_strict_name "严格的 Javascript 警告">

@@ -1,18 +1,19 @@
 <!ENTITY tabs "Tabs">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. tab width for close buttons">
 <!ENTITY browser_tabs_tabClipWidth_description "Determines the minimum tab width necessary to display the close button. ">
+
 <!-- Tab preview -->
 <!ENTITY tab_preview "Tab preview">
 <!ENTITY browser_ctrlTab_preview_name "Enable tab preview when switching tabs">
 <!ENTITY browser_ctrlTab_preview_description "When using [CTRL]+[Tab] to switch tabs a tab preview is shown. ">
-<!ENTITY browser_taskbar_previews_enable_name "Enable previews in the Windows 7 taskbar">
-<!ENTITY browser_taskbar_previews_enable_description "When enabled Firefox will show a preview for each tab in the Windows 7 taskbar.">
+
 <!-- Open in background -->
 <!ENTITY open_in_background "Open a new tab in the background from">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in external applications">
 <!ENTITY browser_tabs_loadInBackground_name "Links in websites">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "Apri in secondo piano">
 <!ENTITY browser_search_context_loadInBackground_name "Context menu search">
+
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "Animate tabs">
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">

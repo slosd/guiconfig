@@ -1,4 +1,5 @@
 <!ENTITY appearance "Vzhled">
+
 <!-- Browser -->
 <!ENTITY browser_style "Prohlížeč">
 <!ENTITY browser_chrome_favicons_name "Zobrazovat oblíbené ikony">
@@ -11,6 +12,7 @@
 <!ENTITY browser_preferences_inContent_description "Pokud je povoleno, předvolby se budou otevírat v panelu místo v dialogovém okně.">
 <!ENTITY browser_preferences_instantApply_name "Použít okamžitě">
 <!ENTITY browser_preferences_instantApply_description "Změny předvoleb budou prováděny okamžitě. Okno s předvolbami nebude modální. Namísto tlačítek „OK“ a „Zrušit“ se bude objevovat tlačítko „Zavřít“.">
+
 <!-- New tab page -->
 <!ENTITY new_tab_page "Stránka nového panelu">
 <!ENTITY browser_newtabpage_rows_name "Počet řádků">
@@ -21,6 +23,7 @@
 <!ENTITY browser_pagethumbnails_capturing_disabled_description "Pokud je povoleno, Firefox bude vytvářet snímky, které se použijí v mřížce stránky nového panelu.">
 <!ENTITY browser_newtab_url_name "URL pro nové panely">
 <!ENTITY browser_newtab_url_description "Nastaví, aby se pro nově otevřené panely použila adresa URL. Tím bude nahrazena mřížka často používaných webových stránek.">
+
 <!-- Selected text -->
 <!ENTITY text_select "Vybraný text">
 <!ENTITY ui_textSelectBackgroundAttention_name "Barva pozadí vyhledávání">

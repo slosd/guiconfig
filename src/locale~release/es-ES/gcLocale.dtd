@@ -6,6 +6,7 @@
 <!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "Restablecer todo">
 <!ENTITY config.todefault "Establecer a los valores por defecto">
+<!ENTITY config.copykey "Copy preference key to clipboard">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Elegir archivo">
 <!ENTITY config.browse "Buscar...">

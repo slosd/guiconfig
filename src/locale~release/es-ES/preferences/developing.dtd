@@ -1,10 +1,12 @@
 <!ENTITY developing "Desarrollo">
+
 <!-- View Source -->
 <!ENTITY viewsource "Ver código fuente">
 <!ENTITY view_source_editor_external_name "Usar un editor personalizado">
 <!ENTITY view_source_editor_external_description "Usar un editor personalizado para ver el código fuente">
 <!ENTITY view_source_editor_path_name "Ruta del editor">
 <!ENTITY view_source_editor_path_description "Ruta del editor personalizado.">
+
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "Deshabilitar la caché XUL">
 <!ENTITY nglayout_debug_disable_xul_cache_description "No será necesario reiniciar para aplicar los cambios en ventanas y cuadros de diálogo. No funciona con archivos empaquetados en un JAR.">
@@ -12,6 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
 <!ENTITY browser_dom_window_dump_enabled_name "Habilitar depuración">
 <!ENTITY browser_dom_window_dump_enabled_description "Habilita el uso de mensajes de depuración en la consola de errores.">
+<!ENTITY browser_dom_window_dump_file_name "Redirect to file">
+<!ENTITY browser_dom_window_dump_file_description "Path to a file to redirect the output of dump() to. The file is created if it does not exist. Requires a restart.">
 <!ENTITY javascript_options_showInConsole_name "Mostrar los errores chrome en la consola">
 <!ENTITY javascript_options_showInConsole_description "Determina si registrar los errores y avisos chrome en la consola Javascript.">
 <!ENTITY javascript_options_strict_name "Avisos de Javascript estrictos">

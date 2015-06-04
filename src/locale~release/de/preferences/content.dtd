@@ -1,6 +1,8 @@
 <!ENTITY content "Inhalt">
+
 <!-- Websites -->
 <!ENTITY websites "Webseiten">
+
 <!-- Images -->
 <!ENTITY images "Bilder">
 <!ENTITY gfx_color_management_mode_name "Color management benutzen für">
@@ -17,14 +19,16 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zeigt für Bilder Platzhalter an, bis diese geladen wurden.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Bilder anpassen">
 <!ENTITY browser_enable_automatic_image_resizing_description "Für das Browserfenster zu große Bilder werden automatisch verkleinert.">
+
 <!-- Rendering -->
 <!ENTITY rendering "Rendering">
 <!ENTITY nglayout_initialpaint_delay_name "Anzeigeverzögerung (ms)">
 <!ENTITY nglayout_initialpaint_delay_description "Legt die Zeit fest, in der Firefox auf Daten wartet, bevor mit dem Rendern der Webseite begonnen wird.">
 <!ENTITY content_notify_interval_name "Wartezeit bis Aktualisierung (µs)">
 <!ENTITY content_notify_interval_description "Firefox rendert alle empfangenen Webseitenelemente in periodischen Abständen. Diese Einstellung spezifiziert die minimale Zeit zwischen zwei Renderprozessen in Mikrosekunden. Niedrigere Werte führen zu einer schnelleren Anzeige der Webseite, benötigen aber mehr Rechenleistung und verlängern die Gesamtladezeit der Webseite.">
+
 <!-- Misc -->
-<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY media_autoplay_enabled_name "Medien automatisch abspielen">
 <!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
 <!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
@@ -37,8 +41,10 @@
 <!ENTITY layout_frames_force_resizability_name "Frames immer größenveränderlich">
 <!ENTITY dom_max_script_run_time_name "Max. Skriptlaufzeit (Sek)">
 <!ENTITY dom_max_script_run_time_description "Legt fest nach welcher Dauer Firefox eine Warnung für ein lange dauerndes Skript zeigt.">
+
 <!-- Accessibility -->
 <!ENTITY accessibility "Bedienung">
+
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Groß- u. Kleinschreibung">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Legt fest, ob bei der Suche zwischen Groß- u. Kleinschreibung unterschieden wird. Bei &quot;automatisch bestimmen&quot; wird nur zwischen Groß- u. Kleinbuchstaben unterschieden, wenn der Suchtext Großbuchstaben enthält, ansonsten wird nicht zwischen Groß- u. Kleinschreibung unterschieden.">
@@ -49,6 +55,7 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Timeout (ms)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Legt fest, nach welcher Zeitspanne die Suchleiste bei Inaktivität wieder ausgeblendet wird.">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Suchfeld mit ausgewähltem Text füllen">
+
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Zoomfunktion">
 <!ENTITY browser_zoom_full_name "Gesamte Webseite zoomen">
@@ -57,6 +64,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "Ist diese Option aktiviert, wird die Zoomeinstellung jeder Webseite gespeichert und wiederhergestellt. Ansonsten wird die Zoomeinstellung beim nächsten Besuch zurückgesetzt.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Tabs im Hintergrund verändern">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Tabs mit der gleichen Webseite auf die aktuelle Zoomeinstellung aktualisieren.">
+
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Loginfelder automatisch ausfüllen">
 <!ENTITY signon_prefillForms_description "Wenn vorhanden, werden gespeicherte Logindaten (Benutzername und Passwort) in die dazugehörigen Textfelder automatisch eingetragen.">
@@ -73,17 +81,19 @@
 <!ENTITY layout_spellcheckDefault_o1 "Deaktivieren">
 <!ENTITY layout_spellcheckDefault_o2 "Nur für mehrzeilige Textfelder aktivieren">
 <!ENTITY layout_spellcheckDefault_o3 "Für ein- und mehrzeilige Textfelder aktivieren">
+
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
+
 <!-- Permissions -->
-<!ENTITY permissions "Permissions">
-<!ENTITY javascript_enabled_name "Enable Javascript">
-<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
-<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
-<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
-<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
-<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
-<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
-<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
-<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
-<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
+<!ENTITY permissions "Aktionen erlauben">
+<!ENTITY javascript_enabled_name "Javascript aktivieren">
+<!ENTITY javascript_enabled_description "Javascript für alle Webseiten aktivieren oder deaktivieren.">
+<!ENTITY dom_disable_window_move_resize_name "Fenster bewegen und ihre Größe verändern">
+<!ENTITY dom_disable_window_move_resize_description "Erlaubt Skripten das Bewegen von Fenstern und das Ändern ihrer Größe.">
+<!ENTITY dom_disable_window_flip_name "Fenster vor oder hinter andere Fenster legen">
+<!ENTITY dom_disable_window_flip_description "Erlaubt Skripten Fenster vor oder hinter andere Fenster zu legen.">
+<!ENTITY dom_event_contextmenu_enabled_name "Kontextmenü deaktivieren oder ersetzen">
+<!ENTITY dom_event_contextmenu_enabled_description "Erlaubt Skripten auf Webseiten das Kontextmenü zu deaktivieren oder zu ersetzen.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Ereignisse der Zwischenablage">
+<!ENTITY dom_event_clipboardevents_enabled_description "Erlaubt Skripten benachrichtigt zu werden, wenn auf einer Webseite Inhalt kopiert, ausgeschnitten oder eingefügt wird.">

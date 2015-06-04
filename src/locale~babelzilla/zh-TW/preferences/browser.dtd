@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "優先顯示符合字詞分界的項目">
 <!ENTITY browser_urlbar_matchBehavior_o3 "僅對手動輸入的文字使用字詞分界">
 <!ENTITY browser_urlbar_matchBehavior_o4 "僅需符合URL或標題的開頭">
-
 <!ENTITY browser_urlbar_maxRichResults_name "下拉式選單項目數">
 <!ENTITY browser_urlbar_maxRichResults_description "指定地址欄的下拉式選單最多顯示多少個項目">
 <!ENTITY browser_urlbar_autoFill_name "行內自動補足">

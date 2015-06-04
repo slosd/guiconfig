@@ -1,6 +1,8 @@
 <!ENTITY content "Obsah">
+
 <!-- Websites -->
 <!ENTITY websites "Stránky">
+
 <!-- Images -->
 <!ENTITY images "Obrázky">
 <!ENTITY gfx_color_management_mode_name "Použít správu barev pro">
@@ -17,14 +19,16 @@
 <!ENTITY browser_display_show_image_placeholders_description "Zobrazí zástupný obrázek během jeho načítání.">
 <!ENTITY browser_enable_automatic_image_resizing_name "Změnit velikost obrázků">
 <!ENTITY browser_enable_automatic_image_resizing_description "Pokud je obrázek prohlížený mimo stránku příliš velký, bude změněna jeho velikost, aby se vešel do okna prohlížeče.">
+
 <!-- Rendering -->
 <!ENTITY rendering "Vykreslování">
 <!ENTITY nglayout_initialpaint_delay_name "Prodleva před zobrazením stránky (milisekund)">
 <!ENTITY nglayout_initialpaint_delay_description "Tato předvolba stanovuje počet milisekund před prvním vykreslením stránky. S nižšími hodnotami se stránka zobrazí rychleji, ale bude trvat déle, než se vykreslování dokončí. Vyšší hodnoty budou mít opačný účinek.">
 <!ENTITY content_notify_interval_name "Prodleva před překreslením stránky (mikrosekund)">
 <!ENTITY content_notify_interval_description "Firefox pravidelně vykresluje všechna data, která pro stránku obdrží. Tato předvolba stanovuje minimální dobu v mikrosekundách, kterou bude čekat mezi překreslováním stránky. Nižší hodnoty způsobí, že se načítání stránky bude zdát rychlejší, ale celkový čas načítání se zvýší.">
+
 <!-- Misc -->
-<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY media_autoplay_enabled_name "Povolit automatické přehrávání multimédií">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">
 <!ENTITY geo_enabled_description "Pokud je povoleno, Firefox se smí zeptat, zda oznámit navštěvované stránce místo, kde se nacházíte. Zakázání této možnosti tuto vlastnost zcela vypne.">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
@@ -37,8 +41,10 @@
 <!ENTITY layout_frames_force_resizability_name "Vynutí u rámů možnost změny velikosti">
 <!ENTITY dom_max_script_run_time_name "Max. doba běhu skriptu (s)">
 <!ENTITY dom_max_script_run_time_description "Určuje dobu v sekundách, po které Firefox upozorní, že vykonávání skriptu trvá příliš dlouho.">
+
 <!-- Accessibility -->
 <!ENTITY accessibility "Zpřístupnění">
+
 <!-- Find as you type -->
 <!ENTITY accessibility_typeaheadfind_casesensitive_name "Rozlišovat velikost písmen">
 <!ENTITY accessibility_typeaheadfind_casesensitive_description "Určuje, zda se bude rozlišovat velikost písmen. Při volbě „Automaticky rozpoznat“ se bude velikost rozlišovat, pokud hledaný řetězec obsahuje velká písmena, ale není celý velkými písmeny.">
@@ -49,6 +55,7 @@
 <!ENTITY accessibility_typeaheadfind_timeout_name "Prodleva (milisekund)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "Určuje, po jakém čase zmizí řádek s hledáním, pokud do něj nebude nic zadáváno.">
 <!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Vyplnit vyhledávací pole vybraným textem">
+
 <!-- Browser zoom -->
 <!ENTITY browser_zoom "Přiblížení v prohlížeči">
 <!ENTITY browser_zoom_full_name "Použít úplné přiblížení místo přiblížení textu">
@@ -57,6 +64,7 @@
 <!ENTITY browser_zoom_siteSpecific_description "Pokud je povoleno, pro každé webové stránky se budou ukládat a používat hodnoty přiblížení. Jinak se hodnoty přiblížení při další návštěvě stránek nastaví na výchozí.">
 <!ENTITY browser_zoom_updateBackgroundTabs_name "Aktualizovat panely na pozadí">
 <!ENTITY browser_zoom_updateBackgroundTabs_description "Aktualizuje na aktuální hodnotu přiblížení další panely, které zobrazují tytéž webové stránky.">
+
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Automaticky vyplňovat přihlašovací formuláře">
 <!ENTITY signon_prefillForms_description "Automaticky vyplní položky formulářů s uživatelskými jmény a hesly.">
@@ -73,17 +81,19 @@
 <!ENTITY layout_spellcheckDefault_o1 "Zakázat">
 <!ENTITY layout_spellcheckDefault_o2 "Povolit pro víceřádková textová pole">
 <!ENTITY layout_spellcheckDefault_o3 "Povolit pro víceřádková a jednořádková textová pole">
+
 <!-- Javascript -->
 <!ENTITY javascript "Javascript">
+
 <!-- Permissions -->
-<!ENTITY permissions "Permissions">
-<!ENTITY javascript_enabled_name "Enable Javascript">
-<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
-<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
-<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
-<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
-<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
-<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
-<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
-<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
-<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
+<!ENTITY permissions "Oprávnění">
+<!ENTITY javascript_enabled_name "Povolit Javascript">
+<!ENTITY javascript_enabled_description "Povolí nebo zakáže Javascript pro všechny webové stránky.">
+<!ENTITY dom_disable_window_move_resize_name "Posouvat a měnit velikost oken">
+<!ENTITY dom_disable_window_move_resize_description "Umožní skriptům posouvat a měnit velikost oken prohlížeče.">
+<!ENTITY dom_disable_window_flip_name "Přenášet okna do popředí a odsouvat na pozadí">
+<!ENTITY dom_disable_window_flip_description "Umožní skriptům okna prohlížeče přenášet do popředí a odsouvat na pozadí.">
+<!ENTITY dom_event_contextmenu_enabled_name "Odstraňovat a nahrazovat místní nabídku">
+<!ENTITY dom_event_contextmenu_enabled_description "Umožní skriptům na webových stránkách odstraňovat a nahrazovat místní nabídku.">
+<!ENTITY dom_event_clipboardevents_enabled_name "Interakce se schránkou">
+<!ENTITY dom_event_clipboardevents_enabled_description "Umožní skriptům získávat informace o tom, že uživatel použil schránku ke zkopírování, vyjmutí či vložení obsahu webových stránek.">

@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Items die matchen met woordgrenzen eerst weergeven">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Alleen items die matchen met woordgrenzen weergeven">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Matchen aan begin van URL of titel">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Maximaal aantal resultaten">
 <!ENTITY browser_urlbar_maxRichResults_description "Bepaalt hoeveel resultaten (ten hoogste) moeten verschijnen in de locatiebalk.">
 <!ENTITY browser_urlbar_autoFill_name "Inline AutoAanvullen">
@@ -159,5 +158,22 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Onlangs bezochte pagina’s worden opgeslagen in het geheugen en kunnen sneller worden weergeven bij gebruik van Terug en Vooruit. Indien ingesteld op -1 wordt het aantal pagina’s automatisch bepaald. Indien ingesteld op 0 worden er geen pagina’s in het geheugen opgeslagen.">
 
 <!-- Taskbar -->
+<!ENTITY taskbar "Taakbalk">
 <!ENTITY browser_taskbar_previews_enable_name "Voorbeelden in de taakbalk van Windows 7 inschakelen.">
 <!ENTITY browser_taskbar_previews_enable_description "Indien ingeschakeld zal Firefox een voorbeeld van elk tabblad inde Windows 7-taakbalk weergeven.">
+<!ENTITY browser_taskbar_previews_max_name "Max. aantal tabbladvoorbeelden">
+<!ENTITY browser_taskbar_previews_max_description "Als het aantal voorbeelden deze grens bereikt worden voorbeeldweergaven volledig uitgeschakeld.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Vervaltijd buffer (sec)">
+<!ENTITY browser_taskbar_previews_cachetime_description "De tijd in seconden dat de tabbladinhoud in de buffer wordt opgeslagen voordat deze wordt ververst.">
+<!ENTITY browser_taskbar_lists_enabled_name "Snellijsten inschakelen">
+<!ENTITY browser_taskbar_lists_enabled_description "Menu-items in het contextmenu van de Windows-taakbalk inschakelen.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Taken weergeven">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "Indien ingeschakeld bevatten de snellijsten items om nieuwe tabbladen, vensters en privévensters te openen.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Veelbezochte websites weergeven">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "Indien ingeschakeld bevat de snellijst items om naar uw meest bezochte websites te gaan.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Recente websites weergeven">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "Indien ingeschakeld bevat de snellijst items om naar uw onlangs bezochte websites te gaan.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. aantal snellijstitems">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "Het maximale aantal snellijstitems per sectie (meest en onlangs bezochte websites).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Bijwerktijd (seconden)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "De tijd in seconden waarna de inhoud van de snellijst wordt bijgewerkt.">

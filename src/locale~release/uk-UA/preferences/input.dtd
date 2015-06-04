@@ -1,17 +1,20 @@
 <!ENTITY input "Input">
 <!ENTITY mousebehaviour "Поведінка миші">
+
 <!-- Middle click -->
 <!ENTITY middleclick "Середня клавіша">
 <!ENTITY middlemouse_contentLoadURL_name "Load clipboard as URL">
 <!ENTITY middlemouse_contentLoadURL_description "Load the contents of the clipboard as a URL on middle click.">
 <!ENTITY middlemouse_paste_name "Вставити текст з буферу обміну">
 <!ENTITY middlemouse_paste_description "Paste the contents of the clipboard into a text field on middle click.">
+
 <!-- Mouse click -->
 <!ENTITY mouseclick "Клацання мишкою">
 <!ENTITY browser_urlbar_clickSelectsAll_name "Select content on mouse click">
 <!ENTITY browser_urlbar_clickSelectsAll_description "Select the contents of the address bar when it is clicked.">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_name "Select content on double click">
 <!ENTITY browser_urlbar_doubleClickSelectsAll_description "Select the contents of the address bar when it is double clicked. ">
+
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
 <!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
@@ -23,6 +26,7 @@
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
 <!ENTITY mousewheel_action_o4 "Zoom page">
+
 <!-- Misc -->
 <!ENTITY browser_backspace_action_name "Backspace">
 <!ENTITY browser_backspace_action_description "Determines the behavior of the backspace key.">

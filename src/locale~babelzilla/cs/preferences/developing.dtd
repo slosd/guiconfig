@@ -14,6 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "Povolí v místních nabídkách webových stránek akci „Prozkoumat prvek“, která otevře průzkumník na místě vybraného prvku HTML.">
 <!ENTITY browser_dom_window_dump_enabled_name "Povolit dump()">
 <!ENTITY browser_dom_window_dump_enabled_description "Povolí použití příkazu dump() vypisující do standardního výstupu.">
+<!ENTITY browser_dom_window_dump_file_name "Přesměrovat do souboru">
+<!ENTITY browser_dom_window_dump_file_description "Cesta k souboru, do něhož bude výstup příkazu dump() přesměrován. Pokud soubor neexistuje, bude vytvořen. Vyžaduje restart.">
 <!ENTITY javascript_options_showInConsole_name "Zobrazit v konzoli chyby chrome">
 <!ENTITY javascript_options_showInConsole_description "Určuje, zda se budou zaznamenávat chyby a varování chrome do konzole JavaScriptu.">
 <!ENTITY javascript_options_strict_name "Striktní varování JavaScriptu">

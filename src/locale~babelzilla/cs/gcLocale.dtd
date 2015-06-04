@@ -6,6 +6,7 @@
 <!ENTITY config.preference_key "Klávesa předvolby:">
 <!ENTITY config.standard.label "Obnovit vše výchozí">
 <!ENTITY config.todefault "Změnit na výchozí hodnotu">
+<!ENTITY config.copykey "Kopírovat označení předvolby do schránky">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Vybrat soubor">
 <!ENTITY config.browse "Procházet...">

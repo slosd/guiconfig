@@ -6,6 +6,7 @@
 <!ENTITY config.preference_key "首选项键：">
 <!ENTITY config.standard.label "全部重置">
 <!ENTITY config.todefault "恢复默认值">
+<!ENTITY config.copykey "复制首选项名称到剪贴板">
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "选择文件">
 <!ENTITY config.browse "浏览…">
