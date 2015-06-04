@@ -46,8 +46,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Restauración de sesiones">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Habilitar la restauración de sesiones">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Número máximo de pestañas concurrentes">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "El número de pestañas que pueden restaurarse a la vez. Si se establece a 0, sólo la pestaña seleccionada se cargará en cada ventana. Si se establece a un valor menor que 0, todas las pestañas se restaurarán a la vez.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Pestañas máximas a restaurar">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Número máximo de pestañas mostradas en el menú &quot;Historial&quot; &quot;Pestañas cerradas recientemente&quot;">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Máximo de ventanas a restaurar">

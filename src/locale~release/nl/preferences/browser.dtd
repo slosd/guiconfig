@@ -46,8 +46,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Sessieherstel">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sessieherstel inschakelen">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Maximaal aantal gelijktijdige tabbladen">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Het aantal tabbladen dat gelijktijdig kan worden hersteld. Indien ingesteld op 0 wordt alleen het geselecteerde tabblad geladen in elk venster. Indien ingesteld op minder dan 0 worden alle tabbladen tegelijk hersteld.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Maximaal aantal te herstellen tabbladen">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum aantal tabbladen dat wordt weergegeven in het menu ‘Geschiedenis’ &gt; ‘Onlangs gesloten tabbladen’.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Maximaal aantal te herstellen vensters">

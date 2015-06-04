@@ -42,8 +42,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Restauração de sessão">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Ativar restauração de sessão">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Quantidade máxima de abas simultâneas:">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "A quantidade de abas que podem ser restauradas simultaneamente. Se a quantidade for 0, apenas será carregada a aba selecionada em cada janela. Se a quantidade for menor que 0, todas as abas serão restauradas ao mesmo tempo.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Abas fechadas a lembrar:">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Máximo de abas listadas no menu &quot;Histórico&quot; &gt; &quot;Reabrir aba&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Janelas fechadas a lembrar:">

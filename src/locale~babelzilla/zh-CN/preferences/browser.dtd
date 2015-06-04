@@ -47,8 +47,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "浏览会话恢复">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "启用浏览会话恢复">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "最大可同时恢复的标签页数">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "可同时恢复打开的最大标签页数量。如果设置为 0 则仅允许每个窗口恢复显示一个所选标签页。如果设置为 0 以下的数值则同时恢复显示所有标签页。">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "最大可恢复的标签页数">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "在&quot;历史&quot; &quot;最近关闭的标签页&quot; 菜单中可显示的最大标签页数量。">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最多可以保存的窗口数">

@@ -47,8 +47,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Session restore">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Enable session restore">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. number of concurrent tabs">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "The number of tabs that can restore concurrently. If set to 0 only the selected tab will load in each window. If set to less than 0 all tabs are restored at the same time. ">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. restorable tabs">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximum number of tabs that are displayed in the &quot;History&quot; &gt; &quot;Recently Closed Tabs&quot; menu.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. restorable windows">

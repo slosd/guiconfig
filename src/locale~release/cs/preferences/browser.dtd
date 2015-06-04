@@ -46,8 +46,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Obnova relace">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Povolit obnovu relace">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. počet najednou obnovených panelů">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Počet panelů, které se mohou najednou obnovit. Je-li nastavena 0, v každém okně se obnoví pouze vybraný panel. Je-li nastavena hodnota menší než 0, najednou budou obnoveny všechny panely.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. panelů pro obnovu">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximální počet panelů, které jsou zobrazeny v nabídce „Historie“ – „Naposledy zavřené panely“">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. oken pro obnovu">

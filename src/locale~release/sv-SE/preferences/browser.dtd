@@ -46,8 +46,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Återställ session">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Aktivera sessionsåterställning">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Högsta antal samtidiga flikar">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Antalet flikar som kan återställas samtidigt. Vid värdet 0 kommer endast den markerade fliken i varje fönster att läsas in. Vid ett värde lägre än 0 återställs samtliga flikar på en och samma gång.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Antal återställbara flikar">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Det maximala antalet flikar som visas i menyn &quot;Historik&quot; &gt; &quot;Nyligen stängda flikar&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Antal återställbara fönster">

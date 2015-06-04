@@ -40,8 +40,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Przywracanie sesji">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Włącz przywracanie sesji">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Maksymalna liczba równocześnie przywracanych kart">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Kiedy ustawiona jest na 0, tylko aktywne karty zostaną przywrócone w każdym z otwartych okien, natomiast jeśli liczba ta zostanie ustawiona na mniejszą niż zero, wszystkie karty zostaną przywrócone w tym samym momencie.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Maksymalna liczba przywracanych kart">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maksymalna liczba kart wyświetlanych w menu &quot;Historia &gt; Ostatnio zamknięte karty&quot;.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Maksymalna liczba przywracalnych okien">

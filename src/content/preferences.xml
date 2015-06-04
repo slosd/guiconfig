@@ -13,10 +13,9 @@
              xsi:schemaLocation="http://guiconfig.freedig.org/preferences preferences.xsd">
   <category label="&browser;" icon="browser">
     <concerns>
-      <concern label="&urlbar;" minVersion="3.0">
+      <concern label="&urlbar;">
         <pref key="browser.urlbar.default.behavior"
               type="int"
-              minVersion="3.5"
               maxVersion="35.*">
           <behavior>
             <override name="setValue">
@@ -80,7 +79,7 @@
           <option label="&browser_urlbar_matchBehavior_o1;">0</option>
           <option label="&browser_urlbar_matchBehavior_o2;">1</option>
           <option label="&browser_urlbar_matchBehavior_o3;">2</option>
-          <option label="&browser_urlbar_matchBehavior_o4;" minVersion="3.0">3</option>
+          <option label="&browser_urlbar_matchBehavior_o4;">3</option>
         </pref>
         <pref key="browser.urlbar.maxRichResults"
               label="&browser_urlbar_maxRichResults_name;"
@@ -93,8 +92,7 @@
         <pref key="browser.urlbar.formatting.enabled"
               label="&browser_urlbar_formatting_enabled_name;"
               description="&browser_urlbar_formatting_enabled_description;"
-              type="bool"
-              minVersion="6.0" />
+              type="bool" />
         <pref key="browser.urlbar.trimURLs"
               label="&browser_urlbar_trimURLs_name;"
               description="&browser_urlbar_trimURLs_description;"
@@ -123,7 +121,7 @@
           <dependency key="browser.fixup.alternate.enabled" equals="true" />
         </pref>
       </concern>
-      <concern label="&session_restore;" minVersion="3.5">
+      <concern label="&session_restore;">
         <pref key="guiconfig.pseudo.sessionstore.enable"
               label="&guiconfig_pseudo_sessionstore_enable_name;"
               description=""
@@ -196,15 +194,6 @@
               minValue="-1">
           <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
         </pref>
-        <pref key="browser.sessionstore.max_concurrent_tabs"
-              label="&browser_sessionstore_max_concurrent_tabs_name;"
-              description="&browser_sessionstore_max_concurrent_tabs_description;"
-              type="int"
-              minVersion="4.0b7"
-              maxVersion="8.0a2"
-              minValue="-1"><!-- check version -->
-          <dependency key="guiconfig.pseudo.sessionstore.enable" equals="true" />
-        </pref>
         <pref key="browser.sessionstore.resume_from_crash"
               label="&browser_sessionstore_resume_from_crash_name;"
               description="&browser_sessionstore_resume_from_crash_description;"
@@ -231,7 +220,7 @@
         </pref>
       </concern>
       <concern label="&extensions_plugins;">
-        <group label="&getaddons;" minVersion="3.0">
+        <group label="&getaddons;">
           <pref key="extensions.getAddons.showPane"
                 label="&extensions_getAddons_showPane_name;"
                 description="&extensions_getAddons_showPane_description;"
@@ -249,26 +238,22 @@
           <pref key="extensions.checkCompatibility"
                 label="&extensions_checkCompatibility_name;"
                 description="&extensions_checkCompatibility_description;"
-                minVersion="2.0b1"
                 type="bool"
                 default="1" />
           <pref key="extensions.alwaysUnpack"
                 label="&extensions_alwaysUnpack_name;"
                 description="&extensions_alwaysUnpack_description;"
-                type="bool"
-                minVersion="4.0b6" /><!-- TODO get exact version -->
+                type="bool" />
         </group>
         <group label="&plugins;">
           <pref key="dom.ipc.plugins.enabled"
                 label="&dom_ipc_plugins_enabled_name;"
                 description="&dom_ipc_plugins_enabled_description;"
-                type="bool"
-                minVersion="3.6.4" />
+                type="bool" />
           <pref key="dom.ipc.plugins.timeoutSecs"
                 label="&dom_ipc_plugins_timeoutSecs_name;"
                 description="&dom_ipc_plugins_timeoutSecs_description;"
                 type="int"
-                minVersion="3.6.4"
                 indent="indent">
             <dependency key="dom.ipc.plugins.enabled" equals="true" />
           </pref>
@@ -276,7 +261,6 @@
                 label="&dom_ipc_plugins_processLaunchTimeoutSecs_name;"
                 description="&dom_ipc_plugins_processLaunchTimeoutSecs_description;"
                 type="int"
-                minVersion="4.0b4"
                 indent="indent">
             <dependency key="dom.ipc.plugins.enabled" equals="true" />
           </pref>
@@ -291,8 +275,7 @@
           <pref key="browser.bookmarks.max_backups"
                 label="&browser_bookmarks_max_backups_name;"
                 description="&browser_bookmarks_max_backups_description;"
-                type="int"
-                minVersion="2*" />
+                type="int" />
         </group>
         <group label="&history;">
           <pref key="places.history.expiration.max_pages"
@@ -374,13 +357,11 @@
         <pref key="browser.taskbar.previews.enable"
               label="&browser_taskbar_previews_enable_name;"
               description="&browser_taskbar_previews_enable_description;"
-              type="bool"
-              platform="WINNT" />
+              type="bool" />
         <pref key="browser.taskbar.previews.max"
               label="&browser_taskbar_previews_max_name;"
               description="&browser_taskbar_previews_max_description;"
               type="int"
-              platform="WINNT"
               indent="indent">
           <dependency key="browser.taskbar.previews.enable" equals="true" />
         </pref>
@@ -389,7 +370,6 @@
               description="&browser_taskbar_previews_cachetime_description;"
               type="int"
               minValue="0"
-              platform="WINNT"
               indent="indent">
           <dependency key="browser.taskbar.previews.enable" equals="true" />
         </pref>
@@ -445,8 +425,7 @@
                 label="&accessibility_typeaheadfind_casesensitive_name;"
                 description="&accessibility_typeaheadfind_casesensitive_description;"
                 type="int"
-                mode="select"
-                minVersion="3.0">
+                mode="select">
             <option label="&accessibility_typeaheadfind_casesensitive_o1;">-1</option>
             <option label="&accessibility_typeaheadfind_casesensitive_o2;">0</option>
             <option label="&accessibility_typeaheadfind_casesensitive_o3;">1</option>
@@ -523,8 +502,7 @@
                 label="&gfx_color_management_mode_name;"
                 description="&gfx_color_management_mode_description;"
                 type="int"
-                mode="select"
-                minVersion="3.5">
+                mode="select">
             <option label="&gfx_color_management_mode_o1;">0</option>
             <option label="&gfx_color_management_mode_o2;">1</option>
             <option label="&gfx_color_management_mode_o3;">2</option>
@@ -555,31 +533,26 @@
           <pref key="geo.enabled"
                 label="&geo_enabled_name;"
                 description="&geo_enabled_description;"
-                type="bool"
-                minVersion="3.5" />
+                type="bool" />
           <pref key="webgl.disabled"
                 label="&webgl_enabled_for_all_sites_name;"
                 description=""
                 type="bool"
-                inverted="inverted"
-                minVersion="4.0b1">
+                inverted="inverted">
           </pref>
           <pref key="gfx.font_rendering.directwrite.enabled"
                 label="&gfx_font_rendering_directwrite_enabled_name;"
                 description="&gfx_font_rendering_directwrite_enabled_description;"
                 platform="WINNT"
-                type="bool"
-                minVersion="3.7a2" />
+                type="bool" />
           <pref key="gfx.downloadable_fonts.enabled"
                 label="&gfx_downloadable_fonts_enabled_name;"
                 description="&gfx_downloadable_fonts_enabled_description;"
-                type="bool"
-                minVersion="3.1" />
+                type="bool" />
           <pref key="prompts.tab_modal.enabled"
                 label="&prompts_tab_modal_enabled_name;"
                 description="&prompts_tab_modal_enabled_description;"
-                type="bool"
-                minVersion="4.0" />
+                type="bool" />
           <pref key="layout.frames.force_resizability"
                 label="&layout_frames_force_resizability_name;"
                 description=""
@@ -648,7 +621,7 @@
             description="&browser_urlbar_doubleClickSelectsAll_description;"
             type="bool" />
     </group>
-    <group label="&mousescrollvertical;" description="&mousewheel_action_description;" minVersion="17.0b1">
+    <group label="&mousescrollvertical;" description="&mousewheel_action_description;">
       <pref key="mousewheel.default.action"
             label="&mousewheel_default_action_name;"
             description=""
@@ -721,8 +694,7 @@
       <pref key="browser.preferences.instantApply"
             label="&browser_preferences_instantApply_name;"
             description="&browser_preferences_instantApply_description;"
-            type="bool"
-            minVersion="2.0" />
+            type="bool" />
       <pref key="browser.preferences.inContent"
             label="&browser_preferences_inContent_name;"
             description="&browser_preferences_inContent_description;"
@@ -798,19 +770,16 @@
       <pref key="browser.tabs.animate"
             label="&browser_tabs_animate_name;"
             description="&browser_tabs_animate_description;"
-            type="bool"
-            minVersion="4.0b4" />
+            type="bool" />
       <pref key="browser.panorama.animate_zoom"
             label="&browser_panorama_animate_zoom_name;"
             description="&browser_panorama_animate_zoom_description;"
-            type="bool"
-            minVersion="4.0b4" />
+            type="bool" />
       <pref key="browser.tabs.closeButtons"
             label="&browser_tabs_closeButtons_name;"
             description="&browser_tabs_closeButtons_description;"
             type="int"
             mode="select"
-            minVersion="2.0"
             maxVersion="30.*">
         <option label="&browser_tabs_closeButtons_o1;">0</option>
         <option label="&browser_tabs_closeButtons_o2;">1</option>
@@ -821,7 +790,6 @@
             label="&browser_tabs_tabClipWidth_name;"
             description="&browser_tabs_tabClipWidth_description;"
             type="int"
-            minVersion="2.0"
             maxVersion="30.*"
             indent="indent">
         <dependency key="browser.tabs.closeButtons" in="0, 1" />
@@ -833,8 +801,7 @@
       <pref key="browser.tabs.insertRelatedAfterCurrent"
             label="&browser_tabs_insertRelatedAfterCurrent_name;"
             description="&browser_tabs_insertRelatedAfterCurrent_description;"
-            type="bool"
-            minVersion="3.6" />
+            type="bool" />
       <pref key="browser.search.openintab"
             label="&browser_search_openintab_name;"
             description="&browser_search_openintab_description;"
@@ -842,8 +809,7 @@
       <pref key="browser.tabs.closeWindowWithLastTab"
             label="&browser_tabs_closeWindowWithLastTab_name;"
             description="&browser_tabs_closeWindowWithLastTab_description;"
-            type="bool"
-            minVersion="3.5" />
+            type="bool" />
     </group>
   </category>
   <category label="&network;" icon="network">
@@ -928,8 +894,7 @@
       <pref key="devtools.inspector.enabled"
             label="&devtools_inspector_enabled_name;"
             description="&devtools_inspector_enabled_description;"
-            type="bool"
-            minVersion="4.0" />
+            type="bool" />
       <pref key="javascript.options.strict"
             label="&javascript_options_strict_name;"
             description="&javascript_options_strict_description;"

@@ -40,8 +40,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "瀏覽頁組還原">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "啟用「瀏覽頁組還原」">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "最大並行分頁數">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "允許同時還原的分頁數. 若設為 0 則各視窗僅載入選取中的分頁, 若設值小於0 則會同時還原所有分頁.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "最大可還原分頁數">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "顯示於「歷史」「最近關閉分頁」選單中的最大分頁數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">

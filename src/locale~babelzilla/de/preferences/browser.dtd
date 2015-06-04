@@ -47,8 +47,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Sitzung wiederherstellen">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Sitzungswiederherstellung aktivieren">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Max. Zahl simultaner Tabs">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Die Anzahl der gleichzeitig zu ladenden Tabs. Bei 0 wird in jedem Fenster nur der gerade ausgewählte Tab geladen. Bei einem Wert unter 0, werden alle Tabs gleichzeitig geladen.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Max. wiederherstellbare Tabs">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Maximale Anzahl von Tabs, die im Menü &quot;Chronik&quot; &gt; &quot;Kürzlich geschlossene Tabs&quot; angezeigt werden.">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Max. wiederherstellbare Browserfenster">

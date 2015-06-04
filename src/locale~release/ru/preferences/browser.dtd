@@ -46,8 +46,6 @@
 <!-- Session restore -->
 <!ENTITY session_restore "Восстановление сессии">
 <!ENTITY guiconfig_pseudo_sessionstore_enable_name "Включить восстановление сессии">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_name "Одновременно восстанавливаемых вкладок">
-<!ENTITY browser_sessionstore_max_concurrent_tabs_description "Количество одновременно восстанавливаемых вкладок. Если задано 0, в каждом окне загрузится только выбранная вкладка. Если задано меньше 0 — все вкладки будут восстанавлены одновременно.">
 <!ENTITY browser_sessionstore_max_tabs_undo_name "Восстанавливаемых вкладок">
 <!ENTITY browser_sessionstore_max_tabs_undo_description "Максимальное количество вкладок, отображаемых в меню «Журнал|Недавно закрытые вкладки».">
 <!ENTITY browser_sessionstore_max_windows_undo_name "Восстанавливаемых окон">
