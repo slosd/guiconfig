@@ -39,6 +39,7 @@
         <xsl:otherwise><xsl:value-of select="ancestor::*[@label][1]/@label" /></xsl:otherwise>
       </xsl:choose>
     </xsl:attribute>
+    <separator class="thin"/>
   </xsl:template>
 
   <xsl:template match="*" />
