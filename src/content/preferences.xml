@@ -597,6 +597,57 @@
             <dependency key="javascript.enabled" equals="true" />
           </pref>
         </group>
+        <group label="&window_features;" description="&window_features_description;">
+          <pref key="dom.disable_window_open_feature.menubar"
+                label="&dom_disable_window_open_feature_menubar_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_open_feature.location"
+                label="&dom_disable_window_open_feature_location_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_open_feature.toolbar"
+                label="&dom_disable_window_open_feature_toolbar_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_open_feature.personalbar"
+                label="&dom_disable_window_open_feature_personalbar_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_open_feature.status"
+                label="&dom_disable_window_open_feature_status_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_open_feature.scrollbars"
+                label="&dom_disable_window_open_feature_scrollbars_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.disable_window_open_feature.resizable"
+                label="&dom_disable_window_open_feature_resizable_name;"
+                description=""
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+        </group>
       </concern>
     </concerns>
   </category>
