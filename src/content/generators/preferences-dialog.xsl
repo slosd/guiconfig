@@ -3,6 +3,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:set="http://exslt.org/sets"
                 xmlns:p="http://guiconfig.freedig.org/preferences">
 
   <xsl:output method="xml"
@@ -53,7 +54,22 @@
       <xsl:if test="@description">
         <description><xsl:value-of select="@description" /></description>
       </xsl:if>
-      <xsl:apply-templates />
+      <xsl:choose>
+        <xsl:when test="count(p:pref) > 3 and count(p:pref) = count(*) and count(set:distinct(p:pref/@type)) = 1 and p:pref/@type = 'bool'">
+          <xsl:variable name="half" select="ceiling(count(p:pref) div 2)" />
+          <hbox>
+            <vbox flex="1">
+              <xsl:apply-templates select="p:pref[position() &lt;= $half]" />
+            </vbox>
+            <vbox flex="1">
+              <xsl:apply-templates select="p:pref[position() &gt; $half]" />
+            </vbox>
+          </hbox>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates />
+        </xsl:otherwise>
+      </xsl:choose>
     </groupbox>
   </xsl:template>
 
