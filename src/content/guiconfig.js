@@ -51,7 +51,7 @@ function applyXSLT(xsl_uri, xml_uri, doc, onTransformed, params) {
       onTransformed(transformXML(xml, xsl, doc, params));
     }
   };
-  requestXsl.open('GET', xsl_uri);
+  requestXsl.open('GET', xsl_uri, false);
   requestXsl.send(null);
 
   var requestXml = new XMLHttpRequest();
@@ -61,7 +61,7 @@ function applyXSLT(xsl_uri, xml_uri, doc, onTransformed, params) {
       onTransformed(transformXML(xml, xsl, doc, params));
     }
   };
-  requestXml.open('GET', xml_uri);
+  requestXml.open('GET', xml_uri, false);
   requestXml.send(null);
 }
 

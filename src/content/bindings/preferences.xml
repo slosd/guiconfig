@@ -87,7 +87,9 @@
 
           var lastSelectedPane = self.lastSelected ? document.getElementById(self.lastSelected) : null;
           self.showPane(lastSelectedPane && lastSelectedPane != self.searchPane ? lastSelectedPane : self.preferencePanes[0]);
-          guiconfig.runPreferenceScript(document, script);
+          self.addEventListener('load', function() {
+            guiconfig.runPreferenceScript(document, script);
+          });
         });
       ]]>
       </constructor>
