@@ -1,3 +1,4 @@
+<!ENTITY input "輸入">
 <!ENTITY mousebehaviour "滑鼠操作">
 
 <!-- Middle click -->
@@ -16,6 +17,11 @@
 
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "滑鼠垂直捲動">
+<!ENTITY mousewheel_action_description "選取捲動卷軸與不同按鍵組合時應該要發生什麼事">
+<!ENTITY mousewheel_default_action_name "沒有按下其他按鍵時的動作">
+<!ENTITY mousewheel_with_shift_action_name "與 SHIFT 鍵一同使用時的動作">
+<!ENTITY mousewheel_with_control_action_name "與 CTRL 鍵一同使用時的動作">
+<!ENTITY mousewheel_with_alt_action_name "與 ALT 鍵一同使用時的動作">
 <!ENTITY mousewheel_action_o1 "捲動頁面內行列">
 <!ENTITY mousewheel_action_o2 "切換頁面之上下頁">
 <!ENTITY mousewheel_action_o3 "切換瀏覽紀錄之前頁後頁">

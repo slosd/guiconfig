@@ -1,5 +1,4 @@
 <!ENTITY tabs "Tabbladen">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Min. tabbladbreedte voor sluitknoppen">
 <!ENTITY browser_tabs_tabClipWidth_description "Bepaalt de minimaal benodigde tabbladbreedte voor weergave van de knop Sluiten.">
 

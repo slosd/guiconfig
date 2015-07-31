@@ -1,5 +1,4 @@
 <!ENTITY tabs "分頁">
-
 <!ENTITY browser_tabs_tabClipWidth_name "含關閉鈕時的最小頁籤寬度">
 <!ENTITY browser_tabs_tabClipWidth_description "決定顯示關閉鈕所需的最小頁籤寬度">
 
@@ -13,6 +12,7 @@
 <!ENTITY browser_tabs_loadDivertedInBackground_name "外部應用程式中的鏈結">
 <!ENTITY browser_tabs_loadInBackground_name "網頁中的鏈結">
 <!ENTITY browser_tabs_loadBookmarksInBackground_name "於背景中載入書籤">
+<!ENTITY browser_search_context_loadInBackground_name "右鍵選單搜尋">
 
 <!-- Misc -->
 <!ENTITY browser_tabs_animate_name "分頁動畫效果">

@@ -21,3 +21,7 @@
 <!ENTITY network_http_proxy_pipelining_description "Faz o Firefox enviar pedidos sequenciais quando estiver conectado à Intervet através um servidor proxy.">
 
 <!-- Prediction -->
+<!ENTITY prediction "Predição de conexão">
+<!ENTITY network_predictor_enabled_name "Ativar predição">
+<!ENTITY network_predictor_enabled_description "Se ativado, ao passar o mouse sobre um link, o navegador irá conectar-se ao respectivo servidor (busca DNS e início de TCP/TLS) de forma a carregar a página mais rapidamente após o link ser clicado. Isso não envia dados (ex.: endereço do link) ao site.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Ativar predição para endereços HTTPS">

@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Zobrazit nejprve položky nalezené na okrajích slov">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Zobrazit jen položky nalezené na okrajích slov">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Najít na začátku URL nebo názvu">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Max. počet výsledků">
 <!ENTITY browser_urlbar_maxRichResults_description "Určuje, kolik výsledků by se nejvýš mělo objevit v adresním řádku.">
 <!ENTITY browser_urlbar_autoFill_name "Automatické dokončování">

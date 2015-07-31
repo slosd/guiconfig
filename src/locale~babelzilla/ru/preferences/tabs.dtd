@@ -1,5 +1,4 @@
 <!ENTITY tabs "Вкладки">
-
 <!ENTITY browser_tabs_tabClipWidth_name "Минимальная ширина вкладки для кнопки закрытия">
 <!ENTITY browser_tabs_tabClipWidth_description "Определяет минимальную ширину вкладки, необходимую для отображения кнопки закрытия.">
 

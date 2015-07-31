@@ -8,12 +8,21 @@
 <!ENTITY browser_chrome_toolbar_tips_description "Exibe dicas de tela para os botões e outros itens da interface do Firefox quando se põe o cursor do mouse sobre eles.">
 <!ENTITY browser_preferences_animateFadeIn_name "Animar mudanças de painel na janela de opções">
 <!ENTITY browser_preferences_animateFadeIn_description "Muda suavemente o conteúdo e ajusta a altura da janela de opções do Firefox a cada mudança de painel.">
+<!ENTITY browser_preferences_inContent_name "Abrir preferências em aba">
+<!ENTITY browser_preferences_inContent_description "Se ativo, as preferências do Firefox serão abertas em uma aba em vez de uma janela separada.">
 <!ENTITY browser_preferences_instantApply_name "Aplicar opções instantaneamente">
 <!ENTITY browser_preferences_instantApply_description "Salva as mudanças feitas na janela de opções à medida em que você as faz. Em vez dos botões &quot;OK&quot; e &quot;Cancelar&quot;, haverá apenas um botão &quot;Fechar&quot;.">
 
 <!-- New tab page -->
+<!ENTITY new_tab_page "Página de nova aba">
+<!ENTITY browser_newtabpage_rows_name "Número de linhas">
+<!ENTITY browser_newtabpage_rows_description "Defina o número de linhas a serem mostradas no mosaico de sites frequentemente visitados.">
 <!ENTITY browser_newtabpage_columns_name "Número de colunas">
+<!ENTITY browser_newtabpage_columns_description "Defina o número de colunas a serem mostradas no mosaico de sites frequentemente visitados.">
 <!ENTITY browser_pagethumbnails_capturing_disabled_name "Criar screenshots de páginas da web visitadas">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "Se ativo, o Firefox cria fotos de tela que são usadas no mosaico da página de nova aba.">
+<!ENTITY browser_newtab_url_name "URL para novas abas">
+<!ENTITY browser_newtab_url_description "Define o URL a ser usado para novas abas, em substituição ao mosaico de sites frequentemente visitados.">
 
 <!-- Selected text -->
 <!ENTITY text_select "Texto selecionado">

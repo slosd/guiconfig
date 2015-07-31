@@ -10,12 +10,12 @@
 <!-- Misc -->
 <!ENTITY nglayout_debug_disable_xul_cache_name "停用 XUL 快取">
 <!ENTITY nglayout_debug_disable_xul_cache_description "對視窗本身和對話視窗的變更設定不需重新啟動 Firefox。(此選項對於以 JAR 方式封裝的檔案無效)。">
-<!ENTITY devtools_inspector_enabled_name "Enable &quot;Inspect element&quot;">
-<!ENTITY devtools_inspector_enabled_description "Enables the &quot;Inspect element&quot; action for context menus of websites, which opens the Inspector at the selected HTML element.">
+<!ENTITY devtools_inspector_enabled_name "啟用 &quot;檢測元素&quot;">
+<!ENTITY devtools_inspector_enabled_description "在網頁中的右鍵選單中啟用 &quot;檢測元素&quot; 動作，這會在選取的 HTML 元素上開啟檢測器。">
 <!ENTITY browser_dom_window_dump_enabled_name "啟用 dump()">
 <!ENTITY browser_dom_window_dump_enabled_description "啟用以 dump() 指令來印出到標準主控台。">
-<!ENTITY browser_dom_window_dump_file_name "Redirect to file">
-<!ENTITY browser_dom_window_dump_file_description "Path to a file to redirect the output of dump() to. The file is created if it does not exist. Requires a restart.">
+<!ENTITY browser_dom_window_dump_file_name "重新導向到檔案">
+<!ENTITY browser_dom_window_dump_file_description "要重新導向 dump() 輸出到的檔案之路徑。若該檔案不存在則將會被建立。需要重新啟動。">
 <!ENTITY javascript_options_showInConsole_name "在主控台記錄 chrome 的各項錯誤">
 <!ENTITY javascript_options_showInConsole_description "決定是否要在 JavaScript 主控台記錄 chrome 的各項錯誤和警告。">
 <!ENTITY javascript_options_strict_name "嚴謹的 JavaScript 告警">

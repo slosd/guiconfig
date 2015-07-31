@@ -26,7 +26,6 @@
 <!ENTITY browser_urlbar_matchBehavior_o2 "Show items matching word boundaries first">
 <!ENTITY browser_urlbar_matchBehavior_o3 "Show only items matching word boundaries">
 <!ENTITY browser_urlbar_matchBehavior_o4 "Match at the beginning of the url or title">
-
 <!ENTITY browser_urlbar_maxRichResults_name "Max. number of results">
 <!ENTITY browser_urlbar_maxRichResults_description "Determines how many results should appear (at most) in the Location Bar.">
 <!ENTITY browser_urlbar_autoFill_name "Inline autocomplete">

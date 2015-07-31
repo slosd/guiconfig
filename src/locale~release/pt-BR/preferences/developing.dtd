@@ -14,8 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "Ativar a função &quot;Inspecionar elemento&quot; para menus de contexto em sites, abrindo o Inspecionar no elemento HTML selecionado.">
 <!ENTITY browser_dom_window_dump_enabled_name "Ativar função dump()">
 <!ENTITY browser_dom_window_dump_enabled_description "Em códigos JavaScript, permite usar a função dump() para exibir dados na janela de console do Firefox.">
-<!ENTITY browser_dom_window_dump_file_name "Redirect to file">
-<!ENTITY browser_dom_window_dump_file_description "Path to a file to redirect the output of dump() to. The file is created if it does not exist. Requires a restart.">
+<!ENTITY browser_dom_window_dump_file_name "Redirecionar para arquivo">
+<!ENTITY browser_dom_window_dump_file_description "Caminho para um arquivo no qual os dados do dump() serão salvos. O arquivo será criado caso não exista. Exige reiniciar o navegador.">
 <!ENTITY javascript_options_showInConsole_name "Mostrar erros de chrome no Console de erros">
 <!ENTITY javascript_options_showInConsole_description "Exibe mensagens no Console de erros sobre falhas de chrome (erros ocorridos em complementos e no navegador).">
 <!ENTITY javascript_options_strict_name "Avisar sobre JavaScript fora dos padrões recomendados">

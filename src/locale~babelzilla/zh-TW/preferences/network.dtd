@@ -21,3 +21,7 @@
 <!ENTITY network_http_proxy_pipelining_description "此選項指定是否對代理伺服主機使用「複請求批送」。HTTP 1.1引進的「複請求批送」(Pipelining)機制，可以降低網路負荷也可以減少頁面載入時間，但可能會對不支援「複請求批送」的伺服主機載入頁面時導致一些問題。">
 
 <!-- Prediction -->
+<!ENTITY prediction "預測">
+<!ENTITY network_predictor_enabled_name "啟用預測">
+<!ENTITY network_predictor_enabled_description "啟用預測服務，其將會在使用者將滑鼠游標懸停在一個連結上時預先連線到網站（DNS 預取與 TCP/TLS 握手），已減少網頁的載入時間。這不會發送任何的資料到網站。">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "對 HTTPS 位址啟用預先連線">
