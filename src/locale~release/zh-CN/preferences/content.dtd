@@ -97,3 +97,14 @@
 <!ENTITY dom_event_contextmenu_enabled_description "允许脚本移除和替换网站上的右键菜单。">
 <!ENTITY dom_event_clipboardevents_enabled_name "与剪贴板互动">
 <!ENTITY dom_event_clipboardevents_enabled_description "允许脚本在用户使用剪贴板复制、剪切和粘贴网站内容时获得通知。">
+
+<!-- Window features -->
+<!ENTITY window_features "Window features">
+<!ENTITY window_features_description "Select which features of new windows can be disabled">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Menu Bar">
+<!ENTITY dom_disable_window_open_feature_location_name "Location Bar">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Tool Bar">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Bookmarks Bar">
+<!ENTITY dom_disable_window_open_feature_status_name "Status Bar">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollbars">
+<!ENTITY dom_disable_window_open_feature_resizable_name "Resizability">

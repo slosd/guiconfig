@@ -97,3 +97,14 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
 <!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
+
+<!-- Window features -->
+<!ENTITY window_features "Window features">
+<!ENTITY window_features_description "Select which features of new windows can be disabled">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Menu Bar">
+<!ENTITY dom_disable_window_open_feature_location_name "Location Bar">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Tool Bar">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Bookmarks Bar">
+<!ENTITY dom_disable_window_open_feature_status_name "Status Bar">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollbars">
+<!ENTITY dom_disable_window_open_feature_resizable_name "Resizability">

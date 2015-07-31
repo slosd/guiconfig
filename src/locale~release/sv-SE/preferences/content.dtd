@@ -97,3 +97,14 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Tillåter skript att ta bort och/eller ersätta snabbmenyn på webbplatser.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interagera med Urklipp">
 <!ENTITY dom_event_clipboardevents_enabled_description "Tillåter att skript meddelas när användaren använder Urklipp för att kopiera, klippa ut och klistra in webbsideinnehåll.">
+
+<!-- Window features -->
+<!ENTITY window_features "Window features">
+<!ENTITY window_features_description "Select which features of new windows can be disabled">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Menu Bar">
+<!ENTITY dom_disable_window_open_feature_location_name "Location Bar">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Tool Bar">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Bookmarks Bar">
+<!ENTITY dom_disable_window_open_feature_status_name "Status Bar">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollbars">
+<!ENTITY dom_disable_window_open_feature_resizable_name "Resizability">
