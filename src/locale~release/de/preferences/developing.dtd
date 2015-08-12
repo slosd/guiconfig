@@ -14,8 +14,8 @@
 <!ENTITY devtools_inspector_enabled_description "Aktiviert &quot;Element untersuchen&quot; im Rechtklick-Menü. Der Einträg öffnet den &quot;Inspektor&quot; für das ausgewählte HTML-Element.">
 <!ENTITY browser_dom_window_dump_enabled_name "dump() aktivieren">
 <!ENTITY browser_dom_window_dump_enabled_description "Aktiviert die Funktion dump(), mit der Daten auf die Standardkonsole ausgegeben werden können.">
-<!ENTITY browser_dom_window_dump_file_name "Redirect to file">
-<!ENTITY browser_dom_window_dump_file_description "Path to a file to redirect the output of dump() to. The file is created if it does not exist. Requires a restart.">
+<!ENTITY browser_dom_window_dump_file_name "Zu Datei umleiten">
+<!ENTITY browser_dom_window_dump_file_description "Pfad zur Datei, zu der die Ausgabe von dump() umgeleitet werden soll. Existiert die Datei nicht, wird sie erstellt. Benötigt einen Neustart.">
 <!ENTITY javascript_options_showInConsole_name "Chrome-Fehler in der Konsole anzeigen">
 <!ENTITY javascript_options_showInConsole_description "Zeigt Chrome-Fehler und Warnungen in der JavaScript-Konsole.">
 <!ENTITY javascript_options_strict_name "Javascript-Warnungen anzeigen">

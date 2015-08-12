@@ -1,4 +1,4 @@
-<!ENTITY content "Content">
+<!ENTITY content "內容">
 
 <!-- Websites -->
 <!ENTITY websites "網站">
@@ -10,11 +10,11 @@
 <!ENTITY gfx_color_management_mode_o1 "無圖片">
 <!ENTITY gfx_color_management_mode_o2 "所有圖片">
 <!ENTITY gfx_color_management_mode_o3 "僅限有ICC標籤的圖片">
-<!ENTITY image_animation_mode_name "Animated images">
-<!ENTITY image_animation_mode_description "Restricts animated images (GIFs) to loop indefinitely (or as often as the image specifies), to run once or to not run at all.">
-<!ENTITY image_animation_mode_o1 "Loop indefinitely">
-<!ENTITY image_animation_mode_o2 "Run animation once">
-<!ENTITY image_animation_mode_o3 "Never run the animation">
+<!ENTITY image_animation_mode_name "動畫圖片">
+<!ENTITY image_animation_mode_description "限制動畫圖片（GIF）要無限循環（或是指定的盡可能多的圖片）、執行一次或是完全不執行。">
+<!ENTITY image_animation_mode_o1 "無限循環">
+<!ENTITY image_animation_mode_o2 "動畫執行一次">
+<!ENTITY image_animation_mode_o3 "完全不執行動畫">
 <!ENTITY browser_display_show_image_placeholders_name "顯示位置標誌">
 <!ENTITY browser_display_show_image_placeholders_description "載入圖片過程中顯示位置標誌">
 <!ENTITY browser_enable_automatic_image_resizing_name "重訂圖片大小">
@@ -28,19 +28,19 @@
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
 
 <!-- Misc -->
-<!ENTITY media_autoplay_enabled_name "Enable media autoplay">
+<!ENTITY media_autoplay_enabled_name "啟用媒體自動播放">
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "下載網頁內嵌的字型">
 <!ENTITY gfx_downloadable_fonts_enabled_description "啟用以@font-face內嵌的CSS3字型下載。需要重新啟動FF才能生效。">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY prompts_tab_modal_enabled_name "啟用分頁式提示（警告）">
+<!ENTITY prompts_tab_modal_enabled_description "確認是否要使用新的分頁式提示或舊的視窗式的提示。">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
 <!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
-<!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
-<!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
+<!ENTITY dom_max_script_run_time_name "最大的指令稿執行時間（秒）">
+<!ENTITY dom_max_script_run_time_description "確認 Firefox 要在指令稿執行多久之後警告，以秒數表示。">
 
 <!-- Accessibility -->
 <!ENTITY accessibility "近接方面">
@@ -54,16 +54,16 @@
 <!ENTITY accessibility_typeaheadfind_label "隨打即找">
 <!ENTITY accessibility_typeaheadfind_timeout_name "逾時(毫秒/千分秒)">
 <!ENTITY accessibility_typeaheadfind_timeout_description "打字時隨即尋找">
-<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "Fill search box with selected text">
+<!ENTITY accessibility_typeaheadfind_prefillwithselection_name "以已選取的文字填充搜尋框">
 
 <!-- Browser zoom -->
-<!ENTITY browser_zoom "Browser zoom">
-<!ENTITY browser_zoom_full_name "Use full zoom instead of text zoom">
-<!ENTITY browser_zoom_full_description "Text zoom only increases the text size for a website, whereas full zoom also affects other elements like images.">
-<!ENTITY browser_zoom_siteSpecific_name "Remember zoom levels">
-<!ENTITY browser_zoom_siteSpecific_description "If enabled, zoom levels are saved and restored for every website. Otherwise the zoom level is reset on the next visit.">
-<!ENTITY browser_zoom_updateBackgroundTabs_name "Update background tabs">
-<!ENTITY browser_zoom_updateBackgroundTabs_description "Update other tabs showing the same website to the current zoom level.">
+<!ENTITY browser_zoom "瀏覽器縮放">
+<!ENTITY browser_zoom_full_name "使用全體縮放而非文字縮放">
+<!ENTITY browser_zoom_full_description "文字縮放只會增加網頁的文字大小，而全體縮放也會影響其他像是圖片之類的元素。">
+<!ENTITY browser_zoom_siteSpecific_name "記住縮放等級">
+<!ENTITY browser_zoom_siteSpecific_description "若啟用，縮放等級會在每一個網頁被儲存並恢復。並不會在每一次造訪都被重置。">
+<!ENTITY browser_zoom_updateBackgroundTabs_name "更新背景分頁">
+<!ENTITY browser_zoom_updateBackgroundTabs_description "更新其他顯示同樣網頁的分頁到目前的縮放等級。">
 
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
@@ -86,25 +86,25 @@
 <!ENTITY javascript "Javascript">
 
 <!-- Permissions -->
-<!ENTITY permissions "Permissions">
-<!ENTITY javascript_enabled_name "Enable Javascript">
-<!ENTITY javascript_enabled_description "Enables or disables Javascript for all websites.">
-<!ENTITY dom_disable_window_move_resize_name "Move and resize windows">
-<!ENTITY dom_disable_window_move_resize_description "Allow scripts to move and/or resize browser windows.">
-<!ENTITY dom_disable_window_flip_name "Raise and lower windows">
-<!ENTITY dom_disable_window_flip_description "Allow scripts to raise and/or lower browser windows.">
-<!ENTITY dom_event_contextmenu_enabled_name "Remove and replace the context menu">
-<!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
-<!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
-<!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
+<!ENTITY permissions "權限">
+<!ENTITY javascript_enabled_name "啟用 Javascript">
+<!ENTITY javascript_enabled_description "為所有的網頁啟用或停用 Javascript。">
+<!ENTITY dom_disable_window_move_resize_name "移動並重新調整視窗大小">
+<!ENTITY dom_disable_window_move_resize_description "允許指令稿移動及／或重新調整瀏覽器視窗大小。">
+<!ENTITY dom_disable_window_flip_name "提升或降低瀏覽器視窗">
+<!ENTITY dom_disable_window_flip_description "允許指令稿提升及／或降低瀏覽器視窗。">
+<!ENTITY dom_event_contextmenu_enabled_name "移除並取代右鍵選單">
+<!ENTITY dom_event_contextmenu_enabled_description "允許指令稿移除及／或取代在網頁上的右鍵選單。">
+<!ENTITY dom_event_clipboardevents_enabled_name "與剪貼簿互動">
+<!ENTITY dom_event_clipboardevents_enabled_description "允許指令稿在使用者使用剪貼簿來複製、剪下及貼上網頁內容時被通知。">
 
 <!-- Window features -->
-<!ENTITY window_features "Window features">
-<!ENTITY window_features_description "Select which features of new windows can be disabled">
-<!ENTITY dom_disable_window_open_feature_menubar_name "Menu Bar">
-<!ENTITY dom_disable_window_open_feature_location_name "Location Bar">
-<!ENTITY dom_disable_window_open_feature_toolbar_name "Tool Bar">
-<!ENTITY dom_disable_window_open_feature_personalbar_name "Bookmarks Bar">
-<!ENTITY dom_disable_window_open_feature_status_name "Status Bar">
-<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollbars">
-<!ENTITY dom_disable_window_open_feature_resizable_name "Resizability">
+<!ENTITY window_features "視窗功能">
+<!ENTITY window_features_description "選取您要在新視窗中停用哪些功能">
+<!ENTITY dom_disable_window_open_feature_menubar_name "選單列">
+<!ENTITY dom_disable_window_open_feature_location_name "網址列">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "工具列">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "書籤列">
+<!ENTITY dom_disable_window_open_feature_status_name "狀態列">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "捲軸">
+<!ENTITY dom_disable_window_open_feature_resizable_name "重新調整大小的能力">

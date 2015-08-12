@@ -97,3 +97,12 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Erlaubt Skripten auf Webseiten das Kontextmenü zu deaktivieren oder zu ersetzen.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Ereignisse der Zwischenablage">
 <!ENTITY dom_event_clipboardevents_enabled_description "Erlaubt Skripten benachrichtigt zu werden, wenn auf einer Webseite Inhalt kopiert, ausgeschnitten oder eingefügt wird.">
+<!ENTITY window_features "Fenstereigenschaften">
+<!ENTITY window_features_description "Wählen Sie welche Fenstereigenschaften in neuen Fenster deaktiviert werden können">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Menüleiste">
+<!ENTITY dom_disable_window_open_feature_location_name "Adressleiste">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Werkzeugleiste">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Lesezeichen-Symbolleiste">
+<!ENTITY dom_disable_window_open_feature_status_name "Statusleiste">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollleisten">
+<!ENTITY dom_disable_window_open_feature_resizable_name "Anpassung der Fenstergröße">

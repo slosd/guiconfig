@@ -97,3 +97,12 @@
 <!ENTITY dom_event_contextmenu_enabled_description "允许脚本移除和替换网站上的右键菜单。">
 <!ENTITY dom_event_clipboardevents_enabled_name "与剪贴板互动">
 <!ENTITY dom_event_clipboardevents_enabled_description "允许脚本在用户使用剪贴板复制、剪切和粘贴网站内容时获得通知。">
+<!ENTITY window_features "窗口特性">
+<!ENTITY window_features_description "选择新的窗口中哪些可以被禁用">
+<!ENTITY dom_disable_window_open_feature_menubar_name "菜单栏">
+<!ENTITY dom_disable_window_open_feature_location_name "地址栏">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "工具栏">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "菜单栏">
+<!ENTITY dom_disable_window_open_feature_status_name "状态栏">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "滚动条">
+<!ENTITY dom_disable_window_open_feature_resizable_name "可调整大小">

@@ -36,6 +36,12 @@
 <!ENTITY browser_fixup_alternate_prefix_description "添加於行首的字元">
 <!ENTITY browser_fixup_alternate_suffix_name "行末添加">
 <!ENTITY browser_fixup_alternate_suffix_description "添加於行末的字元">
+<!ENTITY browser_urlbar_formatting_enabled_name "啟用網域格式化">
+<!ENTITY browser_urlbar_formatting_enabled_description "確認是否格式化在 URL 列中的網域。">
+<!ENTITY browser_urlbar_trimURLs_name "修整網址">
+<!ENTITY browser_urlbar_trimURLs_description "若啟用，協定名稱(http)及網址列後的斜線會隱藏起來。">
+<!ENTITY browser_fixup_dns_first_for_single_words_name "將單字認作網域名稱">
+<!ENTITY browser_fixup_dns_first_for_single_words_description "嘗試先透脫 DNS 解決在網址列的單字而非在預設的搜尋引擎搜尋。要存取在本機網路中的主機時很有用。">
 
 <!-- Session restore -->
 <!ENTITY session_restore "瀏覽頁組還原">
@@ -44,6 +50,16 @@
 <!ENTITY browser_sessionstore_max_tabs_undo_description "顯示於「歷史」「最近關閉分頁」選單中的最大分頁數">
 <!ENTITY browser_sessionstore_max_windows_undo_name "最大可還原視窗數">
 <!ENTITY browser_sessionstore_max_windows_undo_description "顯示於 &quot;歷史&quot; &gt; &quot;最近關閉的視窗&quot; 選單中的最大可還原視窗數">
+<!ENTITY browser_sessionstore_restore_on_demand_name "要求時復原分頁">
+<!ENTITY browser_sessionstore_restore_on_demand_description "若啟用，分頁將會在您選取後才復原。">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_name "復原隱藏分頁">
+<!ENTITY browser_sessionstore_restore_hidden_tabs_description "確認是否在其他分頁群組中復原分頁。">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_name "點選時復原釘選分頁">
+<!ENTITY browser_sessionstore_restore_pinned_tabs_on_demand_description "釘選分頁總是會自動復原。若此選項被啟用，釘選的分頁將會像普通分頁一樣，點選時才復原。">
+<!ENTITY browser_sessionstore_max_serialize_back_name "最大可復原的上一頁按鈕歷史">
+<!ENTITY browser_sessionstore_max_serialize_back_description "將要復原的最大上一頁按鈕歷史項目數。設定為 -1 可以有無限制的項目數。">
+<!ENTITY browser_sessionstore_max_serialize_forward_name "最大可復原的下一頁按鈕歷史">
+<!ENTITY browser_sessionstore_max_serialize_forward_description "將要復原的最大下一頁按鈕歷史項目數。設定為 -1 可以有無限制的項目數。">
 <!ENTITY browser_sessionstore_resume_from_crash_name "FF當掉後還原頁組">
 <!ENTITY browser_sessionstore_resume_from_crash_description "決定FF當掉後是否要還原諸視窗及其頁組">
 <!ENTITY browser_sessionstore_max_resumed_crashes_name "最大當掉次數">
@@ -55,6 +71,7 @@
 <!ENTITY browser_sessionstore_privacy_level_o3 "所有網站都不">
 
 <!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "擴充套件&amp;外掛程式">
 
 <!-- Extensions -->
 <!ENTITY extensions "附加元件">
@@ -69,10 +86,12 @@
 <!ENTITY extensions_getAddons_showPane_description "決定是否要在&quot;附加元件管理員&quot;視窗中顯示&quot;取得元件&quot;側頁。">
 
 <!-- Installation -->
+<!ENTITY installation "安裝">
 <!ENTITY security_dialog_enable_delay_name "附加元件安裝延時(毫秒)">
 <!ENTITY security_dialog_enable_delay_description "此選項決定安裝附加元件時，&quot;安裝&quot;按鈕須經多少毫秒的延時後才接受點按。設此為 0 以停用延時。">
 
 <!-- Plugins -->
+<!ENTITY plugins "外掛程式">
 <!ENTITY dom_ipc_plugins_enabled_name "以各別行程執行各外掛程式">
 <!ENTITY dom_ipc_plugins_enabled_description "若外掛程式(例如 Flash)當掉時，不會使FF一起跟著掛掉。">
 <!ENTITY dom_ipc_plugins_timeoutSecs_name "外掛程式停止回應時限(秒)">
@@ -81,15 +100,26 @@
 <!ENTITY dom_ipc_plugins_processLaunchTimeoutSecs_description "決定若經過多久，外掛程式仍未能完成啟動，則判定為失敗。">
 
 <!-- Library -->
+<!ENTITY library "收藏庫">
 
 <!-- Bookmarks -->
 <!ENTITY bookmarks "書籤">
+<!ENTITY browser_bookmarks_autoExportHTML_name "在關閉時匯出書籤到檔案">
+<!ENTITY browser_bookmarks_autoExportHTML_description "若啟用，書籤將會在您關閉瀏覽器時匯出到在您的設定檔目錄中的檔案 &quot;bookmarks.html&quot; 中。">
 <!ENTITY browser_bookmarks_max_backups_name "書籤備份">
 <!ENTITY browser_bookmarks_max_backups_description "決定要保存的備份數量，設為 0 就不備份。">
 
 <!-- History -->
+<!ENTITY history "歷史">
+<!ENTITY places_history_expiration_max_pages_name "要記住的最大歷史項目數">
+<!ENTITY places_history_expiration_max_pages_description "在其他項目過期前要記住的最大歷史項目數。設定為 -1 以讓此數目字自動計算。">
 
 <!-- Downloads -->
+<!ENTITY downloads "下載">
+<!ENTITY browser_download_animateNotifications_name "動畫下載圖示">
+<!ENTITY browser_download_animateNotifications_description "當有下載開始或結束時將在工具列中的下載管理員的圖示動畫化。">
+<!ENTITY browser_download_manager_addToRecentDocs_name "新增下載到 &quot;最近的文件&quot; 中">
+<!ENTITY browser_download_manager_addToRecentDocs_description "確認是否新增已下載的檔案到在開始選單的 &quot;最近的文件&quot; 中。">
 <!ENTITY browser_download_lastDir_name "前次下載目錄">
 <!ENTITY browser_download_lastDir_description "前次以&quot;另存新檔&quot;方式下載檔案的目錄路徑。">
 <!ENTITY browser_download_manager_alertOnEXEOpen_name "執行檔警示">
@@ -126,5 +156,22 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近瀏覽過的網頁係儲存在記憶體中，這樣在用到「前一頁」「後一頁」時，可以顯示得快些。若設為-1，則頁數為自動決定；若設0就完全不予保留。">
 
 <!-- Taskbar -->
+<!ENTITY taskbar "工作列">
 <!ENTITY browser_taskbar_previews_enable_name "啟用 Windows 7 工具列預覽功能">
 <!ENTITY browser_taskbar_previews_enable_description "啟用後，FF 會 在Windows 7 工具列顯示對各分頁的預覽。">
+<!ENTITY browser_taskbar_previews_max_name "最大分頁預覽數">
+<!ENTITY browser_taskbar_previews_max_description "若預覽的數目達到此極限值後將會完全被停用。">
+<!ENTITY browser_taskbar_previews_cachetime_name "快取過期時間（秒）">
+<!ENTITY browser_taskbar_previews_cachetime_description "在重新整理前要快取分頁內容的時間。">
+<!ENTITY browser_taskbar_lists_enabled_name "啟用 Jump List 功能">
+<!ENTITY browser_taskbar_lists_enabled_description "啟用在 Windows 工作列上的右鍵選單中的選單項目。">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "顯示工作">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "若啟用，Jump List 將會包含開啟新分頁、新視窗以及新隱私視窗的項目。">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "顯示經常造訪的網頁">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "若啟用，Jump LIst 將號包含到您最常造訪網頁的項目。">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "顯示最近的網頁">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "若啟用，Jump List 將會包含到最近造訪網頁的項目。">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Jump List 的最大項目數">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "Jump List 每個區域（常用及最近使用網頁）最多項目數量。">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "更新時間（秒）">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "在 Jump List 的內容被更新後的時間，以秒數計。">

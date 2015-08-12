@@ -99,12 +99,12 @@
 <!ENTITY dom_event_clipboardevents_enabled_description "Umožní skriptům získávat informace o tom, že uživatel použil schránku ke zkopírování, vyjmutí či vložení obsahu webových stránek.">
 
 <!-- Window features -->
-<!ENTITY window_features "Window features">
-<!ENTITY window_features_description "Select which features of new windows can be disabled">
-<!ENTITY dom_disable_window_open_feature_menubar_name "Menu Bar">
-<!ENTITY dom_disable_window_open_feature_location_name "Location Bar">
-<!ENTITY dom_disable_window_open_feature_toolbar_name "Tool Bar">
-<!ENTITY dom_disable_window_open_feature_personalbar_name "Bookmarks Bar">
-<!ENTITY dom_disable_window_open_feature_status_name "Status Bar">
-<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollbars">
-<!ENTITY dom_disable_window_open_feature_resizable_name "Resizability">
+<!ENTITY window_features "Prvky okna">
+<!ENTITY window_features_description "Vyberte, které prvky nových oken lze zakázat">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Hlavní nabídka">
+<!ENTITY dom_disable_window_open_feature_location_name "Adresní řádek">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Nástrojová lišta">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Lišta záložek">
+<!ENTITY dom_disable_window_open_feature_status_name "Stavový řádek">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "Posuvníky">
+<!ENTITY dom_disable_window_open_feature_resizable_name "Možnost změnit velikost">

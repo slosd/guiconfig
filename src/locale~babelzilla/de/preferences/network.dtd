@@ -21,3 +21,7 @@
 <!ENTITY network_http_proxy_pipelining_description "Pipelining verbessert die Seitenladegeschwindigkeit und verringert die Netzwerkbelastung.Muss aber vom Server unterstützt werden.">
 
 <!-- Prediction -->
+<!ENTITY prediction "Vorhersage">
+<!ENTITY network_predictor_enabled_name "Vorhersagen aktivieren">
+<!ENTITY network_predictor_enabled_description "Aktiviert den Vorhersageservice, der Verbindungen zu Webseiten herstellt (DNS-Auflösung und TCP/TLS Handshake) wenn der Benutzer über Links fährt, um Seitenladenzeiten zu verringern. Der Vorgang sendet keine eigentlichen Daten der Anfrage zur Webseite.">
+<!ENTITY network_predictor_enable-hover-on-ssl_name "Vorhersagen für HTTPS-Adressen verwenden">

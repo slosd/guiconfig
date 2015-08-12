@@ -8,21 +8,21 @@
 <!ENTITY browser_chrome_toolbar_tips_description "決定是否對chrome元件顯示用法提示">
 <!ENTITY browser_preferences_animateFadeIn_name "切換設定控制頁時顯示動畫效果">
 <!ENTITY browser_preferences_animateFadeIn_description "當切換設定控制頁時，在大約超過一秒的時間內改變視窗高度並淡入新的控制頁。">
-<!ENTITY browser_preferences_inContent_name "Open preferences in tab">
-<!ENTITY browser_preferences_inContent_description "If enabled, preferences are opened in a tab instead of a pop-up window.">
+<!ENTITY browser_preferences_inContent_name "在分頁中開啟偏好設定">
+<!ENTITY browser_preferences_inContent_description "若啟用，偏好設定會在分頁而非彈出式視窗中開啟。">
 <!ENTITY browser_preferences_instantApply_name "立刻生效">
 <!ENTITY browser_preferences_instantApply_description "對設定的變動立刻生效。其設定視窗樣式與一般不同，無&quot;確定&quot;和&quot;取消&quot;按鈕，只有&quot;關閉&quot;按鈕。">
 
 <!-- New tab page -->
-<!ENTITY new_tab_page "New tab page">
-<!ENTITY browser_newtabpage_rows_name "Number of rows">
-<!ENTITY browser_newtabpage_rows_description "This sets the number of rows in the grid of frequently used websites.">
-<!ENTITY browser_newtabpage_columns_name "Number of columns">
-<!ENTITY browser_newtabpage_columns_description "This sets the number of columns in the grid of frequently used websites.">
-<!ENTITY browser_pagethumbnails_capturing_disabled_name "Create screenshots of visited webpages">
-<!ENTITY browser_pagethumbnails_capturing_disabled_description "If enabled, Firefox creates screenshots which are used in the grid of the &quot;New tab page&quot;.">
-<!ENTITY browser_newtab_url_name "URL for new tabs">
-<!ENTITY browser_newtab_url_description "Sets the URL to be used for newly opened tabs. This replaces the grid of frequently used websites.">
+<!ENTITY new_tab_page "新分頁">
+<!ENTITY browser_newtabpage_rows_name "行數">
+<!ENTITY browser_newtabpage_rows_description "這會設定常用的網頁中的行數。">
+<!ENTITY browser_newtabpage_columns_name "列數">
+<!ENTITY browser_newtabpage_columns_description "這會設定常用的網頁中的列數。">
+<!ENTITY browser_pagethumbnails_capturing_disabled_name "建立已造訪網頁的截圖">
+<!ENTITY browser_pagethumbnails_capturing_disabled_description "若啟用，Firefox會在 &quot;新分頁&quot; 中建立螢幕截圖。">
+<!ENTITY browser_newtab_url_name "新分頁的 URL">
+<!ENTITY browser_newtab_url_description "設定新開啟的分頁要使用的 URL。這會取代常用的網頁。">
 
 <!-- Selected text -->
 <!ENTITY text_select "文字標選">

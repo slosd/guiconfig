@@ -156,5 +156,22 @@
 <!ENTITY browser_sessionhistory_max_total_viewers_description "Kürzlich besuchte Webseiten werden im Hauptspeicher gespeichert und können dadurch schneller angezeigt werden wenn Sie Zurück und Vorwärts verwenden. Bei einem Wert von -1 wird die Seitenzahl automatisch festgelegt. Mit dem Wert 0 werden keine Seiten im Hauptspeicher gespeichert.">
 
 <!-- Taskbar -->
+<!ENTITY taskbar "Taskleiste">
 <!ENTITY browser_taskbar_previews_enable_name "Vorschauen in der Windows 7 Taskleiste anzeigen">
 <!ENTITY browser_taskbar_previews_enable_description "Zeigt unter Windows 7 für jeden geöffneten Tab eine Vorschau in der Taskleiste an.">
+<!ENTITY browser_taskbar_previews_max_name "Max. Anzahl an Tab-Miniaturansichten">
+<!ENTITY browser_taskbar_previews_max_description "Wenn die Anzahl an Ansichten dieses Limit überschreitet, wird die Tabvorschau deaktiviert.">
+<!ENTITY browser_taskbar_previews_cachetime_name "Ablaufzeit des Zwischenspeichers (Sek.)">
+<!ENTITY browser_taskbar_previews_cachetime_description "Zeit in Sekunden, nach der der Inhalt der Miniaturansichten aktualisiert wird.">
+<!ENTITY browser_taskbar_lists_enabled_name "Jump Lists aktivieren">
+<!ENTITY browser_taskbar_lists_enabled_description "Menueinträge im Rechtsklick-Menü der Windows Taskleiste anzeigen.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_name "Aktionen anzeigen">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "Ist die Option aktiviert, enthält die Jump List Einträge um neue Tabs, Fenster und private Fenster zu öffnen.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_name "Oft besuchte Webseiten anzeigen">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "Ist die Option aktiviert, enthält die Jump List Einträge um oft besuchte Webseiten zu öffnen.">
+<!ENTITY browser_taskbar_lists_recent_enabled_name "Kürzlich besuchte Webseiten anzeigen">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "Ist die Option aktiviert, enthält die Jump List Einträge um kürzlich besuchte Webseiten zu öffnen.">
+<!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. Anzahl an &quot;Jump List&quot;-Einträgen">
+<!ENTITY browser_taskbar_lists_maxListItemCount_description "Die maximale Anzahl an &quot;Jump List&quot;-Einträgen pro Abschnitt (oft und kürzlich besuchte Webseiten).">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_name "Aktualisierungsintervall (Sek.)">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "Zeit in Sekunden, nach der der Inhalt der Jump List aktualisiert wird.">

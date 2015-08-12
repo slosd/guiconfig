@@ -99,12 +99,12 @@
 <!ENTITY dom_event_clipboardevents_enabled_description "Scripts toestaan een bericht te krijgen wanneer de gebruiker het klembord gebruikt om inhoud van de website te kopiëren, knippen en plakken.">
 
 <!-- Window features -->
-<!ENTITY window_features "Window features">
-<!ENTITY window_features_description "Select which features of new windows can be disabled">
-<!ENTITY dom_disable_window_open_feature_menubar_name "Menu Bar">
-<!ENTITY dom_disable_window_open_feature_location_name "Location Bar">
-<!ENTITY dom_disable_window_open_feature_toolbar_name "Tool Bar">
-<!ENTITY dom_disable_window_open_feature_personalbar_name "Bookmarks Bar">
-<!ENTITY dom_disable_window_open_feature_status_name "Status Bar">
-<!ENTITY dom_disable_window_open_feature_scrollbars_name "Scrollbars">
-<!ENTITY dom_disable_window_open_feature_resizable_name "Resizability">
+<!ENTITY window_features "Vensterfuncties">
+<!ENTITY window_features_description "Selecteer welke functies van nieuwe vensters kunnen worden uitgeschakeld">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Menubalk">
+<!ENTITY dom_disable_window_open_feature_location_name "Adresbalk">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Werkbalk">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Bladwijzerwerkbalk">
+<!ENTITY dom_disable_window_open_feature_status_name "Statusbalk">
+<!ENTITY dom_disable_window_open_feature_scrollbars_name "Schuifbalken">
+<!ENTITY dom_disable_window_open_feature_resizable_name "Grootte-aanpassing">

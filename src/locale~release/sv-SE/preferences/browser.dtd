@@ -174,4 +174,4 @@
 <!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. number of jump list items">
 <!ENTITY browser_taskbar_lists_maxListItemCount_description "The maximum number of jump list items per section (frequent and recent websites).">
 <!ENTITY browser_taskbar_lists_refreshInSeconds_name "Update time (seconds)">
-<!ENTITY browser_taskbar_lists_refreshInSeconds_description "The time in seconds after which the content of the jumb list is updated.">
+<!ENTITY browser_taskbar_lists_refreshInSeconds_description "The time in seconds after which the content of the jump list is updated.">
