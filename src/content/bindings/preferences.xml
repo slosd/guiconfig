@@ -87,9 +87,12 @@
 
           var lastSelectedPane = self.lastSelected ? document.getElementById(self.lastSelected) : null;
           self.showPane(lastSelectedPane && lastSelectedPane != self.searchPane ? lastSelectedPane : self.preferencePanes[0]);
-          self.addEventListener('load', function() {
+
+          function runScript() {
+            self.removeEventListener('load', runScript);
             guiconfig.runPreferenceScript(document, script);
-          });
+          }
+          self.addEventListener('load', runScript);
         });
       ]]>
       </constructor>
