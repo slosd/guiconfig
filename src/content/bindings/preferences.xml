@@ -21,12 +21,12 @@
              closebuttonaccesskey="&preferencesCloseButton.accesskey;"
              dlgbuttons="accept,cancel" persist="lastSelected screenX screenY" role="dialog">
       <xul:popupset>
-        <xul:panel anonid="info-box" class="info-box" orient="vertical" type="arrow" level="top" ignorekeys="true" noautohide="true" noautofocus="true" norestorefocus="true">
+        <xul:tooltip id="guiconfig-info-box" anonid="info-box" class="info-box" orient="vertical" noautohide="true">
           <xul:label class="header" value="&config.description;" />
           <xul:description anonid="description"></xul:description>
           <xul:label class="header" value="&config.preference_key;" />
           <xul:description anonid="key"></xul:description>
-        </xul:panel>
+        </xul:tooltip>
         <xul:menupopup id="guiconfig-preference-context">
           <xul:menuitem class="menuitem-iconic" label="&config.todefault;" image="/skin/icons/actions/reset.png" oncommand="document.getBindingParent(this).resetPreference()" />
           <xul:menuitem class="menuitem-iconic" label="&config.copykey;" image="/skin/icons/actions/copy.png" oncommand="document.getBindingParent(this).copyPreferenceKey()" />
