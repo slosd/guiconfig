@@ -363,6 +363,9 @@
           if (status === Ci.nsIFilePicker.returnOK &&
               this._text.value !== filePicker.file.path) {
             this._text.value = filePicker.file.path;
+            var event = document.createEvent("Events");
+            event.initEvent("change", true, true);
+            this._text.dispatchEvent(event);
           }
         ]]>
         </body>
