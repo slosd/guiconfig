@@ -778,7 +778,8 @@
       <pref key="browser.newtab.url"
             label="&browser_newtab_url_name;"
             description="&browser_newtab_url_description;"
-            type="string" />
+            type="string"
+            maxVersion="40.*" />
     </group>
     <group label="&text_select;">
       <pref key="ui.textSelectBackground"
