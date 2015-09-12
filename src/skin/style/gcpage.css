@@ -1,0 +1,8 @@
+.info-box-header {
+  font-weight: bold;
+}
+
+.menu {
+  background-color: var(--in-content-category-background);
+  padding-top: 39px;
+}

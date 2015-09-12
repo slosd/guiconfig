@@ -1,6 +1,7 @@
 var EXPORTED_SYMBOLS = [ 'guiconfig' ];
 
 const preferencesDialogXSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
+const preferencesPageXSLT = 'chrome://guiconfig/content/generators/preferences-page.xsl';
 const preferencesScriptXSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
 const preferencesSearchXSLT = 'chrome://guiconfig/content/generators/preferences-search.xsl';
 
@@ -172,6 +173,24 @@ var guiconfig = {
           prefScript = result.querySelector('script').textContent;
           if (prefPanes) {
             onFinished(prefPanes, prefScript);
+          }
+        });
+  },
+
+  buildPage: function(document, preference_source, onFinished) {
+    var prefPage, prefScript;
+    applyXSLT(preferencesPageXSLT, preference_source, document,
+        function(result) {
+          prefPage = cloneXUL(result, document, document.createDocumentFragment());
+          if (prefScript) {
+            onFinished(prefPage, prefScript);
+          }
+        });
+    applyXSLT(preferencesScriptXSLT, preference_source, document,
+        function(result) {
+          prefScript = result.querySelector('script').textContent;
+          if (prefPage) {
+            onFinished(prefPage, prefScript);
           }
         });
   },

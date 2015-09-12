@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"?>
+<?xml-stylesheet href="chrome://mozapps/content/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://global/skin/in-content/common.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/in-content/preferences.css"?>
+<?xml-stylesheet href="chrome://browser/content/preferences/handlers.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/applications.css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/in-content/search.css"?>
+<?xml-stylesheet href="chrome://guiconfig/skin/style/preferences.css" type="text/css"?>
+<!DOCTYPE page SYSTEM "chrome://guiconfig/locale/gcLocale.dtd">
+
+<page id="guiconfig-preferences" class="gcpage" 
+      source="chrome://guiconfig/content/preferences.xml"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+</page>

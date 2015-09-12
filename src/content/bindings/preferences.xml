@@ -9,6 +9,7 @@
 
 <bindings id="guiconfigBindings"
           xmlns="http://www.mozilla.org/xbl"
+          xmlns:html="http://www.w3.org/1999/xhtml"
           xmlns:xbl="http://www.mozilla.org/xbl"
           xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <binding id="gcprefwindow" extends="chrome://global/content/bindings/preferences.xml#prefwindow">
@@ -237,6 +238,242 @@
       <property name="descriptionText" onget="return this._description.textContent;" onset="return this._description.textContent = val;"/>
       <property name="keyText" onget="return this._key.textContent;" onset="return this._key.textContent = val;"/>
       <property name="searchPane" onget="return this.preferencePanes[this.preferencePanes.length - 1]"/>
+    </implementation>
+  </binding>
+
+  <binding id="gcpage">
+    <resources>
+      <stylesheet src="chrome://guiconfig/skin/style/gcpage.css"/>
+    </resources>
+
+    <content title="&browser.item.label;">
+      <html:link rel="shortcut icon" href="chrome://guiconfig/skin/icons/guiconfig-monochrome-16.png"/>
+
+      <xul:popupset>
+        <xul:tooltip id="guiconfig-info-box" anonid="info-box" class="info-box" orient="vertical" noautohide="true">
+          <xul:label class="info-box-header" value="&config.description;" />
+          <xul:description anonid="description"></xul:description>
+          <xul:label class="info-box-header" value="&config.preference_key;" />
+          <xul:description anonid="key"></xul:description>
+        </xul:tooltip>
+        <xul:menupopup id="guiconfig-preference-context">
+          <xul:menuitem class="menuitem-iconic" label="&config.todefault;" image="/skin/icons/actions/reset.png" oncommand="document.getBindingParent(this).resetPreference()" />
+          <xul:menuitem class="menuitem-iconic" label="&config.copykey;" image="/skin/icons/actions/copy.png" oncommand="document.getBindingParent(this).copyPreferenceKey()" />
+        </xul:menupopup>
+      </xul:popupset>
+
+      <xul:stack flex="1">
+        <xul:hbox anonid="body" flex="1">
+          <xul:vbox class="menu" anonid="menu">
+            <xul:hbox id="guiconfig-preference-search">
+              <xul:textbox type="search" timeout="500" emptytext="&config.search;" oncommand="document.getBindingParent(this).search(this.value)"/>
+            </xul:hbox>
+          </xul:vbox>
+          <children/>
+        </xul:hbox>
+      </xul:stack>
+    </content>
+    <implementation>
+      <constructor>
+      <![CDATA[
+        Components.utils.import('chrome://guiconfig/content/guiconfig.js');
+
+        this._infoBox = document.getAnonymousElementByAttribute(this, 'anonid', 'info-box');
+        this._description = document.getAnonymousElementByAttribute(this, 'anonid', 'description');
+        this._key = document.getAnonymousElementByAttribute(this, 'anonid', 'key');
+        this._body = document.getAnonymousElementByAttribute(this, 'anonid', 'body');
+        this._menu = document.getAnonymousElementByAttribute(this, 'anonid', 'menu');
+
+        var self = this;
+        var preferenceSource = this.getAttribute('source');
+        guiconfig.buildPage(document, preferenceSource, function(page, script) {
+          var categories = page.getElementById('categories');
+          var mainContent = page.querySelector('.main-content');
+          var prefPane = page.getElementById('mainPrefPane');
+          categories.addEventListener('select', function(event) {
+            var categoryId = event.target.value;
+            self.selectCategory(prefPane, categoryId);
+          });
+          self._body.appendChild(mainContent);
+          self._menu.appendChild(categories);
+
+          // Disable the search radio element so it cannot be selected
+          // when the user navigates with a keyboard.
+          var searchSelector = self.categories.querySelector('richlistitem[value="categorySearch"]');
+          searchSelector.disabled = true;
+          searchSelector.style.visibility = 'hidden';
+
+          window.addEventListener('load', function runScript() {
+            window.removeEventListener('load', runScript);
+            var event = document.createEvent("Events");
+            event.initEvent('paneload', true, true);
+            prefPane.dispatchEvent(event);
+            guiconfig.runPreferenceScript(document, script);
+          });
+        });
+      ]]>
+      </constructor>
+
+      <method name="selectCategory">
+        <parameter name="pane"/>
+        <parameter name="categoryId"/>
+        <body>
+        <![CDATA[
+          for (var elem of pane.children) {
+            var category = elem.getAttribute('data-category');
+            if (category) {
+              elem.hidden = category !== categoryId;
+            }
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="setInfo">
+        <parameter name="anchor"/>
+        <parameter name="text"/>
+        <parameter name="key"/>
+        <body>
+        <![CDATA[
+          var infoBox = this._infoBox;
+
+          function showInfoBox(anchor) {
+            if (anchor) {
+              var height = anchor.clientHeight;
+              infoBox.openPopup(anchor, 'end_before', 0, height / 2, false, false);
+            } else {
+              infoBox.openPopup(this._body, 'end_before', 0, 0, false, false);
+            }
+          }
+
+          function hideInfoBox() {
+            infoBox.hidePopup();
+          }
+
+          if (!text && !key) {
+            if (!this._infoBoxTimeout) {
+              var self = this;
+              this._infoBoxTimeout = setTimeout(function() {
+                self._infoBoxTimeout = null;
+                hideInfoBox();
+              }, 500);
+            }
+          } else {
+            if (this._infoBoxTimeout) {
+              clearTimeout(this._infoBoxTimeout);
+              this._infoBoxTimeout = null;
+            }
+            hideInfoBox();
+            this.descriptionText = text || '—';
+            this.keyText = key || '—';
+            showInfoBox(anchor);
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="showPreference">
+        <parameter name="key"/>
+        <body>
+        <![CDATA[
+          var node = document.getElementById(key + '-view');
+          while (node) {
+            switch (node.nodeName) {
+              case 'box':
+                node.scrollIntoView();
+                if (node.highlight) {
+                  node.highlight();
+                }
+                break;
+              case 'tabpanel':
+                node.parentNode.parentNode.selectedIndex = Array.prototype.indexOf.call(node.parentNode.children, node);
+                break;
+              case 'hbox':
+              case 'vbox':
+                category = node.getAttribute('data-category');
+                if (category) {
+                  this.categories.value = category;
+                }
+                break;
+            }
+            node = node.parentNode;
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="resetPreference">
+        <body>
+        <![CDATA[
+          if (!this.contextPreference) return;
+
+          var key = this.contextPreference.getAttribute('data-key');
+          var pref = document.getElementById(key);
+          if (!pref) return;
+
+          var defaultValue = pref.defaultValue;
+          // If there is a default value reset it manually, because reset()
+          // always sets the value to undefined, which messes up dependencies.
+          if (defaultValue === null) {
+            pref.reset();
+          } else {
+            pref.value = defaultValue;
+          }
+        ]]>
+        </body>
+      </method>
+      <method name="copyPreferenceKey">
+        <body>
+        <![CDATA[
+          if (!this.contextPreference) return;
+
+          var key = this.contextPreference.getAttribute('data-key');
+          var clipboardHelper = Components.classes['@mozilla.org/widget/clipboardhelper;1']
+                                    .getService(Components.interfaces.nsIClipboardHelper);
+          clipboardHelper.copyString(key);
+        ]]>
+        </body>
+      </method>
+      <method name="search">
+        <parameter name="query"/>
+        <body>
+        <![CDATA[
+          Components.utils.import('chrome://guiconfig/content/guiconfig.js');
+
+          var self = this;
+          var preferenceSource = this.getAttribute('source');
+
+          var searchSelector = this.categories.querySelector('richlistitem[value="categorySearch"]');
+          searchSelector.disabled = !query;
+          searchSelector.style.visibility = query ? 'visible' : 'hidden';
+
+          if (query) {
+            guiconfig.buildPreferenceSearchResult(document, preferenceSource, query, function(result) {
+              for (var child of self.searchResults.children) {
+                self.searchResults.removeChild(child);
+              }
+              for (var child of result.firstChild.children) {
+                self.searchResults.appendChild(child);
+              }
+              if (!self.classList.contains('search-active')) {
+                self.lastSelectedBeforeSearch = self.categories.value;
+                self.classList.add('search-active');
+              }
+              self.categories.value = 'categorySearch';
+            });
+          } else {
+            if (self.categories.value === 'categorySearch') {
+              self.categories.value = self.lastSelectedBeforeSearch;
+            }
+            self.classList.remove('search-active');
+          }
+        ]]>
+        </body>
+      </method>
+
+      <field name="contextPreference"/>
+      <field name="lastSelectedBeforeSearch"/>
+      <property name="descriptionText" onget="return this._description.textContent;" onset="return this._description.textContent = val;"/>
+      <property name="keyText" onget="return this._key.textContent;" onset="return this._key.textContent = val;"/>
+      <property name="categories" onget="return this.querySelector('#categories')"/>
+      <property name="searchResults" onget="return this.querySelector('#guiconfig-search-results')"/>
     </implementation>
   </binding>
 
