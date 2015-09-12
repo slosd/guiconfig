@@ -13,7 +13,7 @@
               media-type="application/vnd.mozilla.xul+xml" />
 
   <xsl:template match="p:category" mode="category-selection">
-    <richlistitem class="category" value="category{position()}" align="center">
+    <richlistitem class="category category-{@icon}" value="category{position()}" align="center">
       <image class="category-icon" />
       <label class="category-name" flex="1" value="{@label}" />
     </richlistitem>
@@ -39,7 +39,7 @@
   <xsl:template match="/p:preferences">
     <richlistbox id="categories" flex="1">
       <xsl:apply-templates mode="category-selection" />
-      <richlistitem class="category" value="categorySearch" align="center">
+      <richlistitem class="category category-search" value="categorySearch" align="center">
         <image class="category-icon" />
         <label class="category-name" flex="1" value="&config.searchresults;" />
       </richlistitem>

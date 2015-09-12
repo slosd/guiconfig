@@ -38,3 +38,36 @@ groupbox description {
   border-bottom: none;
   padding-bottom: 0;
 }
+
+.category-browser > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/browser.png");
+}
+
+.category-content > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/content.png");
+}
+
+.category-input > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/input.png");
+}
+
+.category-style > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/style.png");
+}
+
+.category-tabs > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/tabs.png");
+}
+
+.category-network > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/network.png");
+}
+
+.category-developing > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/developing.png");
+}
+
+.category-search > .category-icon {
+  list-style-image: url("chrome://guiconfig/skin/icons/categories/search.png");
+}
+

@@ -292,7 +292,12 @@
           var prefPane = page.getElementById('mainPrefPane');
           categories.addEventListener('select', function(event) {
             var categoryId = event.target.value;
-            self.selectCategory(prefPane, categoryId);
+            for (var elem of pane.children) {
+              var category = elem.getAttribute('data-category');
+              if (category) {
+                elem.hidden = category !== categoryId;
+              }
+            }
           });
           self._body.appendChild(mainContent);
           self._menu.appendChild(categories);
@@ -314,20 +319,6 @@
       ]]>
       </constructor>
 
-      <method name="selectCategory">
-        <parameter name="pane"/>
-        <parameter name="categoryId"/>
-        <body>
-        <![CDATA[
-          for (var elem of pane.children) {
-            var category = elem.getAttribute('data-category');
-            if (category) {
-              elem.hidden = category !== categoryId;
-            }
-          }
-        ]]>
-        </body>
-      </method>
       <method name="setInfo">
         <parameter name="anchor"/>
         <parameter name="text"/>
