@@ -749,7 +749,8 @@
       <pref key="browser.preferences.inContent"
             label="&browser_preferences_inContent_name;"
             description="&browser_preferences_inContent_description;"
-            type="bool" />
+            type="bool"
+            maxVersion="42.*"/>
       <pref key="browser.preferences.animateFadeIn"
             label="&browser_preferences_animateFadeIn_name;"
             description="&browser_preferences_animateFadeIn_description;"
