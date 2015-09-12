@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "若啟用，協定名稱(http)及網址列後的斜線會隱藏起來。">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "將單字認作網域名稱">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "嘗試先透脫 DNS 解決在網址列的單字而非在預設的搜尋引擎搜尋。要存取在本機網路中的主機時很有用。">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Characters for search suggestions">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximum number of characters sent to the current search engine to get search suggestions.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "瀏覽頁組還原">

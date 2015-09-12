@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "Kürzt das Protokoll (http) und abschließende Schrägstriche in Webadressen (URLs).">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Einzelnes Wort als Domain behandeln">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Anstatt ein einzelnes Wort mit der Standardsuchmaschine zu suchen, wird versucht das Wort in der URL-Leiste über DNS aufzulösen. Erleichtert den Zugriff auf Hosts im lokalen Netzwerk.">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Characters for search suggestions">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximum number of characters sent to the current search engine to get search suggestions.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Sitzung wiederherstellen">

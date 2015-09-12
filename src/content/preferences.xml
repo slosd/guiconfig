@@ -120,6 +120,11 @@
               indent="indent">
           <dependency key="browser.fixup.alternate.enabled" equals="true" />
         </pref>
+        <pref key="browser.urlbar.maxCharsForSearchSuggestions"
+              label="&browser_urlbar_maxCharsForSearchSuggestions_name;"
+              description="&browser_urlbar_maxCharsForSearchSuggestions_description;"
+              type="int"
+              minVersion="42.0a1" />
       </concern>
       <concern label="&session_restore;">
         <pref key="guiconfig.pseudo.sessionstore.enable"

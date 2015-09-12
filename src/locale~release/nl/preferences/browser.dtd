@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "Indien ingeschakeld worden het protocol (http) en aanvangsslashes in de adresbalk verborgen.">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Losse woorden als domeinnaam behandelen">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "In plaats van losse woorden op te zoeken via de standaard zoekmachine eerst proberen het woord in de adresbalk via DNS op te zoeken. Nuttig om hosts op het lokale netwerk te benaderen.">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Characters for search suggestions">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximum number of characters sent to the current search engine to get search suggestions.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Sessieherstel">

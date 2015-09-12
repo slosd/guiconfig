@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "Om alternativet aktiveras döljs protokollet (http) och avslutande snedstreck i adressen i adressfältet.">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Hantera enstaka ord som domännamn">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Istället för att söka med standardsökmotorn på ett enstaka ord som skrivs in i adressfältet, försöker webbläsaren först matcha det via domännamnsystemet. Användbart till att få åtkomst till värdar på lokala nätverk.">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Characters for search suggestions">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximum number of characters sent to the current search engine to get search suggestions.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Återställ session">

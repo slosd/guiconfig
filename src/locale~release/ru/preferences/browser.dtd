@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "If enabled, the protocol (http) and trailing slashes in the address in the URL bar are hidden.">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Treat single words as domain name">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Instead of looking up single words with the default search engine, try to resolve the word in the urlbar via DNS first. Useful to access hosts on the local network.">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Characters for search suggestions">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximum number of characters sent to the current search engine to get search suggestions.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Восстановление сессии">
