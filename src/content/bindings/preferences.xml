@@ -292,7 +292,7 @@
           var prefPane = page.getElementById('mainPrefPane');
           categories.addEventListener('select', function(event) {
             var categoryId = event.target.value;
-            for (var elem of pane.children) {
+            for (var elem of prefPane.children) {
               var category = elem.getAttribute('data-category');
               if (category) {
                 elem.hidden = category !== categoryId;
