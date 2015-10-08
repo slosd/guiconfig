@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Firefox verwerkt periodiek alle ontvangen gegevens van een website. Deze voorkeur geeft de minimale wachttijd voor opnieuw opmaken van de pagina in microseconden. Lagere waarden verlagen de ervaren laadtijd maar verhogen de totale laadtijd.">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Automatisch afspelen van media inschakelen">
 <!ENTITY geo_enabled_name "Locatiebewust navigeren inschakelen">
 <!ENTITY geo_enabled_description "Indien ingeschakeld kan Firefox u vragen of u de bezochte website wilt vertellen waar u bent. Uitschakelen van deze optie schakelt deze functie geheel uit.">

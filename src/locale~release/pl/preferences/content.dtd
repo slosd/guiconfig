@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Firefox okresowo renderuje dane strony. To ustawienie określa minimalny okres czasu, który musi upłynąć, zanim Firefox ponownie będzie renderował stronę (w mikrosekundach). Niższe wartości spowodują pozorne powolniejsze wczytywanie strony, ale zwiększą całkowity jego czas.">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Włącz przeglądanie wspomagane lokalizacją">
 <!ENTITY geo_enabled_description "Kiedy ta funkcja jest włączona, Firefox może pytać Cię, czy chcesz poinformować obecnie odwiedzaną witrynę o swoim położeniu geograficzym. Odznaczenie tego pola całkowicie wyłącza tę funkcję.">

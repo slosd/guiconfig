@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Il rendering dei dati ricevuti da un sito web è effettuato periodicamente. Questa preferenza indica, in microsecondi, l&apos;intervallo minimo di attesa tra i redrawing della pagina. Valori più bassi diminuiranno il tempo di caricamento percepito ma incrementeranno il tempo di caricamento totale.">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Enable Location-Aware Browsing">
 <!ENTITY geo_enabled_description "When enabled, Firefox may prompt you if you want to tell the website you are currently visiting where you are located. Disabling this option turns off this feature entirely.">

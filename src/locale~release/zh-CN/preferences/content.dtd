@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Firefox定期渲染从特定网站收到的全部数据，这个值决定了每次渲染的最小时间片，较低的数值会在观感上加快渲染速度，但是会拖慢整体渲染速度。（微秒 µs 10e-6）">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "启用自动播放媒体">
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">
 <!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">

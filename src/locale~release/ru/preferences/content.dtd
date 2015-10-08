@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Firefox периодически визуализирует все полученные к настоящему моменту от веб-сайта данные. Эта настройка задаёт минимальное время ожидания между последовательными перерисовками страницы в микросекундах. Меньшее значение уменьшит кажущееся время загрузки, но увеличит общее время загрузки.">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">
 <!ENTITY geo_enabled_description "Если включено, Firefox будет спрашивать вас хотите ли вы сообщить веб-сайту, посещаемому в настоящий момент, место вашего расположения. Отключение этой настройки выключает эту функцию полностью.">

@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "啟用媒體自動播放">
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">

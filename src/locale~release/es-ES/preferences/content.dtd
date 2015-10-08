@@ -28,6 +28,8 @@
 <!ENTITY content_notify_interval_description "Firefox dibuja periodicamente todos los datos recibidos de una página web. Esta opción especifica el tiempo mínimo a esperar entre el redibujado de una página en microsegundos. Un valor bajo bajará el tiempo de carga aparente, pero aumentará el total.">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
+<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Habilitar navegación independiente de la ubicación">
 <!ENTITY geo_enabled_description "Cuando se habilita, Firefox le preguntará si quiere decirle a la página que está visitando actualmente donde estás ubicado. Si lo deshabilita se desactivará totalmente.">
