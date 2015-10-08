@@ -350,6 +350,16 @@
                 default="-1"
                 minValue="-1" />
         </group>
+        <group label="&cache_offline;">
+          <pref key="browser.cache.offline.enable"
+                label="&browser_cache_offline_enable_name;"
+                description="&browser_cache_offline_enable_description;"
+                type="bool" />
+          <pref key="browser.cache.offline.capacity"
+                label="&browser_cache_offline_capacity_name;"
+                description="&browser_cache_offline_capacity_description;"
+                type="int" />
+        </group>
         <group label="&misc;">
           <pref key="browser.sessionhistory.max_total_viewers"
                 label="&browser_sessionhistory_max_total_viewers_name;"

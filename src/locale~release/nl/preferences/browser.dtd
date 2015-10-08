@@ -152,6 +152,13 @@
 <!ENTITY browser_cache_memory_capacity_name "Geheugenbuffer (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Stel het maximale RAM-geheugen dat wordt gebruikt voor de geheugenbuffer in (in KB).">
 
+<!-- Offline cache -->
+<!ENTITY cache_offline "Offline cache">
+<!ENTITY browser_cache_offline_enable_name "Enable offline cache">
+<!ENTITY browser_cache_offline_enable_description "If enabled, websites can store data for when the browser is offline.">
+<!ENTITY browser_cache_offline_capacity_name "Offline cache (KB)">
+<!ENTITY browser_cache_offline_capacity_description "Use offline cache, up to capacity specified (in kilobytes).">
+
 <!-- Misc -->
 <!ENTITY misc "Diversen">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. aantal pagina’s in geheugen">
