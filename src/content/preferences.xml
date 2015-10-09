@@ -483,7 +483,8 @@
           <pref key="layout.frames.force_resizability"
                 label="&layout_frames_force_resizability_name;"
                 description=""
-                type="bool" />
+                type="bool"
+                maxVersion="41.*" />
           <pref key="layout.spellcheckDefault"
                 label="&layout_spellcheckDefault_name;"
                 description="&layout_spellcheckDefault_description;"
