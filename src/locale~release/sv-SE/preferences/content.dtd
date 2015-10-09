@@ -30,17 +30,16 @@
 <!-- Misc -->
 <!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
 <!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Enable tracking protection for private browsing">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Aktivera automatisk uppspelning av media">
 <!ENTITY geo_enabled_name "Aktivera platsmedveten webbläsning">
 <!ENTITY geo_enabled_description "När funktionen är aktiverad kan Firefox komma att fråga dig om du vill tala om för webbplatsen som du för tillfället besöker var du befinner dig. Inaktivering stänger av den här funktionen helt och hållet.">
 <!ENTITY webgl_enabled_for_all_sites_name "Aktivera WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Hämta fonter inbäddade i webbplatser">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Medger hämtning av CSS3-fonter som är inbäddade genom att använda @font-face. Omstart krävs.">
-<!ENTITY prompts_tab_modal_enabled_name "Aktivera modala meddelandeflikar (varningar)">
-<!ENTITY prompts_tab_modal_enabled_description "Avgör om aviseringar ska visas i de nya modala meddelandeflikarna eller i de gamla modala meddelandefönstren.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktivera DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiverar maskinvaruacceleration för textvisning. (Kräver Windows 7 eller Windows Vista med Vista Platform-uppdatering)">
-<!ENTITY layout_frames_force_resizability_name "Tvinga HTML-ramar att vara justerbara">
 <!ENTITY dom_max_script_run_time_name "Maxkörtid för skript (s)">
 <!ENTITY dom_max_script_run_time_description "Bestämmer det antal sekunder efter vilka Firefox meddelar dig att ett skript tar för lång tid på sig att köras.">
 
@@ -70,6 +69,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Fyll automatiskt i formulärfält för inloggning">
 <!ENTITY signon_prefillForms_description "Fyll automatiskt i formulärfält med användarnamn och lösenord.">
+<!ENTITY prompts_tab_modal_enabled_name "Aktivera modala meddelandeflikar (varningar)">
+<!ENTITY prompts_tab_modal_enabled_description "Avgör om aviseringar ska visas i de nya modala meddelandeflikarna eller i de gamla modala meddelandefönstren.">
+<!ENTITY layout_frames_force_resizability_name "Tvinga HTML-ramar att vara justerbara">
 <!ENTITY accessibility_tabfocus_name "Tabulatorfokuserade element">
 <!ENTITY accessibility_tabfocus_description "Den här inställningen avgör vilka element som kan fokuseras genom att trycka på tabbtangenten.">
 <!ENTITY accessibility_tabfocus_o1 "Fokuserar endast på textfält">

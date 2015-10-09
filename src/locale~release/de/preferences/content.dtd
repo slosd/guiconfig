@@ -30,17 +30,16 @@
 <!-- Misc -->
 <!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
 <!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Enable tracking protection for private browsing">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Medien automatisch abspielen">
 <!ENTITY geo_enabled_name "Standortbezogenes Surfen aktivieren">
 <!ENTITY geo_enabled_description "Wenn aktiviert fragt Firefox auf Webseiten, die standortbezogenes Surfen nutzen, ob ihr aktueller Standort übertragen werden darf. Wird diese Option deaktiviert ist standortbezogenes Surfen komplett ausgeschaltet.">
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL aktivieren">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Eingebundene Schriftarten herunterladen">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Aktiviert das Herunterladen von CSS3 Schriftarten die mittels @font-face eingebunden wurden. Neustart notwendig.">
-<!ENTITY prompts_tab_modal_enabled_name "Tab-modale Eingabeaufforderungen (Alert-Fenster) aktivieren">
-<!ENTITY prompts_tab_modal_enabled_description "Legt fest, ob die neuen Tab-modalen Eingabeaufforderungen oder die alten Fenster-modalen Eingabeaufforderungen verwendet werden sollen.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Aktiviere DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Aktiviert Hardwarebeschleunigung für die Textdarstellung (benötigt Windows 7 oder Windows Vista mit Vista Platform Update).">
-<!ENTITY layout_frames_force_resizability_name "Frames immer größenveränderlich">
 <!ENTITY dom_max_script_run_time_name "Max. Skriptlaufzeit (Sek)">
 <!ENTITY dom_max_script_run_time_description "Legt fest nach welcher Dauer Firefox eine Warnung für ein lange dauerndes Skript zeigt.">
 
@@ -70,6 +69,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Loginfelder automatisch ausfüllen">
 <!ENTITY signon_prefillForms_description "Wenn vorhanden, werden gespeicherte Logindaten (Benutzername und Passwort) in die dazugehörigen Textfelder automatisch eingetragen.">
+<!ENTITY prompts_tab_modal_enabled_name "Tab-modale Eingabeaufforderungen (Alert-Fenster) aktivieren">
+<!ENTITY prompts_tab_modal_enabled_description "Legt fest, ob die neuen Tab-modalen Eingabeaufforderungen oder die alten Fenster-modalen Eingabeaufforderungen verwendet werden sollen.">
+<!ENTITY layout_frames_force_resizability_name "Frames immer größenveränderlich">
 <!ENTITY accessibility_tabfocus_name "Elemente mit TAB-Fokus">
 <!ENTITY accessibility_tabfocus_description "Definiert, welche Elemente einer Website mit der TAB-Taste (bzw. Shift+TAB) angewählt werden können.">
 <!ENTITY accessibility_tabfocus_o1 "Nur Textfelder">

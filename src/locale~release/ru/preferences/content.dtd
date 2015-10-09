@@ -30,17 +30,16 @@
 <!-- Misc -->
 <!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
 <!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Enable tracking protection for private browsing">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Enable media autoplay">
 <!ENTITY geo_enabled_name "Включить просмотр с предупреждением о местоположении">
 <!ENTITY geo_enabled_description "Если включено, Firefox будет спрашивать вас хотите ли вы сообщить веб-сайту, посещаемому в настоящий момент, место вашего расположения. Отключение этой настройки выключает эту функцию полностью.">
 <!ENTITY webgl_enabled_for_all_sites_name "Включить WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Загружать шрифты внедрённые в веб-сайт">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Разрешает загрузку шрифтов CSS3, внедрённых с использованием @font-face. Требуется перезагрузка.">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Включить DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Включает аппаратное ускорение для отображения текста. (Требуется Windows 7 или Windows Vista с обновлением Vista Platform)">
-<!ENTITY layout_frames_force_resizability_name "Принудительно задать фреймам возможность изменять размер">
 <!ENTITY dom_max_script_run_time_name "Время выполнения сценария (сек)">
 <!ENTITY dom_max_script_run_time_description "Определяет количество секунд, спустя которое Firefox будет предупреждать вас, что выполнение сценария занимает много времени.">
 
@@ -70,6 +69,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Автозаполнение полей регистрационных форм">
 <!ENTITY signon_prefillForms_description "Автоматически заполняет поля форм с именем пользователя и паролем.">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY layout_frames_force_resizability_name "Принудительно задать фреймам возможность изменять размер">
 <!ENTITY accessibility_tabfocus_name "Элементы фокусируемые по клавише Tab">
 <!ENTITY accessibility_tabfocus_description "Эта настройка определяет какие из элементов могут получать фокус при нажатии клавиши «Tab».">
 <!ENTITY accessibility_tabfocus_o1 "только текстовые поля">

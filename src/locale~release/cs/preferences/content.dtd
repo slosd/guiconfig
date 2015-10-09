@@ -30,17 +30,16 @@
 <!-- Misc -->
 <!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
 <!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Enable tracking protection for private browsing">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
 <!ENTITY media_autoplay_enabled_name "Povolit automatické přehrávání multimédií">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">
 <!ENTITY geo_enabled_description "Pokud je povoleno, Firefox se smí zeptat, zda oznámit navštěvované stránce místo, kde se nacházíte. Zakázání této možnosti tuto vlastnost zcela vypne.">
 <!ENTITY webgl_enabled_for_all_sites_name "Povolit WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Stahovat fonty vložené do stránek">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Povolí stahování CSS3 fontů, které jsou vloženy pomocí @font-face. Vyžaduje restart.">
-<!ENTITY prompts_tab_modal_enabled_name "Povolit modální dialogy (upozornění) pro panel">
-<!ENTITY prompts_tab_modal_enabled_description "Určuje, zda se budou používat nové modální dialogy pro panel, nebo staré modální dialogy pro celé okno.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Povolit DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Povolí hardwarovou akceleraci pro zobrazování textu. (Vyžaduje Windows 7 nebo Windows Vista s aktualizací Vista Platform.)">
-<!ENTITY layout_frames_force_resizability_name "Vynutí u rámů možnost změny velikosti">
 <!ENTITY dom_max_script_run_time_name "Max. doba běhu skriptu (s)">
 <!ENTITY dom_max_script_run_time_description "Určuje dobu v sekundách, po které Firefox upozorní, že vykonávání skriptu trvá příliš dlouho.">
 
@@ -70,6 +69,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Automaticky vyplňovat přihlašovací formuláře">
 <!ENTITY signon_prefillForms_description "Automaticky vyplní položky formulářů s uživatelskými jmény a hesly.">
+<!ENTITY prompts_tab_modal_enabled_name "Povolit modální dialogy (upozornění) pro panel">
+<!ENTITY prompts_tab_modal_enabled_description "Určuje, zda se budou používat nové modální dialogy pro panel, nebo staré modální dialogy pro celé okno.">
+<!ENTITY layout_frames_force_resizability_name "Vynutí u rámů možnost změny velikosti">
 <!ENTITY accessibility_tabfocus_name "Aktivace prvku pomocí Tab">
 <!ENTITY accessibility_tabfocus_description "Tato předvolba určuje, jaký prvek se aktivuje při stisknutí klávesy Tab.">
 <!ENTITY accessibility_tabfocus_o1 "Aktivovat pouze textová pole">
