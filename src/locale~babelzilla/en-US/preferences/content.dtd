@@ -36,11 +36,8 @@
 <!ENTITY webgl_enabled_for_all_sites_name "Enable WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Download fonts embedded in the website">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Enables downloading of CSS3 fonts which are embedded using @font-face. Restart required.">
-<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
-<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Enable DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Enables hardware acceleration for displaying text (requires Windows 7 or Windows Vista with Vista Platform update).">
-<!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
 <!ENTITY dom_max_script_run_time_name "Max. script runtime (sec)">
 <!ENTITY dom_max_script_run_time_description "Determines the number of seconds after which Firefox alerts you that a script is taking long to execute.">
 
@@ -70,6 +67,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Auto-fill login form fields">
 <!ENTITY signon_prefillForms_description "Automatically fill form fields with usernames and passwords.">
+<!ENTITY prompts_tab_modal_enabled_name "Enable tab-modal prompts (alerts)">
+<!ENTITY prompts_tab_modal_enabled_description "Determines whether to use the new tab-modal prompts or the old window-modal prompts. ">
+<!ENTITY layout_frames_force_resizability_name "Force frames to be resizeable">
 <!ENTITY accessibility_tabfocus_name "Tab focus elements">
 <!ENTITY accessibility_tabfocus_description "This preference determines which elements can be focused by pressing Tab.">
 <!ENTITY accessibility_tabfocus_o1 "Give focus to text fields only">
