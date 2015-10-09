@@ -576,7 +576,14 @@
                 label="&gfx_font_rendering_directwrite_enabled_name;"
                 description="&gfx_font_rendering_directwrite_enabled_description;"
                 platform="WINNT"
-                type="bool" />
+                type="bool"
+                maxVersion="40.*" />
+          <pref key="gfx.font_rendering.directwrite.force-enabled"
+                label="&gfx_font_rendering_directwrite_enabled_name;"
+                description="&gfx_font_rendering_directwrite_enabled_description;"
+                platform="WINNT"
+                type="bool"
+                minVersion="44.0a1" />
           <pref key="gfx.downloadable_fonts.enabled"
                 label="&gfx_downloadable_fonts_enabled_name;"
                 description="&gfx_downloadable_fonts_enabled_description;"
