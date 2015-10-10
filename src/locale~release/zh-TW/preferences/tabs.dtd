@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "於開新分頁、重組分頁或關閉分頁時，啟用動畫效果。">
 <!ENTITY browser_panorama_animate_zoom_name "全景縮放過程採動畫效果">
 <!ENTITY browser_panorama_animate_zoom_description "對分頁開啟/關閉全景檢視(按 CTRL-E)時, 啟用動畫效果.">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "顯示分頁的關閉按鈕">
 <!ENTITY browser_tabs_closeButtons_description "指定關閉按鈕顯示處">
 <!ENTITY browser_tabs_closeButtons_o1 "僅顯示於現前分頁">

@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Enable animations when opening a new tab, during tab rearrangement and tab tear-off. ">
 <!ENTITY browser_panorama_animate_zoom_name "Animate Panorama zoom">
 <!ENTITY browser_panorama_animate_zoom_description "Enable animations when opening/closing the Panorama view for your tabs (on CTRL-E). ">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "Les boutons de fermeture sont affichés">
 <!ENTITY browser_tabs_closeButtons_description "Précise où afficher les boutons de clôture d&apos;onglets.">
 <!ENTITY browser_tabs_closeButtons_o1 "juste sur l&apos;onglet en cours">

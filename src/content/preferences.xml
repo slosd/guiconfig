@@ -860,6 +860,11 @@
             label="&browser_panorama_animate_zoom_name;"
             description="&browser_panorama_animate_zoom_description;"
             type="bool" />
+      <pref key="browser.tabs.showAudioPlayingIcon"
+            label="&browser_tabs_showAudioPlayingIcon_name;"
+            description="&browser_tabs_showAudioPlayingIcon_description;"
+            type="bool"
+            minVersion="42.0a1" />
       <pref key="browser.tabs.closeButtons"
             label="&browser_tabs_closeButtons_name;"
             description="&browser_tabs_closeButtons_description;"

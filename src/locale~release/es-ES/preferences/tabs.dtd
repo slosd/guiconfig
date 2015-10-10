@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Habilita las pestañas animadas al abrir una nueva pestaña o al colocar las pestañas.">
 <!ENTITY browser_panorama_animate_zoom_name "Animación en el zoom panorámico">
 <!ENTITY browser_panorama_animate_zoom_description "Habilita las animaciones al abrir/cerrar la vista panorámica para todas las pestañas (CTRL-E).">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "Mostrar el botón de cerrar para las pestañas">
 <!ENTITY browser_tabs_closeButtons_description "Determina si se muestran los botones de cerrar.">
 <!ENTITY browser_tabs_closeButtons_o1 "sólo en la pestaña activa">

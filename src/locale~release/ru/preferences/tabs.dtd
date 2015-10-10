@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Включает анимацию при открытии новой вкладки, во время перетаскивания и отрывания вкладки.">
 <!ENTITY browser_panorama_animate_zoom_name "Анимировать масштабирование панорам">
 <!ENTITY browser_panorama_animate_zoom_description "Включает анимацию при открытии/закрытии панорамного просмотра вкладок (по Ctrl+E).">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "Показывать кнопку закрытия вкладок">
 <!ENTITY browser_tabs_closeButtons_description "Определяет где будет отображаться кнопка закрытия.">
 <!ENTITY browser_tabs_closeButtons_o1 "только на активной вкладке">

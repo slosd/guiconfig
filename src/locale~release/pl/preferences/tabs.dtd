@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Włącza animacje odtwarzane podczas otwierania kart, zmiany ich kolejności i usuwania ich.">
 <!ENTITY browser_panorama_animate_zoom_name "Animuj przechodzenie do trybu panoramicznego">
 <!ENTITY browser_panorama_animate_zoom_description "Wyświetlaj animacje podczas otwierania/zamykania panoramicznego widoku kart (skrót: CTRL-E).">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "Wyświetlaj przyciski zamykające">
 <!ENTITY browser_tabs_closeButtons_description "Określa gdzie wyświetlać przyciski zamykające.">
 <!ENTITY browser_tabs_closeButtons_o1 "tylko na aktywnej karcie">

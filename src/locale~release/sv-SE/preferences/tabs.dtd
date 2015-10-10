@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Tillåt animationer när en ny flik öppnas, när flikar arrangeras om och när en flik tas bort.">
 <!ENTITY browser_panorama_animate_zoom_name "Animera panoramazoomning">
 <!ENTITY browser_panorama_animate_zoom_description "Aktivera animationer när du öppnar/stänger Panoramavyn för dina flikar (vid Ctrl+E).">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "Stängknappar för flikar visas">
 <!ENTITY browser_tabs_closeButtons_description "Bestämmer var stängknappar ska visas.">
 <!ENTITY browser_tabs_closeButtons_o1 "endast på den aktiva fliken">
