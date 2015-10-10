@@ -1,8 +1,22 @@
-const { classes: Cc, interfaces: Ci, utils: Cu } = Components;
+const {
+  classes: Cc,
+  interfaces: Ci,
+  manager: Cm,
+  results: Cr,
+  utils: Cu,
+} = Components;
+
+Cm.QueryInterface(Ci.nsIComponentRegistrar);
 
 Cu.import('resource://gre/modules/Services.jsm');
+Cu.import('resource://gre/modules/XPCOMUtils.jsm');
 
 const GC_MODULE_BROWSER = 'chrome://guiconfig/content/browser.js';
+const GC_UI_PAGE = 'chrome://guiconfig/content/preferences-page.xul';
+
+const ABOUT_GUICONFIG_CID = '{f72e335c-3b49-4409-bbee-bc6b3052b032}';
+const ABOUT_GUICONFIG_DESCRIPTION = 'gui:config preferences page';
+const ABOUT_GUICONFIG_CONTRACT = '@mozilla.org/network/protocol/about;1?what=guiconfig';
 
 var stylesheets = [ 'chrome://guiconfig/skin/style/button.css' ];
 
@@ -21,6 +35,34 @@ var WindowListener = {
   onWindowTitleChange: function(xulWindow, newTitle) { }
 };
 
+var AboutGuiconfigFactory = Object.freeze({
+  createInstance: function(outer, iid) {
+    if (outer) {
+      throw Cr.NS_ERROR_NO_AGGREGATION;
+    }
+    return new AboutGuiconfig();
+  }
+});
+
+function AboutGuiconfig() { }
+
+AboutGuiconfig.prototype = Object.freeze({
+  classID: Components.ID(ABOUT_GUICONFIG_CID),
+  classDescription: ABOUT_GUICONFIG_DESCRIPTION,
+  contractID: ABOUT_GUICONFIG_CONTRACT,
+  QueryInterface: XPCOMUtils.generateQI([Ci.nsIAboutModule]),
+
+  getURIFlags: function(aURI) {
+    return Ci.nsIAboutModule.ALLOW_SCRIPT;
+  },
+
+  newChannel: function(aURI) {
+    var channel = Services.io.newChannel(GC_UI_PAGE, null, null);
+    channel.originalURI = aURI;
+    return channel;
+  }
+});
+
 function install(data, reason) { }
 
 function uninstall(data, reason) {
@@ -38,6 +80,10 @@ function startup(data, reason) {
     var stylesheetURI = Services.io.newURI(stylesheets[i], null, null);
     stylesheetService.loadAndRegisterSheet(stylesheetURI, stylesheetService.AUTHOR_SHEET);
   }
+
+  Cm.registerFactory(AboutGuiconfig.prototype.classID,
+      AboutGuiconfig.prototype.classDescription,
+      AboutGuiconfig.prototype.contractID, AboutGuiconfigFactory);
 }
 
 function shutdown(data, reason) {
@@ -55,6 +101,7 @@ function shutdown(data, reason) {
     }
   }
 
+  Cm.unregisterFactory(AboutGuiconfig.prototype.classID, AboutGuiconfigFactory);
   Cu.unload(GC_MODULE_BROWSER);
 }
 

@@ -3,6 +3,7 @@ Components.utils.import('resource://gre/modules/Services.jsm');
 var EXPORTED_SYMBOLS = [ 'browser' ];
 
 const GC_PREF_FIRST_START = 'extensions.guiconfig.firststart';
+const GC_PREF_INCONTENT = 'extensions.guiconfig.inContent';
 
 var CUSTOMIZABLE_UI;
 try {
@@ -20,6 +21,12 @@ try {
 }
 if (FIRST_START) {
   Services.prefs.setBoolPref(GC_PREF_FIRST_START, false);
+}
+
+try {
+  Services.prefs.getBoolPref(GC_PREF_INCONTENT);
+} catch(e) {
+  Services.prefs.setBoolPref(GC_PREF_INCONTENT, true);
 }
 
 const PREFERENCES_DIALOG_URI = 'chrome://guiconfig/content/preferences.xul';
@@ -71,7 +78,7 @@ function createToolbarButton(window) {
   button.setAttribute('label', strings.GetStringFromName('browser.item.label'));
   button.setAttribute('tooltiptext', strings.GetStringFromName('browser.item.label'));
   button.addEventListener('command', function() {
-    showPreferencesDialog(window);
+    showPreferences(window);
   }, false);
   return button;
 }
@@ -84,7 +91,7 @@ function createMenuItem(window, id) {
   menuitem.setAttribute('image', 'chrome://guiconfig/skin/icons/icon.16.png');
   menuitem.setAttribute('accesskey', strings.GetStringFromName('browser.item.access'));
   menuitem.addEventListener('command', function() {
-    showPreferencesDialog(window);
+    showPreferences(window);
   }, false);
   return menuitem;
 }
@@ -108,7 +115,7 @@ if (CUSTOMIZABLE_UI) {
         tooltiptext: strings.GetStringFromName('browser.item.label'),
         onCommand: function(event) {
           var eventWindow = event.target.ownerDocument.defaultView;
-          showPreferencesDialog(eventWindow);
+          showPreferences(eventWindow);
         }
       });
       if (FIRST_START) {
@@ -156,12 +163,21 @@ function addMenuItem(window) {
   });
 }
 
-function showPreferencesDialog(window) {
-  if(dialog && !dialog.closed) {
-    dialog.focus();
+function showPreferences(window) {
+  var incontent = true;
+  try {
+    incontent = Services.prefs.getBoolPref(GC_PREF_INCONTENT);
+  } catch(e) { }
+
+  if (incontent) {
+    window.openUILinkIn('about:guiconfig', 'tab');
   } else {
-    dialog = window.openDialog(PREFERENCES_DIALOG_URI, 'guiconfig-preferences',
-        'chrome,titlebar,toolbar,centerscreen');
+    if(dialog && !dialog.closed) {
+      dialog.focus();
+    } else {
+      dialog = window.openDialog(PREFERENCES_DIALOG_URI, 'guiconfig-preferences',
+          'chrome,titlebar,toolbar,centerscreen');
+    }
   }
 }
 
