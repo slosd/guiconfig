@@ -330,9 +330,9 @@
           function showInfoBox(anchor) {
             if (anchor) {
               var height = anchor.clientHeight;
-              infoBox.openPopup(anchor, 'end_before', 0, height / 2, false, false);
+              infoBox.openPopup(anchor, 'after_end', 0, height / 2, false, false);
             } else {
-              infoBox.openPopup(this._body, 'end_before', 0, 0, false, false);
+              infoBox.openPopup(this._body, 'after_end', 0, 0, false, false);
             }
           }
 
