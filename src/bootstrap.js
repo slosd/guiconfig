@@ -14,9 +14,9 @@ Cu.import('resource://gre/modules/XPCOMUtils.jsm');
 const GC_MODULE_BROWSER = 'chrome://guiconfig/content/browser.js';
 const GC_UI_PAGE = 'chrome://guiconfig/content/preferences-page.xul';
 
-const ABOUT_GUICONFIG_CID = '{f72e335c-3b49-4409-bbee-bc6b3052b032}';
-const ABOUT_GUICONFIG_DESCRIPTION = 'gui:config preferences page';
-const ABOUT_GUICONFIG_CONTRACT = '@mozilla.org/network/protocol/about;1?what=guiconfig';
+const GC_ABOUT_CID = '{f72e335c-3b49-4409-bbee-bc6b3052b032}';
+const GC_ABOUT_DESCRIPTION = 'gui:config preferences page';
+const GC_ABOUT_CONTRACT = '@mozilla.org/network/protocol/about;1?what=guiconfig';
 
 var stylesheets = [ 'chrome://guiconfig/skin/style/button.css' ];
 
@@ -47,9 +47,9 @@ var AboutGuiconfigFactory = Object.freeze({
 function AboutGuiconfig() { }
 
 AboutGuiconfig.prototype = Object.freeze({
-  classID: Components.ID(ABOUT_GUICONFIG_CID),
-  classDescription: ABOUT_GUICONFIG_DESCRIPTION,
-  contractID: ABOUT_GUICONFIG_CONTRACT,
+  classID: Components.ID(GC_ABOUT_CID),
+  classDescription: GC_ABOUT_DESCRIPTION,
+  contractID: GC_ABOUT_CONTRACT,
   QueryInterface: XPCOMUtils.generateQI([Ci.nsIAboutModule]),
 
   getURIFlags: function(aURI) {

@@ -5,6 +5,9 @@ var EXPORTED_SYMBOLS = [ 'browser' ];
 const GC_PREF_FIRST_START = 'extensions.guiconfig.firststart';
 const GC_PREF_INCONTENT = 'extensions.guiconfig.inContent';
 
+const GC_PREFERENCES_DIALOG = 'chrome://guiconfig/content/preferences.xul';
+const GC_BUTTON_ID = 'guiconfig-open-preferences';
+
 var CUSTOMIZABLE_UI;
 try {
   Components.utils.import('resource:///modules/CustomizableUI.jsm');
@@ -29,9 +32,6 @@ try {
   Services.prefs.setBoolPref(GC_PREF_INCONTENT, true);
 }
 
-const PREFERENCES_DIALOG_URI = 'chrome://guiconfig/content/preferences.xul';
-const BUTTON_ID = 'guiconfig-open-preferences';
-
 var dialog = null;
 var nodes = new WeakMap();
 var strings = Services.strings.createBundle('chrome://guiconfig/locale/gcLocale.properties');
@@ -48,7 +48,7 @@ function registerUI(node) {
 
 function removeUI(window) {
   if (CUSTOMIZABLE_UI) {
-    CustomizableUI.destroyWidget(BUTTON_ID);
+    CustomizableUI.destroyWidget(GC_BUTTON_ID);
   }
   if (!nodes.has(window)) return;
   for (var node of nodes.get(window)) {
@@ -62,7 +62,7 @@ function findToolbar(window) {
   var document = window.document;
   for (var tb of document.getElementsByTagName('toolbar')) {
     var currentSet = tb.getAttribute('currentset').split(',');
-    var index = currentSet.indexOf(BUTTON_ID);
+    var index = currentSet.indexOf(GC_BUTTON_ID);
     if (index !== -1) {
       return { id: tb.id, set: currentSet, buttonIndex: index };
     }
@@ -73,7 +73,7 @@ function findToolbar(window) {
 function createToolbarButton(window) {
   var document = window.document;
   var button = document.createElement('toolbarbutton');
-  button.setAttribute('id', BUTTON_ID);
+  button.setAttribute('id', GC_BUTTON_ID);
   button.setAttribute('class', 'toolbarbutton-1 chromeclass-toolbar-additional');
   button.setAttribute('label', strings.GetStringFromName('browser.item.label'));
   button.setAttribute('tooltiptext', strings.GetStringFromName('browser.item.label'));
@@ -109,7 +109,7 @@ if (CUSTOMIZABLE_UI) {
         return;
       }
       CustomizableUI.createWidget({
-        id: BUTTON_ID,
+        id: GC_BUTTON_ID,
         defaultArea: CustomizableUI.AREA_NAVBAR,
         label: strings.GetStringFromName('browser.item.label'),
         tooltiptext: strings.GetStringFromName('browser.item.label'),
@@ -119,7 +119,7 @@ if (CUSTOMIZABLE_UI) {
         }
       });
       if (FIRST_START) {
-        CustomizableUI.addWidgetToArea(BUTTON_ID, CustomizableUI.AREA_NAVBAR);
+        CustomizableUI.addWidgetToArea(GC_BUTTON_ID, CustomizableUI.AREA_NAVBAR);
       }
       added = true;
     };
@@ -143,7 +143,7 @@ if (CUSTOMIZABLE_UI) {
     while (toolbarInfo.buttonIndex !== -1 && beforeIndex < toolbarInfo.set.length &&
         !(beforeNode = document.getElementById(toolbarInfo.set[beforeIndex])))
       beforeIndex += 1;
-    toolbar.insertItem(BUTTON_ID, beforeNode);
+    toolbar.insertItem(GC_BUTTON_ID, beforeNode);
     toolbar.setAttribute('currentset', toolbar.currentSet);
     document.persist(toolbarInfo.id, 'currentset');
   };
@@ -175,7 +175,7 @@ function showPreferences(window) {
     if(dialog && !dialog.closed) {
       dialog.focus();
     } else {
-      dialog = window.openDialog(PREFERENCES_DIALOG_URI, 'guiconfig-preferences',
+      dialog = window.openDialog(GC_PREFERENCES_DIALOG, 'guiconfig-preferences',
           'chrome,titlebar,toolbar,centerscreen');
     }
   }

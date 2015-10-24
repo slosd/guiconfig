@@ -1,9 +1,9 @@
 var EXPORTED_SYMBOLS = [ 'guiconfig' ];
 
-const preferencesDialogXSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
-const preferencesPageXSLT = 'chrome://guiconfig/content/generators/preferences-page.xsl';
-const preferencesScriptXSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
-const preferencesSearchXSLT = 'chrome://guiconfig/content/generators/preferences-search.xsl';
+const GC_DIALOG_XSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
+const GC_PAGE_XSLT = 'chrome://guiconfig/content/generators/preferences-page.xsl';
+const GC_SCRIPT_XSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
+const GC_SEARCH_XSLT = 'chrome://guiconfig/content/generators/preferences-search.xsl';
 
 var Cc = Components.classes;
 var Ci = Components.interfaces;
@@ -160,7 +160,7 @@ function runScriptSandboxed(document, script) {
 var guiconfig = {
   buildDialog: function(document, preference_source, onFinished) {
     var prefPanes, prefScript;
-    applyXSLT(preferencesDialogXSLT, preference_source, document,
+    applyXSLT(GC_DIALOG_XSLT, preference_source, document,
         function(result) {
           var copy = cloneXUL(result, document, document.createDocumentFragment());
           prefPanes = copy.querySelectorAll('prefpane');
@@ -168,7 +168,7 @@ var guiconfig = {
             onFinished(prefPanes, prefScript);
           }
         });
-    applyXSLT(preferencesScriptXSLT, preference_source, document,
+    applyXSLT(GC_SCRIPT_XSLT, preference_source, document,
         function(result) {
           prefScript = result.querySelector('script').textContent;
           if (prefPanes) {
@@ -179,14 +179,14 @@ var guiconfig = {
 
   buildPage: function(document, preference_source, onFinished) {
     var prefPage, prefScript;
-    applyXSLT(preferencesPageXSLT, preference_source, document,
+    applyXSLT(GC_PAGE_XSLT, preference_source, document,
         function(result) {
           prefPage = cloneXUL(result, document, document.createDocumentFragment());
           if (prefScript) {
             onFinished(prefPage, prefScript);
           }
         });
-    applyXSLT(preferencesScriptXSLT, preference_source, document,
+    applyXSLT(GC_SCRIPT_XSLT, preference_source, document,
         function(result) {
           prefScript = result.querySelector('script').textContent;
           if (prefPage) {
@@ -196,7 +196,7 @@ var guiconfig = {
   },
 
   buildPreferenceSearchResult: function(document, preference_source, query, onFinished) {
-    applyXSLT(preferencesSearchXSLT, preference_source, document,
+    applyXSLT(GC_SEARCH_XSLT, preference_source, document,
         function(result) {
           onFinished(cloneXUL(result, document, document.createDocumentFragment()));
         }, { 'query': query });
