@@ -1,2 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "Pytaj przed przywróceniem">
 <!ENTITY prefs.todefault.ask "Pytaj przed przywróceniem domyślnych ustawień">
+<!ENTITY prefs.inContent.title "Open advanced settings in tab">
+<!ENTITY prefs.inContent "Open settings in a tab instead of a window">

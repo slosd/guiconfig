@@ -1,2 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "Vor dem Zurücksetzen fragen">
 <!ENTITY prefs.todefault.ask "Nachfragen, bevor Einstellungen zurückgesetzt werden">
+<!ENTITY prefs.inContent.title "Open advanced settings in tab">
+<!ENTITY prefs.inContent "Open settings in a tab instead of a window">

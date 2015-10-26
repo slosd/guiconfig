@@ -1,2 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "Perguntar antes de restaurar">
 <!ENTITY prefs.todefault.ask "Perguntar antes de restaurar todas as opções aos valores padrão">
+<!ENTITY prefs.inContent.title "Open advanced settings in tab">
+<!ENTITY prefs.inContent "Open settings in a tab instead of a window">

@@ -1,2 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "Bekräfta återställning">
 <!ENTITY prefs.todefault.ask "Fråga innan standardvärden återställs">
+<!ENTITY prefs.inContent.title "Open advanced settings in tab">
+<!ENTITY prefs.inContent "Open settings in a tab instead of a window">

@@ -187,6 +187,7 @@
     <copy todir="${build.dir}" overwrite="true">
       <fileset dir="${src.dir}">
         <include name="bootstrap.js" />
+        <include name="options.xul" />
         <include name="content/**/*.js" />
         <include name="content/**/*.xul" />
         <include name="content/**/*.xml" />

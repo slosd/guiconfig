@@ -1,2 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "恢复前提示">
 <!ENTITY prefs.todefault.ask "恢复默认值前提示">
+<!ENTITY prefs.inContent.title "Open advanced settings in tab">
+<!ENTITY prefs.inContent "Open settings in a tab instead of a window">
