@@ -284,6 +284,9 @@
         this._body = document.getAnonymousElementByAttribute(this, 'anonid', 'body');
         this._menu = document.getAnonymousElementByAttribute(this, 'anonid', 'menu');
 
+        // In-content is always instant-apply
+        document.documentElement.instantApply = true;
+
         var self = this;
         var preferenceSource = this.getAttribute('source');
         guiconfig.buildPage(document, preferenceSource, function(page, script) {
