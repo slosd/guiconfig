@@ -266,7 +266,7 @@
         <xul:hbox anonid="body" flex="1">
           <xul:vbox class="menu" anonid="menu">
             <xul:hbox id="guiconfig-preference-search">
-              <xul:textbox type="search" timeout="500" emptytext="&config.search;" oncommand="document.getBindingParent(this).search(this.value)"/>
+              <xul:textbox type="search" timeout="500" size="10" flex="1" emptytext="&config.search;" oncommand="document.getBindingParent(this).search(this.value)"/>
             </xul:hbox>
           </xul:vbox>
           <children/>
