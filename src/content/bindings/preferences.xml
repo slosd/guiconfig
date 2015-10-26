@@ -302,7 +302,7 @@
               }
             }
           });
-          self._body.appendChild(mainContent);
+          self.appendChild(mainContent);
           self._menu.appendChild(categories);
 
           // Disable the search radio element so it cannot be selected
