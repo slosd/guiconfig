@@ -163,6 +163,25 @@ function addMenuItem(window) {
   });
 }
 
+function focusTabWithURL(url) {
+  var windows = Services.wm.getEnumerator("navigator:browser");
+  var found = false;
+  while (!found && windows.hasMoreElements()) {
+    var win = windows.getNext();
+    var tabbrowser = win.gBrowser;
+    for (var i = 0, l = tabbrowser.browsers.length; i < l; i++) {
+      var browser = tabbrowser.getBrowserAtIndex(i);
+      if (browser.currentURI.spec === url) {
+        tabbrowser.selectedTab = tabbrowser.tabContainer.childNodes[i];
+        win.focus();
+        found = true;
+        break;
+      }
+    }
+  }
+  return found;
+}
+
 function showPreferences(window) {
   var incontent = true;
   try {
@@ -170,7 +189,9 @@ function showPreferences(window) {
   } catch(e) { }
 
   if (incontent) {
-    window.openUILinkIn('about:guiconfig', 'tab');
+    if (!focusTabWithURL('about:guiconfig')) {
+      window.openUILinkIn('about:guiconfig', 'tab');
+    }
   } else {
     if(dialog && !dialog.closed) {
       dialog.focus();
