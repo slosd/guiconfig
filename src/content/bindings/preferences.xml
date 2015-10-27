@@ -311,8 +311,8 @@
           searchSelector.disabled = true;
           searchSelector.style.visibility = 'hidden';
 
-          self.addEventListener('load', function runScript() {
-            self.removeEventListener('load', runScript);
+          window.addEventListener('load', function runScript() {
+            window.removeEventListener('load', runScript);
             var event = document.createEvent("Events");
             event.initEvent('paneload', true, true);
             prefPane.dispatchEvent(event);
