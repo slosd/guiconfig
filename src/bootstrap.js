@@ -11,6 +11,7 @@ Cm.QueryInterface(Ci.nsIComponentRegistrar);
 Cu.import('resource://gre/modules/Services.jsm');
 Cu.import('resource://gre/modules/XPCOMUtils.jsm');
 
+const GC_MODULE_GUICONFIG = 'chrome://guiconfig/content/guiconfig.js';
 const GC_MODULE_BROWSER = 'chrome://guiconfig/content/browser.js';
 const GC_UI_PAGE = 'chrome://guiconfig/content/preferences-page.xul';
 
@@ -72,6 +73,9 @@ function uninstall(data, reason) {
 }
 
 function startup(data, reason) {
+  Cu.unload(GC_MODULE_GUICONFIG);
+  Cu.unload(GC_MODULE_BROWSER);
+
   forEachWindow(loadIntoWindow);
   Services.wm.addListener(WindowListener);
 
@@ -102,6 +106,7 @@ function shutdown(data, reason) {
   }
 
   Cm.unregisterFactory(AboutGuiconfig.prototype.classID, AboutGuiconfigFactory);
+  Cu.unload(GC_MODULE_GUICONFIG);
   Cu.unload(GC_MODULE_BROWSER);
 }
 
