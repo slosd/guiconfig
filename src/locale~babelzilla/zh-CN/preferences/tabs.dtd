@@ -19,6 +19,8 @@
 <!ENTITY browser_tabs_animate_description "在标签页重新整理和拖拽时显示打开新标签页的动态效果。">
 <!ENTITY browser_panorama_animate_zoom_name "动态显示 Panorama 缩放">
 <!ENTITY browser_panorama_animate_zoom_description "打开/关闭标签页 Panorama 视图时启用动态效果（CTRl-E）。">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "显示音频图标">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "对正在播放声音的标签页显示一个图标">
 <!ENTITY browser_tabs_closeButtons_name "标签页关闭按钮显示在：">
 <!ENTITY browser_tabs_closeButtons_description "指定是否显示标签页的关闭按钮。">
 <!ENTITY browser_tabs_closeButtons_o1 "当前标签页上">

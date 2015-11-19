@@ -34,11 +34,8 @@
 <!ENTITY webgl_enabled_for_all_sites_name "WebGL inschakelen">
 <!ENTITY gfx_downloadable_fonts_enabled_name "In de website ingebouwde lettertypen downloaden">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Schakelt downloaden van CSS3-lettertypen die zijn ingebed met @font-face in. Herstart nodig.">
-<!ENTITY prompts_tab_modal_enabled_name "Tabbladschermen inschakelen (waarschuwingen)">
-<!ENTITY prompts_tab_modal_enabled_description "Bepaalt of de nieuwe tabbladschermen of de oude vensterschermen moeten worden gebruikt.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "DirectWrite inschakelen">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Schakelt hardwareversnelling in voor weergave van tekst (vereist Windows 7 of Windows Vista met Vista Platform Update).">
-<!ENTITY layout_frames_force_resizability_name "Aanpasbare frames afdwingen">
 <!ENTITY dom_max_script_run_time_name "Max. runtime scripts (sec)">
 <!ENTITY dom_max_script_run_time_description "Bepaalt het aantal seconden dat Firefox wacht voordat een waarschuwing wordt weergegeven dat een script te lang doet over uitvoering.">
 
@@ -68,6 +65,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Aanmeldformuliervelden automatisch invullen">
 <!ENTITY signon_prefillForms_description "Formuliervelden automatisch vullen met gebruikersnamen en wachtwoorden.">
+<!ENTITY prompts_tab_modal_enabled_name "Tabbladschermen inschakelen (waarschuwingen)">
+<!ENTITY prompts_tab_modal_enabled_description "Bepaalt of de nieuwe tabbladschermen of de oude vensterschermen moeten worden gebruikt.">
+<!ENTITY layout_frames_force_resizability_name "Aanpasbare frames afdwingen">
 <!ENTITY accessibility_tabfocus_name "Tabfocuselementen">
 <!ENTITY accessibility_tabfocus_description "Deze voorkeur bepaalt op welke elementen kunnen worden gefocust door op Tab te drukken.">
 <!ENTITY accessibility_tabfocus_o1 "Alleen aan tekstvelden focus geven">

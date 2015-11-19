@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "Kürzt das Protokoll (http) und abschließende Schrägstriche in Webadressen (URLs).">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Einzelnes Wort als Domain behandeln">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Anstatt ein einzelnes Wort mit der Standardsuchmaschine zu suchen, wird versucht das Wort in der URL-Leiste über DNS aufzulösen. Erleichtert den Zugriff auf Hosts im lokalen Netzwerk.">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Zeichen für Suchvorschläge">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximale Anzahl an Zeichen, die an die verwendete Suchmaschine gesendet werden, um Suchvorschläge zu erhalten.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Sitzung wiederherstellen">
@@ -149,6 +151,13 @@
 <!ENTITY browser_cache_memory_enable_description "Verwende den Memorycache.">
 <!ENTITY browser_cache_memory_capacity_name "Memorycache (KB)">
 <!ENTITY browser_cache_memory_capacity_description "Bestimmt die max. Größe des Memorycaches in Kilobyte.">
+
+<!-- Offline cache -->
+<!ENTITY cache_offline "Offline Cache">
+<!ENTITY browser_cache_offline_enable_name "Offline cache aktivieren">
+<!ENTITY browser_cache_offline_enable_description "Ist diese Option aktiviert, können Webseiten lokal Daten speichern wenn der Browser offline ist.">
+<!ENTITY browser_cache_offline_capacity_name "Offline Cache (KB)">
+<!ENTITY browser_cache_offline_capacity_description "Obergrenze an Speicher, der für den Offline Cache verwendet werden kann (in Kilobytes).">
 
 <!-- Misc -->
 <!ENTITY misc "Verschiedenes">

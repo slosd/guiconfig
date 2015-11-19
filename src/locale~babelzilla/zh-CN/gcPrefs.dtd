@@ -1,2 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "恢复前提示">
 <!ENTITY prefs.todefault.ask "恢复默认值前提示">
+<!ENTITY prefs.inContent.title "在标签页中打开“高级设置”">
+<!ENTITY prefs.inContent "在一个标签页而非窗口中打开“高级设置”">

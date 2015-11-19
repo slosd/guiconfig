@@ -34,11 +34,8 @@
 <!ENTITY webgl_enabled_for_all_sites_name "啟用 WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "下載網頁內嵌的字型">
 <!ENTITY gfx_downloadable_fonts_enabled_description "啟用以@font-face內嵌的CSS3字型下載。需要重新啟動FF才能生效。">
-<!ENTITY prompts_tab_modal_enabled_name "啟用分頁式提示（警告）">
-<!ENTITY prompts_tab_modal_enabled_description "確認是否要使用新的分頁式提示或舊的視窗式的提示。">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "啟用直接寫入">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "對文字顯示啟用硬體加速.(作業系統需為 Windows 7 或做過 Vista平台更新的 Vista)">
-<!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
 <!ENTITY dom_max_script_run_time_name "最大的指令稿執行時間（秒）">
 <!ENTITY dom_max_script_run_time_description "確認 Firefox 要在指令稿執行多久之後警告，以秒數表示。">
 
@@ -68,6 +65,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "自動填妥&quot;登入&quot;表格欄">
 <!ENTITY signon_prefillForms_description "自動填妥各種&quot;登入&quot;表格欄中的使用者名稱以及密碼。">
+<!ENTITY prompts_tab_modal_enabled_name "啟用分頁式提示（警告）">
+<!ENTITY prompts_tab_modal_enabled_description "確認是否要使用新的分頁式提示或舊的視窗式的提示。">
+<!ENTITY layout_frames_force_resizability_name "強制頁框大小變成可調整">
 <!ENTITY accessibility_tabfocus_name "可用Tab鍵聚焦(游標會停駐)的元件">
 <!ENTITY accessibility_tabfocus_description "此選項決定哪些元件可以用按Tab鍵來聚焦">
 <!ENTITY accessibility_tabfocus_o1 "只有文字鍵入區">

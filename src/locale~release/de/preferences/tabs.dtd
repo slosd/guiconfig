@@ -19,8 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Aktiviert Animationen wenn ein neuer Tab geöffnet wird, wenn Tabs verschoben werden und wenn ein Tab von der Tableiste gezogen wird.">
 <!ENTITY browser_panorama_animate_zoom_name "Animiere Panorama Zoom">
 <!ENTITY browser_panorama_animate_zoom_description "Aktiviert die Animation beim Öffnen und Schließen der Panorama-Ansicht Ihrer Tabs (mit STRG-E).">
-<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
-<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Audiosymbol anzeigen">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Ein Symbol in Tabs anzeigen, die Ton abspielen.">
 <!ENTITY browser_tabs_closeButtons_name "&quot;Schließen&quot; Schaltflächen anzeigen">
 <!ENTITY browser_tabs_closeButtons_description "Bestimmt wo Schaltflächen zum Schließen von Tabs angezeigt werden sollen.">
 <!ENTITY browser_tabs_closeButtons_o1 "nur im aktiven Tab">

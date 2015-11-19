@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "Pokud je povoleno, v adresním řádku se nebude vypisovat protokol (http) a ǘvodní lomítka.">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "Považovat jediné slovo za název domény">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "Místo toho, aby se jediné slovo zadané do adresního řádku hledalo pomocí vyhledávače, se toto slovo nejprve zkusí vyhledat v DNS. To je užitečné při přístupu na servery v místní síti.">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "Znaky pro našeptávání">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "Maximální počet znaků posílaný aktuálnímu vyhledávači kvůli našeptávání.">
 
 <!-- Session restore -->
 <!ENTITY session_restore "Obnova relace">
@@ -77,7 +79,7 @@
 <!ENTITY extensions "Rozšíření">
 <!ENTITY getaddons "Panel „Získat nové doplňky“">
 <!ENTITY extensions_alwaysUnpack_name "Vždy rozbalovat rozšíření">
-<!ENTITY extensions_alwaysUnpack_description "Je-li povoleno, jsou rozšíření během instalace rozbalena do složky profilu.">
+<!ENTITY extensions_alwaysUnpack_description "Pokud je povoleno, jsou rozšíření během instalace rozbalena do složky profilu.">
 <!ENTITY extensions_checkCompatibility_name "Zapnout kontrolu kompatibility rozšíření">
 <!ENTITY extensions_checkCompatibility_description "Tato předvolba umožňuje vypnout kontrolu kompatibility rozšíření.">
 <!ENTITY extensions_getAddons_maxResults_name "Max. výsledků vyhledávání">
@@ -150,6 +152,13 @@
 <!ENTITY browser_cache_memory_capacity_name "Vyrovnávací paměť v paměti (kB)">
 <!ENTITY browser_cache_memory_capacity_description "Nastaví maximum RAM použitelné pro vyrovnávací paměť (v kB).">
 
+<!-- Offline cache -->
+<!ENTITY cache_offline "Offline vyrovnávací paměť">
+<!ENTITY browser_cache_offline_enable_name "Povolit offline vyrovnávací paměť">
+<!ENTITY browser_cache_offline_enable_description "Pokud je povoleno, stránky budou moci ukládat data na dobu, kdy bude prohlížeč offline.">
+<!ENTITY browser_cache_offline_capacity_name "Offline vyrovnávací paměť (kB)">
+<!ENTITY browser_cache_offline_capacity_description "Offline vyrovnávací paměť se použije až do určené kapacity (v kilobajtech).">
+
 <!-- Misc -->
 <!ENTITY misc "Různé">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "Max. počet stránek v paměti">
@@ -158,7 +167,7 @@
 <!-- Taskbar -->
 <!ENTITY taskbar "Lišta úloh">
 <!ENTITY browser_taskbar_previews_enable_name "Povolit náhledy v liště úloh ve Windows 7">
-<!ENTITY browser_taskbar_previews_enable_description "Je-li povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
+<!ENTITY browser_taskbar_previews_enable_description "Pokud je povoleno, Firefox zobrazí náhled pro každý panel v liště úloh ve Windows 7.">
 <!ENTITY browser_taskbar_previews_max_name "Max. počet náhledů panelu">
 <!ENTITY browser_taskbar_previews_max_description "Pokud počet náhledů dosáhne této hodnoty, náhledy budou úplně zakázány.">
 <!ENTITY browser_taskbar_previews_cachetime_name "Čas vypršení mezipaměti (s)">
@@ -166,11 +175,11 @@
 <!ENTITY browser_taskbar_lists_enabled_name "Povolit seznam odkazů">
 <!ENTITY browser_taskbar_lists_enabled_description "Povolí v hlavním panelu Windows položky nabídky vyvolané klepnutím pravým tlačítkem.">
 <!ENTITY browser_taskbar_lists_tasks_enabled_name "Zobrazit úlohy">
-<!ENTITY browser_taskbar_lists_tasks_enabled_description "Je-li povoleno, seznam odkazů bude obsahovat položky pro otevírání nových panelů, oken a anonymních oken.">
+<!ENTITY browser_taskbar_lists_tasks_enabled_description "Pokud je povoleno, seznam odkazů bude obsahovat položky pro otevírání nových panelů, oken a anonymních oken.">
 <!ENTITY browser_taskbar_lists_frequent_enabled_name "Zobrazit časté webové stránky">
-<!ENTITY browser_taskbar_lists_frequent_enabled_description "Je-li povoleno, seznam odkazů bude obsahovat položky pro přechod na nejčastěji navštěvované stránky.">
+<!ENTITY browser_taskbar_lists_frequent_enabled_description "Pokud je povoleno, seznam odkazů bude obsahovat položky pro přechod na nejčastěji navštěvované stránky.">
 <!ENTITY browser_taskbar_lists_recent_enabled_name "Zobrazit poslední webové stránky">
-<!ENTITY browser_taskbar_lists_recent_enabled_description "Je-li povoleno, seznam odkazů bude obsahovat položky pro přechod na naposledy navštívené webové stránky.">
+<!ENTITY browser_taskbar_lists_recent_enabled_description "Pokud je povoleno, seznam odkazů bude obsahovat položky pro přechod na naposledy navštívené webové stránky.">
 <!ENTITY browser_taskbar_lists_maxListItemCount_name "Max. počet položek seznamu odkazů">
 <!ENTITY browser_taskbar_lists_maxListItemCount_description "Maximální počet položek v seznamu odkazů pro určitou sekci (časté a poslední webové stránky).">
 <!ENTITY browser_taskbar_lists_refreshInSeconds_name "Čas aktualizace (sekundy)">

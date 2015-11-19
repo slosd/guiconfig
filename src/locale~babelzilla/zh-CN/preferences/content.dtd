@@ -28,17 +28,18 @@
 <!ENTITY content_notify_interval_description "Firefox定期渲染从特定网站收到的全部数据，这个值决定了每次渲染的最小时间片，较低的数值会在观感上加快渲染速度，但是会拖慢整体渲染速度。（微秒 µs 10e-6）">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "启用跟踪保护">
+<!ENTITY privacy_trackingprotection_enabled_description "跟踪保护功能会基于一个屏蔽列表屏蔽特定内容。这可以阻止第三方服务器跟踪用户，但也可能削弱网站的功能。">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "启用隐私浏览模式中的跟踪保护">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "跟踪保护功能会基于一个屏蔽列表屏蔽特定内容。这可以阻止第三方服务器跟踪用户，但也可能削弱网站的功能。">
 <!ENTITY media_autoplay_enabled_name "启用自动播放媒体">
 <!ENTITY geo_enabled_name "启用地理位置定位浏览">
 <!ENTITY geo_enabled_description "如果启用该项，当你想要告诉网站你目前所处位置时 Firefox 将自动弹出提示。禁用该选项则完全关闭此项功能。">
 <!ENTITY webgl_enabled_for_all_sites_name "启用 WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "下载网站内嵌的字体">
 <!ENTITY gfx_downloadable_fonts_enabled_description "允许下载使用 @font-face 属性内嵌到网站的 CSS3 字体。启用该功能需要重启浏览器。">
-<!ENTITY prompts_tab_modal_enabled_name "启用标签式模态提示对话框">
-<!ENTITY prompts_tab_modal_enabled_description "指定使用新的标签式模提示对话框还是旧的窗口式对话框">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "启用 DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "启用硬件加速显示文本。（需要 Windows 7 或包含 Vista 平台有关更新的 Windows Vista）">
-<!ENTITY layout_frames_force_resizability_name "强制网页框架可改变大小">
 <!ENTITY dom_max_script_run_time_name "脚本可执行的最长时间（秒）">
 <!ENTITY dom_max_script_run_time_description "指定在多少秒之后 Firefox 提示您当前某个脚本运行时间太长。">
 
@@ -68,6 +69,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "自动填充登录表元素">
 <!ENTITY signon_prefillForms_description "自动填充用户名和密码。">
+<!ENTITY prompts_tab_modal_enabled_name "启用标签式模态提示对话框">
+<!ENTITY prompts_tab_modal_enabled_description "指定使用新的标签式模提示对话框还是旧的窗口式对话框">
+<!ENTITY layout_frames_force_resizability_name "强制网页框架可改变大小">
 <!ENTITY accessibility_tabfocus_name "按 Tab 键时定位到：">
 <!ENTITY accessibility_tabfocus_description "该项用于指定按 Tab 键时所要定位到的元素。">
 <!ENTITY accessibility_tabfocus_o1 "仅文本框">

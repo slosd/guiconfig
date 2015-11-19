@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "启用该项后，地址栏会自动隐藏 http:// 这样的协议名。">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "将单个词视为域名">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "而不是使用默认搜索引擎搜索单个词。首先尝试使用 DNS 解析网址栏中的单个词。常用于访问本地网络上的主机。">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "搜索建议的字符数">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "最多发送多少个字符到当前的搜索引擎以获取搜索建议。">
 
 <!-- Session restore -->
 <!ENTITY session_restore "浏览会话恢复">
@@ -149,6 +151,13 @@
 <!ENTITY browser_cache_memory_enable_description "使用指定大小的内存缓冲。">
 <!ENTITY browser_cache_memory_capacity_name "内存缓冲(KB)">
 <!ENTITY browser_cache_memory_capacity_description "设置内存缓冲的最大内存占用（单位：KB）。">
+
+<!-- Offline cache -->
+<!ENTITY cache_offline "离线缓存">
+<!ENTITY browser_cache_offline_enable_name "启用离线缓存">
+<!ENTITY browser_cache_offline_enable_description "如果启用，网站可以存储数据以供浏览器离线时使用。">
+<!ENTITY browser_cache_offline_capacity_name "离线缓存 (KB)">
+<!ENTITY browser_cache_offline_capacity_description "离线缓存最多使用多少空间（单位 KB）。">
 
 <!-- Misc -->
 <!ENTITY misc "其他">

@@ -29,7 +29,6 @@
 <!ENTITY gfx_downloadable_fonts_enabled_description "Habilita la descarga de fuentes CSS3 que están incluidas usando @font-face.Requiere reiniciar.">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Habilitar DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Habilita la aceleración hardware para mostrar texto. (requiere Windows 7 o Windows Vista con la actualización de la plataforma Vista)">
-<!ENTITY layout_frames_force_resizability_name "Forzar los marcos a ser redimensionables">
 <!ENTITY dom_max_script_run_time_name "Tiempo máximo de scripts (seg)">
 <!ENTITY dom_max_script_run_time_description "Determina el número de segundos tras los cuales Firefox alerta de que un script está tardando mucho en ejecutarse.">
 
@@ -51,6 +50,7 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Auto completar los campos de formulario de nombres de usuario">
 <!ENTITY signon_prefillForms_description "Complementar automáticamente los formularios con nombres de usuario y contraseñas.">
+<!ENTITY layout_frames_force_resizability_name "Forzar los marcos a ser redimensionables">
 <!ENTITY accessibility_tabfocus_name "Foco con el tabulador">
 <!ENTITY accessibility_tabfocus_description "Esta opción determina qué elementos pueden obtener el foco al pulsar el tabulador.">
 <!ENTITY accessibility_tabfocus_o1 "Dar el foco sólo a los cuadros de texto">

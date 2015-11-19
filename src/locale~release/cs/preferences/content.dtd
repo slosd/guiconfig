@@ -28,10 +28,10 @@
 <!ENTITY content_notify_interval_description "Firefox pravidelně vykresluje všechna data, která pro stránku obdrží. Tato předvolba stanovuje minimální dobu v mikrosekundách, kterou bude čekat mezi překreslováním stránky. Nižší hodnoty způsobí, že se načítání stránky bude zdát rychlejší, ale celkový čas načítání se zvýší.">
 
 <!-- Misc -->
-<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
-<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
-<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Enable tracking protection for private browsing">
-<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
+<!ENTITY privacy_trackingprotection_enabled_name "Povolit ochranu proti sledování">
+<!ENTITY privacy_trackingprotection_enabled_description "Ochrana proti sledování blokuje podle daného seznamu určitý obsah. To může zabránit tomu, aby servery třetích stran sledovaly uživatele, ale také může zhoršit funkčnost stránek.">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Povolit ochranu proti sledování u anonymního prohlížení">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Ochrana proti sledování blokuje podle daného seznamu určitý obsah. To může zabránit tomu, aby servery třetích stran sledovaly uživatele, ale také může zhoršit funkčnost stránek.">
 <!ENTITY media_autoplay_enabled_name "Povolit automatické přehrávání multimédií">
 <!ENTITY geo_enabled_name "Povolit prohlížení s určováním polohy">
 <!ENTITY geo_enabled_description "Pokud je povoleno, Firefox se smí zeptat, zda oznámit navštěvované stránce místo, kde se nacházíte. Zakázání této možnosti tuto vlastnost zcela vypne.">

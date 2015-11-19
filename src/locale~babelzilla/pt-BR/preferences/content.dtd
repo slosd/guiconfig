@@ -34,11 +34,8 @@
 <!ENTITY webgl_enabled_for_all_sites_name "Ativar WebGL">
 <!ENTITY gfx_downloadable_fonts_enabled_name "Baixar fontes usadas nos sites">
 <!ENTITY gfx_downloadable_fonts_enabled_description "Permite que o navegador baixe, se for preciso, fontes definidas nas páginas pelo comando CSS3 &quot;@font-face&quot;.">
-<!ENTITY prompts_tab_modal_enabled_name "Ativar mensagens dos sites dentro da aba">
-<!ENTITY prompts_tab_modal_enabled_description "Determina se as mensagens dos sites devem ser exibidas dentro da própria aba (novo) ou em uma janela separada (modo antigo).">
 <!ENTITY gfx_font_rendering_directwrite_enabled_name "Ativar DirectWrite">
 <!ENTITY gfx_font_rendering_directwrite_enabled_description "Ativa aceleração por hardware para exibição de texto (necessário Windows 7 ou Windows Vista com Platform Update).">
-<!ENTITY layout_frames_force_resizability_name "Forçar que sejam redimensionáveis">
 <!ENTITY dom_max_script_run_time_name "Tempo máximo para execução de scripts (s):">
 <!ENTITY dom_max_script_run_time_description "Determina o número de segundos após o qual o Firefox avisa que um script está levando muito tempo para executar.">
 
@@ -60,6 +57,9 @@
 <!-- Misc -->
 <!ENTITY signon_prefillForms_name "Preencher automaticamente nomes de usuário e senhas">
 <!ENTITY signon_prefillForms_description "Preenche automaticamente o nome de usuário e a senha em sites para os quais o Firefox tenha só uma credencial memorizada. Desmarque para que mesmo nesses sites a senha seja preenchida somente após o nome de usuário correspondente ter sido digitado.">
+<!ENTITY prompts_tab_modal_enabled_name "Ativar mensagens dos sites dentro da aba">
+<!ENTITY prompts_tab_modal_enabled_description "Determina se as mensagens dos sites devem ser exibidas dentro da própria aba (novo) ou em uma janela separada (modo antigo).">
+<!ENTITY layout_frames_force_resizability_name "Forçar que sejam redimensionáveis">
 <!ENTITY accessibility_tabfocus_name "Tab focaliza:">
 <!ENTITY accessibility_tabfocus_description "Especifica entre quais itens da página o foco é alternado ao se pressionar a tecla Tab. Os demais itens somente poderão receber foco via clique ou com a função de cursor de teclado.">
 <!ENTITY accessibility_tabfocus_o1 "somente campos de texto">

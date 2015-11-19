@@ -19,8 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Povolí animaci při otevírání nového panelu, přeskupování panelů a přesunu panelu do nového okna.">
 <!ENTITY browser_panorama_animate_zoom_name "Animovat přiblížení Panorama">
 <!ENTITY browser_panorama_animate_zoom_description "Povolí animace při otevírání/zavírání zobrazení panelů zvaného Panorama (při CTRL-E).">
-<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
-<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Zobrazit ikonu zvuku">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Zobrazí ikonu na panelech, které přehrávají zvuk">
 <!ENTITY browser_tabs_closeButtons_name "Tlačítka pro zavření panelů jsou zobrazena">
 <!ENTITY browser_tabs_closeButtons_description "Určuje, zda zobrazovat tlačítka pro zavření.">
 <!ENTITY browser_tabs_closeButtons_o1 "jen na aktivním panelu">
