@@ -276,6 +276,7 @@
     <implementation>
       <constructor>
       <![CDATA[
+        Components.utils.import('resource://gre/modules/Services.jsm');
         Components.utils.import('chrome://guiconfig/content/guiconfig.js');
 
         this._infoBox = document.getAnonymousElementByAttribute(this, 'anonid', 'info-box');
@@ -286,6 +287,12 @@
 
         // In-content is always instant-apply
         document.documentElement.instantApply = true;
+
+        // NOTE: For compatibility, remove eventually
+        var appVersion = Services.appinfo.version;
+        if (Services.vc.compare(appVersion, '41a1') < 0) {
+          this.classList.add('ff-lt-41a');
+        }
 
         var self = this;
         var preferenceSource = this.getAttribute('source');

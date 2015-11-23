@@ -7,6 +7,10 @@
 }
 
 .menu {
-  background-color: #424f5a;
+  background-color: var(--in-content-category-background);
   padding-top: 39px;
+}
+
+.ff-lt-41a .menu {
+  background-color: #424f5a;
 }
