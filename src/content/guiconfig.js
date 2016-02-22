@@ -1,10 +1,5 @@
 var EXPORTED_SYMBOLS = [ 'guiconfig' ];
 
-const GC_DIALOG_XSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
-const GC_PAGE_XSLT = 'chrome://guiconfig/content/generators/preferences-page.xsl';
-const GC_SCRIPT_XSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
-const GC_SEARCH_XSLT = 'chrome://guiconfig/content/generators/preferences-search.xsl';
-
 var Cc = Components.classes;
 var Ci = Components.interfaces;
 
@@ -12,6 +7,17 @@ var RuntimeInfo = Cc['@mozilla.org/xre/app-info;1'].getService(Ci.nsIXULRuntime)
 var ApplicationInfo = Cc['@mozilla.org/xre/app-info;1'].getService(Ci.nsIXULAppInfo);
 var VersionComparator = Cc['@mozilla.org/xpcom/version-comparator;1'].getService(Ci.nsIVersionComparator);
 var XMLHttpRequest = Components.Constructor('@mozilla.org/xmlextras/xmlhttprequest;1', 'nsIXMLHttpRequest');
+
+const GC_DIALOG_XSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
+const GC_SCRIPT_XSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
+var GC_PAGE_XSLT, GC_SEARCH_XSLT;
+if (VersionComparator.compare(ApplicationInfo.version, "45.0a1") >= 0) {
+  GC_PAGE_XSLT = 'chrome://guiconfig/content/generators/preferences-page-bug1249572.xsl';
+  GC_SEARCH_XSLT = 'chrome://guiconfig/content/generators/preferences-search-bug1249572.xsl';
+} else {
+  GC_PAGE_XSLT = 'chrome://guiconfig/content/generators/preferences-page.xsl';
+  GC_SEARCH_XSLT = 'chrome://guiconfig/content/generators/preferences-search.xsl';
+}
 
 function isApplicationVersionBetween(minVersion, maxVersion) {
   return !(minVersion && VersionComparator.compare(ApplicationInfo.version, minVersion) == -1 ||
