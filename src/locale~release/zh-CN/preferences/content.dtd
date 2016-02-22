@@ -101,6 +101,10 @@
 <!ENTITY dom_event_contextmenu_enabled_description "允许脚本移除和替换网站上的右键菜单。">
 <!ENTITY dom_event_clipboardevents_enabled_name "与剪贴板互动">
 <!ENTITY dom_event_clipboardevents_enabled_description "允许脚本在用户使用剪贴板复制、剪切和粘贴网站内容时获得通知。">
+<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
+<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
 <!-- Window features -->
 <!ENTITY window_features "窗口特性">

@@ -101,6 +101,10 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Allow scripts to remove and/or replace the context menu on websites.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interact with the clipboard">
 <!ENTITY dom_event_clipboardevents_enabled_description "Allow scripts to get notified when the user uses the clipboard to copy, cut and paste website content.">
+<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
+<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
 <!-- Window features -->
 <!ENTITY window_features "Window features">

@@ -101,6 +101,10 @@
 <!ENTITY dom_event_contextmenu_enabled_description "允許指令稿移除及／或取代在網頁上的右鍵選單。">
 <!ENTITY dom_event_clipboardevents_enabled_name "與剪貼簿互動">
 <!ENTITY dom_event_clipboardevents_enabled_description "允許指令稿在使用者使用剪貼簿來複製、剪下及貼上網頁內容時被通知。">
+<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
+<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
 <!-- Window features -->
 <!ENTITY window_features "視窗功能">

@@ -101,6 +101,10 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Scripts toestaan contextmenu’s op websites te verwijderen en/of te vervangen.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interactie met het klembord">
 <!ENTITY dom_event_clipboardevents_enabled_description "Scripts toestaan een bericht te krijgen wanneer de gebruiker het klembord gebruikt om inhoud van de website te kopiëren, knippen en plakken.">
+<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
+<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
 <!-- Window features -->
 <!ENTITY window_features "Vensterfuncties">

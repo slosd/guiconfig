@@ -101,6 +101,10 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Erlaubt Skripten auf Webseiten das Kontextmenü zu deaktivieren oder zu ersetzen.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Ereignisse der Zwischenablage">
 <!ENTITY dom_event_clipboardevents_enabled_description "Erlaubt Skripten benachrichtigt zu werden, wenn auf einer Webseite Inhalt kopiert, ausgeschnitten oder eingefügt wird.">
+<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
+<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
 <!-- Window features -->
 <!ENTITY window_features "Fenstereigenschaften">

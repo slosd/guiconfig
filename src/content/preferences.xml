@@ -628,6 +628,19 @@
                 type="bool">
             <dependency key="javascript.enabled" equals="true" />
           </pref>
+          <pref key="dom.disable_window_status_change"
+                label="&dom_disable_window_status_change_name;"
+                description="&dom_disable_window_status_change_description;"
+                inverted="inverted"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
+          <pref key="dom.allow_scripts_to_close_windows"
+                label="&dom_allow_scripts_to_close_windows_name;"
+                description="&dom_allow_scripts_to_close_windows_description;"
+                type="bool">
+            <dependency key="javascript.enabled" equals="true" />
+          </pref>
         </group>
         <group label="&window_features;" description="&window_features_description;">
           <pref key="dom.disable_window_open_feature.menubar"

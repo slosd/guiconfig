@@ -101,6 +101,10 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Tillåter skript att ta bort och/eller ersätta snabbmenyn på webbplatser.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interagera med Urklipp">
 <!ENTITY dom_event_clipboardevents_enabled_description "Tillåter att skript meddelas när användaren använder Urklipp för att kopiera, klippa ut och klistra in webbsideinnehåll.">
+<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
+<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
 <!-- Window features -->
 <!ENTITY window_features "Window features">
