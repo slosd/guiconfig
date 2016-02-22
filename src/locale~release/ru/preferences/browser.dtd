@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Расширения">
 <!ENTITY getaddons "Панель «Поиск дополнений»">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Всегда распаковывать расширения">
 <!ENTITY extensions_alwaysUnpack_description "Если включено, во время установки расширения будут распаковаться в папку вашего профиля.">
 <!ENTITY extensions_checkCompatibility_name "Включить проверку расширений на совместимость">

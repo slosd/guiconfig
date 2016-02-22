@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Extensions">
 <!ENTITY getaddons "&quot;Get Add-ons&quot; pane">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Always unpack extensions">
 <!ENTITY extensions_alwaysUnpack_description "If enabled, extensions are unpacked in your profile folder during the installation. ">
 <!ENTITY extensions_checkCompatibility_name "Enable extension compatibility checking">

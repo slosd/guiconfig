@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Rozszerzenia">
 <!ENTITY getaddons "Panel &quot;Pobierz rozszerzenia&quot;">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Zawsze rozpakowuj rozszerzenia">
 <!ENTITY extensions_alwaysUnpack_description "Gdy to ustawienie jest włączone, rozszerzenia są rozpakowywane do katalogu Twojego profilu podczas ich instalacji.">
 <!ENTITY extensions_checkCompatibility_name "Włącz sprawdzanie zgodności rozszerzeń">

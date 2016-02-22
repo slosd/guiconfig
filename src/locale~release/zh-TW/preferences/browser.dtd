@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "附加元件">
 <!ENTITY getaddons "&quot;取得元件&quot;側頁">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "附加元件一律予以解壓縮">
 <!ENTITY extensions_alwaysUnpack_description "啟用時, 附加元件安裝過程中一律予以解壓縮到 profile資料夾.">
 <!ENTITY extensions_checkCompatibility_name "啟用元件相容性檢查">

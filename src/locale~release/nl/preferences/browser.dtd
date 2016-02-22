@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Extensies">
 <!ENTITY getaddons "Paneel “Add-ons verkrijgen”">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Extensies altijd uitpakken">
 <!ENTITY extensions_alwaysUnpack_description "Indien ingeschakeld worden extensie in uw profielfolder uitgepakt tijdens de installatie.">
 <!ENTITY extensions_checkCompatibility_name "Compatibiliteitscontrole van extensies inschakelen">

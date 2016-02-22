@@ -70,7 +70,7 @@
               label="&browser_urlbar_restrict_typed_name;"
               description="&browser_urlbar_restrict_typed_description;"
               type="bool"
-              minVersion="36a" />
+              minVersion="36.0a" />
         <pref key="browser.urlbar.matchBehavior"
               label="&browser_urlbar_matchBehavior_name;"
               description="&browser_urlbar_matchBehavior_description;"
@@ -101,7 +101,7 @@
               label="&browser_fixup_dns_first_for_single_words_name;"
               description="&browser_fixup_dns_first_for_single_words_description;"
               type="bool"
-              minVersion="36a" />
+              minVersion="36.0a" />
         <pref key="browser.fixup.alternate.enabled"
               label="&browser_fixup_alternate_enabled_name;"
               description="&browser_fixup_alternate_enabled_description;"
@@ -236,6 +236,14 @@
                 type="int" />
         </group>
         <group label="&installation;">
+          <!-- maxVersion has to have a high minor version since "46.*a*" does
+               not produce the expected result with nsIVersionComparator. -->
+          <pref key="xpinstall.signatures.required"
+                label="&xpinstall_signatures_required_name;"
+                description="&xpinstall_signatures_required_description;"
+                type="bool"
+                minVersion="40.0a"
+                maxVersion="46.99a*" />
           <pref key="security.dialog_enable_delay"
                 label="&security_dialog_enable_delay_name;"
                 description="&security_dialog_enable_delay_description;"

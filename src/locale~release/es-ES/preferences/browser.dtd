@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Extensiones">
 <!ENTITY getaddons "Panel &quot;Obtener complementos&quot;">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Descomprimir siempre las extensiones">
 <!ENTITY extensions_alwaysUnpack_description "Si se habilita, las extensiones se descomprimerán en la carpeta del perfil durante la instalación">
 <!ENTITY extensions_checkCompatibility_name "Habilitar la comprobación de compatibilidad de extensiones">

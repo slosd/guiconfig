@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Tillägg">
 <!ENTITY getaddons "&quot;Hämta tillägg&quot;-panelen">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Packa alltid upp tillägg">
 <!ENTITY extensions_alwaysUnpack_description "Om det här alternativet är aktiverat packas tillägg upp till din profilmapp under installationen.">
 <!ENTITY extensions_checkCompatibility_name "Aktivera kompatibilitetskontroll av tillägg">

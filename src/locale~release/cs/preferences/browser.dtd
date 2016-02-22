@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "Rozšíření">
 <!ENTITY getaddons "Panel „Získat nové doplňky“">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "Vždy rozbalovat rozšíření">
 <!ENTITY extensions_alwaysUnpack_description "Pokud je povoleno, jsou rozšíření během instalace rozbalena do složky profilu.">
 <!ENTITY extensions_checkCompatibility_name "Zapnout kontrolu kompatibility rozšíření">

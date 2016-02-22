@@ -78,6 +78,8 @@
 <!-- Extensions -->
 <!ENTITY extensions "扩展">
 <!ENTITY getaddons "“获取附加组件”面板">
+<!ENTITY xpinstall_signatures_required_name "Require signed extensions">
+<!ENTITY xpinstall_signatures_required_description "Require extensions to be signed by Mozilla.">
 <!ENTITY extensions_alwaysUnpack_name "总是解压缩显示扩展">
 <!ENTITY extensions_alwaysUnpack_description "如果启用该项，则扩展在安装时将解压缩到您的配置文件夹。">
 <!ENTITY extensions_checkCompatibility_name "打开扩展兼容性检查">
