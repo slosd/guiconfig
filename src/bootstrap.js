@@ -57,8 +57,9 @@ AboutGuiconfig.prototype = Object.freeze({
     return Ci.nsIAboutModule.ALLOW_SCRIPT;
   },
 
-  newChannel: function(aURI) {
-    var channel = Services.io.newChannel(GC_UI_PAGE, null, null);
+  newChannel: function(aURI, aLoadInfo) {
+    var uri = Services.io.newURI(GC_UI_PAGE, null, null);
+    var channel = Services.io.newChannelFromURIWithLoadInfo(uri, aLoadInfo);
     channel.originalURI = aURI;
     return channel;
   }
