@@ -55,14 +55,14 @@
         <description><xsl:value-of select="@description" /></description>
       </xsl:if>
       <xsl:choose>
-        <xsl:when test="count(p:pref) > 3 and count(p:pref) = count(*) and count(set:distinct(p:pref/@type)) = 1 and p:pref/@type = 'bool'">
-          <xsl:variable name="half" select="ceiling(count(p:pref) div 2)" />
+        <xsl:when test="count(p:pref) > 3 and count(p:pref) = count(*) and count(set:distinct(p:pref/@type)) = 1 and p:pref/@type = 'bool' or count(p:checkbox) > 3 and count(p:checkbox) = count(*)">
+          <xsl:variable name="half" select="ceiling(count(*) div 2)" />
           <hbox>
             <vbox flex="1">
-              <xsl:apply-templates select="p:pref[position() &lt;= $half]" />
+              <xsl:apply-templates select="*[position() &lt;= $half]" />
             </vbox>
             <vbox flex="1">
-              <xsl:apply-templates select="p:pref[position() &gt; $half]" />
+              <xsl:apply-templates select="*[position() &gt; $half]" />
             </vbox>
           </hbox>
         </xsl:when>
