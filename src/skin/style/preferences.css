@@ -34,6 +34,14 @@ groupbox description {
   font-style: italic;
 }
 
+.main-content {
+  /* NOTE: Weird behavior
+   * overflow: auto in chrome://global/skin/in-content/common.css
+   * causes colorpicker popup inside .main-content to not be selectable
+   * with a left mouse click */
+  overflow: visible;
+}
+
 .header.merged {
   border-bottom: none;
   padding-bottom: 0;
