@@ -106,6 +106,17 @@
 <!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
 <!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
 
+<!-- Popups allowed events -->
+<!ENTITY dom_popup_allowed_events_name "Popups">
+<!ENTITY dom_popup_allowed_events_description "Select which events can open a popup window">
+<!ENTITY javascript_event_click "Mouse click">
+<!ENTITY javascript_event_dblclick "Mouse double click">
+<!ENTITY javascript_event_mousedown "Mouse button press">
+<!ENTITY javascript_event_mouseup "Mouse button release">
+<!ENTITY javascript_event_change "Form items changed">
+<!ENTITY javascript_event_reset "Form reset">
+<!ENTITY javascript_event_submit "Form submitted">
+
 <!-- Window features -->
 <!ENTITY window_features "Window features">
 <!ENTITY window_features_description "Select which features of new windows can be disabled">

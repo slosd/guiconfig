@@ -650,6 +650,46 @@
             <dependency key="javascript.enabled" equals="true" />
           </pref>
         </group>
+        <pref key="dom.popup_allowed_events"
+              label=""
+              description=""
+              type="string">
+          <dependency key="javascript.enabled" equals="true" />
+          <behavior>
+            <override name="setValue">
+            <![CDATA[
+              var enabled_events = value.split(' ');
+              var checkboxes = view.getElementsByTagName('checkbox');
+              for (var checkbox of checkboxes) {
+                checkbox.checked = enabled_events.indexOf(checkbox.getAttribute('value')) !== -1;
+              }
+            ]]>
+            </override>
+            <override name="getValue">
+              <![CDATA[
+              function filter(a, f) { return Array.prototype.filter.call(a, f); }
+              function map(a, f) { return Array.prototype.map.call(a, f); }
+
+              var checkboxes = view.getElementsByTagName('checkbox');
+              var events = map(checkboxes, c => c.getAttribute('value'))
+              var additional_events = value.split(' ').filter(v => events.indexOf(v) === -1);
+              var enabled_events = filter(checkboxes, c => c.checked).map(c => c.getAttribute('value'));
+              return enabled_events.concat(additional_events).join(' ');
+            ]]>
+            </override>
+          </behavior>
+          <view>
+            <group label="&dom_popup_allowed_events_name;" description="&dom_popup_allowed_events_description;">
+              <checkbox label="&javascript_event_click;" description="" value="click" />
+              <checkbox label="&javascript_event_dblclick;" description="" value="dblclick" />
+              <checkbox label="&javascript_event_mousedown;" description="" value="mousedown" />
+              <checkbox label="&javascript_event_mouseup;" description="" value="mouseup" />
+              <checkbox label="&javascript_event_change;" description="" value="change" />
+              <checkbox label="&javascript_event_reset;" description="" value="reset" />
+              <checkbox label="&javascript_event_submit;" description="" value="submit" />
+            </group>
+          </view>
+        </pref>
         <group label="&window_features;" description="&window_features_description;">
           <pref key="dom.disable_window_open_feature.menubar"
                 label="&dom_disable_window_open_feature_menubar_name;"
