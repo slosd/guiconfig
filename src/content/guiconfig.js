@@ -132,7 +132,7 @@ function runScriptSandboxed(document, script) {
 
         if (typeof behavior.getValue === 'function') {
           view.addEventListener('command', function() {
-            var value = behavior.getValue(view);
+            var value = behavior.getValue(view, pref.value);
             if (pref.value !== value) {
               pref.value = value;
             }
