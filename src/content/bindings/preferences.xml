@@ -523,11 +523,17 @@
       <method name="highlight">
         <body>
         <![CDATA[
-          this.classList.remove('highlight');
           var self = this;
-          setTimeout(function() {
-            self.classList.add('highlight');
-          }, 0);
+          var sy_highlight_timeout = Symbol.for('highlight_timeout');
+          var timeout = this[sy_highlight_timeout];
+          if (timeout) {
+            clearTimeout(timeout);
+            self.classList.remove('highlight');
+          }
+          self.classList.add('highlight');
+          this[sy_highlight_timeout] = setTimeout(function() {
+            self.classList.remove('highlight');
+          }, 1000);
         ]]>
         </body>
       </method>
