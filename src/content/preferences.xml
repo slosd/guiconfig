@@ -651,8 +651,8 @@
           </pref>
         </group>
         <pref key="dom.popup_allowed_events"
-              label=""
-              description=""
+              label="&dom_popup_allowed_events_name;"
+              description="&dom_popup_allowed_events_description;"
               type="string">
           <dependency key="javascript.enabled" equals="true" />
           <behavior>
