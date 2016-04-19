@@ -101,21 +101,21 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Erlaubt Skripten auf Webseiten das Kontextmenü zu deaktivieren oder zu ersetzen.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Ereignisse der Zwischenablage">
 <!ENTITY dom_event_clipboardevents_enabled_description "Erlaubt Skripten benachrichtigt zu werden, wenn auf einer Webseite Inhalt kopiert, ausgeschnitten oder eingefügt wird.">
-<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
-<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
-<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
-<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
+<!ENTITY dom_disable_window_status_change_name "Den Text der Statusleiste ändern">
+<!ENTITY dom_disable_window_status_change_description "Erlaubt Skripten den Text der Statusleiste zu ändern.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Fenster schließen">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Erlaubt Skripten Fenster zu schließen. Ist die Option deaktiviert, können Skripte nur Fenster schließen, die sie geöffnet haben.">
 
 <!-- Popups allowed events -->
 <!ENTITY dom_popup_allowed_events_name "Popups">
-<!ENTITY dom_popup_allowed_events_description "Select which events can open a popup window">
-<!ENTITY javascript_event_click "Mouse click">
-<!ENTITY javascript_event_dblclick "Mouse double click">
-<!ENTITY javascript_event_mousedown "Mouse button press">
-<!ENTITY javascript_event_mouseup "Mouse button release">
-<!ENTITY javascript_event_change "Form items changed">
-<!ENTITY javascript_event_reset "Form reset">
-<!ENTITY javascript_event_submit "Form submitted">
+<!ENTITY dom_popup_allowed_events_description "Wählen Sie welche Ereignisse ein Popup-Fenster öffnen können.">
+<!ENTITY javascript_event_click "Mausklick">
+<!ENTITY javascript_event_dblclick "Doppelklick">
+<!ENTITY javascript_event_mousedown "Mausklick halten">
+<!ENTITY javascript_event_mouseup "Mausklick loslassen">
+<!ENTITY javascript_event_change "Formular geändert">
+<!ENTITY javascript_event_reset "Formular zurückgesetzt">
+<!ENTITY javascript_event_submit "Formular abgeschickt">
 
 <!-- Window features -->
 <!ENTITY window_features "Fenstereigenschaften">

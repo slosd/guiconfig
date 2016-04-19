@@ -28,6 +28,10 @@
 <!ENTITY content_notify_interval_description "Firefox 定期將接收自網站的所有資料呈現一次。此選項指定兩次頁面重繪之間的最小等待時間量(以微秒計)。較小的數值可降低被察覺的載入時間但會增加整體的載入時間。">
 
 <!-- Misc -->
+<!ENTITY privacy_trackingprotection_enabled_name "啟用追蹤保護">
+<!ENTITY privacy_trackingprotection_enabled_description "追蹤保護是基於一份阻擋清單來阻擋內容。這可以阻止第三方似服器追蹤使用者，但可能會影響到一些網站的功能。">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "啟用在隱私瀏覽中的追蹤保護">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "追蹤保護是基於一份阻擋清單來阻擋內容。這可以阻止第三方似服器追蹤使用者，但可能會影響到一些網站的功能。">
 <!ENTITY media_autoplay_enabled_name "啟用媒體自動播放">
 <!ENTITY geo_enabled_name "啟用「位置敏感」瀏覽">
 <!ENTITY geo_enabled_description "啟用後，當您正在瀏覽的網站探查您所在位置時，Firefox可以提示您是否要告知對方此資訊。停用此選項將完全關閉此一功能。">
@@ -97,6 +101,19 @@
 <!ENTITY dom_event_contextmenu_enabled_description "允許指令稿移除及／或取代在網頁上的右鍵選單。">
 <!ENTITY dom_event_clipboardevents_enabled_name "與剪貼簿互動">
 <!ENTITY dom_event_clipboardevents_enabled_description "允許指令稿在使用者使用剪貼簿來複製、剪下及貼上網頁內容時被通知。">
+<!ENTITY dom_disable_window_status_change_name "變更狀態列文字">
+<!ENTITY dom_disable_window_status_change_description "允許指令稿變更狀態列文字。">
+<!ENTITY dom_allow_scripts_to_close_windows_name "關閉視窗">
+<!ENTITY dom_allow_scripts_to_close_windows_description "允許指令稿關閉視窗。如果這個選項被停用，指令稿就只能關閉由指令稿建立的視窗。">
+<!ENTITY dom_popup_allowed_events_name "彈出式視窗">
+<!ENTITY dom_popup_allowed_events_description "選取可以開啟彈出式視窗的事件">
+<!ENTITY javascript_event_click "滑鼠點選">
+<!ENTITY javascript_event_dblclick "滑鼠雙擊">
+<!ENTITY javascript_event_mousedown "按下滑鼠按鈕">
+<!ENTITY javascript_event_mouseup "放開滑鼠按鈕">
+<!ENTITY javascript_event_change "表單項目變更">
+<!ENTITY javascript_event_reset "表單重置">
+<!ENTITY javascript_event_submit "表單遞交">
 <!ENTITY window_features "視窗功能">
 <!ENTITY window_features_description "選取您要在新視窗中停用哪些功能">
 <!ENTITY dom_disable_window_open_feature_menubar_name "選單列">

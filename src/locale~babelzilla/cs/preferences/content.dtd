@@ -101,6 +101,19 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Umožní skriptům na webových stránkách odstraňovat a nahrazovat místní nabídku.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interakce se schránkou">
 <!ENTITY dom_event_clipboardevents_enabled_description "Umožní skriptům získávat informace o tom, že uživatel použil schránku ke zkopírování, vyjmutí či vložení obsahu webových stránek.">
+<!ENTITY dom_disable_window_status_change_name "Měnit text ve stavovém řádku">
+<!ENTITY dom_disable_window_status_change_description "Umožní skriptům měnit text ve stavovém řádku.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Zavírat okna">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Umožní skriptům zavírat okna. Pokud je tato možnost zakázána, skripty budou moci zavírat pouze okna skripty vytvořená.">
+<!ENTITY dom_popup_allowed_events_name "Vyskakovací okna">
+<!ENTITY dom_popup_allowed_events_description "Vyberte, které události mohou otevírat vyskakovací okna">
+<!ENTITY javascript_event_click "Klepnutí myší">
+<!ENTITY javascript_event_dblclick "Dvojklepnutí myší">
+<!ENTITY javascript_event_mousedown "Stisknutí tlačítka myši">
+<!ENTITY javascript_event_mouseup "Uvolnění tlačítka myši">
+<!ENTITY javascript_event_change "Změna položek formuláře">
+<!ENTITY javascript_event_reset "Vymazání formuláře">
+<!ENTITY javascript_event_submit "Odeslání formuláře">
 <!ENTITY window_features "Prvky okna">
 <!ENTITY window_features_description "Vyberte, které prvky nových oken lze zakázat">
 <!ENTITY dom_disable_window_open_feature_menubar_name "Hlavní nabídka">

@@ -28,10 +28,10 @@
 <!ENTITY content_notify_interval_description "Firefox verwerkt periodiek alle ontvangen gegevens van een website. Deze voorkeur geeft de minimale wachttijd voor opnieuw opmaken van de pagina in microseconden. Lagere waarden verlagen de ervaren laadtijd maar verhogen de totale laadtijd.">
 
 <!-- Misc -->
-<!ENTITY privacy_trackingprotection_enabled_name "Enable tracking protection">
-<!ENTITY privacy_trackingprotection_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
-<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Enable tracking protection for private browsing">
-<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Tracking protection blocks certain content based on a blocklist. This can stop third-party servers from tracking the user, but can also impair the functionality of websites.">
+<!ENTITY privacy_trackingprotection_enabled_name "Volgbescherming inschakelen">
+<!ENTITY privacy_trackingprotection_enabled_description "Volgbescherming blokkeert bepaalde inhoud op basis van een zwarte lijst. Hierdoor kunnen servers van derden de gebruiker niet volgen, maar het kan ook de functionaliteit van websites aantasten.">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_name "Volgbescherming voor privénavigatie inschakelen">
+<!ENTITY privacy_trackingprotection_pbmode_enabled_description "Volgbescherming blokkeert bepaalde inhoud op basis van een zwarte lijst. Hierdoor kunnen servers van derden de gebruiker niet volgen, maar het kan ook de functionaliteit van websites aantasten.">
 <!ENTITY media_autoplay_enabled_name "Automatisch afspelen van media inschakelen">
 <!ENTITY geo_enabled_name "Locatiebewust navigeren inschakelen">
 <!ENTITY geo_enabled_description "Indien ingeschakeld kan Firefox u vragen of u de bezochte website wilt vertellen waar u bent. Uitschakelen van deze optie schakelt deze functie geheel uit.">
@@ -101,21 +101,21 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Scripts toestaan contextmenu’s op websites te verwijderen en/of te vervangen.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interactie met het klembord">
 <!ENTITY dom_event_clipboardevents_enabled_description "Scripts toestaan een bericht te krijgen wanneer de gebruiker het klembord gebruikt om inhoud van de website te kopiëren, knippen en plakken.">
-<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
-<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
-<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
-<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
+<!ENTITY dom_disable_window_status_change_name "Statusbalktekst wijzigen">
+<!ENTITY dom_disable_window_status_change_description "Scripts toestaan de tekst in de statusbalk te wijzigen.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Vensters sluiten">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Scripts toestaan vensters te sluiten. Als de optie is uitgeschakeld kunnen scripts alleen door scripts geopende vensters sluiten.">
 
 <!-- Popups allowed events -->
-<!ENTITY dom_popup_allowed_events_name "Popups">
-<!ENTITY dom_popup_allowed_events_description "Select which events can open a popup window">
-<!ENTITY javascript_event_click "Mouse click">
-<!ENTITY javascript_event_dblclick "Mouse double click">
-<!ENTITY javascript_event_mousedown "Mouse button press">
-<!ENTITY javascript_event_mouseup "Mouse button release">
-<!ENTITY javascript_event_change "Form items changed">
-<!ENTITY javascript_event_reset "Form reset">
-<!ENTITY javascript_event_submit "Form submitted">
+<!ENTITY dom_popup_allowed_events_name "Pop-ups">
+<!ENTITY dom_popup_allowed_events_description "Selecteer welke gebeurtenissen een pop-upvenster kunnen openen">
+<!ENTITY javascript_event_click "Muisklik">
+<!ENTITY javascript_event_dblclick "Dubbele muisklik">
+<!ENTITY javascript_event_mousedown "Muisknop indrukken">
+<!ENTITY javascript_event_mouseup "Muisknop loslaten">
+<!ENTITY javascript_event_change "Formulieritems gewijzigd">
+<!ENTITY javascript_event_reset "Formulier leeggemaakt">
+<!ENTITY javascript_event_submit "Formulier ingediend">
 
 <!-- Window features -->
 <!ENTITY window_features "Vensterfuncties">

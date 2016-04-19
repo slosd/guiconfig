@@ -1,8 +1,8 @@
-<!ENTITY network "Network">
+<!ENTITY network "Мережа">
 
 <!-- Connections -->
-<!ENTITY connections "Connections">
-<!ENTITY network_http_max-connections_name "Max. HTTP connections">
+<!ENTITY connections "З'єднання">
+<!ENTITY network_http_max-connections_name "Maкс. HTTP з'єднань">
 <!ENTITY network_http_max-connections_description "This preference specifies the total number of connections Firefox can have open at once. This value has to be between 1 and 65535.">
 
 <!-- Keep-alive -->

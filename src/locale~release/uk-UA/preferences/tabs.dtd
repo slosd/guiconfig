@@ -1,9 +1,9 @@
-<!ENTITY tabs "Tabs">
+<!ENTITY tabs "Вкладки">
 <!ENTITY browser_tabs_tabClipWidth_name "Min. tab width for close buttons">
 <!ENTITY browser_tabs_tabClipWidth_description "Determines the minimum tab width necessary to display the close button. ">
 
 <!-- Tab preview -->
-<!ENTITY tab_preview "Tab preview">
+<!ENTITY tab_preview "Попередній перегляд вкладки">
 <!ENTITY browser_ctrlTab_preview_name "Enable tab preview when switching tabs">
 <!ENTITY browser_ctrlTab_preview_description "When using [CTRL]+[Tab] to switch tabs a tab preview is shown. ">
 
@@ -11,7 +11,7 @@
 <!ENTITY open_in_background "Open a new tab in the background from">
 <!ENTITY browser_tabs_loadDivertedInBackground_name "Links in external applications">
 <!ENTITY browser_tabs_loadInBackground_name "Links in websites">
-<!ENTITY browser_tabs_loadBookmarksInBackground_name "Bookmarks">
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Закладки">
 <!ENTITY browser_search_context_loadInBackground_name "Context menu search">
 
 <!-- Misc -->
@@ -22,16 +22,16 @@
 <!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
 <!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
 <!ENTITY browser_tabs_closeButtons_name "Close buttons for tabs are displayed">
-<!ENTITY browser_tabs_closeButtons_description "Determines where to display close buttons. ">
-<!ENTITY browser_tabs_closeButtons_o1 "on the active tab only">
-<!ENTITY browser_tabs_closeButtons_o2 "on each tab">
-<!ENTITY browser_tabs_closeButtons_o3 "never">
-<!ENTITY browser_tabs_closeButtons_o4 "at the end of the tab bar">
+<!ENTITY browser_tabs_closeButtons_description "Визначити де показувати кнопку закриття.">
+<!ENTITY browser_tabs_closeButtons_o1 "тільки на активній вкладці">
+<!ENTITY browser_tabs_closeButtons_o2 "на кожній вкладці">
+<!ENTITY browser_tabs_closeButtons_o3 "ніколи">
+<!ENTITY browser_tabs_closeButtons_o4 "у кінці панелі вкладок">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_name "Open new tab next to current">
 <!ENTITY browser_tabs_insertRelatedAfterCurrent_description "Determines whether to open a new tab at the end of the tab bar or after the currently selected tab. ">
 <!ENTITY browser_tabs_selectOwnerOnClose_name "Switch to the tab that opened it when closing a tab">
 <!ENTITY browser_tabs_selectOwnerOnClose_description "When closing a tab, switch to the tab that opened it. Otherwise switch to the adjacent right tab or the adjacent left tab. ">
-<!ENTITY browser_search_openintab_name "Open search results in a new tab">
+<!ENTITY browser_search_openintab_name "Відкривати результати пошуку у новій вкладці">
 <!ENTITY browser_search_openintab_description "When performing a search from the Search Bar, open the results in a new tab.">
-<!ENTITY browser_tabs_closeWindowWithLastTab_name "Close window with last tab">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрити вікно із останньою вкладкою">
 <!ENTITY browser_tabs_closeWindowWithLastTab_description "If checked, the current window will be closed when you close the last tab in that window. You can close the last tab with a middle click or by pressing [CTRL]+[W].">

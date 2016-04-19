@@ -1,31 +1,49 @@
+<!ENTITY browser "Браузер">
 
 <!-- Urlbar -->
+<!ENTITY urlbar "Адресний рядок">
 
 <!-- Restrict results -->
 
 <!-- Match results -->
+<!ENTITY browser_urlbar_maxRichResults_name "Максимальне число результатів">
+<!ENTITY browser_fixup_alternate_enabled_name "Використовувати альтернативні адреси">
+<!ENTITY browser_fixup_alternate_prefix_name "Вставляти на початку">
 <!ENTITY browser_fixup_alternate_suffix_name "Вставляти в кінець">
 
 <!-- Session restore -->
+<!ENTITY browser_sessionstore_max_resumed_crashes_name "Макс. падінь">
 
 <!-- Extensions and plugins -->
+<!ENTITY extensions_plugins "Розширення і Плагіни">
 
 <!-- Extensions -->
+<!ENTITY extensions "Розширення">
 
 <!-- Installation -->
+<!ENTITY security_dialog_enable_delay_name "Затримка встановлення додатку (мсек)">
 
 <!-- Plugins -->
+<!ENTITY plugins "Плагіни">
 
 <!-- Library -->
+<!ENTITY library "Бібліотека">
 
 <!-- Bookmarks -->
+<!ENTITY bookmarks "Закладки">
+<!ENTITY browser_bookmarks_autoExportHTML_name "Експортувати закладки у файл при вимкненні">
+<!ENTITY browser_bookmarks_autoExportHTML_description "Якщо дозволено, закладки експортуються до файлу &quot;bookmarks.html&quot; у Вашій теці профілю користувача при закритті браузеру.">
 <!ENTITY browser_bookmarks_max_backups_name "Архіви закладок">
+<!ENTITY browser_bookmarks_max_backups_description "Визначає кількість архівів, що зберігаються. Встановлення 0 вимкне архівування.">
 
 <!-- History -->
+<!ENTITY history "Історія">
 
 <!-- Downloads -->
+<!ENTITY downloads "Завантаження">
 
 <!-- Browser cache -->
+<!ENTITY cache "Кеш браузера">
 
 <!-- Disk cache -->
 <!ENTITY browser_cache_check_doc_frequency_name "Перевіряти кеш оглядача">
@@ -42,11 +60,14 @@
 <!ENTITY browser_cache_disk_enable_description "Використовувати дисковий кеш до вказаної межі.">
 
 <!-- Memory cache -->
-<!ENTITY browser_cache_memory_enable_name "Використовувати кеш у пам&apos;яті">
-<!ENTITY browser_cache_memory_enable_description "Використовувати кеш у пам&apos;яті до вказаної межі.">
-<!ENTITY browser_cache_memory_capacity_name "Кеш у пам&apos;яті (Кб)">
-<!ENTITY browser_cache_memory_capacity_description "Встановити максимум ОЗП для кешу в пам&apos;яті (в Кб)">
+<!ENTITY cache_memory "Кеш у пам'яті">
+<!ENTITY browser_cache_memory_enable_name "Використовувати кеш у пам'яті">
+<!ENTITY browser_cache_memory_enable_description "Використовувати кеш у пам'яті до вказаної межі.">
+<!ENTITY browser_cache_memory_capacity_name "Кеш у пам'яті (Кб)">
+<!ENTITY browser_cache_memory_capacity_description "Встановити максимум ОЗП для кешу в пам'яті (в Кб)">
 
 <!-- Misc -->
+<!ENTITY misc "Різне">
 
 <!-- Taskbar -->
+<!ENTITY taskbar "Панель завдань">

@@ -1,4 +1,4 @@
 <!ENTITY prefs.todefault.ask.title "還原前先問我">
 <!ENTITY prefs.todefault.ask "在還原為預設值之前先問過我">
-<!ENTITY prefs.inContent.title "Open advanced settings in tab">
-<!ENTITY prefs.inContent "Open settings in a tab instead of a window">
+<!ENTITY prefs.inContent.title "在分頁中開啟進階設定">
+<!ENTITY prefs.inContent "在分頁而非視窗中開啟設定">

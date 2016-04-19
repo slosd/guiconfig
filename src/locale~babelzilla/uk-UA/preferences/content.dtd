@@ -1,7 +1,13 @@
+<!ENTITY content "Вміст">
 
 <!-- Websites -->
+<!ENTITY websites "Веб-сайти">
 
 <!-- Images -->
+<!ENTITY images "Зображення">
+<!ENTITY gfx_color_management_mode_description "Необхідний перезапуск.">
+<!ENTITY gfx_color_management_mode_o1 "для жодного зображення">
+<!ENTITY gfx_color_management_mode_o2 "усіх зображень">
 
 <!-- Rendering -->
 
@@ -17,5 +23,13 @@
 <!-- Misc -->
 
 <!-- Javascript -->
+<!ENTITY javascript "Javascript">
 
 <!-- Permissions -->
+<!ENTITY permissions "Дозволи">
+<!ENTITY javascript_enabled_name "Дозволити Javascript">
+<!ENTITY dom_disable_window_open_feature_menubar_name "Панель меню">
+<!ENTITY dom_disable_window_open_feature_location_name "Адресна панель">
+<!ENTITY dom_disable_window_open_feature_toolbar_name "Панель інструментів">
+<!ENTITY dom_disable_window_open_feature_personalbar_name "Панель закладок">
+<!ENTITY dom_disable_window_open_feature_status_name "Рядок стану">

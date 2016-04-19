@@ -42,6 +42,8 @@
 <!ENTITY browser_urlbar_trimURLs_description "若啟用，協定名稱(http)及網址列後的斜線會隱藏起來。">
 <!ENTITY browser_fixup_dns_first_for_single_words_name "將單字認作網域名稱">
 <!ENTITY browser_fixup_dns_first_for_single_words_description "嘗試先透脫 DNS 解決在網址列的單字而非在預設的搜尋引擎搜尋。要存取在本機網路中的主機時很有用。">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_name "搜尋建議文字數">
+<!ENTITY browser_urlbar_maxCharsForSearchSuggestions_description "要傳送給目前的搜尋引擎以取得搜尋建議的最大字母數。">
 
 <!-- Session restore -->
 <!ENTITY session_restore "瀏覽頁組還原">
@@ -154,6 +156,11 @@
 <!ENTITY misc "雜項">
 <!ENTITY browser_sessionhistory_max_total_viewers_name "最大記憶頁數">
 <!ENTITY browser_sessionhistory_max_total_viewers_description "最近瀏覽過的網頁係儲存在記憶體中，這樣在用到「前一頁」「後一頁」時，可以顯示得快些。若設為-1，則頁數為自動決定；若設0就完全不予保留。">
+<!ENTITY cache_offline "離線快取">
+<!ENTITY browser_cache_offline_enable_name "啟用離線快取">
+<!ENTITY browser_cache_offline_enable_description "若啟用，網頁將可以儲存資料供瀏覽器離線時使用。">
+<!ENTITY browser_cache_offline_capacity_name "離線快取 (KB)">
+<!ENTITY browser_cache_offline_capacity_description "使用離線快取，直到指定的容量（以千位元組為單位）。">
 
 <!-- Taskbar -->
 <!ENTITY taskbar "工作列">

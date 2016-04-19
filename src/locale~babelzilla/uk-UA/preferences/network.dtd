@@ -1,5 +1,8 @@
+<!ENTITY network "Мережа">
 
 <!-- Connections -->
+<!ENTITY connections "З'єднання">
+<!ENTITY network_http_max-connections_name "Maкс. HTTP з'єднань">
 
 <!-- Keep-alive -->
 

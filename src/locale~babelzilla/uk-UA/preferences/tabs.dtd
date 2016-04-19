@@ -1,6 +1,16 @@
+<!ENTITY tabs "Вкладки">
 
 <!-- Tab preview -->
+<!ENTITY tab_preview "Попередній перегляд вкладки">
 
 <!-- Open in background -->
+<!ENTITY browser_tabs_loadBookmarksInBackground_name "Закладки">
 
 <!-- Misc -->
+<!ENTITY browser_tabs_closeButtons_description "Визначити де показувати кнопку закриття.">
+<!ENTITY browser_tabs_closeButtons_o1 "тільки на активній вкладці">
+<!ENTITY browser_tabs_closeButtons_o2 "на кожній вкладці">
+<!ENTITY browser_tabs_closeButtons_o3 "ніколи">
+<!ENTITY browser_tabs_closeButtons_o4 "у кінці панелі вкладок">
+<!ENTITY browser_search_openintab_name "Відкривати результати пошуку у новій вкладці">
+<!ENTITY browser_tabs_closeWindowWithLastTab_name "Закрити вікно із останньою вкладкою">

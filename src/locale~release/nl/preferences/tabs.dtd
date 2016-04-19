@@ -19,8 +19,8 @@
 <!ENTITY browser_tabs_animate_description "Animaties bij openen nieuwe tabbladen, tijdens herschikken tabbladen en bij loskoppelen tabblad inschakelen.">
 <!ENTITY browser_panorama_animate_zoom_name "Panorama-zoom animeren">
 <!ENTITY browser_panorama_animate_zoom_description "Animaties bij openen/sluiten van panoramabeeld voor uw tabbladen (bij Ctrl+E) inschakelen.">
-<!ENTITY browser_tabs_showAudioPlayingIcon_name "Show audio icon">
-<!ENTITY browser_tabs_showAudioPlayingIcon_description "Show an icon in tabs that are playing audio.">
+<!ENTITY browser_tabs_showAudioPlayingIcon_name "Audiopictogram weergeven">
+<!ENTITY browser_tabs_showAudioPlayingIcon_description "Toont een pictogram in tabbladen met audio.">
 <!ENTITY browser_tabs_closeButtons_name "Sluitknoppen voor tabbladen worden weergegeven">
 <!ENTITY browser_tabs_closeButtons_description "Bepaalt waar sluitknoppen worden weergegeven.">
 <!ENTITY browser_tabs_closeButtons_o1 "op het actieve tabblad alleen">

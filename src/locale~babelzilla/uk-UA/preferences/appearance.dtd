@@ -1,8 +1,18 @@
+<!ENTITY appearance "Вигляд">
 
 <!-- Browser -->
+<!ENTITY browser_style "Браузер">
 <!ENTITY browser_chrome_favicons_name "Показувати Favicons">
-<!ENTITY browser_chrome_favicons_description "Виначати, показувати Favicons чи ні">
+<!ENTITY browser_chrome_favicons_description "Визначати, показувати Favicons чи ні.">
+<!ENTITY browser_chrome_toolbar_tips_name "Показувати підказки">
+<!ENTITY browser_preferences_inContent_name "Відкривати вподобання у новій вкладці">
 
 <!-- New tab page -->
+<!ENTITY new_tab_page "Сторінка нової вкладки">
+<!ENTITY browser_newtabpage_rows_name "Кількість рядків">
+<!ENTITY browser_newtabpage_columns_name "Кількість стовпців">
 
 <!-- Selected text -->
+<!ENTITY text_select "Виділений текст">
+<!ENTITY ui_textSelectBackground_name "Колір фону">
+<!ENTITY ui_textSelectForeground_name "Колір тексту">

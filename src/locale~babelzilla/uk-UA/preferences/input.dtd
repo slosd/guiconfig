@@ -9,5 +9,10 @@
 
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
+<!ENTITY mousewheel_action_description "Оберіть, яка дія повинна виконуватися, коли прокручується коліща миші у комбінації із різними клавішами">
+<!ENTITY mousewheel_default_action_name "Дія без клавіш">
+<!ENTITY mousewheel_with_shift_action_name "Дія із SHIFT">
+<!ENTITY mousewheel_with_control_action_name "Дія із CTRL">
+<!ENTITY mousewheel_with_alt_action_name "Дія із ALT key">
 
 <!-- Misc -->

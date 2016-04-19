@@ -1,8 +1,8 @@
-<!ENTITY browser.item.label "Поглиблені налаштування">
-<!ENTITY browser.item.access "d">
+<!ENTITY browser.item.label "Додаткові налаштування">
+<!ENTITY browser.item.access "н">
 <!ENTITY config.search "Пошук">
 <!ENTITY config.descr.standard "Наведіть курсор на опцію для перегляду детального опису">
-<!ENTITY config.description "Description:">
+<!ENTITY config.description "Опис:">
 <!ENTITY config.preference_key "Preference key:">
 <!ENTITY config.standard.label "Скинути все">
 <!ENTITY config.todefault "Встановити значення за умовчанням">
@@ -10,4 +10,4 @@
 <!ENTITY config.header.title "gui:config">
 <!ENTITY config.choosefile "Обрати файл">
 <!ENTITY config.browse "Перегляд...">
-<!ENTITY config.searchresults "Search results">
+<!ENTITY config.searchresults "Результати пошуку">

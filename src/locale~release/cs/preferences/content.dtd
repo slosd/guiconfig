@@ -101,21 +101,21 @@
 <!ENTITY dom_event_contextmenu_enabled_description "Umožní skriptům na webových stránkách odstraňovat a nahrazovat místní nabídku.">
 <!ENTITY dom_event_clipboardevents_enabled_name "Interakce se schránkou">
 <!ENTITY dom_event_clipboardevents_enabled_description "Umožní skriptům získávat informace o tom, že uživatel použil schránku ke zkopírování, vyjmutí či vložení obsahu webových stránek.">
-<!ENTITY dom_disable_window_status_change_name "Change the status bar text">
-<!ENTITY dom_disable_window_status_change_description "Allow scripts to change the text in the status bar.">
-<!ENTITY dom_allow_scripts_to_close_windows_name "Close windows">
-<!ENTITY dom_allow_scripts_to_close_windows_description "Allow scripts to close windows. If the option is disabled, scripts can only close windows created by scripts.">
+<!ENTITY dom_disable_window_status_change_name "Měnit text ve stavovém řádku">
+<!ENTITY dom_disable_window_status_change_description "Umožní skriptům měnit text ve stavovém řádku.">
+<!ENTITY dom_allow_scripts_to_close_windows_name "Zavírat okna">
+<!ENTITY dom_allow_scripts_to_close_windows_description "Umožní skriptům zavírat okna. Pokud je tato možnost zakázána, skripty budou moci zavírat pouze okna skripty vytvořená.">
 
 <!-- Popups allowed events -->
-<!ENTITY dom_popup_allowed_events_name "Popups">
-<!ENTITY dom_popup_allowed_events_description "Select which events can open a popup window">
-<!ENTITY javascript_event_click "Mouse click">
-<!ENTITY javascript_event_dblclick "Mouse double click">
-<!ENTITY javascript_event_mousedown "Mouse button press">
-<!ENTITY javascript_event_mouseup "Mouse button release">
-<!ENTITY javascript_event_change "Form items changed">
-<!ENTITY javascript_event_reset "Form reset">
-<!ENTITY javascript_event_submit "Form submitted">
+<!ENTITY dom_popup_allowed_events_name "Vyskakovací okna">
+<!ENTITY dom_popup_allowed_events_description "Vyberte, které události mohou otevírat vyskakovací okna">
+<!ENTITY javascript_event_click "Klepnutí myší">
+<!ENTITY javascript_event_dblclick "Dvojklepnutí myší">
+<!ENTITY javascript_event_mousedown "Stisknutí tlačítka myši">
+<!ENTITY javascript_event_mouseup "Uvolnění tlačítka myši">
+<!ENTITY javascript_event_change "Změna položek formuláře">
+<!ENTITY javascript_event_reset "Vymazání formuláře">
+<!ENTITY javascript_event_submit "Odeslání formuláře">
 
 <!-- Window features -->
 <!ENTITY window_features "Prvky okna">

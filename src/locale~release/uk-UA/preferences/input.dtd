@@ -17,11 +17,11 @@
 
 <!-- Vertical mouse scrolling -->
 <!ENTITY mousescrollvertical "Вертикальний скролінг мишею">
-<!ENTITY mousewheel_action_description "Choose what should happen when scrolling in combination with different keys">
-<!ENTITY mousewheel_default_action_name "Action with no key">
-<!ENTITY mousewheel_with_shift_action_name "Action with SHIFT key">
-<!ENTITY mousewheel_with_control_action_name "Action with CTRL key">
-<!ENTITY mousewheel_with_alt_action_name "Action with ALT key">
+<!ENTITY mousewheel_action_description "Оберіть, яка дія повинна виконуватися, коли прокручується коліща миші у комбінації із різними клавішами">
+<!ENTITY mousewheel_default_action_name "Дія без клавіш">
+<!ENTITY mousewheel_with_shift_action_name "Дія із SHIFT">
+<!ENTITY mousewheel_with_control_action_name "Дія із CTRL">
+<!ENTITY mousewheel_with_alt_action_name "Дія із ALT key">
 <!ENTITY mousewheel_action_o1 "Scroll lines">
 <!ENTITY mousewheel_action_o2 "Scroll pages">
 <!ENTITY mousewheel_action_o3 "Go back/forward in the history">
