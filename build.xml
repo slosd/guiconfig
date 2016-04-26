@@ -11,8 +11,10 @@
   <property name="locales.babelzilla.name" value="locale~babelzilla" />
   <property name="locales.babelzilla.dir" value="${src.dir}/${locales.babelzilla.name}" />
 
-  <target name="xpi" depends="properties,files,locales">
+  <target name="xpi" depends="build,validate-preferences,transform-preferences">
     <property name="file.name" value="guiconfig-${version-string}.xpi" />
+
+    <mkdir dir="${xpi.dir}" />
 
     <fail message="${xpi.dir}/${file.name} is not writeable">
       <condition>
@@ -29,6 +31,11 @@
       </condition>
     </fail>
 
+    <zip destfile="${xpi.dir}/${file.name}" basedir="${build.dir}" update="false" />
+    <chmod file="${xpi.dir}/${file.name}" perm="ugo-w" />
+  </target>
+
+  <target name="build" depends="tasks,properties,files,locales">
     <copy file="${src.dir}/install.tpl.rdf" tofile="${build.dir}/install.rdf" overwrite="true">
       <filterchain>
         <replacetokens begintoken="%" endtoken="%">
@@ -46,12 +53,6 @@
         </replacetokens>
       </filterchain>
     </copy>
-
-    <antcall target="validate-preferences" />
-    <antcall target="transform-preferences" />
-
-    <zip destfile="${xpi.dir}/${file.name}" basedir="${build.dir}" update="false" />
-    <chmod file="${xpi.dir}/${file.name}" perm="ugo-w" />
   </target>
 
   <target name="clear-locales">
@@ -136,7 +137,6 @@
   <target name="files">
     <delete dir="${build.dir}" />
     <mkdir dir="${build.dir}" />
-    <mkdir dir="${xpi.dir}" />
 
     <copy todir="${build.dir}" overwrite="true">
       <fileset dir="${src.dir}">
