@@ -156,6 +156,7 @@
         <exclude name="**/*~" />
       </fileset>
     </copy>
+    <copy file="LICENSE" todir="${build.dir}" overwrite="true"/>
   </target>
  
   <target name="validate-preferences" depends="locales">
