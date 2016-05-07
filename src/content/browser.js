@@ -16,6 +16,7 @@
 */
 
 Components.utils.import('resource://gre/modules/Services.jsm');
+Components.utils.import('resource:///modules/CustomizableUI.jsm');
 
 var EXPORTED_SYMBOLS = [ 'browser' ];
 
@@ -24,14 +25,6 @@ const GC_PREF_INCONTENT = 'extensions.guiconfig.inContent';
 
 const GC_PREFERENCES_DIALOG = 'chrome://guiconfig/content/preferences.xul';
 const GC_BUTTON_ID = 'guiconfig-open-preferences';
-
-var CUSTOMIZABLE_UI;
-try {
-  Components.utils.import('resource:///modules/CustomizableUI.jsm');
-  CUSTOMIZABLE_UI = true;
-} catch(e) {
-  CUSTOMIZABLE_UI = false;
-}
 
 var FIRST_START;
 try {
@@ -64,9 +57,6 @@ function registerUI(node) {
 }
 
 function removeUI(window) {
-  if (CUSTOMIZABLE_UI) {
-    CustomizableUI.destroyWidget(GC_BUTTON_ID);
-  }
   if (!nodes.has(window)) return;
   for (var node of nodes.get(window)) {
     if (node && node.parentNode) {
@@ -113,71 +103,33 @@ function createMenuItem(window, id) {
   return menuitem;
 }
 
-var addToolbarButton;
-if (CUSTOMIZABLE_UI) {
-  /**
-   * Since the module CustomizableUI is available we can simply use that to
-   * add the toolbar button.
-   */
-  addToolbarButton = function() {
-    var added = false;
-    return function _addToolbarButton_customizableUI(window) {
-      if (added) {
-        return;
-      }
-      CustomizableUI.createWidget({
-        id: GC_BUTTON_ID,
-        defaultArea: CustomizableUI.AREA_NAVBAR,
-        label: strings.GetStringFromName('browser.item.label'),
-        tooltiptext: strings.GetStringFromName('browser.item.label'),
-        onCommand: function(event) {
-          var eventWindow = event.target.ownerDocument.defaultView;
-          showPreferences(eventWindow);
-        }
-      });
-      if (FIRST_START) {
-        CustomizableUI.addWidgetToArea(GC_BUTTON_ID, CustomizableUI.AREA_NAVBAR);
-      }
-      added = true;
-    };
-  }();
-} else {
-  /**
-   * Manually add and restore the toolbar button.
-   */
-  addToolbarButton = function _addToolbarButton_legacy(window) {
-    var document = window.document;
-    var toolbox = document.getElementById('navigator-toolbox');
-    toolbox.palette.appendChild(registerUI(createToolbarButton(window)));
+function addToolbarButton() {
+  CustomizableUI.createWidget({
+    id: GC_BUTTON_ID,
+    defaultArea: CustomizableUI.AREA_NAVBAR,
+    label: strings.GetStringFromName('browser.item.label'),
+    tooltiptext: strings.GetStringFromName('browser.item.label'),
+    onCommand: function(event) {
+      var eventWindow = event.target.ownerDocument.defaultView;
+      showPreferences(eventWindow);
+    }
+  });
+  if (FIRST_START) {
+    CustomizableUI.addWidgetToArea(GC_BUTTON_ID, CustomizableUI.AREA_NAVBAR);
+  }
+}
 
-    var toolbarInfo = FIRST_START ? { id: 'nav-bar', currentset: [], buttonIndex: -1 } : findToolbar(window);
-    if (!toolbarInfo)
-      return;
-
-    var toolbar = document.getElementById(toolbarInfo.id);
-    var beforeNode = null;
-    var beforeIndex = toolbarInfo.buttonIndex + 1;
-    while (toolbarInfo.buttonIndex !== -1 && beforeIndex < toolbarInfo.set.length &&
-        !(beforeNode = document.getElementById(toolbarInfo.set[beforeIndex])))
-      beforeIndex += 1;
-    toolbar.insertItem(GC_BUTTON_ID, beforeNode);
-    toolbar.setAttribute('currentset', toolbar.currentSet);
-    document.persist(toolbarInfo.id, 'currentset');
-  };
+function removeToolbarButton() {
+  CustomizableUI.destroyWidget(GC_BUTTON_ID);
 }
 
 function addMenuItem(window) {
-  var document = window.document;
-  [
-    ['guiconfig-open-preferences-menuitem', 'appmenu_preferences'],
-    ['guiconfig-open-preferences-appmenuitem', 'menu_preferences']
-  ].forEach(function(itemData) {
-    var [itemId, beforeNodeId] = itemData;
-    var beforeNode = document.getElementById(beforeNodeId);
-    if (beforeNode) {
-      beforeNode.parentNode.insertBefore(registerUI(createMenuItem(window, itemId)), beforeNode);
-    }
-  });
+  var itemId = 'guiconfig-open-preferences-appmenuitem';
+  var beforeNodeId = 'menu_preferences';
+  var beforeNode = window.document.getElementById(beforeNodeId);
+  if (beforeNode) {
+    beforeNode.parentNode.insertBefore(registerUI(createMenuItem(window, itemId)), beforeNode);
+  }
 }
 
 function focusTabWithURL(url) {
@@ -219,12 +171,20 @@ function showPreferences(window) {
   }
 }
 
+var setup = false;
 var browser = {
   load: function(window) {
-    addToolbarButton(window);
+    if (!setup) {
+      addToolbarButton();
+      setup = true;
+    }
     addMenuItem(window);
   },
   unload: function(window) {
+    if (setup) {
+      removeToolbarButton();
+      setup = false;
+    }
     removeUI(window);
   }
 };
