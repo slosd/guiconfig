@@ -28,7 +28,9 @@ var XMLHttpRequest = Components.Constructor('@mozilla.org/xmlextras/xmlhttpreque
 const GC_DIALOG_XSLT = 'chrome://guiconfig/content/generators/preferences-dialog.xsl';
 const GC_SCRIPT_XSLT = 'chrome://guiconfig/content/generators/preferences-script.xsl';
 var GC_PAGE_XSLT, GC_SEARCH_XSLT;
-if (VersionComparator.compare(ApplicationInfo.version, "45.0a1") >= 0) {
+// NOTE: XSLT import bug (https://bugzilla.mozilla.org/show_bug.cgi?id=1249572)
+// Fixed by backout for FF 45.0.1. 
+if (isApplicationVersionBetween("45.0a1", "45.0")) {
   GC_PAGE_XSLT = 'chrome://guiconfig/content/generators/preferences-page-bug1249572.xsl';
   GC_SEARCH_XSLT = 'chrome://guiconfig/content/generators/preferences-search-bug1249572.xsl';
 } else {
