@@ -18,6 +18,10 @@ box.filepicker {
   -moz-binding: url('chrome://guiconfig/content/bindings/preferences.xml#filepicker');
 }
 
+colorpicker image {
+  -moz-user-select: none;
+}
+
 .highlight {
   animation: highlight 1s;
 }
@@ -32,14 +36,6 @@ groupbox description {
   margin-top: 10px;
   margin-bottom: 10px;
   font-style: italic;
-}
-
-.main-content {
-  /* NOTE: Weird behavior
-   * overflow: auto in chrome://global/skin/in-content/common.css
-   * causes colorpicker popup inside .main-content to not be selectable
-   * with a left mouse click */
-  overflow: visible;
 }
 
 .header.merged {
