@@ -142,6 +142,8 @@
       <fileset dir="${src.dir}">
         <include name="bootstrap.js" />
         <include name="options.xul" />
+        <include name="icon.png" />
+        <include name="icon64.png" />
         <include name="content/**/*.js" />
         <include name="content/**/*.xul" />
         <include name="content/**/*.xml" />
