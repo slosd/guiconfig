@@ -35,7 +35,7 @@
     <chmod file="${xpi.dir}/${file.name}" perm="ugo-w" />
   </target>
 
-  <target name="build" depends="tasks,properties,files,locales">
+  <target name="build" depends="properties,files,locales">
     <copy file="${src.dir}/install.tpl.rdf" tofile="${build.dir}/install.rdf" overwrite="true">
       <filterchain>
         <replacetokens begintoken="%" endtoken="%">
