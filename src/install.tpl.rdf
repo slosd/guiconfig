@@ -118,6 +118,7 @@
     <em:creator>slosd</em:creator>
     <em:homepageURL>http://guiconfig.freedig.org</em:homepageURL>
     <em:bootstrap>true</em:bootstrap>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
 
     <em:translator>Stanislav Horáček (cs)</em:translator>
     <em:translator>Markus Stadler, slosd (de)</em:translator>
